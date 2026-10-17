@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c2522">
+  <meta name="description" content="A curated calendar to discover Portland's independent culture, creative learning, and ways to participate.">
+  <title>SHOWS — Portland, on your calendar</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to calendar</a>
+  <header class="masthead">
+    <div class="frame nav">
+      <a class="logo" href="./" aria-label="SHOWS home">SHOWS<span aria-hidden="true">.</span></a>
+      <span class="nav-location">PORTLAND, OREGON <span aria-hidden="true">↗</span> A CALENDAR FOR CURIOSITY</span>
+      <a href="#about" class="nav-about">About this edition <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="frame hero">
+      <div><p class="eyebrow">Go somewhere. Learn something. Get involved.</p>
+      <h1>What's happening<br><em>around you?</em></h1></div>
+      <p>Culture, creative work, and community, collected in one useful place. Choose a day, follow an interest, or see where curiosity takes you.</p>
+    </div>
+  </header>
+  <main id="main" tabindex="-1" class="frame">
+    <aside class="pilot-note"><span class="pilot-dot" aria-hidden="true">●</span><strong>Working pilot</strong><span> A small, source-checked October 2026 sample—not a complete or automatically updated calendar. Always confirm details with the organizer.</span></aside>
+    <section class="controls" aria-label="Explore events">
+      <div class="control-top">
+        <div class="month-nav">
+          <button id="previous" class="icon-button" type="button" aria-label="Previous month">←</button>
+          <h2 id="period" aria-live="polite"></h2>
+          <button id="next" class="icon-button" type="button" aria-label="Next month">→</button>
+          <button id="today" class="small-button" type="button">Today</button>
+        </div>
+        <div class="view-switch" role="group" aria-label="Calendar view">
+          <button type="button" data-view="month" aria-pressed="true">Month</button>
+          <button type="button" data-view="agenda" aria-pressed="false">List</button>
+          <button type="button" data-view="places" aria-pressed="false">Places</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <label class="search-box" for="search"><span aria-hidden="true">⌕</span><span class="sr-only">Search events, organizers and places</span><input id="search" type="search" placeholder="Search music, workshops, venues..." autocomplete="off"></label>
+        <label class="select-box" for="category"><span class="sr-only">Filter by interest</span><select id="category"><option value="all">All interests</option></select></label>
+        <label class="select-box" for="neighborhood"><span class="sr-only">Filter by neighborhood</span><select id="neighborhood"><option value="all">All neighborhoods</option></select></label>
+      </div>
+      <div class="quick-row">
+        <div class="quick-buttons" role="group" aria-label="When and price">
+          <button type="button" data-quick="all" aria-pressed="true">Any date</button>
+          <button type="button" data-quick="today" aria-pressed="false">Today</button>
+          <button type="button" data-quick="weekend" aria-pressed="false">This weekend</button>
+          <button type="button" data-quick="seven" aria-pressed="false">Next 7 days</button>
+          <button type="button" data-quick="free" aria-pressed="false">Free</button>
+          <button type="button" data-quick="saved" aria-pressed="false">★ Saved</button>
+        </div>
+        <button id="reset" class="text-button" type="button">Clear filters</button>
+      </div>
+    </section>
+    <div class="results-heading">
+      <p id="resultCount" role="status" aria-live="polite"></p>
+      <button type="button" id="exportVisible" class="export-button">↓ Export visible events (.ics)</button>
+    </div>
+    <section id="calendar" aria-label="Calendar results"></section>
+    <section id="about" class="about-grid" aria-label="About SHOWS">
+      <div><p class="eyebrow dark">A WORKING BEGINNING</p><h2>The calendar comes first.</h2></div>
+      <div><p>SHOWS is a provisional name for a curated Portland discovery project. This working version explores date and place browsing, event details, saving locally, and Google / Apple calendar export. Inclusion is not endorsement. Original organizers get the credit.</p><p>No sign-in, analytics, behavioral tracking, or user profiles. Saved events are stored only in this browser. Calendar and map links open external services only when you choose them.</p><p class="fineprint">Event times are shown in Portland's Pacific Time zone. Published details can change. Sample checked October 17, 2026.</p></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="frame footer-inner"><span>SHOWS / PORTLAND</span><span>Independent discovery. Original organizers first.</span><a href="https://github.com/julegan/shows" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></footer>
+  <dialog id="eventDialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
+  <script src="./events.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
