@@ -26,5 +26,12 @@ window.SHOWS_EVENTS = [
   },
   {
     id:"sticker-party",title:"Sticker Party! A Riso Printed Sticker Workshop",subtitle:"Make your own printed stickers using risograph techniques",category:"Workshops",tags:["Printmaking","Riso","Hands-on"],startsAt:"2026-10-31T10:00:00-07:00",endsAt:"2026-10-31T14:00:00-07:00",venue:"Outlet PDX",address:"2500 NE Sandy Blvd Ste E, Portland, OR 97232",neighborhood:"Kerns",price:"See organizer for cost",free:false,age:"See organizer",description:"A risograph sticker-making workshop hosted by Natsandme. Check the organizer for registration, price and materials.",source:"Outlet PDX",url:"https://www.outletpdx.com/events?category=Risograph",icon:"✂"
+  },
+  {
+    id:"bookbinding-nov",title:"Bookbinding Basics with Seltzer Press",subtitle:"Learn four ways to make and bind books and zines",category:"Workshops",tags:["Bookbinding","Zines","Beginner-friendly","Hands-on"],startsAt:"2026-11-20T17:00:00-08:00",endsAt:"2026-11-20T20:00:00-08:00",venue:"Outlet PDX",address:"2500 NE Sandy Blvd Ste E, Portland, OR 97232",neighborhood:"Kerns",price:"See organizer for cost",free:false,age:"See organizer",description:"A hands-on workshop introducing four book structures, the tools and vocabulary of bookbinding, and the foundations for creating your own journals or zines. Confirm pricing and availability with the organizer.",source:"Outlet PDX",url:"https://www.outletpdx.com/events?category=Risograph",icon:"✂"
+  },
+  {
+    id:"riso-nov",title:"Risograph Basics",subtitle:"Beginner-friendly printmaking and RISO experimentation",category:"Workshops",tags:["Printmaking","Beginner-friendly","Hands-on"],startsAt:"2026-11-21T10:00:00-08:00",endsAt:"2026-11-21T13:00:00-08:00",venue:"Outlet PDX",address:"2500 NE Sandy Blvd Ste E, Portland, OR 97232",neighborhood:"Kerns",price:"See organizer for cost",free:false,age:"See organizer",description:"Get to know the RISO printers through hands-on mark-making, printmaking history and experimentation. Verify pricing and registration on the event source.",source:"Outlet PDX",url:"https://www.outletpdx.com/events?category=Risograph",icon:"✂"
   }
+
 ];
