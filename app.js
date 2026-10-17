@@ -34,13 +34,12 @@
     const d = ymd(e);
     if(state.quick==="today")return d===today;
     if(state.quick==="seven")return d>=today && d<=addDays(today,6);
-    if(state.quick==="weekend"){const day=new Date(today+"T12:00:00Z").getUTCDay();const saturday=addDays(today,(6-day+7)%7);return d>=saturday && d<=addDays(saturday,1);}
+    if(state.quick==="weekend"){const day=new Date(today+"T12:00:00Z").getUTCDay();const saturday=addDays(today,day===0?-1:(6-day+7)%7);return d>=saturday && d<=addDays(saturday,1);}
     return d.slice(0,7)===state.month;
   }
   function filtered(){
     return events.filter(e => {
       if (!inWindow(e))return false;
-      if (state.selectedDay && ymd(e)!==state.selectedDay)return false;
       if(state.category!=="all" && e.category!==state.category)return false;
       if(state.neighborhood!=="all" && e.neighborhood!==state.neighborhood)return false;
       if(state.quick==="free" && !e.free)return false;
