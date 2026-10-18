@@ -1,0 +1,45 @@
+"use strict";
+const assert=require("node:assert/strict");
+const {parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,wallToPacific}=require("../scripts/priority-importers");
+const {extract,reconcile}=require("../scripts/discover-events");
+const reg=require("../discovery/sources.json");
+const get=id=>reg.sources.find(s=>s.id===id);
+const when=new Date("2026-10-17T23:00:00-07:00");
+const star=['<div class="tw-section"><div class="tw-name"><a href="https://www.startheaterportland.com/tm-event/black-metal-live/">Black Metal Live</a></div>',
+ '<span class="tw-event-date">November 14, 2026</span><span class="tw-event-time">8:00 pm</span><span class="tw-event-door-time">7:00 pm</span></div>'].join("");
+const st=parseStar(star,get("star-theater"));
+assert.equal(st.length,1);
+assert.equal(st[0].title,"Black Metal Live");
+assert.equal(st[0].startDate,"2026-11-15T04:00:00.000Z");
+assert.equal(extract(st[0],get("star-theater"),when).event.startsAt,"2026-11-14T20:00:00-08:00");
+assert(!parseStar(star.replace("https://www.startheaterportland.com/tm-event/","https://attacker.invalid/tm-event/"),get("star-theater")).length);
+assert.equal(wallToPacific(2026,10,31,"20:00"),"2026-11-01T03:00:00.000Z");
+const twHtml='<a href="/event/467800/heavy-band-show">Details</a><a href="/event/467800/heavy-band-show">Again</a><a href="https://attacker.invalid/event/1/bogus">Bad</a>';
+assert.equal(parseTwilightLinks(twHtml,get("twilight")).length,1);
+const eventDoc='<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Punk Band &amp; Noise Live","startDate":"2026-11-24T20:00:00-08:00","location":{"@type":"Place","name":"Twilight Cafe and Bar"},"performer":[{"@type":"MusicGroup","name":"Punk Band"}],"eventStatus":"https://schema.org/EventScheduled"}</script>';
+const tw=parseTwilightDetail(eventDoc,parseTwilightLinks(twHtml,get("twilight"))[0],get("twilight"));
+assert.equal(tw.startDate,"2026-11-24T20:00:00-08:00");
+assert.equal(tw.sourceVerifiedMusic,true);
+assert.equal(extract(tw,get("twilight"),when).event.startsAt,"2026-11-24T20:00:00-08:00");
+const canceled=eventDoc.replace("EventScheduled","EventCancelled");
+assert.match(parseTwilightDetail(canceled,tw.fullUrl,get("twilight")).hold,/cancellation/);
+const moved=eventDoc.replace("Twilight Cafe and Bar","Another Town");
+assert.match(parseTwilightDetail(moved,tw.fullUrl,get("twilight")).hold,/no longer Twilight/);
+const poster=['<a class="append-refer" href="https://www.treetix.com/event?id=205000&cal=soundcontrol"><div><p class="event-date">Saturday November 14<br />at High Water Mark Lounge</p>',
+'<p class="event-header"><span class="event-headliner">Deathpunk Band</span><br />Supporting Group</p>',
+'<img src="https://www.treetix.com/templates/soundcontrol/images/events/mini/2026-11-14-205000-show.jpg"></div></a>'].join("");
+const snd=parseSoundcontrol(poster,get("soundcontrol-pdx"));
+assert.equal(snd.length,1);
+assert.equal(snd[0].dateOnly,"2026-11-14");
+assert.equal(snd[0].venue,"High Water Mark Lounge");
+const item=extract(snd[0],get("soundcontrol-pdx"),when);
+assert.equal(item.event,undefined);
+assert.match(item.hold,/no performance start/);
+assert.equal(item.date,"2026-11-14");
+assert.equal(parseSoundcontrol(poster.replace("2026-11-14-205000","2026-11-15-205000"),get("soundcontrol-pdx"))[0].hold.startsWith("Poster filename date"),true);
+assert.equal(reconcile([], [item]).held.length,1);
+const src=get("black-water");
+assert.equal(src.status,"source-blocked");
+for(const id of ["twilight","star-theater","soundcontrol-pdx"])assert.equal(get(id).status,"pilot-enabled");
+assert.equal(get("high-water").status,"source-blocked");
+console.log("PASS — venue importers, official URLs, November PST, genre-neutral candidates, cancellation/move holds, and time-unknown promoter staging");
