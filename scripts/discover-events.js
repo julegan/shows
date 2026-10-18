@@ -137,8 +137,11 @@ function reconcile(existing,records){
 }
 async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
- if(u.protocol!=="https:"||u.hostname!==home.hostname||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
- const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:"error"});
+ const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
+   && home.origin==="https://bar.blackwaterpdx.com";
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
+ if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
