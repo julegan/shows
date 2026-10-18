@@ -25,11 +25,12 @@ function originalUrl(raw){
 }
 async function main(){
  const pending=events.filter(e=>!e.artwork&&originalUrl(e.url));
+ const batch=Math.max(0,Number(process.env.ARTWORK_BATCH)||0);
  const max=Math.max(1,Math.min(35,Number(process.env.MAX_ARTWORK_LOOKUPS)||35));
  let attempted=0,proposed=0;
  const failures=[];
  const cache=new Map();
- for(const e of pending.slice(0,max)){
+ for(const e of pending.slice(batch*max,(batch+1)*max)){
   attempted++;
   const url=originalUrl(e.url);
   try{
@@ -52,9 +53,10 @@ async function main(){
  const report=[
   "# Source artwork backfill review","",
   "This file contains external artwork links from official event pages. Review usage terms before publishing; the image files are not copied.","",
+  "Batch: "+batch+" (zero-indexed)",
   "Attempted listings: "+attempted,
   "New event artwork references: "+proposed,
-  "Remaining eligible event pages: "+Math.max(0,pending.length-attempted),
+  "Remaining eligible event pages: "+Math.max(0,pending.length-(batch*max+attempted)),
   "Not found or unavailable: "+failures.length,
   "",
   ...events.filter(e=>e.artwork&&e.artwork.origin==="official-event-page").slice(-proposed).map(e=>"- "+e.title+" — "+e.artwork.sourceUrl+" — "+e.artwork.url),
