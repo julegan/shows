@@ -28,7 +28,5 @@ jobs:
           node scripts/discover-events.js
           node tests/validate.js
 
-      - name: Probe priority venue HTML structure
-        if: github.head_ref == 'feat/prioritize-twilight-blackwater-star-2026-10'
-        run: node scripts/probe-priority-sources.js
-          node scripts/probe-event-details.js
+      - name: Validate original venue research priorities
+        run: node tests/source-priority.js
