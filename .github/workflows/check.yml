@@ -21,6 +21,9 @@ jobs:
           node tests/validate.js
           node tests/discovery.js
 
+      - name: Probe high-priority venue feeds (read-only)
+        run: node scripts/probe-venue-sources.js
+
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 
