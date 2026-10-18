@@ -14,6 +14,8 @@ assert.throws(()=>itemsOf({unknown:[]}),/No supported/);
 assert.equal(urlOf({urlId:"test-gig"},source),"https://www.nofunportland.com/events/test-gig");
 assert.equal(urlOf({fullUrl:"https://attacker.invalid/events/evil"},source),null);
 assert(!music({title:"Tuesday Trivia and Karaoke"}));
+assert.equal(extract({...item,title:"Independent Karaoke Night",sourceVerifiedMusic:false},source,now).event?.category,"Other");
+assert.equal(extract({...item,title:"Screenprinting Workshop",sourceVerifiedMusic:false},source,now).event?.category,"Workshops");
 assert(music({title:"Metal bands live music at No Fun"}));
 const item={title:"Underground metal band live concert",urlId:"fixture-live-show",startDate:Date.parse("2026-11-03T04:00:00Z"),excerpt:"Band performance 8pm"};
 const candidate=extract(item,source,now);
