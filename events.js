@@ -567,7 +567,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-18T21:00:00-07:00",
-    "seriesId": "church-of-hive-verified-2026"
+    "seriesId": "church-of-hive-verified-2026",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/09/17/24_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-8/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-star-theater-2026-10-19-8971e3464a60",
@@ -610,6 +617,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/09/39/74_Original.jpg?v=4",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/julia-wolf-94-7-elysian-brewing-space-dust-sessions/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -941,6 +955,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/up9ytzhgyc5hnyzdwpop.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/465355/dossey-w-camp-crush-deepest-darkest",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -984,6 +1005,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/93/03/24_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/gavn-the-salvation-tour/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -1206,6 +1234,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/4d9wqmwvuh045q6ab2np.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/466467/crashing-wayward-w-drop-the-star-purusa",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -1296,6 +1331,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/06/16/14_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/etana/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -1541,6 +1583,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/los9qe8weh7crhmmmym9.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/466800/halloween-cover-show-w-the-slightest-ure-sparks-five-big-rocks-frank-zappa-hard-pill-deftones-sad-boy-union-bare-naked-ladies-gayvore-gravure",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -1646,6 +1695,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/55/99/43_Original.jpg?v=13",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/violet-grohl-be-sweet-to-me-tour/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -1961,6 +2017,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/00/09/04_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/cherry-poppin-daddies-with-los-mal-hablados-and-the-skylarkers/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -2213,7 +2276,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-25T18:30:00-07:00"
+    "doorsAt": "2026-10-25T18:30:00-07:00",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/00/51/94_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/a-split-second/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "twilight-cafe-and-bar-houkago-grind-time-with-kostnateni-biology-skitzotoxin-2026-10-25",
@@ -2375,7 +2445,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-25T21:00:00-07:00",
-    "seriesId": "church-of-hive-verified-2026"
+    "seriesId": "church-of-hive-verified-2026",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/57/71/13_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-9/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "adx-music-monday-2026-10-26",
@@ -3242,6 +3319,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/05/90/74_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/fenix-flexin/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -3481,6 +3565,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/04/04_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/constant-debauchery-with-sacre-bleu/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -3704,6 +3795,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/03/18/14_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/boscos-haus-of-whorrors-halloween-night-direct-from-transylvania/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4042,6 +4140,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/13/04_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-10/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4173,6 +4278,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/91/04/74_Original.jpg?v=9",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/daley/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4258,6 +4370,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/52/80/13_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4346,6 +4465,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/vr5uhsmqxyzz1p9v6w71.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/463792/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4477,6 +4603,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/99/28/54_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -4798,6 +4931,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/70/54_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/the-hyrule-ball/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -5054,7 +5194,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-07T19:00:00-08:00"
+    "doorsAt": "2026-11-07T19:00:00-08:00",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/62/47/03_Original.jpg?v=9",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/exhumed-with-jarhead-fertilizer-savage-master-molder/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "turn-turn-turn-iroiro-seattle-blesst-chest-trigger-object-grapefruit-2026-11-07",
@@ -5256,6 +5403,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/ktuyc7rlvfyu1kpiyfn6.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468211/yallternative-an-alternative-country-experience-drag-show-w-pyda-pickels-seven-bussy-syrup-nashville-hott-synceirelove-aunt-gore-bunny-angelina-divine",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -5492,6 +5646,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/57/71/13_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-11/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -5988,6 +6149,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/63/80/43_Original.jpg?v=11",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/suzy-sheer-with-patch/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
