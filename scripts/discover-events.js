@@ -131,6 +131,7 @@ async function run(opts={}){
   try{
    const items=opts.load?await opts.load(src):await fetchItems(src);
    if(!Array.isArray(items))throw Error("Source did not return an array");
+   if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
    for(const item of items)found.push(extract(item,src,now));
    console.log(src.id+": "+items.length+" source items examined");
   }catch(e){errors.push({source:src.id,error:String(e.message||e)});console.error(src.id+": "+String(e.message||e));}
@@ -138,6 +139,7 @@ async function run(opts={}){
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
  const result=reconcile(parsed.events,found);
  console.log(JSON.stringify({proposed:result.accepted.length,held:result.held.length,skipped:result.skipped.length,errors}));
+ if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(!result.accepted.length)return {...result,errors};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
