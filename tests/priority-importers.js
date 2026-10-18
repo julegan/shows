@@ -1,6 +1,6 @@
 "use strict";
 const assert=require("node:assert/strict");
-const {parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,wallToPacific}=require("../scripts/priority-importers");
+const {parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific}=require("../scripts/priority-importers");
 const {extract,reconcile}=require("../scripts/discover-events");
 const reg=require("../discovery/sources.json");
 const get=id=>reg.sources.find(s=>s.id===id);
@@ -32,6 +32,13 @@ const snd=parseSoundcontrol(poster,get("soundcontrol-pdx"));
 assert.equal(snd.length,1);
 assert.equal(snd[0].dateOnly,"2026-11-14");
 assert.equal(snd[0].venue,"High Water Mark Lounge");
+const ticket='<span class="event-date">Saturday, November 14, 2026</span><br>at High Water Mark Lounge (Portland) <div class="event-header">Deathpunk Band</div> Doors 7:00pm Show 8:30pm';
+const details=parseSoundcontrolDetail(ticket,snd[0]);
+assert.equal(details.startDate,"2026-11-15T04:30:00.000Z");
+assert.equal(extract(details,get("soundcontrol-pdx"),when).event.startsAt,"2026-11-14T20:30:00-08:00");
+assert.equal(parseSoundcontrolDetail(ticket.replace("Show 8:30pm","Show 8:30"),snd[0]).startDate,undefined);
+assert.match(parseSoundcontrolDetail(ticket.replace("November 14","November 15"),snd[0]).detailHold,/date conflicts/);
+
 const item=extract(snd[0],get("soundcontrol-pdx"),when);
 assert.equal(item.event,undefined);
 assert.match(item.hold,/no performance start/);
