@@ -31,6 +31,7 @@ jobs:
         if: steps.pending.outputs.skip != 'true'
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.batch || github.run_number }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
         run: node scripts/backfill-artwork.js
       - name: Verify data and tests
         if: steps.pending.outputs.skip != 'true'
