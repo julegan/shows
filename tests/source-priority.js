@@ -19,5 +19,6 @@ assert.equal(byId["black-water"].status,"source-blocked","Do not bypass official
 assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"pilot-enabled","Keep existing technical pilot working until new adapters pass tests");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert(enabled.every(s=>s.adapter==="squarespace-json"),"No unsupported adapter may run");
+assert.deepEqual(enabled.map(s=>s.id),["twilight","soundcontrol-pdx","star-theater","no-fun"]);
+assert(enabled.every(s=>["twilight-html","promoter-list-html","star-theater-html","squarespace-json"].includes(s.adapter)),"No unsupported adapter may run");
 console.log("PASS — five original priority sources first, promoter location unassigned, Black Water access respected and No Fun pilot intact.");

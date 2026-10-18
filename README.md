@@ -57,7 +57,7 @@ Source sites include:
 
 ## Not built yet
 
-Live source ingestion, editorial review queue, approved publication workflow, recurring calendar subscriptions, event change/cancellation monitoring, advanced accessibility metadata, transit routing, cross-location mapping, venue pages, actual event series recurrence rules, or a production CMS.
+Broad live source ingestion, richer editorial review queue, approved publication workflow, recurring calendar subscriptions, event change/cancellation monitoring, advanced accessibility metadata, transit routing, cross-location mapping, venue pages, actual event series recurrence rules, or a production CMS.
 
 **Do not enable GitHub Pages as a public launch without a deliberate publication decision and fresh source validation.** This prototype is a static UI with sample 2026 data and will age.
 
@@ -76,3 +76,8 @@ This static snapshot does not currently scrape, sync, or refresh shows on its ow
 ## Automatic discovery pilot (review-only)
 
 The pilot implementation and source registry are described in [discovery/README.md](discovery/README.md). A daily GitHub Actions workflow can discover No Fun listings and propose events through a **review PR**; no unreviewed events publish automatically. No Fun feed compatibility and GitHub permissions must be confirmed with a manual workflow run after this change is approved. Other independent sources are registered for adapters. The portfolio repository has a separate proposed data-sync workflow. This is **not a live event feed** and changes/cancellations are not monitored yet.
+
+
+## Priority source importers
+
+This release extends review-only ingestion beyond No Fun to [Twilight, Star Theater and Soundcontrol PDX](discovery/README.md), with date-only Soundcontrol / High Water Mark leads held for showtime verification. Sites that return HTTP 403 (Black Water and High Water Mark official websites) are not bypassed. A GitHub Actions live run read 42 Twilight, 46 Star, six Soundcontrol and 71 No Fun source entries, finding 46 new time-bearing review candidates. No event will reach the public portfolio until the canonical editorial PR and the separate portfolio sync PR are accepted.

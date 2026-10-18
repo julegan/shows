@@ -5,7 +5,7 @@
     {
       "id": "twilight",
       "name": "Twilight Cafe and Bar",
-      "status": "adapter-validation",
+      "status": "pilot-enabled",
       "priority": "highest",
       "reason": "Identify the official ticketing/calendar data endpoint and its fields.",
       "url": "https://www.twilightcafeandbar.com/calendar/",
@@ -13,14 +13,15 @@
       "venue": "Twilight Cafe and Bar",
       "address": "832 SE Grand Ave, Portland, OR 97214",
       "neighborhood": "Central Eastside",
-      "adapter": "twilight-html"
+      "adapter": "twilight-html",
+      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
     },
     {
       "id": "black-water",
       "name": "Black Water",
       "status": "source-blocked",
       "priority": "highest",
-      "reason": "Official website returned HTTP 403 to GitHub Actions, so use authorized ticket, promoter or venue-supplied data; do not bypass controls.",
+      "reason": "Official Black Water site returned HTTP 403; source still pending an authorized promoter, ticketing, or venue feed; no bypass.",
       "url": "https://bar.blackwaterpdx.com/",
       "baseUrl": "https://bar.blackwaterpdx.com",
       "venue": "Black Water",
@@ -30,9 +31,9 @@
     {
       "id": "high-water",
       "name": "High Water Mark",
-      "status": "adapter-validation",
+      "status": "source-blocked",
       "priority": "highest",
-      "reason": "Official venue posts future dated concert lineups, potentially with incomplete times. Soundcontrol is a related promoter and must not create duplicates.",
+      "reason": "Official High Water Mark site returned HTTP 403 to GitHub runner; its concerts can be discovered through permitted Soundcontrol promoter listings when date, venue, and time can be verified.",
       "url": "https://www.highwatermarklounge.com/",
       "baseUrl": "https://www.highwatermarklounge.com",
       "venue": "High Water Mark Lounge",
@@ -43,7 +44,7 @@
     {
       "id": "soundcontrol-pdx",
       "name": "Soundcontrol PDX",
-      "status": "adapter-validation",
+      "status": "pilot-enabled",
       "priority": "highest",
       "reason": "Official promoter listing covers multiple venues, including High Water Mark and Twilight. Resolve venue from each event, deduplicate with venue feeds, and do not infer a single fixed address.",
       "url": "https://www.soundcontrolpdx.com/",
@@ -52,12 +53,13 @@
       "address": null,
       "neighborhood": null,
       "adapter": "promoter-list-html",
-      "type": "promoter"
+      "type": "promoter",
+      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
     },
     {
       "id": "star-theater",
       "name": "Star Theater",
-      "status": "adapter-validation",
+      "status": "pilot-enabled",
       "priority": "highest",
       "reason": "Test venue event data and avoid misleading recurring dates.",
       "url": "https://www.startheaterportland.com/event/",
@@ -65,7 +67,8 @@
       "venue": "Star Theater",
       "address": "13 NW Sixth Avenue, Portland, OR 97209",
       "neighborhood": "Old Town",
-      "adapter": "star-theater-html"
+      "adapter": "star-theater-html",
+      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
     },
     {
       "id": "coffin-club",
