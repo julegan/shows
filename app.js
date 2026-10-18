@@ -84,8 +84,7 @@
       const cl=["day",!inMonth?"outside":"",day===today?"today":"",day===state.selectedDay?"selected":""].filter(Boolean).join(" ");
       const dateName=esc(readableDay(day));
       const eventCount=dayItems.length;
-      const eventCountLabel=eventCount+' event'+(eventCount===1?'':'s');
-      html+='<div class="'+cl+'"><button class="mobile-day" type="button" data-day="'+day+'" aria-label="Explore '+dateName+', '+eventCountLabel+'"><span class="mobile-day-number">'+d.getUTCDate()+'</span>'+(eventCount?'<span class="mobile-day-count" aria-hidden="true">'+eventCount+'</span>':'')+'</button><div class="day-top"><button class="day-number" type="button" data-day="'+day+'" aria-label="Explore '+dateName+'">'+d.getUTCDate()+'</button></div>';
+      html+='<div class="'+cl+'"><button class="mobile-day" type="button" data-day="'+day+'"><span class="mobile-day-number">'+d.getUTCDate()+'</span>'+(eventCount?'<span class="mobile-day-count">'+eventCount+'</span>':'')+'<span class="sr-only">'+(eventCount?' events on ':' No events on ')+dateName+'. Select to explore.</span></button><div class="day-top"><button class="day-number" type="button" data-day="'+day+'" aria-label="Explore '+dateName+'">'+d.getUTCDate()+'</button></div>';
       for(const e of dayItems.slice(0,3))html+='<button type="button" class="event-chip" data-category="'+esc(e.category)+'" data-event="'+esc(e.id)+'"><span class="chip-time">'+esc(clock(e))+'</span><span class="chip-title">'+esc(e.title)+'</span></button>';
       if(dayItems.length>3)html+='<button class="overflow" data-day="'+day+'" type="button">+'+(dayItems.length-3)+' more</button>';
       html+='</div>';
