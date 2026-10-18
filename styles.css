@@ -84,3 +84,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .event-chip[data-category="Community"]{background:#ede3f0!important;color:#543960}
 .event-chip:before{color:inherit!important}
 }
+
+/* Source artwork, never a fabricated event poster. Preserve the entire original image. */
+.show-art{position:relative;display:grid;place-items:center;aspect-ratio:4/5;overflow:hidden;width:100%;background:#eef0ed;color:#3c4d41;border:1px solid #bdc5be;border-radius:3px;isolation:isolate}
+.show-art--large{aspect-ratio:4/5;max-width:460px;margin:12px auto 24px}
+.show-art .show-art-placeholder{position:static;display:block;max-width:80%;padding:16px;text-align:center;line-height:1.4;letter-spacing:.04em;text-transform:uppercase;font-size:12px;font-weight:700;color:#48594c;z-index:0}
+.show-art .show-art-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#eef0ed;z-index:2}
+.show-art:after{display:none}
+.art-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:680px){.show-art,.show-art--large{aspect-ratio:4/5}.show-art--large{max-width:min(100%,340px)}}
