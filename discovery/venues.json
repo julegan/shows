@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Portland city music venue source-of-truth for comprehensive event collection. Venue inclusion is not a genre filter.",
+  "scope": "Portland, Oregon city limits",
+  "policy": {
+    "priority": "Collect all publicly listed future dated events at each supported venue. Classify afterward, without excluding noncore categories.",
+    "publication": "Importers propose source-linked events and artwork for review; only approved GitHub PRs reach main; portfolio sync is separately reviewed.",
+    "uncertainty": "Do not invent missing showtimes, admission, genre, ages, images, or venue status. Hold conflicting facts. No anti-bot bypass.",
+    "image": "Capture source-provided event flyers/photos and attribution when available; validate event specificity, legal embedding rights and failures before displaying; do not generate graphics."
+  },
+  "tiers": {
+    "core": "Underground punk/metal/hardcore/goth/post-punk/noise/DIY discovery priority",
+    "expansion": "Other recurring venue calendars; include all events from supported source",
+    "watch": "Temporarily no calendar ingest; monitor opening/status"
+  },
+  "venues": [
+    {
+      "id": "black-water",
+      "name": "Black Water",
+      "tier": "core",
+      "ingestionStatus": "source-blocked",
+      "calendarUrl": "https://bar.blackwaterpdx.com/",
+      "aliases": [
+        "Black Water Bar",
+        "Blackwater"
+      ],
+      "notes": "Official pages previously returned 403; discover from promoter/artist/flyer leads and confirm without bypass"
+    },
+    {
+      "id": "high-water-mark",
+      "name": "High Water Mark Lounge",
+      "tier": "core",
+      "ingestionStatus": "source-blocked",
+      "calendarUrl": "https://www.highwatermarklounge.com/",
+      "aliases": [
+        "High Water Mark"
+      ],
+      "notes": "Official site blocked in runner; Soundcontrol is supplementary promoter source"
+    },
+    {
+      "id": "twilight",
+      "name": "Twilight Cafe and Bar",
+      "tier": "core",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.twilightcafeandbar.com/calendar/",
+      "aliases": [
+        "Twilight Room",
+        "Twilight Cafe & Bar"
+      ],
+      "notes": "Official event pages offer date and sometimes JSON-LD images"
+    },
+    {
+      "id": "coffin-club",
+      "name": "The Coffin Club",
+      "tier": "core",
+      "ingestionStatus": "source-empty",
+      "calendarUrl": "https://thecoffinclubpdx.com/",
+      "aliases": [
+        "Coffin Club",
+        "The Coffin"
+      ],
+      "notes": "Official page currently says no published events; resolve official ticketing/authorized promoter feed"
+    },
+    {
+      "id": "high-limit-room",
+      "name": "High Limit Room",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://highlimitroompdx.com/",
+      "aliases": [],
+      "notes": "Event schedule is embedded; identify authorized provider URL"
+    },
+    {
+      "id": "no-fun",
+      "name": "No Fun",
+      "tier": "core",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.nofunportland.com/events",
+      "aliases": [],
+      "notes": "Squarespace source; current scraper operational"
+    },
+    {
+      "id": "star-theater",
+      "name": "Star Theater",
+      "tier": "core",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.startheaterportland.com/event/",
+      "aliases": [
+        "Starlight"
+      ],
+      "notes": "Current primary event listings"
+    },
+    {
+      "id": "kenton-club",
+      "name": "Kenton Club",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Source-specific importer needed"
+    },
+    {
+      "id": "shanghai-tunnel",
+      "name": "Shanghai Tunnel",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "Shanghai Tunnel Bar"
+      ],
+      "notes": "Independent punk bills; official feed needs verification"
+    },
+    {
+      "id": "turn-turn-turn",
+      "name": "Turn! Turn! Turn!",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Source-specific importer needed"
+    },
+    {
+      "id": "the-fixin-to",
+      "name": "The Fixin' To",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.thefixinto.com/",
+      "aliases": [
+        "Fixin' To"
+      ],
+      "notes": "Wix event pages exist; validate 2026 dated listings before using"
+    },
+    {
+      "id": "starday-tavern",
+      "name": "Starday Tavern",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://stardaytavern.com/",
+      "aliases": [],
+      "notes": "Official events calendar available; inspect provider timezone and event detail source"
+    },
+    {
+      "id": "dantes",
+      "name": "Dante's",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Cross-check independent concerts and goth nights"
+    },
+    {
+      "id": "b-side",
+      "name": "B-Side Tavern",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "B-Side"
+      ],
+      "notes": "Verify official event sources and dated listings"
+    },
+    {
+      "id": "wyrd-hut",
+      "name": "Wyrd Hut",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Verify active event source"
+    },
+    {
+      "id": "alleyway",
+      "name": "The Alleyway",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "Alleyway Bar"
+      ],
+      "notes": "Underground punk lead source available via Doomtown PDX"
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi Studios",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://mississippistudios.com/calendar",
+      "aliases": [],
+      "notes": "Accessible official calendar with showtimes and event images"
+    },
+    {
+      "id": "polaris-hall",
+      "name": "Polaris Hall",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://mississippistudios.com/calendar",
+      "aliases": [],
+      "notes": "Shares official listings with Mississippi Studios; keep venue identity distinct"
+    },
+    {
+      "id": "holocene",
+      "name": "Holocene",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Music and dance events; find official dated feed"
+    },
+    {
+      "id": "wonder-ballroom",
+      "name": "Wonder Ballroom",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://wonderballroom.com/events/",
+      "aliases": [],
+      "notes": "Official calendar available; importer needed"
+    },
+    {
+      "id": "revolution-hall",
+      "name": "Revolution Hall",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.revolutionhall.com/",
+      "aliases": [
+        "Show Bar at Revolution Hall"
+      ],
+      "notes": "Calendar has multiple rooms; retain room in event"
+    },
+    {
+      "id": "roseland",
+      "name": "Roseland Theater",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://roselandpdx.com/events/",
+      "aliases": [
+        "Roseland Theatre"
+      ],
+      "notes": "Official event calendar available"
+    },
+    {
+      "id": "hawthorne-theatre",
+      "name": "Hawthorne Theatre",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "Hawthorne Theater"
+      ],
+      "notes": "Official event calendar needs technical inspection"
+    },
+    {
+      "id": "crystal-ballroom",
+      "name": "Crystal Ballroom",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.mcmenamins.com/events",
+      "aliases": [],
+      "notes": "McMenamins event pages; identify venue and avoid other properties"
+    },
+    {
+      "id": "moda-center",
+      "name": "Moda Center",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.rosequarter.com/calendar-events",
+      "aliases": [],
+      "notes": "Broader shows and events when relevant"
+    },
+    {
+      "id": "doug-fir",
+      "name": "Doug Fir Lounge",
+      "tier": "watch",
+      "ingestionStatus": "not-open",
+      "calendarUrl": "https://dougfirlounge.com/",
+      "aliases": [],
+      "notes": "Official site says upcoming events none; new location scheduled for 2027; do not invent 2026 bookings"
+    },
+    {
+      "id": "azoth",
+      "name": "AZØTH",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "AZOTH"
+      ],
+      "notes": "Venue/address not established in dataset; verify nature of space and geographic boundary"
+    },
+    {
+      "id": "hawthorne-lounge",
+      "name": "Hawthorne Lounge",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Distinct from Hawthorne Theatre"
+    },
+    {
+      "id": "word-virus",
+      "name": "Word Virus Books",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Bookshop and DIY events"
+    },
+    {
+      "id": "the-six",
+      "name": "The Six (Midnight PDX Bar)",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "The Six",
+        "Midnight PDX Bar"
+      ],
+      "notes": "Verify current program and address"
+    },
+    {
+      "id": "starthrow",
+      "name": "Star Bar",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [],
+      "notes": "Verify source and not confuse with Star Theater"
+    }
+  ],
+  "supplementaryDiscovery": [
+    {
+      "id": "doomtown-pdx",
+      "name": "Doomtown PDX",
+      "url": "https://doomtownpdx.com/",
+      "kind": "community-show-and-flyer-leads",
+      "purpose": "Punk/hardcore bills and flyer leads, particularly Black Water. Cross-check event details and permission before publication."
+    },
+    {
+      "id": "soundcontrol-pdx",
+      "name": "Soundcontrol PDX",
+      "url": "https://www.soundcontrolpdx.com/",
+      "kind": "promoter-primary",
+      "purpose": "Cross-venue independent concert listings including High Water Mark"
+    }
+  ]
+}
