@@ -53,11 +53,23 @@ function music(item){
  if(/\b(trivia|karaoke|open mic|comedy|bingo|quiz|brunch|screening|happy hour)\b/.test(input))return false;
  return /\b(live music|music|bands?|concert|punk|metal|hardcore|goth|rock show|touring|gig|live performance|show with|doors at)\b/.test(input);
 }
+function categoryOf(item){
+ const title=tidy(item.title).toLowerCase();
+ const categories=tidy([...(Array.isArray(item.categories)?item.categories:[]),...(Array.isArray(item.tags)?item.tags:[])].join(" "),400).toLowerCase();
+ // Categorize published event types; never invent underground genres.
+ if(/\b(workshop|class|lesson|seminar|skillshare)\b/.test(title+" "+categories))return "Workshops";
+ if(/\b(craft night|mask making|zine making|gallery|exhibition|art opening|craft fair)\b/.test(title+" "+categories))return "Arts & DIY";
+ if(/\b(market|bazaar|swap meet|record fair|vintage fair|pop-up shop)\b/.test(title+" "+categories))return "Markets";
+ if(/\b(comedy|burlesque|drag show|film screening|movie night|theater performance|improv night)\b/.test(title+" "+categories))return "Performance";
+ if(/\b(trivia|karaoke|bingo|quiz|happy hour)\b/.test(title+" "+categories))return "Other";
+ if(item.sourceVerifiedMusic||music(item))return "Music";
+ return "Unclassified";
+}
 function extract(item,src,now){
  if(!item||typeof item!=="object")return {hold:"Unusable source object"};
  const title=tidy(item.title),url=urlOf(item,src);
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
- if(/\b(trivia|karaoke|open mic|comedy|craft night|mask making|quiz|bingo|brunch|workshop|screening)\b/i.test(title))return {hold:"Different event category, not a confirmed live music show",title,url};
+ // Every dated venue event is eligible; classify rather than discard unrelated categories.
  const stamp=item.startDate??item.startTime??item.start;
  if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
@@ -75,17 +87,18 @@ function extract(item,src,now){
  if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
- if(!item.sourceVerifiedMusic&&!music(item))return {hold:"Live-music evidence not established",title,url,date};
+ const category=categoryOf(item);
  const asof=localDay(now);
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(url).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
-  id,title,subtitle:"Source-discovered music listing · format and time need review",category:"Music",
-  tags:["Music listing","Time needs confirmation","Format needs confirmation"],musicStyles:[],eventFormat:"unverified",
+  id,title,subtitle:"Source-discovered venue event · details need review",category,
+  tags:[category==="Unclassified"?"Category needs review":"Source-listed "+category,"Time needs confirmation","Format needs confirmation"],
+  musicStyles:[],eventFormat:"unverified",
   startTimeKind:"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
-  source:src.name,url,icon:"♫",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, live-show and cancellation verification required",
+  source:src.name,url,icon:category==="Music"?"♫":"◇",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, event type and cancellation verification required",
   sourceCategories:cat,sources:[{name:src.name,url,kind:"organizer",checkedAt:asof,originalCategories:cat}],
   ...(item.artwork?{artwork:item.artwork}:{}),
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
@@ -180,7 +193,7 @@ function report(r,errors,now){
  lines.push("","## Source errors: "+errors.length,"");
  for(const x of errors)lines.push("- "+x.source+": "+x.error);
  lines.push("","## Required editorial checks","",
-  "- Verify actual performers and classify event format as live, DJ or another format before approval.",
+  "- Verify event type, actual performers and classify musical events as live, DJ or another format before approval.",
   "- Distinguish doors from showtime before merging; change the listed-time label if verified.",
   "- Check duplicates, source permalink, venue/date, ticket status, age, and cancellation information.",
   "- Leave genre, cost, accessibility and end times unknown without evidence.",
@@ -227,4 +240,4 @@ async function run(opts={}){
  return {...result,errors,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
-module.exports={localTime,localDay,parseFile,itemsOf,urlOf,music,extract,reconcile,run};
+module.exports={localTime,localDay,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,run};
