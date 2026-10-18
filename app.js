@@ -25,7 +25,7 @@
   function ymd(e){return localYmd(new Date(e.startsAt));}
   function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
   function dateLabel(e){return dateLong.format(new Date(e.startsAt));}
-  function clock(e){return (e.startTimeKind==="doors"?"Doors ":"")+timeFmt.format(new Date(e.startsAt));}
+  function clock(e){return (e.startTimeKind==="doors"?"Doors ":e.startTimeKind==="listed"?"Listed time ":"")+timeFmt.format(new Date(e.startsAt));}
   function timeRange(e){return clock(e)+(e.endsAt?" – "+timeFmt.format(new Date(e.endsAt)):" · end time not confirmed");}
   function readableDay(day){return dateLong.format(new Date(day+"T12:00:00Z"));}
   function monthDate(y,m,d){return new Date(Date.UTC(y,m-1,d));}
@@ -135,7 +135,7 @@
   function googleLink(e){
     const start=new Date(e.startsAt),end=e.endsAt?new Date(e.endsAt):new Date(start.getTime()+60*60000);
     const fmt=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
-    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title+(e.startTimeKind==="doors"?" (doors)":""));u.searchParams.set("dates",fmt(start)+"/"+fmt(end));
+    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title+(e.startTimeKind==="doors"?" (doors)":e.startTimeKind==="listed"?" (time unverified)":""));u.searchParams.set("dates",fmt(start)+"/"+fmt(end));
     u.searchParams.set("details",e.description+"\nSource: "+e.url+(e.endsAt?"":"\nThe original listing did not confirm an end time. Adjust the one-hour placeholder."));
     if(e.address)u.searchParams.set("location",e.venue+", "+e.address);
     return u.toString();

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "policy": "Only a primary venue source may generate a proposed event. GitHub PR review is required; no direct publication.",
+  "sources": [
+    {
+      "id": "no-fun",
+      "name": "No Fun",
+      "status": "pilot-enabled",
+      "adapter": "squarespace-json",
+      "url": "https://www.nofunportland.com/events?format=json-pretty",
+      "baseUrl": "https://www.nofunportland.com",
+      "venue": "No Fun",
+      "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "age": "21+",
+      "priority": "underground-music",
+      "defaultStartKind": "doors",
+      "blockedDates": [
+        {
+          "date": "2026-11-13",
+          "reason": "Conflicting Star Machine and Early Worms venue listings (previous manual source review)"
+        },
+        {
+          "date": "2026-11-21",
+          "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
+        }
+      ]
+    },
+    {
+      "id": "black-water",
+      "name": "Black Water",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Venue/promoter sources and new NE Sandy address need a reliable dated feed."
+    },
+    {
+      "id": "twilight",
+      "name": "Twilight Cafe and Bar",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Identify the official ticketing/calendar data endpoint and its fields."
+    },
+    {
+      "id": "coffin-club",
+      "name": "The Coffin Club",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Verify event/ticketing feed and conflicting times."
+    },
+    {
+      "id": "high-limit",
+      "name": "High Limit Room",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Embedded calendar requires a source-specific adapter."
+    },
+    {
+      "id": "high-water",
+      "name": "High Water Mark",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Verify source/ticket listings before enabling."
+    },
+    {
+      "id": "star-theater",
+      "name": "Star Theater",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Test venue event data and avoid misleading recurring dates."
+    },
+    {
+      "id": "kenton-club",
+      "name": "Kenton Club",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Many bills lack posted performance time; staging adapter needed."
+    },
+    {
+      "id": "turn-turn-turn",
+      "name": "Turn! Turn! Turn!",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Verify independent booking/ticket API for dated events."
+    },
+    {
+      "id": "doomtown-pdx",
+      "name": "Doomtown PDX",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Promoter discovery should resolve venue and date via original announcements."
+    },
+    {
+      "id": "soundcontrol-pdx",
+      "name": "Soundcontrol PDX",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Find current primary public event feed."
+    },
+    {
+      "id": "shanghai-tunnel",
+      "name": "Shanghai Tunnel",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Confirm current venue calendar feed."
+    }
+  ]
+}

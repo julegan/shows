@@ -15,5 +15,15 @@ jobs:
         run: |
           node --check app.js
           node --check events.js
+          node --check scripts/discover-events.js
       - name: Validate sample events
-        run: node tests/validate.js
+        run: |
+          node tests/validate.js
+          node tests/discovery.js
+
+      - name: Probe No Fun public event feed (pilot integration check)
+        if: github.event_name == 'pull_request' && github.head_ref == 'feat/auto-discovery-pilot-2026-10'
+        continue-on-error: true
+        run: |
+          node scripts/discover-events.js
+          node tests/validate.js

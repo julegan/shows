@@ -7,10 +7,10 @@ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','events.js'),'utf8')
 const events=ctx.window.SHOWS_EVENTS,meta=ctx.window.SHOWS_DATASET;
 const added=events.filter(e=>e.addedIn==='2026-10-17-independent-venues');
 assert.equal(added.length,27,'27 genuinely new independent-venue bills');
-assert.equal(meta.totalOccurrences,182);
-assert.equal(meta.musicOccurrences,128);
-assert.equal(meta.addedOccurrences,27);
-assert.equal(meta.batchId,'2026-10-17-independent-venues');
+assert(meta.totalOccurrences>=182);
+assert(meta.musicOccurrences>=128);
+assert((meta.batchId==='2026-10-17-independent-venues'&&meta.addedOccurrences===27)||meta.previousBatches.some(b=>b.batchId==='2026-10-17-independent-venues'&&b.addedOccurrences===27));
+assert(added.length===27);
 for(const [venue,n] of [['No Fun',16],['Twilight Cafe and Bar',10],['Kenton Club',1]])
  assert.equal(added.filter(e=>e.venue===venue).length,n,venue+' new bill count');
 assert(added.every(e=>e.category==='Music'&&e.eventFormat==='live'));
