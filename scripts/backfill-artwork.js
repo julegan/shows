@@ -25,8 +25,10 @@ function originalUrl(raw){
 }
 async function main(){
  const pending=events.filter(e=>!e.artwork&&originalUrl(e.url));
- const batch=Math.max(0,Number(process.env.ARTWORK_BATCH)||0);
+ const requestedBatch=Math.max(0,Number(process.env.ARTWORK_BATCH)||0);
  const max=Math.max(1,Math.min(35,Number(process.env.MAX_ARTWORK_LOOKUPS)||35));
+ const batchCount=Math.max(1,Math.ceil(pending.length/max));
+ const batch=process.env.ARTWORK_BATCH_MODE==="rotate"?requestedBatch%batchCount:requestedBatch;
  let attempted=0,proposed=0;
  const failures=[];
  const cache=new Map();
