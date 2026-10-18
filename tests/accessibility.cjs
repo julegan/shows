@@ -22,6 +22,17 @@ async function showsViews(browser,viewport){
   const errors=[];
   await page.goto(origin+(isPortfolio?"/projects/shows/":"/"),{waitUntil:"networkidle"});
   errors.push(...await audit(page,"SHOWS month "+viewport.width));
+  if(viewport.width<=680){
+    const day=page.locator(".day:not(.outside) .mobile-day").first();
+    assert(await day.isVisible(),"Mobile month should offer a date-sized tap target");
+    assert.equal(await page.locator(".day .event-chip:visible").count(),0,"Mobile month should not stack event titles");
+    const gridFits=await page.locator(".month-grid").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
+    assert(gridFits,"Mobile month must not overflow horizontally");
+    await day.click();
+    assert(await page.locator(".selected-day-header").isVisible(),"Selecting a date should show its details");
+    errors.push(...await audit(page,"SHOWS selected day "+viewport.width));
+    await page.locator("[data-clear-day]").click();
+  }
   await page.locator('[data-view="agenda"]').click();
   errors.push(...await audit(page,"SHOWS list "+viewport.width));
   if(!isPortfolio){
