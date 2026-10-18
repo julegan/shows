@@ -93,3 +93,19 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .show-art:after{display:none}
 .art-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:680px){.show-art,.show-art--large{aspect-ratio:4/5}.show-art--large{max-width:min(100%,340px)}}
+
+/* A dense month is an overview on narrow screens, not a stack of event titles. */
+.mobile-calendar-hint,.mobile-day{display:none}
+.chip-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+@media(max-width:680px){
+  .mobile-calendar-hint{display:block;margin:0 0 12px;font-size:12px;line-height:1.5;color:#465447}
+  .month-grid{width:100%}
+  .day{min-height:72px;padding:0;overflow:hidden}
+  .day>.day-top,.day>.event-chip,.day>.overflow{display:none}
+  .mobile-day{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;min-width:0;min-height:72px;margin:0;padding:7px 1px 5px;border:0;border-radius:0;background:transparent;color:inherit}
+  .mobile-day-number{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;font-size:12px;line-height:1;font-weight:720}
+  .day.today .mobile-day-number{background:var(--dark);color:#fff}
+  .day.outside .mobile-day-number{color:#a1a79d}
+  .mobile-day-count{display:block;max-width:100%;min-width:23px;padding:4px 5px;border-radius:12px;background:#dbe4f5;color:#263852;text-align:center;font-size:11px;line-height:1;font-weight:800}
+  .day.selected .mobile-day{background:rgba(83,102,59,.09)}
+}
