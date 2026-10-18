@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-17",
-  "coverageThrough": "2026-12-13",
-  "totalOccurrences": 182,
-  "addedOccurrences": 27,
-  "batchId": "2026-10-17-independent-venues",
-  "editorialReview": "Julie reviews additions through pull requests before publication",
+  "sourceCheckedAt": "2026-10-18",
+  "coverageThrough": "2027-01-16",
+  "totalOccurrences": 226,
+  "addedOccurrences": 44,
+  "batchId": "auto-discovery-2026-10-18-2",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -20,11 +20,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-10-17-venue-coverage",
       "addedOccurrences": 36
+    },
+    {
+      "batchId": "2026-10-17-independent-venues",
+      "addedOccurrences": 27
     }
   ],
-  "newLiveBills": 27,
+  "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 128
+  "musicOccurrences": 172
 };
 window.SHOWS_EVENTS = [
   {
@@ -566,6 +570,49 @@ window.SHOWS_EVENTS = [
     "seriesId": "church-of-hive-verified-2026"
   },
   {
+    "id": "auto-star-theater-2026-10-19-8971e3464a60",
+    "title": "JULIA WOLF &#8211; 94/7 ELYSIAN BREWING SPACE DUST SESSIONS",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-19T12:30:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/julia-wolf-94-7-elysian-brewing-space-dust-sessions/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/julia-wolf-94-7-elysian-brewing-space-dust-sessions/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "high-limit-room-veradas-julie-f-the-rulies-afraid-of-women-sertraline-2026-10-19",
     "title": "Veradas + Julie F the Rulies + Afraid of Women + Sertraline",
     "subtitle": "rock, psychedelic rock, shoegaze · live bill",
@@ -627,6 +674,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "accessibility": "The venue reports an upstairs space without an elevator; contact it ahead about accommodation needs."
+  },
+  {
+    "id": "auto-no-fun-2026-10-20-cce2ca414d5c",
+    "title": "CMG Improv Summit: Melissa Achten • William DeLee • Cameron Landers",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-20T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10-30 suggested donation (sliding scale), 21+, 7PM Doors/8PM Music __________________________________ The Creative Music Guild https://creativemusicguild.org/ Melissa Achten https://melissaachten.bandcamp.com/ https://www.melissaachten.com/ https://www.instagram.com/harpistemolo",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/cmg-improv-summit-melissa-achten-william-delee-cameron-landers",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/cmg-improv-summit-melissa-achten-william-delee-cameron-landers",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "twilight-cafe-and-bar-lioneer-with-gavin-prophet-drifter-nervous-state-2026-10-20",
@@ -811,6 +901,92 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-10-21-793155d8ca72",
+    "title": "DOSSEY w/ Camp Crush, Deepest Darkest",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-21T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/465355/dossey-w-camp-crush-deepest-darkest",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/465355/dossey-w-camp-crush-deepest-darkest",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2026-10-21-4e29c7b9b72a",
+    "title": "GAVN! THE SALVATION TOUR",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-21T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/gavn-the-salvation-tour/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/gavn-the-salvation-tour/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "wonder-slift-with-rhododendron-2026-10-21",
     "title": "SLIFT with Rhododendron",
     "subtitle": "Live show · Rock, Noise & experimental",
@@ -990,6 +1166,49 @@ window.SHOWS_EVENTS = [
     "sourceNote": "The dated venue ticket and artist event feed give October 21; a label tour page gives November 21. This entry follows the dated venue ticket. Confirm with the organizer."
   },
   {
+    "id": "auto-twilight-2026-10-22-7afdf25f88cc",
+    "title": "Crashing Wayward w/ DROP the STAR, Purusa",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/466467/crashing-wayward-w-drop-the-star-purusa",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/466467/crashing-wayward-w-drop-the-star-purusa",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-dinosaur-jr-with-stef-chura-2026-10-22",
     "title": "Dinosaur Jr. with Stef Chura",
     "subtitle": "Live show · Rock, Noise & experimental",
@@ -1035,6 +1254,49 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-star-theater-2026-10-22-b4baafbd4fc4",
+    "title": "ETANA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/etana/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/etana/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "indie-no-jon-von-blood-and-the-trick-or-treats-barkeep-2026-10-22",
@@ -1239,6 +1501,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-23T19:00:00-07:00"
   },
   {
+    "id": "auto-twilight-2026-10-23-b509b1405d80",
+    "title": "Halloween Cover Show w/ The Slightest Ure (Sparks), Five Big Rocks (Frank Zappa), Hard Pill (Deftones), Sad Boy Union (Bare Naked Ladies), Gayvore (Gravure)",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-23T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/466800/halloween-cover-show-w-the-slightest-ure-sparks-five-big-rocks-frank-zappa-hard-pill-deftones-sad-boy-union-bare-naked-ladies-gayvore-gravure",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/466800/halloween-cover-show-w-the-slightest-ure-sparks-five-big-rocks-frank-zappa-hard-pill-deftones-sad-boy-union-bare-naked-ladies-gayvore-gravure",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "turn-turn-turn-liquid-cross-collate-pink-pollen-2026-10-23",
     "title": "Liquid Cross + Collate + Pink Pollen",
     "subtitle": "Punk · live bill",
@@ -1299,6 +1604,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-23T19:30:00-07:00"
+  },
+  {
+    "id": "auto-star-theater-2026-10-23-a6a33ed85e39",
+    "title": "VIOLET GROHL BE SWEET TO ME TOUR with Suzy Clue",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-23T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/violet-grohl-be-sweet-to-me-tour/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/violet-grohl-be-sweet-to-me-tour/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "the-coffin-club-ritual-howls-with-grizz-cll-the-secret-light-unholy-gathering-2026-10-23",
@@ -1476,6 +1824,49 @@ window.SHOWS_EVENTS = [
     ]
   },
   {
+    "id": "auto-no-fun-2026-10-24-ef8142a0e377",
+    "title": "Izy Kactus • The Fine Print • Ray Ottoboni",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Izy Kactus https://izykactus.bandcamp.com/ https://linktr.ee/izy_kactus https://www.instagram.com/izykactus/ The Fine Print https://www.thefineprintpdx.com/ https://www.instagram.com/thefinepri",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/izy-kactus-the-fine-print-ray-ottoboni",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/izy-kactus-the-fine-print-ray-ottoboni",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "twilight-cafe-and-bar-terra-s-birthday-show-trans-panic-river-city-ruin-kids-on-fire-t-2026-10-24",
     "title": "Terra's Birthday Show: Trans Panic, River City Ruin, Kids on Fire, The Immortal Dub CVNTS",
     "subtitle": "Punk, Queer punk · live bill",
@@ -1528,6 +1919,49 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music"
+  },
+  {
+    "id": "auto-star-theater-2026-10-24-babd180b83e3",
+    "title": "CHERRY POPPIN DADDIES with Los Mal Hablados and The Skylarkers",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/cherry-poppin-daddies-with-los-mal-hablados-and-the-skylarkers/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/cherry-poppin-daddies-with-los-mal-hablados-and-the-skylarkers/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "kenton-club-weird-rainbow-little-hexes-heirloom-monsters-mask-appeal-2026-10-24",
@@ -2082,6 +2516,49 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-no-fun-2026-10-27-7b3ec7b18128",
+    "title": "CMG Improv Summit: blond-noise • GITSLINGER • Oleo & Al Pasture",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10-30 suggested donation (sliding scale), 21+, 7PM Doors/8PM Music __________________________________ The Creative Music Guild https://creativemusicguild.org/ blond-noise https://blond-noise.bandcamp.com/ https://blond-noise.com/ https://www.instagram.com/blond_noise blond-noise",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/cmg-improv-summit-blond-noise-gitslinger-oleo-al-pasture",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/cmg-improv-summit-blond-noise-gitslinger-oleo-al-pasture",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "dantes-blitzkid-2026-10-27",
@@ -2725,6 +3202,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-29T19:00:00-07:00"
   },
   {
+    "id": "auto-star-theater-2026-10-29-f95963a012a0",
+    "title": "FENIX FLEXIN",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/fenix-flexin/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/fenix-flexin/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-pain-of-truth-2026-10-30",
     "title": "Pain of Truth",
     "subtitle": "Hardcore · With Missing Link, Fatal Realm, Locked Shut",
@@ -2921,6 +3441,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-30T19:30:00-07:00"
   },
   {
+    "id": "auto-star-theater-2026-10-30-5be79fb2bf6a",
+    "title": "CONSTANT DEBAUCHERY with Sacre Bleu",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/constant-debauchery-with-sacre-bleu/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/constant-debauchery-with-sacre-bleu/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "psu-farmers-2026-10-31",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -3099,6 +3662,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-31T19:00:00-07:00"
+  },
+  {
+    "id": "auto-star-theater-2026-10-31-c7509d815c72",
+    "title": "BOSCO&rsquo;S HAUS OF WHORRORS: Halloween Night Direct from TRANSylvania",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/boscos-haus-of-whorrors-halloween-night-direct-from-transylvania/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/boscos-haus-of-whorrors-halloween-night-direct-from-transylvania/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "indie-tw-pacific-monkeys-arctic-monkeys-km3-the-cure-2026-10-31",
@@ -3396,6 +4002,49 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-star-theater-2026-11-01-5a7f28d8000f",
+    "title": "CHURCH OF HIVE",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-01T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-10/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-10/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-slothrust-with-um-jennifer-2026-11-02",
     "title": "Slothrust with Um, Jennifer?",
     "subtitle": "Live show · Rock",
@@ -3441,6 +4090,92 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-no-fun-2026-11-03-87e3c642e792",
+    "title": "Taste Nate • Oscar Goldman • Broken Toyz • Yourhomie Kyle • Diction Uno • Kable Roc • Grim Jim",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Broken Toyz Yourhomie Kyle https://www.instagram.com/yourhomiekyle/ Oscar Goldman https://oscargoldmanmusic.bandcamp.com/ https://fakefour.bandcamp.com/ https://www.instagram.com/oscargoldmanmu",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/taste-nate-oscar-goldman-broken-toyz-yourhomie-kyle-diction-uno-kable-roc-grim-jim",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/taste-nate-oscar-goldman-broken-toyz-yourhomie-kyle-diction-uno-kable-roc-grim-jim",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2026-11-03-0e27dd1c1fd7",
+    "title": "DALEY",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/daley/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/daley/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "riso-2026-11-04",
     "title": "Risograph Basics",
     "subtitle": "Beginner-friendly printing and experimentation",
@@ -3481,6 +4216,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "outlet-riso-basics-2026"
+  },
+  {
+    "id": "auto-star-theater-2026-11-04-d40600cd0fd1",
+    "title": "SOLD OUT: NAHKO AND MEDICINE FOR THE PEOPLE &ndash; HOKA 10TH ANNIVERSARY TOUR",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-pinhead-gunpowder-2026-11-04",
@@ -3528,6 +4306,49 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-twilight-2026-11-04-d4a8b47cc5a5",
+    "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/463792/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/463792/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "roseland-periphery-with-ne-obliviscaris-greyhaven-ando-san-2026-11-05",
     "title": "Periphery with Ne Obliviscaris, Greyhaven & Ando San",
     "subtitle": "Live show · Metal",
@@ -3571,6 +4392,92 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-no-fun-2026-11-05-cf3c3e7b3f20",
+    "title": "Mary Chicken Soup & Rice • The Vardaman Ensemble • Iron Sheep",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Mary Chicken Soup & Rice https://marychickensoupandrice.bandcamp.com/ https://www.instagram.com/marychickensoup/ The Vardaman Ensemble https://thevardamanensemble.bandcamp.com/ https://vardlink",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/mary-chicken-soup-rice-the-vardaman-ensemble-iron-sheep",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/mary-chicken-soup-rice-the-vardaman-ensemble-iron-sheep",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2026-11-05-7f1c666eb840",
+    "title": "NAHKO AND MEDICINE FOR THE PEOPLE &ndash; HOKA 10TH ANNIVERSARY TOUR",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/nahko-and-medicine-for-the-people-hoka-10th-anniversary-tour-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "wonder-buzzcocks-with-grade-2-whisper-hiss-2026-11-05",
@@ -3771,6 +4678,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-05T19:30:00-08:00"
   },
   {
+    "id": "auto-no-fun-2026-11-06-ab7c7eee21e1",
+    "title": "Ariana Giokaris • Not Lenny • underexposed • Naomi March",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Ariana Giokaris https://arianagiokaris.bandcamp.com/ https://arianagiokaris.com/music/ https://www.instagram.com/arianagiokaris/ Not Lenny https://not-lenny.bandcamp.com/ https://orcd.co/notlen",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/underexposed-ariana-giokaris-naomi-march-no-lenny",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/underexposed-ariana-giokaris-naomi-march-no-lenny",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-tw-93feetofsmoke-fats-e-polearm-guest-2026-11-06",
     "title": "93feetofsmoke • Fats'e • Polearm • guest",
     "subtitle": "Independent live show · style to be confirmed",
@@ -3806,6 +4756,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-11-06T19:30:00-08:00"
+  },
+  {
+    "id": "auto-star-theater-2026-11-06-c36321b05efc",
+    "title": "THE HYRULE BALL",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/the-hyrule-ball/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/the-hyrule-ball/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "psu-farmers-2026-11-07",
@@ -4223,6 +5216,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-07T20:00:00-08:00"
   },
   {
+    "id": "auto-twilight-2026-11-07-0e370f48476f",
+    "title": "Y'allternative: An Alternative Country Experience Drag Show w/ PYDA PICKELS, SEVEN, BUSSY SYRUP, NASHVILLE HOTT, SYNCEIRE LOVE, AUNT GORE, BUNNY ANGELINA DIVINE",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468211/yallternative-an-alternative-country-experience-drag-show-w-pyda-pickels-seven-bussy-syrup-nashville-hott-synceirelove-aunt-gore-bunny-angelina-divine",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468211/yallternative-an-alternative-country-experience-drag-show-w-pyda-pickels-seven-bussy-syrup-nashville-hott-synceirelove-aunt-gore-bunny-angelina-divine",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "adx-drywall-repair-2026-11-08",
     "title": "Butch Bootcamp: Drywall Repair",
     "subtitle": "Practical repair skills with sliding-scale pricing",
@@ -4414,6 +5450,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-11-08T19:00:00-08:00"
+  },
+  {
+    "id": "auto-star-theater-2026-11-08-f7af7b8bbf17",
+    "title": "CHURCH OF HIVE",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-11/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-11/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "dantes-jon-spencer-2026-11-10",
@@ -4869,6 +5948,49 @@ window.SHOWS_EVENTS = [
     "seriesId": "shoot-the-moon-2026"
   },
   {
+    "id": "auto-star-theater-2026-11-13-9f3f7f60c6fd",
+    "title": "SUZY SHEER with Patch +",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/suzy-sheer-with-patch/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/suzy-sheer-with-patch/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "psu-farmers-2026-11-14",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -5210,6 +6332,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-14T19:00:00-08:00"
   },
   {
+    "id": "auto-star-theater-2026-11-14-729b45c3c421",
+    "title": "DESERT DWELLERS with Entangled Mind, Mah Ze Tar",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/desert-dwellers-with-entangled-mind-mah-ze-tar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/desert-dwellers-with-entangled-mind-mah-ze-tar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "king-farmers-2026-11-15",
     "title": "King Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -5332,6 +6497,49 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/kingdom-of-giants"
       ]
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-15-ea90326b4273",
+    "title": "Sure • Sean Martin West • Terrible Pop",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Sure https://surepdx.bandcamp.com/ https://www.instagram.com/abandcalledsure/ Sean Martin West https://www.seanmartinwest.com/ https://www.instagram.com/seanmartinwest/ Terrible Pop https://ter",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -5733,6 +6941,49 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.season-of-mist.com/bands/christian-death/"
       ]
+    }
+  },
+  {
+    "id": "auto-star-theater-2026-11-17-75ea3268d129",
+    "title": "CLARION",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/clarion/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/clarion/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -6680,6 +7931,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-22T17:00:00-08:00"
   },
   {
+    "id": "auto-no-fun-2026-11-22-58cb926d5eaa",
+    "title": "Amy Bleu • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Amy Bleu https://amybleu.bandcamp.com/ https://www.amybleuarts.com/ https://www.instagram.com/amy.bleu/ #block-0c7464771840653e0c2d { --stroke-style: none;--stroke-thickness: 2px; --tweak-text-",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/amy-bleu-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/amy-bleu-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-tw-atomic-rule-andy-williams-formerly-of-etid-guest-2026-11-22",
     "title": "Atomic Rule (Andy Williams formerly of ETID) • guest",
     "subtitle": "Independent live show · Hardcore, Metal",
@@ -6871,6 +8165,49 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://distantofficial.bandcamp.com/music"
       ]
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-24-d32f84345ef3",
+    "title": "Jen Howard • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Jen Howard https://jenhowardlive.bandcamp.com/ https://www.jenhowardlive.com/ https://www.instagram.com/jenhowardlive/ #block-d12e42f8143f1413105f { } #block-d12e42f8143f1413105f .sqs-html-cont",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/jen-howard-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/jen-howard-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -7343,6 +8680,49 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-star-theater-2026-11-28-a6f81228bfae",
+    "title": "QUEEN MOTHER with Kiss Me Kiss Me Kiss Me",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/queen-mother-with-kiss-me-kiss-me-kiss-me/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/queen-mother-with-kiss-me-kiss-me-kiss-me/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-fair-stand-the-fields-of-france-miguel-mejia-support-tba-2026-11-29",
     "title": "Fair Stand The Fields of France • Miguel Mejia • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -7478,6 +8858,49 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-12-01T19:00:00-08:00"
   },
   {
+    "id": "auto-twilight-2026-12-02-cebeec8bef78",
+    "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/463793/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/463793/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "adx-arts-agriculture-2026-12-03",
     "title": "Oregon Arts & Agriculture Holiday Market",
     "subtitle": "Local makers, agriculture, and community",
@@ -7586,6 +9009,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-12-04T19:00:00-08:00"
+  },
+  {
+    "id": "auto-star-theater-2026-12-04-79ee7422f975",
+    "title": "THE BAD PLUS",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/the-bad-plus/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/the-bad-plus/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "hawthorne-unkle-2026-12-04",
@@ -7834,6 +9300,49 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-star-theater-2026-12-05-a3dd13d83319",
+    "title": "ISAIAH SHARKEY",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/isaiah-sharkey/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/isaiah-sharkey/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "moda-triumph-the-rock-roll-machine-reloaded-tour-2026-12-05",
     "title": "Triumph — The Rock & Roll Machine Reloaded Tour",
     "subtitle": "Live show · Rock",
@@ -7877,6 +9386,49 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-star-theater-2026-12-06-d64f778de753",
+    "title": "PIANO QUEEN",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/piano-queen/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/piano-queen/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "hawthorne-miss-may-i-born-of-osiris-2026-12-08",
@@ -8138,6 +9690,49 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-12-10T19:00:00-08:00"
+  },
+  {
+    "id": "auto-star-theater-2026-12-10-932fa9eab451",
+    "title": "MISSIO: Love & Heartbreak Tour w/ Ryan Oakes, Wrung",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-w-fifteenoeight-kent-osborne/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-w-fifteenoeight-kent-osborne/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "crafty-wonderland-2026-12-11",
@@ -8417,6 +10012,49 @@ window.SHOWS_EVENTS = [
     "sourceNote": "Directions point to Outlet; the market spans several nearby businesses."
   },
   {
+    "id": "auto-star-theater-2026-12-12-bbf1906d8ef8",
+    "title": "GENEVIEVE ARTADI featuring Louis Cole and Chiquita Magic",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/genevieve-artadi-featuring-louis-cole-and-chiquita-magic/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/genevieve-artadi-featuring-louis-cole-and-chiquita-magic/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-softgaze-greyhound-go-support-tba-2026-12-12",
     "title": "Softgaze • Greyhound Go • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -8490,5 +10128,263 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion",
     "seriesId": "crafty-wonderland-holiday-2026",
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
+  },
+  {
+    "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
+    "title": "You, The Audience • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ You, The Audience https://www.instagram.com/you_the_audience/ #block-5f96ee0fe62c35cbbe53 { } #block-5f96ee0fe62c35cbbe53 .sqs-html-content { } #block-5f96ee0fe62c35cbbe53 { mix-blend-mode: var",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/you-the-audience-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/you-the-audience-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-27-3a50f6cec19f",
+    "title": "Henry Ivie-Gardner • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-27T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Henry Ivie-Gardner https://www.instagram.com/henryiviegardner/ #block-d741fba792ed6b5ea76f { --stroke-style: none;--stroke-thickness: 2px; --tweak-text-block-stroke-color: hsla(var(--black-hsl)",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-29-32edecf7f70d",
+    "title": "Etta Dean • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-29T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Etta Dean https://ettadean.bandcamp.com/ https://www.instagram.com/ettatheghost/ #block-82660837b5176b9ed8a5 { --stroke-style: none;--stroke-thickness: 2px; --tweak-text-block-stroke-color: hsl",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/etta-dean-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/etta-dean-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2027-01-02-a604e3510c8d",
+    "title": "Tito Padrino • 61TO16 • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Tito Padrino https://titopadrino.bandcamp.com/ https://www.titopadrino.com/ https://www.instagram.com/tito_padrino/ 61TO16 https://www.61to16.com/ https://www.instagram.com/61to16/ #block-80ff8",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/tito-padrino-61to16-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/tito-padrino-61to16-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2027-01-15-bbbbf0c1aa98",
+    "title": "Jake Soffer • Jarrett Tetsuo Domen • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-15T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Jake Soffer https://jakesoffer.bandcamp.com/ https://distrokid.com/hyperfollow/jakesoffer/solo-electric-guitar https://www.instagram.com/jake_soffer/ Jarrett Tetsuo Domen https://tetsuo2000.ban",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2027-01-16-6d787a26791b",
+    "title": "BLISTER • TBA • TBA",
+    "subtitle": "Source-discovered music listing · format and time need review",
+    "category": "Music",
+    "tags": [
+      "Music listing",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ BLISTER https://blisterpdx.bandcamp.com/ https://linktr.ee/blisterpdx https://www.instagram.com/blister_scripture/ #block-e76bb4dd47a50909fc4d { --stroke-style: none;--stroke-thickness: 2px; --",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/blister-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-18",
+    "verificationMethod": "Automated venue data; editorial date, time, live-show and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/blister-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   }
 ];
