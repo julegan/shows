@@ -133,6 +133,15 @@ async function fetchItems(source){
  if(source.adapter==="star-theater-html"){
   const items=adapters.parseStar(body,source);
   if(!items.length)throw Error("Star Theater layout changed; no dated events parsed");
+  for(const item of items){
+    try{
+      const response=await fetch(item.fullUrl,{headers:{Accept:"text/html","User-Agent":"SHOWS-artwork-review/0.1"},signal:AbortSignal.timeout(14000),redirect:"error"});
+      if(response.ok){
+        const html=(await response.text()).slice(0,550000);
+        item.artwork=adapters.eventArtworkFromHtml(html,item.fullUrl)||item.artwork;
+      }
+    }catch(_){}
+  }
   return items;
  }
  if(source.adapter==="promoter-list-html"){

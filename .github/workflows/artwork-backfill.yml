@@ -1,6 +1,13 @@
 name: Propose existing event flyers (review-only)
 on:
   workflow_dispatch:
+    inputs:
+      batch:
+        description: "Zero-based group of 35 source pages"
+        required: false
+        default: "0"
+  schedule:
+    - cron: "37 18 * * 2,5"
 permissions:
   contents: write
   pull-requests: write
@@ -22,6 +29,9 @@ jobs:
           if [ "$open" -gt 0 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; fi
       - name: Find official event images
         if: steps.pending.outputs.skip != 'true'
+        env:
+          ARTWORK_BATCH: ${{ github.event.inputs.batch || github.run_number }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
         run: node scripts/backfill-artwork.js
       - name: Verify data and tests
         if: steps.pending.outputs.skip != 'true'
