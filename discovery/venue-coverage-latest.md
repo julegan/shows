@@ -6,7 +6,7 @@
 
 | Venue | Listed future music | All listed future events | Official source status |
 | --- | ---: | ---: | --- |
-| Black Water | 0 | 0 | source-blocked |
+| Black Water | 8 | 11 | active-adapter (public iCal; time TBA) |
 | High Water Mark Lounge | 2 | 2 | source-blocked |
 | Twilight Cafe and Bar | 25 | 25 | active-adapter |
 | The Coffin Club | 5 | 5 | source-empty |
@@ -43,9 +43,9 @@
 | Word Virus Books | 0 | 0 | adapter-needed |
 | The Six (Midnight PDX Bar) | 0 | 0 | adapter-needed |
 
-## Sources with no existing feed
+## Connections still incomplete
 
-Black Water and High Water Mark returned 403 to the automated collector; do not bypass access controls. The Coffin Club's own page currently shows no published events, despite public independent listings. Record gaps without marking the venue inactive.
+Black Water's public Google iCalendar now supplies 11 future dated listings (with unknown performance times). High Water Mark's official website remains HTTP 403 to the collector, so authorized Soundcontrol/TreeTix sources remain the fallback. The Coffin Club embeds VenuePilot but its website currently says no published events despite independently verifiable ticket pages. High Limit uses an Afton Tickets embed; the complete event feeds for those two venues are not yet connected.
 
 ## Unindexed venues already in the calendar
 
@@ -70,6 +70,6 @@ Black Water and High Water Mark returned 403 to the automated collector; do not 
 
 ## Coverage health metric
 
-All event records: 226. Music-labeled: 172. Source artwork URLs: 0.
+All event records proposed on this branch: 237. Music-labeled: 180. Source artwork URLs: 0.
 No event photo from source has yet been reviewed and imported into the canonical calendar.
 
