@@ -58,6 +58,8 @@ function extract(item,src,now){
  try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
  const date=start.slice(0,10);
  if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
+ const blocked=source.blockedDates?.find(x=>x.date===date);
+ if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
  if(!music(item))return {hold:"Live-music evidence not established",title,url,date};
  const asof=localDay(now);
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(url).digest("hex").slice(0,12);
