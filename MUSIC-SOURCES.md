@@ -266,7 +266,7 @@ Sang Bleu's own EGOS page calls its music doomy dance punk and tags punk. [Refer
 
 ## Existing bills made easier to find
 
-Sixteen existing records receive evidence-backed style metadata and clearer subtitles; they are not added a second time. Five other existing music records map their already reviewed genre tags into the same broad filters.
+Sixteen existing records receive evidence-backed style metadata and clearer subtitles; they are not added a second time. Earlier reviewed genre tags also map into the broad filters where the existing evidence supports a match.
 
 | Existing event ID | Browsing styles | Evidence |
 | --- | --- | --- |
