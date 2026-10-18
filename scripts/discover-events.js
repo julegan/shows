@@ -46,7 +46,7 @@ function urlOf(item,src){
 function music(item){
  const input=tidy([item.title,item.body,item.excerpt,...(Array.isArray(item.tags)?item.tags:[]),...(Array.isArray(item.categories)?item.categories:[])].filter(Boolean).join(" "),2500).toLowerCase();
  if(/\b(trivia|karaoke|open mic|comedy|bingo|quiz|brunch|screening|happy hour)\b/.test(input))return false;
- return /\b(live music|bands?|concert|punk|metal|hardcore|goth|rock show|music starts|touring|gig|live performance|show with|doors at)\b/.test(input);
+ return /\b(live music|music|bands?|concert|punk|metal|hardcore|goth|rock show|touring|gig|live performance|show with|doors at)\b/.test(input);
 }
 function extract(item,src,now){
  if(!item||typeof item!=="object")return {hold:"Unusable source object"};
