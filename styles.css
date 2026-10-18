@@ -72,3 +72,15 @@
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #24518c;outline-offset:3px}
 .event-card:focus-visible{outline-offset:2px}
 @media(max-width:680px){.event-chip{min-height:24px;height:24px;display:flex;align-items:center;justify-content:center;background:#dae2f5;border:1px solid #9baacf;font-size:10px;line-height:1.1;padding:2px}.event-chip:before{content:"Event";color:#273d67;font-size:10px;font-weight:700}.event-chip[data-category="Arts & DIY"]{background:#f3e5de;border-color:#b67e66}.event-chip[data-category="Arts & DIY"]:before{content:"Art";color:#663b2a}.event-chip[data-category="Workshops"]{background:#e5ead4;border-color:#83984f}.event-chip[data-category="Workshops"]:before{content:"Workshop";color:#3c4f23}.event-chip[data-category="Markets"]:before{content:"Market";color:#344b2e}.event-chip[data-category="Community"]:before{content:"Community";color:#503961}.event-chip .chip-time{display:none}}
+
+
+/* Axe-confirmed calendar control corrections */
+.event-chip .chip-time{opacity:1;color:#27334e;font-weight:700}
+@media(max-width:680px){
+.event-chip{color:#263852;background:#dbe4f5!important;border:1px solid #8399c4!important}
+.event-chip[data-category="Arts & DIY"]{background:#f3e4dd!important;color:#643c2e}
+.event-chip[data-category="Workshops"]{background:#e5ead4!important;color:#34491f}
+.event-chip[data-category="Markets"]{background:#e5e9df!important;color:#304b30}
+.event-chip[data-category="Community"]{background:#ede3f0!important;color:#543960}
+.event-chip:before{color:inherit!important}
+}
