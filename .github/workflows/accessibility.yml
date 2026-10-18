@@ -1,0 +1,27 @@
+name: WCAG 2.1 AA browser checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser accessibility testing
+        run: |
+          npm install --no-save --no-package-lock playwright axe-core
+          npx playwright install --with-deps chromium
+      - name: Serve static site
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory . >/tmp/shows-site.log 2>&1 &
+          for n in $(seq 1 15); do curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0 || sleep 1; done
+          echo "Local site did not start"; exit 1
+      - name: Axe-core WCAG 2.1 AA across desktop and mobile
+        env:
+          SHOWS_PORTFOLIO: '0'
+        run: node tests/accessibility.cjs
