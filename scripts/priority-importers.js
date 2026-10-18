@@ -168,7 +168,7 @@ function unfoldIcs(raw){
 function icsValue(x){
  return String(x||"").replace(/\\[nN]/g,"\n").replace(/\\,/g,",").replace(/\\;/g,";").replace(/\\\\/g,"\\").trim();
 }
-function parseBlackWaterIcs(raw,source){
+function parseBlackWaterIcs(raw,source,minDate){
  if(!/^BEGIN:VCALENDAR\r?\n/.test(raw)||!/\r?\nEND:VCALENDAR\s*$/.test(raw))throw Error("Invalid public Google Calendar iCalendar feed");
  const chunks=unfoldIcs(raw).join("\n").split("BEGIN:VEVENT").slice(1);
  const rows=[],seen=new Set();
@@ -179,10 +179,11 @@ function parseBlackWaterIcs(raw,source){
   const start=field("DTSTART"),summary=field("SUMMARY"),uid=field("UID");
   if(!start||!summary||!uid)continue;
   if(/^CANCELLED$/i.test(field("STATUS")?.value||""))continue;
-  if(field("RRULE")){rows.push({hold:"Recurring calendar rule needs dated individual instances; no inferred dates",title:icsValue(summary.value)});continue;}
   const m=/^(\d{4})(\d\d)(\d\d)(?:T(\d\d)(\d\d)(\d\d)?(Z)?)?$/.exec(start.value);
   if(!m)continue;
   const date=m[1]+"-"+m[2]+"-"+m[3],time=m[4]&&m[5]?m[4]+":"+m[5]:null;
+  if(minDate&&date<minDate)continue;
+  if(field("RRULE")){rows.push({hold:"Recurring calendar rule needs dated individual instances; no inferred dates",title:icsValue(summary.value)});continue;}
   let startDate=null;
   if(time){
    const tz=start.key.match(/TZID="?([^";]+)"?/i)?.[1];
