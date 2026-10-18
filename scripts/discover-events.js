@@ -157,11 +157,12 @@ function report(r,errors,now){
  const lines=["# SHOWS automated discovery review — "+localDay(now),"",
   "Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.","",
   "## New candidates: "+r.accepted.length,"",
+  ...[...new Set(r.accepted.map(e=>e.discovery?.sourceId).filter(Boolean))].map(id=>"- "+id+": "+r.accepted.filter(e=>e.discovery?.sourceId===id).length+" proposals"),"" ,
   "| Date | Event | Venue | Listed time | Primary listing |",
   "| --- | --- | --- | --- | --- |"];
  for(const e of r.accepted)lines.push("| "+e.startsAt.slice(0,10)+" | "+e.title.replace(/\|/g,"/")+" | "+e.venue+" | "+e.startsAt.slice(11,16)+" (doors/show unverified) | "+e.url+" |");
  lines.push("","## Held for review: "+r.held.length,"");
- for(const e of r.held)lines.push("- "+(e.title||"Untitled")+" — "+e.hold+" "+(e.url||""));
+ for(const e of r.held)lines.push("- "+(e.sourceId?"["+e.sourceId+"] ":"")+(e.date?"("+e.date+") ":"")+(e.title||"Untitled")+" — "+e.hold+" "+(e.url||""));
  lines.push("","## Source errors: "+errors.length,"");
  for(const x of errors)lines.push("- "+x.source+": "+x.error);
  lines.push("","## Required editorial checks","",
@@ -184,15 +185,16 @@ async function run(opts={}){
    if(!Array.isArray(items))throw Error("Source did not return an array");
    if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
    for(const item of items){
-    if(item?.hold){found.push(item);continue;}
-    found.push(extract(item,src,now));
+    if(item?.hold){found.push({...item,sourceId:src.id});continue;}
+    const record=extract(item,src,now);
+    found.push(record.event?record:{...record,sourceId:src.id});
    }
    console.log(src.id+": "+items.length+" source items examined");
   }catch(e){errors.push({source:src.id,error:String(e.message||e)});console.error(src.id+": "+String(e.message||e));}
  }
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
  const result=reconcile(parsed.events,found);
- console.log(JSON.stringify({proposed:result.accepted.length,held:result.held.length,skipped:result.skipped.length,errors}));
+ console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(!result.accepted.length)return {...result,errors};
