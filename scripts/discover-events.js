@@ -4,6 +4,7 @@
 const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
+const adapters=require("./priority-importers");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -39,8 +40,12 @@ function urlOf(item,src){
  if(!candidate)return null;
  try {
   const u=new URL(candidate,src.baseUrl);
-  if(u.protocol!=="https:"||u.hostname!==new URL(src.baseUrl).hostname||!u.pathname.startsWith("/events/"))return null;
-  u.search="";u.hash="";return u.href;
+  const primaryHost=u.hostname===new URL(src.baseUrl).hostname;
+  const validPath=src.adapter==="squarespace-json"?u.pathname.startsWith("/events/"):src.adapter==="twilight-html"?u.pathname.startsWith("/event/"):src.adapter==="star-theater-html"?u.pathname.startsWith("/tm-event/"):false;
+  const promoterLink=src.adapter==="promoter-list-html"&&u.hostname==="www.treetix.com"&&u.pathname==="/event"&&u.searchParams.get("cal")==="soundcontrol";
+  if(u.protocol!=="https:"&&!promoterLink)return null;
+  if(!((primaryHost&&validPath)||promoterLink))return null;
+  if(!promoterLink)u.search="";u.hash="";return u.href;
  }catch(_){return null;}
 }
 function music(item){
@@ -53,23 +58,32 @@ function extract(item,src,now){
  const title=tidy(item.title),url=urlOf(item,src);
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  const stamp=item.startDate??item.startTime??item.start;
- if(stamp==null)return {hold:"Event time missing",title,url};
+ if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time":"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
  try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
+ if(src.type==="promoter"){
+  const mapped={
+   "high water mark lounge":{venue:"High Water Mark Lounge",address:"6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",neighborhood:"Woodlawn"},
+   "twilight cafe and bar":{venue:"Twilight Cafe and Bar",address:"832 SE Grand Ave, Portland, OR 97214",neighborhood:"Central Eastside"},
+   "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"}
+  }[String(item.venue||"").toLowerCase()];
+  if(!mapped)return {hold:"Promoter venue location must be verified inside Portland",title,url,date:item.dateOnly,venue:item.venue};
+  item={...item,...mapped};
+ }
  const date=start.slice(0,10);
  if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
- if(!music(item))return {hold:"Live-music evidence not established",title,url,date};
+ if(!item.sourceVerifiedMusic&&!music(item))return {hold:"Live-music evidence not established",title,url,date};
  const asof=localDay(now);
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(url).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
   id,title,subtitle:"Source-discovered music listing · format and time need review",category:"Music",
   tags:["Music listing","Time needs confirmation","Format needs confirmation"],musicStyles:[],eventFormat:"unverified",
-  startTimeKind:"listed",startsAt:start,endsAt:null,venue:src.venue,address:src.address,neighborhood:src.neighborhood,
+  startTimeKind:"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
-  description:"Automatically discovered from a primary venue listing. The advertised time may be doors, not show start; confirm with the organizer. "+tidy(item.excerpt||item.body||""),
+  description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
   source:src.name,url,icon:"♫",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, live-show and cancellation verification required",
   sourceCategories:cat,sources:[{name:src.name,url,kind:"organizer",checkedAt:asof,originalCategories:cat}],
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
@@ -96,11 +110,34 @@ function reconcile(existing,records){
 }
 async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
- if(u.protocol!=="https:"||u.hostname!==home.hostname||source.adapter!=="squarespace-json")throw Error("Unsafe or unsupported source adapter");
- const response=await fetch(u,{headers:{"Accept":"application/json","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:"error"});
+ if(u.protocol!=="https:"||u.hostname!==home.hostname||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:"error"});
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
+ if(source.adapter==="twilight-html"){
+  const links=adapters.parseTwilightLinks(body,source);
+  if(!links.length)throw Error("Twilight calendar has no event detail links");
+  const rows=[];
+  for(const link of links){
+   try{
+    const detail=await fetch(link,{headers:{"Accept":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:"error"});
+    if(!detail.ok){rows.push({hold:"Twilight event page HTTP "+detail.status,url:link});continue;}
+    rows.push(adapters.parseTwilightDetail((await detail.text()).slice(0,450000),link,source));
+   }catch(e){rows.push({hold:"Twilight event fetch failed: "+String(e.message||e),url:link});}
+  }
+  return rows;
+ }
+ if(source.adapter==="star-theater-html"){
+  const items=adapters.parseStar(body,source);
+  if(!items.length)throw Error("Star Theater layout changed; no dated events parsed");
+  return items;
+ }
+ if(source.adapter==="promoter-list-html"){
+  const items=adapters.parseSoundcontrol(body,source);
+  if(!items.length)throw Error("Soundcontrol roster unavailable or changed");
+  return items;
+ }
  let json;try{json=JSON.parse(body)}catch(_){throw Error("Venue returned non-JSON response");}
  return itemsOf(json);
 }
@@ -134,7 +171,10 @@ async function run(opts={}){
    const items=opts.load?await opts.load(src):await fetchItems(src);
    if(!Array.isArray(items))throw Error("Source did not return an array");
    if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
-   for(const item of items)found.push(extract(item,src,now));
+   for(const item of items){
+    if(item?.hold){found.push(item);continue;}
+    found.push(extract(item,src,now));
+   }
    console.log(src.id+": "+items.length+" source items examined");
   }catch(e){errors.push({source:src.id,error:String(e.message||e)});console.error(src.id+": "+String(e.message||e));}
  }
