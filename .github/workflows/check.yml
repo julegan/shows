@@ -35,6 +35,7 @@ jobs:
         run: |
           node --check scripts/priority-importers.js
           node tests/priority-importers.js
+          node scripts/probe-treetix.js
 
       - name: Live import integration check (candidate-only)
         if: github.head_ref == 'feat/priority-importers-2026-10'
