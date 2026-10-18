@@ -21,14 +21,6 @@ jobs:
           node tests/validate.js
           node tests/discovery.js
 
-      - name: Probe high-priority venue feeds (read-only)
-        run: node scripts/probe-venue-sources.js
-
-      - name: Inspect new Black Water calendar entries (read-only)
-        env:
-          SHOWS_CANDIDATE_DATA: "1"
-        run: node scripts/preview-black-water.js
-
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 
