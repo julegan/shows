@@ -44,6 +44,7 @@ function urlOf(item,src){
   const validPath=src.adapter==="squarespace-json"?u.pathname.startsWith("/events/"):src.adapter==="twilight-html"?u.pathname.startsWith("/event/"):src.adapter==="star-theater-html"?u.pathname.startsWith("/tm-event/"):false;
   const promoterLink=src.adapter==="promoter-list-html"&&u.hostname==="www.treetix.com"&&u.pathname==="/event"&&u.searchParams.get("cal")==="soundcontrol";
   if(u.protocol!=="https:")return null;
+  if(src.adapter==="black-water-ics"&&u.href===new URL(src.baseUrl+"/").href)return u.href;
   if(!((primaryHost&&validPath)||promoterLink))return null;
   if(!promoterLink)u.search="";u.hash="";return u.href;
  }catch(_){return null;}
@@ -71,9 +72,19 @@ function extract(item,src,now){
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  // Every dated venue event is eligible; classify rather than discard unrelated categories.
  const stamp=item.startDate??item.startTime??item.start;
- if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
+ const dateOnly=src.adapter==="black-water-ics"&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
+ if(stamp==null&&!dateOnly)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
- try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
+ if(dateOnly){
+   try {
+    const [y,m,d]=item.dateOnly.split("-").map(Number);
+    const anchor=adapters.wallToPacific(y,m,d,"00:00");
+    if(!anchor)throw Error("Invalid source date");
+    start=localTime(anchor); // Sorting anchor only. The event has no reported start time.
+   }catch(_){return {hold:"Bad date-only event",title,url};}
+ }else{
+   try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
+ }
  if(src.type==="promoter"){
   const mapped={
    "high water mark lounge":{venue:"High Water Mark Lounge",address:"6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",neighborhood:"Woodlawn"},
@@ -89,13 +100,14 @@ function extract(item,src,now){
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
  const category=categoryOf(item);
  const asof=localDay(now);
- const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(url).digest("hex").slice(0,12);
+ const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:url;
+ const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
   id,title,subtitle:"Source-discovered venue event · details need review",category,
   tags:[category==="Unclassified"?"Category needs review":"Source-listed "+category,"Time needs confirmation","Format needs confirmation"],
   musicStyles:[],eventFormat:"unverified",
-  startTimeKind:"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
+  startTimeKind:dateOnly?"date-only":"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
   source:src.name,url,icon:category==="Music"?"♫":"◇",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, event type and cancellation verification required",
@@ -125,11 +137,12 @@ function reconcile(existing,records){
 }
 async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
- if(u.protocol!=="https:"||u.hostname!==home.hostname||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||u.hostname!==home.hostname||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:"error"});
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
+ if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source);
  if(source.adapter==="twilight-html"){
   const links=adapters.parseTwilightLinks(body,source);
   if(!links.length)throw Error("Twilight calendar has no event detail links");
