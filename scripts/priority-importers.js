@@ -159,4 +159,53 @@ function parseSoundcontrolDetail(html,record){
   description:"Promoter and official ticket page both confirm the venue and event date. Performance time appears on ticketing detail."};
 }
 
-module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific,time24,eventArtworkFromHtml,artworkCandidate};
+
+/* Google Calendar's public iCalendar export is the venue's own announced feed.
+   Recurrent masters are never extrapolated; each dated instance must appear in the feed. */
+function unfoldIcs(raw){
+ return String(raw||"").replace(/\r\n[ \t]|\n[ \t]/g,"").split(/\r?\n/);
+}
+function icsValue(x){
+ return String(x||"").replace(/\\[nN]/g,"\n").replace(/\\,/g,",").replace(/\\;/g,";").replace(/\\\\/g,"\\").trim();
+}
+function parseBlackWaterIcs(raw,source){
+ if(!/^BEGIN:VCALENDAR\r?\n/.test(raw)||!/\r?\nEND:VCALENDAR\s*$/.test(raw))throw Error("Invalid public Google Calendar iCalendar feed");
+ const chunks=unfoldIcs(raw).join("\n").split("BEGIN:VEVENT").slice(1);
+ const rows=[],seen=new Set();
+ for(const chunk of chunks){
+  const lines=chunk.split("END:VEVENT")[0].split("\n");
+  const fields=lines.map(l=>{const i=l.indexOf(":");return i<0?null:{key:l.slice(0,i).toUpperCase(),value:l.slice(i+1)}}).filter(Boolean);
+  const field=name=>fields.find(f=>f.key.split(";")[0]===name);
+  const start=field("DTSTART"),summary=field("SUMMARY"),uid=field("UID");
+  if(!start||!summary||!uid)continue;
+  if(/^CANCELLED$/i.test(field("STATUS")?.value||""))continue;
+  if(field("RRULE")){rows.push({hold:"Recurring calendar rule needs dated individual instances; no inferred dates",title:icsValue(summary.value)});continue;}
+  const m=/^(\d{4})(\d\d)(\d\d)(?:T(\d\d)(\d\d)(\d\d)?(Z)?)?$/.exec(start.value);
+  if(!m)continue;
+  const date=m[1]+"-"+m[2]+"-"+m[3],time=m[4]&&m[5]?m[4]+":"+m[5]:null;
+  let startDate=null;
+  if(time){
+   const tz=start.key.match(/TZID="?([^";]+)"?/i)?.[1];
+   if(m[7])startDate=new Date(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5],+(m[6]||0))).toISOString();
+   else if(tz==="America/Los_Angeles"||tz==="US/Pacific")startDate=wallToPacific(+m[1],+m[2],+m[3],time);
+   else{rows.push({hold:"Timed calendar event with unknown timezone",title:icsValue(summary.value),date});continue;}
+  }
+  const location=icsValue(field("LOCATION")?.value);
+  if(location && !/black\s*water|5115\s*ne\s*sandy|portland/i.test(location)){
+   rows.push({hold:"Calendar event may be at another venue",title:icsValue(summary.value),date,location});continue;
+  }
+  const identity=uid.value+"|"+date;
+  if(seen.has(identity))continue;seen.add(identity);
+  const title=icsValue(summary.value);
+  const desc=icsValue(field("DESCRIPTION")?.value).slice(0,1300);
+  rows.push({
+    title,uid:uid.value,fullUrl:source.baseUrl+"/",dateOnly:startDate?null:date,
+    startDate,sourceVerifiedMusic:false,description:desc||"Official Black Water public calendar entry",
+    venue:source.venue,timeEvidence:startDate?"Venue calendar provided a time":"Date confirmed by venue; no time published",
+    sourceDateOnly:!startDate,sourceVerifiedEvent:true
+  });
+ }
+ return rows;
+}
+
+module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific,time24,eventArtworkFromHtml,artworkCandidate,parseBlackWaterIcs};
