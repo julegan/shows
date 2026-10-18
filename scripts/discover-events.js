@@ -58,7 +58,7 @@ function extract(item,src,now){
  const title=tidy(item.title),url=urlOf(item,src);
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  const stamp=item.startDate??item.startTime??item.start;
- if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time":"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
+ if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
  try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
  if(src.type==="promoter"){
@@ -136,7 +136,18 @@ async function fetchItems(source){
  if(source.adapter==="promoter-list-html"){
   const items=adapters.parseSoundcontrol(body,source);
   if(!items.length)throw Error("Soundcontrol roster unavailable or changed");
-  return items;
+  const verified=[];
+  for(const item of items){
+   if(item.hold||!item.fullUrl){verified.push(item);continue;}
+   try{
+    const u=new URL(item.fullUrl);
+    if(u.protocol!=="https:"||u.hostname!=="www.treetix.com"||u.pathname!=="/event"||u.searchParams.get("cal")!=="soundcontrol")throw Error("Ticket URL outside approved provider");
+    const response=await fetch(u,{headers:{"Accept":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(15000),redirect:"error"});
+    if(!response.ok){verified.push({...item,detailHold:"Ticket page HTTP "+response.status+"; date-only staging"});continue;}
+    verified.push(adapters.parseSoundcontrolDetail((await response.text()).slice(0,500000),item));
+   }catch(e){verified.push({...item,detailHold:"Ticket data unavailable; stage date-only: "+String(e.message||e)});}
+  }
+  return verified;
  }
  let json;try{json=JSON.parse(body)}catch(_){throw Error("Venue returned non-JSON response");}
  return itemsOf(json);
