@@ -63,14 +63,14 @@ function extract(item,src,now){
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(url).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
-  id,title,subtitle:"Source-discovered listing · review required",category:"Music",
-  tags:["Live music","Time needs confirmation"],musicStyles:[],eventFormat:"live",
+  id,title,subtitle:"Source-discovered music listing · format and time need review",category:"Music",
+  tags:["Music listing","Time needs confirmation","Format needs confirmation"],musicStyles:[],eventFormat:"unverified",
   startTimeKind:"listed",startsAt:start,endsAt:null,venue:src.venue,address:src.address,neighborhood:src.neighborhood,
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue listing. The advertised time may be doors, not show start; confirm with the organizer. "+tidy(item.excerpt||item.body||""),
   source:src.name,url,icon:"♫",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, live-show and cancellation verification required",
   sourceCategories:cat,sources:[{name:src.name,url,kind:"organizer",checkedAt:asof,originalCategories:cat}],
-  addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,reviewStatus:"proposed"}
+  addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
  }};
 }
 function reconcile(existing,records){
@@ -114,7 +114,7 @@ function report(r,errors,now){
  lines.push("","## Source errors: "+errors.length,"");
  for(const x of errors)lines.push("- "+x.source+": "+x.error);
  lines.push("","## Required editorial checks","",
-  "- Verify actual performers and that the bill is relevant music, not trivia or a moved event.",
+  "- Verify actual performers and classify event format as live, DJ or another format before approval.",
   "- Distinguish doors from showtime before merging; change the listed-time label if verified.",
   "- Check duplicates, source permalink, venue/date, ticket status, age, and cancellation information.",
   "- Leave genre, cost, accessibility and end times unknown without evidence.",
@@ -144,7 +144,7 @@ async function run(opts={}){
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
  const meta={...parsed.meta,sourceCheckedAt:localDay(now),coverageThrough:newEvents.reduce((m,e)=>e.startsAt.slice(0,10)>m?e.startsAt.slice(0,10):m,""),
   totalOccurrences:newEvents.length,addedOccurrences:result.accepted.length,batchId:batch,previousBatches:prev,
-  newLiveBills:result.accepted.length,newDjNights:0,musicOccurrences:newEvents.filter(e=>e.category==="Music").length,
+  newLiveBills:0,newDjNights:0,musicOccurrences:newEvents.filter(e=>e.category==="Music").length,
   editorialReview:"Automatically discovered candidates require explicit human PR approval"};
  const output=parsed.prefix+"window.SHOWS_DATASET = "+JSON.stringify(meta,null,2)+";\nwindow.SHOWS_EVENTS = "+JSON.stringify(newEvents,null,2)+";\n";
  if(opts.write!==false){
