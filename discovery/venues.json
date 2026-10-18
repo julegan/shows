@@ -18,13 +18,13 @@
       "id": "black-water",
       "name": "Black Water",
       "tier": "core",
-      "ingestionStatus": "source-blocked",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://bar.blackwaterpdx.com/",
       "aliases": [
         "Black Water Bar",
         "Blackwater"
       ],
-      "notes": "Official pages previously returned 403; discover from promoter/artist/flyer leads and confirm without bypass"
+      "notes": "Official Black Water page embeds publicly accessible Google Calendar. Feed verified; future events are date-only and displayed as Time TBA."
     },
     {
       "id": "high-water-mark",
