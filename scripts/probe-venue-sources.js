@@ -22,6 +22,10 @@ const safeUrl=(raw,base)=>{try{const u=new URL(raw,base);if(u.protocol!=="https:
   const counts={events:(t.match(/BEGIN:VEVENT/g)||[]).length,dtstart:(t.match(/DTSTART/g)||[]).length,recurrence:(t.match(/^RRULE:/gm)||[]).length};
   const first=lines.filter(x=>/^(SUMMARY|DTSTART|DTEND|URL):/.test(x)).slice(0,12);
   console.log(JSON.stringify({calendar:"Black Water official Google iCal",status:r.status,mime:r.headers.get("content-type"),chars:t.length,counts,first}));
+  const vevents=t.split("BEGIN:VEVENT").slice(1).map(x=>x.split("END:VEVENT")[0].replace(/\r?\n[ \t]/g,"")).map(x=>({summary:x.match(/^SUMMARY:(.*)$/m)?.[1],start:x.match(/^DTSTART[^:]*:(.*)$/m)?.[1],end:x.match(/^DTEND[^:]*:(.*)$/m)?.[1],dateParams:x.match(/^DTSTART([^:]*):/m)?.[1],recur:/^RRULE:/m.test(x),status:x.match(/^STATUS:(.*)$/m)?.[1]}));
+  const upcoming=vevents.filter(x=>x.start?.slice(0,8)>="20261018").slice(0,25);
+  const futureTotal=vevents.filter(x=>x.start?.slice(0,8)>="20261018").length;
+  console.log(JSON.stringify({calendar:"Black Water future event diagnostics",futureTotal,upcoming}));
  }catch(e){console.log(JSON.stringify({calendar:"Black Water official Google iCal",error:String(e.message||e)}));}
  for(const page of ["https://highlimitroompdx.com/shows/","https://thecoffinclubpdx.com/"]){
   try{
