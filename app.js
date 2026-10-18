@@ -74,7 +74,7 @@
     const offset=start.getUTCDay();
     const monthStart=new Date(Date.UTC(year,month-1,1-offset));
     const count=Math.ceil((offset+new Date(Date.UTC(year,month,0)).getUTCDate())/7)*7;
-    let html='<div class="month-grid">';
+    let html='<p class="mobile-calendar-hint">Select a date to explore its events.</p><div class="month-grid">';
     for(const label of ["SUN","MON","TUE","WED","THU","FRI","SAT"])html+='<div class="weekday">'+label+'</div>';
     for(let i=0;i<count;i++){
       const d=new Date(monthStart);d.setUTCDate(d.getUTCDate()+i);
@@ -82,8 +82,10 @@
       const inMonth=day.slice(0,7)===state.month;
       const dayItems=items.filter(e=>ymd(e)===day);
       const cl=["day",!inMonth?"outside":"",day===today?"today":"",day===state.selectedDay?"selected":""].filter(Boolean).join(" ");
-      html+='<div class="'+cl+'"><div class="day-top"><button class="day-number" type="button" data-day="'+day+'" aria-label="Explore '+esc(readableDay(day))+'">'+d.getUTCDate()+'</button></div>';
-      for(const e of dayItems.slice(0,3))html+='<button type="button" class="event-chip" data-category="'+esc(e.category)+'" data-event="'+esc(e.id)+'"><span class="chip-time">'+esc(clock(e))+'</span>'+esc(e.title)+'</button>';
+      const dateName=esc(readableDay(day));
+      const eventCount=dayItems.length;
+      html+='<div class="'+cl+'"><button class="mobile-day" type="button" data-day="'+day+'"><span class="mobile-day-number">'+d.getUTCDate()+'</span>'+(eventCount?'<span class="mobile-day-count">'+eventCount+'</span>':'')+'<span class="sr-only">'+(eventCount?' events on ':' No events on ')+dateName+'. Select to explore.</span></button><div class="day-top"><button class="day-number" type="button" data-day="'+day+'" aria-label="Explore '+dateName+'">'+d.getUTCDate()+'</button></div>';
+      for(const e of dayItems.slice(0,3))html+='<button type="button" class="event-chip" data-category="'+esc(e.category)+'" data-event="'+esc(e.id)+'"><span class="chip-time">'+esc(clock(e))+'</span><span class="chip-title">'+esc(e.title)+'</span></button>';
       if(dayItems.length>3)html+='<button class="overflow" data-day="'+day+'" type="button">+'+(dayItems.length-3)+' more</button>';
       html+='</div>';
     }
