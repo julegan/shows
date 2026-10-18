@@ -5,12 +5,12 @@
 const fs=require("node:fs");
 const path=require("node:path");
 const {parseBlackWaterIcs}=require("./priority-importers");
-const {extract,reconcile,parseFile}=require("./discover-events");
+const {extract,reconcile,parseFile,localDay}=require("./discover-events");
 const source=require("../discovery/sources.json").sources.find(x=>x.id==="black-water");
 (async()=>{
  const r=await fetch(source.url,{headers:{Accept:"text/calendar","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(16000),redirect:"follow"});
  if(!r.ok||new URL(r.url).hostname!=="calendar.google.com")throw Error("Black Water published Google iCalendar not accessible on approved host");
- const records=parseBlackWaterIcs((await r.text()).slice(0,2000000),source);
+ const records=parseBlackWaterIcs((await r.text()).slice(0,2000000),source,localDay(new Date()));
  const now=new Date();
  const candidates=records.map(x=>x.hold?x:extract(x,source,now));
  const data=parseFile(fs.readFileSync(path.join(__dirname,"../events.js"),"utf8"));
