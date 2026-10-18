@@ -126,6 +126,8 @@ function parseSoundcontrol(html,source){
   const date=card.match(/<p class="event-date">\s*(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+([A-Za-z]+)\s+(\d{1,2})\s*<br\s*\/?>\s*at\s+([^<]+)<\/p>/i);
   const band=card.match(/<p class="event-header">([\s\S]*?)<\/p>/i);
   const image=card.match(/\/(20\d\d)-(\d\d)-(\d\d)-[^"'\s]*\.(?:jpe?g|png|webp)/i);
+  const imgUrls=[...card.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi)].map(x=>x[1]);
+  const posterUrl=imgUrls.find(x=>/\/images\/events\//i.test(x)&&image&&x.includes(image[0].slice(1)))||null;
   if(!date||!band||!image)continue;
   const month=months[date[1].toLowerCase()],day=Number(date[2]),year=Number(image[1]);
   if(month!==Number(image[2])||day!==Number(image[3])){out.push({hold:"Poster filename date conflicts with event card",title:clean(band[1]),url:m[1]});continue;}
@@ -136,7 +138,7 @@ function parseSoundcontrol(html,source){
   // Source lists the year, date and venue, but not a showtime: stage for review, do not fabricate.
   out.push({title,fullUrl:u.href,dateOnly:[year,String(month).padStart(2,"0"),String(day).padStart(2,"0")].join("-"),
    venue,sourceVerifiedMusic:true,description:"Promoter's own event listing; time must be verified at original ticket page",
-   timeEvidence:"Soundcontrol roster provides no verified show time",artwork:eventArtworkFromHtml(card,source.baseUrl)});
+   timeEvidence:"Soundcontrol roster provides no verified show time",artwork:posterUrl&&artworkCandidate(posterUrl,source.baseUrl)?{url:artworkCandidate(posterUrl,source.baseUrl),sourceUrl:source.url,origin:"official-event-page",credit:"Official promoter event listing",usageApproved:null}:null});
  }
  return out;
 }
@@ -153,7 +155,7 @@ function parseSoundcontrolDetail(html,record){
  if(!time)return {...record,detailHold:"Ticket page has no explicit AM/PM showtime; stage date-only"};
  const start=wallToPacific(year,month,day,time);
  if(!start)return {...record,detailHold:"Ticket showtime could not be resolved in Portland local time"};
- return {...record,startDate:start,dateOnly:null,timeEvidence:"Explicit show/music time on source-linked TreeTix event page, to be editorially reviewed",
+ return {...record,artwork:eventArtworkFromHtml(html,record.fullUrl)||record.artwork,startDate:start,dateOnly:null,timeEvidence:"Explicit show/music time on source-linked TreeTix event page, to be editorially reviewed",
   description:"Promoter and official ticket page both confirm the venue and event date. Performance time appears on ticketing detail."};
 }
 
