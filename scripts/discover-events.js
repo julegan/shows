@@ -63,6 +63,7 @@ function categoryOf(item){
  if(/\b(market|bazaar|swap meet|record fair|vintage fair|pop-up shop)\b/.test(title+" "+categories))return "Markets";
  if(/\b(comedy|burlesque|drag show|film screening|movie night|theater performance|improv night)\b/.test(title+" "+categories))return "Performance";
  if(/\b(trivia|karaoke|bingo|quiz|happy hour)\b/.test(title+" "+categories))return "Other";
+ if(/\b(dj|record release)\b/i.test(title)||((String(item.title||"").match(/\s\/\s/g)||[]).length>=2&&!/\b(tournament|game|drag show)\b/i.test(title)))return "Music";
  if(item.sourceVerifiedMusic||music(item))return "Music";
  return "Unclassified";
 }
@@ -128,7 +129,7 @@ function reconcile(existing,records){
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
    held.push({hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
-  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day)){
+  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only"))){
    held.push({hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   accepted.push(e);seen.add(key);
@@ -145,7 +146,7 @@ async function fetchItems(source){
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
- if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source);
+ if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source,localDay(new Date()));
  if(source.adapter==="twilight-html"){
   const links=adapters.parseTwilightLinks(body,source);
   if(!links.length)throw Error("Twilight calendar has no event detail links");
