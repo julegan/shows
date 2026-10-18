@@ -45,13 +45,14 @@
       "name": "Soundcontrol PDX",
       "status": "adapter-validation",
       "priority": "highest",
-      "reason": "Primary promoter calendar spans venues; resolve per-event venue before publishing. Match duplicates with High Water Mark and Twilight.",
+      "reason": "Official promoter listing covers multiple venues, including High Water Mark and Twilight. Resolve venue from each event, deduplicate with venue feeds, and do not infer a single fixed address.",
       "url": "https://www.soundcontrolpdx.com/",
       "baseUrl": "https://www.soundcontrolpdx.com",
       "venue": null,
       "address": null,
       "neighborhood": null,
-      "adapter": "promoter-list-html"
+      "adapter": "promoter-list-html",
+      "type": "promoter"
     },
     {
       "id": "star-theater",
@@ -104,7 +105,7 @@
     {
       "id": "no-fun",
       "name": "No Fun",
-      "status": "pilot-enabled-secondary",
+      "status": "pilot-enabled",
       "adapter": "squarespace-json",
       "url": "https://www.nofunportland.com/events?format=json-pretty",
       "baseUrl": "https://www.nofunportland.com",
@@ -124,7 +125,7 @@
           "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
         }
       ],
-      "reason": "Technically validated but not an editorially important primary source; deprioritized behind core venues."
+      "reason": "Read-only technical pilot retained to avoid interrupting the existing scheduled job; editorial priority is lower than Twilight, Black Water, High Water Mark, Soundcontrol and Star Theater."
     },
     {
       "id": "shanghai-tunnel",
