@@ -36,3 +36,5 @@
 .event-card .tag,.event-card h3,.event-card .card-desc,.event-card .card-meta,.event-card .card-cta{margin-left:6px;margin-right:6px}
 .detail-wrap>.show-art{margin-top:12px}
 @media(max-width:680px){.show-art{aspect-ratio:2.8/1}.show-art--large{aspect-ratio:2.6/1}.show-art-mark{font-size:44px}}
+
+.art-credit{margin:0 0 18px;color:#647168;font-size:12px}
