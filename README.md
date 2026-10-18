@@ -2,7 +2,7 @@
 
 A small, browser-based working calendar for Portland, Oregon. **SHOWS is a provisional working name, not an adopted brand.**
 
-This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 150 dated occurrences for October–December 2026 across 24 places, including 96 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
+This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 155 dated occurrences for October–December 2026 across 24 places, including 101 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
 
 ## Try it locally
 
