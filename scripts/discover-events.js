@@ -140,7 +140,7 @@ async function run(opts={}){
  console.log(JSON.stringify({proposed:result.accepted.length,held:result.held.length,skipped:result.skipped.length,errors}));
  if(!result.accepted.length)return {...result,errors};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
- const batch="auto-discovery-"+localDay(now),prev=[...(parsed.meta.previousBatches||[])];
+ const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
  const meta={...parsed.meta,sourceCheckedAt:localDay(now),coverageThrough:newEvents.reduce((m,e)=>e.startsAt.slice(0,10)>m?e.startsAt.slice(0,10):m,""),
   totalOccurrences:newEvents.length,addedOccurrences:result.accepted.length,batchId:batch,previousBatches:prev,
