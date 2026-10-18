@@ -14,7 +14,17 @@
       "neighborhood": "Buckman",
       "age": "21+",
       "priority": "underground-music",
-      "defaultStartKind": "doors"
+      "defaultStartKind": "doors",
+      "blockedDates": [
+        {
+          "date": "2026-11-13",
+          "reason": "Conflicting Star Machine and Early Worms venue listings (previous manual source review)"
+        },
+        {
+          "date": "2026-11-21",
+          "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
+        }
+      ]
     },
     {
       "id": "black-water",
