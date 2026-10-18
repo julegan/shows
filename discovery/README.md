@@ -5,7 +5,7 @@
 ## What runs
 
 1. GitHub Actions `.github/workflows/discover.yml` attempts discovery daily at **16:17 UTC** (9:17 a.m. Pacific daylight time or 8:17 a.m. Pacific standard time), with a manual Run workflow option. GitHub cron is best-effort and can be delayed.
-2. The allowlisted source registry `discovery/sources.json` keeps original underground venues at the top. **Only No Fun** is pilot-enabled, using Squarespace's public collection JSON presentation; all other venues are recorded as adapter-needed. **This interface is not a versioned Squarespace API** and may change or be blocked. Verify site terms, responsible access and a live sample before calling it reliable.
+2. The allowlisted source registry `discovery/sources.json` places **Twilight, Black Water, High Water Mark, Soundcontrol PDX, and Star Theater** ahead of other sources, in that editorial priority order. **Only No Fun currently has a working pilot-enabled adapter**, retained as a secondary technical fallback until adapters for higher-priority sources are validated. The other five are explicitly research/adapter-validation or blocked; their inclusion in the registry does not automatically ingest their events. **This interface is not a versioned Squarespace API** and may change or be blocked. Verify site terms, responsible access and a live sample before calling it reliable.
 3. `scripts/discover-events.js` fetches only the configured No Fun HTTPS host, limits response size/time, reads titled/datetime events, conservatively excludes nonmusic, converts source timestamps into America/Los_Angeles with DST, compares against existing approved records, and **holds** date or venue conflicts.
 4. The job runs syntax checks plus old and new regression suites. If newly proposed bills survive, it creates a **pull request** containing the candidate `events.js` update and `discovery/latest-review.md` with source links and missing information. It never commits directly to main or to the portfolio's website.
 5. **Julie or an authorized editor must review the original venue listing and approve/merge the PR.** Published show start vs doors is explicitly unverified until review: `startTimeKind: "listed"`, displayed as **Listed time**, and exported with **time unverified** in the calendar title. Candidate genre tags, end times, prices and access information are not invented. Tickets and cancellations are not monitored by this pilot.
@@ -30,10 +30,24 @@
 
 ## Next adapters
 
-Prioritize Twilight, Black Water, Coffin Club, High Limit Room, High Water Mark, Kenton Club, Star Theater, Turn! Turn! Turn!, Doomtown and independent promoters. Integrate their primary ticketing/JSON/RSS/ICS resources where permitted; use explicit time-unknown staging for venues such as Kenton. Add source health reporting, changed/canceled-event alerts and approved image provenance only after the first end-to-end pilot works.
+Priority 1: Twilight Cafe and Bar, Black Water, High Water Mark Lounge, Soundcontrol PDX, and Star Theater. Priority 2: Coffin Club, High Limit Room, Turn! Turn! Turn!, Doomtown, Kenton Club, and remaining underground promoters. No Fun is retained as a technically validated secondary feed, not a proxy for what matters editorially. Integrate their primary ticketing/JSON/RSS/ICS resources where permitted; use explicit time-unknown staging for venues such as Kenton. Add source health reporting, changed/canceled-event alerts and approved image provenance only after the first end-to-end pilot works.
 
 ## Verified pilot probe in pull-request CI
 
 The October 17, 2026 trial reached the No Fun public Squarespace JSON presentation from a GitHub Actions runner. It returned **71 event collection items**. A conservative first pass surfaced 17 date/lineup candidates, many of which were newer than the existing December 13 snapshot; an additional source hold now suppresses the November 13 and November 21 conflicting-date candidates. The final count will vary as the venue schedule changes. Test data includes correctly normalized January 2027 shows, and the full existing test suite passed on the resulting proposed calendar.
 
 These are **candidates**, not 17 (or 15) approved new music listings; the review PR is still the mandatory editorial gate. Some other records were excluded as trivia/karaoke, duplicates or ambiguous items. The public JSON feed worked in that one test, but remains a presentation-format endpoint rather than a guaranteed supported API. Detect 403s, empty or changed schemas, or changed rights/access conditions; do not silently treat them as complete event coverage.
+
+
+## Priority source assessment — October 17, 2026
+
+| Order | Priority source | Official link | Access / integration note |
+| --- | --- | --- | --- |
+| 1 | Twilight Cafe and Bar | https://www.twilightcafeandbar.com/calendar/ | Venue HTML calendar and `/event/{id}/...` detail pages are accessible to GitHub Actions; adapter still requires extraction and validation. |
+| 2 | Black Water | https://bar.blackwaterpdx.com/ | GitHub Actions received 403 Forbidden during the access check. Honor the restriction; locate permissioned primary promoter, ticketing, or venue-supplied sources. Current official location: 5115 NE Sandy Blvd. |
+| 3 | High Water Mark Lounge | https://www.highwatermarklounge.com/ | Primary venue event listing is publicly viewable; event time and year extraction still need testing. Some dates also appear on Soundcontrol PDX. |
+| 4 | Soundcontrol PDX | https://www.soundcontrolpdx.com/ | Independent promoter listing covering multiple venues (not itself a physical venue). Record venue per bill, and deduplicate against High Water Mark, Twilight, and Star Theater. |
+| 5 | Star Theater | https://www.startheaterportland.com/event/ | Official `/tm-event/...` pages accessible to GitHub Actions, with dates and show/door distinctions. Handle event pages with outdated recurring dates cautiously. |
+| Secondary | No Fun | https://www.nofunportland.com/events | Existing machine-readable source remains active in discovery pilot only; it is not an editorial priority. |
+
+**Important distinction:** Source registry ranking changes what we research first. Until source-specific adapters are implemented and tested, today's automatic collector will not yet add bills from the five newly prioritized sources. Do not turn on a source just because an HTML page is reachable.

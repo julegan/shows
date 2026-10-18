@@ -27,3 +27,6 @@ jobs:
         run: |
           node scripts/discover-events.js
           node tests/validate.js
+
+      - name: Validate original venue research priorities
+        run: node tests/source-priority.js
