@@ -1,13 +1,22 @@
 /* Curated Portland snapshot. Original IDs remain stable. Explicit Pacific offsets preserve DST.
- * See EVENT-SOURCES.md for source checks, recurring rules, and review notes.
- * null free means admission cost is unconfirmed; null endsAt means no verified end time. */
+ * See EVENT-SOURCES.md, MUSIC-SOURCES.md and EDITORIAL.md for source checks and priorities.
+ * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-17",
   "coverageThrough": "2026-12-13",
-  "totalOccurrences": 80,
-  "addedOccurrences": 69,
-  "batchId": "2026-10-17-expansion",
-  "editorialReview": "Pull request review required before publication"
+  "totalOccurrences": 119,
+  "addedOccurrences": 39,
+  "batchId": "2026-10-17-underground-music",
+  "editorialReview": "Julie reviews additions through pull requests before publication",
+  "previousBatches": [
+    {
+      "batchId": "2026-10-17-expansion",
+      "addedOccurrences": 69
+    }
+  ],
+  "newLiveBills": 37,
+  "newDjNights": 2,
+  "musicOccurrences": 65
 };
 window.SHOWS_EVENTS = [
   {
@@ -119,7 +128,16 @@ window.SHOWS_EVENTS = [
         "checkedAt": "2026-10-17",
         "originalCategories": []
       }
-    ]
+    ],
+    "musicStyles": [
+      "Noise & experimental"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Broad browsing styles map the genre tags preserved from the earlier reviewed source check.",
+      "urls": [
+        "https://pc-pdx.com/show-guide/?date=10%2F17%2F2026"
+      ]
+    }
   },
   {
     "id": "equalizer",
@@ -155,7 +173,16 @@ window.SHOWS_EVENTS = [
         "checkedAt": "2026-10-17",
         "originalCategories": []
       }
-    ]
+    ],
+    "musicStyles": [
+      "Noise & experimental"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Broad browsing styles map the genre tags preserved from the earlier reviewed source check.",
+      "urls": [
+        "https://pc-pdx.com/show-guide/?date=10%2F17%2F2026"
+      ]
+    }
   },
   {
     "id": "macabre",
@@ -191,7 +218,18 @@ window.SHOWS_EVENTS = [
         "checkedAt": "2026-10-17",
         "originalCategories": []
       }
-    ]
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Industrial & EBM",
+      "Post-punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Broad browsing styles map the genre tags preserved from the earlier reviewed source check.",
+      "urls": [
+        "https://pc-pdx.com/show-guide/?date=10%2F17%2F2026"
+      ]
+    }
   },
   {
     "id": "king-farmers-2026-10-18",
@@ -451,11 +489,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-bear-ghost-2026-10-21",
     "title": "Bear Ghost",
-    "subtitle": "With Sarah and the Safe Word, Spaceman Bob",
+    "subtitle": "Adventure rock · With Sarah and the Safe Word, Spaceman Bob",
     "category": "Music",
     "tags": [
       "Live music",
-      "All ages"
+      "All ages",
+      "Adventure rock"
     ],
     "startsAt": "2026-10-21T19:00:00-07:00",
     "endsAt": null,
@@ -479,9 +518,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.bearghost.com/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Bear Ghost's official site identifies the band as adventure rock.",
+      "urls": [
+        "https://www.bearghost.com/"
+      ]
+    }
   },
   {
     "id": "adx-woolly-sweaters-2026-10-23",
@@ -518,7 +573,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [],
+    "musicStyleEvidence": {
+      "basis": "Broad browsing styles map the genre tags preserved from the earlier reviewed source check.",
+      "urls": [
+        "https://artdesignxchange.com/events/woolly-sweaters-show"
+      ]
+    }
   },
   {
     "id": "psu-farmers-2026-10-24",
@@ -851,7 +913,16 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Broad browsing styles map the genre tags preserved from the earlier reviewed source check.",
+      "urls": [
+        "https://www.danteslive.com/tm-event/blitzkid-modern-hel-tour-2026-with-guests/"
+      ]
+    }
   },
   {
     "id": "hawthorne-smush-2026-10-27",
@@ -1035,11 +1106,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-pain-of-truth-2026-10-30",
     "title": "Pain of Truth",
-    "subtitle": "With Missing Link, Fatal Realm, Locked Shut",
+    "subtitle": "Hardcore · With Missing Link, Fatal Realm, Locked Shut",
     "category": "Music",
     "tags": [
       "Live music",
-      "All ages"
+      "All ages",
+      "Hardcore"
     ],
     "startsAt": "2026-10-30T19:00:00-07:00",
     "endsAt": null,
@@ -1063,9 +1135,26 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://dazestyle.bandcamp.com/album/not-through-blood",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "DAZE artist release supplies hardcore and hardcore punk tags.",
+      "urls": [
+        "https://dazestyle.bandcamp.com/album/not-through-blood"
+      ]
+    }
   },
   {
     "id": "psu-farmers-2026-10-31",
@@ -1306,11 +1395,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "dantes-true-fear-2026-11-05",
     "title": "True Fear",
-    "subtitle": "With Resist LA, When the Broken Burn, Crucible of Absolution, Oddities",
+    "subtitle": "Hardcore punk · With Resist LA, When the Broken Burn, Crucible of Absolution, Oddities",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Hardcore punk"
     ],
     "startsAt": "2026-11-05T20:00:00-08:00",
     "endsAt": null,
@@ -1334,9 +1424,26 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.danteslive.com/tm_genre/hardcore-punk/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Dante's genre archive explicitly includes this bill.",
+      "urls": [
+        "https://www.danteslive.com/tm_genre/hardcore-punk/"
+      ]
+    }
   },
   {
     "id": "psu-farmers-2026-11-07",
@@ -1571,11 +1678,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "dantes-jon-spencer-2026-11-10",
     "title": "Jon Spencer",
-    "subtitle": "With Genre Is Death",
+    "subtitle": "Garage punk / rock · With Genre Is Death",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Garage punk / rock"
     ],
     "startsAt": "2026-11-10T20:00:00-08:00",
     "endsAt": null,
@@ -1599,18 +1707,36 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://jonspencer.bandcamp.com/album/songs-of-personal-loss-and-protest-2",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Rock",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Artist release page describes garage punk and rock and roll.",
+      "urls": [
+        "https://jonspencer.bandcamp.com/album/songs-of-personal-loss-and-protest-2"
+      ]
+    }
   },
   {
     "id": "dantes-deathtape-2026-11-12",
     "title": "Deathtape",
-    "subtitle": "With Salt+",
+    "subtitle": "Hardcore punk · With Salt+",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Hardcore punk"
     ],
     "startsAt": "2026-11-12T20:00:00-08:00",
     "endsAt": null,
@@ -1634,18 +1760,36 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.danteslive.com/tm_genre/hardcore-punk/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Dante's genre archive explicitly includes Deathtape.",
+      "urls": [
+        "https://www.danteslive.com/tm_genre/hardcore-punk/"
+      ]
+    }
   },
   {
     "id": "hawthorne-static-dress-2026-11-13",
     "title": "Static Dress",
-    "subtitle": "With I Promised the World, Car Underwater, Sherane",
+    "subtitle": "Post-hardcore · With I Promised the World, Car Underwater, Sherane",
     "category": "Music",
     "tags": [
       "Live music",
-      "All ages"
+      "All ages",
+      "Post-hardcore"
     ],
     "startsAt": "2026-11-13T19:00:00-08:00",
     "endsAt": null,
@@ -1669,18 +1813,37 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://staticdress.bandcamp.com/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Hardcore",
+      "Punk",
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Artist Bandcamp tags post-hardcore, punk and post-rock; Hardcore is the broader browsing group.",
+      "urls": [
+        "https://staticdress.bandcamp.com/"
+      ]
+    }
   },
   {
     "id": "dantes-metal-church-2026-11-13",
     "title": "Metal Church / Armored Saint",
-    "subtitle": "With Livekill",
+    "subtitle": "Heavy metal · With Livekill",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Heavy metal"
     ],
     "startsAt": "2026-11-13T19:30:00-08:00",
     "endsAt": null,
@@ -1704,9 +1867,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://metalchurchofficial.com/home",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Metal Church official bio identifies the band as heavy metal.",
+      "urls": [
+        "https://metalchurchofficial.com/home"
+      ]
+    }
   },
   {
     "id": "psu-farmers-2026-11-14",
@@ -1905,11 +2084,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-kingdom-of-giants-2026-11-15",
     "title": "Kingdom of Giants",
-    "subtitle": "With Deadlands, Holy Wars, Night Rider",
+    "subtitle": "Metalcore / post-hardcore · With Deadlands, Holy Wars, Night Rider",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Metalcore / post-hardcore"
     ],
     "startsAt": "2026-11-15T19:00:00-08:00",
     "endsAt": null,
@@ -1933,18 +2113,36 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://sharptonerecords.co/collections/kingdom-of-giants",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal",
+      "Hardcore"
+    ],
+    "musicStyleEvidence": {
+      "basis": "SharpTone describes modern metal and post-hardcore roots.",
+      "urls": [
+        "https://sharptonerecords.co/collections/kingdom-of-giants"
+      ]
+    }
   },
   {
     "id": "hawthorne-christian-death-2026-11-17",
     "title": "Christian Death",
-    "subtitle": "With Black Season Witch",
+    "subtitle": "Deathrock / goth · With Black Season Witch",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Deathrock / goth"
     ],
     "startsAt": "2026-11-17T20:00:00-08:00",
     "endsAt": null,
@@ -1968,18 +2166,35 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.season-of-mist.com/bands/christian-death/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Goth & darkwave"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Season of Mist identifies Christian Death as gothic and death rock.",
+      "urls": [
+        "https://www.season-of-mist.com/bands/christian-death/"
+      ]
+    }
   },
   {
     "id": "dantes-comeback-kid-2026-11-18",
     "title": "Comeback Kid",
-    "subtitle": "With The Warriors, Dead Heat, Barrio Slam",
+    "subtitle": "Hardcore punk · With The Warriors, Dead Heat, Barrio Slam",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Hardcore punk"
     ],
     "startsAt": "2026-11-18T19:00:00-08:00",
     "endsAt": null,
@@ -2003,9 +2218,26 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://sharptonerecords.co/collections/comeback-kid",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "SharpTone describes Comeback Kid as punk and hardcore.",
+      "urls": [
+        "https://sharptonerecords.co/collections/comeback-kid"
+      ]
+    }
   },
   {
     "id": "bookbinding-nov",
@@ -2162,11 +2394,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-fear-factory-2026-11-21",
     "title": "Fear Factory — Cybernetic Domination Tour",
-    "subtitle": "With Darkest Hour, Brotality, Ligature Marks",
+    "subtitle": "Industrial metal · With Darkest Hour, Brotality, Ligature Marks",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Industrial metal"
     ],
     "startsAt": "2026-11-21T20:00:00-08:00",
     "endsAt": null,
@@ -2190,9 +2423,26 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.nuclearblast.com/blogs/news/fear-factory-unleashes-machine-driven-new-single-roboticist",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Nuclear Blast describes Fear Factory as industrial metal.",
+      "urls": [
+        "https://www.nuclearblast.com/blogs/news/fear-factory-unleashes-machine-driven-new-single-roboticist"
+      ]
+    }
   },
   {
     "id": "king-farmers-2026-11-22",
@@ -2269,11 +2519,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "dantes-distant-2026-11-24",
     "title": "Distant",
-    "subtitle": "With Heavy//Hitter, Torn Open, Katywentmissing, Glasseater",
+    "subtitle": "Deathcore · With Heavy//Hitter, Torn Open, Katywentmissing, Glasseater",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Deathcore"
     ],
     "startsAt": "2026-11-24T19:00:00-08:00",
     "endsAt": null,
@@ -2297,9 +2548,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://distantofficial.bandcamp.com/music",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Distant's own Bandcamp identifies downtempo / deathcore.",
+      "urls": [
+        "https://distantofficial.bandcamp.com/music"
+      ]
+    }
   },
   {
     "id": "hawthorne-boston-manor-2026-11-24",
@@ -2375,11 +2642,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-bodysnatcher-2026-11-27",
     "title": "Bodysnatcher — Hell Is Here, Hell Is Home",
-    "subtitle": "With Gideon, Psycho-Frame, Volatile Ways",
+    "subtitle": "Metal · With Gideon, Psycho-Frame, Volatile Ways",
     "category": "Music",
     "tags": [
       "Live music",
-      "All ages"
+      "All ages",
+      "Metal"
     ],
     "startsAt": "2026-11-27T19:00:00-08:00",
     "endsAt": null,
@@ -2403,9 +2671,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://hawthornetheatre.com/event-genres/metal-hardcore/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Venue lists this bill in Metal/Hardcore; SHOWS uses broad Metal.",
+      "urls": [
+        "https://hawthornetheatre.com/event-genres/metal-hardcore/"
+      ]
+    }
   },
   {
     "id": "psu-farmers-2026-11-28",
@@ -2490,11 +2774,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-amorphis-insomnium-2026-12-01",
     "title": "Amorphis & Insomnium",
-    "subtitle": "With Hinayana",
+    "subtitle": "Metal · With Hinayana",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Metal"
     ],
     "startsAt": "2026-12-01T19:30:00-08:00",
     "endsAt": null,
@@ -2518,9 +2803,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://hawthornetheatre.com/event-genres/metal-hardcore/",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Venue lists this bill in Metal/Hardcore; SHOWS uses broad Metal.",
+      "urls": [
+        "https://hawthornetheatre.com/event-genres/metal-hardcore/"
+      ]
+    }
   },
   {
     "id": "adx-arts-agriculture-2026-12-03",
@@ -2676,11 +2977,12 @@ window.SHOWS_EVENTS = [
   {
     "id": "hawthorne-miss-may-i-born-of-osiris-2026-12-08",
     "title": "Miss May I x Born of Osiris",
-    "subtitle": "With Convictions, Downswing",
+    "subtitle": "Metalcore · With Convictions, Downswing",
     "category": "Music",
     "tags": [
       "Live music",
-      "21+"
+      "21+",
+      "Metalcore"
     ],
     "startsAt": "2026-12-08T20:00:00-08:00",
     "endsAt": null,
@@ -2704,18 +3006,35 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://sharptonerecords.co/collections/miss-may-i",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "SharpTone describes Miss May I's metalcore background.",
+      "urls": [
+        "https://sharptonerecords.co/collections/miss-may-i"
+      ]
+    }
   },
   {
     "id": "hawthorne-suicide-silence-2026-12-09",
     "title": "Suicide Silence — Reminders of Hell",
-    "subtitle": "With Emmure, Angelmaker, Synestia",
+    "subtitle": "Deathcore · With Emmure, Angelmaker, Synestia",
     "category": "Music",
     "tags": [
       "Live music",
-      "All ages"
+      "All ages",
+      "Deathcore"
     ],
     "startsAt": "2026-12-09T19:00:00-08:00",
     "endsAt": null,
@@ -2739,9 +3058,25 @@ window.SHOWS_EVENTS = [
         "kind": "organizer",
         "checkedAt": "2026-10-17",
         "originalCategories": []
+      },
+      {
+        "name": "Genre evidence · artist / label / venue",
+        "url": "https://www.nuclearblast.com/pages/suicide-silence",
+        "kind": "genre-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Nuclear Blast describes Suicide Silence's deathcore sound.",
+      "urls": [
+        "https://www.nuclearblast.com/pages/suicide-silence"
+      ]
+    }
   },
   {
     "id": "crafty-wonderland-2026-12-11",
@@ -2973,5 +3308,2362 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion",
     "seriesId": "crafty-wonderland-holiday-2026",
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
+  },
+  {
+    "id": "the-coffin-club-antioch-arrow-with-at-the-heart-of-the-world-nabiya-2026-10-18",
+    "title": "Antioch Arrow with At the Heart of the World & Nabiya",
+    "subtitle": "Hardcore, Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Hardcore",
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Label Three One G describes Antioch Arrow's early albums as having a classic hardcore feel. Official venue ticketed bill verified.",
+      "urls": [
+        "https://threeoneg.com/artists/antioch-arrow"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-18T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR",
+    "neighborhood": "Central Eastside",
+    "price": "$18.59 advance including fees on official ticket page",
+    "free": false,
+    "age": "21+",
+    "description": "Live bill: Antioch Arrow, At the Heart of the World, Nabiya. Ticket heading says first shows in over 30 years. Doors 8:00 PM.",
+    "source": "The Coffin Club · official ticketing",
+    "url": "https://tickets.venuepilot.com/e/antioch-arrow-2026-10-18-the-coffin-portland-298f26",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official ticketing",
+        "url": "https://tickets.venuepilot.com/e/antioch-arrow-2026-10-18-the-coffin-portland-298f26",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://threeoneg.com/artists/antioch-arrow",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-18T20:00:00-07:00"
+  },
+  {
+    "id": "star-theater-church-of-hive-2026-10-18",
+    "title": "Church of Hive",
+    "subtitle": "Goth, industrial & darkwave · DJ night",
+    "category": "Music",
+    "tags": [
+      "Goth",
+      "Industrial",
+      "Darkwave",
+      "DJ night",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Venue description explicitly calls it a gothic, industrial and darkwave dance party.",
+      "urls": [
+        "https://www.startheaterportland.com/tm-event/church-of-hive-8/"
+      ]
+    },
+    "eventFormat": "dj",
+    "startsAt": "2026-10-18T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$5 advertised cover; venue online listing $6.20",
+    "free": false,
+    "age": "21+",
+    "description": "DJ dance party, not a live band show. Skully and Aurora are named on this occurrence. Doors 9:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-8/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-8/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-18T21:00:00-07:00",
+    "seriesId": "church-of-hive-verified-2026"
+  },
+  {
+    "id": "high-limit-room-veradas-julie-f-the-rulies-afraid-of-women-sertraline-2026-10-19",
+    "title": "Veradas + Julie F the Rulies + Afraid of Women + Sertraline",
+    "subtitle": "rock, psychedelic rock, shoegaze · live bill",
+    "category": "Music",
+    "tags": [
+      "rock",
+      "psychedelic rock",
+      "shoegaze",
+      "Live music"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Veradas official bio describes a fuzz-driven psych rock trio with shoegaze and krautrock influences.",
+      "urls": [
+        "https://www.bandsintown.com/e/108803508",
+        "https://highlimitroompdx.com/info/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-19T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "See organizer for event age policy",
+    "description": "Portland psych rock trio Veradas with Julie F the Rulies, Afraid of Women, Sertraline.",
+    "source": "Veradas",
+    "url": "https://theveradas.com/home",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary artist schedule with explicit-year artist-linked event confirmation",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Veradas",
+        "url": "https://theveradas.com/home",
+        "kind": "artist",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.bandsintown.com/e/108803508",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "accessibility": "The venue reports an upstairs space without an elevator; contact it ahead about accommodation needs."
+  },
+  {
+    "id": "twilight-cafe-and-bar-lioneer-with-gavin-prophet-drifter-nervous-state-2026-10-20",
+    "title": "Lioneer with Gavin Prophet, Drifter, Nervous State",
+    "subtitle": "Pop punk, Emo, Power pop · live bill",
+    "category": "Music",
+    "tags": [
+      "Pop punk",
+      "Emo",
+      "Power pop",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Lioneer's own Bandcamp bio describes anthemic power-pop continuing early-2000s pop-punk/emo.",
+      "urls": [
+        "https://lioneer.bandcamp.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-20T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15",
+    "free": false,
+    "age": "21+",
+    "description": "Four-act bill. Lioneer is Mike Liorti's project, formerly Rosedale. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466625/Lioneer-w-Gavin-Prophet-Drifter-Nervous-State",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466625/Lioneer-w-Gavin-Prophet-Drifter-Nervous-State",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://lioneer.bandcamp.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-20T19:30:00-07:00"
+  },
+  {
+    "id": "high-water-mark-lounge-the-well-pink-fuzz-death-parade-2026-10-21",
+    "title": "The Well, Pink Fuzz, Death Parade",
+    "subtitle": "Doom, Heavy psych, Rock · live bill",
+    "category": "Music",
+    "tags": [
+      "Doom",
+      "Heavy psych",
+      "Rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "The Well's label RidingEasy describes early-1970s doom/heavy psych and noise-rock influences.",
+      "urls": [
+        "https://www.ridingeasyrecs.com/product-category/bands/the-well-bands/",
+        "https://pinkfuzz.bandcamp.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-21T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "$20 advance / $25 at the door",
+    "free": false,
+    "age": "21+",
+    "description": "The Well with Pink Fuzz and Death Parade. Doors 8:00 PM.",
+    "source": "High Water Mark Lounge · official ticketing",
+    "url": "https://www.treetix.com/204790/highwatermark",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Indexed primary ticket listing, with source availability noted",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark Lounge · official ticketing",
+        "url": "https://www.treetix.com/204790/highwatermark",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.ridingeasyrecs.com/product-category/bands/the-well-bands/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://pinkfuzz.bandcamp.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-21T20:00:00-07:00",
+    "sourceNote": "The ticket provider lists 8 PM doors / 8:30 PM show. Some secondary listings give 7 PM. Primary ticket text was available through the search index; the full page was blocked."
+  },
+  {
+    "id": "the-coffin-club-zanias-with-vioflesh-clubdrugs-light-asylum-dj-set-2026-10-21",
+    "title": "Zanias with Vioflesh, Clubdrugs & Light Asylum (DJ set)",
+    "subtitle": "Industrial, Darkwave, EBM · live bill",
+    "category": "Music",
+    "tags": [
+      "Industrial",
+      "Darkwave",
+      "EBM",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Industrial & EBM",
+      "Goth & darkwave"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Zanias official music page describes post-industrial ethereal wave; artist's own Bandcamp tags darkwave, EBM and industrial.",
+      "urls": [
+        "https://www.zanias-music.com/music",
+        "https://zanias.bandcamp.com/album/to-the-core-10-year-anniversary-edition"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-21T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR",
+    "neighborhood": "Central Eastside",
+    "price": "$24.77 advance including fees on official ticket page",
+    "free": false,
+    "age": "21+",
+    "description": "Live concert in the crypt with Vioflesh and Clubdrugs. Light Asylum opens at 8pm with a DJ set; main show field is 8:30pm. Doors 8:00 PM.",
+    "source": "The Coffin Club · official ticketing",
+    "url": "https://tickets.venuepilot.com/e/zanias-2026-10-21-the-coffin-portland-214887",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official ticketing",
+        "url": "https://tickets.venuepilot.com/e/zanias-2026-10-21-the-coffin-portland-214887",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.zanias-music.com/music",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://zanias.bandcamp.com/album/to-the-core-10-year-anniversary-edition",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-21T20:00:00-07:00",
+    "sourceNote": "The dated venue ticket and artist event feed give October 21; a label tour page gives November 21. This entry follows the dated venue ticket. Confirm with the organizer."
+  },
+  {
+    "id": "high-water-mark-lounge-soraia-star-chamber-the-hypnatwists-2026-10-22",
+    "title": "Soraia, Star Chamber, The Hypnatwists",
+    "subtitle": "Garage rock, Garage punk, Alternative rock · live bill",
+    "category": "Music",
+    "tags": [
+      "Garage rock",
+      "Garage punk",
+      "Alternative rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Rock",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Soraia's own bio describes garage rock and alternative; own Bandcamp release tags include garage punk and garage rock.",
+      "urls": [
+        "https://www.soraia.com/about-us",
+        "https://soraia.bandcamp.com/album/confessions-from-the-vena-cava"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-22T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "$10 advance; check ticket provider for door price",
+    "free": false,
+    "age": "21+",
+    "description": "Three-act rock bill. Doors 8:00 PM.",
+    "source": "High Water Mark Lounge · official ticketing",
+    "url": "https://www.treetix.com/event?cal=highwatermark&id=204795",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Indexed primary ticket listing, with source availability noted",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark Lounge · official ticketing",
+        "url": "https://www.treetix.com/event?cal=highwatermark&id=204795",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.soraia.com/about-us",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://soraia.bandcamp.com/album/confessions-from-the-vena-cava",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-22T20:00:00-07:00",
+    "sourceNote": "The ticket provider lists 8 PM doors / 8:30 PM show. Some secondary listings give 7 PM. Primary ticket text was available through the search index; the full page was blocked."
+  },
+  {
+    "id": "turn-turn-turn-liquid-cross-collate-pink-pollen-2026-10-23",
+    "title": "Liquid Cross + Collate + Pink Pollen",
+    "subtitle": "Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Liquid Cross official Bandcamp/label bio calls the band punk from Eugene. Post-punk for Collate was supported by secondary local music reporting; use Punk alone if requiring primary genre labels.",
+      "urls": [
+        "https://liquidcross.bandcamp.com/album/dont-think-ep",
+        "https://strangemono.com/liquid-cross/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-23T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Eugene punk band with Collate and Pink Pollen. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/liquid-cross-collate-pink-pollen-october-23-2026-779367",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/liquid-cross-collate-pink-pollen-october-23-2026-779367",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://liquidcross.bandcamp.com/album/dont-think-ep",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://strangemono.com/liquid-cross/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-23T19:30:00-07:00"
+  },
+  {
+    "id": "the-coffin-club-ritual-howls-with-grizz-cll-the-secret-light-unholy-gathering-2026-10-23",
+    "title": "Ritual Howls with Grizz Cll & The Secret Light — Unholy Gathering",
+    "subtitle": "Goth, Industrial, Post-punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Goth",
+      "Industrial",
+      "Post-punk",
+      "Darkwave",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Industrial & EBM",
+      "Post-punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official ticket page describes goth, industrial and darkwave dance party following live bands; Ritual Howls official site describes post-punk and industrial music.",
+      "urls": [
+        "https://ritualhowls.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-23T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR",
+    "neighborhood": "Central Eastside",
+    "price": "$23.74 advance including fees on official ticket page",
+    "free": false,
+    "age": "21+",
+    "description": "Live bands followed by a two-floor dance party. DJ Sculptress on main level; DJ JQ in crypt. Halloween costume event. Doors 8:00 PM.",
+    "source": "The Coffin Club · official ticketing",
+    "url": "https://tickets.venuepilot.com/e/ritual-howls-2026-10-23-the-coffin-portland-c5036b",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official ticketing",
+        "url": "https://tickets.venuepilot.com/e/ritual-howls-2026-10-23-the-coffin-portland-c5036b",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://ritualhowls.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-23T20:00:00-07:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-terra-s-birthday-show-trans-panic-river-city-ruin-kids-on-fire-t-2026-10-24",
+    "title": "Terra's Birthday Show: Trans Panic, River City Ruin, Kids on Fire, The Immortal Dub CVNTS",
+    "subtitle": "Punk, Queer punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Queer punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Trans Panic self-describes as an unapologetically queer punk band on its own Bandcamp page.",
+      "urls": [
+        "https://transpanicpunk.bandcamp.com/album/songs-for-tranarchists"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-24T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$12",
+    "free": false,
+    "age": "21+",
+    "description": "Birthday bill featuring Portland's Trans Panic, River City Ruin, Seattle's Kids on Fire and Los Angeles' The Immortal Dub CVNTS.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466976/Terras-Birthday-Show-w-Trans-Panic-River-City-Ruin-Kids-on-Fire-SEA-The-Immortal-Dub-CVNTS-LA",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466976/Terras-Birthday-Show-w-Trans-Panic-River-City-Ruin-Kids-on-Fire-SEA-The-Immortal-Dub-CVNTS-LA",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://transpanicpunk.bandcamp.com/album/songs-for-tranarchists",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music"
+  },
+  {
+    "id": "kenton-club-weird-rainbow-little-hexes-heirloom-monsters-mask-appeal-2026-10-24",
+    "title": "Weird Rainbow + Little Hexes + Heirloom Monsters + Mask Appeal",
+    "subtitle": "Rock · live bill",
+    "category": "Music",
+    "tags": [
+      "Rock",
+      "Live music"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Little Hexes official site describes itself as a rock band and art pop; genre art rock is editorial classification. This is a lower-priority rock choice, not a metal/hardcore substitute.",
+      "urls": [
+        "https://www.kentonclub.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-24T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "$10 cover",
+    "free": false,
+    "age": "See organizer for event age policy",
+    "description": "Halloween-season bill with Weird Rainbow, Little Hexes, Heirloom Monsters, Mask Appeal.",
+    "source": "Little Hexes",
+    "url": "https://littlehexes.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary artist + venue; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Little Hexes",
+        "url": "https://littlehexes.com/",
+        "kind": "artist",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.kentonclub.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music"
+  },
+  {
+    "id": "star-theater-a-split-second-with-dancing-plague-and-graveyard-gossip-2026-10-25",
+    "title": "A Split-Second with Dancing Plague and Graveyard Gossip",
+    "subtitle": "EBM, Industrial · live bill",
+    "category": "Music",
+    "tags": [
+      "EBM",
+      "Industrial",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Marc Ickx/A Split-Second official Bandcamp tags E.B.M. and industrial.",
+      "urls": [
+        "https://marcickxasplit-second.bandcamp.com/album/a-split-second-ep-remastered-2023"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-25T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$18 advance / $25 day of show advertised; venue online listing $25.21",
+    "free": false,
+    "age": "21+",
+    "description": "Live bill: A Split-Second, Dancing Plague, Graveyard Gossip. Doors 6:30 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/a-split-second/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/a-split-second/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://marcickxasplit-second.bandcamp.com/album/a-split-second-ep-remastered-2023",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-25T18:30:00-07:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-houkago-grind-time-with-kostnateni-biology-skitzotoxin-2026-10-25",
+    "title": "Houkago Grind Time with Kostnateni, Biology, Skitzotoxin",
+    "subtitle": "Grindcore, Goregrind, Metal · live bill",
+    "category": "Music",
+    "tags": [
+      "Grindcore",
+      "Goregrind",
+      "Metal",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Primary artist interview: Andrew Lee calls Houkago's music grindcore, and his style mincecore/goregrind. His own Bandcamp lists the Twilight Oct25 show.",
+      "urls": [
+        "https://houkagogrindtime2.bandcamp.com/album/sorry-i-am-not-from-japan",
+        "https://echoesanddust.com/2024/08/andrew-lee-from-houkago-grind-time/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15",
+    "free": false,
+    "age": "21+",
+    "description": "Four-act extreme-music bill. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466370/Houkago-Grind-Time-w-Kostnateni-Biology",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466370/Houkago-Grind-Time-w-Kostnateni-Biology",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://houkagogrindtime2.bandcamp.com/album/sorry-i-am-not-from-japan",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://echoesanddust.com/2024/08/andrew-lee-from-houkago-grind-time/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-25T19:30:00-07:00"
+  },
+  {
+    "id": "star-theater-church-of-hive-2026-10-25",
+    "title": "Church of Hive",
+    "subtitle": "Goth, industrial & darkwave · DJ night",
+    "category": "Music",
+    "tags": [
+      "Goth",
+      "Industrial",
+      "Darkwave",
+      "DJ night",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Venue description explicitly calls it a gothic, industrial and darkwave dance party.",
+      "urls": [
+        "https://www.startheaterportland.com/tm-event/church-of-hive-9/"
+      ]
+    },
+    "eventFormat": "dj",
+    "startsAt": "2026-10-25T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$5 advertised cover; venue online listing $6.20",
+    "free": false,
+    "age": "21+",
+    "description": "DJ dance party, not a live band show. Doors 9:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-9/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-9/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-25T21:00:00-07:00",
+    "seriesId": "church-of-hive-verified-2026"
+  },
+  {
+    "id": "turn-turn-turn-mania-mnemonic-pulse-andrew-black-dj-music-medieval-2026-10-26",
+    "title": "Mania + Mnemonic Pulse + Andrew Black + DJ Music Medieval",
+    "subtitle": "dark ambient, post-industrial, experimental · live bill",
+    "category": "Music",
+    "tags": [
+      "dark ambient",
+      "post-industrial",
+      "experimental",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Noise & experimental",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Mnemonic Pulse official Bandcamp tags Altair dark synth, ambient, post-industrial, space drone. Mania identity is not linked by the event page, so do not automatically assign black metal from the same-name Portland artist.",
+      "urls": [
+        "https://mnemonicpulse.bandcamp.com/album/altair"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "A bill with Mania, Mnemonic Pulse, Andrew Black, and DJ Music Medieval. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/mania-mnemonic-pulse-andrew-black-dj-music-medieval-october-26-2026-755388",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/mania-mnemonic-pulse-andrew-black-dj-music-medieval-october-26-2026-755388",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://mnemonicpulse.bandcamp.com/album/altair",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-26T19:30:00-07:00"
+  },
+  {
+    "id": "high-limit-room-spy-february-with-love-letter-empty-shell-casing-spite-house-soa-2026-10-28",
+    "title": "SPY / FEBRUARY with Love Letter, Empty Shell Casing, Spite House, Soap Box Derby",
+    "subtitle": "hardcore, punk · live bill",
+    "category": "Music",
+    "tags": [
+      "hardcore",
+      "punk",
+      "Live music",
+      "All ages"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "SPY official Bandcamp describes Bay Area hardcore punk.",
+      "urls": [
+        "https://aftontickets.com/spy",
+        "https://spyhc.bandcamp.com/",
+        "https://highlimitroompdx.com/shows/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-28T17:00:00-07:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "All ages",
+    "description": "Presented by SOS x777 Booking. SPY and February with Love Letter, Empty Shell Casing, Spite House, Soap Box Derby. The time shown is doors; the performance start is unconfirmed.",
+    "source": "SOS x 777 Booking",
+    "url": "https://www.sosbookingandproduction.com/booking/2026/10/28/spy-february",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary promoter; explicit2026; doors only",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "SOS x 777 Booking",
+        "url": "https://www.sosbookingandproduction.com/booking/2026/10/28/spy-february",
+        "kind": "promoter",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://aftontickets.com/spy",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://spyhc.bandcamp.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://highlimitroompdx.com/shows/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room · venue access information",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-28T17:00:00-07:00",
+    "startTimeKind": "doors",
+    "sourceNote": "Calendar time is doors. The show start is unconfirmed.",
+    "accessibility": "The venue reports an upstairs space without an elevator; contact it ahead about accommodation needs."
+  },
+  {
+    "id": "turn-turn-turn-cormae-new-here-combobox-2026-10-28",
+    "title": "CorMae + New Here + Combobox",
+    "subtitle": "punk, garage punk, egg punk · live bill",
+    "category": "Music",
+    "tags": [
+      "punk",
+      "garage punk",
+      "egg punk",
+      "riot grrrl",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "CorMae official Bandcamp tags garage-punk, egg-punk, punk-rock, riot-grrrl; artist describes itself as a garage/punk band from Austin.",
+      "urls": [
+        "https://cormae.bandcamp.com/album/everything-is-so-great"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-28T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Austin garage punk band CorMae with New Here and Combobox. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/cormae-new-here-combobox-october-28-2026-749681",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/cormae-new-here-combobox-october-28-2026-749681",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://cormae.bandcamp.com/album/everything-is-so-great",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-28T19:30:00-07:00"
+  },
+  {
+    "id": "no-fun-the-seditionists-creatura-the-kieths-2026-10-31",
+    "title": "The Seditionists, Creatura, The Kieths",
+    "subtitle": "Punk, Hardcore, Post-punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Hardcore",
+      "Post-punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Hardcore",
+      "Post-punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "The Seditionists' own Politricks release tags punk, hardcore and post-punk; don't apply these tags as specific claims about all supporting acts.",
+      "urls": [
+        "https://theseditionists.bandcamp.com/album/politricks"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Halloween three-act bill at No Fun. Doors 7:00 PM.",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/the-seditionists-creatura-the-kieths",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/the-seditionists-creatura-the-kieths",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://theseditionists.bandcamp.com/album/politricks",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-10-31T19:00:00-07:00"
+  },
+  {
+    "id": "turn-turn-turn-carri-n-kids-cherry-cheeks-amy-beth-thee-creeps-2026-11-05",
+    "title": "Carrión Kids + Cherry Cheeks + Amy Beth & Thee Creeps",
+    "subtitle": "Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Carrion Kids official Bandcamp identifies Mexico City Punk; garage qualifier is supported by their official Linktree linking interviews but Punk alone is safest primary label.",
+      "urls": [
+        "https://carrionkids.bandcamp.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Mexico City punk band with Cherry Cheeks and Amy Beth & Thee Creeps. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/carrion-kids-cherry-cheeks-amy-beth-thee-creeps-november-05-2026-761324",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/carrion-kids-cherry-cheeks-amy-beth-thee-creeps-november-05-2026-761324",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://carrionkids.bandcamp.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-05T19:30:00-08:00"
+  },
+  {
+    "id": "high-limit-room-roman-candle-postdrome-asthelifeleavesyoureyes-xcaliberx-2026-11-07",
+    "title": "Roman Candle + Postdrome + Asthelifeleavesyoureyes + XcaliberX",
+    "subtitle": "hardcore, screamo · live bill",
+    "category": "Music",
+    "tags": [
+      "hardcore",
+      "screamo",
+      "Live music",
+      "All ages"
+    ],
+    "musicStyles": [
+      "Hardcore"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Roman Candle label Sumerian describes Las Vegas hardcore and screamo.",
+      "urls": [
+        "https://sumerianrecords.com/collections/roman-candle",
+        "https://embed-list.aftontickets.com/events/7b6b6d028dabac2aebba5acdff518c91/list"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-07T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15 + fees",
+    "free": false,
+    "age": "All ages",
+    "description": "Roman Candle, Postdrome, Asthelifeleavesyoureyes, XcaliberX. Doors 6:30 PM.",
+    "source": "High Limit Room · official ticketing",
+    "url": "https://aftontickets.com/event/buyticket/57jml3v89v",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "indexed primary ticket page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Limit Room · official ticketing",
+        "url": "https://aftontickets.com/event/buyticket/57jml3v89v",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://sumerianrecords.com/collections/roman-candle",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://embed-list.aftontickets.com/events/7b6b6d028dabac2aebba5acdff518c91/list",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room · venue access information",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-07T18:30:00-08:00",
+    "accessibility": "The venue reports an upstairs space without an elevator; contact it ahead about accommodation needs."
+  },
+  {
+    "id": "star-theater-exhumed-with-jarhead-fertilizer-savage-master-molder-2026-11-07",
+    "title": "Exhumed with Jarhead Fertilizer, Savage Master & Molder",
+    "subtitle": "Metal, Death metal, Deathgrind · live bill",
+    "category": "Music",
+    "tags": [
+      "Metal",
+      "Death metal",
+      "Deathgrind",
+      "Live music",
+      "All ages"
+    ],
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Exhumed's label Relapse calls the group deathgrind on Red Asphalt page and death metal on Horror release page.",
+      "urls": [
+        "https://www.relapse.com/pages/exhumed-red-asphalt",
+        "https://www.relapse.com/products/exhumed-horror-cd"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$29.33 venue listing",
+    "free": false,
+    "age": "All ages",
+    "description": "Live bill: Exhumed, Jarhead Fertilizer, Savage Master, Molder. Presented by Kingbanana. Doors 7:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/exhumed-with-jarhead-fertilizer-savage-master-molder/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/exhumed-with-jarhead-fertilizer-savage-master-molder/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.relapse.com/pages/exhumed-red-asphalt",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.relapse.com/products/exhumed-horror-cd",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-07T19:00:00-08:00"
+  },
+  {
+    "id": "turn-turn-turn-iroiro-seattle-blesst-chest-trigger-object-grapefruit-2026-11-07",
+    "title": "Iroiro (Seattle) + Blesst Chest + Trigger Object + Grapefruit",
+    "subtitle": "rock, psychedelic rock, shoegaze · live bill",
+    "category": "Music",
+    "tags": [
+      "rock",
+      "psychedelic rock",
+      "shoegaze",
+      "space rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Iroiro official album Bandcamp tags rock, instrumental, psychedelic, shoegaze, space rock; official site calls them instrumental Seattle band.",
+      "urls": [
+        "https://iroiroband.bandcamp.com/album/iroiro-s-t",
+        "https://iroiro.band/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Seattle instrumental rock band Iroiro with Blesst Chest, Trigger Object, and Grapefruit. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/iroiro-seattle-blesst-chest-trigger-object-grapefruit-november-07-2026-786227",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/iroiro-seattle-blesst-chest-trigger-object-grapefruit-november-07-2026-786227",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://iroiroband.bandcamp.com/album/iroiro-s-t",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://iroiro.band/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-07T19:30:00-08:00"
+  },
+  {
+    "id": "the-coffin-club-soft-vein-with-modele-chalice-sect-2026-11-07",
+    "title": "Soft Vein with Modele & Chalice Sect",
+    "subtitle": "Darkwave, Industrial, Coldwave · live bill",
+    "category": "Music",
+    "tags": [
+      "Darkwave",
+      "Industrial",
+      "Coldwave",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Artist's booking agency Persona Grata explicitly describes darkwave solo project blending cold wave and industrial.",
+      "urls": [
+        "https://personagrataagency.com/artists/soft-vein/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-07T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR",
+    "neighborhood": "Central Eastside",
+    "price": "$17.56 advance including fees on official ticket page",
+    "free": false,
+    "age": "21+",
+    "description": "Live bill: Soft Vein, Modele, Chalice Sect. Doors 8:00 PM.",
+    "source": "The Coffin Club · official ticketing",
+    "url": "https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb?direct=true",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official ticketing",
+        "url": "https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb?direct=true",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://personagrataagency.com/artists/soft-vein/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-07T20:00:00-08:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-1-1876-last-thread-altar-girl-kids-on-2026-11-12",
+    "title": "Shoot the Moon Fest · Night 1: 1876, Last Thread, Altar Girl, Kids on Fire",
+    "subtitle": "Punk, Punk rock, Indigenous punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Punk rock",
+      "Indigenous punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "1876 calls itself Indigenous punk rock on its own Bandcamp; release tags include punk rock, ska punk and skate punk.",
+      "urls": [
+        "https://1876band.bandcamp.com/album/pow-wow-punk-rock-iiii"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$20",
+    "free": false,
+    "age": "21+",
+    "description": "Opening night of a four-night festival; 1876 headline this bill. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/467137/Shoot-the-Moon-Fest-Night-1-w-1876-w-Last-Thread-Altar-Girl-Kids-on-Fire",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/467137/Shoot-the-Moon-Fest-Night-1-w-1876-w-Last-Thread-Altar-Girl-Kids-on-Fire",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://1876band.bandcamp.com/album/pow-wow-punk-rock-iiii",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-12T19:30:00-08:00",
+    "seriesId": "shoot-the-moon-2026"
+  },
+  {
+    "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-2-nox-novacula-berzerk-arcana-dj-crash-2026-11-13",
+    "title": "Shoot the Moon Fest · Night 2: Nox Novacula, Berzerk, Arcana, DJ Crash",
+    "subtitle": "Deathrock, Goth, Gothic rock · live bill",
+    "category": "Music",
+    "tags": [
+      "Deathrock",
+      "Goth",
+      "Gothic rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Nox Novacula's label Artoffact explicitly identifies the band as deathrock and discusses gothic rock.",
+      "urls": [
+        "https://artoffact.com/artists/nox-novacula/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$20",
+    "free": false,
+    "age": "21+",
+    "description": "Second festival night includes Nox Novacula, Berzerk, Arcana and DJ Crash. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466439/Shoot-the-Moon-Fest-Night-2-w-Nox-Novacula-Berzerk-Arcana-Dj-Crash",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466439/Shoot-the-Moon-Fest-Night-2-w-Nox-Novacula-Berzerk-Arcana-Dj-Crash",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://artoffact.com/artists/nox-novacula/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-13T19:30:00-08:00",
+    "seriesId": "shoot-the-moon-2026"
+  },
+  {
+    "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-3-goddamn-gallows-king-sickabilly-begg-2026-11-14",
+    "title": "Shoot the Moon Fest · Night 3: Goddamn Gallows, King Sickabilly, Beggars Canyon, John Dough Boys",
+    "subtitle": "Punk, Americana punk, Psychobilly · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Americana punk",
+      "Psychobilly",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "The Goddamn Gallows' own biography identifies punk rock, psychobilly and americana-punk elements.",
+      "urls": [
+        "https://www.thegoddamngallows.com/bio"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$20",
+    "free": false,
+    "age": "21+",
+    "description": "Third festival night, four-act bill. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466598/Shoot-the-Moon-Fest-Night-3-w-Goddamn-Gallows-King-Sickabilly-Beggars-Canyon-John-Dough-Boys",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466598/Shoot-the-Moon-Fest-Night-3-w-Goddamn-Gallows-King-Sickabilly-Beggars-Canyon-John-Dough-Boys",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.thegoddamngallows.com/bio",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-14T19:30:00-08:00",
+    "seriesId": "shoot-the-moon-2026"
+  },
+  {
+    "id": "az-th-sutekh-hexen-sin-pavilion-infinexhuma-sam-an-messiah-claimant-2026-11-14",
+    "title": "Sutekh Hexen + Sin Pavilion + Infinexhuma + Sam An + Messiah Claimant",
+    "subtitle": "black metal, experimental, noise · live bill",
+    "category": "Music",
+    "tags": [
+      "black metal",
+      "experimental",
+      "noise",
+      "industrial",
+      "Live music"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Noise & experimental",
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Sutekh Hexen official Bandcamp calls their music experimental black metal; tags black metal, harsh noise, power electronics.",
+      "urls": [
+        "https://sutekhhexen.bandcamp.com/album/primeval"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "AZØTH",
+    "address": null,
+    "neighborhood": "Portland · location via organizer",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "See organizer for event age policy",
+    "description": "Hierophant Booking presents Sutekh Hexen, Sin Pavilion, Infinexhuma, Sam An, Messiah Claimant. Tickets at door. The time shown is doors; the performance start is unconfirmed.",
+    "source": "Hierophant Booking",
+    "url": "https://www.hierophantbooking.com/shows/sutekhpdx26",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary promoter; explicit2026; doors/location gap",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hierophant Booking",
+        "url": "https://www.hierophantbooking.com/shows/sutekhpdx26",
+        "kind": "promoter",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://sutekhhexen.bandcamp.com/album/primeval",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-14T20:00:00-08:00",
+    "startTimeKind": "doors",
+    "sourceNote": "Calendar time is doors. The show start is unconfirmed. The promoter lists Portland but no street address. Ask the organizer for location and arrival details."
+  },
+  {
+    "id": "no-fun-under-utopia-silver-shores-american-crows-2026-11-14",
+    "title": "Under Utopia, Silver Shores, American Crows",
+    "subtitle": "Alternative rock, Indie rock · live bill",
+    "category": "Music",
+    "tags": [
+      "Alternative rock",
+      "Indie rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Under Utopia's own All Pets Die track tags alternative rock, indie rock and rock.",
+      "urls": [
+        "https://underutopia.bandcamp.com/track/all-pets-die"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Three-act local rock bill. Doors 7:00 PM.",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://underutopia.bandcamp.com/track/all-pets-die",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-14T19:00:00-08:00"
+  },
+  {
+    "id": "star-theater-iron-chic-with-special-guests-2026-11-15",
+    "title": "Iron Chic with special guests",
+    "subtitle": "Punk, Melodic punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Punk",
+      "Melodic punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official Iron Chic Bandcamp describes The Constant One as melodic punk and supplies DIY punk tags.",
+      "urls": [
+        "https://ironchic.bandcamp.com/album/the-constant-one"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-15T19:15:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$27.27 venue listing",
+    "free": false,
+    "age": "21+",
+    "description": "Live concert with special guests not yet named in retrieved venue listing. Presented by Kingbanana. Doors 6:30 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/iron-chic-with-special-guests/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/iron-chic-with-special-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://ironchic.bandcamp.com/album/the-constant-one",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-15T18:30:00-08:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-4-los-mal-hablados-chencha-undisputed-2026-11-15",
+    "title": "Shoot the Moon Fest · Night 4: Los Mal Hablados, Chencha, Undisputed World Champion, Bill Skasby, Del Sol",
+    "subtitle": "Skacore, Punk, Hardcore · live bill",
+    "category": "Music",
+    "tags": [
+      "Skacore",
+      "Punk",
+      "Hardcore",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Los Mal Hablados' official Linktree identifies Portland Latin Skacore; band's official site image reads PDX Latin Hardcore.",
+      "urls": [
+        "https://linktr.ee/losmalhabladospdx",
+        "https://losmalhabladospdx.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$20",
+    "free": false,
+    "age": "21+",
+    "description": "Five-act final festival night. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/467353/Shoot-the-Moon-Fest-Night-4-w-Los-Mal-Hablados-Chencha-Undisputed-World-Champion-Bill-Skasby-Del-Sol",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/467353/Shoot-the-Moon-Fest-Night-4-w-Los-Mal-Hablados-Chencha-Undisputed-World-Champion-Bill-Skasby-Del-Sol",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://linktr.ee/losmalhabladospdx",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://losmalhabladospdx.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-15T19:30:00-08:00",
+    "seriesId": "shoot-the-moon-2026"
+  },
+  {
+    "id": "the-coffin-club-mobiius-with-szara-gnosiiis-2026-11-15",
+    "title": "Mobiius with Szara & Gnosiiis",
+    "subtitle": "Industrial, Electronic · live bill",
+    "category": "Music",
+    "tags": [
+      "Industrial",
+      "Electronic",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Mobiius' own Bandcamp bio explicitly says dark industrial dance music.",
+      "urls": [
+        "https://mobiiusmusic.bandcamp.com/music"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-15T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR",
+    "neighborhood": "Central Eastside",
+    "price": "$23.74 advance including fees on official ticket page",
+    "free": false,
+    "age": "21+",
+    "description": "Ticketed bill: Mobiius, Szara, Gnosiiis. Electronic performance; do not describe as a punk or rock band. Doors 8:00 PM.",
+    "source": "The Coffin Club · official ticketing",
+    "url": "https://tickets.venuepilot.com/e/mobiius-2026-11-15-the-coffin-portland-5168da",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official ticketing",
+        "url": "https://tickets.venuepilot.com/e/mobiius-2026-11-15-the-coffin-portland-5168da",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://mobiiusmusic.bandcamp.com/music",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-15T20:00:00-08:00"
+  },
+  {
+    "id": "star-theater-devil-master-with-pilau-cryr-2026-11-16",
+    "title": "Devil Master with PILAU & Cryr",
+    "subtitle": "Metal, Black metal, Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Metal",
+      "Black metal",
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official Relapse release page describes black metal and punk; Devil Master's own Bandcamp tags black metal, blackened crust and punk.",
+      "urls": [
+        "https://www.startheaterportland.com/",
+        "https://devilmaster.bandcamp.com/album/bloody-dreams",
+        "https://www.relapse.com/pages/devil-master-bloody-dreams",
+        "https://linktr.ee/devilisyourmaster"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-16T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$27.27 venue listing",
+    "free": false,
+    "age": "21+",
+    "description": "Live concert; Star homepage and Ticketmaster venue listing name PILAU and Cryr. Presented by Kingbanana. Doors 7:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/devil-master-with-pilau-guest/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/devil-master-with-pilau-guest/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.startheaterportland.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://devilmaster.bandcamp.com/album/bloody-dreams",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.relapse.com/pages/devil-master-bloody-dreams",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://linktr.ee/devilisyourmaster",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-16T19:00:00-08:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-downstem-album-release-with-impermanence-wastelander-witch-finge-2026-11-19",
+    "title": "Downstem album release with Impermanence, Wastelander, Witch Finger",
+    "subtitle": "Hardcore, Powerviolence, Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Hardcore",
+      "Powerviolence",
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Support act Impermanence's own Bandcamp says two-piece hardcore from Portland, with punk, hardcore punk and powerviolence tags. Downstem's stoner-doom classification appeared only in weak/reposted sources and isn't used here.",
+      "urls": [
+        "https://impermanencepdx.bandcamp.com/album/8-song-eulogy"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Downstem album release bill with three supports. Tickets available at the door; price unlisted on primary venue page. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/466781/Downstem-Album-Release-Show-w-Impermanence-Wastelander-Witch-Finger",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/466781/Downstem-Album-Release-Show-w-Impermanence-Wastelander-Witch-Finger",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://impermanencepdx.bandcamp.com/album/8-song-eulogy",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-19T19:30:00-08:00",
+    "sourceNote": "Hardcore and powerviolence tags describe the verified support act Impermanence; the headliner genre is not inferred."
+  },
+  {
+    "id": "star-theater-hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard-2026-11-19",
+    "title": "HELL with Death Parade, Hope & Failure, Gethen and DJ Dirty Wizard",
+    "subtitle": "Metal · live bill",
+    "category": "Music",
+    "tags": [
+      "Metal",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official Ticketmaster event discovery indexes this bill under metal; label Sentient Ruin describes Salem HELL as sludge/doom, but event page does not link the artist identity, so broad Metal is safest.",
+      "urls": [
+        "https://www.ticketmaster.com/discover/portland?categoryId=KZFzniwnSyZfZ7v7nJ&classificationId=KnvZfZ7vAvt&tt_scene=anchor_view",
+        "https://sentientruin.com/releases/hell-hell-i"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$24.18 venue listing",
+    "free": false,
+    "age": "21+",
+    "description": "Live bands and a named DJ on the bill. Presented by HUNTER. Doors 7:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.ticketmaster.com/discover/portland?categoryId=KZFzniwnSyZfZ7v7nJ&classificationId=KnvZfZ7vAvt&tt_scene=anchor_view",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://sentientruin.com/releases/hell-hell-i",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-19T19:00:00-08:00",
+    "sourceNote": "Broad metal classification follows the official ticketing category; no unverified band biography or subgenre is assigned."
+  },
+  {
+    "id": "turn-turn-turn-beta-voids-byproxy-dj-ben-w-total-punk-souvenir-shop-2026-11-20",
+    "title": "Beta Voids + Byproxy + DJ Ben w/ Total Punk Souvenir Shop",
+    "subtitle": "punk, hardcore punk, post-punk · live bill",
+    "category": "Music",
+    "tags": [
+      "punk",
+      "hardcore punk",
+      "post-punk",
+      "garage rock",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Hardcore",
+      "Post-punk",
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Beta Voids official Bandcamp tags punk, alternative-rock, garage, hardcore, hardcore punk, post-punk, punk rock; event says Presented by TOTAL PUNK.",
+      "urls": [
+        "https://betavoids.bandcamp.com/album/scrape-it-off"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "NE Portland",
+    "price": "See organizer for current cost",
+    "free": null,
+    "age": "21+",
+    "description": "Presented by Total Punk; Beta Voids, Byproxy, DJ Ben, and Total Punk Souvenir Shop. Doors 7:30 PM.",
+    "source": "Turn! Turn! Turn! · official ticketing",
+    "url": "https://app.opendate.io/e/beta-voids-byproxy-dj-ben-w-total-punk-souvenir-shop-november-20-2026-780500",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "primary venue-linked event page; explicit2026",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn! · official ticketing",
+        "url": "https://app.opendate.io/e/beta-voids-byproxy-dj-ben-w-total-punk-souvenir-shop-november-20-2026-780500",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://betavoids.bandcamp.com/album/scrape-it-off",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-20T19:30:00-08:00"
+  },
+  {
+    "id": "star-theater-prayers-no-tengo-calma-tour-2026-featuring-devora-and-hallows-2026-11-20",
+    "title": "PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS",
+    "subtitle": "Goth, Darkwave, Post-punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Goth",
+      "Darkwave",
+      "Post-punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Post-punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "PRAYERS' official ticket/venue bio at Magic Bag identifies cholo-goth electronic; support act HALLOWS official Bandcamp tags darkwave and postpunk.",
+      "urls": [
+        "https://www.themagicbag.com/concerts-magicbag/prayers",
+        "https://hallows.bandcamp.com/album/dream",
+        "https://linktr.ee/CHOLOGOTH",
+        "https://www.ticketweb.com/event/prayers-no-tengo-calma-tour-star-theater-tickets/15016043"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$37.57–$89.07 venue listing (range includes VIP option)",
+    "free": false,
+    "age": "21+",
+    "description": "Live concert featuring PRAYERS, DEVORA and HALLOWS. Venue lists standard admission and VIP meet-and-greet option. Doors 7:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.themagicbag.com/concerts-magicbag/prayers",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://hallows.bandcamp.com/album/dream",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://linktr.ee/CHOLOGOTH",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.ticketweb.com/event/prayers-no-tengo-calma-tour-star-theater-tickets/15016043",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-20T19:00:00-08:00"
+  },
+  {
+    "id": "star-theater-psycroptic-with-inferi-cognitive-summoning-the-lich-2026-11-22",
+    "title": "Psycroptic with Inferi, Cognitive & Summoning the Lich",
+    "subtitle": "Metal, Death metal · live bill",
+    "category": "Music",
+    "tags": [
+      "Metal",
+      "Death metal",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official artist site is titled Psycroptic | Tasmanian Death Metal and separately confirms Nov22 Portland Star Theatre tour stop.",
+      "urls": [
+        "https://www.psycroptic.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-22T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR",
+    "neighborhood": "Old Town",
+    "price": "$27.27 venue listing",
+    "free": false,
+    "age": "21+",
+    "description": "Live bill: Psycroptic, Inferi, Cognitive, Summoning the Lich. Presented by Kingbanana. Doors 5:00 PM.",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/psycroptic-with-inferi-cognitive-summoning-the-lich/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/psycroptic-with-inferi-cognitive-summoning-the-lich/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.psycroptic.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-11-22T17:00:00-08:00"
+  },
+  {
+    "id": "twilight-cafe-and-bar-ignite-with-year-of-the-cobra-and-guest-2026-12-10",
+    "title": "Ignite with Year of the Cobra and guest",
+    "subtitle": "Hardcore, Melodic hardcore · live bill",
+    "category": "Music",
+    "tags": [
+      "Hardcore",
+      "Melodic hardcore",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Hardcore"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Ignite's official website identifies melodic hardcore in its reposted promotion and hardcore throughout its bio/announcements; same site announces theDec10PortlandTwilightdate with Year of the Cobra.",
+      "urls": [
+        "https://www.ignitebandofficial.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$20",
+    "free": false,
+    "age": "21+",
+    "description": "West Coast tour opening night in Portland; additional guest unannounced. Doors 7:30 PM.",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://twilightcafeandbar.com/event/467469/Ignite-w-Year-of-the-Cobra-Guest",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://twilightcafeandbar.com/event/467469/Ignite-w-Year-of-the-Cobra-Guest",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://www.ignitebandofficial.com/",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-12-10T19:30:00-08:00"
+  },
+  {
+    "id": "no-fun-sang-bleu-with-support-tba-2026-12-10",
+    "title": "Sang Bleu with support TBA",
+    "subtitle": "Dance punk, Punk · live bill",
+    "category": "Music",
+    "tags": [
+      "Dance punk",
+      "Punk",
+      "Live music",
+      "21+"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Sang Bleu's own EGOS page calls its music doomy dance punk and tags punk.",
+      "urls": [
+        "https://sangbleupdx.bandcamp.com/album/egos"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Sang Bleu show; two supports remain unannounced. Doors 7:00 PM.",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/sang-bleu-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Primary event page and artist / label genre evidence",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/sang-bleu-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist / label / supporting source",
+        "url": "https://sangbleupdx.bandcamp.com/album/egos",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-underground-music",
+    "doorsAt": "2026-12-10T19:00:00-08:00"
   }
 ];

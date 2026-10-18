@@ -22,3 +22,5 @@ for (const e of events) {
 assert((series.get('pzs-weekend')||0)>=2, 'Series supports multiple VEVENTs');
 console.log('PASS — ' + events.length + ' source-linked events, unique IDs, explicit timezones, chronological times, series.');
 require('./validate-expansion.js');
+require('./validate-music.js');
+require('./music-filters.js');

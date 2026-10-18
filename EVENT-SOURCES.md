@@ -1,8 +1,10 @@
-# Event source review — October 17, 2026
+# Earlier expansion — event source review, October 17, 2026
 
 **Review method: Julie approves additions through the pull request before publication. The associated PR records the current review state.**
 
-The branch adds 69 dated occurrences to the 11-event prototype, for 80 total. New dates run October 18–December 13, 2026. All additions use venue or organizer pages. The original records and stable IDs are retained.
+The earlier merged expansion added 69 dated occurrences to the 11-event prototype, for 80 total. New dates run October 18–December 13, 2026. All additions use venue or organizer pages. The original records and stable IDs are retained.
+
+Latest music-priority additions and source gaps are documented in [MUSIC-SOURCES.md](MUSIC-SOURCES.md). This file preserves the earlier batch; its source-access gaps are historical, not a statement that Star or Coffin remain uncovered.
 
 ## Batch composition
 
