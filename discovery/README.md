@@ -1,6 +1,6 @@
 # SHOWS automatic discovery pilot
 
-**Stage:** proposed automation, not yet active on the default branch and not yet exercised against a real No Fun response in GitHub Actions. Merge and run a manual workflow dispatch first. No events are added by this PR.
+**Stage:** proposed automation, not yet active on the default branch. A live source read and post-generation test have passed in review-branch CI; scheduled execution and PR creation remain untested until the workflow reaches main. Merge and run a manual workflow dispatch first. No events are added by this PR.
 
 ## What runs
 
@@ -31,3 +31,9 @@
 ## Next adapters
 
 Prioritize Twilight, Black Water, Coffin Club, High Limit Room, High Water Mark, Kenton Club, Star Theater, Turn! Turn! Turn!, Doomtown and independent promoters. Integrate their primary ticketing/JSON/RSS/ICS resources where permitted; use explicit time-unknown staging for venues such as Kenton. Add source health reporting, changed/canceled-event alerts and approved image provenance only after the first end-to-end pilot works.
+
+## Verified pilot probe in pull-request CI
+
+The October 17, 2026 trial reached the No Fun public Squarespace JSON presentation from a GitHub Actions runner. It returned **71 event collection items**. A conservative first pass surfaced 17 date/lineup candidates, many of which were newer than the existing December 13 snapshot; an additional source hold now suppresses the November 13 and November 21 conflicting-date candidates. The final count will vary as the venue schedule changes. Test data includes correctly normalized January 2027 shows, and the full existing test suite passed on the resulting proposed calendar.
+
+These are **candidates**, not 17 (or 15) approved new music listings; the review PR is still the mandatory editorial gate. Some other records were excluded as trivia/karaoke, duplicates or ambiguous items. The public JSON feed worked in that one test, but remains a presentation-format endpoint rather than a guaranteed supported API. Detect 403s, empty or changed schemas, or changed rights/access conditions; do not silently treat them as complete event coverage.
