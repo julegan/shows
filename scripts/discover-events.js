@@ -87,6 +87,7 @@ function extract(item,src,now){
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
   source:src.name,url,icon:"♫",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, live-show and cancellation verification required",
   sourceCategories:cat,sources:[{name:src.name,url,kind:"organizer",checkedAt:asof,originalCategories:cat}],
+  ...(item.artwork?{artwork:item.artwork}:{}),
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
  }};
 }
@@ -151,7 +152,11 @@ async function fetchItems(source){
   return verified;
  }
  let json;try{json=JSON.parse(body)}catch(_){throw Error("Venue returned non-JSON response");}
- return itemsOf(json);
+ return itemsOf(json).map(item=>{
+  const raw=item.assetUrl||item.image?.assetUrl||item.image?.url||item.thumbnailUrl;
+  const url=adapters.artworkCandidate(raw,source.url);
+  return url?{...item,artwork:{url,sourceUrl:source.url,origin:"official-event-page",credit:"Venue event listing",usageApproved:null}}:item;
+ });
 }
 function report(r,errors,now){
  const lines=["# SHOWS automated discovery review — "+localDay(now),"",
