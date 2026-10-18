@@ -38,3 +38,10 @@
 @media(max-width:680px){.show-art{aspect-ratio:2.8/1}.show-art--large{aspect-ratio:2.6/1}.show-art-mark{font-size:44px}}
 
 .art-credit{margin:0 0 18px;color:#647168;font-size:12px}
+
+/* Event-specific typeset headline turns the thumbnail into a useful show identifier. */
+.show-art-title{position:absolute;left:16px;right:35%;top:50%;transform:translateY(-50%);color:#fff;font-size:clamp(17px,1.65vw,27px);font-weight:850;line-height:1.09;letter-spacing:-.035em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;text-shadow:0 2px 7px rgba(0,0,0,.35);z-index:1}
+.show-art--large .show-art-title{right:29%;font-size:clamp(24px,3vw,43px);-webkit-line-clamp:2}
+.show-art-mark{left:auto;right:16px;top:12px;font-size:clamp(20px,2.5vw,34px)}
+.show-art-rings{right:-16%;top:-72%;width:62%}
+@media(max-width:680px){.show-art-title{font-size:20px;right:26%;-webkit-line-clamp:2}.show-art--large .show-art-title{font-size:24px;right:30%;-webkit-line-clamp:2}.show-art-mark{font-size:23px;right:14px;top:12px}}
