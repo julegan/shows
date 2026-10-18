@@ -44,7 +44,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- events.js && [ ! -f discovery/latest-review.md ]; then
+          if git diff --quiet -- events.js; then
             echo "No new event candidates. Nothing proposed." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
