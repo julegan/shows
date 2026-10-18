@@ -2,7 +2,7 @@
 
 A small, browser-based working calendar for Portland, Oregon. **SHOWS is a provisional working name, not an adopted brand.**
 
-This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 119 dated occurrences for October–December 2026 across 24 places, including 65 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
+This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 155 dated occurrences for October–December 2026 across 24 places, including 101 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
 
 ## Try it locally
 
@@ -41,7 +41,7 @@ This pilot is **not** a scraper or a recommendation algorithm. The original 11-e
 
 [EDITORIAL.md](EDITORIAL.md) preserves the original underground music priority. [MUSIC-SOURCES.md](MUSIC-SOURCES.md) records the new music bills, style evidence, and source gaps; [EVENT-SOURCES.md](EVENT-SOURCES.md) preserves the earlier expansion, recurrence boundaries, and review notes. Each record preserves source references, check date, verification method, and source categories separately from SHOWS classifications. Unknown admission uses `free: null`, so it is excluded from the confirmed-free filter.
 
-Core music sources checked in this pass include Twilight, High Water Mark, No Fun, Star Theater, Coffin Club, Turn! Turn! Turn!, High Limit Room, Kenton Club, and Hierophant / SOS x 777 Booking. Black Water and other incomplete sources remain in the review log for follow-up.
+The newest venue-coverage research is documented in [VENUE-COVERAGE.md](VENUE-COVERAGE.md), including major-venue additions and outstanding verification gaps. Core sources in the earlier music pass included Twilight, High Water Mark, No Fun, Star Theater, Coffin Club, Turn! Turn! Turn!, High Limit Room, Kenton Club, and Hierophant / SOS x 777 Booking. Black Water and other incomplete sources remain in the review log for follow-up.
 
 Source sites include:
 - https://www.danteslive.com/

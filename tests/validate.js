@@ -24,3 +24,5 @@ console.log('PASS — ' + events.length + ' source-linked events, unique IDs, ex
 require('./validate-expansion.js');
 require('./validate-music.js');
 require('./music-filters.js');
+
+require('./validate-venue-coverage.js');
