@@ -2,7 +2,7 @@
 
 A small, browser-based working calendar for Portland, Oregon. **SHOWS is a provisional working name, not an adopted brand.**
 
-This is the first interaction prototype, not a public launch or a live event aggregation service. It intentionally uses a small, manually checked event sample (October–November 2026). Event times and availability can change; the organizer remains the source of truth.
+This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 80 dated occurrences for October–December 2026 across 16 places. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
 
 ## Try it locally
 
@@ -35,9 +35,16 @@ Apple Calendar: tap/download the \`.ics\` file and open/import it into your pref
 
 ## Editorial/source model
 
-This pilot is **not** a scraper or a recommendation algorithm. Sample event information was reviewed against publicly available organizer and community calendar pages on October 17, 2026. Source URLs are preserved on each event. We start with activities taking place in Portland city limits; any street address that cannot be verified is visibly labeled as unknown and directions are not offered.
+This pilot is **not** a scraper or a recommendation algorithm. The original 11-event sample was checked against publicly available organizer and community calendar pages on October 17, 2026. The 69 additions use venue or organizer pages checked on that date; the pull request is the human editorial approval step. Source URLs are preserved on each event. We start with activities taking place in Portland city limits; any street address that cannot be verified is visibly labeled as unknown and directions are not offered.
 
-Sample source sites:
+[EVENT-SOURCES.md](EVENT-SOURCES.md) contains the proposed occurrences, recurrence boundaries, source conflicts, and review status. Each record preserves source references, check date, verification method, and source categories separately from SHOWS classifications. Unknown admission uses `free: null`, so it is excluded from the confirmed-free filter.
+
+Source sites include:
+- https://www.danteslive.com/
+- https://hawthornetheatre.com/events/
+- https://www.portlandfarmersmarket.org/
+- https://www.portlandsaturdaymarket.com/
+- https://craftywonderland.com/
 - https://www.portlandzinesymposium.org/
 - https://www.outletpdx.com/events
 - https://artdesignxchange.com/events
