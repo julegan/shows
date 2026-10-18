@@ -57,6 +57,7 @@ function extract(item,src,now){
  if(!item||typeof item!=="object")return {hold:"Unusable source object"};
  const title=tidy(item.title),url=urlOf(item,src);
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
+ if(/\b(trivia|karaoke|open mic|comedy|craft night|mask making|quiz|bingo|brunch|workshop|screening)\b/i.test(title))return {hold:"Different event category, not a confirmed live music show",title,url};
  const stamp=item.startDate??item.startTime??item.start;
  if(stamp==null)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
