@@ -83,7 +83,7 @@
       const dayItems=items.filter(e=>ymd(e)===day);
       const cl=["day",!inMonth?"outside":"",day===today?"today":"",day===state.selectedDay?"selected":""].filter(Boolean).join(" ");
       html+='<div class="'+cl+'"><div class="day-top"><button class="day-number" type="button" data-day="'+day+'" aria-label="Explore '+esc(readableDay(day))+'">'+d.getUTCDate()+'</button></div>';
-      for(const e of dayItems.slice(0,3))html+='<button type="button" class="event-chip" data-category="'+esc(e.category)+'" data-event="'+esc(e.id)+'" aria-label="'+esc(e.title+" at "+clock(e))+'"><span class="chip-time">'+esc(clock(e))+'</span>'+esc(e.title)+'</button>';
+      for(const e of dayItems.slice(0,3))html+='<button type="button" class="event-chip" data-category="'+esc(e.category)+'" data-event="'+esc(e.id)+'"><span class="chip-time">'+esc(clock(e))+'</span>'+esc(e.title)+'</button>';
       if(dayItems.length>3)html+='<button class="overflow" data-day="'+day+'" type="button">+'+(dayItems.length-3)+' more</button>';
       html+='</div>';
     }
