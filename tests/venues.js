@@ -15,7 +15,9 @@ for(const v of venues.venues){
 const a=audit("2026-10-18");
 const count=id=>a.rows.find(x=>x.id===id);
 assert(count("black-water"),"Black Water must remain a core venue even without a working feed");
-assert.equal(count("black-water").futureMusic,0,"Missing coverage must be visible");
+assert.equal(count("black-water").futureCount,11,"Official source provides eleven dated Black Water listings");
+assert.equal(count("black-water").futureMusic,8,"Only source-evident music should be classified as Music");
+assert.equal(count("black-water").ingestionStatus,"active-adapter");
 assert(count("star-theater").futureMusic>0);
 assert(count("coffin-club").futureMusic>0);
 assert(count("mississippi").futureMusic===0,"Missing but public official calendar must show a gap");

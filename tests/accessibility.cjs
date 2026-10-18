@@ -24,6 +24,17 @@ async function showsViews(browser,viewport){
   errors.push(...await audit(page,"SHOWS month "+viewport.width));
   await page.locator('[data-view="agenda"]').click();
   errors.push(...await audit(page,"SHOWS list "+viewport.width));
+  if(!isPortfolio){
+    const tba=page.locator('button.event-card').filter({hasText:"IRON LUNG (WA)"}).first();
+    assert(await tba.count(),"Official Black Water date-only events should appear in List");
+    assert((await tba.innerText()).includes("Time TBA"),"Date-only events must never display a fabricated midnight start");
+    await tba.click();
+    const label=await page.locator("#eventDialog").innerText();
+    assert(label.includes("Time TBA"),"Date-only detail should show unknown time");
+    const href=await page.locator('#eventDialog a').filter({hasText:"Google Calendar"}).getAttribute("href");
+    assert.equal(new URL(href).searchParams.get("dates"),"20261022/20261023","Google Calendar should use all-day date-only placeholder");
+    await page.locator("[data-close]").click();
+  }
   const event=page.locator("button.event-card").first();
   if(await event.count()){
     await event.click();

@@ -1,0 +1,16 @@
+name: Preview Black Water calendar (review only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preview official calendar (never publish)
+        run: node scripts/preview-black-water.js

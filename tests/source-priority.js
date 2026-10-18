@@ -15,10 +15,10 @@ for(const id of order){
 }
 assert.equal(byId["soundcontrol-pdx"].type,"promoter");
 assert.equal(byId["soundcontrol-pdx"].venue,null,"Multi-venue promoter never gets a fixed venue");
-assert.equal(byId["black-water"].status,"source-blocked","Do not bypass official access restrictions");
+assert.equal(byId["black-water"].status,"pilot-enabled","Officially embedded calendar is publicly accessible");
 assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"pilot-enabled","Keep existing technical pilot working until new adapters pass tests");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["twilight","soundcontrol-pdx","star-theater","no-fun"]);
-assert(enabled.every(s=>["twilight-html","promoter-list-html","star-theater-html","squarespace-json"].includes(s.adapter)),"No unsupported adapter may run");
+assert.deepEqual(enabled.map(s=>s.id),["twilight","black-water","soundcontrol-pdx","star-theater","no-fun"]);
+assert(enabled.every(s=>["twilight-html","black-water-ics","promoter-list-html","star-theater-html","squarespace-json"].includes(s.adapter)),"No unsupported adapter may run");
 console.log("PASS — five original priority sources first, promoter location unassigned, Black Water access respected and No Fun pilot intact.");
