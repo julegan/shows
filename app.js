@@ -25,8 +25,8 @@
   function ymd(e){return localYmd(new Date(e.startsAt));}
   function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
   function dateLabel(e){return dateLong.format(new Date(e.startsAt));}
-  function clock(e){return (e.startTimeKind==="doors"?"Doors ":e.startTimeKind==="listed"?"Listed time ":"")+timeFmt.format(new Date(e.startsAt));}
-  function timeRange(e){return clock(e)+(e.endsAt?" – "+timeFmt.format(new Date(e.endsAt)):" · end time not confirmed");}
+  function clock(e){return e.startTimeKind==="date-only"?"Time TBA":(e.startTimeKind==="doors"?"Doors ":e.startTimeKind==="listed"?"Listed time ":"")+timeFmt.format(new Date(e.startsAt));}
+  function timeRange(e){return e.startTimeKind==="date-only"?"Time TBA · date confirmed, start time not published":clock(e)+(e.endsAt?" – "+timeFmt.format(new Date(e.endsAt)):" · end time not confirmed");}
   function readableDay(day){return dateLong.format(new Date(day+"T12:00:00Z"));}
   function monthDate(y,m,d){return new Date(Date.UTC(y,m-1,d));}
   function addDays(day,n){const d = new Date(day+"T12:00:00Z");d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);}
@@ -137,8 +137,8 @@
   function googleLink(e){
     const start=new Date(e.startsAt),end=e.endsAt?new Date(e.endsAt):new Date(start.getTime()+60*60000);
     const fmt=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
-    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title+(e.startTimeKind==="doors"?" (doors)":e.startTimeKind==="listed"?" (time unverified)":""));u.searchParams.set("dates",fmt(start)+"/"+fmt(end));
-    u.searchParams.set("details",e.description+"\nSource: "+e.url+(e.endsAt?"":"\nThe original listing did not confirm an end time. Adjust the one-hour placeholder."));
+    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title+(e.startTimeKind==="doors"?" (doors)":e.startTimeKind==="listed"?" (time unverified)":""));u.searchParams.set("dates",e.startTimeKind==="date-only"?ymd(e).replace(/-/g,"")+"/"+addDays(ymd(e),1).replace(/-/g,""):fmt(start)+"/"+fmt(end));
+    u.searchParams.set("details",e.description+"\nSource: "+e.url+(e.startTimeKind==="date-only"?"\nDate is confirmed but no start time is published. This is an all-day calendar placeholder; update when the organizer announces a time.":e.endsAt?"":"\nThe original listing did not confirm an end time. Adjust the one-hour placeholder."));
     if(e.address)u.searchParams.set("location",e.venue+", "+e.address);
     return u.toString();
   }
@@ -154,7 +154,15 @@
     const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//SHOWS//Portland Calendar Pilot//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:SHOWS saved events"];
     for(const e of items){
       const end=e.endsAt?new Date(e.endsAt):new Date(Date.parse(e.startsAt)+3600000);
-      lines.push("BEGIN:VEVENT","UID:"+e.id+"@shows-portland","DTSTAMP:"+stamp,"DTSTART:"+icsDate(new Date(e.startsAt)),"DTEND:"+icsDate(end),"SUMMARY:"+icsEscape(e.title+(e.startTimeKind==="doors"?" (doors)":"")),"LOCATION:"+icsEscape([e.venue,e.address].filter(Boolean).join(", ")),"DESCRIPTION:"+icsEscape(e.description+"\nSource: "+e.url+(e.endsAt?"":"\nNote: End time was not published. The calendar includes a one-hour placeholder; edit it as needed.")),"URL:"+e.url,"END:VEVENT");
+      const allDay=e.startTimeKind==="date-only";
+      const startDay=ymd(e).replace(/-/g,""),endDay=addDays(ymd(e),1).replace(/-/g,"");
+      lines.push("BEGIN:VEVENT","UID:"+e.id+"@shows-portland","DTSTAMP:"+stamp,
+        allDay?"DTSTART;VALUE=DATE:"+startDay:"DTSTART:"+icsDate(new Date(e.startsAt)),
+        allDay?"DTEND;VALUE=DATE:"+endDay:"DTEND:"+icsDate(end),
+        "SUMMARY:"+icsEscape(e.title+(e.startTimeKind==="doors"?" (doors)":"")),
+        "LOCATION:"+icsEscape([e.venue,e.address].filter(Boolean).join(", ")),
+        "DESCRIPTION:"+icsEscape(e.description+"\nSource: "+e.url+(allDay?"\nDate confirmed; start time not published. This is an all-day calendar placeholder; update when time is known.":e.endsAt?"":"\nNote: End time was not published. The calendar includes a one-hour placeholder; edit it as needed.")),
+        "URL:"+e.url,"END:VEVENT");
     }
     lines.push("END:VCALENDAR");return lines.map(fold).join("\r\n")+"\r\n";
   }
