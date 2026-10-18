@@ -57,9 +57,9 @@ function eventArtworkFromHtml(html,pageUrl){
  }
  const metas=[...String(html).matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);
  for(const m of metas){
-  const attr=n=>m.match(new RegExp("(?:^|\\\\s)"+n+"\\\\s*=\\\\s*(['\\\"])(.*?)\\\\1","i"))?.[2];
-  const key=(attr("property")||attr("name")||"").toLowerCase();
-  if(key==="og:image"||key==="twitter:image")fromSchema.push(attr("content"));
+  const attrs=Object.fromEntries([...m.matchAll(/([:\\w-]+)\\s*=\\s*(["'])(.*?)\\2/g)].map(x=>[x[1].toLowerCase(),x[3]]));
+  const key=(attrs.property||attrs.name||"").toLowerCase();
+  if(key==="og:image"||key==="twitter:image")fromSchema.push(attrs.content);
  }
  const seen=new Set();
  for(const raw of fromSchema){
