@@ -71,3 +71,8 @@ Design premise: the calendar is the product. Let people easily see what's happen
 ## Data update workflow
 
 This static snapshot does not currently scrape, sync, or refresh shows on its own. The canonical `events.js` must be updated and validated, reviewed through a SHOWS PR, then explicitly synced to the portfolio snapshot through a second PR. A later importer should collect venue and promoter source links into an editorial queue, normalize the timestamps, detect duplicates and changed events, and require review before publication. The presence of a source link is not proof of cancellation monitoring.
+
+
+## Automatic discovery pilot (review-only)
+
+The pilot implementation and source registry are described in [discovery/README.md](discovery/README.md). A daily GitHub Actions workflow can discover No Fun listings and propose events through a **review PR**; no unreviewed events publish automatically. No Fun feed compatibility and GitHub permissions must be confirmed with a manual workflow run after this change is approved. Other independent sources are registered for adapters. The portfolio repository has a separate proposed data-sync workflow. This is **not a live event feed** and changes/cancellations are not monitored yet.
