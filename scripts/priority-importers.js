@@ -31,6 +31,46 @@ function primaryUrl(raw,source,path){
   u.search="";u.hash="";return u.href;
  }catch(_){return null;}
 }
+// Extract artwork only from the same event's official listing, not sitewide generic art.
+function artworkCandidate(raw,pageUrl){
+ try{
+  if(typeof raw==="object"&&raw)raw=raw.url||raw.contentUrl;
+  if(typeof raw!=="string"||!raw.trim())return null;
+  const u=new URL(raw,pageUrl);
+  if(u.protocol!=="https:"||u.username||u.password||u.href.length>1100)return null;
+  if(/\.(?:svg|gif)(?:[?#]|$)/i.test(u.pathname)||/(?:logo|favicon|avatar|placeholder|default|pixel|tracking|site-icon)/i.test(u.pathname))return null;
+  return u.href;
+ }catch(_){return null;}
+}
+function eventArtworkFromHtml(html,pageUrl){
+ const page=new URL(pageUrl);
+ const fromSchema=[];
+ for(const m of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){
+  try{
+   const data=JSON.parse(m[1]);
+   const candidates=[...Array.isArray(data)?data:[data]];
+   for(const obj of candidates.flatMap(x=>Array.isArray(x["@graph"])?x["@graph"]:[x])){
+    if(!/Event$/.test(String(obj?.["@type"]||"")))continue;
+    for(const candidate of Array.isArray(obj.image)?obj.image:[obj.image])if(candidate)fromSchema.push(candidate);
+   }
+  }catch(_){}
+ }
+ const metas=[...String(html).matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);
+ for(const m of metas){
+  const attrs=Object.fromEntries([...m.matchAll(/([A-Za-z:-]+)\s*=\s*["']([^"']*)["']/g)].map(x=>[x[1].toLowerCase(),x[2]]));
+  const key=(attrs.property||attrs.name||"").toLowerCase();
+  if(key==="og:image"||key==="twitter:image")fromSchema.push(attrs.content);
+ }
+ const seen=new Set();
+ for(const raw of fromSchema){
+  const url=artworkCandidate(raw,pageUrl);
+  if(!url||seen.has(url))continue;
+  seen.add(url);
+  // Accept organizer-supplied event-specific art, not a generic page thumbnail.
+  return {url,sourceUrl:page.href,origin:"official-event-page",credit:"Official event page",usageApproved:null};
+ }
+ return null;
+}
 function parseStar(html,source){
  const chunks=htmlBlocks(html,/<div class="tw-section">/i);
  const out=[];
@@ -44,7 +84,7 @@ function parseStar(html,source){
   const iso=wallToPacific(year,month,day,tm);
   out.push({title,fullUrl:url,startDate:iso,dateOnly:iso?null:[year,String(month).padStart(2,"0"),String(day).padStart(2,"0")].join("-"),
     timeEvidence:tm?"Official Star Theater listing identifies show time":"No verified Star Theater performance time",
-    sourceVerifiedMusic:true,description:"Official Star Theater event calendar listing"});
+    sourceVerifiedMusic:true,description:"Official Star Theater event calendar listing",artwork:eventArtworkFromHtml(chunk,url)});
  }
  return out;
 }
@@ -77,7 +117,7 @@ function parseTwilightDetail(html,detailUrl,source){
  const location=typeof event.location?.name==="string"?event.location.name:"";
  if(location&&!/twilight/i.test(location))return {hold:"Event location is no longer Twilight",title:clean(event.name),url:official};
  return {title:clean(event.name),startDate:event.startDate,fullUrl:official,sourceVerifiedMusic: !!(event.performer||/live|music|concert/i.test(event.description||"")),
-   description:"Official Twilight event schema",timeEvidence:"Twilight publishes this as performance start",eventFormat:"unverified",venue:source.venue};
+   description:"Official Twilight event schema",artwork:eventArtworkFromHtml(html,official),timeEvidence:"Twilight publishes this as performance start",eventFormat:"unverified",venue:source.venue};
 }
 function parseSoundcontrol(html,source){
  const out=[];
@@ -96,7 +136,7 @@ function parseSoundcontrol(html,source){
   // Source lists the year, date and venue, but not a showtime: stage for review, do not fabricate.
   out.push({title,fullUrl:u.href,dateOnly:[year,String(month).padStart(2,"0"),String(day).padStart(2,"0")].join("-"),
    venue,sourceVerifiedMusic:true,description:"Promoter's own event listing; time must be verified at original ticket page",
-   timeEvidence:"Soundcontrol roster provides no verified show time"});
+   timeEvidence:"Soundcontrol roster provides no verified show time",artwork:eventArtworkFromHtml(card,source.baseUrl)});
  }
  return out;
 }
@@ -117,4 +157,4 @@ function parseSoundcontrolDetail(html,record){
   description:"Promoter and official ticket page both confirm the venue and event date. Performance time appears on ticketing detail."};
 }
 
-module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific,time24};
+module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific,time24,eventArtworkFromHtml,artworkCandidate};

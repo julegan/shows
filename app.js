@@ -101,16 +101,18 @@
     const match=filtered().some(v=>v.id===e.id);
     state.selectedDay=found;return match;
   }
-  // Original promoter/artist artwork is opt-in only after editorial rights and URL review.
-  // Otherwise use non-representational SHOWS artwork; never invent a band poster.
+  // Use original venue/promoter-supplied event artwork; no synthesized band posters.
+  // Source metadata is validated during discovery. Broken external images fail to a neutral card.
   function artMarkup(e,large=false){
-    const style=(e.musicStyles||[])[0]||e.category;
-    const tones={"Metal":"metal","Hardcore":"hardcore","Punk":"punk","Goth & darkwave":"goth","Industrial & EBM":"industrial","Post-punk":"postpunk","Noise & experimental":"noise","Rock":"rock","Markets":"market","Arts & DIY":"diy","Workshops":"workshop","Community":"community"};
-    const tone=tones[style]||"neutral";
     const arts=e.artwork;
-    const valid=arts&&/^https:\/\//i.test(arts.url||"")&&arts.credit&&arts.usageApproved===true;
-    const photo=valid?'<img src="'+esc(arts.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':"";
-    return '<span class="show-art show-art--'+tone+(large?' show-art--large':'')+'" aria-hidden="true"><span class="show-art-rings"></span><span class="show-art-mark">S<span>／</span></span><span class="show-art-title">'+esc(e.title)+'</span><span class="show-art-caption">'+esc(style)+'</span>'+photo+'</span>'+(large&&valid?'<p class="art-credit">Event artwork: '+esc(arts.credit)+'</p>':'');
+    const valid=arts && typeof arts.url==="string" &&
+      /^https:\/\/[^<>"'\s]+$/i.test(arts.url) &&
+      typeof arts.sourceUrl==="string" && /^https:\/\//i.test(arts.sourceUrl) &&
+      (arts.origin==="official-event-page" || arts.usageApproved===true) && arts.usageApproved!==false;
+    const image=valid?'<img class="show-art-image" src="'+esc(arts.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin">':"";
+    const label='<span class="show-art-placeholder">No flyer available</span>';
+    const credit=valid&&large?'<p class="art-credit">Event artwork from <a target="_blank" rel="noopener noreferrer" href="'+esc(arts.sourceUrl)+'">'+esc(arts.credit||"the official event listing")+'</a>. Artwork and details belong to their respective creators.</p>':"";
+    return '<span class="show-art'+(large?' show-art--large':'')+(valid?' show-art--poster':'')+'" aria-hidden="true">'+label+image+'</span>'+credit;
   }
   function eventCard(e){
     return '<button type="button" data-event="'+esc(e.id)+'" class="event-card" data-category="'+esc(e.category)+'">'+artMarkup(e)+'<span class="tag">'+esc(e.category)+'</span><h3>'+esc(e.title)+'</h3><span class="card-desc">'+esc(e.subtitle)+'</span><span class="card-meta">'+esc(clock(e))+' · '+esc(e.venue)+'<br>'+esc(e.price)+'</span><span class="card-cta">Explore event ↗</span></button>';
@@ -205,6 +207,13 @@
     if(e.target.closest("[data-clear-day]")){state.selectedDay=null;render();return;}
     if(e.target.closest("[data-reset]")){restoreFilters();render();}
   });
+  // A blocked or missing hotlinked flyer must not leave a broken image in the interface.
+  if(typeof document.addEventListener==="function")document.addEventListener("error",e=>{
+    const image=e.target;
+    if(!(image instanceof HTMLImageElement)||!image.classList.contains("show-art-image"))return;
+    image.remove();
+    image.closest(".show-art")?.classList.remove("show-art--poster");
+  },true);
   $("eventDialog").addEventListener("click",async e=>{
     if(e.target===$("eventDialog")||e.target.closest("[data-close]")){closeDialog();return;}
     const b=e.target.closest("button");if(!b)return;

@@ -1,16 +1,12 @@
-# SHOWS event thumbnails: editorial and accessibility policy
+# SHOWS original event artwork
 
-The app shows **designed editorial thumbnails** in agenda/list event cards and individual event detail dialogs. They are abstract geometric visual signifiers, **not** photographs of performers and **not** simulated show posters. The month grid stays compact and usable on mobile.
+SHOWS uses **event-specific images from original organizer and venue listings** when available, without synthesizing flyers or cropping their original proportions.
 
-## Official flyer support
-
-Each event may eventually supply `artwork: { url: "https://…", credit: "Artist or venue name, source URL", usageApproved: true }`. The app displays this only when all three are present; absent fields always fall back to the designed thumbnail. The event detail shows the credit near the image. Card artwork is decorative, so its HTML image has an empty alt attribute; the full event title and venue remain readable independent of the image.
-
-Do not auto-hotlink photographs or flyers just because they are publicly visible. For actual posters use an approved venue/promoter/artist flyer, confirm embedding or reproduction rights and a stable asset URL, retain provenance, avoid impermissible cropping, and add the appropriate attribution. Prefer storing appropriately licensed images as local optimized WebP/AVIF under a purpose-built directory rather than relying on ephemeral third-party URLs. Preserve artist branding faithfully and do not use an invented visual as if it were an official concert poster.
-
-## Further accessibility/operational QA
-
-- Test mobile and desktop agenda cards, modal image loading/fallback, screen-reader reading order, keyboard dialog operation, touch target sizing, 200% zoom, high contrast and reduced motion.
-- Check credit visibility and image rights before reviewing any addition with `usageApproved:true`.
-- Do not put full image thumbnails inside the month grid, where they would reduce calendar usability; consider optional poster tiles in the places view later.
-- The currently reviewed events intentionally contain **no externally sourced poster images**.
+- Importers read Event JSON-LD `image` and event-page `og:image` or `twitter:image` from supported official sources. Squarespace image fields can also provide event imagery.
+- The event data retains `artwork.url`, `artwork.sourceUrl`, `artwork.origin`, and attribution. Source-specific images can be absent. They must not be fabricated.
+- Generic venue logos, favicon files, and obvious placeholders are excluded. The browser falls back to the neutral “No flyer available” tile when a source URL is missing or broken.
+- HTML image insertion is decorative because the event title is present in the card text. Detail views provide source attribution.
+- Embedded external artwork may be governed by venue/artist usage terms; confirm permission and a stable source before redistributing, mirroring, or caching imagery locally. Do not strip credit, watermark, or artist branding.
+- Newly discovered candidate records gain images during importer runs. Existing records without artwork do **not** magically acquire images: they need a deliberate backfill/reimport or source-linked update before a poster appears.
+- Keep an opt-out mechanism for source owners or event organizers, and never treat an image URL as evidence of permission to mirror it.
+- Maintain WCAG 2.1 AA testing for contrast, keyboard support, and readable event information independent of imagery.
