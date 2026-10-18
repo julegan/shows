@@ -19,14 +19,15 @@
     {
       "id": "black-water",
       "name": "Black Water",
-      "status": "source-blocked",
+      "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Official Black Water site returned HTTP 403; source still pending an authorized promoter, ticketing, or venue feed; no bypass.",
-      "url": "https://bar.blackwaterpdx.com/",
+      "reason": "Official Black Water page embeds a public Google Calendar; iCalendar export tested successfully. Items currently all-day/date-only; preserve time as unconfirmed.",
+      "url": "https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics",
       "baseUrl": "https://bar.blackwaterpdx.com",
       "venue": "Black Water",
       "address": "5115 NE Sandy Blvd, Portland, OR 97213",
-      "neighborhood": "Rose City Park"
+      "neighborhood": "Rose City Park",
+      "adapter": "black-water-ics"
     },
     {
       "id": "high-water",
