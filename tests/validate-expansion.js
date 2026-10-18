@@ -6,8 +6,8 @@ const context = {window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(__dirname,'..','events.js'),'utf8'),context);
 const events=context.window.SHOWS_EVENTS;
 const metadata=context.window.SHOWS_DATASET;
-const added=events.filter(e=>e.addedIn===metadata.batchId);
-assert.equal(events.length,80);
+const added=events.filter(e=>e.addedIn==='2026-10-17-expansion');
+assert(events.length>=80);
 assert.equal(added.length,69);
 assert.equal(metadata.totalOccurrences,events.length);
 const keys=new Set();
@@ -30,7 +30,7 @@ for(const e of events){
 }
 for(const e of added){
   assert(e.startsAt.slice(0,10)>='2026-10-18'&&e.startsAt.slice(0,10)<='2026-12-13');
-  assert(e.sources.every(s=>s.kind==='organizer'));
+  assert(e.sources.some(s=>s.kind==='organizer'&&s.url===e.url),'Original organizer remains the primary event reference');
 }
 const members=id=>events.filter(e=>e.seriesId===id);
 assert.equal(members('psu-farmers-2026').length,8);

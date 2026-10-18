@@ -2,42 +2,46 @@
 
 A small, browser-based working calendar for Portland, Oregon. **SHOWS is a provisional working name, not an adopted brand.**
 
-This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 80 dated occurrences for October–December 2026 across 16 places. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
+This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 119 dated occurrences for October–December 2026 across 24 places, including 65 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
 
 ## Try it locally
 
-Download/clone this branch and open \`index.html\` in a modern browser. No dependencies, package manager, build, account or backend needed.
+Download/clone this branch and open `index.html` in a modern browser. No dependencies, package manager, build, account or backend needed.
 
 ## Included
 
 - Responsive month-grid, agenda/list and venue/place views, including a useful compact mobile calendar
 - Previous/next month navigation, today's date, and drilldown on any calendar day
 - Search across title, location, organizer context, description and tags
-- Interest, neighborhood, free, today, weekend, next-seven-days and saved filters
+- Interest, music-style, neighborhood, free, today, weekend, next-seven-days and saved filters
 - Event detail dialog, original organizer link and maps/directions when an address is verified
 - Add individual events to Google Calendar using its native event template
-- Download an individual event or a multi-event series as an RFC 5545-compatible \`.ics\` file for Apple Calendar, Outlook or Google Calendar import
-- Export events in the current filtered view to \`.ics\`
+- Download an individual event or a multi-event series as an RFC 5545-compatible `.ics` file for Apple Calendar, Outlook or Google Calendar import
+- Export events in the current filtered view to `.ics`
 - Save events in this browser using localStorage; share stable event URLs with hash deep links
 - No ads, analytics, profiles, account creation or behavioral tracking
 
+**Doors-only times:** When only doors are published, the UI labels the time as Doors. Calendar export titles say `(doors)` and their descriptions disclose that the performance start is unconfirmed.
+
 **Unknown end times:** A one-hour editable placeholder is required by the calendar export interfaces and is clearly disclosed. It does not represent a verified end time.
 
-**Series:** Series exports currently produce one \`VEVENT\` per date; this is correct for nonuniform multi-day events. True recurrence rules (\`RRULE\`) are a later enhancement once a recurring source data model exists.
+**Series:** Series exports currently produce one `VEVENT` per date; this is correct for nonuniform multi-day events. True recurrence rules (`RRULE`) are a later enhancement once a recurring source data model exists.
 
 ## Accessibility and browser behavior
 
 Semantic headings and controls, explicit labels, keyboard-operated dialog, focus-visible styling, screen-reader status, a skip link and reduced-motion preference are included. Formal WCAG 2.2 AA auditing and real device testing remain to be done.
 
-The event sample is separate in \`events.js\`; UI and calendar-export logic live in \`app.js\`. Dates are stored with explicit Pacific offsets so UTC calendar exports retain the right absolute time across daylight saving changes.
+The event sample is separate in `events.js`; UI and calendar-export logic live in `app.js`. Dates are stored with explicit Pacific offsets so UTC calendar exports retain the right absolute time across daylight saving changes.
 
-Apple Calendar: tap/download the \`.ics\` file and open/import it into your preferred calendar. Behavior differs by device and browser. Google Calendar single-event links open the Google Calendar event editor. For series/multiple events, import the downloaded \`.ics\` file through Google Calendar settings or another calendar application.
+Apple Calendar: tap/download the `.ics` file and open/import it into your preferred calendar. Behavior differs by device and browser. Google Calendar single-event links open the Google Calendar event editor. For series/multiple events, import the downloaded `.ics` file through Google Calendar settings or another calendar application.
 
 ## Editorial/source model
 
-This pilot is **not** a scraper or a recommendation algorithm. The original 11-event sample was checked against publicly available organizer and community calendar pages on October 17, 2026. The 69 additions use venue or organizer pages checked on that date; the pull request is the human editorial approval step. Source URLs are preserved on each event. We start with activities taking place in Portland city limits; any street address that cannot be verified is visibly labeled as unknown and directions are not offered.
+This pilot is **not** a scraper or a recommendation algorithm. The original 11-event sample was checked against publicly available organizer and community calendar pages on October 17, 2026. The earlier 69-occurrence expansion and this 39-date music expansion preserve their source checks; the pull request is the human editorial approval step. The music pass adds 37 live bills and two goth DJ nights from primary venue, promoter, ticket, or artist listings, with explicit source-availability notes. Source URLs are preserved on each event. We start with activities taking place in Portland city limits; any street address that cannot be verified is visibly labeled as unknown and directions are not offered.
 
-[EVENT-SOURCES.md](EVENT-SOURCES.md) contains the proposed occurrences, recurrence boundaries, source conflicts, and review status. Each record preserves source references, check date, verification method, and source categories separately from SHOWS classifications. Unknown admission uses `free: null`, so it is excluded from the confirmed-free filter.
+[EDITORIAL.md](EDITORIAL.md) preserves the original underground music priority. [MUSIC-SOURCES.md](MUSIC-SOURCES.md) records the new music bills, style evidence, and source gaps; [EVENT-SOURCES.md](EVENT-SOURCES.md) preserves the earlier expansion, recurrence boundaries, and review notes. Each record preserves source references, check date, verification method, and source categories separately from SHOWS classifications. Unknown admission uses `free: null`, so it is excluded from the confirmed-free filter.
+
+Core music sources checked in this pass include Twilight, High Water Mark, No Fun, Star Theater, Coffin Club, Turn! Turn! Turn!, High Limit Room, Kenton Club, and Hierophant / SOS x 777 Booking. Black Water and other incomplete sources remain in the review log for follow-up.
 
 Source sites include:
 - https://www.danteslive.com/
@@ -58,6 +62,6 @@ Live source ingestion, editorial review queue, approved publication workflow, re
 
 ## Release / testing
 
-Run \`node --check app.js\`, \`node --check events.js\`, and \`node tests/validate.js\` (Node 20+). The included GitHub Actions workflow runs these on pull requests.
+Run `node --check app.js`, `node --check events.js`, and `node tests/validate.js` (Node 20+). The included GitHub Actions workflow runs these on pull requests.
 
 Design premise: the calendar is the product. Let people easily see what's happening, decide whether to go, and bring what interests them into their own calendars.

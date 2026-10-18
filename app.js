@@ -3,9 +3,10 @@
   const events = Object.freeze((window.SHOWS_EVENTS || []).slice().sort((a,b) => Date.parse(a.startsAt) - Date.parse(b.startsAt)));
   const zone = "America/Los_Angeles";
   const today = localYmd(new Date());
-  const state = {month:today.slice(0,7),view:"month",search:"",category:"all",neighborhood:"all",quick:"all",selectedDay:null};
+  const state = {month:today.slice(0,7),view:"month",search:"",category:"all",musicStyle:"all",neighborhood:"all",quick:"all",selectedDay:null};
   const $ = (id) => document.getElementById(id);
   const categories = [...new Set(events.map(e=>e.category))].sort();
+  const musicStyles = [...new Set(events.flatMap(e=>e.musicStyles||[]))].sort();
   const neighborhoods = [...new Set(events.map(e=>e.neighborhood))].sort();
   const dateParts = new Intl.DateTimeFormat("en-US",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit"});
   const dateLong = new Intl.DateTimeFormat("en-US",{timeZone:zone,weekday:"long",month:"long",day:"numeric"});
@@ -24,7 +25,7 @@
   function ymd(e){return localYmd(new Date(e.startsAt));}
   function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
   function dateLabel(e){return dateLong.format(new Date(e.startsAt));}
-  function clock(e){return timeFmt.format(new Date(e.startsAt));}
+  function clock(e){return (e.startTimeKind==="doors"?"Doors ":"")+timeFmt.format(new Date(e.startsAt));}
   function timeRange(e){return clock(e)+(e.endsAt?" – "+timeFmt.format(new Date(e.endsAt)):" · end time not confirmed");}
   function readableDay(day){return dateLong.format(new Date(day+"T12:00:00Z"));}
   function monthDate(y,m,d){return new Date(Date.UTC(y,m-1,d));}
@@ -41,19 +42,20 @@
     return events.filter(e => {
       if (!inWindow(e))return false;
       if(state.category!=="all" && e.category!==state.category)return false;
+      if(state.musicStyle!=="all" && !(e.musicStyles||[]).includes(state.musicStyle))return false;
       if(state.neighborhood!=="all" && e.neighborhood!==state.neighborhood)return false;
       if(state.quick==="free" && !e.free)return false;
       if(state.quick==="saved" && !saved.has(e.id))return false;
       if(state.search){
-        const all=[e.title,e.subtitle,e.category,e.venue,e.neighborhood,e.description,...e.tags].join(" ").toLowerCase();
+        const all=[e.title,e.subtitle,e.category,e.venue,e.neighborhood,e.description,...e.tags,...(e.musicStyles||[])].join(" ").toLowerCase();
         if(!all.includes(state.search))return false;
       }
       return true;
     });
   }
   function restoreFilters(){
-    state.quick="all";state.search="";state.category="all";state.neighborhood="all";state.selectedDay=null;
-    $("search").value="";$("category").value="all";$("neighborhood").value="all";
+    state.quick="all";state.search="";state.category="all";state.musicStyle="all";state.neighborhood="all";state.selectedDay=null;
+    $("search").value="";$("category").value="all";$("musicStyle").value="all";$("neighborhood").value="all";
     document.querySelectorAll("[data-quick]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.quick==="all")));
   }
   function render(){
@@ -122,7 +124,7 @@
   function googleLink(e){
     const start=new Date(e.startsAt),end=e.endsAt?new Date(e.endsAt):new Date(start.getTime()+60*60000);
     const fmt=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
-    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title);u.searchParams.set("dates",fmt(start)+"/"+fmt(end));
+    const u=new URL("https://calendar.google.com/calendar/render");u.searchParams.set("action","TEMPLATE");u.searchParams.set("text",e.title+(e.startTimeKind==="doors"?" (doors)":""));u.searchParams.set("dates",fmt(start)+"/"+fmt(end));
     u.searchParams.set("details",e.description+"\nSource: "+e.url+(e.endsAt?"":"\nThe original listing did not confirm an end time. Adjust the one-hour placeholder."));
     if(e.address)u.searchParams.set("location",e.venue+", "+e.address);
     return u.toString();
@@ -139,7 +141,7 @@
     const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//SHOWS//Portland Calendar Pilot//EN","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:SHOWS saved events"];
     for(const e of items){
       const end=e.endsAt?new Date(e.endsAt):new Date(Date.parse(e.startsAt)+3600000);
-      lines.push("BEGIN:VEVENT","UID:"+e.id+"@shows-portland","DTSTAMP:"+stamp,"DTSTART:"+icsDate(new Date(e.startsAt)),"DTEND:"+icsDate(end),"SUMMARY:"+icsEscape(e.title),"LOCATION:"+icsEscape([e.venue,e.address].filter(Boolean).join(", ")),"DESCRIPTION:"+icsEscape(e.description+"\nSource: "+e.url+(e.endsAt?"":"\nNote: End time was not published. The calendar includes a one-hour placeholder; edit it as needed.")),"URL:"+e.url,"END:VEVENT");
+      lines.push("BEGIN:VEVENT","UID:"+e.id+"@shows-portland","DTSTAMP:"+stamp,"DTSTART:"+icsDate(new Date(e.startsAt)),"DTEND:"+icsDate(end),"SUMMARY:"+icsEscape(e.title+(e.startTimeKind==="doors"?" (doors)":"")),"LOCATION:"+icsEscape([e.venue,e.address].filter(Boolean).join(", ")),"DESCRIPTION:"+icsEscape(e.description+"\nSource: "+e.url+(e.endsAt?"":"\nNote: End time was not published. The calendar includes a one-hour placeholder; edit it as needed.")),"URL:"+e.url,"END:VEVENT");
     }
     lines.push("END:VCALENDAR");return lines.map(fold).join("\r\n")+"\r\n";
   }
@@ -179,7 +181,8 @@
   $("next").addEventListener("click",()=>{state.month=shiftMonth(state.month,1);state.quick="all";state.selectedDay=null;render();});
   $("today").addEventListener("click",()=>{state.month=today.slice(0,7);state.quick="today";state.selectedDay=null;render();});
   $("search").addEventListener("input",e=>{state.search=e.target.value.trim().toLowerCase();state.selectedDay=null;render();});
-  $("category").addEventListener("change",e=>{state.category=e.target.value;state.selectedDay=null;render();});
+  $("category").addEventListener("change",e=>{state.category=e.target.value;if(state.category!=="Music"){state.musicStyle="all";$("musicStyle").value="all";}state.selectedDay=null;render();});
+  $("musicStyle").addEventListener("change",e=>{state.musicStyle=e.target.value;if(state.musicStyle!=="all"){state.category="Music";$("category").value="Music";}state.selectedDay=null;render();});
   $("neighborhood").addEventListener("change",e=>{state.neighborhood=e.target.value;state.selectedDay=null;render();});
   $("reset").addEventListener("click",()=>{restoreFilters();render();});
   $("exportVisible").addEventListener("click",()=>downloadIcs(filtered(),"shows-"+state.month+"-events"));
@@ -201,6 +204,7 @@
   });
   $("eventDialog").addEventListener("close",()=>{if(location.hash.startsWith("#event="))history.replaceState(null,"",location.pathname+location.search);});
   for(const c of categories){const o=document.createElement("option");o.value=c;o.textContent=c;$("category").appendChild(o);}
+  for(const style of musicStyles){const o=document.createElement("option");o.value=style;o.textContent=style;$("musicStyle").appendChild(o);}
   for(const n of neighborhoods){const o=document.createElement("option");o.value=n;o.textContent=n;$("neighborhood").appendChild(o);}
   render();
   if(location.hash.startsWith("#event=")){const match=events.find(e=>e.id===decodeURIComponent(location.hash.slice(7)));if(match)detail(match);}
