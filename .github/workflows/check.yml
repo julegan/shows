@@ -15,5 +15,8 @@ jobs:
         run: |
           node --check app.js
           node --check events.js
+          node --check scripts/discover-events.js
       - name: Validate sample events
-        run: node tests/validate.js
+        run: |
+          node tests/validate.js
+          node tests/discovery.js
