@@ -140,6 +140,7 @@ async function run(opts={}){
  const result=reconcile(parsed.events,found);
  console.log(JSON.stringify({proposed:result.accepted.length,held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
+ if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(!result.accepted.length)return {...result,errors};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
