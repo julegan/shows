@@ -20,6 +20,9 @@ const eventDoc='<script type="application/ld+json">{"@context":"https://schema.o
 const tw=parseTwilightDetail(eventDoc,parseTwilightLinks(twHtml,get("twilight"))[0],get("twilight"));
 assert.equal(tw.startDate,"2026-11-24T20:00:00-08:00");
 assert.equal(tw.sourceVerifiedMusic,true);
+const misc=extract({...tw,title:"Goth Craft Night: Mask Making",sourceVerifiedMusic:true},get("twilight"),when);
+assert.equal(misc.event,undefined);
+assert.match(misc.hold,/Different event category/);
 assert.equal(extract(tw,get("twilight"),when).event.startsAt,"2026-11-24T20:00:00-08:00");
 const canceled=eventDoc.replace("EventScheduled","EventCancelled");
 assert.match(parseTwilightDetail(canceled,tw.fullUrl,get("twilight")).hold,/cancellation/);
