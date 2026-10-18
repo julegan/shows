@@ -3,42 +3,68 @@
   "policy": "Only a primary venue source may generate a proposed event. GitHub PR review is required; no direct publication.",
   "sources": [
     {
-      "id": "no-fun",
-      "name": "No Fun",
-      "status": "pilot-enabled",
-      "adapter": "squarespace-json",
-      "url": "https://www.nofunportland.com/events?format=json-pretty",
-      "baseUrl": "https://www.nofunportland.com",
-      "venue": "No Fun",
-      "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
-      "neighborhood": "Buckman",
-      "age": "21+",
-      "priority": "underground-music",
-      "defaultStartKind": "doors",
-      "blockedDates": [
-        {
-          "date": "2026-11-13",
-          "reason": "Conflicting Star Machine and Early Worms venue listings (previous manual source review)"
-        },
-        {
-          "date": "2026-11-21",
-          "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
-        }
-      ]
+      "id": "twilight",
+      "name": "Twilight Cafe and Bar",
+      "status": "adapter-validation",
+      "priority": "highest",
+      "reason": "Identify the official ticketing/calendar data endpoint and its fields.",
+      "url": "https://www.twilightcafeandbar.com/calendar/",
+      "baseUrl": "https://www.twilightcafeandbar.com",
+      "venue": "Twilight Cafe and Bar",
+      "address": "832 SE Grand Ave, Portland, OR 97214",
+      "neighborhood": "Central Eastside",
+      "adapter": "twilight-html"
     },
     {
       "id": "black-water",
       "name": "Black Water",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Venue/promoter sources and new NE Sandy address need a reliable dated feed."
+      "status": "source-blocked",
+      "priority": "highest",
+      "reason": "Official website returned HTTP 403 to GitHub Actions, so use authorized ticket, promoter or venue-supplied data; do not bypass controls.",
+      "url": "https://bar.blackwaterpdx.com/",
+      "baseUrl": "https://bar.blackwaterpdx.com",
+      "venue": "Black Water",
+      "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+      "neighborhood": "Rose City Park"
     },
     {
-      "id": "twilight",
-      "name": "Twilight Cafe and Bar",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Identify the official ticketing/calendar data endpoint and its fields."
+      "id": "high-water",
+      "name": "High Water Mark",
+      "status": "adapter-validation",
+      "priority": "highest",
+      "reason": "Official venue posts future dated concert lineups, potentially with incomplete times. Soundcontrol is a related promoter and must not create duplicates.",
+      "url": "https://www.highwatermarklounge.com/",
+      "baseUrl": "https://www.highwatermarklounge.com",
+      "venue": "High Water Mark Lounge",
+      "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+      "neighborhood": "Woodlawn",
+      "adapter": "venue-list-html"
+    },
+    {
+      "id": "soundcontrol-pdx",
+      "name": "Soundcontrol PDX",
+      "status": "adapter-validation",
+      "priority": "highest",
+      "reason": "Primary promoter calendar spans venues; resolve per-event venue before publishing. Match duplicates with High Water Mark and Twilight.",
+      "url": "https://www.soundcontrolpdx.com/",
+      "baseUrl": "https://www.soundcontrolpdx.com",
+      "venue": null,
+      "address": null,
+      "neighborhood": null,
+      "adapter": "promoter-list-html"
+    },
+    {
+      "id": "star-theater",
+      "name": "Star Theater",
+      "status": "adapter-validation",
+      "priority": "highest",
+      "reason": "Test venue event data and avoid misleading recurring dates.",
+      "url": "https://www.startheaterportland.com/event/",
+      "baseUrl": "https://www.startheaterportland.com",
+      "venue": "Star Theater",
+      "address": "13 NW Sixth Avenue, Portland, OR 97209",
+      "neighborhood": "Old Town",
+      "adapter": "star-theater-html"
     },
     {
       "id": "coffin-club",
@@ -55,27 +81,6 @@
       "reason": "Embedded calendar requires a source-specific adapter."
     },
     {
-      "id": "high-water",
-      "name": "High Water Mark",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Verify source/ticket listings before enabling."
-    },
-    {
-      "id": "star-theater",
-      "name": "Star Theater",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Test venue event data and avoid misleading recurring dates."
-    },
-    {
-      "id": "kenton-club",
-      "name": "Kenton Club",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Many bills lack posted performance time; staging adapter needed."
-    },
-    {
       "id": "turn-turn-turn",
       "name": "Turn! Turn! Turn!",
       "status": "adapter-needed",
@@ -90,11 +95,36 @@
       "reason": "Promoter discovery should resolve venue and date via original announcements."
     },
     {
-      "id": "soundcontrol-pdx",
-      "name": "Soundcontrol PDX",
+      "id": "kenton-club",
+      "name": "Kenton Club",
       "status": "adapter-needed",
       "priority": "underground-music",
-      "reason": "Find current primary public event feed."
+      "reason": "Many bills lack posted performance time; staging adapter needed."
+    },
+    {
+      "id": "no-fun",
+      "name": "No Fun",
+      "status": "pilot-enabled-secondary",
+      "adapter": "squarespace-json",
+      "url": "https://www.nofunportland.com/events?format=json-pretty",
+      "baseUrl": "https://www.nofunportland.com",
+      "venue": "No Fun",
+      "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "age": "21+",
+      "priority": "secondary",
+      "defaultStartKind": "doors",
+      "blockedDates": [
+        {
+          "date": "2026-11-13",
+          "reason": "Conflicting Star Machine and Early Worms venue listings (previous manual source review)"
+        },
+        {
+          "date": "2026-11-21",
+          "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
+        }
+      ],
+      "reason": "Technically validated but not an editorially important primary source; deprioritized behind core venues."
     },
     {
       "id": "shanghai-tunnel",
@@ -103,5 +133,13 @@
       "priority": "underground-music",
       "reason": "Confirm current venue calendar feed."
     }
-  ]
+  ],
+  "editorialPriority": [
+    "Twilight Cafe and Bar",
+    "Black Water",
+    "High Water Mark Lounge",
+    "Soundcontrol PDX",
+    "Star Theater"
+  ],
+  "discoveryPriority": "Editorial relevance determines queue order. Adapter availability only determines execution readiness; it does not override user-selected source priorities."
 }
