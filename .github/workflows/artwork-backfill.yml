@@ -1,0 +1,47 @@
+name: Propose existing event flyers (review-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  source-art:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check for an existing artwork review PR
+        id: pending
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          open="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/artwork-"))] | length')"
+          if [ "$open" -gt 0 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Find official event images
+        if: steps.pending.outputs.skip != 'true'
+        run: node scripts/backfill-artwork.js
+      - name: Verify data and tests
+        if: steps.pending.outputs.skip != 'true'
+        run: |
+          node tests/validate.js
+          node tests/artwork.js
+      - name: Create review-only PR
+        if: steps.pending.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- events.js; then
+            echo "No new event artwork from eligible sources." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="automation/artwork-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+          git config user.name "SHOWS artwork review bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- events.js discovery/artwork-backfill-review.md
+          git commit -m "Propose original source event artwork for review"
+          git push --set-upstream origin "$branch"
+          gh pr create --title "Review official event artwork" --head "$branch" --base main --body-file discovery/artwork-backfill-review.md
