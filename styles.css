@@ -45,3 +45,30 @@
 .show-art-mark{left:auto;right:16px;top:12px;font-size:clamp(20px,2.5vw,34px)}
 .show-art-rings{right:-16%;top:-72%;width:62%}
 @media(max-width:680px){.show-art-title{font-size:20px;right:26%;-webkit-line-clamp:2}.show-art--large .show-art-title{font-size:24px;right:30%;-webkit-line-clamp:2}.show-art-mark{font-size:23px;right:14px;top:12px}}
+
+
+/* WCAG 2.1 AA: readable secondary text and keyboard controls */
+:root{--sub:#4c574f}
+.event-card .card-desc,.place-card p,.place-event small,.about-grid p,.detail-sub,.detail-note,.detail-footnote,.art-credit{color:#435047}
+.event-card .card-meta,.results-heading p,.agenda-date small,.detail-info strong,.detail-tag,.quick-buttons button,.text-button,.pilot-note,.about-grid .fineprint,.day-empty,.weekday{color:#465447}
+.event-card[data-category="Music"] .tag{color:#354f87}
+.event-card[data-category="Arts & DIY"] .tag{color:#87432d}
+.event-card[data-category="Community"] .tag{color:#653d70}
+.eyebrow.dark{color:#475e2b}
+.search-box>span:first-child{color:#49574b}
+.day.outside .day-number{color:#4e5b4f}
+.show-art--metal{--art-b:#303d4e}
+.show-art--hardcore{--art-b:#63323a}
+.show-art--punk{--art-b:#4a552d}
+.show-art--goth{--art-b:#4c405b}
+.show-art--industrial{--art-b:#474e54}
+.show-art--postpunk{--art-b:#335a64}
+.show-art--noise{--art-b:#344f67}
+.show-art--rock{--art-b:#5b4a3c}
+.show-art--market{--art-b:#486654}
+.show-art--diy{--art-b:#715040}
+.show-art--workshop{--art-b:#52683c}
+.show-art--community{--art-b:#61476d}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #24518c;outline-offset:3px}
+.event-card:focus-visible{outline-offset:2px}
+@media(max-width:680px){.event-chip{min-height:24px;height:24px;display:flex;align-items:center;justify-content:center;background:#dae2f5;border:1px solid #9baacf;font-size:10px;line-height:1.1;padding:2px}.event-chip:before{content:"Event";color:#273d67;font-size:10px;font-weight:700}.event-chip[data-category="Arts & DIY"]{background:#f3e5de;border-color:#b67e66}.event-chip[data-category="Arts & DIY"]:before{content:"Art";color:#663b2a}.event-chip[data-category="Workshops"]{background:#e5ead4;border-color:#83984f}.event-chip[data-category="Workshops"]:before{content:"Workshop";color:#3c4f23}.event-chip[data-category="Markets"]:before{content:"Market";color:#344b2e}.event-chip[data-category="Community"]:before{content:"Community";color:#503961}.event-chip .chip-time{display:none}}
