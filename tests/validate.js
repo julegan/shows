@@ -26,3 +26,5 @@ require('./validate-music.js');
 require('./music-filters.js');
 
 require('./validate-venue-coverage.js');
+
+require('./validate-independent.js');
