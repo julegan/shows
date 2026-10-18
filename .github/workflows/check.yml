@@ -33,4 +33,6 @@ jobs:
 
       - name: Inspect priority venues (temporary)
         if: github.head_ref == 'feat/priority-importers-2026-10'
-        run: node scripts/probe-importers.js
+        run: |
+          node scripts/probe-importers.js
+          node scripts/probe-structure.js
