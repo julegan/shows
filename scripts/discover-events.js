@@ -43,7 +43,7 @@ function urlOf(item,src){
   const primaryHost=u.hostname===new URL(src.baseUrl).hostname;
   const validPath=src.adapter==="squarespace-json"?u.pathname.startsWith("/events/"):src.adapter==="twilight-html"?u.pathname.startsWith("/event/"):src.adapter==="star-theater-html"?u.pathname.startsWith("/tm-event/"):false;
   const promoterLink=src.adapter==="promoter-list-html"&&u.hostname==="www.treetix.com"&&u.pathname==="/event"&&u.searchParams.get("cal")==="soundcontrol";
-  if(u.protocol!=="https:"&&!promoterLink)return null;
+  if(u.protocol!=="https:")return null;
   if(!((primaryHost&&validPath)||promoterLink))return null;
   if(!promoterLink)u.search="";u.hash="";return u.href;
  }catch(_){return null;}
