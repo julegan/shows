@@ -25,6 +25,8 @@ assert.equal(e.free,null);
 assert.equal(e.age,"Not published");
 assert.deepEqual(e.musicStyles,[]);
 assert(!e.artwork);
+const blocked=extract({...item,title:"A live concert bill",startDate:Date.parse("2026-11-14T04:00:00Z")},source,now);
+assert.equal(blocked.hold?.startsWith("Historical source conflict"),true);
 assert.match(e.verificationMethod,/editorial/i);
 const original=parseFile(fs.readFileSync(path.join(root,"events.js"),"utf8"));
 assert(Array.isArray(original.events));
