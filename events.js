@@ -1,11 +1,11 @@
 /* Curated Portland snapshot. Original IDs remain stable. Explicit Pacific offsets preserve DST.
- * See EVENT-SOURCES.md, MUSIC-SOURCES.md and EDITORIAL.md for source checks and priorities.
+ * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-17",
   "coverageThrough": "2026-12-13",
-  "totalOccurrences": 150,
-  "addedOccurrences": 31,
+  "totalOccurrences": 155,
+  "addedOccurrences": 36,
   "batchId": "2026-10-17-venue-coverage",
   "editorialReview": "Julie reviews additions through pull requests before publication",
   "previousBatches": [
@@ -18,9 +18,9 @@ window.SHOWS_DATASET = {
       "addedOccurrences": 39
     }
   ],
-  "newLiveBills": 31,
+  "newLiveBills": 36,
   "newDjNights": 0,
-  "musicOccurrences": 96
+  "musicOccurrences": 101
 };
 window.SHOWS_EVENTS = [
   {
@@ -2508,6 +2508,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "crystal-floater-2026-10-30",
+    "title": "Floater",
+    "subtitle": "Live show · Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Progressive and alternative rock from a Portland band",
+      "urls": [
+        "https://www.mcmenamins.com/events/277822-floater"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current ticket cost",
+    "free": false,
+    "age": "All ages",
+    "description": "Progressive and alternative rock from a Portland band. Verified against the venue's dated calendar; published show time is used. No end time is confirmed. See organizer for tickets and changes.",
+    "source": "McMenamins Crystal Ballroom official listing",
+    "url": "https://www.mcmenamins.com/events/277822-floater",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue calendar date and show time; artist sound assessed separately",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "McMenamins Crystal Ballroom official listing",
+        "url": "https://www.mcmenamins.com/events/277822-floater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
     "id": "psu-farmers-2026-10-31",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -4298,6 +4343,53 @@ window.SHOWS_EVENTS = [
     "seriesId": "outlet-riso-basics-2026"
   },
   {
+    "id": "crystal-russian-circles-2026-11-14",
+    "title": "Russian Circles",
+    "subtitle": "Live show · Metal, Noise & experimental",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Metal",
+      "Noise & experimental"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Noise & experimental"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Instrumental post-metal and heavy experimental rock",
+      "urls": [
+        "https://www.mcmenamins.com/crystal-ballroom"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current ticket cost",
+    "free": false,
+    "age": "All ages",
+    "description": "Instrumental post-metal and heavy experimental rock. Verified against the venue's dated calendar; published show time is used. No end time is confirmed. See organizer for tickets and changes.",
+    "source": "McMenamins Crystal Ballroom official listing",
+    "url": "https://www.mcmenamins.com/crystal-ballroom",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue calendar date and show time; artist sound assessed separately",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "McMenamins Crystal Ballroom official listing",
+        "url": "https://www.mcmenamins.com/crystal-ballroom",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
     "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-3-goddamn-gallows-king-sickabilly-begg-2026-11-14",
     "title": "Shoot the Moon Fest · Night 3: Goddamn Gallows, King Sickabilly, Beggars Canyon, John Dough Boys",
     "subtitle": "Punk, Americana punk, Psychobilly · live bill",
@@ -4850,6 +4942,51 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-16T19:00:00-08:00"
+  },
+  {
+    "id": "crystal-turnover-2026-11-16",
+    "title": "Turnover",
+    "subtitle": "Live show · Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Rock band with post-hardcore roots and later dream-pop/shoegaze influences",
+      "urls": [
+        "https://www.mcmenamins.com/crystal-ballroom"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current ticket cost",
+    "free": false,
+    "age": "All ages",
+    "description": "Rock band with post-hardcore roots and later dream-pop/shoegaze influences. Verified against the venue's dated calendar; published show time is used. No end time is confirmed. See organizer for tickets and changes.",
+    "source": "McMenamins Crystal Ballroom official listing",
+    "url": "https://www.mcmenamins.com/crystal-ballroom",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue calendar date and show time; artist sound assessed separately",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "McMenamins Crystal Ballroom official listing",
+        "url": "https://www.mcmenamins.com/crystal-ballroom",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-venue-coverage"
   },
   {
     "id": "roseland-state-champs-with-cartel-taylor-acorn-like-roses-2026-11-17",
@@ -5737,6 +5874,53 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-22T17:00:00-08:00"
   },
   {
+    "id": "crystal-senses-fail-2026-11-23",
+    "title": "Senses Fail",
+    "subtitle": "Live show · Hardcore, Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Hardcore",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Rock"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Post-hardcore and emo-associated band",
+      "urls": [
+        "https://www.mcmenamins.com/crystal-ballroom"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-23T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current ticket cost",
+    "free": false,
+    "age": "All ages",
+    "description": "Post-hardcore and emo-associated band. Verified against the venue's dated calendar; published show time is used. No end time is confirmed. See organizer for tickets and changes.",
+    "source": "McMenamins Crystal Ballroom official listing",
+    "url": "https://www.mcmenamins.com/crystal-ballroom",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue calendar date and show time; artist sound assessed separately",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "McMenamins Crystal Ballroom official listing",
+        "url": "https://www.mcmenamins.com/crystal-ballroom",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
     "id": "roseland-alter-bridge-with-big-wreck-tim-montana-2026-11-24",
     "title": "Alter Bridge with Big Wreck & Tim Montana",
     "subtitle": "Live show · Rock, Metal",
@@ -6022,7 +6206,8 @@ window.SHOWS_EVENTS = [
     "musicStyleEvidence": {
       "basis": "First Portland date; band/AXS schedules confirm 7:30 PM; supporting guests subject to organizer update. Broad SHOWS browsing labels; not every act on a mixed bill shares all styles.",
       "urls": [
-        "https://www.axs.com/artists/109054/neurosis-tickets?page=2"
+        "https://www.axs.com/artists/109054/neurosis-tickets?page=2",
+        "https://www.neurotrecordings.com/news/neurosis-announces-new-tour-dates"
       ]
     },
     "eventFormat": "live",
@@ -6033,7 +6218,7 @@ window.SHOWS_EVENTS = [
     "neighborhood": "Buckman",
     "price": "See organizer for current ticket cost",
     "free": false,
-    "age": "Not published",
+    "age": "All ages",
     "description": "First Portland date; band/AXS schedules confirm 7:30 PM; supporting guests subject to organizer update. Official listing supplies the date and advertised show time (not just doors); no end time is verified. Recheck organizer for changes, admission and ticket availability.",
     "source": "AXS / artist tour dates",
     "url": "https://www.axs.com/artists/109054/neurosis-tickets?page=2",
@@ -6053,6 +6238,13 @@ window.SHOWS_EVENTS = [
         "name": "Revolution Hall official calendar",
         "url": "https://www.revolutionhall.com/",
         "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Neurot Recordings official tour confirmation",
+        "url": "https://www.neurotrecordings.com/news/neurosis-announces-new-tour-dates",
+        "kind": "artist",
         "checkedAt": "2026-10-17",
         "originalCategories": []
       }
@@ -6203,7 +6395,8 @@ window.SHOWS_EVENTS = [
     "musicStyleEvidence": {
       "basis": "Second Portland date; band/AXS schedules confirm 7:30 PM; supporting guests subject to organizer update. Broad SHOWS browsing labels; not every act on a mixed bill shares all styles.",
       "urls": [
-        "https://www.axs.com/artists/109054/neurosis-tickets?page=2"
+        "https://www.axs.com/artists/109054/neurosis-tickets?page=2",
+        "https://www.neurotrecordings.com/news/neurosis-announces-new-tour-dates"
       ]
     },
     "eventFormat": "live",
@@ -6214,7 +6407,7 @@ window.SHOWS_EVENTS = [
     "neighborhood": "Buckman",
     "price": "See organizer for current ticket cost",
     "free": false,
-    "age": "Not published",
+    "age": "All ages",
     "description": "Second Portland date; band/AXS schedules confirm 7:30 PM; supporting guests subject to organizer update. Official listing supplies the date and advertised show time (not just doors); no end time is verified. Recheck organizer for changes, admission and ticket availability.",
     "source": "AXS / artist tour dates",
     "url": "https://www.axs.com/artists/109054/neurosis-tickets?page=2",
@@ -6234,6 +6427,13 @@ window.SHOWS_EVENTS = [
         "name": "Revolution Hall official calendar",
         "url": "https://www.revolutionhall.com/",
         "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      },
+      {
+        "name": "Neurot Recordings official tour confirmation",
+        "url": "https://www.neurotrecordings.com/news/neurosis-announces-new-tour-dates",
+        "kind": "artist",
         "checkedAt": "2026-10-17",
         "originalCategories": []
       }
@@ -6928,6 +7128,53 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion",
     "seriesId": "crafty-wonderland-holiday-2026",
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
+  },
+  {
+    "id": "crystal-angine-de-poitrine-with-zouz-second-night-2026-12-11",
+    "title": "Angine de Poitrine with Zouz — second night",
+    "subtitle": "Live show · Rock, Noise & experimental",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock",
+      "Noise & experimental"
+    ],
+    "musicStyles": [
+      "Rock",
+      "Noise & experimental"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Second distinct date of the experimental, microtonal rock duo",
+      "urls": [
+        "https://www.mcmenamins.com/events/276842-angine-de-poitrine"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current ticket cost",
+    "free": false,
+    "age": "All ages",
+    "description": "Second distinct date of the experimental, microtonal rock duo. Verified against the venue's dated calendar; published show time is used. No end time is confirmed. See organizer for tickets and changes.",
+    "source": "McMenamins Crystal Ballroom official listing",
+    "url": "https://www.mcmenamins.com/events/276842-angine-de-poitrine",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue calendar date and show time; artist sound assessed separately",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "McMenamins Crystal Ballroom official listing",
+        "url": "https://www.mcmenamins.com/events/276842-angine-de-poitrine",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-venue-coverage"
   },
   {
     "id": "psu-farmers-2026-12-12",
