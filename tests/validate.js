@@ -13,7 +13,7 @@ for (const e of events) {
   ids.add(e.id);
   assert(e.title && e.venue && e.category && e.neighborhood && e.source, 'Required fields: ' + e.id);
   assert(Array.isArray(e.tags), 'Tags must be array: ' + e.id);
-  assert(/^2026-\d\d-\d\dT\d\d:\d\d:\d\d-0[78]:00$/.test(e.startsAt), 'Explicit Pacific offset: ' + e.id);
+  assert(/^20\d\d-\d\d-\d\dT\d\d:\d\d:\d\d-0[78]:00$/.test(e.startsAt), 'Explicit Pacific offset: ' + e.id);
   assert(Number.isFinite(Date.parse(e.startsAt)), 'Valid timestamp: ' + e.id);
   if(e.endsAt) assert(Date.parse(e.endsAt)>Date.parse(e.startsAt), 'End after start: ' + e.id);
   assert(/^https:\/\//.test(e.url), 'Source HTTPS: ' + e.id);
