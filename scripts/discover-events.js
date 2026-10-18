@@ -8,10 +8,11 @@ const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
 const tz=new Intl.DateTimeFormat("en-US",{timeZone:zone,timeZoneName:"shortOffset"});
-const tidy=v=>String(v??"").replace(/<[^>]+>/g," ").replace(/&amp;/gi,"&").replace(/&quot;/gi,'"').replace(/&nbsp;/gi," ").replace(/\s+/g," ").trim().slice(0,280);
+const tidy=(v,max=280)=>String(v??"").replace(/<[^>]+>/g," ").replace(/&amp;/gi,"&").replace(/&quot;/gi,'"').replace(/&nbsp;/gi," ").replace(/\s+/g," ").trim().slice(0,max);
 const norm=v=>tidy(v).toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/g,"");
 function localTime(value){
   let n=value;
+  if(typeof n==="string"&&/^\d{10,13}$/.test(n))n=Number(n);
   if(typeof n==="number"&&n<100000000000)n*=1000;
   const d=new Date(n);
   if(!Number.isFinite(d.valueOf())||d.getUTCFullYear()<2026||d.getUTCFullYear()>2035)throw Error("Invalid source date");
@@ -43,7 +44,7 @@ function urlOf(item,src){
  }catch(_){return null;}
 }
 function music(item){
- const input=tidy([item.title,item.body,item.excerpt,...(Array.isArray(item.tags)?item.tags:[]),...(Array.isArray(item.categories)?item.categories:[])].filter(Boolean).join(" ")).toLowerCase();
+ const input=tidy([item.title,item.body,item.excerpt,...(Array.isArray(item.tags)?item.tags:[]),...(Array.isArray(item.categories)?item.categories:[])].filter(Boolean).join(" "),2500).toLowerCase();
  if(/\b(trivia|karaoke|open mic|comedy|bingo|quiz|brunch|screening|happy hour)\b/.test(input))return false;
  return /\b(live music|bands?|concert|punk|metal|hardcore|goth|rock show|music starts|touring|gig|live performance|show with|doors at)\b/.test(input);
 }
@@ -84,7 +85,7 @@ function reconcile(existing,records){
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
    held.push({hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
-  if(existing.some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day)){
+  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day)){
    held.push({hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   accepted.push(e);seen.add(key);
