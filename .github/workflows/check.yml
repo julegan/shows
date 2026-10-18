@@ -31,8 +31,7 @@ jobs:
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 
-      - name: Inspect priority venues (temporary)
-        if: github.head_ref == 'feat/priority-importers-2026-10'
+      - name: Validate priority venue importers
         run: |
-          node scripts/probe-importers.js
-          node scripts/probe-structure.js
+          node --check scripts/priority-importers.js
+          node tests/priority-importers.js
