@@ -14,4 +14,13 @@ assert.equal(parseTwilightDetail(schema,url,source).artwork.url,art.url);
 assert.equal(eventArtworkFromHtml("<p>No event photo</p>",url),null);
 const og='<meta property="og:image" content="https://www.startheaterportland.com/images/poster.webp">';
 assert.equal(eventArtworkFromHtml(og,"https://www.startheaterportland.com/tm-event/one").url,"https://www.startheaterportland.com/images/poster.webp");
+
+const {originalUrl}=require("../scripts/backfill-artwork");
+assert.equal(originalUrl({venue:"The Coffin Club",url:"https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb?direct=true"}),"https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb");
+assert.equal(originalUrl({venue:"High Limit Room",url:"https://aftontickets.com/event/buyticket/57jml3v89v"}),"https://aftontickets.com/event/buyticket/57jml3v89v");
+assert.equal(originalUrl({venue:"High Water Mark Lounge",url:"https://www.treetix.com/event?cal=highwatermark&id=204795"}),"https://www.treetix.com/event?cal=highwatermark&id=204795");
+assert.equal(originalUrl({venue:"No Fun",url:"https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb"}),null);
+assert.equal(originalUrl({venue:"The Coffin Club",url:"https://tickets.venuepilot.com/e/unrelated-event-portland-7e7bbb"}),null);
+assert.equal(originalUrl({venue:"High Limit Room",url:"https://aftontickets.com/event/buyticket/57jml3v89v?token=abc"}),null);
+
 console.log("PASS — primary-event artwork extraction and safe URL limits");
