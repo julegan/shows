@@ -100,4 +100,21 @@ function parseSoundcontrol(html,source){
  }
  return out;
 }
-module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,wallToPacific,time24};
+function parseSoundcontrolDetail(html,record){
+ const text=clean(html);
+ const date=text.match(/\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+([A-Za-z]+)\s+(\d{1,2}),\s*(20\d\d)\b/i);
+ if(!date)return {...record,detailHold:"Ticket page doesn't confirm a full date"};
+ const year=Number(date[3]),month=months[date[1].toLowerCase()],day=Number(date[2]);
+ const matchDate=[year,String(month).padStart(2,"0"),String(day).padStart(2,"0")].join("-");
+ if(matchDate!==record.dateOnly)return {...record,detailHold:"Ticketing date conflicts with promoter listing"};
+ if(record.venue&&!text.toLowerCase().includes(record.venue.toLowerCase()))return {...record,detailHold:"Ticketing venue differs from promoter listing"};
+ const explicit=text.match(/\b(?:show(?:time)?|music)\s*(?:starts?|at|:)?\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b/i);
+ const time=explicit?time24(explicit[1]):null;
+ if(!time)return {...record,detailHold:"Ticket page has no explicit AM/PM showtime; stage date-only"};
+ const start=wallToPacific(year,month,day,time);
+ if(!start)return {...record,detailHold:"Ticket showtime could not be resolved in Portland local time"};
+ return {...record,startDate:start,dateOnly:null,timeEvidence:"Explicit show/music time on source-linked TreeTix event page, to be editorially reviewed",
+  description:"Promoter and official ticket page both confirm the venue and event date. Performance time appears on ticketing detail."};
+}
+
+module.exports={parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseSoundcontrolDetail,wallToPacific,time24};
