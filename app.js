@@ -110,7 +110,7 @@
     const arts=e.artwork;
     const valid=arts&&/^https:\/\//i.test(arts.url||"")&&arts.credit&&arts.usageApproved===true;
     const photo=valid?'<img src="'+esc(arts.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':"";
-    return '<span class="show-art show-art--'+tone+(large?' show-art--large':'')+'" aria-hidden="true"><span class="show-art-rings"></span><span class="show-art-mark">S<span>／</span></span><span class="show-art-caption">'+esc(style)+'</span>'+photo+'</span>'+(large&&valid?'<p class="art-credit">Event artwork: '+esc(arts.credit)+'</p>':'');
+    return '<span class="show-art show-art--'+tone+(large?' show-art--large':'')+'" aria-hidden="true"><span class="show-art-rings"></span><span class="show-art-mark">S<span>／</span></span><span class="show-art-title">'+esc(e.title)+'</span><span class="show-art-caption">'+esc(style)+'</span>'+photo+'</span>'+(large&&valid?'<p class="art-credit">Event artwork: '+esc(arts.credit)+'</p>':'');
   }
   function eventCard(e){
     return '<button type="button" data-event="'+esc(e.id)+'" class="event-card" data-category="'+esc(e.category)+'">'+artMarkup(e)+'<span class="tag">'+esc(e.category)+'</span><h3>'+esc(e.title)+'</h3><span class="card-desc">'+esc(e.subtitle)+'</span><span class="card-meta">'+esc(clock(e))+' · '+esc(e.venue)+'<br>'+esc(e.price)+'</span><span class="card-cta">Explore event ↗</span></button>';
