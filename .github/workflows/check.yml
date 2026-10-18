@@ -35,3 +35,11 @@ jobs:
         run: |
           node --check scripts/priority-importers.js
           node tests/priority-importers.js
+
+      - name: Live import integration check (candidate-only)
+        if: github.head_ref == 'feat/priority-importers-2026-10'
+        continue-on-error: true
+        timeout-minutes: 6
+        run: |
+          node scripts/discover-events.js
+          node tests/validate.js
