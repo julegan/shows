@@ -9,3 +9,39 @@
 .event-card[data-category="Markets"] .tag{color:#4a6141}
 .event-card[data-category="Community"] .tag{color:#765185}
 @media(max-width:680px){.event-chip[data-category="Markets"]{background:#8fa180}.event-chip[data-category="Community"]{background:#b09abd}}
+
+/* Non-representational event art, shared across list cards and event details.
+   Flyer artwork is displayed only when editorially reviewed and explicitly approved. */
+.show-art{--art-a:#203238;--art-b:#566a70;position:relative;isolation:isolate;display:block;width:100%;aspect-ratio:2.2/1;overflow:hidden;background:linear-gradient(145deg,var(--art-a),var(--art-b));color:#f9f9ee;border-radius:2px;flex:none}
+.show-art--large{aspect-ratio:3/1;margin:0 0 24px}
+.show-art--metal{--art-a:#151920;--art-b:#465063}
+.show-art--hardcore{--art-a:#271b22;--art-b:#8d555c}
+.show-art--punk{--art-a:#242725;--art-b:#78865c}
+.show-art--goth{--art-a:#272331;--art-b:#6f667e}
+.show-art--industrial{--art-a:#292c30;--art-b:#73797d}
+.show-art--postpunk{--art-a:#1e3134;--art-b:#588087}
+.show-art--noise{--art-a:#232a34;--art-b:#4f6d86}
+.show-art--rock{--art-a:#38302b;--art-b:#8a7965}
+.show-art--market{--art-a:#31433a;--art-b:#718c7c}
+.show-art--diy{--art-a:#48352e;--art-b:#ae8672}
+.show-art--workshop{--art-a:#344032;--art-b:#869673}
+.show-art--community{--art-a:#3d324d;--art-b:#85748d}
+.show-art-rings{position:absolute;width:55%;aspect-ratio:1;right:-8%;top:-95%;border:2px solid rgba(255,255,255,.35);border-radius:50%;box-shadow:0 0 0 26px rgba(255,255,255,.055),0 0 0 67px rgba(255,255,255,.06),0 0 0 105px rgba(255,255,255,.04)}
+.show-art:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 33px,rgba(255,255,255,.08) 34px,transparent 35px);pointer-events:none;z-index:1}
+.show-art-mark{position:absolute;left:15px;top:10px;font-size:clamp(34px,5vw,65px);font-weight:900;letter-spacing:-.13em;line-height:1;z-index:1}
+.show-art-mark span{font-weight:300;margin-left:5px}
+.show-art-caption{position:absolute;bottom:14px;left:16px;text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:850;z-index:1;max-width:90%;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.show-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.event-card{padding:12px 12px 18px}
+.event-card .tag,.event-card h3,.event-card .card-desc,.event-card .card-meta,.event-card .card-cta{margin-left:6px;margin-right:6px}
+.detail-wrap>.show-art{margin-top:12px}
+@media(max-width:680px){.show-art{aspect-ratio:2.8/1}.show-art--large{aspect-ratio:2.6/1}.show-art-mark{font-size:44px}}
+
+.art-credit{margin:0 0 18px;color:#647168;font-size:12px}
+
+/* Event-specific typeset headline turns the thumbnail into a useful show identifier. */
+.show-art-title{position:absolute;left:16px;right:35%;top:50%;transform:translateY(-50%);color:#fff;font-size:clamp(17px,1.65vw,27px);font-weight:850;line-height:1.09;letter-spacing:-.035em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;text-shadow:0 2px 7px rgba(0,0,0,.35);z-index:1}
+.show-art--large .show-art-title{right:29%;font-size:clamp(24px,3vw,43px);-webkit-line-clamp:2}
+.show-art-mark{left:auto;right:16px;top:12px;font-size:clamp(20px,2.5vw,34px)}
+.show-art-rings{right:-16%;top:-72%;width:62%}
+@media(max-width:680px){.show-art-title{font-size:20px;right:26%;-webkit-line-clamp:2}.show-art--large .show-art-title{font-size:24px;right:30%;-webkit-line-clamp:2}.show-art-mark{font-size:23px;right:14px;top:12px}}

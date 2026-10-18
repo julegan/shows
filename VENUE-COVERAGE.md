@@ -2,7 +2,7 @@
 
 Working window: October 17–December 13, 2026. All dates are Portland-local, verified against the named venue or authorized ticketing sources as reviewed October 17, 2026. New events require Julie’s editorial approval through this PR. This is **a curated music pass, not a complete inventory of every event at every venue**. Unknown admission and accessibility are not invented; advertised performance start and doors are distinct. Check the source before attendance.
 
-This pass proposes **36 new music occurrences**, raising the snapshot from 119 to **150** events (96 music dates). Other existing records stay intact.
+This pass proposes **36 new music occurrences**, raising the snapshot from 119 to **155** events (101 music dates). Other existing records stay intact.
 
 ## Added music shows
 

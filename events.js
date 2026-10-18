@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-17",
   "coverageThrough": "2026-12-13",
-  "totalOccurrences": 155,
-  "addedOccurrences": 36,
-  "batchId": "2026-10-17-venue-coverage",
+  "totalOccurrences": 182,
+  "addedOccurrences": 27,
+  "batchId": "2026-10-17-independent-venues",
   "editorialReview": "Julie reviews additions through pull requests before publication",
   "previousBatches": [
     {
@@ -16,11 +16,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-10-17-underground-music",
       "addedOccurrences": 39
+    },
+    {
+      "batchId": "2026-10-17-venue-coverage",
+      "addedOccurrences": 36
     }
   ],
-  "newLiveBills": 36,
+  "newLiveBills": 27,
   "newDjNights": 0,
-  "musicOccurrences": 101
+  "musicOccurrences": 128
 };
 window.SHOWS_EVENTS = [
   {
@@ -416,6 +420,43 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "indie-no-noah-the-ghost-seagardens-rat-caviar-2026-10-18",
+    "title": "Noah the Ghost • Seagardens • Rat Caviar",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-10-18T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Vague Place Records presents. Venue event block lists 7 PM doors and 8 PM music. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-10-18T19:00:00-07:00"
   },
   {
     "id": "the-coffin-club-antioch-arrow-with-at-the-heart-of-the-world-nabiya-2026-10-18",
@@ -996,6 +1037,52 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "indie-no-jon-von-blood-and-the-trick-or-treats-barkeep-2026-10-22",
+    "title": "Jon Von Blood and the Trick-or-Treats • Barkeep",
+    "subtitle": "Independent live show · Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Spooky seasonal original songs and covers; live music. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Spooky seasonal original songs and covers; live music.",
+      "urls": [
+        "https://www.nofunportland.com/"
+      ]
+    },
+    "doorsAt": "2026-10-22T19:00:00-07:00"
+  },
+  {
     "id": "high-water-mark-lounge-soraia-star-chamber-the-hypnatwists-2026-10-22",
     "title": "Soraia, Star Chamber, The Hypnatwists",
     "subtitle": "Garage rock, Garage punk, Alternative rock · live bill",
@@ -1104,6 +1191,52 @@ window.SHOWS_EVENTS = [
         "https://artdesignxchange.com/events/woolly-sweaters-show"
       ]
     }
+  },
+  {
+    "id": "indie-no-grex-the-social-stomach-opulent-orchid-2026-10-23",
+    "title": "Grex • The Social Stomach • Opulent Orchid",
+    "subtitle": "Independent live show · Noise & experimental",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Noise & experimental"
+    ],
+    "musicStyles": [
+      "Noise & experimental"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-23T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Art-music/improvisation and experimental bill; organizer links Grex and the ensemble. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/grex-the-social-stomach-opulent-orchid",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/grex-the-social-stomach-opulent-orchid",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Art-music/improvisation and experimental bill; organizer links Grex and the ensemble.",
+      "urls": [
+        "https://www.nofunportland.com/events/grex-the-social-stomach-opulent-orchid"
+      ]
+    },
+    "doorsAt": "2026-10-23T19:00:00-07:00"
   },
   {
     "id": "turn-turn-turn-liquid-cross-collate-pink-pollen-2026-10-23",
@@ -2335,6 +2468,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "indie-tw-hardcore-halloween-unspeakable-carnage-bottom-blade-burner-phone--2026-10-28",
+    "title": "Hardcore Halloween — Unspeakable Carnage, Bottom Blade, Burner Phone & Appendage (tribute bands)",
+    "subtitle": "Tribute/cover bill · Punk, Hardcore, Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Hardcore",
+      "Rock",
+      "Tribute performance"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Hardcore",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-28T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$14.45 listed online",
+    "free": false,
+    "age": "21+",
+    "description": "Tribute/cover program includes AC/DC, Suicidal Tendencies, Misfits and other hardcore/punk material. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Tribute/cover program includes AC/DC, Suicidal Tendencies, Misfits and other hardcore/punk material.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-10-28T19:30:00-07:00"
+  },
+  {
     "id": "revolution-team-dresch-with-heavens-to-betsy-altar-girl-2026-10-28",
     "title": "Team Dresch with heavens to betsy & Altar Girl",
     "subtitle": "Live show · Punk, Rock",
@@ -2455,6 +2639,92 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion"
   },
   {
+    "id": "indie-tw-atypical-prototype-you-last-the-takey-takeys-bad-year-cover-perfo-2026-10-29",
+    "title": "Atypical Prototype • You Last & The Takey Takeys • Bad Year (cover performances)",
+    "subtitle": "Tribute/cover bill · Punk, Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Rock",
+      "Tribute performance"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15.51 listed online",
+    "free": false,
+    "age": "All ages",
+    "description": "No Doubt, Me First and the Gimme Gimmes and Bouncing Souls tribute material. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "No Doubt, Me First and the Gimme Gimmes and Bouncing Souls tribute material.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-10-29T19:30:00-07:00"
+  },
+  {
+    "id": "indie-no-kallohumina-subvert-savant-moushumi-ghose-2026-10-29",
+    "title": "KalloHumina • Subvert Savant • Moushumi Ghose",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Official listing links the three artists; music style pending editorial confirmation. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-10-29T19:00:00-07:00"
+  },
+  {
     "id": "hawthorne-pain-of-truth-2026-10-30",
     "title": "Pain of Truth",
     "subtitle": "Hardcore · With Missing Link, Fatal Realm, Locked Shut",
@@ -2551,6 +2821,104 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "indie-no-the-slightest-bits-nomeansno-dark-oz-the-stooges-ghoul-variations-2026-10-30",
+    "title": "The Slightest Bits (NoMeansNo) • Dark Oz (The Stooges) • Ghoul Variations (Tom Waits) • Figgy & the Heartbeats (Velvet Underground)",
+    "subtitle": "Tribute/cover bill · Punk, Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Rock",
+      "Tribute performance"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Halloween tribute-cover performances, not the original artists. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Halloween tribute-cover performances, not the original artists.",
+      "urls": [
+        "https://www.nofunportland.com/"
+      ]
+    },
+    "doorsAt": "2026-10-30T19:00:00-07:00"
+  },
+  {
+    "id": "indie-tw-precious-machinery-siouxsie-beat-on-brats-ramones-radio-clash-the-2026-10-30",
+    "title": "Precious Machinery (Siouxsie) • Beat-on Brats (Ramones) • Radio Clash (The Clash)",
+    "subtitle": "Tribute/cover bill · Goth & darkwave, Punk",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Goth & darkwave",
+      "Punk",
+      "Tribute performance"
+    ],
+    "musicStyles": [
+      "Goth & darkwave",
+      "Punk"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-30T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15.51 listed online",
+    "free": false,
+    "age": "21+",
+    "description": "Tribute/cover performances; not the original bands. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Tribute/cover performances; not the original bands.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-10-30T19:30:00-07:00"
   },
   {
     "id": "psu-farmers-2026-10-31",
@@ -2733,6 +3101,55 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-31T19:00:00-07:00"
   },
   {
+    "id": "indie-tw-pacific-monkeys-arctic-monkeys-km3-the-cure-2026-10-31",
+    "title": "Pacific Monkeys (Arctic Monkeys) • KM3 (The Cure)",
+    "subtitle": "Tribute/cover bill · Rock, Goth & darkwave",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock",
+      "Goth & darkwave",
+      "Tribute performance"
+    ],
+    "musicStyles": [
+      "Rock",
+      "Goth & darkwave"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-10-31T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$15.51 listed online",
+    "free": false,
+    "age": "21+",
+    "description": "Tribute/cover performances; not the original artists. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Tribute/cover performances; not the original artists.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-10-31T20:00:00-07:00"
+  },
+  {
     "id": "king-farmers-2026-11-01",
     "title": "King Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -2895,6 +3312,43 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "indie-no-samantha-hart-the-living-room-naomi-march-etta-dean-2026-11-01",
+    "title": "Samantha Hart & The Living Room • Naomi March • Etta Dean",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Local three-act show; styles remain unclassified until independently verified. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-01T19:00:00-08:00"
   },
   {
     "id": "moda-the-smashing-pumpkins-rats-in-a-cage-tour-2026-11-01",
@@ -3271,6 +3725,89 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "indie-tw-veredas-mike-mannequin-miss-honey-2026-11-05",
+    "title": "Veredas • Mike Mannequin • Miss Honey",
+    "subtitle": "Independent live show · Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "Tickets at door",
+    "free": false,
+    "age": "21+",
+    "description": "Venue confirms concert; style based on Veredas' fuzz-driven psych-rock artist description in earlier research. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Venue confirms concert; style based on Veredas' fuzz-driven psych-rock artist description in earlier research.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-11-05T19:30:00-08:00"
+  },
+  {
+    "id": "indie-tw-93feetofsmoke-fats-e-polearm-guest-2026-11-06",
+    "title": "93feetofsmoke • Fats'e • Polearm • guest",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$19.76 listed online",
+    "free": false,
+    "age": "21+",
+    "description": "Touring bill; one guest not yet identified. No unsupported style assignment. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-06T19:30:00-08:00"
+  },
+  {
     "id": "psu-farmers-2026-11-07",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -3592,6 +4129,43 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-07T19:30:00-08:00"
   },
   {
+    "id": "indie-no-love-hiss-crime-time-high-five-danger-2026-11-07",
+    "title": "Love Hiss • Crime Time • High Five Danger",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Local bill with artist/venue links; source text confirms date and music time. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/love-hiss-crime-time-high-five-danger",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/love-hiss-crime-time-high-five-danger",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-07T19:00:00-08:00"
+  },
+  {
     "id": "the-coffin-club-soft-vein-with-modele-chalice-sect-2026-11-07",
     "title": "Soft Vein with Modele & Chalice Sect",
     "subtitle": "Darkwave, Industrial, Coldwave · live bill",
@@ -3805,6 +4379,43 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "indie-no-tuloc-total-system-failure-takashita-our-ichor-2026-11-08",
+    "title": "TULOC • Total System Failure • Takashita • Our Ichor",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Independent four-act performance; style classification held pending artist evidence. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/tuloc-total-system-failure-takashita-our-ichor",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/tuloc-total-system-failure-takashita-our-ichor",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-08T19:00:00-08:00"
+  },
+  {
     "id": "dantes-jon-spencer-2026-11-10",
     "title": "Jon Spencer",
     "subtitle": "Garage punk / rock · With Genre Is Death",
@@ -3856,6 +4467,43 @@ window.SHOWS_EVENTS = [
         "https://jonspencer.bandcamp.com/album/songs-of-personal-loss-and-protest-2"
       ]
     }
+  },
+  {
+    "id": "indie-tw-landroid-valkerie-sylphide-2026-11-10",
+    "title": "Landroid • Valkerie • Sylphide",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": false,
+    "age": "21+",
+    "description": "Official November calendar date; venue lists support. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-10T19:30:00-08:00"
   },
   {
     "id": "crystal-the-black-angels-with-ghostwoman-2026-11-10",
@@ -5354,6 +6002,43 @@ window.SHOWS_EVENTS = [
     "sourceNote": "Broad metal classification follows the official ticketing category; no unverified band biography or subgenre is assigned."
   },
   {
+    "id": "indie-no-seb-el-zin-support-tba-2026-11-19",
+    "title": "Seb El Zin • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Artist confirmed; support acts not yet announced. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/seb-el-zin-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/seb-el-zin-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-19T19:00:00-08:00"
+  },
+  {
     "id": "bookbinding-nov",
     "title": "Bookbinding Basics with Seltzer Press",
     "subtitle": "Learn four ways to make and bind books and zines",
@@ -5450,6 +6135,54 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-20T19:30:00-08:00"
   },
   {
+    "id": "indie-tw-drag-the-river-dewey-nielsen-band-2026-11-20",
+    "title": "Drag The River • Dewey Nielsen Band",
+    "subtitle": "Independent live show · Punk, Rock",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$17 face-value listing; current ticket checkout may add fees",
+    "free": false,
+    "age": "21+",
+    "description": "Alt-country / punk-associated touring artist; verified official date. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Alt-country / punk-associated touring artist; verified official date.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest"
+      ]
+    },
+    "doorsAt": "2026-11-20T19:30:00-08:00"
+  },
+  {
     "id": "revolution-gary-numan-with-tremours-2026-11-20",
     "title": "Gary Numan with TREMOURS",
     "subtitle": "Live show · Industrial & EBM, Rock",
@@ -5495,6 +6228,79 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "indie-ke-glam-country-fawkes-glove-superplume-2026-11-20",
+    "title": "Glam Country • Fawkes Glove • Superplume",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "$10 cover (venue default)",
+    "free": false,
+    "age": "Not published",
+    "description": "Kenton Club alone publishes show starts at 8 PM on this date; it does not publish a door time. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Kenton Club official show calendar",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club official show calendar",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues"
+  },
+  {
+    "id": "indie-no-molly-bang-caballo-monovisions-2026-11-20",
+    "title": "molly BANG • Caballo • Monovisions",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Three-act independent show; genre classification deferred. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/molly-bang-caballo-monovisions",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/molly-bang-caballo-monovisions",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-20T19:00:00-08:00"
   },
   {
     "id": "star-theater-prayers-no-tengo-calma-tour-2026-featuring-devora-and-hallows-2026-11-20",
@@ -5872,6 +6678,54 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-22T17:00:00-08:00"
+  },
+  {
+    "id": "indie-tw-atomic-rule-andy-williams-formerly-of-etid-guest-2026-11-22",
+    "title": "Atomic Rule (Andy Williams formerly of ETID) • guest",
+    "subtitle": "Independent live show · Hardcore, Metal",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Hardcore",
+      "Metal"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Metal"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-11-22T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": false,
+    "age": "21+",
+    "description": "New current venue listing names the event, resolving prior stale-listing doubt; support TBD. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "New current venue listing names the event, resolving prior stale-listing doubt; support TBD.",
+      "urls": [
+        "https://www.twilightcafeandbar.com/calendar/"
+      ]
+    },
+    "doorsAt": "2026-11-22T19:30:00-08:00"
   },
   {
     "id": "crystal-senses-fail-2026-11-23",
@@ -6489,6 +7343,43 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "indie-no-fair-stand-the-fields-of-france-miguel-mejia-support-tba-2026-11-29",
+    "title": "Fair Stand The Fields of France • Miguel Mejia • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Official venue line-up contains one unannounced support act. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-11-29T19:00:00-08:00"
+  },
+  {
     "id": "hawthorne-amorphis-insomnium-2026-12-01",
     "title": "Amorphis & Insomnium",
     "subtitle": "Metal · With Hinayana",
@@ -6541,6 +7432,52 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "indie-no-opulent-orchid-rich-halley-4-2026-12-01",
+    "title": "Opulent Orchid • Rich Halley 4",
+    "subtitle": "Independent live show · Noise & experimental",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Noise & experimental"
+    ],
+    "musicStyles": [
+      "Noise & experimental"
+    ],
+    "eventFormat": "live",
+    "startsAt": "2026-12-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Live improvising ensembles. Venue lists Opulent Orchid and Rich Halley 4 with players. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "musicStyleEvidence": {
+      "basis": "Live improvising ensembles. Venue lists Opulent Orchid and Rich Halley 4 with players.",
+      "urls": [
+        "https://www.nofunportland.com/"
+      ]
+    },
+    "doorsAt": "2026-12-01T19:00:00-08:00"
+  },
+  {
     "id": "adx-arts-agriculture-2026-12-03",
     "title": "Oregon Arts & Agriculture Holiday Market",
     "subtitle": "Local makers, agriculture, and community",
@@ -6575,6 +7512,80 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "indie-no-lena-luca-jean-shorts-jesus-support-tba-2026-12-03",
+    "title": "Lena Luca • Jean Shorts Jesus • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-12-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Two announced acts, third not yet confirmed. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-12-03T19:00:00-08:00"
+  },
+  {
+    "id": "indie-no-senior-week-support-tba-2026-12-04",
+    "title": "Senior Week • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Artist announced; supports not published. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/senior-week-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/senior-week-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-12-04T19:00:00-08:00"
   },
   {
     "id": "hawthorne-unkle-2026-12-04",
@@ -6737,6 +7748,43 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "indie-tw-abraham-racquetball-album-release-lucia-luna-latinum-2026-12-05",
+    "title": "Abraham Racquetball (album release) • Lucia Luna • Latinum",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "$13.39 listed online",
+    "free": false,
+    "age": "21+",
+    "description": "Official album-release listing. Do not infer genre from band names. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "Twilight Cafe and Bar official calendar",
+    "url": "https://www.twilightcafeandbar.com/calendar/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar official calendar",
+        "url": "https://www.twilightcafeandbar.com/calendar/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-12-05T19:30:00-08:00"
   },
   {
     "id": "wonder-feeble-little-horse-bitknot-tour-2026-12-05",
@@ -7177,6 +8225,43 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "indie-no-void-lord-support-tba-2026-12-11",
+    "title": "Void Lord • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Official show date, venue, door and music times confirmed. Style classification is deliberately unassigned. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/void-lord-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/void-lord-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-12-11T19:00:00-08:00"
+  },
+  {
     "id": "psu-farmers-2026-12-12",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -7330,6 +8415,43 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "sourceNote": "Directions point to Outlet; the market spans several nearby businesses."
+  },
+  {
+    "id": "indie-no-softgaze-greyhound-go-support-tba-2026-12-12",
+    "title": "Softgaze • Greyhound Go • support TBA",
+    "subtitle": "Independent live show · style to be confirmed",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "$10 cash at the door",
+    "free": false,
+    "age": "21+",
+    "description": "Official calendar now names Greyhound Go; a support act is still unannounced. Source checked against official venue calendar. Any unknown details should be confirmed with the organizer; no end time is inferred.",
+    "source": "No Fun official event calendar",
+    "url": "https://www.nofunportland.com/events/softgaze-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-17",
+    "verificationMethod": "Official venue dated lineup and music time; styles assigned only when supported",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun official event calendar",
+        "url": "https://www.nofunportland.com/events/softgaze-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-17-independent-venues",
+    "doorsAt": "2026-12-12T19:00:00-08:00"
   },
   {
     "id": "crafty-wonderland-2026-12-13",
