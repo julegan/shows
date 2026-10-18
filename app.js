@@ -208,7 +208,7 @@
     if(e.target.closest("[data-reset]")){restoreFilters();render();}
   });
   // A blocked or missing hotlinked flyer must not leave a broken image in the interface.
-  document.addEventListener("error",e=>{
+  if(typeof document.addEventListener==="function")document.addEventListener("error",e=>{
     const image=e.target;
     if(!(image instanceof HTMLImageElement)||!image.classList.contains("show-art-image"))return;
     image.remove();
