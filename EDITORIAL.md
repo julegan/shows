@@ -14,6 +14,14 @@ Queer-friendly and inclusive spaces matter. Queer identity is not a substitute f
 
 Unusual maker, vintage, zine, record, tattoo, occult, and pop-up markets; notable farmers markets; useful low-cost/free learning; independent arts; community participation; and credible humane animal-welfare activities broaden the calendar. They remain welcome. They do not displace the core music research when more events are requested.
 
+## Venue-first coverage before genre-based presentation
+
+Maintain the canonical, machine-readable `discovery/venues.json` registry. **For a supported venue calendar, collect every published future event, not just those automatically recognized as underground music.** Primary genres, source categories, and user-selected interests are separate presentation/filter fields. Absence of a genre match must not silently drop a venue event.
+
+Spend research/adapter effort first on the independent venues and promoters that serve the original underground music mission. Measure **actual dated venue coverage**, missing source connections and original flyer coverage separately from the overall event count. Treat a blocked or empty webpage as a source availability issue, not proof that the venue has no events. Keep artist/promoter/community guide announcements as supplemental leads when official venue pages are inaccessible.
+
+Collect **event-specific images** directly from official venue/promoter event cards whenever available. Preserve the source page and link; do not claim rights to replicate, download, or mirror artwork without permission. Generic venue photos and sitewide default social images are not event flyers. When no suitable flyer is available, keep the neutral non-invented placeholder.
+
 ## Evidence and review
 
 - Begin with the core music sources. Discovery calendars can provide leads; use venue, promoter, artist, label, or official ticket pages to verify details wherever possible.
