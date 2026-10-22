@@ -29,7 +29,7 @@ assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top 
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
 assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","revolution-hall"]);
 assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html"].includes(s.adapter)),"Never run unverified adapters");
-for(const id of ["coffin-club","high-limit","crystal-ballroom","revolution-hall"]){
+for(const id of ["coffin-club","high-limit","crystal-ballroom"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
 const {reportPriorityCoverage}=require("../scripts/report-priority-coverage");
