@@ -161,14 +161,15 @@
       "name": "Crystal Ballroom",
       "venue": "Crystal Ballroom",
       "venueRegistryId": "crystal-ballroom",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://www.crystalballroompdx.com/events/",
       "baseUrl": "https://www.crystalballroompdx.com",
-      "reason": "Dedicated Crystal Ballroom calendar offers original event detail pages and first-party Event schema dates, avoiding multivenue McMenamins feed. Strict original URL, venue metadata, Event status and Pacific time validation written; awaiting live runner test before activation.",
+      "reason": "Original dedicated Crystal Ballroom archive (up to twelve verified paginated pages) with per-event structured startDate and exact original room branding, Pacific timezone validation and image attribution; hold conflicting Lola's Room/Ringlers/moved listings; editorial review required.",
       "address": "1332 W Burnside St, Portland, OR 97209",
       "neighborhood": "West End",
-      "adapter": "crystal-official-html"
+      "adapter": "crystal-official-html",
+      "enabledReason": "Live GitHub Actions original venue source probe 39733648322: 56 first-party detail records inspected, 55 valid dated Crystal events, one venue move/room conflict held. Review-only import."
     },
     {
       "id": "revolution-hall",
