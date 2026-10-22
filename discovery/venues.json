@@ -91,12 +91,12 @@
       "id": "roseland",
       "name": "Roseland Theater",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://roselandpdx.com/events/",
       "aliases": [
         "Roseland Theatre"
       ],
-      "notes": "Official event calendar publishes dates and show times; no automated adapter connected yet.",
+      "notes": "Official 2026 event pages and showtimes verified in GitHub-runner live probe; review-only daily discovery enabled.",
       "editorialRank": 7
     },
     {
@@ -113,12 +113,12 @@
       "id": "hawthorne-theatre",
       "name": "Hawthorne Theatre",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://hawthornetheatre.com/events/",
       "aliases": [
         "Hawthorne Theater"
       ],
-      "notes": "Official 2026 event calendar covers Hawthorne Theatre and Hawthorne Lounge; importer must retain the correct room.",
+      "notes": "Official Hawthorne Theatre event details verified (Hawthorne Lounge and ticket add-ons excluded); review-only daily discovery enabled.",
       "editorialRank": 9
     },
     {
