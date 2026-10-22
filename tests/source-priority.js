@@ -3,8 +3,8 @@ const assert=require("node:assert/strict");
 const registry=require("../discovery/sources.json");
 const venues=require("../discovery/venues.json");
 const sources=registry.sources;
-const targetIds=["black-water","high-water-mark","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room"];
-const sourceOrder=["black-water","high-water","soundcontrol-pdx","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit"];
+const targetIds=["black-water","high-water-mark","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room","crystal-ballroom","revolution-hall"];
+const sourceOrder=["black-water","high-water","soundcontrol-pdx","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit","crystal-ballroom","revolution-hall"];
 assert.deepEqual(registry.primaryVenuePriority,targetIds,"Owner-selected priority is stable and machine readable");
 assert.deepEqual(venues.venuePriority,targetIds,"Canonical venue registry must agree with discovery registry");
 assert.deepEqual(sources.slice(0,sourceOrder.length).map(s=>s.id),sourceOrder,"Core venue and High Water Mark promoter adapters are first");
@@ -29,7 +29,7 @@ assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top 
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
 assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre"]);
 assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html"].includes(s.adapter)),"Never run unverified adapters");
-for(const id of ["coffin-club","high-limit"]){
+for(const id of ["coffin-club","high-limit","crystal-ballroom","revolution-hall"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
 const {reportPriorityCoverage}=require("../scripts/report-priority-coverage");
@@ -39,4 +39,4 @@ assert(summary.includes("Black Water")&&summary.includes("High Water Mark Lounge
 assert(summary.includes("No Fun:** paused-secondary"),"Summary must clearly disclose paused secondary ingest");
 assert(summary.includes("Adapter needed"),"Gaps must not appear as complete integration");
 for(const id of ["roseland","hawthorne-theatre","dantes","wonder-ballroom"])assert.equal(byId[id].status,"pilot-enabled",id+" passed a live GitHub-runner probe");
-console.log("PASS — owner-ranked venues, Dante's and other verified calendars, and No Fun daily intake paused.");
+console.log("PASS — owner-ranked venues, current verified calendar coverage, and No Fun daily intake paused.");
