@@ -81,10 +81,10 @@
       "id": "dantes",
       "name": "Dante's",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://www.danteslive.com/calendar/",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.danteslive.com/",
       "aliases": [],
-      "notes": "Official Dante's calendar located; upcoming dated listings exist. Source-specific importer pending.",
+      "notes": "Official primary Dante's event links and full dated showtime detail pages verified by GitHub Actions on 2026-10-21. Review-only daily discovery enabled; confirm event classification and original source link before publication.",
       "editorialRank": 6
     },
     {
