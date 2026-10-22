@@ -127,17 +127,24 @@ function extract(item,src,now){
 }
 function reconcile(existing,records){
  const accepted=[],held=[],skipped=[],seen=new Set();
+ // Wonder can schedule separate early/late performances by the same artist.
+ // Do not discard independent, first-party, explicitly timed listings;
+ // all other same-venue/date conflicts remain held for editorial comparison.
+ const wonderSeparateShows=(a,b)=>a.venue==="Wonder Ballroom"&&b.venue==="Wonder Ballroom"
+  &&a.discovery?.sourceId==="wonder-ballroom"&&b.discovery?.sourceId==="wonder-ballroom"
+  &&a.startTimeKind==="listed"&&b.startTimeKind==="listed"
+  &&a.startsAt!==b.startsAt&&a.url!==b.url;
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title);
-  if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)))){
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(e.discovery?.sourceId==="wonder-ballroom"?e.startsAt.slice(11,16):"");
+  if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!wonderSeparateShows(v,e)))){
    skipped.push({skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
    held.push({hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
-  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only"))){
+  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!wonderSeparateShows(v,e))){
    held.push({hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   accepted.push(e);seen.add(key);
