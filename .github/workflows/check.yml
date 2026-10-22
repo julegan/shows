@@ -51,3 +51,6 @@ jobs:
 
 
 
+
+      - name: Inspect dedicated Crystal Ballroom primary event pages (temporary)
+        run: node scripts/probe-crystal-primary-layout.js
