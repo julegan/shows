@@ -4,6 +4,8 @@
 const urls=[
  ["home","https://www.crystalballroompdx.com/"],
  ["events","https://www.crystalballroompdx.com/events/"],
+ ["page-2","https://www.crystalballroompdx.com/events/page/2/"],
+ ["page-2-query","https://www.crystalballroompdx.com/events/?pg=2"],
  ["detail-1","https://www.crystalballroompdx.com/events/278005-90s-vs-2000s-halloween-costume-glow-ball/"],
  ["detail-2","https://www.crystalballroompdx.com/events/276053-dai-freyr/"],
  ["detail-3","https://www.crystalballroompdx.com/events/277068-julia-jacklin/"]
@@ -26,7 +28,12 @@ function inspect(html,url,id){
    const response=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-venue-discovery/0.1"},redirect:"error",signal:AbortSignal.timeout(18000)});
    if(!response.ok){console.log(JSON.stringify({id,url,status:response.status}));continue;}
    const html=await response.text();if(html.length>4000000)throw Error("Source over size limit");
-   console.log(JSON.stringify(inspect(html,url,id)));
+   const out=inspect(html,url,id);
+   if(id.startsWith("detail-")){
+    out.eventSchema=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(m=>{try{const v=JSON.parse(m[1]);return [...Array.isArray(v)?v:[v]].flatMap(x=>x["@graph"]||[x]).filter(x=>String(x["@type"]||"").includes("Event"));}catch(_){return []}}).map(x=>({name:x.name,startDate:x.startDate,location:x.location,eventStatus:x.eventStatus,image:x.image}));
+   }
+   out.pagination=[...new Set([...html.matchAll(/href=["']([^"']*(?:page\/\d+|\?[^"']*(?:page|pg|paged)\s*=\s*\d+)[^"']*)["']/gi)].map(m=>m[1]))].slice(0,9);
+   console.log(JSON.stringify(out));
   }catch(e){console.log(JSON.stringify({id,url,error:String(e.message||e)}));}
  }
 })().catch(e=>{console.error(e);process.exitCode=1});
