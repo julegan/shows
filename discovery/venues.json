@@ -241,22 +241,24 @@
     {
       "id": "revolution-hall",
       "name": "Revolution Hall",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://www.revolutionhall.com/",
       "aliases": [
         "Show Bar at Revolution Hall"
       ],
-      "notes": "Calendar has multiple rooms; retain room in event"
+      "notes": "Official event calendar includes main Revolution Hall, Show Bar and off-site performances. Identify true location per event; do not mislabel other rooms or rescheduled shows.",
+      "editorialRank": 12
     },
     {
       "id": "crystal-ballroom",
       "name": "Crystal Ballroom",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://www.mcmenamins.com/events",
+      "calendarUrl": "https://www.mcmenamins.com/to-do/live-music-events",
       "aliases": [],
-      "notes": "McMenamins event pages; identify venue and avoid other properties"
+      "notes": "McMenamins official central music-event calendar; filter individual event pages strictly to Crystal Ballroom, NOT Lola's Room, Ringlers, or other properties.",
+      "editorialRank": 11
     },
     {
       "id": "moda-center",
@@ -362,6 +364,8 @@
     "roseland",
     "wonder-ballroom",
     "hawthorne-theatre",
-    "high-limit-room"
+    "high-limit-room",
+    "crystal-ballroom",
+    "revolution-hall"
   ]
 }
