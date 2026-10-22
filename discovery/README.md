@@ -75,3 +75,14 @@ Official Roseland and Hawthorne event detail pages use first-party `/event/<slug
 **GitHub runner live verification:** [workflow run 39723996416](https://github.com/julegan/shows/actions/runs/39723996416) inspected 34 Roseland and 48 Hawthorne first-party event links, verified eight Roseland details and seven Hawthorne details, and correctly excluded a Hawthorne VIP upgrade. This supports enabling both review-only adapters. It is not a guarantee that every event or page will remain available or that every venue date is already present in SHOWS.
 
 Use **Actions → Probe official Roseland and Hawthorne calendars (review-only) → Run workflow** to check current source health. Live external source fetches are intentionally not included in every pull-request CI run, to avoid unrelated edits failing because a venue site is temporarily offline. The daily discovery workflow continues to record source-specific failures and propose source-linked candidates through editorial review.
+
+
+## Dante's official primary-event importer — October 21, 2026
+
+Dante's official homepage links individual `/tm-event/<slug>/` show details. The dedicated adapter uses only first-party HTTPS event URLs and requires an explicit event title, venue name, full date and **Show:** time. It checks the Pacific timezone abbreviation against the date, holds moved/cancelled shows, rejects add-on upgrades and never infers unsupported end times, prices, genres, or door times.
+
+A [live GitHub runner verification](https://github.com/julegan/shows/actions/runs/39724940711) found **50** first-party event links and verified exact dates and showtimes from **12 of 12** sampled detail pages. The initial check also revealed site-name suffixes on some event titles; the adapter strips these now. Dante's is enabled for **review-only** daily discovery following that verification. No new records from this adapter reach the public website without a separate reviewed SHOWS PR and Portfolio sync.
+
+Use **Actions → Probe official Dante's event calendar (review-only)** to run a manual live source-health test. Ordinary PR checks run deterministic fixtures; external site uptime is not a CI gate on unrelated code changes.
+
+**Outstanding top priorities:** Coffin Club (source/ticket provider connection), Wonder Ballroom (official page omits explicit years for some date displays; find authoritative date-year evidence), High Limit Room (embedded schedule/ticketing provider), and High Water Mark (authorized promoter detail coverage). Do not mark these adapters operational until tested.

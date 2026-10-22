@@ -91,11 +91,15 @@
       "name": "Dante's",
       "venue": "Dante's",
       "venueRegistryId": "dantes",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
-      "url": "https://www.danteslive.com/calendar/",
+      "url": "https://www.danteslive.com/",
       "baseUrl": "https://www.danteslive.com",
-      "reason": "Official public calendar located. Create and verify a source-specific importer; no automated ingestion enabled."
+      "reason": "Official homepage lists dated primary event links and individual show details with explicit doors/show times; verified in live GitHub runner probe. Import review candidates only, never publish automatically.",
+      "address": "350 W Burnside St, Portland, OR 97209",
+      "neighborhood": "Old Town",
+      "adapter": "dantes-live-html",
+      "enabledReason": "Verified in GitHub Actions review-branch live probe run 39724940711: 50 official Dante's event links; all 12 sampled show detail pages had full dates and showtimes. Daily review-only source."
     },
     {
       "id": "roseland",
