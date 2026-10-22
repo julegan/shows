@@ -32,6 +32,9 @@ jobs:
           node tests/hosted-venue-importers.js
           node --check scripts/dantes-importer.js
           node tests/dantes-importer.js
+          node --check scripts/wonder-importer.js
+          node tests/wonder-importer.js
+          node --check scripts/probe-wonder.js
           node --check scripts/coffin-venuepilot.js
           node tests/coffin-venuepilot.js
           node --check scripts/probe-dantes.js

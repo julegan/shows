@@ -103,10 +103,10 @@
       "id": "wonder-ballroom",
       "name": "Wonder Ballroom",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://wonderballroom.com/events/",
       "aliases": [],
-      "notes": "Official show list publishes dates and doors/show times; verify moving/postponed bill status before ingestion.",
+      "notes": "Official first-party links and year-bearing event details verified by GitHub-runner probe; 10/12 sample details dated correctly, two held. Review-only importer accepts distinct early and late shows.",
       "editorialRank": 8
     },
     {

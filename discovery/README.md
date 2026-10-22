@@ -88,6 +88,18 @@ Use **Actions → Probe official Dante's event calendar (review-only)** to run a
 **Outstanding top priorities:** Coffin Club (source/ticket provider connection), Wonder Ballroom (official page omits explicit years for some date displays; find authoritative date-year evidence), High Limit Room (embedded schedule/ticketing provider), and High Water Mark (authorized promoter detail coverage). Do not mark these adapters operational until tested.
 
 
+## Wonder Ballroom — verified official year + showtime adapter (October 21, 2026)
+
+The Wonder Ballroom venue listing is public at https://wonderballroom.com/events/. Its visible cards often display only month/day, but its **event-specific official page title publishes the year**. The new adapter only trusts first-party event URL patterns and requires the year-bearing title to agree with the independently visible weekday/month/day and a clearly marked `Show:` time. It never treats `Doors:` as showtime or guesses the year based on today's date. Moved/canceled/postponed events are held, not imported. Existing event-specific promo-image URLs retain source provenance and permissions review.
+
+A live [GitHub Actions runner probe](https://github.com/julegan/shows/actions/runs/39726379458) found **36 official event links**; of the 12 pages checked, **10 had verified showtimes** and **2 were held for missing year information**. Both were held rather than guessed. The importer is now enabled for **review-only** proposals; publication still requires an approved SHOWS PR and a separate Portfolio sync PR.
+
+Wonder sometimes schedules two distinct performances by the same artist on the same date. A narrowly limited reconciliation change preserves two **Wonder-sourced, separately ticketed URLs with explicitly different showtimes** while continuing to hold same-date/venue collisions from all other sources for human review. Exact duplicates are still skipped.
+
+Run **Actions → Probe official Wonder Ballroom calendar (review-only)** manually for external source-health verification. Do not require live venue uptime for every unrelated pull request.
+
+Coffin Club, High Limit Room and direct High Water Mark still need additional verified source coverage.
+
 ## Coffin Club / High Limit source audit — October 21, 2026
 
 A live GitHub runner checked both official public venue sites. Coffin Club embeds VenuePilot's public events widget (account 3434). VenuePilot also provides a documented read-only event-data GraphQL API, but requires a **separately issued integration app ID**. SHOWS now includes a conservative, tested provider adapter and manual GitHub Actions health probe; Coffin stays **adapter-needed and disabled** until authorized credentials are supplied and a real probe passes. Do not use the public widget settings in place of an integration credential.

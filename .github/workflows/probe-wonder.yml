@@ -1,0 +1,16 @@
+name: Probe official Wonder Ballroom calendar (review-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify original official show dates and year
+        run: node scripts/probe-wonder.js
