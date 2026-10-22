@@ -93,9 +93,12 @@
       "venueRegistryId": "dantes",
       "status": "adapter-needed",
       "priority": "highest",
-      "url": "https://www.danteslive.com/calendar/",
+      "url": "https://www.danteslive.com/",
       "baseUrl": "https://www.danteslive.com",
-      "reason": "Official public calendar located. Create and verify a source-specific importer; no automated ingestion enabled."
+      "reason": "Official home lists dated shows linking to /tm-event/<slug>/ pages with year, explicit doors and show time. Strict importer and live probe are under review; do not enable scheduled ingestion before GitHub runner verification.",
+      "address": "350 W Burnside St, Portland, OR 97209",
+      "neighborhood": "Old Town",
+      "adapter": "dantes-live-html"
     },
     {
       "id": "roseland",
