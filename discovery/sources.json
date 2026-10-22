@@ -3,51 +3,39 @@
   "policy": "Only a primary venue source may generate a proposed event. GitHub PR review is required; no direct publication.",
   "sources": [
     {
-      "id": "twilight",
-      "name": "Twilight Cafe and Bar",
-      "status": "pilot-enabled",
-      "priority": "highest",
-      "reason": "Identify the official ticketing/calendar data endpoint and its fields.",
-      "url": "https://www.twilightcafeandbar.com/calendar/",
-      "baseUrl": "https://www.twilightcafeandbar.com",
-      "venue": "Twilight Cafe and Bar",
-      "address": "832 SE Grand Ave, Portland, OR 97214",
-      "neighborhood": "Central Eastside",
-      "adapter": "twilight-html",
-      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
-    },
-    {
       "id": "black-water",
       "name": "Black Water",
       "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Official Black Water page embeds a public Google Calendar; iCalendar export tested successfully. Items currently all-day/date-only; preserve time as unconfirmed.",
+      "reason": "First priority. Official Black Water public iCalendar feed is active; preserve date-only timestamps and report missing showtimes for review.",
       "url": "https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics",
       "baseUrl": "https://bar.blackwaterpdx.com",
       "venue": "Black Water",
       "address": "5115 NE Sandy Blvd, Portland, OR 97213",
       "neighborhood": "Rose City Park",
-      "adapter": "black-water-ics"
+      "adapter": "black-water-ics",
+      "venueRegistryId": "black-water"
     },
     {
       "id": "high-water",
       "name": "High Water Mark",
       "status": "source-blocked",
       "priority": "highest",
-      "reason": "Official High Water Mark site returned HTTP 403 to GitHub runner; its concerts can be discovered through permitted Soundcontrol promoter listings when date, venue, and time can be verified.",
+      "reason": "Second priority. Direct venue host returned HTTP 403 to GitHub; do not bypass access controls. Use the verified Soundcontrol primary-promoter feed when possible and stage uncertain times for review.",
       "url": "https://www.highwatermarklounge.com/",
       "baseUrl": "https://www.highwatermarklounge.com",
       "venue": "High Water Mark Lounge",
       "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
       "neighborhood": "Woodlawn",
-      "adapter": "venue-list-html"
+      "adapter": "venue-list-html",
+      "venueRegistryId": "high-water-mark"
     },
     {
       "id": "soundcontrol-pdx",
       "name": "Soundcontrol PDX",
       "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Official promoter listing covers multiple venues, including High Water Mark and Twilight. Resolve venue from each event, deduplicate with venue feeds, and do not infer a single fixed address.",
+      "reason": "Primary multi-venue promoter supports High Water Mark and other preferred locations. Preserve original venue per bill; do not infer showtime from a date-only flyer.",
       "url": "https://www.soundcontrolpdx.com/",
       "baseUrl": "https://www.soundcontrolpdx.com",
       "venue": null,
@@ -58,32 +46,100 @@
       "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
     },
     {
+      "id": "twilight",
+      "name": "Twilight Cafe and Bar",
+      "status": "pilot-enabled",
+      "priority": "highest",
+      "reason": "Third priority. Enabled official event details; collect all dated venue events before music-style classification.",
+      "url": "https://www.twilightcafeandbar.com/calendar/",
+      "baseUrl": "https://www.twilightcafeandbar.com",
+      "venue": "Twilight Cafe and Bar",
+      "address": "832 SE Grand Ave, Portland, OR 97214",
+      "neighborhood": "Central Eastside",
+      "adapter": "twilight-html",
+      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication.",
+      "venueRegistryId": "twilight"
+    },
+    {
+      "id": "coffin-club",
+      "name": "The Coffin Club",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "reason": "High-priority gothic/industrial venue. Official landing page verified; investigate its current ticket-provider event pages and implement source-specific calendar adapter before enabling.",
+      "venueRegistryId": "coffin-club",
+      "url": "https://thecoffinclubpdx.com/",
+      "baseUrl": "https://thecoffinclubpdx.com",
+      "venue": "The Coffin Club"
+    },
+    {
       "id": "star-theater",
       "name": "Star Theater",
       "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Test venue event data and avoid misleading recurring dates.",
+      "reason": "Priority official venue event listing. Keep moved, cancelled and ambiguous recurrence records held for review.",
       "url": "https://www.startheaterportland.com/event/",
       "baseUrl": "https://www.startheaterportland.com",
       "venue": "Star Theater",
       "address": "13 NW Sixth Avenue, Portland, OR 97209",
       "neighborhood": "Old Town",
       "adapter": "star-theater-html",
-      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
+      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication.",
+      "venueRegistryId": "star-theater"
     },
     {
-      "id": "coffin-club",
-      "name": "The Coffin Club",
+      "id": "dantes",
+      "name": "Dante's",
+      "venue": "Dante's",
+      "venueRegistryId": "dantes",
       "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Verify event/ticketing feed and conflicting times."
+      "priority": "highest",
+      "url": "https://www.danteslive.com/calendar/",
+      "baseUrl": "https://www.danteslive.com",
+      "reason": "Official public calendar located. Create and verify a source-specific importer; no automated ingestion enabled."
+    },
+    {
+      "id": "roseland",
+      "name": "Roseland Theater",
+      "venue": "Roseland Theater",
+      "venueRegistryId": "roseland",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "url": "https://roselandpdx.com/events/",
+      "baseUrl": "https://roselandpdx.com",
+      "reason": "Official 2026 event calendar shows dates, show times and venue detail pages; importer still requires implementation and validation."
+    },
+    {
+      "id": "wonder-ballroom",
+      "name": "Wonder Ballroom",
+      "venue": "Wonder Ballroom",
+      "venueRegistryId": "wonder-ballroom",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "url": "https://wonderballroom.com/events/",
+      "baseUrl": "https://wonderballroom.com",
+      "reason": "Official dated listings include show and door times; do not ingest moved/postponed/cancelled listings without review."
+    },
+    {
+      "id": "hawthorne-theatre",
+      "name": "Hawthorne Theatre",
+      "venue": "Hawthorne Theatre",
+      "venueRegistryId": "hawthorne-theatre",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "url": "https://hawthornetheatre.com/events/",
+      "baseUrl": "https://hawthornetheatre.com",
+      "reason": "Official event calendar includes Hawthorne Lounge dates too; keep the performance room/venue distinct and validate published showtime."
     },
     {
       "id": "high-limit",
       "name": "High Limit Room",
       "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Embedded calendar requires a source-specific adapter."
+      "priority": "highest",
+      "reason": "High-priority all-ages DIY venue. Official website is reachable and lists shows, but an event-specific source adapter and verification tests are still needed.",
+      "venueRegistryId": "high-limit-room",
+      "url": "https://highlimitroompdx.com/",
+      "baseUrl": "https://highlimitroompdx.com",
+      "venue": "High Limit Room"
     },
     {
       "id": "turn-turn-turn",
@@ -107,9 +163,16 @@
       "reason": "Many bills lack posted performance time; staging adapter needed."
     },
     {
+      "id": "shanghai-tunnel",
+      "name": "Shanghai Tunnel",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "reason": "Confirm current venue calendar feed."
+    },
+    {
       "id": "no-fun",
       "name": "No Fun",
-      "status": "pilot-enabled",
+      "status": "paused-secondary",
       "adapter": "squarespace-json",
       "url": "https://www.nofunportland.com/events?format=json-pretty",
       "baseUrl": "https://www.nofunportland.com",
@@ -129,22 +192,33 @@
           "reason": "Prior conflicting When We Met venue date and competing listing; organizer clarification required"
         }
       ],
-      "reason": "Read-only technical pilot retained to avoid interrupting the existing scheduled job; editorial priority is lower than Twilight, Black Water, High Water Mark, Soundcontrol and Star Theater."
-    },
-    {
-      "id": "shanghai-tunnel",
-      "name": "Shanghai Tunnel",
-      "status": "adapter-needed",
-      "priority": "underground-music",
-      "reason": "Confirm current venue calendar feed."
+      "reason": "Pause automatic daily intake to prevent a secondary venue from dominating review queues. Keep existing approved SHOWS listings and this tested adapter for future opt-in/manual use; do not auto-fetch until the owner explicitly re-enables it.",
+      "venueRegistryId": "no-fun"
     }
   ],
   "editorialPriority": [
-    "Twilight Cafe and Bar",
     "Black Water",
     "High Water Mark Lounge",
-    "Soundcontrol PDX",
-    "Star Theater"
+    "Twilight Cafe and Bar",
+    "The Coffin Club",
+    "Star Theater",
+    "Dante's",
+    "Roseland Theater",
+    "Wonder Ballroom",
+    "Hawthorne Theatre",
+    "High Limit Room"
   ],
-  "discoveryPriority": "Editorial relevance determines queue order. Adapter availability only determines execution readiness; it does not override user-selected source priorities."
+  "discoveryPriority": "Collect/review all future dated events from the owner's priority venues before expanding secondary sources. Source-adapter readiness does not equal editorial priority. No Fun is paused for daily discovery; previously approved listings remain. Soundcontrol is a cross-venue source, not a venue.",
+  "primaryVenuePriority": [
+    "black-water",
+    "high-water-mark",
+    "twilight",
+    "coffin-club",
+    "star-theater",
+    "dantes",
+    "roseland",
+    "wonder-ballroom",
+    "hawthorne-theatre",
+    "high-limit-room"
+  ]
 }
