@@ -39,7 +39,7 @@ function pages(html){
 }
 function decode(s){
  return String(s||"").replace(/&#(?:x([0-9a-f]+)|(\d+));/gi,(_,h,d)=>{const n=parseInt(h||d,h?16:10);return n>0&&n<=0x10ffff?String.fromCodePoint(n):" "})
- .replace(/&(?:amp|apos|quot|nbsp|lt|gt);/gi,t=>({"&amp;":"&","&apos;":"'","&quot;":'"',"&nbsp;":" ","&lt;":"<","&gt;":">"}[t.toLowerCase()]||t);
+ .replace(/&(?:amp|apos|quot|nbsp|lt|gt);/gi,t=>({"&amp;":"&","&apos;":"'","&quot;":'"',"&nbsp;":" ","&lt;":"<","&gt;":">"}[t.toLowerCase()]||t));
 }
 function metadata(page){
  const attrs=[...String(page).matchAll(/<meta\b[^>]*>/gi)];
