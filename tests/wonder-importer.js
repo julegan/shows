@@ -26,4 +26,14 @@ assert.match(parseWonderDetail(page.replace("<h1>SLIFT</h1>","<h1>MOVED TO ROSEL
 assert.match(parseWonderDetail(page.replace("<h1>SLIFT</h1>","<h1>*Postponed* SLIFT</h1>"),url,src).hold,/postponed/);
 const future=page.replace("Oct 21, 2026","Feb 9, 2027").replace("Wednesday, October 21","Tuesday, February 9");
 assert.equal(parseWonderDetail(future,url,src).startDate,"2027-02-10T04:00:00.000Z");
-console.log("PASS — Wonder Ballroom exact primary URL, title-year and weekday cross-check, showtime, DST and moved bill holds");
+const {extract,reconcile}=require("../scripts/discover-events");
+const now=new Date("2026-10-21T20:00:00-07:00");
+const first={...e,title:"NICE AS F*#K",fullUrl:"https://wonderballroom.com/event/nice-af-early/wonder-ballroom/portland-oregon/",startDate:"2026-10-23T00:00:00.000Z"};
+const second={...first,fullUrl:"https://wonderballroom.com/event/nice-af-late/wonder-ballroom/portland-oregon/",startDate:"2026-10-23T04:00:00.000Z"};
+const early=extract(first,src,now),late=extract(second,src,now);
+assert(early.event&&late.event,"Both separately ticketed, explicitly timed performances should parse");
+assert.equal(reconcile([],[early,late]).accepted.length,2,"Preserve two performances with different official URLs and showtimes");
+assert.equal(reconcile([early.event],[late]).accepted.length,1,"Late show survives an already approved early show");
+assert.equal(reconcile([],[early,early]).accepted.length,1,"Exact duplicates are still discarded");
+assert.equal(reconcile([],[early,{...late,event:{...late.event,startsAt:early.event.startsAt}}]).held.length,1,"Same venue/date and time with different show URL requires review");
+console.log("PASS — Wonder Ballroom exact primary URL, title-year and weekday cross-check, showtime, DST, moved holds and independent early/late shows");
