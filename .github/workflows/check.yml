@@ -32,6 +32,8 @@ jobs:
           node tests/hosted-venue-importers.js
           node --check scripts/dantes-importer.js
           node tests/dantes-importer.js
+          node --check scripts/coffin-venuepilot.js
+          node tests/coffin-venuepilot.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
           node tests/artwork.js
@@ -40,7 +42,3 @@ jobs:
 
 
 
-      - name: Inspect Coffin and High Limit public venue feeds (read-only)
-        run: node scripts/probe-underground-sources.js
-      - name: Inspect official public JSON and event embed structures
-        run: node scripts/probe-public-feed-shapes.js
