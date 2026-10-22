@@ -118,3 +118,12 @@ Added to the owner's explicit music discovery priority after the original top te
 - A read-only source-shape probe at `scripts/probe-crystal-revolution.js` checks the publicly accessible HTML and reports official event-link coverage without modifying any calendar records. These sources remain `adapter-needed` until a source-specific adapter passes live review and regression tests.
 
 No event or Portfolio publication occurs from this change. Continue approving source-linked event intake via SHOWS discovery PRs and a separate Portfolio sync.
+
+### Live source audit results (GitHub Actions, October 21, 2026)
+
+[Read-only probe run 39730461140](https://github.com/julegan/shows/actions/runs/39730461140) inspected the official sites without bypassing access controls or publishing events:
+
+- **Revolution Hall:** The official HTML exposed 33 Etix ticket links. Ticket URL paths distinguish `portland-revolution-hall` from `portland-show-bar-at-revolution-hall`. The next connector must cross-check an event's full date and explicit showtime on the original venue listing or official ticket detail, and hold off-site or rescheduled listings. **Not yet active.**
+- **Crystal Ballroom:** The generic McMenamins music calendar initially exposed nine McMenamins `/events/...` links; many were for other properties. The unverified `/crystal-ballroom/music-events/` URL returned HTTP 404. Find a working property-filtered listing/pagination scheme or trusted event-specific primary links, then independently verify exact venue, year and showtime from individual event detail pages. **Not yet active.**
+
+To recheck current source health without changing event records, use **Actions → Probe Crystal Ballroom and Revolution Hall sources (review-only)**. Live external checks are not required for every unrelated PR.
