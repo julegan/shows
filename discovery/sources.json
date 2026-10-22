@@ -102,12 +102,13 @@
       "name": "Roseland Theater",
       "venue": "Roseland Theater",
       "venueRegistryId": "roseland",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://roselandpdx.com/events/",
       "baseUrl": "https://roselandpdx.com",
-      "reason": "Official 2026 event calendar shows dates, show times and venue detail pages; importer still requires implementation and validation. Shared official event-detail importer in review, requiring a passing live runner probe before enabling daily fetch.",
-      "adapter": "hosted-venue-html"
+      "reason": "Official 2026 event calendar shows dates, show times and venue detail pages; importer still requires implementation and validation. Live official event-detail importer verified with original page showtimes; all candidates require editorial review.",
+      "adapter": "hosted-venue-html",
+      "enabledReason": "Live GitHub Actions runner probe verified official source links, dates, showtimes and venues on 2026-10-21: https://github.com/julegan/shows/actions/runs/39723996416. Review-only event proposals."
     },
     {
       "id": "wonder-ballroom",
@@ -125,12 +126,13 @@
       "name": "Hawthorne Theatre",
       "venue": "Hawthorne Theatre",
       "venueRegistryId": "hawthorne-theatre",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://hawthornetheatre.com/events/",
       "baseUrl": "https://hawthornetheatre.com",
-      "reason": "Official event calendar includes Hawthorne Lounge dates too; keep the performance room/venue distinct and validate published showtime. Shared official event-detail importer in review, requiring a passing live runner probe before enabling daily fetch.",
-      "adapter": "hosted-venue-html"
+      "reason": "Official event calendar includes Hawthorne Lounge dates too; keep the performance room/venue distinct and validate published showtime. Live official event-detail importer verified with original page showtimes; all candidates require editorial review.",
+      "adapter": "hosted-venue-html",
+      "enabledReason": "Live GitHub Actions runner probe verified official source links, dates, showtimes and venues on 2026-10-21: https://github.com/julegan/shows/actions/runs/39723996416. Review-only event proposals."
     },
     {
       "id": "high-limit",
