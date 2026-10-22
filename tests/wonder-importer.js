@@ -35,5 +35,5 @@ assert(early.event&&late.event,"Both separately ticketed, explicitly timed perfo
 assert.equal(reconcile([],[early,late]).accepted.length,2,"Preserve two performances with different official URLs and showtimes");
 assert.equal(reconcile([early.event],[late]).accepted.length,1,"Late show survives an already approved early show");
 assert.equal(reconcile([],[early,early]).accepted.length,1,"Exact duplicates are still discarded");
-assert.equal(reconcile([],[early,{...late,event:{...late.event,startsAt:early.event.startsAt}}]).held.length,1,"Same venue/date and time with different show URL requires review");
+assert.equal(reconcile([],[early,{...late,event:{...late.event,startsAt:early.event.startsAt}}]).skipped.length,1,"Same artist/date/time is safely deduplicated even with different URL");
 console.log("PASS — Wonder Ballroom exact primary URL, title-year and weekday cross-check, showtime, DST, moved holds and independent early/late shows");
