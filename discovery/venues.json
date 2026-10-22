@@ -252,10 +252,10 @@
       "id": "crystal-ballroom",
       "name": "Crystal Ballroom",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.crystalballroompdx.com/events/",
       "aliases": [],
-      "notes": "Dedicated official Crystal Ballroom-only archive with original event details; source-specific importer awaiting live GitHub-runner verification. Lola's Room/Ringlers are not treated as Ballroom bills.",
+      "notes": "First-party original Crystal calendar verified in GitHub runner: 56 event details, 55 valid with one room/move hold; review-only intake, not a Lola's Room or Ringlers import.",
       "editorialRank": 11
     },
     {
