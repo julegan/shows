@@ -1,0 +1,16 @@
+name: Probe official Revolution Hall and Show Bar events (review-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check room identities and date/time evidence from venue listings
+        run: node scripts/probe-revolution.js
