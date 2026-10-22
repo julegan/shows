@@ -42,3 +42,5 @@ jobs:
 
       - name: Inspect Coffin and High Limit public venue feeds (read-only)
         run: node scripts/probe-underground-sources.js
+      - name: Inspect official public JSON and event embed structures
+        run: node scripts/probe-public-feed-shapes.js
