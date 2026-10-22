@@ -10,6 +10,7 @@ const dantes=require("./dantes-importer");
 const coffin=require("./coffin-venuepilot");
 const wonder=require("./wonder-importer");
 const revolution=require("./revolution-importer");
+const crystal=require("./crystal-importer");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -51,6 +52,7 @@ function urlOf(item,src){
   if(src.adapter==="dantes-live-html")return dantes.safeDantesUrl(u.href,src);
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
+  if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
   if(src.adapter==="revolution-events-html"){
    const room=item.venue==="Revolution Hall"?"revolution-hall":item.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
    return room?revolution.validatedTicket(u.href,room)?.url||null:null;
@@ -165,13 +167,49 @@ async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
- if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
  if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
  if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source,localDay(new Date()));
+ if(source.adapter==="crystal-official-html"){
+  const visited=new Set(),queue=[{url:source.url,html:body}],eventLinks=new Set();
+  // McMenamins' independent Crystal site, not the multivenue corporate calendar.
+  while(queue.length){
+   const current=queue.shift();
+   if(visited.has(current.url))continue;
+   visited.add(current.url);
+   const next=crystal.pages(current.html);
+   if(/\/events\/page\/(?:1[3-9]|[2-9]\d+)\//i.test(current.html))throw Error("Crystal primary archive exceeds the bounded 12-page coverage; review pagination before importing");
+   for(const url of crystal.links(current.html))eventLinks.add(url);
+   for(const link of next){
+    if(visited.has(link)||queue.some(v=>v.url===link))continue;
+    if(visited.size+queue.length>=12)throw Error("Crystal event pagination exceeds 12 pages; manual coverage audit required");
+    const res=await fetch(link,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(16000),redirect:"error"});
+    if(!res.ok||!res.headers.get("content-type")?.includes("text/html"))throw Error("Crystal archive pagination returned invalid response");
+    const text=await res.text();if(text.length>2500000)throw Error("Crystal archive exceeds 2.5MB page limit");
+    queue.push({url:link,html:text});
+   }
+  }
+  if(eventLinks.size>144)throw Error("Crystal official archive too large; hold for source audit");
+  const original=[...eventLinks],rows=[];
+  for(let i=0;i<original.length;i+=4){
+   const found=await Promise.all(original.slice(i,i+4).map(async link=>{
+    try{
+     const response=await fetch(link,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(16000),redirect:"error"});
+     if(!response.ok)return {hold:"Crystal first-party event detail HTTP "+response.status,url:link};
+     if(!response.headers.get("content-type")?.includes("text/html"))return {hold:"Crystal event detail is not HTML",url:link};
+     const html=await response.text();if(html.length>1500000)return {hold:"Crystal event detail exceeds 1.5MB",url:link};
+     return crystal.parseDetail(html,link);
+    }catch(e){return {hold:"Crystal official detail unavailable: "+String(e.message||e),url:link};}
+   }));
+   rows.push(...found);
+  }
+  if(!rows.some(x=>x.startDate))throw Error("Crystal venue archive yielded no confirmed dated events");
+  return rows;
+ }
  if(source.adapter==="revolution-events-html"){
   const rows=revolution.parseRevolution(body,source);
   if(!rows.some(x=>x.startDate))throw Error("Revolution Hall official calendar returned no verified full-date show cards");
