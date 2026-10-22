@@ -36,22 +36,30 @@ function parseCard(block,room,source){
  if(/\b(?:rescheduled|postponed|cancelled|canceled|moved to|vip upgrade|ticket not included)\b/i.test(title))return {hold:"Rescheduled, canceled or non-show listing",title,url:ticket.url};
  const date=plain(block.match(/<span\b[^>]*class=["']event-date--full["'][^>]*>([\s\S]*?)<\/span>/i)?.[1]||"");
  const dm=/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d{2})$/i.exec(date);
- if(!dm)return {hold:"Missing full weekday, date and year on official show card",title,url:ticket.url};
- const [dateWeekday]=date.split(",");
- const year=Number(dm[3]),month=MONTHS[dm[1].toLowerCase()],day=Number(dm[2]);
- const check=new Date(Date.UTC(year,month-1,day));
- if(check.getUTCFullYear()!==year||check.getUTCMonth()!==month-1||check.getUTCDate()!==day||dateWeekday.slice(0,3).toLowerCase()!==["sun","mon","tue","wed","thu","fri","sat"][check.getUTCDay()])return {hold:"Official weekday and calendar date conflict",title,url:ticket.url};
  const tmTag=block.match(/<span\b[^>]*class=["']event-doors-showtime["'][^>]*>[\s\S]*?<\/span>/i)?.[0]||"";
- const reported=plain(tmTag);
- const match=reported.match(/\bShow:\s*(\d{1,2}(?::\d{2})?\s*[ap]m)\b/i);
- const show=match&&time24(match[1]);
- const startDate=show&&wallToPacific(year,month,day,show);
- if(!startDate)return {hold:"No explicit time-bearing performance start on official show card",title,url:ticket.url};
+ const reported=plain(tmTag),attrDoors=attr(tmTag,"data-event-doors");
  const doors=reported.match(/\bDoors:\s*(\d{1,2}(?::\d{2})?\s*[ap]m)\b/i);
+ const showMatch=reported.match(/\bShow:\s*(\d{1,2}(?::\d{2})?\s*[ap]m)\b/i);
+ const show=showMatch&&time24(showMatch[1]);
+ if(!show)return {hold:"No explicit performance time on official show card",title,url:ticket.url};
+ let year,month,day;
+ if(dm){
+  year=Number(dm[3]);month=MONTHS[dm[1].toLowerCase()];day=Number(dm[2]);
+  const check=new Date(Date.UTC(year,month-1,day));
+  if(check.getUTCFullYear()!==year||check.getUTCMonth()!==month-1||check.getUTCDate()!==day||date.slice(0,3).toLowerCase()!==["sun","mon","tue","wed","thu","fri","sat"][check.getUTCDay()])return {hold:"Official weekday and calendar date conflict",title,url:ticket.url};
+ }else if(/^(Today|Tomorrow)$/i.test(date)&&doors&&/^20\d{2}-\d\d-\d\dT\d\d:\d\d:\d\dZ$/.test(attrDoors)){
+  // Date comes ONLY from the venue's explicit UTC doors timestamp.
+  // The relative display label is not used to infer today's date.
+  const parsed=new Date(attrDoors);
+  if(!Number.isFinite(parsed.valueOf()))return {hold:"Unusable official UTC doors timestamp",title,url:ticket.url};
+  const parts=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(parsed).map(p=>[p.type,p.value]));
+  year=Number(parts.year);month=Number(parts.month);day=Number(parts.day);
+ }else return {hold:"Missing full weekday/year or source-provided UTC date on official show card",title,url:ticket.url};
+ const startDate=wallToPacific(year,month,day,show);
+ if(!startDate)return {hold:"Invalid time-bearing performance start on official show card",title,url:ticket.url};
  if(doors){
   const utc=wallToPacific(year,month,day,time24(doors[1]));
-  const attrDoors=attr(tmTag,"data-event-doors");
-  if(!utc||(attrDoors&&utc!==new Date(attrDoors).toISOString()))return {hold:"Doors timestamp conflicts with venue's visible Pacific time",title,url:ticket.url};
+  if(!utc||(attrDoors&&(!Number.isFinite(Date.parse(attrDoors))||utc!==new Date(attrDoors).toISOString())))return {hold:"Doors timestamp conflicts with venue's visible Pacific time",title,url:ticket.url};
   if(Date.parse(startDate)<Date.parse(utc))return {hold:"Showtime earlier than official doors time",title,url:ticket.url};
  }
  const imageSrc=block.match(/<div\b[^>]*class=["']event__image["'][^>]*>[\s\S]*?<img\b[^>]*src=["']([^"']+)["']/i)?.[1];
