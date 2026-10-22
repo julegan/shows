@@ -32,4 +32,10 @@ assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html",
 for(const id of ["coffin-club","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
-console.log("PASS — user-ranked primary venues first; No Fun paused without data removal; enabled source adapters remain validated.");
+const {reportPriorityCoverage}=require("../scripts/report-priority-coverage");
+const {audit}=require("../scripts/audit-venue-coverage");
+const summary=reportPriorityCoverage(audit("2026-10-21"));
+assert(summary.includes("Black Water")&&summary.includes("High Water Mark Lounge")&&summary.includes("Hawthorne Theatre"),"Summary must cover owner-selected venues");
+assert(summary.includes("No Fun:** paused-secondary"),"Summary must clearly disclose paused secondary ingest");
+assert(summary.includes("Adapter needed"),"Gaps must not appear as complete integration");
+console.log("PASS — user-ranked primary venues first; No Fun paused without data removal; readable priority gap report.");
