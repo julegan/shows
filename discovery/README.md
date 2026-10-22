@@ -107,3 +107,14 @@ A live GitHub runner checked both official public venue sites. Coffin Club embed
 High Limit Room embeds an Afton Tickets checkout widget. The initial public HTML does not expose verified dated event cards, and no authorized event-feed API has been established. Do not mark the source complete or invent timings from third-party resale sites. Seek a supported export/feed from the venue or ticket provider.
 
 See [provider feed readiness](provider-feed-readiness.md) for exact provider source evidence, security requirements, what has been implemented, and the activation sequence. Both venues remain in the owner's high-priority queue. No event records were added by this work.
+
+
+## Crystal Ballroom and Revolution Hall — new core venue coverage
+
+Added to the owner's explicit music discovery priority after the original top ten. Both venues were already in the venue directory but had **no dedicated discovery sources**, so being listed did not mean their event calendars were collected.
+
+- **Crystal Ballroom:** The [McMenamins official music/events calendar](https://www.mcmenamins.com/to-do/live-music-events) supplies venue-specific event detail links with year, location, ticket and showtime evidence. McMenamins also hosts Lola's Room, Ringlers Pub, other Portland venues and out-of-town events. A parser must verify `Crystal Ballroom` at the **event-detail** level; do not attribute other rooms or locations to Crystal Ballroom.
+- **Revolution Hall:** The [official venue calendar](https://www.revolutionhall.com/) mixes main hall, Show Bar and occasional other performance locations. Identify the room from each event entry; do not publish Show Bar or offsite events as Revolution Hall. Moved/postponed/canceled events need explicit review.
+- A read-only source-shape probe at `scripts/probe-crystal-revolution.js` checks the publicly accessible HTML and reports official event-link coverage without modifying any calendar records. These sources remain `adapter-needed` until a source-specific adapter passes live review and regression tests.
+
+No event or Portfolio publication occurs from this change. Continue approving source-linked event intake via SHOWS discovery PRs and a separate Portfolio sync.
