@@ -39,3 +39,6 @@ jobs:
           node tests/venues.js
 
 
+
+      - name: Inspect Coffin and High Limit public venue feeds (read-only)
+        run: node scripts/probe-underground-sources.js
