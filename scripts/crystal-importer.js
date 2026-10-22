@@ -16,7 +16,7 @@ function safePageUrl(value){
  try{
   const u=new URL(value,ROOT);
   if(u.protocol!=="https:"||u.hostname!=="www.crystalballroompdx.com"||u.username||u.password||u.port||u.search||u.hash)return null;
-  const match=/^\/events\/page\/([2-5])\/?$/.exec(u.pathname);
+  const match=/^\/events\/page\/([2-9]|1[0-2])\/?$/.exec(u.pathname);
   return match?u.href:null;
  }catch(_){return null}
 }
