@@ -174,13 +174,15 @@
       "name": "Revolution Hall",
       "venue": "Revolution Hall",
       "venueRegistryId": "revolution-hall",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://www.revolutionhall.com/",
       "baseUrl": "https://www.revolutionhall.com",
-      "reason": "Official calendar with event cards, date and showtime evidence. Main hall, Show Bar and offsite events intermixed; require official location-specific source data before import.",
+      "reason": "Official event cards provide room id, event id, original Etix ticket link, showtime and exact Pacific date or source-issued UTC doors datetime. Verify room/ticket id and date/doors time; hold moved/rescheduled shows; generate review PR only.",
       "address": "1300 SE Stark St, Portland, OR 97214",
-      "neighborhood": "Buckman"
+      "neighborhood": "Buckman",
+      "adapter": "revolution-events-html",
+      "enabledReason": "Live read-only GitHub runner probe 39731980080 found 30 original room-labeled cards; 29 showtimes verified (19 Revolution Hall and 10 Show Bar), one rescheduled show held. Daily editorial review-only import."
     },
     {
       "id": "turn-turn-turn",

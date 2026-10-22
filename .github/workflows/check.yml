@@ -37,12 +37,16 @@ jobs:
           node --check scripts/probe-wonder.js
           node --check scripts/coffin-venuepilot.js
           node tests/coffin-venuepilot.js
+          node --check scripts/revolution-importer.js
+          node tests/revolution-importer.js
+          node --check scripts/probe-revolution.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
           node tests/artwork.js
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
           node --check scripts/probe-crystal-revolution.js
+
 
 
 

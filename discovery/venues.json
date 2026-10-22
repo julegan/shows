@@ -242,12 +242,10 @@
       "id": "revolution-hall",
       "name": "Revolution Hall",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.revolutionhall.com/",
-      "aliases": [
-        "Show Bar at Revolution Hall"
-      ],
-      "notes": "Official event calendar includes main Revolution Hall, Show Bar and off-site performances. Identify true location per event; do not mislabel other rooms or rescheduled shows.",
+      "aliases": [],
+      "notes": "Original venue room id 16897; exact main-stage Etix ticket links and 19 dated source cards live verified; editorial review-only importer enabled.",
       "editorialRank": 12
     },
     {
@@ -336,6 +334,18 @@
       "calendarUrl": "https://www.nofunportland.com/events",
       "aliases": [],
       "notes": "Technically working Squarespace adapter, but daily automated intake is paused by editorial priority. Keep previously approved events; source can be re-enabled intentionally later."
+    },
+    {
+      "id": "show-bar",
+      "name": "Show Bar at Revolution Hall",
+      "tier": "expansion",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.revolutionhall.com/show-bar/",
+      "aliases": [
+        "Show Bar",
+        "Showbar"
+      ],
+      "notes": "Separate stage with official room id 21322; 10 dated official cards live verified using original Show Bar Etix event links. Shared Revolution Hall source, editorial review-only."
     }
   ],
   "supplementaryDiscovery": [

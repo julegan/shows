@@ -127,3 +127,16 @@ No event or Portfolio publication occurs from this change. Continue approving so
 - **Crystal Ballroom:** The generic McMenamins music calendar initially exposed nine McMenamins `/events/...` links; many were for other properties. The unverified `/crystal-ballroom/music-events/` URL returned HTTP 404. Find a working property-filtered listing/pagination scheme or trusted event-specific primary links, then independently verify exact venue, year and showtime from individual event detail pages. **Not yet active.**
 
 To recheck current source health without changing event records, use **Actions → Probe Crystal Ballroom and Revolution Hall sources (review-only)**. Live external checks are not required for every unrelated PR.
+
+
+## Revolution Hall and Show Bar — independently verified music-event sources
+
+The [Revolution Hall official shows listing](https://www.revolutionhall.com/) contains a room-labeled event feed. SHOWS now reads venue-authored HTML with explicit source **room identifiers** (Revolution Hall main stage `16897`, Show Bar `21322`), full dated performance times, original Etix ticket links, and per-event source-linked artwork.
+
+**GitHub Actions live verification:** [run 39731980080](https://github.com/julegan/shows/actions/runs/39731980080) identified 30 official event cards, **29 validated** (19 Revolution Hall and 10 Show Bar) and **one held** because the title announced a reschedule. The first public display cards used `Today` or `Tomorrow`; these are only accepted when the card itself provides an exact UTC doors timestamp that agrees with its explicitly labeled local doors time, avoiding assumptions about the current date. Dated cards must also pass weekday/year/calendar checks. No guessed showtimes.
+
+This enables review-only proposals for both rooms, with **separate venue records and names**. Off-site venues, unknown room ids, bad ticket URLs, timing conflicts, cancellations/reschedules and unrelated ticket add-ons are held or excluded. We never relabel Show Bar bills as Revolution Hall performances. We retain the organizer's original artwork URL, with explicit source credit and `usageApproved: null` until rights are reviewed.
+
+The collection does not auto-publish events; candidates enter a SHOWS discovery review PR, and Portfolio requires a separately approved sync. Use **Actions → Probe official Revolution Hall and Show Bar events (review-only)** for an opt-in source health check; ordinary PR CI stays deterministic.
+
+Crystal Ballroom still requires accurate McMenamins property filtering and a verified original showtime source before it can be enabled.
