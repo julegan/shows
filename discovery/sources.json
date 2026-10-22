@@ -119,11 +119,13 @@
       "name": "Wonder Ballroom",
       "venue": "Wonder Ballroom",
       "venueRegistryId": "wonder-ballroom",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://wonderballroom.com/events/",
       "baseUrl": "https://wonderballroom.com",
-      "reason": "Official dated listings include show and door times; do not ingest moved/postponed/cancelled listings without review."
+      "reason": "Official Wonder pages display showtimes with year in event-specific metadata. Require independently matching visible day/date/weekday; exclude moved, postponed, inconsistent or year-unknown entries. All records require editorial PR review.",
+      "adapter": "wonder-ballroom-html",
+      "enabledReason": "Read-only GitHub runner probe 39726379458 found 36 official first-party event links, verified ten of twelve detailed shows and held two missing year evidence. Daily review-only candidate ingestion."
     },
     {
       "id": "hawthorne-theatre",
