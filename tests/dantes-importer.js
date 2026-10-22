@@ -20,6 +20,8 @@ assert.equal(e.venue,"Dante's");
 assert.equal(e.startDate,"2026-11-14T03:30:00.000Z");
 assert.equal(e.fullUrl,url);
 assert.equal(e.artwork,undefined);
+const metaPage=page.replace("<h1>METAL CHURCH / ARMORED SAINT with Livekill</h1>",'<meta property="og:title" content="Metal Church &amp; Armored Saint - Dante\'s Live">');
+assert.equal(parseDantesDetail(metaPage,url,src).title,"Metal Church & Armored Saint","Strip website title suffix when using official metadata");
 assert.match(parseDantesDetail(page.replace("Fri November 13, 2026","Fri November 13"),url,src).hold,/full year/);
 assert.match(parseDantesDetail(page.replace("PST","PDT"),url,src).hold,/timezone contradicts/);
 assert.match(parseDantesDetail(page.replace("Show: 07:30 pm","Show: 07:30"),url,src).hold,/show time/);
