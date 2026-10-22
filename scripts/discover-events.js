@@ -7,6 +7,7 @@ const crypto=require("node:crypto");
 const adapters=require("./priority-importers");
 const hosted=require("./hosted-venue-importers");
 const dantes=require("./dantes-importer");
+const wonder=require("./wonder-importer");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -46,6 +47,7 @@ function urlOf(item,src){
   // Revalidate event-specific paths and room identity for every discovered URL.
   if(src.adapter==="hosted-venue-html")return hosted.safeEventUrl(u.href,src);
   if(src.adapter==="dantes-live-html")return dantes.safeDantesUrl(u.href,src);
+  if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
   const primaryHost=u.hostname===new URL(src.baseUrl).hostname;
   const validPath=src.adapter==="squarespace-json"?u.pathname.startsWith("/events/"):src.adapter==="twilight-html"?u.pathname.startsWith("/event/"):src.adapter==="star-theater-html"?u.pathname.startsWith("/tm-event/"):false;
   const promoterLink=src.adapter==="promoter-list-html"&&u.hostname==="www.treetix.com"&&u.pathname==="/event"&&u.searchParams.get("cal")==="soundcontrol";
@@ -146,7 +148,7 @@ async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
- if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
  if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
@@ -164,6 +166,24 @@ async function fetchItems(source){
     rows.push(adapters.parseTwilightDetail((await detail.text()).slice(0,450000),link,source));
    }catch(e){rows.push({hold:"Twilight event fetch failed: "+String(e.message||e),url:link});}
   }
+  return rows;
+ }
+ if(source.adapter==="wonder-ballroom-html"){
+  const links=wonder.parseWonderLinks(body,source),rows=[];
+  for(let i=0;i<links.length;i+=4){
+   const group=await Promise.all(links.slice(i,i+4).map(async link=>{
+    try{
+     const detail=await fetch(link,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(14000),redirect:"error"});
+     if(!detail.ok)return {hold:"Wonder Ballroom detail HTTP "+detail.status,url:link};
+     if(!detail.headers.get("content-type")?.includes("text/html"))return {hold:"Wonder Ballroom detail did not return HTML",url:link};
+     const page=await detail.text();
+     if(page.length>1000000)return {hold:"Wonder Ballroom detail exceeds size limit",url:link};
+     return wonder.parseWonderDetail(page,link,source);
+    }catch(e){return {hold:"Wonder Ballroom detail unavailable: "+String(e.message||e),url:link};}
+   }));
+   rows.push(...group);
+  }
+  if(!rows.some(x=>x.startDate))throw Error("Wonder Ballroom calendar returned no year-confirmed dated shows");
   return rows;
  }
  if(source.adapter==="dantes-live-html"){
