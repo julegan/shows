@@ -47,5 +47,3 @@ jobs:
 
 
 
-      - name: Inspect official Crystal and Revolution venue calendars (read-only)
-        run: node scripts/probe-crystal-revolution.js
