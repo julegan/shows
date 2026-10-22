@@ -3,7 +3,7 @@
   "purpose": "Portland city music venue source-of-truth for comprehensive event collection. Venue inclusion is not a genre filter.",
   "scope": "Portland, Oregon city limits",
   "policy": {
-    "priority": "Collect all publicly listed future dated events at each supported venue. Classify afterward, without excluding noncore categories.",
+    "priority": "First focus on prioritized Black Water, High Water Mark, Twilight, Coffin Club, Star Theater, Dante's, Roseland, Wonder, Hawthorne Theatre, and High Limit Room, then the other underground venues; treat No Fun as secondary. At every supported venue, intake all published future dated events and classify afterward, without filtering out whole bills from a calendar.",
     "publication": "Importers propose source-linked events and artwork for review; only approved GitHub PRs reach main; portfolio sync is separately reviewed.",
     "uncertainty": "Do not invent missing showtimes, admission, genre, ages, images, or venue status. Hold conflicting facts. No anti-bot bypass.",
     "image": "Capture source-provided event flyers/photos and attribution when available; validate event specificity, legal embedding rights and failures before displaying; do not generate graphics."
@@ -24,7 +24,8 @@
         "Black Water Bar",
         "Blackwater"
       ],
-      "notes": "Official Black Water page embeds publicly accessible Google Calendar. Feed verified; future events are date-only and displayed as Time TBA."
+      "notes": "Official Black Water page embeds publicly accessible Google Calendar. Feed verified; future events are date-only and displayed as Time TBA.",
+      "editorialRank": 1
     },
     {
       "id": "high-water-mark",
@@ -35,7 +36,8 @@
       "aliases": [
         "High Water Mark"
       ],
-      "notes": "Official site blocked in runner; Soundcontrol is supplementary promoter source"
+      "notes": "Official site blocked in runner; Soundcontrol is supplementary promoter source",
+      "editorialRank": 2
     },
     {
       "id": "twilight",
@@ -47,7 +49,8 @@
         "Twilight Room",
         "Twilight Cafe & Bar"
       ],
-      "notes": "Official event pages offer date and sometimes JSON-LD images"
+      "notes": "Official event pages offer date and sometimes JSON-LD images",
+      "editorialRank": 3
     },
     {
       "id": "coffin-club",
@@ -59,25 +62,8 @@
         "Coffin Club",
         "The Coffin"
       ],
-      "notes": "Official page currently says no published events; resolve official ticketing/authorized promoter feed"
-    },
-    {
-      "id": "high-limit-room",
-      "name": "High Limit Room",
-      "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://highlimitroompdx.com/",
-      "aliases": [],
-      "notes": "Event schedule is embedded; identify authorized provider URL"
-    },
-    {
-      "id": "no-fun",
-      "name": "No Fun",
-      "tier": "core",
-      "ingestionStatus": "active-adapter",
-      "calendarUrl": "https://www.nofunportland.com/events",
-      "aliases": [],
-      "notes": "Squarespace source; current scraper operational"
+      "notes": "Official site and event-specific ticket pages need reconciliation; no verified automatic venue-calendar feed yet.",
+      "editorialRank": 4
     },
     {
       "id": "star-theater",
@@ -88,7 +74,62 @@
       "aliases": [
         "Starlight"
       ],
-      "notes": "Current primary event listings"
+      "notes": "Current primary event listings",
+      "editorialRank": 5
+    },
+    {
+      "id": "dantes",
+      "name": "Dante's",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.danteslive.com/calendar/",
+      "aliases": [],
+      "notes": "Official Dante's calendar located; upcoming dated listings exist. Source-specific importer pending.",
+      "editorialRank": 6
+    },
+    {
+      "id": "roseland",
+      "name": "Roseland Theater",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://roselandpdx.com/events/",
+      "aliases": [
+        "Roseland Theatre"
+      ],
+      "notes": "Official event calendar publishes dates and show times; no automated adapter connected yet.",
+      "editorialRank": 7
+    },
+    {
+      "id": "wonder-ballroom",
+      "name": "Wonder Ballroom",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://wonderballroom.com/events/",
+      "aliases": [],
+      "notes": "Official show list publishes dates and doors/show times; verify moving/postponed bill status before ingestion.",
+      "editorialRank": 8
+    },
+    {
+      "id": "hawthorne-theatre",
+      "name": "Hawthorne Theatre",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://hawthornetheatre.com/events/",
+      "aliases": [
+        "Hawthorne Theater"
+      ],
+      "notes": "Official 2026 event calendar covers Hawthorne Theatre and Hawthorne Lounge; importer must retain the correct room.",
+      "editorialRank": 9
+    },
+    {
+      "id": "high-limit-room",
+      "name": "High Limit Room",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://highlimitroompdx.com/",
+      "aliases": [],
+      "notes": "Event schedule is embedded; identify authorized provider URL",
+      "editorialRank": 10
     },
     {
       "id": "kenton-club",
@@ -138,15 +179,6 @@
       "calendarUrl": "https://stardaytavern.com/",
       "aliases": [],
       "notes": "Official events calendar available; inspect provider timezone and event detail source"
-    },
-    {
-      "id": "dantes",
-      "name": "Dante's",
-      "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
-      "aliases": [],
-      "notes": "Cross-check independent concerts and goth nights"
     },
     {
       "id": "b-side",
@@ -207,15 +239,6 @@
       "notes": "Music and dance events; find official dated feed"
     },
     {
-      "id": "wonder-ballroom",
-      "name": "Wonder Ballroom",
-      "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://wonderballroom.com/events/",
-      "aliases": [],
-      "notes": "Official calendar available; importer needed"
-    },
-    {
       "id": "revolution-hall",
       "name": "Revolution Hall",
       "tier": "expansion",
@@ -225,28 +248,6 @@
         "Show Bar at Revolution Hall"
       ],
       "notes": "Calendar has multiple rooms; retain room in event"
-    },
-    {
-      "id": "roseland",
-      "name": "Roseland Theater",
-      "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://roselandpdx.com/events/",
-      "aliases": [
-        "Roseland Theatre"
-      ],
-      "notes": "Official event calendar available"
-    },
-    {
-      "id": "hawthorne-theatre",
-      "name": "Hawthorne Theatre",
-      "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
-      "aliases": [
-        "Hawthorne Theater"
-      ],
-      "notes": "Official event calendar needs technical inspection"
     },
     {
       "id": "crystal-ballroom",
@@ -324,6 +325,15 @@
       "calendarUrl": null,
       "aliases": [],
       "notes": "Verify source and not confuse with Star Theater"
+    },
+    {
+      "id": "no-fun",
+      "name": "No Fun",
+      "tier": "expansion",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.nofunportland.com/events",
+      "aliases": [],
+      "notes": "Technically working Squarespace adapter, but daily automated intake is paused by editorial priority. Keep previously approved events; source can be re-enabled intentionally later."
     }
   ],
   "supplementaryDiscovery": [
@@ -341,5 +351,17 @@
       "kind": "promoter-primary",
       "purpose": "Cross-venue independent concert listings including High Water Mark"
     }
+  ],
+  "venuePriority": [
+    "black-water",
+    "high-water-mark",
+    "twilight",
+    "coffin-club",
+    "star-theater",
+    "dantes",
+    "roseland",
+    "wonder-ballroom",
+    "hawthorne-theatre",
+    "high-limit-room"
   ]
 }
