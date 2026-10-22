@@ -157,6 +157,32 @@
       "venue": "High Limit Room"
     },
     {
+      "id": "crystal-ballroom",
+      "name": "Crystal Ballroom",
+      "venue": "Crystal Ballroom",
+      "venueRegistryId": "crystal-ballroom",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "url": "https://www.mcmenamins.com/to-do/live-music-events",
+      "baseUrl": "https://www.mcmenamins.com",
+      "reason": "Official McMenamins calendar publishes Crystal Ballroom events and original /events/ detail pages, but mixes properties and other rooms. Require strict venue, date/year and showtime verification before activation.",
+      "address": "1332 W Burnside St, Portland, OR 97209",
+      "neighborhood": "West End"
+    },
+    {
+      "id": "revolution-hall",
+      "name": "Revolution Hall",
+      "venue": "Revolution Hall",
+      "venueRegistryId": "revolution-hall",
+      "status": "adapter-needed",
+      "priority": "highest",
+      "url": "https://www.revolutionhall.com/",
+      "baseUrl": "https://www.revolutionhall.com",
+      "reason": "Official calendar with event cards, date and showtime evidence. Main hall, Show Bar and offsite events intermixed; require official location-specific source data before import.",
+      "address": "1300 SE Stark St, Portland, OR 97214",
+      "neighborhood": "Buckman"
+    },
+    {
       "id": "turn-turn-turn",
       "name": "Turn! Turn! Turn!",
       "status": "adapter-needed",
@@ -234,6 +260,8 @@
     "roseland",
     "wonder-ballroom",
     "hawthorne-theatre",
-    "high-limit-room"
+    "high-limit-room",
+    "crystal-ballroom",
+    "revolution-hall"
   ]
 }
