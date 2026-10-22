@@ -37,7 +37,9 @@ function parseDantesDetail(html,detailUrl,source){
  if(!url)return {hold:"Non-primary Dante's event URL",url:detailUrl};
  const page=String(html||"");
  const h1=page.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
- const title=cleanText(h1?.[1]||page.match(/<meta\b[^>]*\bproperty=["']og:title["'][^>]*\bcontent=["']([^"']+)["']/i)?.[1]||"") .replace(/\s+[-–—]\s+Dante\x27s Live\s*$/i,"");
+ const meta=[...page.matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]).find(tag=>/\b(?:property|name)\s*=\s*(["'])og:title\1/i.test(tag));
+ const metaTitle=meta?.match(/\bcontent\s*=\s*(["'])([\s\S]*?)\1/i)?.[2];
+ const title=cleanText(h1?.[1]||metaTitle||"").replace(/\s+[-–—]\s+Dante's Live\s*$/i,"");
  if(!title||/^Dante's|calendar|home$/i.test(title))return {hold:"No event-specific heading on primary event detail",url};
  if(/\b(moved to|postponed|cancelled|canceled|rescheduled)\b/i.test(title))return {hold:"Venue show canceled/moved/postponed",title,url};
  if(/\b(vip upgrade|upgrade only|ticket not included)\b/i.test(title))return {hold:"Add-on admission is not a standalone show",title,url};
