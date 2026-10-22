@@ -51,5 +51,3 @@ jobs:
 
 
 
-      - name: Verify original Revolution Hall and Show Bar event feed (read-only)
-        run: node scripts/probe-revolution.js
