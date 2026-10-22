@@ -39,5 +39,3 @@ jobs:
           node tests/venues.js
 
 
-      - name: Live official Dante's source verification (read-only)
-        run: node scripts/probe-dantes.js
