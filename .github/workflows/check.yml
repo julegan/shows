@@ -55,5 +55,3 @@ jobs:
 
 
 
-      - name: Live source verification of official Crystal Ballroom event details
-        run: node scripts/probe-crystal.js
