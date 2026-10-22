@@ -56,13 +56,13 @@
       "id": "coffin-club",
       "name": "The Coffin Club",
       "tier": "core",
-      "ingestionStatus": "source-empty",
+      "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://thecoffinclubpdx.com/",
       "aliases": [
         "Coffin Club",
         "The Coffin"
       ],
-      "notes": "Official site and event-specific ticket pages need reconciliation; no verified automatic venue-calendar feed yet.",
+      "notes": "Official site embeds VenuePilot events (public account reference verified). Connector is written and tested against synthetic official API responses; awaits vendor-issued application ID for authorized live read and activation.",
       "editorialRank": 4
     },
     {
@@ -128,7 +128,7 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://highlimitroompdx.com/",
       "aliases": [],
-      "notes": "Event schedule is embedded; identify authorized provider URL",
+      "notes": "Official /shows page embeds Afton Tickets checkout widget. Event dates do not appear in the initial public HTML. Requires provider-authorized event data feed, export or a verified public source.",
       "editorialRank": 10
     },
     {
