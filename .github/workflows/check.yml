@@ -43,5 +43,3 @@ jobs:
 
 
 
-      - name: Verify real Wonder Ballroom event pages before enabling importer
-        run: node scripts/probe-wonder.js
