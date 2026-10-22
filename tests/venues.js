@@ -18,6 +18,12 @@ assert(count("black-water"),"Black Water must remain a core venue even without a
 assert.equal(count("black-water").futureCount,11,"Official source provides eleven dated Black Water listings");
 assert.equal(count("black-water").futureMusic,8,"Only source-evident music should be classified as Music");
 assert.equal(count("black-water").ingestionStatus,"active-adapter");
+assert.deepEqual(venues.venuePriority,["black-water","high-water-mark","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room"],"First ten editorial venue targets");
+assert.equal(count("no-fun").tier,"expansion","No Fun stays listed but is no longer first-priority");
+for(const id of ["dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room"]){
+ assert(count(id).tier==="core","Recently elevated priority venue: "+id);
+ assert(count(id).calendarUrl?.startsWith("https://"),"Official venue URL: "+id);
+}
 assert(count("star-theater").futureMusic>0);
 assert(count("coffin-club").futureMusic>0);
 assert(count("mississippi").futureMusic===0,"Missing but public official calendar must show a gap");

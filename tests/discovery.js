@@ -43,8 +43,10 @@ assert.equal(sameDay.held.length,1);
 const moved=reconcile([{...e,id:"existing",startsAt:"2026-11-03T20:00:00-08:00"}],[candidate]);
 assert.equal(moved.held.length,1);
 (async()=>{
- const result=await run({now,write:false,load:async src=>src.id==="no-fun"?[item]:[]});
- // Other fixtures may be on a date already occupied by No Fun in the existing snapshot; both outcomes are safe.
+ // End-to-end fixture uses an enabled priority venue, not the now-paused No Fun pilot.
+ const twilightFixture={title:item.title,fullUrl:"https://www.twilightcafeandbar.com/event/987123/fixture-live-show",startDate:item.startDate};
+ const result=await run({now,write:false,load:async src=>src.id==="twilight"?[twilightFixture]:[]});
+ // A dated fixture may conflict with a previously approved venue bill; both outcomes are safe.
  assert.equal(result.accepted.length+result.held.length+result.skipped.length,1);
  console.log("PASS — source discovery parsing, primary URL policy, music holds, exact Pacific/DST, duplicate safety and review statuses");
 })().catch(e=>{console.error(e);process.exitCode=1});
