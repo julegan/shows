@@ -86,3 +86,12 @@ A [live GitHub runner verification](https://github.com/julegan/shows/actions/run
 Use **Actions → Probe official Dante's event calendar (review-only)** to run a manual live source-health test. Ordinary PR checks run deterministic fixtures; external site uptime is not a CI gate on unrelated code changes.
 
 **Outstanding top priorities:** Coffin Club (source/ticket provider connection), Wonder Ballroom (official page omits explicit years for some date displays; find authoritative date-year evidence), High Limit Room (embedded schedule/ticketing provider), and High Water Mark (authorized promoter detail coverage). Do not mark these adapters operational until tested.
+
+
+## Coffin Club / High Limit source audit — October 21, 2026
+
+A live GitHub runner checked both official public venue sites. Coffin Club embeds VenuePilot's public events widget (account 3434). VenuePilot also provides a documented read-only event-data GraphQL API, but requires a **separately issued integration app ID**. SHOWS now includes a conservative, tested provider adapter and manual GitHub Actions health probe; Coffin stays **adapter-needed and disabled** until authorized credentials are supplied and a real probe passes. Do not use the public widget settings in place of an integration credential.
+
+High Limit Room embeds an Afton Tickets checkout widget. The initial public HTML does not expose verified dated event cards, and no authorized event-feed API has been established. Do not mark the source complete or invent timings from third-party resale sites. Seek a supported export/feed from the venue or ticket provider.
+
+See [provider feed readiness](provider-feed-readiness.md) for exact provider source evidence, security requirements, what has been implemented, and the activation sequence. Both venues remain in the owner's high-priority queue. No event records were added by this work.
