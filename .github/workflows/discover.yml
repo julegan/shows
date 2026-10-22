@@ -28,6 +28,8 @@ jobs:
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "One unreviewed discovery PR already exists. Refusing to create another." >> "$GITHUB_STEP_SUMMARY"
           fi
+      - name: Report priority venue readiness and coverage
+        run: node scripts/report-priority-coverage.js | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Discover from enabled primary sources
         if: steps.pending.outputs.skip != 'true'
         run: node scripts/discover-events.js
@@ -38,6 +40,7 @@ jobs:
           node --check app.js
           node --check events.js
           node tests/discovery.js
+          node tests/source-priority.js
           node tests/validate.js
       - name: Create candidate review PR
         if: steps.pending.outputs.skip != 'true'
