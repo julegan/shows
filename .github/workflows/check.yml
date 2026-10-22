@@ -42,6 +42,10 @@ jobs:
           node tests/artwork.js
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
+          node --check scripts/probe-crystal-revolution.js
 
 
 
+
+      - name: Inspect official Crystal and Revolution venue calendars (read-only)
+        run: node scripts/probe-crystal-revolution.js
