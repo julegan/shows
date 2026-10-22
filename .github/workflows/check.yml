@@ -47,3 +47,6 @@ jobs:
 
 
 
+
+      - name: Inspect Revolution Hall official show cards (temporary read-only check)
+        run: node scripts/probe-revolution-layout.js
