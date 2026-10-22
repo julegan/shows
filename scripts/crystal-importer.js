@@ -93,6 +93,11 @@ function parseDetail(html,url){
  const e=candidates[0];
  if(typeof e.name!=="string"||!e.name.trim()||!e.startDate)return {hold:"Event is missing name or dated start",url:official};
  if(e.eventStatus&&!/\/EventScheduled$/i.test(e.eventStatus))return {hold:"Event no longer scheduled at this venue",title:e.name,url:official};
+ if(e.location){
+  const loc=Array.isArray(e.location)?e.location[0]:e.location;
+  if(typeof loc==="string"&&!/\bCrystal Ballroom\b/i.test(loc))return {hold:"Structured event venue is not Crystal Ballroom",title:e.name,url:official};
+  if(typeof loc==="object"&&loc&&typeof loc.name==="string"&&!/\bCrystal Ballroom\b/i.test(loc.name))return {hold:"Structured event specifies another venue room",title:e.name,url:official};
+ }
  if(/\b(?:moved to|rescheduled|cancelled|canceled|postponed)\b/i.test(e.name))return {hold:"Source title reports changed schedule",title:e.name,url:official};
  const title=decode(e.name.replace(/<[^>]*>/g," ")).replace(/\s+/g," ").trim().slice(0,280);
  const startDate=validPacificInstant(e.startDate);
