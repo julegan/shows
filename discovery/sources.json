@@ -106,7 +106,8 @@
       "priority": "highest",
       "url": "https://roselandpdx.com/events/",
       "baseUrl": "https://roselandpdx.com",
-      "reason": "Official 2026 event calendar shows dates, show times and venue detail pages; importer still requires implementation and validation."
+      "reason": "Official 2026 event calendar shows dates, show times and venue detail pages; importer still requires implementation and validation. Shared official event-detail importer in review, requiring a passing live runner probe before enabling daily fetch.",
+      "adapter": "hosted-venue-html"
     },
     {
       "id": "wonder-ballroom",
@@ -128,7 +129,8 @@
       "priority": "highest",
       "url": "https://hawthornetheatre.com/events/",
       "baseUrl": "https://hawthornetheatre.com",
-      "reason": "Official event calendar includes Hawthorne Lounge dates too; keep the performance room/venue distinct and validate published showtime."
+      "reason": "Official event calendar includes Hawthorne Lounge dates too; keep the performance room/venue distinct and validate published showtime. Shared official event-detail importer in review, requiring a passing live runner probe before enabling daily fetch.",
+      "adapter": "hosted-venue-html"
     },
     {
       "id": "high-limit",
