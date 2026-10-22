@@ -4,14 +4,16 @@
 const urls=[
  ["home","https://www.crystalballroompdx.com/"],
  ["events","https://www.crystalballroompdx.com/events/"],
- ["prior-official-show","https://www.crystalballroompdx.com/events/269053-magdalena-bay/"]
+ ["detail-1","https://www.crystalballroompdx.com/events/278005-90s-vs-2000s-halloween-costume-glow-ball/"],
+ ["detail-2","https://www.crystalballroompdx.com/events/276053-dai-freyr/"],
+ ["detail-3","https://www.crystalballroompdx.com/events/277068-julia-jacklin/"]
 ];
 function excerpt(s,i,size=340){return s.slice(Math.max(0,i-100),Math.min(s.length,i+size)).replace(/\s+/g," ").slice(0,size+100)}
 function inspect(html,url,id){
  const links=[...html.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(x=>x[1]);
  const originals=[...new Set(links.map(x=>{try{return new URL(x,url).href}catch(_){return null}}).filter(x=>/^https:\/\/www\.crystalballroompdx\.com\/events\/\d+-[a-z0-9-]+\/?(?:[#?].*)?$/i.test(x)))];
  const contexts={};
- for(const key of ["October","November","2026","2027","event-card","event-list","event-date","doors","show","datetime","startDate","Lola","Ringlers","venueid","event-item"]){
+ for(const key of ["October","November","2026","2027","event-card","event-list","event-date","doors","show","datetime","startDate","Lola","Ringlers","venueid","event-item","tribe-events-start-date","tribe-event-date-start","tribe-events-schedule","tribe-events-single-event-title","tribe-events-event-meta","event-list-date","venue-info","start_date"]){
   const i=html.toLowerCase().indexOf(key.toLowerCase());
   if(i!==-1)contexts[key]=excerpt(html,i,300);
  }
