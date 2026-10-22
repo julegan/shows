@@ -382,4 +382,4 @@ async function run(opts={}){
  return {...result,errors,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
-module.exports={localTime,localDay,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,run};
+module.exports={localTime,localDay,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};
