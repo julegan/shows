@@ -178,9 +178,10 @@
       "priority": "highest",
       "url": "https://www.revolutionhall.com/",
       "baseUrl": "https://www.revolutionhall.com",
-      "reason": "Official calendar with event cards, date and showtime evidence. Main hall, Show Bar and offsite events intermixed; require official location-specific source data before import.",
+      "reason": "Official room-labeled event cards publish exact weekday/month/day/year, showtime, Etix ticket id, and room id. Strict importer awaiting GitHub-runner live source verification. Do not enable daily discovery until probe succeeds.",
       "address": "1300 SE Stark St, Portland, OR 97214",
-      "neighborhood": "Buckman"
+      "neighborhood": "Buckman",
+      "adapter": "revolution-events-html"
     },
     {
       "id": "turn-turn-turn",
