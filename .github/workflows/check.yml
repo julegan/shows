@@ -35,5 +35,3 @@ jobs:
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
 
-      - name: Verify new live official Roseland and Hawthorne calendars
-        run: node scripts/probe-hosted-venues.js
