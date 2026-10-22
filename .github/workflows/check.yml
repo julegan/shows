@@ -37,6 +37,9 @@ jobs:
           node --check scripts/probe-wonder.js
           node --check scripts/coffin-venuepilot.js
           node tests/coffin-venuepilot.js
+          node --check scripts/revolution-importer.js
+          node tests/revolution-importer.js
+          node --check scripts/probe-revolution.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
           node tests/artwork.js
@@ -48,5 +51,5 @@ jobs:
 
 
 
-      - name: Inspect Revolution Hall official show cards (temporary read-only check)
-        run: node scripts/probe-revolution-layout.js
+      - name: Verify original Revolution Hall and Show Bar event feed (read-only)
+        run: node scripts/probe-revolution.js
