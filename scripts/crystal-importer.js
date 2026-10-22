@@ -78,9 +78,15 @@ function parseDetail(html,url){
  if(!official)return {hold:"Not a first-party Crystal event permalink",url};
  const page=String(html||""),meta=metadata(page);
  if(meta["og:url"]&&safeCrystalUrl(meta["og:url"])!==official)return {hold:"Canonical event page does not match original source URL",url:official};
- if(!/[-–—]\s*Crystal Ballroom\s*$/i.test(meta["og:title"]||"")||
-   !/\bat Crystal Ballroom in Portland,\s*OR\b/i.test(meta["og:description"]||""))
-  return {hold:"Event page does not explicitly identify the Crystal Ballroom performance room",url:official};
+ // Some first-party Crystal pages use editorial prose, not "at Crystal
+ // Ballroom", in og:description. Exact official event URL + event-specific
+ // Crystal Ballroom og:title is acceptable, UNLESS venue evidence conflicts.
+ if(!/[-–—]\s*Crystal Ballroom\s*$/i.test(meta["og:title"]||""))
+  return {hold:"First-party event title does not identify Crystal Ballroom",url:official};
+ const description=meta["og:description"]||"";
+ if(/\b(?:Lola['’]s Room|Ringlers(?: Pub)?|Aladdin Theater|Mission Theater|Edgefield)\b/i.test(description)||
+    /\bmoved to\b|\bvenue change\b/i.test(description))
+  return {hold:"Original event metadata reports another room or venue move",url:official};
  if(/\b(?:moved to|rescheduled|cancelled|canceled|postponed)\b/i.test(meta["og:title"]||""))return {hold:"Official page reports venue move, cancellation or reschedule",url:official};
  const candidates=schemas(page);
  if(candidates.length!==1)return {hold:"Missing or ambiguous original schema.org Event with a year-bearing date",url:official};
