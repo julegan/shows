@@ -39,6 +39,9 @@ jobs:
           node tests/coffin-venuepilot.js
           node --check scripts/revolution-importer.js
           node tests/revolution-importer.js
+          node --check scripts/crystal-importer.js
+          node tests/crystal-importer.js
+          node --check scripts/probe-crystal.js
           node --check scripts/probe-revolution.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
@@ -46,6 +49,7 @@ jobs:
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
           node --check scripts/probe-crystal-revolution.js
+
 
 
 

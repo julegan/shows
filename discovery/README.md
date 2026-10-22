@@ -140,3 +140,16 @@ This enables review-only proposals for both rooms, with **separate venue records
 The collection does not auto-publish events; candidates enter a SHOWS discovery review PR, and Portfolio requires a separately approved sync. Use **Actions → Probe official Revolution Hall and Show Bar events (review-only)** for an opt-in source health check; ordinary PR CI stays deterministic.
 
 Crystal Ballroom still requires accurate McMenamins property filtering and a verified original showtime source before it can be enabled.
+
+
+## Crystal Ballroom — dedicated, venue-specific original archive (October 21, 2026)
+
+The independent [Crystal Ballroom calendar](https://www.crystalballroompdx.com/events/) is a better source than the general McMenamins events listing, which mixes Ringlers, Lola's Room, Edgefield, Crystal Hotel and other properties. The dedicated site exposes paginated `/events/page/N/` archives and original `/events/<id>-<slug>/` event pages.
+
+**Read-only GitHub Actions verification:** [run 39733648322](https://github.com/julegan/shows/actions/runs/39733648322) crawled the first-party archive and inspected **56 distinct original event pages**. **55 had verified Pacific dates, times and venue-specific event metadata**, with **one held** due to a room/move conflict. Archive pagination is bounded and detected: if pages extend beyond 12, stop with a coverage error rather than quietly truncating an advertised calendar.
+
+The importer rejects third-party event URLs and mismatched canonical links; requires original event-specific `Crystal Ballroom` metadata and a matching schema.org `Event` record with a full dated `startDate` and the correct Pacific DST offset; holds location-conflicting, canceled, postponed, rescheduled and moved listings. Event-specific flyer references retain the original page as source and `usageApproved: null`. It does not assume shows at Lola's Room, Ringlers, Aladdin Theater or other McMenamins properties are Crystal Ballroom events.
+
+The active adapter **proposes review candidates only**. Dates beyond the 92-day rolling intake window will remain source-visible but are not proposed until they enter the window. Records are not published automatically; owner approval is still required on the discovery PR and, separately, on the Portfolio sync. Run **Actions → Probe official Crystal Ballroom events (review-only)** manually to check continued site compatibility. CI uses deterministic fixture tests rather than requiring the external venue website to work on every code PR.
+
+Source coverage should be revisited if the dedicated site changes, or if McMenamins begins labeling an alternate stage on a Crystal-hosted ticket listing.

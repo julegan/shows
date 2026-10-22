@@ -252,10 +252,10 @@
       "id": "crystal-ballroom",
       "name": "Crystal Ballroom",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://www.mcmenamins.com/to-do/live-music-events",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.crystalballroompdx.com/events/",
       "aliases": [],
-      "notes": "McMenamins official central music-event calendar; filter individual event pages strictly to Crystal Ballroom, NOT Lola's Room, Ringlers, or other properties.",
+      "notes": "First-party original Crystal calendar verified in GitHub runner: 56 event details, 55 valid with one room/move hold; review-only intake, not a Lola's Room or Ringlers import.",
       "editorialRank": 11
     },
     {
