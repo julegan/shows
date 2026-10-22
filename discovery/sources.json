@@ -123,7 +123,8 @@
       "priority": "highest",
       "url": "https://wonderballroom.com/events/",
       "baseUrl": "https://wonderballroom.com",
-      "reason": "Official dated listings include show and door times; do not ingest moved/postponed/cancelled listings without review."
+      "reason": "Official event-specific /event/ pages expose exact 2026 year in document metadata and showtime on the visible card. Staged strict source adapter and live verification required before enabling scheduled import.",
+      "adapter": "wonder-ballroom-html"
     },
     {
       "id": "hawthorne-theatre",
