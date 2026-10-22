@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-18",
+  "sourceCheckedAt": "2026-10-21",
   "coverageThrough": "2027-01-16",
-  "totalOccurrences": 237,
-  "addedOccurrences": 11,
-  "batchId": "2026-10-18-black-water-public-calendar",
-  "editorialReview": "Black Water public venue calendar: date-only entries proposed for user approval. No start times asserted.",
+  "totalOccurrences": 271,
+  "addedOccurrences": 34,
+  "batchId": "auto-discovery-2026-10-21-8",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -28,11 +28,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-18-2",
       "addedOccurrences": 44
+    },
+    {
+      "batchId": "2026-10-18-black-water-public-calendar",
+      "addedOccurrences": 11
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 180
+  "musicOccurrences": 185
 };
 window.SHOWS_EVENTS = [
   {
@@ -1016,6 +1020,56 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-10-21-fa0e839c73d3",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-21T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-214bb4032ec0aee35ca9 { } #block-214bb4032ec0aee35ca9 .sqs-html-content { } #block-214bb4032ec0aee35ca9 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/a93fdbjskyh2bwt79h7tf42d7j9632",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/a93fdbjskyh2bwt79h7tf42d7j9632",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498764973-2HUE76CXY9NICM5AVXZG/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -2667,6 +2721,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion"
   },
   {
+    "id": "auto-no-fun-2026-10-26-7f94fb1c2a31",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-26T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-73401949",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/fxgm5fkhdc8g6sc7ah9xwag3te3sh3",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/fxgm5fkhdc8g6sc7ah9xwag3te3sh3",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496122106-KG793LQNE1MXR3ZGD6LX/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "turn-turn-turn-mania-mnemonic-pulse-andrew-black-dj-music-medieval-2026-10-26",
     "title": "Mania + Mnemonic Pulse + Andrew Black + DJ Music Medieval",
     "subtitle": "dark ambient, post-industrial, experimental · live bill",
@@ -2763,6 +2867,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-10-27-8a026c6383c1",
+    "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T18:00:00-07:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/467836/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/467836/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/056ktt125yv7jxpmpplo.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/467836/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },
@@ -3290,6 +3444,56 @@ window.SHOWS_EVENTS = [
       ]
     },
     "doorsAt": "2026-10-28T19:30:00-07:00"
+  },
+  {
+    "id": "auto-no-fun-2026-10-28-ea30a74bf832",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-dc77da24d57bb864de94 { } #block-dc77da24d57bb864de94 .sqs-html-content { } #block-dc77da24d57bb864de94 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/s9xdh2fysptnhhexwxst62l8fxbefk",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/s9xdh2fysptnhhexwxst62l8fxbefk",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498782161-NPE3Y5Z8Q8YKLZ7TYPDW/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "revolution-team-dresch-with-heavens-to-betsy-altar-girl-2026-10-28",
@@ -4498,6 +4702,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-no-fun-2026-11-02-dc681ea2a604",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-77ff60e6",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/kf4j95dh6a7xwh6a7lhze65nzsbpj8",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/kf4j95dh6a7xwh6a7lhze65nzsbpj8",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496351770-UFF04W7VSNCH4HW3UHPT/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-slothrust-with-um-jennifer-2026-11-02",
     "title": "Slothrust with Um, Jennifer?",
     "subtitle": "Live show · Rock",
@@ -4725,6 +4979,56 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-04-e2275423ec2d",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-875fdf6fc45596bc57d9 { } #block-875fdf6fc45596bc57d9 .sqs-html-content { } #block-875fdf6fc45596bc57d9 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/r3kzzcw58zngf4hdcemjsgd7ewpyd5",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/r3kzzcw58zngf4hdcemjsgd7ewpyd5",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498940323-S9PBIJP6L8V1AB1OB360/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -6047,6 +6351,106 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-no-fun-2026-11-09-d73e786d81e8",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-11671214",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/94gx8cxf3nn7xftcg6j5t2mrmy9gaw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/94gx8cxf3nn7xftcg6j5t2mrmy9gaw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496365627-A3N1LGX8TF8DKIZ13LC3/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-10-6372def9ca53",
+    "title": "Poser Tom's Roadshow Arcade",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. FREE, 21+, 7PM __________________________________ Poser Tom's Roadshow Arcade Video Game Tournament!!! This Month's Game: TBA TOTALLY EXCELLENT PRIZES!!! #block-228598addb41cb5edfc8 { } #block-228598addb41cb5edfc8 .sqs-html-content { } #block-228598addb41cb5edfc8 { mix-blend-mode",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/fbrk32n7wxp9s7m7kx3azcegm2rncg",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/fbrk32n7wxp9s7m7kx3azcegm2rncg",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786583796454-QA61XFKVW7EVWBOLOH2F/posertomTUESDAYfbbanner.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "dantes-jon-spencer-2026-11-10",
     "title": "Jon Spencer",
     "subtitle": "Garage punk / rock · With Genre Is Death",
@@ -6225,6 +6629,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-no-fun-2026-11-11-e8a9d50b4b1c",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-2e332de7810c9643c720 { } #block-2e332de7810c9643c720 .sqs-html-content { } #block-2e332de7810c9643c720 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/hscfb6j4s9xmcp6mm3x7tzb223m72h",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/hscfb6j4s9xmcp6mm3x7tzb223m72h",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498956518-I2AR2Y8WRN1CN0QQB1WT/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "dantes-deathtape-2026-11-12",
@@ -7364,6 +7818,56 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-15T20:00:00-08:00"
   },
   {
+    "id": "auto-no-fun-2026-11-16-dacc97509f56",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-58b66759",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/2dywbjpgkc9n2yy7ygjn8p5g8nxctc",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/2dywbjpgkc9n2yy7ygjn8p5g8nxctc",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496382074-WC10V36DC8XAX6H7SSZU/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "star-theater-devil-master-with-pilau-cryr-2026-11-16",
     "title": "Devil Master with PILAU & Cryr",
     "subtitle": "Metal, Black metal, Punk · live bill",
@@ -7488,6 +7992,106 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-twilight-2026-11-17-62103d6904f4",
+    "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/467837/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/467837/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/5utsgyaitzgwq7vkfdf0.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/467837/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-17-a512dc37a154",
+    "title": "between home & somewhere else • TBA • TBA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ between home & somewhere else https://bhaswe.bandcamp.com/ https://www.instagram.com/bhaswe_band/ #block-95291f5eed99757a2078 { --stroke-style: none;--stroke-thickness: 2px; --tweak-text-block-",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/between-home-somewhere-else-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/between-home-somewhere-else-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://static1.squarespace.com/static/65973d9d92af572923b87cfc/659742a51cb0463477baafcc/6ad59548dc3d0f68429dfda0/1792382335689/",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-state-champs-with-cartel-taylor-acorn-like-roses-2026-11-17",
@@ -7775,6 +8379,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-no-fun-2026-11-18-65030434ad63",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-8704fd3e21c5b5fb56e5 { } #block-8704fd3e21c5b5fb56e5 .sqs-html-content { } #block-8704fd3e21c5b5fb56e5 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/a6273l8hmgpmt3kywdj28zr3dafx26",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/a6273l8hmgpmt3kywdj28zr3dafx26",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498972873-4MS2BRLSYQFWB5R0VVJG/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "twilight-cafe-and-bar-downstem-album-release-with-impermanence-wastelander-witch-finge-2026-11-19",
@@ -8667,6 +9321,56 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-22T19:30:00-08:00"
   },
   {
+    "id": "auto-no-fun-2026-11-23-ccae2c835ca5",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-31bc3412",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/whlp2bp99sd33fp9hzlsrlysx9wefg",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/whlp2bp99sd33fp9hzlsrlysx9wefg",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496395142-GWE2ZJCB185NYG1D8R02/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "crystal-senses-fail-2026-11-23",
     "title": "Senses Fail",
     "subtitle": "Live show · Hardcore, Rock",
@@ -8974,6 +9678,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-no-fun-2026-11-25-1f7ec0dd8f78",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-2d6ef51d5d84ae713c19 { } #block-2d6ef51d5d84ae713c19 .sqs-html-content { } #block-2d6ef51d5d84ae713c19 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/7w4x5f6tttx5p4dg7d4bybhkkltfzw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/7w4x5f6tttx5p4dg7d4bybhkkltfzw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786498989313-80OQEN52X2OYXE48M8SU/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-11-26-8c0a5433c7fb",
+    "title": "CLOSED",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-26T11:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. CLOSED ON NOVEMBER 26TH #block-fd6820959017045d6ab2 { } #block-fd6820959017045d6ab2 .sqs-html-content { } #block-fd6820959017045d6ab2 { mix-blend-mode: var(--tweak-text-block-blend ); border-radius: var(--tweak-text-block-radius); } @media screen and (max-width: 767px) { #block-f",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/closed",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/closed",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496980390-DPFXR5IOMRY4CI2OMR1Q/closedTHANKSGIVING.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-bodysnatcher-2026-11-27",
     "title": "Bodysnatcher — Hell Is Here, Hell Is Home",
     "subtitle": "Metal · With Gideon, Psycho-Frame, Volatile Ways",
@@ -9088,6 +9892,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-twilight-2026-11-27-6106ed2ae687",
+    "title": "War Machine w/ Tecolote, Nomada",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468447/war-machine-w-tecolote-nomada",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468447/war-machine-w-tecolote-nomada",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/43x8mbqdv5cxofizikdg.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468447/war-machine-w-tecolote-nomada",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "psu-farmers-2026-11-28",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -9166,6 +10020,56 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "saturday-market-2026"
+  },
+  {
+    "id": "auto-no-fun-2026-11-28-38fe55ce9fba",
+    "title": "That Fucking Ivan • TBA • TBA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ That Fucking Ivan https://thatfuckingivan.bandcamp.com/ https://www.thatfuckingivan.com/ https://www.instagram.com/thatfuckingivan/ #block-f37521ae391cde596aa7 { --stroke-style: none;--stroke-t",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/that-fucking-ivan-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/that-fucking-ivan-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://static1.squarespace.com/static/65973d9d92af572923b87cfc/659742a51cb0463477baafcc/6ad72fa75496e32dca48bd38/1792487370116/",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-the-amity-affliction-with-blessthefall-orthodox-buried-in-spring-2026-11-28",
@@ -9405,6 +10309,106 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-29T19:00:00-08:00"
   },
   {
+    "id": "auto-no-fun-2026-11-30-8d2b977370da",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-2a6fb054",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/7x2rdycejbm993cbmpapkg9mlstka2",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/7x2rdycejbm993cbmpapkg9mlstka2",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496411622-7U4553RTD79NJBGW4B4A/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-12-01-9d8d49197f0c",
+    "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-01T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/467838/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/467838/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/4im1itx5fsx5q8p13ll9.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/467838/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-amorphis-insomnium-2026-12-01",
     "title": "Amorphis & Insomnium",
     "subtitle": "Metal · With Hinayana",
@@ -9501,6 +10505,56 @@ window.SHOWS_EVENTS = [
       ]
     },
     "doorsAt": "2026-12-01T19:00:00-08:00"
+  },
+  {
+    "id": "auto-no-fun-2026-12-02-224a9a098523",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-c32df009693127fdd06d { } #block-c32df009693127fdd06d .sqs-html-content { } #block-c32df009693127fdd06d { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/5pzhrke7hy3d22e9thdetxh9afm2lz",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/5pzhrke7hy3d22e9thdetxh9afm2lz",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786499404364-KQAFBNZOKENB73FOL4CT/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-twilight-2026-12-02-cebeec8bef78",
@@ -10033,6 +11087,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-no-fun-2026-12-06-e9681a4e4a89",
+    "title": "Joe Goose • TBA • TBA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Joe Goose https://joegoose.bandcamp.com/ https://itsjoegoose.com/ https://www.instagram.com/itsjoegoose/ #block-7d44639ce6d31ab92b71 { --stroke-style: none;--stroke-thickness: 2px; --tweak-text",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/joe-goose-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/joe-goose-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://static1.squarespace.com/static/65973d9d92af572923b87cfc/659742a51cb0463477baafcc/6ad72de9ef288f43a5224880/1792486923000/",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-12-06-d64f778de753",
     "title": "PIANO QUEEN",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10072,6 +11176,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-07-1096414ab32f",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-07T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-c10569da",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/y8xgwcalh6cadlz48l69mny4hykbed",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/y8xgwcalh6cadlz48l69mny4hykbed",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496641609-W63WAJS4P29SNHAZR39N/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-08-5308fbb260f2",
+    "title": "Poser Tom's Roadshow Arcade",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. FREE, 21+, 7PM __________________________________ Poser Tom's Roadshow Arcade Video Game Tournament!!! This Month's Game: TBA TOTALLY EXCELLENT PRIZES!!! #block-1591aaf4423934d17071 { } #block-1591aaf4423934d17071 .sqs-html-content { } #block-1591aaf4423934d17071 { mix-blend-mode",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/sbk83bjb8cdnpntkbzldczpsfbhlfm",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/sbk83bjb8cdnpntkbzldczpsfbhlfm",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786583813587-CJGH8II47Y9PR7HU2UXC/posertomTUESDAYfbbanner.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
       "method": "primary-source-collection"
     }
   },
@@ -10177,6 +11381,56 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.nuclearblast.com/pages/suicide-silence"
       ]
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-09-bdbd989c1bd3",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-06bdd7e36baa94abb440 { } #block-06bdd7e36baa94abb440 .sqs-html-content { } #block-06bdd7e36baa94abb440 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/s2dzpa3f4l6r2ttbnhxz7d5wbptatw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/s2dzpa3f4l6r2ttbnhxz7d5wbptatw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786499416183-S2O6JX27O8VHXASP74XR/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -10775,6 +12029,106 @@ window.SHOWS_EVENTS = [
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
   },
   {
+    "id": "auto-no-fun-2026-12-14-b873e6376988",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-14T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-d9003756",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/9rrb2m6c9ash86cjzw938btd9c8cmc",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/9rrb2m6c9ash86cjzw938btd9c8cmc",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496657359-T28KJY7U1LTAEHO2OREY/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-16-a44fddad21c7",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-4be3f1d0c53e921b79cb { } #block-4be3f1d0c53e921b79cb .sqs-html-content { } #block-4be3f1d0c53e921b79cb { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/3chrgbz2lbhmd4frt96skm6wfbmlbp",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/3chrgbz2lbhmd4frt96skm6wfbmlbp",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786499446027-SV3VM766TDRGDRMCKCMY/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
     "title": "You, The Audience • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10812,6 +12166,206 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-21-51bb53eba14d",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-0b0d9f31",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/m8j6zzpkggrhr3m2wgwajbrt3k9d7s",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/m8j6zzpkggrhr3m2wgwajbrt3k9d7s",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496673623-OJ0DH8S5VUQ5KLFL3PN1/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-23-7cd598c24013",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-95e1b784c584e0cb931a { } #block-95e1b784c584e0cb931a .sqs-html-content { } #block-95e1b784c584e0cb931a { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/d4bmmebt388z342prcmb447degrm4d",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/d4bmmebt388z342prcmb447degrm4d",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786499459993-YZNN568FTU91A79Q7BTH/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-24-2d391355e748",
+    "title": "CLOSED",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-24T11:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. CLOSED ON DECEMBER 24TH #block-d7440e5d94a6b3505031 { } #block-d7440e5d94a6b3505031 .sqs-html-content { } #block-d7440e5d94a6b3505031 { mix-blend-mode: var(--tweak-text-block-blend ); border-radius: var(--tweak-text-block-radius); } @media screen and (max-width: 767px) { #block-d",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/closed-1",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/closed-1",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496821382-Z3KMR6XOL1LN2O2FSZII/closedDec24.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2026-12-25-7de9d8a1a95c",
+    "title": "CLOSED",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-25T11:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. CLOSED ON DECEMBER 25TH #block-0a20e3c1329d9a6f82f3 { } #block-0a20e3c1329d9a6f82f3 .sqs-html-content { } #block-0a20e3c1329d9a6f82f3 { mix-blend-mode: var(--tweak-text-block-blend ); border-radius: var(--tweak-text-block-radius); } @media screen and (max-width: 767px) { #block-0",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/closed-2",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/closed-2",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496864630-UZARSUC4HU9OYOMORFVR/closedDec25.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
       "method": "primary-source-collection"
@@ -10861,6 +12415,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-no-fun-2026-12-28-f17d1b940a8e",
+    "title": "Bridgetown Trivia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-28T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 7pm-9pm EVERY Monday Arrive Early to Guarantee a Seat and Get in on the Happy Hour Prices Full Bar, Devil's Dill Sandwiches, Vegetarian and Vegan Options No Outside Food or Beverages. Space is limited and will be prioritized for customers. www.BridgetownTrivia.com #block-a4426009",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/2l79fmjat2nenhj5ftleh7w9agw8r9",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/2l79fmjat2nenhj5ftleh7w9agw8r9",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786496688843-SKUG37Y1AM0XTGBNASN1/btownFB.jpg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-29-32edecf7f70d",
     "title": "Etta Dean • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10904,6 +12508,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-no-fun-2026-12-30-99af56c0a88e",
+    "title": "NO FUN KARAOKE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. 8PM-1AM, NO COVER, 21+ NO FUN's long running Wednesday Night KARAOKE!!!! With Your Host KJ JESSICON Get your song in early and sing your hearts out!!!! #block-e1dffba31d874c76c068 { } #block-e1dffba31d874c76c068 .sqs-html-content { } #block-e1dffba31d874c76c068 { mix-blend-mode: ",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/57npkeab3yhbbzt2846h2bt4yzewza",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/57npkeab3yhbbzt2846h2bt4yzewza",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65973d9d92af572923b87cfc/1786499478939-09PXTMM2INRJZJC0UFFO/karaoke.jpeg",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2027-01-02-a604e3510c8d",
     "title": "Tito Padrino • 61TO16 • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10941,6 +12595,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-no-fun-2027-01-09-7dd9d3e98652",
+    "title": "Walter Moses Band • TBA • TBA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "No Fun",
+    "address": "1709 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. The listed time may mean doors instead of performance; confirm with organizer. $10 at the door Cash Only, 21+, 7PM Doors/8PM Music __________________________________ Walter Moses Band https://waltermosesband.bandcamp.com/ https://linktr.ee/waltermosesband https://www.instagram.com/waltermosesband #block-9bd85dd6727ba0c2960d { --stroke-style: none;--stroke-t",
+    "source": "No Fun",
+    "url": "https://www.nofunportland.com/events/walter-moses-band-tba-tba",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "No Fun",
+        "url": "https://www.nofunportland.com/events/walter-moses-band-tba-tba",
+        "kind": "organizer",
+        "checkedAt": "2026-10-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://static1.squarespace.com/static/65973d9d92af572923b87cfc/659742a51cb0463477baafcc/6ad55cc4b3004363167baed4/1792367848748/",
+      "sourceUrl": "https://www.nofunportland.com/events?format=json-pretty",
+      "origin": "official-event-page",
+      "credit": "Venue event listing",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
       "method": "primary-source-collection"
