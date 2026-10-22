@@ -65,11 +65,16 @@
       "name": "The Coffin Club",
       "status": "adapter-needed",
       "priority": "highest",
-      "reason": "High-priority gothic/industrial venue. Official landing page verified; investigate its current ticket-provider event pages and implement source-specific calendar adapter before enabling.",
+      "reason": "Official Coffin website embeds VenuePilot calendar account 3434. Vendor documents read-only GraphQL event API, but access requires a separate app id issued to SHOWS; source must remain disabled until the id is provisioned, stored in GitHub Actions secrets and live-probed. Public widget settings are not API credentials.",
       "venueRegistryId": "coffin-club",
       "url": "https://thecoffinclubpdx.com/",
       "baseUrl": "https://thecoffinclubpdx.com",
-      "venue": "The Coffin Club"
+      "venue": "The Coffin Club",
+      "adapter": "venuepilot-public-api",
+      "officialAccountId": 3434,
+      "apiAccess": "requires-provider-issued-app-id",
+      "address": "421 SE Grand Ave, Portland, OR",
+      "neighborhood": "Central Eastside"
     },
     {
       "id": "star-theater",
@@ -145,9 +150,9 @@
       "name": "High Limit Room",
       "status": "adapter-needed",
       "priority": "highest",
-      "reason": "High-priority all-ages DIY venue. Official website is reachable and lists shows, but an event-specific source adapter and verification tests are still needed.",
+      "reason": "Official High Limit Room site embeds Afton Tickets' checkout widget on /shows/. No accessible first-party static event feed or documented authorized API has been established. Seek venue-provided calendar/ICS export or official ticket-provider integration; do not infer dates from resale sites or reuse public widget keys as API credentials.",
       "venueRegistryId": "high-limit-room",
-      "url": "https://highlimitroompdx.com/",
+      "url": "https://highlimitroompdx.com/shows/",
       "baseUrl": "https://highlimitroompdx.com",
       "venue": "High Limit Room"
     },

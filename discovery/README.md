@@ -99,3 +99,11 @@ Wonder sometimes schedules two distinct performances by the same artist on the s
 Run **Actions → Probe official Wonder Ballroom calendar (review-only)** manually for external source-health verification. Do not require live venue uptime for every unrelated pull request.
 
 Coffin Club, High Limit Room and direct High Water Mark still need additional verified source coverage.
+
+## Coffin Club / High Limit source audit — October 21, 2026
+
+A live GitHub runner checked both official public venue sites. Coffin Club embeds VenuePilot's public events widget (account 3434). VenuePilot also provides a documented read-only event-data GraphQL API, but requires a **separately issued integration app ID**. SHOWS now includes a conservative, tested provider adapter and manual GitHub Actions health probe; Coffin stays **adapter-needed and disabled** until authorized credentials are supplied and a real probe passes. Do not use the public widget settings in place of an integration credential.
+
+High Limit Room embeds an Afton Tickets checkout widget. The initial public HTML does not expose verified dated event cards, and no authorized event-feed API has been established. Do not mark the source complete or invent timings from third-party resale sites. Seek a supported export/feed from the venue or ticket provider.
+
+See [provider feed readiness](provider-feed-readiness.md) for exact provider source evidence, security requirements, what has been implemented, and the activation sequence. Both venues remain in the owner's high-priority queue. No event records were added by this work.

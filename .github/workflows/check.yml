@@ -35,6 +35,8 @@ jobs:
           node --check scripts/wonder-importer.js
           node tests/wonder-importer.js
           node --check scripts/probe-wonder.js
+          node --check scripts/coffin-venuepilot.js
+          node tests/coffin-venuepilot.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
           node tests/artwork.js
