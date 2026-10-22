@@ -13,5 +13,11 @@
   samples.push({url:link,markup:html.slice(Math.max(0,m.index-1100),Math.min(html.length,m.index+800)).replace(/\s+/g," ").slice(0,1900)});
   if(samples.length===5)break;
  }
- console.log(JSON.stringify({bytes:html.length,links:etix.length,samples}));
+ const detailed=[];
+ for(const needle of ["the-dillinger-escape-plan","francis-of-delirium","death-from-above-1979"]){
+  const positions=[...html.matchAll(new RegExp(needle,"gi"))].map(x=>x.index);
+  const pos=positions.find(x=>x>html.indexOf("### Shows"))||positions[positions.length-1];
+  if(pos!==undefined)detailed.push({needle,count:positions.length,markup:html.slice(Math.max(0,pos-1200),Math.min(html.length,pos+1800)).replace(/\\s+/g," ").slice(0,3000)});
+ }
+ console.log(JSON.stringify({bytes:html.length,links:etix.length,samples,detailed}));
 })().catch(e=>{console.error("SOURCE PROBE FAILED "+e.message);process.exitCode=1});
