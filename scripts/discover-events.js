@@ -7,6 +7,7 @@ const crypto=require("node:crypto");
 const adapters=require("./priority-importers");
 const hosted=require("./hosted-venue-importers");
 const dantes=require("./dantes-importer");
+const coffin=require("./coffin-venuepilot");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -46,6 +47,7 @@ function urlOf(item,src){
   // Revalidate event-specific paths and room identity for every discovered URL.
   if(src.adapter==="hosted-venue-html")return hosted.safeEventUrl(u.href,src);
   if(src.adapter==="dantes-live-html")return dantes.safeDantesUrl(u.href,src);
+  if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   const primaryHost=u.hostname===new URL(src.baseUrl).hostname;
   const validPath=src.adapter==="squarespace-json"?u.pathname.startsWith("/events/"):src.adapter==="twilight-html"?u.pathname.startsWith("/event/"):src.adapter==="star-theater-html"?u.pathname.startsWith("/tm-event/"):false;
   const promoterLink=src.adapter==="promoter-list-html"&&u.hostname==="www.treetix.com"&&u.pathname==="/event"&&u.searchParams.get("cal")==="soundcontrol";
@@ -143,6 +145,9 @@ function reconcile(existing,records){
  return {accepted,held,skipped};
 }
 async function fetchItems(source){
+ // Official read-only GraphQL connection requires a separate, provisioned app id.
+ // This adapter is intentionally disabled until an authorized integration exists.
+ if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
