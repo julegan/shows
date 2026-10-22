@@ -524,7 +524,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-18T20:00:00-07:00"
+    "doorsAt": "2026-10-18T20:00:00-07:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_0e03671967653f6f2bf9ca48c2fe56a357bbf20227939e2464d7ccd8d40e5f0b.png",
+      "sourceUrl": "https://tickets.venuepilot.com/e/antioch-arrow-2026-10-18-the-coffin-portland-298f26",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "star-theater-church-of-hive-2026-10-18",
@@ -1249,7 +1256,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-21T20:00:00-07:00",
-    "sourceNote": "The dated venue ticket and artist event feed give October 21; a label tour page gives November 21. This entry follows the dated venue ticket. Confirm with the organizer."
+    "sourceNote": "The dated venue ticket and artist event feed give October 21; a label tour page gives November 21. This entry follows the dated venue ticket. Confirm with the organizer.",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_12d170a55709b69b7f02b6c110c6b42f61628782f84f85921ae7d08edd7a788a.jpg",
+      "sourceUrl": "https://tickets.venuepilot.com/e/zanias-2026-10-21-the-coffin-portland-214887",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-black-water-2026-10-22-def06dad0e51",
@@ -1551,7 +1565,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-10-22T20:00:00-07:00",
-    "sourceNote": "The ticket provider lists 8 PM doors / 8:30 PM show. Some secondary listings give 7 PM. Primary ticket text was available through the search index; the full page was blocked."
+    "sourceNote": "The ticket provider lists 8 PM doors / 8:30 PM show. Some secondary listings give 7 PM. Primary ticket text was available through the search index; the full page was blocked.",
+    "artwork": {
+      "url": "https://www.treetix.com/templates/highwatermark/images/events/2026-10-22-204795-soraia.jpg",
+      "sourceUrl": "https://www.treetix.com/event?cal=highwatermark&id=204795",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-black-water-2026-10-23-f604bc6d78dc",
@@ -1905,7 +1926,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-23T20:00:00-07:00"
+    "doorsAt": "2026-10-23T20:00:00-07:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_114daa6a0096add95c392fa35460cf6e5f56f6af4cb6090efb83401d41b15abf.jpg",
+      "sourceUrl": "https://tickets.venuepilot.com/e/ritual-howls-2026-10-23-the-coffin-portland-c5036b",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-black-water-2026-10-24-b25be6075058",
@@ -6055,7 +6083,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-07T20:00:00-08:00"
+    "doorsAt": "2026-11-07T20:00:00-08:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_dd18f10a6d5ed23ae35af1ee9505da0ceb76f272665173d8cdd77c3fedd52330.jpg",
+      "sourceUrl": "https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-twilight-2026-11-07-0e370f48476f",
@@ -7471,6 +7506,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/94/62/64_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/desert-dwellers-with-entangled-mind-mah-ze-tar/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -7694,7 +7736,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-15T18:30:00-08:00"
+    "doorsAt": "2026-11-15T18:30:00-08:00",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/99/06/14_Original.jpg?v=7",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/iron-chic-with-special-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-4-los-mal-hablados-chencha-undisputed-2026-11-15",
@@ -7815,7 +7864,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-15T20:00:00-08:00"
+    "doorsAt": "2026-11-15T20:00:00-08:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_2c3142426cdc2eca02cfe58d8bf5db1e8152129b2d79221e4ad9e5e767033986.png",
+      "sourceUrl": "https://tickets.venuepilot.com/e/mobiius-2026-11-15-the-coffin-portland-5168da",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-11-16-dacc97509f56",
@@ -7946,7 +8002,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-16T19:00:00-08:00"
+    "doorsAt": "2026-11-16T19:00:00-08:00",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/01/86/84_Original.jpg?v=12",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/devil-master-with-pilau-guest/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "crystal-turnover-2026-11-16",
@@ -8233,6 +8296,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/97/33/24_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/clarion/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -8549,7 +8619,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-19T19:00:00-08:00",
-    "sourceNote": "Broad metal classification follows the official ticketing category; no unverified band biography or subgenre is assigned."
+    "sourceNote": "Broad metal classification follows the official ticketing category; no unverified band biography or subgenre is assigned.",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/96/03/14_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "indie-no-seb-el-zin-support-tba-2026-11-19",
@@ -8730,7 +8807,14 @@ window.SHOWS_EVENTS = [
         "https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest"
       ]
     },
-    "doorsAt": "2026-11-20T19:30:00-08:00"
+    "doorsAt": "2026-11-20T19:30:00-08:00",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/kobzmrm1rue92u18gvos.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "revolution-gary-numan-with-tremours-2026-11-20",
@@ -9227,7 +9311,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-22T17:00:00-08:00"
+    "doorsAt": "2026-11-22T17:00:00-08:00",
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/98/48/14_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/psycroptic-with-inferi-cognitive-summoning-the-lich/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-11-22-58cb926d5eaa",
@@ -10269,6 +10360,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/00/32/84_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/queen-mother-with-kiss-me-kiss-me-kiss-me/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -10597,6 +10695,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/zsksfrt1e8rskqqeybyv.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/463793/wicked-wednesday-w-dj-barbie-saint-dj-speedo",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -10750,6 +10855,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/94/95/74_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/the-bad-plus/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -11039,6 +11151,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/63/42/33_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/isaiah-sharkey/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -11177,6 +11296,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/48/28/33_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/piano-queen/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -11631,6 +11757,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/62/59/93_Original.jpg?v=9",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-w-fifteenoeight-kent-osborne/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -11951,6 +12084,13 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/62/07/13_Original.jpg?v=4",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/genevieve-artadi-featuring-louis-cole-and-chiquita-magic/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
