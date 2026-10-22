@@ -32,11 +32,15 @@ function originalUrl(event){
   return u.href;
  }catch(_){return null;}
 }
-async function main(){
- const pending=events.filter(e=>!e.artwork&&originalUrl(e))
+// Define sorting dependencies before invoking Array.sort (its comparator executes immediately).
+const distinctSourceOwners=["The Coffin Club","High Limit Room","High Water Mark Lounge","Twilight Cafe and Bar","Star Theater","No Fun"];
+function priority(venue){const i=distinctSourceOwners.indexOf(venue);return i<0?999:i;}
+function pendingForArtwork(input){
+ return input.filter(e=>!e.artwork&&originalUrl(e))
   .sort((a,b)=>priority(a.venue)-priority(b.venue)||a.startsAt.localeCompare(b.startsAt)||a.id.localeCompare(b.id));
- const distinctSourceOwners=["The Coffin Club","High Limit Room","High Water Mark Lounge","Twilight Cafe and Bar","Star Theater","No Fun"];
- function priority(venue){const i=distinctSourceOwners.indexOf(venue);return i<0?999:i;}
+}
+async function main(){
+ const pending=pendingForArtwork(events);
  const requestedBatch=Math.max(0,Number(process.env.ARTWORK_BATCH)||0);
  const max=Math.max(1,Math.min(35,Number(process.env.MAX_ARTWORK_LOOKUPS)||35));
  const batchCount=Math.max(1,Math.ceil(pending.length/max));
@@ -82,4 +86,4 @@ async function main(){
  console.log(JSON.stringify({attempted,proposed,remaining:pending.length-attempted,failures:failures.length}));
 }
 if(require.main===module)main().catch(err=>{console.error(err);process.exitCode=1});
-module.exports={originalUrl};
+module.exports={originalUrl,pendingForArtwork};

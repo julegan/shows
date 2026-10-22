@@ -32,7 +32,9 @@ assert.equal(blocked.hold?.startsWith("Historical source conflict"),true);
 assert.match(e.verificationMethod,/editorial/i);
 const original=parseFile(fs.readFileSync(path.join(root,"events.js"),"utf8"));
 assert(Array.isArray(original.events));
-const pair=reconcile(original.events,[candidate,candidate]);
+// Test duplicate handling in isolation: live discovery can add another No Fun bill
+// on this fixture date, which should not invalidate a deterministic unit test.
+const pair=reconcile([],[candidate,candidate]);
 assert.equal(pair.accepted.length,1);
 assert.equal(pair.skipped.length,1);
 const sameDay=reconcile([{...e,id:"existing",title:"Different show",url:"https://www.nofunportland.com/events/else"}],[candidate]);
