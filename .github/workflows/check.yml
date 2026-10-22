@@ -39,6 +39,9 @@ jobs:
           node tests/coffin-venuepilot.js
           node --check scripts/revolution-importer.js
           node tests/revolution-importer.js
+          node --check scripts/crystal-importer.js
+          node tests/crystal-importer.js
+          node --check scripts/probe-crystal.js
           node --check scripts/probe-revolution.js
           node --check scripts/probe-dantes.js
           node tests/black-water.js
@@ -52,5 +55,5 @@ jobs:
 
 
 
-      - name: Inspect dedicated Crystal Ballroom primary event pages (temporary)
-        run: node scripts/probe-crystal-primary-layout.js
+      - name: Live source verification of official Crystal Ballroom event details
+        run: node scripts/probe-crystal.js
