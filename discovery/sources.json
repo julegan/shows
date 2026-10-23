@@ -236,14 +236,15 @@
       "name": "Holocene",
       "venue": "Holocene",
       "venueRegistryId": "holocene",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "underground-music",
       "url": "https://www.holocene.org/events/",
       "baseUrl": "https://www.holocene.org",
       "adapter": "holocene-event-html",
       "address": "1001 SE Morrison St, Portland, OR 97214",
       "neighborhood": "Buckman",
-      "reason": "Holocene public event-detail pages include schema.org Event startDate with Pacific offset and explicit Holocene venue; date and time evidence will be live tested before enabling. Some site times mean doors, not performance starts."
+      "reason": "Venue-specific event details provide structured Event starts with year and Pacific timezone and explicit venue identity; note the published time may be doors not performance; held or canceled events stay out of automatic proposals.",
+      "enabledReason": "Original venue read-only probe 39886605096 examined 49 official Holocene event pages, validating 43 dated Holocene events, holding 6 without the expected verified venue identity. Review-only."
     },
     {
       "id": "no-fun",
