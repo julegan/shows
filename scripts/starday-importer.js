@@ -35,7 +35,7 @@ function records(html){
  const tags=[...html.matchAll(/<div\b[^>]*\bid="eael-event-calendar-[a-z0-9]+"[^>]*\bdata-events="([^"]*)"/gi)];
  if(tags.length!==1)throw Error("Starday venue calendar missing or ambiguously repeated");
  const value=JSON.parse(htmlDecode(tags[0][1]));
- if(!Array.isArray(value)||value.length<1||value.length>1400)throw Error("Unexpected original calendar event count");
+ if(!Array.isArray(value)||value.length<1||value.length>6000)throw Error("Unexpected original calendar event count: "+value.length);
  return value;
 }
 function parseItem(x){
