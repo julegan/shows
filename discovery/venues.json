@@ -175,10 +175,10 @@
       "id": "starday-tavern",
       "name": "Starday Tavern",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://stardaytavern.com/",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://stardaytavern.com/#calendar",
       "aliases": [],
-      "notes": "Official events calendar available; inspect provider timezone and event detail source"
+      "notes": "Original public Google event links/date/time with Pacific offsets verified by live GitHub runner. Start time may be doors; review-only."
     },
     {
       "id": "b-side",
