@@ -148,13 +148,14 @@ function reconcile(existing,records){
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
   const source=a.discovery?.sourceId;
-  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris"].includes(source)
-    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)));
+  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(source)
+    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
+    &&(source!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
  };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
   if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
    skipped.push({skip:"Already present",title:e.title,url:e.url});continue;
   }
