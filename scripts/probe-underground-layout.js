@@ -17,7 +17,11 @@ function around(s,word){const i=s.toLowerCase().indexOf(word.toLowerCase());retu
    const body=await response.text();if(body.length>2200000)throw Error("Too large");
    if(t.id==="starday"){
     const index=body.indexOf("2026-10-24T21:00:00-07:00");
-    console.log(JSON.stringify({id:"starday-embedding",anchor:index,preceding:index>=0?body.slice(Math.max(0,index-2400),index+1000).replace(/\s+/g," ").slice(0,3400):null,firstDataSettings:[...body.matchAll(/<[^>]*data-settings=[\x22\x27]/gi)].slice(0,5).map(m=>m[0].slice(0,220))}));
+    const matches=[...body.matchAll(/data-settings="([^"]*)"/gi)];
+    const candidates=matches.filter(m=>m[1].includes("&quot;google_event_id&quot;"));
+    const decode=x=>x.replace(/&quot;/g,'"').replace(/&amp;/g,"&").replace(/&#0?39;|&apos;/g,"'");
+    const info=candidates.map(m=>{try{const x=JSON.parse(decode(m[1]));const keys=Object.keys(x);const result=Object.entries(x).filter(([,v])=>Array.isArray(v)).map(([k,v])=>({key:k,count:v.length,sample:v[0]}));return {length:m[1].length,keys,arrays:result}}catch(e){return {length:m[1].length,error:String(e),head:m[1].slice(0,150)}}});
+    console.log(JSON.stringify({id:"starday-settings",attributes:matches.length,candidates:info.slice(0,3)}));
    }
    if(t.json){
     const o=JSON.parse(body);
