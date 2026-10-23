@@ -55,3 +55,6 @@ jobs:
 
 
 
+
+      - name: Inspect official Mississippi and Holocene event listings (temporary read-only)
+        run: node scripts/probe-indie-layout.js
