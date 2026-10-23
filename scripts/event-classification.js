@@ -54,7 +54,7 @@ function classifyEvent(item){
  }
  if(fromSource.length)return {category:"Music",musicStyles:fromSource,evidence:"Event-specific source genre wording"};
  if(type==="MusicEvent")return {category:"Music",musicStyles:[],evidence:"Source event type: MusicEvent"};
- if(item.sourceVerifiedMusic===true||MUSIC_CLAIM.test(words)){
+ if(item.sourceVerifiedMusic===true||MUSIC_CLAIM.test(words)||[...(Array.isArray(item.categories)?item.categories:[]),...(Array.isArray(item.tags)?item.tags:[])].some(x=>/^(?:Music|Concert|Live Music)$/i.test(String(x).trim()))){
   return {category:"Music",musicStyles:[],evidence:item.sourceVerifiedMusic===true?"Original source explicitly verifies music":"Event-specific source wording"};
  }
  return {category:"Unclassified",musicStyles:[],evidence:"No verified event type or genre"};
