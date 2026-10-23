@@ -21,7 +21,7 @@ test("SOLD OUT: Wednesday Night Special: Kyle Kinane (Early)","Unclassified");
 test("Mdou Moctar (Solo)","Unclassified");
 test("SOLD OUT: Lime Garden","Unclassified");
 test("Gilla Band and PISS","Unclassified"); // Artist-name familiarity alone is not enough evidence.
-test("Bass band at Halloween","Music");
+test("Live band at Halloween","Music");
 test("Record release at Black Water","Music");
 test("This is a game night","Other");
 assert.equal(classifyEvent({title:"Original show",sourceEventType:"MusicEvent"}).category,"Music");
