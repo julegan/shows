@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "policy": "Exact original event URL, event title, venue, and local date are required; external links are human-reviewed format/genre evidence, never blind genre inference. No arbitrary other events are labeled from venue or artist reputation.",
+  "reviewedAt": "2026-10-22",
+  "entries": [
+    {
+      "title": "SOLD OUT: Lime Garden",
+      "venue": "Mississippi Studios",
+      "date": "2026-11-01",
+      "url": "https://www.etix.com/ticket/p/95590751/sold-outlime-garden-portland-mississippi-studios",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://limegarden.bandcamp.com/",
+      "note": "Artist's official music page independently lists the November 1 Mississippi Studios performance. Genre not asserted by the original SHOWS event record."
+    },
+    {
+      "title": "Mdou Moctar (Solo)",
+      "venue": "Polaris Hall",
+      "date": "2026-11-02",
+      "url": "https://www.etix.com/ticket/p/57401268/mdou-moctar-solo-portland-polaris-hall",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.mdoumoctar.com/tour",
+      "note": "Artist's official tour dates list Polaris Hall in Portland on November 2; performance type confirmed. Genre remains unassigned."
+    },
+    {
+      "title": "Slow Pulp",
+      "venue": "Revolution Hall",
+      "date": "2026-10-23",
+      "url": "https://www.etix.com/ticket/p/31093190/slow-pulp-portland-revolution-hall",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.slowpulp.com/",
+      "note": "Artist's official tour lists the Revolution Hall performance on October 23 with Snuggle. Genre remains unassigned."
+    },
+    {
+      "title": "Demon Hunter – Storm the Gates of Hell 20th Anniversary Tour",
+      "venue": "Hawthorne Theatre",
+      "date": "2026-10-22",
+      "url": "https://hawthornetheatre.com/event/demon-hunter-storm-the-gates-of-hell-20th-anniversary-tour/hawthorne-theatre/portland-oregon/",
+      "category": "Music",
+      "musicStyles": [
+        "Metal"
+      ],
+      "evidenceUrl": "https://www.demonhunter.net/",
+      "note": "Band's official biography describes the group's music explicitly as metal; venue confirms the October 22 performance."
+    },
+    {
+      "title": "HAVOK with Slackjaw, Xoth, & Silver Talon",
+      "venue": "Dante's",
+      "date": "2026-10-24",
+      "url": "https://www.danteslive.com/tm-event/havok-with-hellripper-slackjaw-xoth/",
+      "category": "Music",
+      "musicStyles": [
+        "Metal"
+      ],
+      "evidenceUrl": "https://www.ticketweb.com/event/havok-with-slackjaw-xoth-dantes-tickets/15036603?pl=dante",
+      "note": "Organizer's original event-specific TicketWeb listing identifies Havok, Slackjaw, Xoth and Silver Talon as heavy/death/black metal artists at Dante's October 24."
+    }
+  ]
+}
