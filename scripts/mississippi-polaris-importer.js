@@ -47,7 +47,7 @@ function parseCard(chunk,source){
  const image=chunk.match(/<div\b[^>]*class=["']event__image["'][^>]*>[\s\S]*?<img\b[^>]*src=["']([^"']+)["']/i)?.[1];
  const imageUrl=image&&artworkCandidate(image,source.url);
  const supporting=decode(chunk.match(/<h4\b[^>]*>([\s\S]*?)<\/h4>/i)?.[1]);
- return {title,fullUrl,venue,startDate,sourceVerifiedMusic:!!(/live band|concert|music/i.test(supporting)),
+ return {title,fullUrl,venue,startDate,address:source.addresses?.[venue]||null,neighborhood:venue==="Polaris Hall"?"Humboldt":"Boise",sourceVerifiedMusic:!!(/live band|concert|music/i.test(supporting)),
    description:"Original Mississippi/Polaris room-verified official event listing"+(supporting?". Supporting artists: "+supporting.slice(0,180):""),
    timeEvidence:"Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue",
    ...(imageUrl?{artwork:{url:imageUrl,sourceUrl:source.url,origin:"official-venue-calendar",credit:"Venue-provided event flyer",usageApproved:null}}:{})};
