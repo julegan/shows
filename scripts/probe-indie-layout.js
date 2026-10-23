@@ -3,7 +3,8 @@
 // Temporary read-only source inspection; no event writes or publication.
 const sites=[
  {id:"mississippi",url:"https://mississippistudios.com/calendar",needles:["REZN","The Fourth Wall","event-wrapper","data-event-id","data-venue-id","event-doors-showtime","event-date","show-bar","event--grid-style"]},
- {id:"holocene",url:"https://www.holocene.org/events/",needles:["CRIMEWAVE","tribe-events","eventitem","event-start","event-card","calendar-event","Doors:","datetime","data-venue-id"]}
+ {id:"holocene",url:"https://www.holocene.org/events/",needles:["CRIMEWAVE","tribe-events","eventitem","event-start","event-card","calendar-event","Doors:","datetime","data-venue-id"]},
+ {id:"holocene-detail",url:"https://www.holocene.org/event/crimewave-a-goth-post-punk-darkwave-party-21-2/holocene/portland/",needles:["startDate","eventStart","2026-10-22","Doors:","rhp-event","schema.org/Event","Holocene","event-title","rhp_event_start"]}
 ];
 const cut=(html,i)=>html.slice(Math.max(0,i-1100),i+1250).replace(/\s+/g," ").slice(0,2250);
 (async()=>{
