@@ -48,7 +48,7 @@ function parseItem(x){
  const url=sourceUrl(x.url,x.google_event_id);
  if(!startDate||!url)return {hold:"Invalid source timezone, date or public Google Calendar permalink",title};
  if(x.end&&(!startISO(x.end)||Date.parse(x.end)<Date.parse(startDate)))return {hold:"Invalid source event end time",title,url};
- return {title,fullUrl:url,startDate,venue:"Starday Tavern",
+ return {title,fullUrl:url,google_event_id:x.google_event_id,startDate,venue:"Starday Tavern",
   sourceVerifiedMusic:false,
   timeEvidence:"Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime",
   description:"Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification"};
