@@ -1,0 +1,16 @@
+name: Probe official Starday Tavern source health (review-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate original venue calendar events and links
+        run: node scripts/probe-starday.js
