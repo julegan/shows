@@ -15,6 +15,10 @@ function around(s,word){const i=s.toLowerCase().indexOf(word.toLowerCase());retu
    const response=await fetch(t.url,{headers:{Accept:t.json?"application/json":"text/html","User-Agent":"SHOWS-original-source-audit/0.1"},redirect:"error",signal:AbortSignal.timeout(18000)});
    if(!response.ok){console.log(JSON.stringify({id:t.id,status:response.status}));continue}
    const body=await response.text();if(body.length>2200000)throw Error("Too large");
+   if(t.id==="starday"){
+    const index=body.indexOf("2026-10-24T21:00:00-07:00");
+    console.log(JSON.stringify({id:"starday-embedding",anchor:index,preceding:index>=0?body.slice(Math.max(0,index-2400),index+1000).replace(/\s+/g," ").slice(0,3400):null,firstDataSettings:[...body.matchAll(/<[^>]*data-settings=[\x22\x27]/gi)].slice(0,5).map(m=>m[0].slice(0,220))}));
+   }
    if(t.json){
     const o=JSON.parse(body);
     const arr=Array.isArray(o)?o:[o];
