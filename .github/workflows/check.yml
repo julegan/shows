@@ -48,6 +48,9 @@ jobs:
           node tests/artwork.js
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
+          node --check scripts/starday-importer.js
+          node tests/starday-importer.js
+          node --check scripts/probe-starday.js
           node --check scripts/mississippi-polaris-importer.js
           node tests/mississippi-polaris-importer.js
           node --check scripts/holocene-importer.js
@@ -67,3 +70,6 @@ jobs:
 
       - name: Probe underground original venue sources (temporary, read only)
         run: node scripts/probe-underground-layout.js
+
+      - name: Verify original Starday Google event feed (temporary read-only)
+        run: node scripts/probe-starday.js
