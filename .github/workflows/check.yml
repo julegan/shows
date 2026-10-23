@@ -64,3 +64,6 @@ jobs:
 
 
 
+
+      - name: Probe underground original venue sources (temporary, read only)
+        run: node scripts/probe-underground-layout.js
