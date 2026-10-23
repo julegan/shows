@@ -48,6 +48,9 @@ jobs:
           node tests/artwork.js
           node --check scripts/audit-venue-coverage.js
           node tests/venues.js
+          node --check scripts/mississippi-polaris-importer.js
+          node tests/mississippi-polaris-importer.js
+          node --check scripts/probe-mississippi.js
           node --check scripts/probe-crystal-revolution.js
 
 
@@ -58,3 +61,6 @@ jobs:
 
       - name: Inspect official Mississippi and Holocene event listings (temporary read-only)
         run: node scripts/probe-indie-layout.js
+
+      - name: Verify Mississippi and Polaris original venue cards (temporary read-only)
+        run: node scripts/probe-mississippi.js
