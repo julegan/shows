@@ -26,7 +26,15 @@ for(const id of ["dantes","roseland","wonder-ballroom","hawthorne-theatre","high
 }
 assert(count("star-theater").futureMusic>0);
 assert(count("coffin-club").futureMusic>0);
-assert(count("mississippi").futureMusic===0,"Missing but public official calendar must show a gap");
+// Discovery PRs add genuine venue events; an old "zero Mississippi music"
+// fixture would break whenever the official importer works as intended.
+const mississippi=count("mississippi");
+assert(mississippi&&mississippi.ingestionStatus==="active-adapter","Mississippi Studios retains its verified original event source");
+assert(mississippi.calendarUrl?.startsWith("https://mississippistudios.com/"),"Mississippi source remains official");
+assert(mississippi.futureMusic<=mississippi.futureCount,"Genre classification cannot exceed listed venue events");
+const polaris=count("polaris-hall");
+assert(polaris&&polaris.ingestionStatus==="active-adapter","Polaris Hall retains its independent verified venue identity");
+assert(polaris.futureMusic<=polaris.futureCount,"Polaris venue music cannot exceed total future listings");
 assert(!venues.venues.some(x=>x.id==="soundcontrol-pdx"),"Promoter is not a single venue");
 assert(venues.supplementaryDiscovery.some(x=>x.id==="soundcontrol-pdx"));
 assert(venues.supplementaryDiscovery.some(x=>x.id==="doomtown-pdx"));
