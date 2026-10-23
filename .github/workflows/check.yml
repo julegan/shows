@@ -68,8 +68,4 @@ jobs:
 
 
 
-      - name: Probe underground original venue sources (temporary, read only)
-        run: node scripts/probe-underground-layout.js
 
-      - name: Verify original Starday Google event feed (temporary read-only)
-        run: node scripts/probe-starday.js
