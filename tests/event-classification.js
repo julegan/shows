@@ -20,7 +20,7 @@ test("Post-punk comedy night","Performance");
 test("SOLD OUT: Wednesday Night Special: Kyle Kinane (Early)","Unclassified");
 test("Mdou Moctar (Solo)","Unclassified");
 test("SOLD OUT: Lime Garden","Unclassified");
-test("Gilla Band and PISS","Music"); // The artist name includes the explicit word "Band"; needs source review despite label.
+test("Gilla Band and PISS","Unclassified"); // Artist-name familiarity alone is not enough evidence.
 test("Bass band at Halloween","Music");
 test("Record release at Black Water","Music");
 test("This is a game night","Other");
