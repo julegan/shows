@@ -232,6 +232,20 @@
       "enabledReason": "Live GitHub-runner source probe 39886101608 found 30 official original show cards, 29 verified: 17 Mississippi Studios and 12 Polaris Hall, with one offsite/room conflict held. Review-only events."
     },
     {
+      "id": "holocene",
+      "name": "Holocene",
+      "venue": "Holocene",
+      "venueRegistryId": "holocene",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "url": "https://www.holocene.org/events/",
+      "baseUrl": "https://www.holocene.org",
+      "adapter": "holocene-event-html",
+      "address": "1001 SE Morrison St, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "reason": "Holocene public event-detail pages include schema.org Event startDate with Pacific offset and explicit Holocene venue; date and time evidence will be live tested before enabling. Some site times mean doors, not performance starts."
+    },
+    {
       "id": "no-fun",
       "name": "No Fun",
       "status": "paused-secondary",
