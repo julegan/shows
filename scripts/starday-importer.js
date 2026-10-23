@@ -15,7 +15,7 @@ function sourceUrl(raw,id){
   const key=u.searchParams.get("eid");
   if(!key||key.length>600||!/^[-_+\/A-Za-z0-9=]+$/.test(key))return null;
   const decoded=Buffer.from(key.replace(/-/g,"+").replace(/_/g,"/"),"base64").toString("utf8");
-  if(!decoded.startsWith(id+" ")||!/@(?:gmail|group\.calendar\.google)\.com$/.test(decoded.split(" ").slice(1).join(" ")))return null;
+  if(!decoded.startsWith(id+" ")||!/(?:@g|@gmail\.com|@group\.calendar\.google\.com)$/.test(decoded.split(" ").slice(1).join(" ")))return null;
   return u.href;
  }catch(_){return null}
 }
