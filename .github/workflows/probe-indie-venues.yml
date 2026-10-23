@@ -1,0 +1,18 @@
+name: Probe official Mississippi, Polaris and Holocene source health (review-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify original Mississippi and Polaris stage listings
+        run: node scripts/probe-mississippi.js
+      - name: Verify Holocene venue event dates
+        run: node scripts/probe-holocene.js
