@@ -14,6 +14,7 @@ const crystal=require("./crystal-importer");
 const indie=require("./mississippi-polaris-importer");
 const holocene=require("./holocene-importer");
 const starday=require("./starday-importer");
+const {classifyEvent}=require("./event-classification");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -72,24 +73,8 @@ function urlOf(item,src){
   if(!promoterLink)u.search="";u.hash="";return u.href;
  }catch(_){return null;}
 }
-function music(item){
- const input=tidy([item.title,item.body,item.excerpt,...(Array.isArray(item.tags)?item.tags:[]),...(Array.isArray(item.categories)?item.categories:[])].filter(Boolean).join(" "),2500).toLowerCase();
- if(/\b(trivia|karaoke|open mic|comedy|bingo|quiz|brunch|screening|happy hour)\b/.test(input))return false;
- return /\b(live music|music|bands?|concert|punk|metal|hardcore|goth|rock show|touring|gig|live performance|show with|doors at)\b/.test(input);
-}
-function categoryOf(item){
- const title=tidy(item.title).toLowerCase();
- const categories=tidy([...(Array.isArray(item.categories)?item.categories:[]),...(Array.isArray(item.tags)?item.tags:[])].join(" "),400).toLowerCase();
- // Categorize published event types; never invent underground genres.
- if(/\b(workshop|class|lesson|seminar|skillshare)\b/.test(title+" "+categories))return "Workshops";
- if(/\b(craft night|mask making|zine making|gallery|exhibition|art opening|craft fair)\b/.test(title+" "+categories))return "Arts & DIY";
- if(/\b(market|bazaar|swap meet|record fair|vintage fair|pop-up shop)\b/.test(title+" "+categories))return "Markets";
- if(/\b(comedy|burlesque|drag show|film screening|movie night|theater performance|improv night)\b/.test(title+" "+categories))return "Performance";
- if(/\b(trivia|karaoke|bingo|quiz|happy hour)\b/.test(title+" "+categories))return "Other";
- if(/\b(dj|record release)\b/i.test(title)||((String(item.title||"").match(/\s\/\s/g)||[]).length>=2&&!/\b(tournament|game|drag show)\b/i.test(title)))return "Music";
- if(item.sourceVerifiedMusic||music(item))return "Music";
- return "Unclassified";
-}
+function music(item){return classifyEvent(item).category==="Music";}
+function categoryOf(item){return classifyEvent(item).category;}
 function extract(item,src,now){
  if(!item||typeof item!=="object")return {hold:"Unusable source object"};
  const title=tidy(item.title),url=urlOf(item,src);
@@ -122,15 +107,16 @@ function extract(item,src,now){
  if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
- const category=categoryOf(item);
+ const classification=classifyEvent(item),category=classification.category;
  const asof=localDay(now);
  const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:url;
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
   id,title,subtitle:"Source-discovered venue event · details need review",category,
-  tags:[category==="Unclassified"?"Category needs review":"Source-listed "+category,"Time needs confirmation","Format needs confirmation"],
-  musicStyles:[],eventFormat:"unverified",
+  tags:[category==="Unclassified"?"Category needs review":"Source-listed "+category,...classification.musicStyles.map(style=>"Source-mentioned "+style),"Time needs confirmation","Format needs confirmation"],
+  musicStyles:classification.musicStyles,eventFormat:"unverified",
+  classificationEvidence:classification.evidence,
   startTimeKind:dateOnly?"date-only":"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
