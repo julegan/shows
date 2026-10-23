@@ -13,6 +13,7 @@ const revolution=require("./revolution-importer");
 const crystal=require("./crystal-importer");
 const indie=require("./mississippi-polaris-importer");
 const holocene=require("./holocene-importer");
+const starday=require("./starday-importer");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -57,6 +58,7 @@ function urlOf(item,src){
   if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
   if(src.adapter==="mississippi-polaris-html")return indie.ticketUrl(u.href,item.venue);
   if(src.adapter==="holocene-event-html")return holocene.safeUrl(u.href);
+  if(src.adapter==="starday-google-html")return starday.sourceUrl(u.href,item.google_event_id);
   if(src.adapter==="revolution-events-html"){
    const room=item.venue==="Revolution Hall"?"revolution-hall":item.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
    return room?revolution.validatedTicket(u.href,room)?.url||null:null;
@@ -146,13 +148,14 @@ function reconcile(existing,records){
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
   const source=a.discovery?.sourceId;
-  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris"].includes(source)
-    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)));
+  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(source)
+    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
+    &&(source!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
  };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
   if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
    skipped.push({skip:"Already present",title:e.title,url:e.url});continue;
   }
@@ -173,7 +176,7 @@ async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
- if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
  if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
@@ -181,6 +184,7 @@ async function fetchItems(source){
  if(body.length>3000000)throw Error("Feed exceeds size limit");
  if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source,localDay(new Date()));
  if(source.adapter==="mississippi-polaris-html")return indie.parseMississippi(body,source);
+ if(source.adapter==="starday-google-html")return starday.parseStarday(body,source);
  if(source.adapter==="holocene-event-html"){
   const original=holocene.links(body),rows=[];
   for(let i=0;i<original.length;i+=4){

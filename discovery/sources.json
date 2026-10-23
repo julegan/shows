@@ -247,6 +247,21 @@
       "enabledReason": "Original venue read-only probe 39886605096 examined 49 official Holocene event pages, validating 43 dated Holocene events, holding 6 without the expected verified venue identity. Review-only."
     },
     {
+      "id": "starday-tavern",
+      "name": "Starday Tavern",
+      "venue": "Starday Tavern",
+      "venueRegistryId": "starday-tavern",
+      "status": "pilot-enabled",
+      "priority": "underground-music",
+      "adapter": "starday-google-html",
+      "url": "https://stardaytavern.com/",
+      "baseUrl": "https://stardaytavern.com",
+      "address": "6517 SE Foster Rd, Portland, OR 97206",
+      "neighborhood": "Foster-Powell",
+      "reason": "Original Starday venue Google Calendar embedded public event feed, year-bearing Pacific dates, independently identified Google event permalinks. Calendar start can be doors rather than performance; require editorial review.",
+      "enabledReason": "Read-only GitHub Actions probe 39895941675 checked 1,587 source objects, verified 1,544 individually linked dated/timed events, identified 82 future entries and held 43 without valid timed starts. Review-only proposals."
+    },
+    {
       "id": "no-fun",
       "name": "No Fun",
       "status": "paused-secondary",
