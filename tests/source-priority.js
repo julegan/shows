@@ -27,8 +27,8 @@ assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"paused-secondary","No Fun must not dominate scheduled discovery");
 assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top core source");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall"]);
-assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html"].includes(s.adapter)),"Never run unverified adapters");
+assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","mississippi-polaris"]);
+assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html"].includes(s.adapter)),"Never run unverified adapters");
 for(const id of ["coffin-club","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
@@ -43,3 +43,6 @@ console.log("PASS — owner-ranked venues, current verified calendar coverage, a
 
 assert.equal(byVenue["show-bar"].ingestionStatus,"active-adapter","Show Bar has independent venue identity backed by verified original event cards");
 assert(!byVenue["revolution-hall"].aliases?.some(s=>/show\s*bar/i.test(s)),"Never merge Show Bar into main-hall venue aliases");
+
+assert.equal(byId["mississippi-polaris"].status,"pilot-enabled");
+for(const id of ["mississippi","polaris-hall"])assert.equal(byVenue[id].ingestionStatus,"active-adapter","Each stage is separately tracked");
