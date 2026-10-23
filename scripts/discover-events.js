@@ -15,6 +15,7 @@ const indie=require("./mississippi-polaris-importer");
 const holocene=require("./holocene-importer");
 const starday=require("./starday-importer");
 const {classifyEvent}=require("./event-classification");
+const reviewed=require("./reviewed-classifications");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -107,7 +108,8 @@ function extract(item,src,now){
  if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
- const classification=classifyEvent(item),category=classification.category;
+ const sourceMatch=reviewed.forEvent({url,title,venue:item.venue||src.venue,date});
+ const classification=sourceMatch||classifyEvent(item),category=classification.category;
  const asof=localDay(now);
  const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:url;
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);
@@ -117,6 +119,7 @@ function extract(item,src,now){
   tags:[category==="Unclassified"?"Category needs review":"Source-listed "+category,...classification.musicStyles.map(style=>"Source-mentioned "+style),"Time needs confirmation","Format needs confirmation"],
   musicStyles:classification.musicStyles,eventFormat:"unverified",
   classificationEvidence:classification.evidence,
+  ...(classification.evidenceUrl?{classificationSourceUrl:classification.evidenceUrl}:{}),
   startTimeKind:dateOnly?"date-only":"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
