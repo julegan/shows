@@ -51,7 +51,7 @@ function parseDetail(html,url){
   return {hold:"Missing original dated event timezone",title,url:primary};
  const date=new Date(e.startDate);if(!Number.isFinite(date.valueOf()))return {hold:"Invalid original event timestamp",title,url:primary};
  const pieces=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23",timeZoneName:"shortOffset"}).formatToParts(date).map(p=>[p.type,p.value]));
- const input=e.startDate.match(/^(20\d\d-\d\d-\d\d)T(\d\d):(\d\d)/),offset=e.startDate.slice(-5).replace(/^([+-]\d\d)(\d\d)$/,"$1:$2");
+ const input=e.startDate.match(/^(20\d\d-\d\d-\d\d)T(\d\d):(\d\d)/),offset=(e.startDate.match(/([+-]\d{2}:?\d{2})$/)?.[1]||"").replace(/^([+-]\d\d)(\d\d)$/,"$1:$2");
  const local=[pieces.year,pieces.month,pieces.day].join("-");
  const tz=pieces.timeZoneName==="GMT-7"?"-07:00":pieces.timeZoneName==="GMT-8"?"-08:00":"";
  if(!input||local!==input[1]||pieces.hour!==input[2]||pieces.minute!==input[3]||tz!==offset)
