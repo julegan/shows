@@ -13,7 +13,7 @@ function sourceUrl(raw,id){
   const u=new URL(raw);
   if(u.protocol!=="https:"||u.hostname!=="www.google.com"||u.pathname!=="/calendar/event"||u.username||u.password||u.port||u.hash||[...u.searchParams.keys()].some(k=>k!=="eid"))return null;
   const key=u.searchParams.get("eid");
-  if(!key||key.length>600||!/^[-_A-Za-z0-9=]+$/.test(key))return null;
+  if(!key||key.length>600||!/^[-_+\/A-Za-z0-9=]+$/.test(key))return null;
   const decoded=Buffer.from(key.replace(/-/g,"+").replace(/_/g,"/"),"base64").toString("utf8");
   if(!decoded.startsWith(id+" ")||!/@(?:gmail|group\.calendar\.google)\.com$/.test(decoded.split(" ").slice(1).join(" ")))return null;
   return u.href;
