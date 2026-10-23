@@ -106,7 +106,7 @@ function parseDetail(html,url){
   return {hold:"Event schema is not for original page permalink",title,url:official};
  const art=eventArtworkFromHtml(page,official);
  return {title,fullUrl:official,startDate,venue:"Crystal Ballroom",
-  sourceVerifiedMusic:false,timeEvidence:"Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time",
+  sourceVerifiedMusic:false,sourceEventType:String(e["@type"]||"").split(",").find(v=>/^(?:MusicEvent|ComedyEvent)$/i.test(v.trim()))?.trim()||null,timeEvidence:"Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time",
   description:"Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
   ...(art?{artwork:art}:{})};
 }

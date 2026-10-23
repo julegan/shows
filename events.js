@@ -48,7 +48,7 @@ window.SHOWS_DATASET = {
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 197
+  "musicOccurrences": 204
 };
 window.SHOWS_EVENTS = [
   {
@@ -1423,13 +1423,16 @@ window.SHOWS_EVENTS = [
     "id": "auto-hawthorne-theatre-2026-10-22-4b7d2b99219d",
     "title": "Demon Hunter – Storm the Gates of Hell 20th Anniversary Tour",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
-      "Format needs confirmation"
+      "Format needs confirmation",
+      "Editorially verified Metal"
     ],
-    "musicStyles": [],
+    "musicStyles": [
+      "Metal"
+    ],
     "eventFormat": "unverified",
     "startTimeKind": "listed",
     "startsAt": "2026-10-22T19:30:00-07:00",
@@ -1442,7 +1445,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
     "source": "Hawthorne Theatre",
     "url": "https://hawthornetheatre.com/event/demon-hunter-storm-the-gates-of-hell-20th-anniversary-tour/hawthorne-theatre/portland-oregon/",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-21",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -1466,7 +1469,9 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
+    "classificationSourceUrl": "https://www.demonhunter.net/"
   },
   {
     "id": "auto-twilight-2026-10-22-7afdf25f88cc",
@@ -1619,9 +1624,9 @@ window.SHOWS_EVENTS = [
     "id": "auto-revolution-hall-2026-10-22-9b884db1def0",
     "title": "How Strange It Is (Album Release)",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Source-title Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
@@ -1639,7 +1644,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Femme Cell, Icecaps",
     "source": "Revolution Hall",
     "url": "https://www.etix.com/ticket/p/73158131/how-strange-it-is-album-release-portland-show-bar-at-revolution-hall",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-21",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -1663,7 +1668,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "revolution-hall",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Event-specific source wording"
   },
   {
     "id": "indie-no-jon-von-blood-and-the-trick-or-treats-barkeep-2026-10-22",
@@ -1892,9 +1898,14 @@ window.SHOWS_EVENTS = [
     "tags": [
       "Source-listed Music",
       "Time needs confirmation",
-      "Format needs confirmation"
+      "Format needs confirmation",
+      "Source-mentioned Post-punk",
+      "Source-mentioned Goth & darkwave"
     ],
-    "musicStyles": [],
+    "musicStyles": [
+      "Post-punk",
+      "Goth & darkwave"
+    ],
     "eventFormat": "unverified",
     "startTimeKind": "listed",
     "startsAt": "2026-10-22T21:00:00-07:00",
@@ -1932,7 +1943,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "holocene",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Event-specific source genre wording"
   },
   {
     "id": "auto-wonder-ballroom-2026-10-22-e874aaf57d72",
@@ -2381,9 +2393,9 @@ window.SHOWS_EVENTS = [
     "id": "auto-revolution-hall-2026-10-23-64ba0a674515",
     "title": "Slow Pulp",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
@@ -2401,7 +2413,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Snuggle",
     "source": "Revolution Hall",
     "url": "https://www.etix.com/ticket/p/31093190/slow-pulp-portland-revolution-hall",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-21",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -2425,7 +2437,9 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "revolution-hall",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
+    "classificationSourceUrl": "https://www.slowpulp.com/"
   },
   {
     "id": "auto-hawthorne-theatre-2026-10-23-7b5b7f4dd982",
@@ -2650,9 +2664,12 @@ window.SHOWS_EVENTS = [
     "tags": [
       "Source-listed Music",
       "Time needs confirmation",
-      "Format needs confirmation"
+      "Format needs confirmation",
+      "Source-mentioned Punk"
     ],
-    "musicStyles": [],
+    "musicStyles": [
+      "Punk"
+    ],
     "eventFormat": "unverified",
     "startTimeKind": "listed",
     "startsAt": "2026-10-23T21:00:00-07:00",
@@ -2690,7 +2707,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "dantes",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Event-specific source genre wording"
   },
   {
     "id": "auto-holocene-2026-10-23-e26a4db88fbc",
@@ -3048,13 +3066,16 @@ window.SHOWS_EVENTS = [
     "id": "auto-dantes-2026-10-24-258d8636b64a",
     "title": "HAVOK with Slackjaw, Xoth, & Silver Talon",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
-      "Format needs confirmation"
+      "Format needs confirmation",
+      "Editorially verified Metal"
     ],
-    "musicStyles": [],
+    "musicStyles": [
+      "Metal"
+    ],
     "eventFormat": "unverified",
     "startTimeKind": "listed",
     "startsAt": "2026-10-24T19:00:00-07:00",
@@ -3068,7 +3089,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
     "source": "Dante's",
     "url": "https://www.danteslive.com/tm-event/havok-with-hellripper-slackjaw-xoth/",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-21",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -3092,7 +3113,9 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "dantes",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
+    "classificationSourceUrl": "https://www.ticketweb.com/event/havok-with-slackjaw-xoth-dantes-tickets/15036603?pl=dante"
   },
   {
     "id": "auto-no-fun-2026-10-24-ef8142a0e377",
@@ -7586,9 +7609,9 @@ window.SHOWS_EVENTS = [
     "id": "auto-hawthorne-theatre-2026-10-31-c28173cd3bfa",
     "title": "Blade Rave",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Source-title Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
@@ -7605,7 +7628,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
     "source": "Hawthorne Theatre",
     "url": "https://hawthornetheatre.com/event/blade-rave-3/hawthorne-theatre/portland-oregon/",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-21",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -7629,7 +7652,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Event-specific source wording"
   },
   {
     "id": "auto-mississippi-polaris-2026-10-31-23bb2bdf8c26",
@@ -7935,9 +7959,9 @@ window.SHOWS_EVENTS = [
     "id": "auto-mississippi-polaris-2026-11-01-a968ce57836d",
     "title": "SOLD OUT: Lime Garden",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
@@ -7955,7 +7979,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Queen Rodeo",
     "source": "Mississippi Studios / Polaris Hall",
     "url": "https://www.etix.com/ticket/p/95590751/sold-outlime-garden-portland-mississippi-studios",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-22",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -7979,7 +8003,9 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
+    "classificationSourceUrl": "https://limegarden.bandcamp.com/"
   },
   {
     "id": "moda-the-smashing-pumpkins-rats-in-a-cage-tour-2026-11-01",
@@ -8180,9 +8206,9 @@ window.SHOWS_EVENTS = [
     "id": "auto-mississippi-polaris-2026-11-02-c5680f571460",
     "title": "Mdou Moctar (Solo)",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
@@ -8200,7 +8226,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Plankton Wat",
     "source": "Mississippi Studios / Polaris Hall",
     "url": "https://www.etix.com/ticket/p/57401268/mdou-moctar-solo-portland-polaris-hall",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-10-22",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -8224,7 +8250,9 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
+    "classificationSourceUrl": "https://www.mdoumoctar.com/tour"
   },
   {
     "id": "revolution-slothrust-with-um-jennifer-2026-11-02",

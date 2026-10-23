@@ -58,7 +58,7 @@ function parseDetail(html,url){
   return {hold:"Source timestamp disagrees with Portland timezone/DST",title,url:primary};
  if(e.url&&safeUrl(e.url)!==primary)return {hold:"Event structured URL conflicts with original page",title,url:primary};
  const artwork=eventArtworkFromHtml(html,primary);
- return {title,venue:"Holocene",fullUrl:primary,startDate:date.toISOString(),sourceVerifiedMusic:/\b(concert|punk|goth|post-punk|darkwave|dj)\b/i.test(title),
+ return {title,venue:"Holocene",fullUrl:primary,startDate:date.toISOString(),sourceVerifiedMusic:/\b(concert|punk|goth|post-punk|darkwave|dj)\b/i.test(title),sourceEventType:String(e["@type"]||"").split(",").find(v=>/^(?:MusicEvent|ComedyEvent)$/i.test(v.trim()))?.trim()||null,
   timeEvidence:"Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start",
   description:"Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
   ...(artwork?{artwork}:{})};

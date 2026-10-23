@@ -25,7 +25,7 @@ assert.equal(e.startsAt,"2026-11-02T20:00:00-08:00");
 assert.equal(e.startTimeKind,"listed");
 assert.equal(e.free,null);
 assert.equal(e.age,"Not published");
-assert.deepEqual(e.musicStyles,[]);
+assert.deepEqual(e.musicStyles,["Metal"],"Explicit metal wording in the original event title is valid source evidence");
 assert(!e.artwork);
 const blocked=extract({...item,title:"A live concert bill",startDate:Date.parse("2026-11-14T04:00:00Z")},source,now);
 assert.equal(blocked.hold?.startsWith("Historical source conflict"),true);

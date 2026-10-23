@@ -28,6 +28,8 @@ jobs:
         run: |
           node --check scripts/priority-importers.js
           node tests/priority-importers.js
+          node --check scripts/event-classification.js
+          node tests/event-classification.js
           node --check scripts/hosted-venue-importers.js
           node tests/hosted-venue-importers.js
           node --check scripts/dantes-importer.js
