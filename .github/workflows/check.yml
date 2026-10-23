@@ -62,11 +62,5 @@ jobs:
 
 
 
-      - name: Inspect official Mississippi and Holocene event listings (temporary read-only)
-        run: node scripts/probe-indie-layout.js
 
-      - name: Verify Mississippi and Polaris original venue cards (temporary read-only)
-        run: node scripts/probe-mississippi.js
 
-      - name: Verify official Holocene event detail schema (temporary live probe)
-        run: node scripts/probe-holocene.js
