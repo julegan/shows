@@ -23,7 +23,7 @@ function around(s,word){const i=s.toLowerCase().indexOf(word.toLowerCase());retu
     const info=candidates.map(m=>{try{const x=JSON.parse(decode(m[1]));const keys=Object.keys(x);const result=Object.entries(x).filter(([,v])=>Array.isArray(v)).map(([k,v])=>({key:k,count:v.length,sample:v[0]}));return {length:m[1].length,keys,arrays:result}}catch(e){return {length:m[1].length,error:String(e),head:m[1].slice(0,150)}}});
     const i=body.indexOf("&quot;google_event_id&quot;"),open=body.lastIndexOf("<",i),close=body.indexOf(">",i);
     const near=body.slice(Math.max(0,open),Math.min(close,i+400));
-    console.log(JSON.stringify({id:"starday-settings",attributes:matches.length,candidates:info.slice(0,3),nearestTag:{open,close,length:near.length,head:near.slice(0,700),tail:near.slice(-250)}}));
+    console.log(JSON.stringify({id:"starday-settings",attributes:matches.length,candidates:info.slice(0,3),nearestTag:{open,close,length:near.length,head:near.slice(0,1750),tail:near.slice(-250)}}));
    }
    if(t.json){
     const o=JSON.parse(body);
