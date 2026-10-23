@@ -215,6 +215,38 @@
       "reason": "Confirm current venue calendar feed."
     },
     {
+      "id": "mississippi-polaris",
+      "name": "Mississippi Studios / Polaris Hall",
+      "venue": null,
+      "status": "pilot-enabled",
+      "priority": "underground-music",
+      "type": "multi-venue-primary",
+      "reason": "Original shared venue calendar with explicit room ids 16896 Mississippi and 16900 Polaris, full weekday/date/year, source showtimes, Etix tickets and original event flyer attribution. Exact room identity required.",
+      "url": "https://mississippistudios.com/calendar",
+      "baseUrl": "https://mississippistudios.com",
+      "adapter": "mississippi-polaris-html",
+      "addresses": {
+        "Mississippi Studios": "3939 N Mississippi Ave, Portland, OR 97227",
+        "Polaris Hall": "635 N Killingsworth Ct, Portland, OR 97217"
+      },
+      "enabledReason": "Live GitHub-runner source probe 39886101608 found 30 official original show cards, 29 verified: 17 Mississippi Studios and 12 Polaris Hall, with one offsite/room conflict held. Review-only events."
+    },
+    {
+      "id": "holocene",
+      "name": "Holocene",
+      "venue": "Holocene",
+      "venueRegistryId": "holocene",
+      "status": "pilot-enabled",
+      "priority": "underground-music",
+      "url": "https://www.holocene.org/events/",
+      "baseUrl": "https://www.holocene.org",
+      "adapter": "holocene-event-html",
+      "address": "1001 SE Morrison St, Portland, OR 97214",
+      "neighborhood": "Buckman",
+      "reason": "Venue-specific event details provide structured Event starts with year and Pacific timezone and explicit venue identity; note the published time may be doors not performance; held or canceled events stay out of automatic proposals.",
+      "enabledReason": "Original venue read-only probe 39886605096 examined 49 official Holocene event pages, validating 43 dated Holocene events, holding 6 without the expected verified venue identity. Review-only."
+    },
+    {
       "id": "no-fun",
       "name": "No Fun",
       "status": "paused-secondary",

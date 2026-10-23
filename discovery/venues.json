@@ -215,28 +215,28 @@
       "id": "mississippi",
       "name": "Mississippi Studios",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://mississippistudios.com/calendar",
       "aliases": [],
-      "notes": "Accessible official calendar with showtimes and event images"
+      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries."
     },
     {
       "id": "polaris-hall",
       "name": "Polaris Hall",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://mississippistudios.com/calendar",
       "aliases": [],
-      "notes": "Shares official listings with Mississippi Studios; keep venue identity distinct"
+      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries."
     },
     {
       "id": "holocene",
       "name": "Holocene",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.holocene.org/events/",
       "aliases": [],
-      "notes": "Music and dance events; find official dated feed"
+      "notes": "Live schema verification 43 of 49 original pages, six uncertain locations held; event start may refer to doors, editorial review required."
     },
     {
       "id": "revolution-hall",

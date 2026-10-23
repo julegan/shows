@@ -11,6 +11,8 @@ const coffin=require("./coffin-venuepilot");
 const wonder=require("./wonder-importer");
 const revolution=require("./revolution-importer");
 const crystal=require("./crystal-importer");
+const indie=require("./mississippi-polaris-importer");
+const holocene=require("./holocene-importer");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -53,6 +55,8 @@ function urlOf(item,src){
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
   if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
+  if(src.adapter==="mississippi-polaris-html")return indie.ticketUrl(u.href,item.venue);
+  if(src.adapter==="holocene-event-html")return holocene.safeUrl(u.href);
   if(src.adapter==="revolution-events-html"){
    const room=item.venue==="Revolution Hall"?"revolution-hall":item.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
    return room?revolution.validatedTicket(u.href,room)?.url||null:null;
@@ -139,21 +143,23 @@ function reconcile(existing,records){
  // Wonder can schedule separate early/late performances by the same artist.
  // Do not discard independent, first-party, explicitly timed listings;
  // all other same-venue/date conflicts remain held for editorial comparison.
- const wonderSeparateShows=(a,b)=>a.venue==="Wonder Ballroom"&&b.venue==="Wonder Ballroom"
-  &&a.discovery?.sourceId==="wonder-ballroom"&&b.discovery?.sourceId==="wonder-ballroom"
-  &&a.startTimeKind==="listed"&&b.startTimeKind==="listed"
-  &&a.startsAt!==b.startsAt&&a.url!==b.url;
+ const distinctTimedVenueShows=(a,b)=>{
+  if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
+  const source=a.discovery?.sourceId;
+  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris"].includes(source)
+    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)));
+ };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(e.discovery?.sourceId==="wonder-ballroom"?e.startsAt.slice(11,16):"");
-  if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!wonderSeparateShows(v,e)))){
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
+  if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
    skipped.push({skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
    held.push({hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
-  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!wonderSeparateShows(v,e))){
+  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
    held.push({hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   accepted.push(e);seen.add(key);
@@ -167,13 +173,31 @@ async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
- if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
  if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
  if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source,localDay(new Date()));
+ if(source.adapter==="mississippi-polaris-html")return indie.parseMississippi(body,source);
+ if(source.adapter==="holocene-event-html"){
+  const original=holocene.links(body),rows=[];
+  for(let i=0;i<original.length;i+=4){
+   const found=await Promise.all(original.slice(i,i+4).map(async link=>{
+    try{
+     const response=await fetch(link,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},redirect:"error",signal:AbortSignal.timeout(14000)});
+     if(!response.ok)return {hold:"Original Holocene detail HTTP "+response.status,url:link};
+     if(!response.headers.get("content-type")?.includes("text/html"))return {hold:"Original Holocene page is not HTML",url:link};
+     const html=await response.text();if(html.length>1300000)return {hold:"Holocene event detail too large",url:link};
+     return holocene.parseDetail(html,link);
+    }catch(e){return {hold:"Official Holocene detail fetch failed: "+String(e.message||e),url:link};}
+   }));
+   rows.push(...found);
+  }
+  if(!rows.some(x=>x.startDate))throw Error("Holocene venue events lack verified Pacific dated source schema");
+  return rows;
+ }
  if(source.adapter==="crystal-official-html"){
   const visited=new Set(),queue=[{url:source.url,html:body}],eventLinks=new Set();
   // McMenamins' independent Crystal site, not the multivenue corporate calendar.
