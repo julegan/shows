@@ -16,7 +16,12 @@ const cut=(html,i)=>html.slice(Math.max(0,i-1100),i+1250).replace(/\s+/g," ").sl
    const contexts={};
    for(const needle of site.needles){const index=html.toLowerCase().indexOf(needle.toLowerCase());if(index>=0)contexts[needle]=cut(html,index)}
    const links=[...new Set([...html.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)].map(x=>x[1]).filter(x=>/etix\.com\/ticket\/p|holocene\.org\/event\/|mississippistudios\.com\/show/i.test(x)))].slice(0,7);
-   console.log(JSON.stringify({id:site.id,bytes:html.length,links,contexts}));
+   const dateSignals=site.id==="holocene-detail"?{
+    fullYearEventStrings:[...html.matchAll(/2026[-\/](?:10|11|12)[-\/]\d\d/g)].slice(0,12).map(x=>({raw:x[0],near:cut(html,x.index).slice(0,260)})),
+    eventAttrs:[...html.matchAll(/(?:data-[a-z-]*(?:date|start|time)|(?:eventstart|rhp[_-]start)[-_a-z]*)=["'][^"']+["']/gi)].slice(0,22).map(x=>x[0]),
+    schemaTypes:[...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(m=>{try{let j=JSON.parse(m[1]);return [j].flatMap(v=>v["@graph"]||[v]).map(v=>({type:v["@type"],startDate:v.startDate,location:v.location}))}catch(e){return []}}).slice(0,9)
+   }:null;
+   console.log(JSON.stringify({id:site.id,bytes:html.length,links,contexts,dateSignals}));
   }catch(e){console.log(JSON.stringify({id:site.id,error:String(e.message||e)}))}
  }
 })().catch(e=>{console.error(e);process.exitCode=1});
