@@ -38,4 +38,8 @@ const now=new Date("2026-10-21T20:00:00-07:00");
 const rows=parsed.map(x=>extract(x,{...src,adapter:"mississippi-polaris-html",name:"Mississippi / Polaris",address:null,neighborhood:"Portland"},now));
 assert(rows.every(x=>x.event),"Both independent rooms produce review candidates");
 assert.equal(reconcile([],rows).accepted.length,2);
+const early=rows[0].event;
+const late={...early,id:early.id+"-late",title:early.title+" (Late)",startsAt:"2026-10-23T22:00:00-07:00",url:"https://www.etix.com/ticket/p/11111111/late-show-portland-mississippi-studios"};
+assert.equal(reconcile([],[{event:early},{event:late}]).accepted.length,2,"Distinct ticketed early and late Mississippi performances can coexist");
+assert.equal(reconcile([],[{event:early},{event:{...late,url:early.url}}]).accepted.length,1,"Shared ticket URL must not bypass collision holds");
 console.log("PASS — Original Mississippi and Polaris event room ids, original Etix URL, date/weekday, showtime, cancellation, provenance and dual-room intake");
