@@ -233,10 +233,10 @@
       "id": "holocene",
       "name": "Holocene",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.holocene.org/events/",
       "aliases": [],
-      "notes": "Music and dance events; find official dated feed"
+      "notes": "Live schema verification 43 of 49 original pages, six uncertain locations held; event start may refer to doors, editorial review required."
     },
     {
       "id": "revolution-hall",
