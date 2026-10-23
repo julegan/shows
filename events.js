@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-22",
   "coverageThrough": "2027-01-22",
-  "totalOccurrences": 408,
-  "addedOccurrences": 5,
-  "batchId": "auto-discovery-2026-10-22-10",
+  "totalOccurrences": 470,
+  "addedOccurrences": 62,
+  "batchId": "auto-discovery-2026-10-22-11",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -40,11 +40,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-21-9",
       "addedOccurrences": 132
+    },
+    {
+      "batchId": "auto-discovery-2026-10-22-10",
+      "addedOccurrences": 5
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 188
+  "musicOccurrences": 197
 };
 window.SHOWS_EVENTS = [
   {
@@ -1708,6 +1712,56 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-22T19:00:00-07:00"
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-22-26b6abfbb29d",
+    "title": "The Fourth Wall",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: girlgoyle, Kitchen Congregation",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/97738010/the-fourth-wall-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/97738010/the-fourth-wall-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/01ba4a379364a7f763b187ee65253105.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-10-22-8c704176bf74",
     "title": "JETTIZON with Rage Against The Regime (RATM tribute), & Bria Damage",
     "subtitle": "Source-discovered venue event · details need review",
@@ -1828,6 +1882,56 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-holocene-2026-10-22-e0b1ea741f49",
+    "title": "CRIMEWAVE: A GOTH, POST-PUNK, & DARKWAVE PARTY – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-22T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/crimewave-a-goth-post-punk-darkwave-party-21-2/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/crimewave-a-goth-post-punk-darkwave-party-21-2/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/crimewave-a-goth-post-punk-darkwave-party-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/crimewave-a-goth-post-punk-darkwave-party-21-2/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -2489,6 +2593,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-23-8752012c83e9",
+    "title": "Bedouine",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-23T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Other Delights",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/62650540/bedouine-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/62650540/bedouine-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/3ef7d70ebe6445d23efe5c11f736cb6c.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-10-23-4100e43432ed",
     "title": "EMO VS. POP-PUNK: Myspace Music Video Party",
     "subtitle": "Source-discovered venue event · details need review",
@@ -2535,6 +2689,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-10-23-e26a4db88fbc",
+    "title": "SORRY FOR PARTY ROCKING HALLOWEEN: (2010-2015 Pop & EDM All Night Long!) – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-23T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/sorry-for-party-rocking-halloween-2010-2015-pop-edm-all-night-long-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/sorry-for-party-rocking-halloween-2010-2015-pop-edm-all-night-long-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/sorry-for-party-rocking-halloween-2010-2015-pop-edm-all-night-long-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/sorry-for-party-rocking-halloween-2010-2015-pop-edm-all-night-long-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-23-d1e8aaa2f300",
+    "title": "Tom Hamilton Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-23T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Street Nights",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/34320377/tom-hamilton-band-portland-mississippi-studios",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/34320377/tom-hamilton-band-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/68caff25e50ae2c4523af2303dc3bbc3.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -2703,6 +2957,56 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "saturday-market-2026"
+  },
+  {
+    "id": "auto-holocene-2026-10-24-fbd8e8f1e3a2",
+    "title": "School of Rock’s Halloween Fright Fest – EARLY EVENT – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T12:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/school-of-rocks-halloween-fright-fest-early-event-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/school-of-rocks-halloween-fright-fest-early-event-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/school-of-rocks-halloween-fright-fest-early-event-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/school-of-rocks-halloween-fright-fest-early-event-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "draw-adx",
@@ -3186,6 +3490,106 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-24-3c2b9ca29b08",
+    "title": "Laura Veirs",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Karl Blau",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/42234604/laura-veirs-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/42234604/laura-veirs-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/16918721e869f3b78651e6fbc3021e0f.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-24-410ffd8e4279",
+    "title": "Marie Faustin",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Creme Brulee",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/38286596/marie-faustin-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/38286596/marie-faustin-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/89a1aaae278d0d64ba9949815e67eaeb.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "kenton-club-weird-rainbow-little-hexes-heirloom-monsters-mask-appeal-2026-10-24",
     "title": "Weird Rainbow + Little Hexes + Heirloom Monsters + Mask Appeal",
     "subtitle": "Rock · live bill",
@@ -3445,6 +3849,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-25-12a1f9327d4e",
+    "title": "Griffin House",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/33620542/griffin-house-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/33620542/griffin-house-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f05f8dcc1d5786002efc9b50fe992a26.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "twilight-cafe-and-bar-houkago-grind-time-with-kostnateni-biology-skitzotoxin-2026-10-25",
     "title": "Houkago Grind Time with Kostnateni, Biology, Skitzotoxin",
     "subtitle": "Grindcore, Goregrind, Metal · live bill",
@@ -3554,6 +4008,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-25-ed9d20bc99b2",
+    "title": "SOLD OUT: Freak Slug",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Mamalarky",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/74259704/sold-outfreak-slug-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/74259704/sold-outfreak-slug-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1e19843210a73c32a7289959d136c6ac.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -4055,6 +4559,106 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-26T19:30:00-07:00"
   },
   {
+    "id": "auto-holocene-2026-10-26-53191e32d6da",
+    "title": "Stanley Simmons – w/ PrettyUgly – All Ages!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/stanley-simmons-w-prettyugly-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/stanley-simmons-w-prettyugly-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/stanley-simmons-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/stanley-simmons-w-prettyugly-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-26-bf066cf84288",
+    "title": "Twenty years of We Are Scientists - Celebrating the 20th Anniversary of 'With Love and Squalor'",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Sean McVerry",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/78844468/twenty-years-of-we-are-scientists-celebrating-the-20th-anniversary-of-with-love-and-squalor-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/78844468/twenty-years-of-we-are-scientists-celebrating-the-20th-anniversary-of-with-love-and-squalor-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c4c80d33e0629fffef2d2a24e908ab0c.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-10-26-b0cc4a3c73af",
     "title": "KARAOKE FROM HELL",
     "subtitle": "Source-discovered venue event · details need review",
@@ -4517,6 +5121,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion"
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-27-c6c730155fc9",
+    "title": "The Tubs",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Touch Girl Apple Blossom",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/67799493/the-tubs-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/67799493/the-tubs-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/576a6047ff57d3f3d8a4f51a2389a15f.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-27-ddf267d8f171",
+    "title": "Weatherday: Hornet Disaster Tour 2026",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Yudai, Jean Wilder",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/87760793/weatherdayhornet-disaster-tour-2026-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/87760793/weatherdayhornet-disaster-tour-2026-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/af97fc09f05c10736e00ad0f841a7f26.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "shemanski-farmers-2026-10-28",
     "title": "Shemanski Park Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -4682,6 +5386,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-28-2c11d05483d5",
+    "title": "SOLD OUT: Wednesday Night Special: Kyle Kinane (Early)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Zac Toscani",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/68850278/sold-outwednesday-night-specialkyle-kinane-early-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/68850278/sold-outwednesday-night-specialkyle-kinane-early-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ae9285c4605ceab75333b530306792fe.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "hawthorne-ho99o9-2026-10-28",
@@ -4922,6 +5676,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-28-089ed3d5aa00",
+    "title": "SOLD OUT: Margo Cilker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Kevin Carducci",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/56213680/sold-outmargo-cilker-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/56213680/sold-outmargo-cilker-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/91ed4b744cb2ed23e6c0c45377caf545.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-team-dresch-with-heavens-to-betsy-altar-girl-2026-10-28",
     "title": "Team Dresch with heavens to betsy & Altar Girl",
     "subtitle": "Live show · Punk, Rock",
@@ -4967,6 +5771,106 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-holocene-2026-10-28-44639ac94e0f",
+    "title": "Eliot Lipp (DJ Set) w/Jason Huber (of Cherub) DJ Set- 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/eliot-lipp-dj-set-w-jason-huber-of-cherub-dj-set-21/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/eliot-lipp-dj-set-w-jason-huber-of-cherub-dj-set-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/eliot-lipp-dj-set-w-jason-huber-of-cherub-dj-set-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/eliot-lipp-dj-set-w-jason-huber-of-cherub-dj-set-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-28-45aac570c332",
+    "title": "SOLD OUT: Wednesday Night Special: Kyle Kinane (Late)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T21:30:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Zac Toscani",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/87137957/sold-outwednesday-night-specialkyle-kinane-late-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/87137957/sold-outwednesday-night-specialkyle-kinane-late-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ae9285c4605ceab75333b530306792fe.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-black-water-2026-10-29-19a3a2bc3b15",
@@ -5269,6 +6173,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-10-29-4bee065a928f",
+    "title": "Nate Varrone \"Interesting Perspectives\" Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Robby Sherman",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/61875036/nate-varrone-interesting-perspectivestour-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/61875036/nate-varrone-interesting-perspectivestour-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c59367952cd9150315783bf868154f32.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-10-29-33ab862c164a",
     "title": "Rebecca Black",
     "subtitle": "Source-discovered venue event · details need review",
@@ -5314,6 +6268,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-29-de341d9b7b46",
+    "title": "SOLD OUT: Olive Klug",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Frail Talk",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/55182257/sold-outolive-klug-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/55182257/sold-outolive-klug-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1366facdd9ceeb938785ff9a239cdbdc.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -5415,6 +6419,56 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-holocene-2026-10-29-f0058ec778ca",
+    "title": "HARRYWEEN – Harry Styles Halloween Dance Night – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/harryween-harry-styles-halloween-dance-night-21-2/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/harryween-harry-styles-halloween-dance-night-21-2/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/harryween-harry-styles-halloween-dance-night-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/harryween-harry-styles-halloween-dance-night-21-2/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -5906,6 +6960,156 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-10-30-8c3e7f334f17",
+    "title": "SNAP! ’90s Dance Party: WITCHES BALL – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/snap-90s-dance-party-witches-ball-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/snap-90s-dance-party-witches-ball-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/snap-90s-dance-party-witches-ball-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/snap-90s-dance-party-witches-ball-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-30-42ddd1a1d925",
+    "title": "SOLD OUT: Gilla Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: PISS",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/80447770/sold-outgilla-band-portland-mississippi-studios",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/80447770/sold-outgilla-band-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f7b43c06fda3c75d3022e38210eec0b7.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-30-7fe43583f2b1",
+    "title": "The Wldlfe",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Landon Conrath, Blaize Jenkins",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/57537202/the-wldlfe-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/57537202/the-wldlfe-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6585b2b2b9642dff9cd1f4e89b655572.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-10-31-34fe20865aba",
     "title": "THE MISFITS / MENACE /SAXON / RIP / RUDIMENTARY PENI + COSTUME CONTEST & DANCE PARTY",
     "subtitle": "Source-discovered venue event · details need review",
@@ -6329,6 +7533,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-10-31-15c983d66f91",
+    "title": "BETTY: A Queer Dance Party (HALLOWEEN EDITION) – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/betty-a-queer-dance-party-halloween-edition-21-2/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/betty-a-queer-dance-party-halloween-edition-21-2/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/betty-a-queer-dance-party-halloween-edition-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/betty-a-queer-dance-party-halloween-edition-21-2/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-10-31-c28173cd3bfa",
     "title": "Blade Rave",
     "subtitle": "Source-discovered venue event · details need review",
@@ -6374,6 +7628,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-10-31-23bb2bdf8c26",
+    "title": "Katie Pruitt - Fools For The Fleeting Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Olivia Barton",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/64616406/katie-pruitt-fools-for-the-fleeting-tour-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/64616406/katie-pruitt-fools-for-the-fleeting-tour-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e0f62d0b0433921887c22101d14be9ca.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -6628,6 +7932,56 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-01T19:00:00-08:00"
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-01-a968ce57836d",
+    "title": "SOLD OUT: Lime Garden",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Queen Rodeo",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/95590751/sold-outlime-garden-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/95590751/sold-outlime-garden-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e08886c4bdfd9d1a6a5ea215240592a7.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "moda-the-smashing-pumpkins-rats-in-a-cage-tour-2026-11-01",
     "title": "The Smashing Pumpkins — Rats in a Cage Tour",
     "subtitle": "Live show · Rock",
@@ -6823,6 +8177,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-02-c5680f571460",
+    "title": "Mdou Moctar (Solo)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Plankton Wat",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/57401268/mdou-moctar-solo-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/57401268/mdou-moctar-solo-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6c9c025a6ae702efbf93d70f9c4c375a.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-slothrust-with-um-jennifer-2026-11-02",
     "title": "Slothrust with Um, Jennifer?",
     "subtitle": "Live show · Rock",
@@ -6866,6 +8270,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-02-de8d7b55fa34",
+    "title": "SOLD OUT: Big Star Quintet (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/85293752/sold-outbig-star-quintet-night-1-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/85293752/sold-outbig-star-quintet-night-1-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5ec6960b54deed9034c3d3e860d4c647.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-dantes-2026-11-02-bd335ff94d16",
@@ -7111,6 +8565,106 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-03-69e7f27ec34b",
+    "title": "SOLD OUT: Big Star Quintet (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/35949788/sold-outbig-star-quintet-night-2-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/35949788/sold-outbig-star-quintet-night-2-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5ec6960b54deed9034c3d3e860d4c647.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-03-c946609f25d0",
+    "title": "Worst Party Ever / Equipment",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Ogbert the Nerd, Swiss Army Wife",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/69458380/worst-party-ever-equipment-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/69458380/worst-party-ever-equipment-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6df63e4c823785aadd9a983889676e5b.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "riso-2026-11-04",
     "title": "Risograph Basics",
     "subtitle": "Beginner-friendly printing and experimentation",
@@ -7348,6 +8902,156 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-04-79f0304ceff1",
+    "title": "Dylan Thom – w/ horse laugh – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/dylan-thom-w-horse-laugh-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/dylan-thom-w-horse-laugh-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/dylan-thom-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/dylan-thom-w-horse-laugh-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-04-acf641e51f20",
+    "title": "IAN SWEET",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Luella",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/91356970/ian-sweet-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/91356970/ian-sweet-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b1e7cbfbc2cf2c01bed1fb60910a9c64.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-04-41c6d2bc3650",
+    "title": "Improvement Movement - Your Perfect Real LIVE '26",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Adron, Languid Machinations (DJ Set)",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/40491423/improvement-movement-your-perfect-real-live-26-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/40491423/improvement-movement-your-perfect-real-live-26-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/597d1102eaf82f8bddc8664a8fec5bd3.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -7834,6 +9538,106 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-05T19:30:00-08:00"
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-05-8e325aeca8c7",
+    "title": "Jeffrey Martin",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Sam Weber",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/99319489/jeffrey-martin-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/99319489/jeffrey-martin-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f976b247abe83687f3333c98da092aa3.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-05-3e46e4d72052",
+    "title": "LUCY (Cooper B. Handy)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/72119392/lucy-cooper-bhandy-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/72119392/lucy-cooper-bhandy-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/19774c07e9df8e038a346781c4222486.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-05-4e8dc0b155ff",
     "title": "SOLD OUT: Brandi Carlile: Burn The Setlist (The All Request Tour)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -8032,6 +9836,56 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-05T19:30:00-08:00"
   },
   {
+    "id": "auto-holocene-2026-11-05-2aa7a67cc5aa",
+    "title": "DOSS (DJ Set) + CFCF (DJ Set) – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/doss-dj-set-cfcf-dj-set-21/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/doss-dj-set-cfcf-dj-set-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/doss-dj-set-cfcf-dj-set-21-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/doss-dj-set-cfcf-dj-set-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-11-06-f3fb577f41c7",
     "title": "First Thursday Crafts & Cocktails",
     "subtitle": "Source-discovered venue event · details need review",
@@ -8078,6 +9932,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-06-008ae222b709",
+    "title": "Shanghai Quitian – w/ Dabda – EARLY SHOW! – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/shanghai-quitian-w-dabda-early-show-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/shanghai-quitian-w-dabda-early-show-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/shanghai-quitian-w-dabda-early-show-all-ages-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/shanghai-quitian-w-dabda-early-show-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -8220,6 +10124,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-06-902ed9b196fb",
+    "title": "Murray Hill - Showbiz! The Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Stevie Phoenix",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/36567432/murray-hill-showbizthe-tour-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/36567432/murray-hill-showbizthe-tour-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e9f60bdf678a776f3adc5148de929280.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -8460,6 +10414,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-06-58131168b328",
+    "title": "SOLD OUT: mary in the junkyard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Lefty Parker",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/75383831/sold-outmary-in-the-junkyard-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/75383831/sold-outmary-in-the-junkyard-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/06e1c13dab2301a155ccf8a6aa36790f.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-11-07-6e50c45570cc",
     "title": "HABAK / MALAKILI / VERDANT VORCE / LAUGHTER",
     "subtitle": "Source-discovered venue event · details need review",
@@ -8622,6 +10626,56 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "saturday-market-2026"
+  },
+  {
+    "id": "auto-holocene-2026-11-07-cf69b9516617",
+    "title": "RHYTHM IS A DANCER: An early evening 90s Dance Party hosted by SNAP! – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap-21-2/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap-21-2/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap-21-2/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "high-limit-room-roman-candle-postdrome-asthelifeleavesyoureyes-xcaliberx-2026-11-07",
@@ -9389,6 +11443,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-08-2369909dd89e",
+    "title": "SOLD OUT – AZ CHIKE – w/ DJ Scout – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/sold-out-az-chike-w-dj-scout-21/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/sold-out-az-chike-w-dj-scout-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/az-chike-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/sold-out-az-chike-w-dj-scout-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-sparta-with-public-opinion-show-bar-2026-11-08",
     "title": "Sparta with Public Opinion — Show Bar",
     "subtitle": "Live show · Hardcore, Rock",
@@ -9722,6 +11826,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-09-401c71bdfe86",
+    "title": "Jake Minch – Getting Big Tour w/Alix Page – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/jake-minch-getting-big-tour-w-alix-page-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/jake-minch-getting-big-tour-w-alix-page-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/jake-minch-getting-big-tour-w-alix-page-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/jake-minch-getting-big-tour-w-alix-page-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-09-6b51afc78aff",
     "title": "KARAOKE FROM HELL",
     "subtitle": "Source-discovered venue event · details need review",
@@ -10006,6 +12160,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-holocene-2026-11-10-6e14f0724ee9",
+    "title": "Sassy 009 – w/ Madi Gaines – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/sassy-009-w-madi-gaines-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/sassy-009-w-madi-gaines-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/sassy-009-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/sassy-009-w-madi-gaines-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-11-b24bd9bb8279",
     "title": "A STRANGE BIRD with Vega Black, Zane Thomas & Bikehouse",
     "subtitle": "Source-discovered venue event · details need review",
@@ -10200,6 +12404,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-11-e9fe7ed849e6",
+    "title": "BIEBER AND A BEAT: A JUSTIN BIEBER NIGHT – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/bieber-and-a-beat-a-justin-bieber-night-21-3/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/bieber-and-a-beat-a-justin-bieber-night-21-3/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/bieber-and-a-beat-a-justin-bieber-night-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/bieber-and-a-beat-a-justin-bieber-night-21-3/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-11-12-15264a75f6d3",
     "title": "Allison Russell",
     "subtitle": "Source-discovered venue event · details need review",
@@ -10295,6 +12549,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-12-aac70a913201",
+    "title": "CITY POP! Japanese Boogie, J-jazz, & New Wave Night – w/ SEASIDE.FM + JOE BALL – w/ special guest Reiko Takahashi! – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/city-pop-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball-w-special-guest-reiko-takahashi-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/city-pop-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball-w-special-guest-reiko-takahashi-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/city-pop-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball-w-special-guest-reiko-takahashi-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/city-pop-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball-w-special-guest-reiko-takahashi-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -10665,6 +12969,56 @@ window.SHOWS_EVENTS = [
     "seriesId": "shoot-the-moon-2026"
   },
   {
+    "id": "auto-holocene-2026-11-13-c1dcecfd1eb2",
+    "title": "Party Girl – A Night Of Party Girl Anthems – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/party-girl-a-night-of-party-girl-anthems-21-9/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/party-girl-a-night-of-party-girl-anthems-21-9/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/party-girl-a-night-of-party-girl-anthems-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/party-girl-a-night-of-party-girl-anthems-21-9/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-11-13-9f3f7f60c6fd",
     "title": "SUZY SHEER with Patch +",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10925,6 +13279,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-14-fc61a7a4755d",
+    "title": "Peach Tree Rascals: The Shine4ya Tour – w/ Michael Sneed – EARLY SHOW! – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/peach-tree-rascals-the-shine4ya-tour-w-michael-sneed-early-show-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/peach-tree-rascals-the-shine4ya-tour-w-michael-sneed-early-show-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/peach-tree-rascals-the-shine4ya-tour-early-show-all-ages-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/peach-tree-rascals-the-shine4ya-tour-w-michael-sneed-early-show-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -11416,6 +13820,56 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "lents-farmers-2026"
+  },
+  {
+    "id": "auto-holocene-2026-11-15-340eb3601fc6",
+    "title": "Fleetmac Wood present Chiffon Frenzy (Day Party!) – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T15:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/fleetmac-wood-present-chiffon-frenzy-day-party-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/fleetmac-wood-present-chiffon-frenzy-day-party-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/fleetmac-wood-present-chiffon-frenzy-day-party-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/fleetmac-wood-present-chiffon-frenzy-day-party-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "hawthorne-kingdom-of-giants-2026-11-15",
@@ -12941,6 +15395,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-19-4ac48708684c",
+    "title": "Amtrac @ PROCESS – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/amtrac-process-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/amtrac-process-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/amtrac-process-21-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/amtrac-process-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "bookbinding-nov",
     "title": "Bookbinding Basics with Seltzer Press",
     "subtitle": "Learn four ways to make and bind books and zines",
@@ -13173,6 +15677,55 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-independent-venues"
+  },
+  {
+    "id": "auto-wonder-ballroom-2026-11-20-c50d411e58c3",
+    "title": "Growing Pains",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/growing-pains-2/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/growing-pains-2/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/growing-pains.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/growing-pains-2/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-crystal-ballroom-2026-11-20-a1b9398cecc6",
@@ -15042,6 +17595,106 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-28-25b7213ee4bf",
+    "title": "VROOM VROOM: A Charli XCX Dance Night ft: DJ sets by Mr. Harry & PLUS – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/vroom-vroom-a-charli-xcx-dance-night-ft-dj-sets-by-mr-harry-plus-21-11/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/vroom-vroom-a-charli-xcx-dance-night-ft-dj-sets-by-mr-harry-plus-21-11/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/vroom-vroom-a-charli-xcx-dance-night-ft-dj-sets-by-mr-harry-plus-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/vroom-vroom-a-charli-xcx-dance-night-ft-dj-sets-by-mr-harry-plus-21-11/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-29-f256ffaa8eb2",
+    "title": "Chai & Roses: Disco Tea Dance Party for QTBIPOC & Allies – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/chai-roses-disco-tea-dance-party-for-qtbipoc-allies-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/chai-roses-disco-tea-dance-party-for-qtbipoc-allies-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/chai-roses-disco-tea-dance-party-for-qtbipoc-allies-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/chai-roses-disco-tea-dance-party-for-qtbipoc-allies-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-fair-stand-the-fields-of-france-miguel-mejia-support-tba-2026-11-29",
     "title": "Fair Stand The Fields of France • Miguel Mejia • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -15525,6 +18178,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-02-021e80dd5a92",
+    "title": "Tommy Fleece: Live. Loud. Ultrasonic. Tour – w/ Reserv – All Ages!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/tommy-fleece-live-loud-ultrasonic-tour-w-reserv-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/tommy-fleece-live-loud-ultrasonic-tour-w-reserv-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/tommy-fleece-live-loud-ultrasonic-tour-w-reserv-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/tommy-fleece-live-loud-ultrasonic-tour-w-reserv-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-12-02-cebeec8bef78",
     "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -15793,6 +18496,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-03-1012e72be5f8",
+    "title": "Una Noche De Bienestar ft. Barrio Mestizo – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/una-noche-de-bienestar-ft-barrio-mestizo-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/una-noche-de-bienestar-ft-barrio-mestizo-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/una-noche-de-bienestar-ft-barrio-mestizo-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/una-noche-de-bienestar-ft-barrio-mestizo-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-04-042722267a19",
+    "title": "Renee Christine – EARLY SHOW! – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/renee-christine-early-show-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/renee-christine-early-show-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/renee-christine-early-show-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/renee-christine-early-show-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -16770,6 +19573,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-06-9acf52dd45db",
+    "title": "Jeremiah Chiu – w/ Omari Jazz, DJ Cuica – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/jeremiah-chiu-w-omari-jazz-dj-cuica-21/holocene/portland/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/jeremiah-chiu-w-omari-jazz-dj-cuica-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/jeremiah-chiu-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/jeremiah-chiu-w-omari-jazz-dj-cuica-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-07-1096414ab32f",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17173,6 +20026,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-09-0ca2aea39f38",
+    "title": "Salo // Psychic Guilt // Mourning Service – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/salo-psychic-guilt-mourning-service-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/salo-psychic-guilt-mourning-service-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/salo-psychic-guilt-mourning-service-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/salo-psychic-guilt-mourning-service-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-12-09-9cf3a3fee5c6",
     "title": "Spike and the Gimme Gimmes",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17268,6 +20171,56 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-holocene-2026-12-10-fe011809e484",
+    "title": "daine – w/ Eilish Constance – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/daine-w-eilish-constance-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/daine-w-eilish-constance-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/daine-all-ages-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/daine-w-eilish-constance-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "twilight-cafe-and-bar-ignite-with-year-of-the-cobra-and-guest-2026-12-10",
@@ -18274,6 +21227,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-14-8abaacfadc82",
+    "title": "The Moth StorySLAM: ANYTHING GOES – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/the-moth-storyslam-anything-goes-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/the-moth-storyslam-anything-goes-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/the-moth-storyslam-nine-to-five-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/the-moth-storyslam-anything-goes-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -19292,6 +22295,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-01-02-b28ee40ab6dc",
+    "title": "Jerry Joseph",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/jerry-joseph/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/jerry-joseph/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/10/91/94_Original.jpg?v=4",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/jerry-joseph/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-01-03-7a64550f36b5",
+    "title": "The Hugs // Brites // Tradie – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/the-hugs-brites-tradie-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/the-hugs-brites-tradie-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/the-hugs-brites-tradie-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/the-hugs-brites-tradie-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-22",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
