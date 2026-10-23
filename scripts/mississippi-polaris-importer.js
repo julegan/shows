@@ -7,7 +7,7 @@ const {wallToPacific,time24,artworkCandidate}=require("./priority-importers");
 const MONTHS={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
 const ROOM={
  "Mississippi Studios":{id:"16896",slug:"-portland-mississippi-studios"},
- "Polaris Hall":{id:"UNKNOWN",slug:"-portland-polaris-hall"}
+ "Polaris Hall":{id:"16900",slug:"-portland-polaris-hall"}
 };
 const HOST="https://mississippistudios.com";
 const decode=s=>String(s||"").replace(/&#(?:x([0-9a-f]+)|(\d+));/gi,(_,h,d)=>String.fromCodePoint(parseInt(h||d,h?16:10)))
@@ -56,7 +56,7 @@ function parseMississippi(html,source){
  if(source.id!=="mississippi-polaris"||new URL(source.url).origin!==HOST)throw Error("Unexpected source");
  const raw=String(html||""),start=raw.indexOf('id="full-list"'),end=raw.indexOf('id="compact-list"');
  if(start<0||end<=start)throw Error("Expected official dated full event cards missing");
- const text=raw.slice(start,end),chunks=text.split(/<div class=["']event__item style--standard["']>/i).slice(1);
+ const text=raw.slice(start,end),chunks=text.split(/<div class=["']event__item style--(?:standard|dark)["']>/i).slice(1);
  if(!chunks.length||chunks.length>180)throw Error("Unexpected number of primary event cards");
  const rows=chunks.map(c=>parseCard(c.slice(0,18000),source)),seen=new Set();
  return rows.filter(x=>{if(!x.fullUrl)return true;if(seen.has(x.fullUrl))return false;seen.add(x.fullUrl);return true});
