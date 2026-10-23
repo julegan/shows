@@ -7,7 +7,7 @@ const STYLES=[
  {label:"Post-punk", rx:/\bpost[\s-]?punk\b/i},
  {label:"Hardcore", rx:/\bhardcore(?:\s+punk)?\b/i},
  {label:"Goth & darkwave", rx:/\b(?:goth(?:ic)?|darkwave|coldwave)\b/i},
- {label:"Industrial & EBM",rx:/\b(?:industrial(?:\s+music)?|EBM|electronic body music)\b/i},
+ {label:"Industrial & EBM",rx:/\b(?:industrial\s+(?:music|DJ|night|dance|techno)|EBM|electronic body music)\b/i},
  {label:"Metal",rx:/\b(?:metal|metalcore|deathcore|doom metal|black metal|thrash metal)\b/i},
  {label:"Punk",rx:/\bpunk\b/i},
  {label:"Noise & experimental",rx:/\b(?:noise\s+(?:rock|music|show)|experimental\s+(?:music|sound|rock))\b/i},
