@@ -10,8 +10,8 @@ const STYLES=[
  {label:"Industrial & EBM",rx:/\b(?:industrial(?:\s+music)?|EBM|electronic body music)\b/i},
  {label:"Metal",rx:/\b(?:metal|metalcore|deathcore|doom metal|black metal|thrash metal)\b/i},
  {label:"Punk",rx:/\bpunk\b/i},
- {label:"Noise & experimental",rx:/\b(?:noise(?:\s+(?:rock|music))?|experimental(?:\s+music)?)\b/i},
- {label:"Rock",rx:/\brock(?:\s+(?:music|show|concert|band))?\b/i}
+ {label:"Noise & experimental",rx:/\b(?:noise\s+(?:rock|music|show)|experimental\s+(?:music|sound|rock))\b/i},
+ {label:"Rock",rx:/\b(?:rock\s+(?:music|show|concert|band|night)|rock[ -]?(?:n[ -]?)?roll)\b/i}
 ];
 const NON_MUSIC=/\b(?:trivia|karaoke|open[\s-]?mic|comedy|stand[\s-]?up|bingo|quiz|brunch|screening|movie|film|happy hour|tournament|board games?|game night)\b/i;
 const EVENT_TYPES={
@@ -21,7 +21,7 @@ const EVENT_TYPES={
  Performance:/\b(?:comedy|burlesque|drag show|film screening|movie night|theater performance|improv night|stand[\s-]?up)\b/i,
  Other:/\b(?:trivia|karaoke|bingo|quiz|happy hour|tournament|game night|board game)\b/i
 };
-const MUSIC_CLAIM=/\b(?:live music|live bands?|music show|concert|band(?:s)?(?:\s+performing)?|rock show|gig|record release|album release|DJ(?:\s+set)?|rave)\b/i;
+const MUSIC_CLAIM=/\b(?:live music|live bands?|music show|concert|live bands?|bands?\s+performing|rock show|gig|record release|album release|DJ(?:\s+set)?|rave)\b/i;
 function clean(v){return String(v??"").replace(/<[^>]*>/g," ").replace(/&amp;/g,"&").replace(/\s+/g," ").trim();}
 function eventWords(item){
  // Title and source-specific tags/categories ONLY. Do not mine general venue descriptions.
