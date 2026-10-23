@@ -215,6 +215,22 @@
       "reason": "Confirm current venue calendar feed."
     },
     {
+      "id": "mississippi-polaris",
+      "name": "Mississippi Studios / Polaris Hall",
+      "venue": null,
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "type": "multi-venue-primary",
+      "reason": "Original venue's shared dated calendar publishes separately identified Mississippi Studios (room ID 16896) and Polaris Hall (16900), Etix ticket URLs, doors and showtime. Live importer validation pending.",
+      "url": "https://mississippistudios.com/calendar",
+      "baseUrl": "https://mississippistudios.com",
+      "adapter": "mississippi-polaris-html",
+      "addresses": {
+        "Mississippi Studios": "3939 N Mississippi Ave, Portland, OR 97227",
+        "Polaris Hall": "635 N Killingsworth Ct, Portland, OR 97217"
+      }
+    },
+    {
       "id": "no-fun",
       "name": "No Fun",
       "status": "paused-secondary",
