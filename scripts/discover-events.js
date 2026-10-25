@@ -35,6 +35,12 @@ function localTime(value){
   return [p.year,p.month,p.day].join("-")+"T"+[p.hour,p.minute,p.second].join(":")+m[1]+m[2].padStart(2,"0")+":"+(m[3]||"00");
 }
 const localDay=v=>localTime(v).slice(0,10);
+const DISCOVERY_HORIZON_DAYS=400;
+function discoveryEndDay(now,days=DISCOVERY_HORIZON_DAYS){
+ const end=new Date(localDay(now)+"T12:00:00Z");
+ end.setUTCDate(end.getUTCDate()+days);
+ return end.toISOString().slice(0,10);
+}
 function parseFile(src){
  const m=src.match(/window\.SHOWS_DATASET\s*=\s*(\{[\s\S]*?\});\s*window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/);
  if(!m)throw Error("Cannot parse existing events; refusing overwrite");
@@ -105,7 +111,7 @@ function extract(item,src,now){
   item={...item,...mapped};
  }
  const date=start.slice(0,10);
- if(date<localDay(now)||date>localDay(new Date(now.valueOf()+92*86400000)))return {skip:"Outside review period",title,url};
+ if(date<localDay(now)||date>discoveryEndDay(now))return {skip:"Outside review period",title,url};
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
  const sourceMatch=reviewed.forEvent({url,title,venue:item.venue||src.venue,date});
@@ -383,6 +389,7 @@ async function run(opts={}){
  console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now));
  if(!result.accepted.length)return {...result,errors};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
@@ -394,9 +401,8 @@ async function run(opts={}){
  const output=parsed.prefix+"window.SHOWS_DATASET = "+JSON.stringify(meta,null,2)+";\nwindow.SHOWS_EVENTS = "+JSON.stringify(newEvents,null,2)+";\n";
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
-  fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now));
  }
  return {...result,errors,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
-module.exports={localTime,localDay,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};
+module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};
