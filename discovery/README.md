@@ -4,7 +4,7 @@ The [official venue entertainment page](https://turnturnturnpdx.com/entertainmen
 
 The adapter must additionally validate every detail page's unique event URL, published date, title, venue name, 8 NE Killingsworth location, and `EventScheduled` status before proposing candidates. Published showtime is used only when explicitly labeled `Show:`, normalized in the Portland Pacific timezone across daylight saving changes. Images remain source-attributed external references with `usageApproved:null`, not a blanket copyright license. Event category/genre is not guessed from band names or venue reputation; primary descriptive evidence is required. Multiple performances on one venue date remain distinct when their ticket URLs and start times differ.
 
-**Release gate:** Keep the source `adapter-needed` until a live runner probe exercises all official event-detail validations. Every candidate remains editorial review-only; SHOWS must not auto-publish. This importer does not resolve the separately blocked Coffin Club VenuePilot credential or High Limit Afton feed.
+**Activated:** The official event-detail importer is now `pilot-enabled` following the [successful live GitHub Actions probe](https://github.com/julegan/shows/actions/runs/40171261702): 22 event-specific records verified; 16 new candidate events with official artwork; five already represented and one held by reconciliation. Its output still requires a separate human-reviewed discovery PR. Every candidate remains editorial review-only; SHOWS must not auto-publish. This importer does not resolve the separately blocked Coffin Club VenuePilot credential or High Limit Afton feed.
 
 ## Kenton Club — verified first-party roster (October 2026)
 
