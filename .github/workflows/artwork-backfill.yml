@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       batch:
-        description: "Zero-based group of 35 source pages"
+        description: "Zero-based group of up to 35 upcoming music event pages"
         required: false
         default: "0"
   schedule:
@@ -26,13 +26,27 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           open="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/artwork-"))] | length')"
-          if [ "$open" -gt 0 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; fi
+          if [ "$open" -gt 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Artwork review already pending. Merge or close that review PR before rerunning." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Find official event images
         if: steps.pending.outputs.skip != 'true'
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.batch || github.run_number }}
           ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
         run: node scripts/backfill-artwork.js
+      - name: Show artwork results and gaps
+        if: steps.pending.outputs.skip != 'true'
+        run: cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep artwork review report even when no PR is created
+        if: steps.pending.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: artwork-review-${{ github.run_number }}
+          path: discovery/artwork-backfill-review.md
+          retention-days: 30
+          if-no-files-found: error
       - name: Verify data and tests
         if: steps.pending.outputs.skip != 'true'
         run: |
