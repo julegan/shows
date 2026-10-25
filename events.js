@@ -3262,7 +3262,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-underground-music"
+    "addedIn": "2026-10-17-underground-music",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/dkbce2g7tor007bz16ei.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/466976/Terras-Birthday-Show-w-Trans-Panic-River-City-Ruin-Kids-on-Fire-SEA-The-Immortal-Dub-CVNTS-LA",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-hawthorne-theatre-2026-10-24-942d7b04990a",
@@ -3983,7 +3990,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-25T19:30:00-07:00"
+    "doorsAt": "2026-10-25T19:30:00-07:00",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/8dm673p8znuqbnt4mzn9.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/466370/Houkago-Grind-Time-w-Kostnateni-Biology",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-roseland-2026-10-25-ef4302d60c37",
@@ -5007,6 +5021,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm-event/blitzkid-modern-hel-tour-2026-with-guests/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/96/27/34_Original.jpg?v=7",
+      "sourceUrl": "https://www.danteslive.com/tm-event/blitzkid-modern-hel-tour-2026-with-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -5141,7 +5162,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/09/smush.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/smush/hawthorne-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-mississippi-polaris-2026-10-27-c6c730155fc9",
@@ -5493,7 +5521,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/ho99o9-n8noface-sincerely-the-void.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/ho99o9-n8noface-sincerely___-the-void/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "turn-turn-turn-cormae-new-here-combobox-2026-10-28",
@@ -5595,7 +5630,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Everclear26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/276827-everclear",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "indie-tw-hardcore-halloween-unspeakable-carnage-bottom-blade-burner-phone--2026-10-28",
@@ -6588,6 +6630,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://dazestyle.bandcamp.com/album/not-through-blood"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/pain-of-truth.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/pain-of-truth/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -6683,7 +6732,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Floater2019.jpeg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277822-floater",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-revolution-hall-2026-10-30-ea3017c235f5",
@@ -9226,7 +9282,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/pinhead-gunpowder.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/pinhead-gunpowder/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-twilight-2026-11-04-d4a8b47cc5a5",
@@ -9509,7 +9572,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/06/celebrating-50-years-of-buzzcocks.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/celebrating-50-years-of-buzzcocks/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "turn-turn-turn-carri-n-kids-cherry-cheeks-amy-beth-thee-creeps-2026-11-05",
@@ -9815,6 +9885,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm_genre/hardcore-punk/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/10/94_Original.jpg?v=3",
+      "sourceUrl": "https://www.danteslive.com/tm-event/true-fear-with-resist-la-crucible-of-absolution-oddities/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -12103,6 +12180,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://jonspencer.bandcamp.com/album/songs-of-personal-loss-and-protest-2"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/50/01/73_Original.jpg?v=5",
+      "sourceUrl": "https://www.danteslive.com/tm-event/jon-spencer-with-guest/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -12379,7 +12463,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Nekrogoblikon26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277142-nekrogoblikon",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-11-11-e8a9d50b4b1c",
@@ -12681,6 +12772,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm_genre/hardcore-punk/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/52/44_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/deathtape-with-salt-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -12738,7 +12836,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-12T19:30:00-08:00",
-    "seriesId": "shoot-the-moon-2026"
+    "seriesId": "shoot-the-moon-2026",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/4nfhhersjzoosmmi2ycl.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/467137/Shoot-the-Moon-Fest-Night-1-w-1876-w-Last-Thread-Altar-Girl-Kids-on-Fire",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-black-water-2026-11-13-1b13559da346",
@@ -12835,6 +12940,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://staticdress.bandcamp.com/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/static-dress.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/static-dress/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -12887,6 +12999,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://metalchurchofficial.com/home"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/53/17/93_Original.jpg?v=5",
+      "sourceUrl": "https://www.danteslive.com/tm-event/metal-church-armored-saint-with-livekill/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -12994,7 +13113,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-13T19:30:00-08:00",
-    "seriesId": "shoot-the-moon-2026"
+    "seriesId": "shoot-the-moon-2026",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/397b8jfrvbbwqm1n2zw8.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/466439/Shoot-the-Moon-Fest-Night-2-w-Nox-Novacula-Berzerk-Arcana-Dj-Crash",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-holocene-2026-11-13-c1dcecfd1eb2",
@@ -13610,7 +13736,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-14T19:30:00-08:00",
-    "seriesId": "shoot-the-moon-2026"
+    "seriesId": "shoot-the-moon-2026",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/hqjdaffidhadw5u1lugp.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/466598/Shoot-the-Moon-Fest-Night-3-w-Goddamn-Gallows-King-Sickabilly-Beggars-Canyon-John-Dough-Boys",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "az-th-sutekh-hexen-sin-pavilion-infinexhuma-sam-an-messiah-claimant-2026-11-14",
@@ -13950,6 +14083,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/kingdom-of-giants"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/kingdom-of-giants.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/kingdom-of-giants/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -14220,7 +14360,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-15T19:30:00-08:00",
-    "seriesId": "shoot-the-moon-2026"
+    "seriesId": "shoot-the-moon-2026",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/kvj5v01tpntwynnnq00n.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/467353/Shoot-the-Moon-Fest-Night-4-w-Los-Mal-Hablados-Chencha-Undisputed-World-Champion-Bill-Skasby-Del-Sol",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-wonder-ballroom-2026-11-15-49a11d19b786",
@@ -14763,6 +14910,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.season-of-mist.com/bands/christian-death/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/christian-death.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/christian-death/hawthorne-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -14911,6 +15065,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/comeback-kid"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/00/53/94_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -15214,7 +15375,14 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-19T19:30:00-08:00",
-    "sourceNote": "Hardcore and powerviolence tags describe the verified support act Impermanence; the headliner genre is not inferred."
+    "sourceNote": "Hardcore and powerviolence tags describe the verified support act Impermanence; the headliner genre is not inferred.",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/y9j56ui1sj9y9kfkx8vp.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/466781/Downstem-Album-Release-Show-w-Impermanence-Wastelander-Witch-Finger",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "star-theater-hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard-2026-11-19",
@@ -16139,6 +16307,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.nuclearblast.com/blogs/news/fear-factory-unleashes-machine-driven-new-single-roboticist"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/fear-factory-cybernetic-domination-tour-2026.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/fear-factory-cybernetic-domination-tour-2026/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -16709,6 +16884,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://distantofficial.bandcamp.com/music"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/62/26/83_Original.jpg?v=4",
+      "sourceUrl": "https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -16787,7 +16969,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/boston-manor.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/boston-manor/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "shemanski-farmers-2026-11-25",
@@ -17022,6 +17211,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://hawthornetheatre.com/event-genres/metal-hardcore/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/bodysnatcher-hell-is-here-hell-is-home-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/bodysnatcher-hell-is-here-hell-is-home-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -18008,6 +18204,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://hawthornetheatre.com/event-genres/metal-hardcore/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/amorphis-insomnium.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/amorphis-insomnium/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -18796,7 +18999,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/10/unkle-1.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/unkle/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-crystal-ballroom-2026-12-04-b0fbf2874c43",
@@ -19949,6 +20159,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/miss-may-i"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/miss-may-i-x-born-of-osiris.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/miss-may-i-x-born-of-osiris/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -20001,6 +20218,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.nuclearblast.com/pages/suicide-silence"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/suicide-silence-reminders-of-hell-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/suicide-silence-reminders-of-hell-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -20303,7 +20527,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-12-10T19:30:00-08:00"
+    "doorsAt": "2026-12-10T19:30:00-08:00",
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/db6jgi5o85cvg11qj53c.jpg",
+      "sourceUrl": "https://twilightcafeandbar.com/event/467469/Ignite-w-Year-of-the-Cobra-Guest",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "no-fun-sang-bleu-with-support-tba-2026-12-10",
