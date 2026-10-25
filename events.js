@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-24",
+  "sourceCheckedAt": "2026-10-25",
   "coverageThrough": "2027-05-17",
-  "totalOccurrences": 620,
-  "addedOccurrences": 150,
-  "batchId": "auto-discovery-2026-10-24-14",
+  "totalOccurrences": 646,
+  "addedOccurrences": 26,
+  "batchId": "auto-discovery-2026-10-25-15",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -48,11 +48,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-22-11",
       "addedOccurrences": 62
+    },
+    {
+      "batchId": "auto-discovery-2026-10-24-14",
+      "addedOccurrences": 150
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 220
+  "musicOccurrences": 242
 };
 window.SHOWS_EVENTS = [
   {
@@ -3828,6 +3832,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion"
   },
   {
+    "id": "auto-turn-turn-turn-2026-10-25-7e6887c5357a",
+    "title": "Amy Beth & Thee Creeps + Left of the Dial + Tispur",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-25T15:30:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Sliding Scale Beneft for Worq Together Trans Relocation Fund",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/amy-beth-thee-creeps-left-of-the-dial-tispur-october-25-2026-790447",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/amy-beth-thee-creeps-left-of-the-dial-tispur-october-25-2026-790447",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/790/447/compressed/Untitled_design_%283%29.jpg?1792540342",
+      "sourceUrl": "https://app.opendate.io/e/amy-beth-thee-creeps-left-of-the-dial-tispur-october-25-2026-790447",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-10-25-ebf761635243",
     "title": "El Sobrente & The Remainders",
     "subtitle": "Source-discovered venue event · details need review",
@@ -5222,6 +5277,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-10-27-f51f7f08a069",
+    "title": "Brites + Holy Pinto (WI) + Worse",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/brites-holy-pinto-wi-worse-october-27-2026-755387",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/brites-holy-pinto-wi-worse-october-27-2026-755387",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/755/387/compressed/Screenshot_2026-09-22_at_8.41.36%E2%80%AFPM.jpg?1790134991",
+      "sourceUrl": "https://app.opendate.io/e/brites-holy-pinto-wi-worse-october-27-2026-755387",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -6716,6 +6822,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-10-29-f551aeb50683",
+    "title": "Ramble Tamble (CCR) + Ragged Hounds (Neil Young) + DJ Stone Bunny",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/ramble-tamble-ccr-ragged-hounds-neil-young-dj-stone-bunny-october-29-2026-778151",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/ramble-tamble-ccr-ragged-hounds-neil-young-dj-stone-bunny-october-29-2026-778151",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/778/151/compressed/0.jpg?1791508471",
+      "sourceUrl": "https://app.opendate.io/e/ramble-tamble-ccr-ragged-hounds-neil-young-dj-stone-bunny-october-29-2026-778151",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-10-29-33ab862c164a",
     "title": "Rebecca Black",
     "subtitle": "Source-discovered venue event · details need review",
@@ -7008,6 +7165,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-10-30-8e523911b272",
+    "title": "Salo Panto-Laboratorios Morena Heaven Skate-Los Res",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-10-30T00:00:00-07:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-10-30-034b12a88377",
     "title": "Someday Diamonds",
     "subtitle": "Source-discovered venue event · details need review",
@@ -7109,6 +7310,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-10-30-c663865bd037",
+    "title": "Boys Keep Swinging + friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/boys-keep-swinging-friends-october-30-2026-749221",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/boys-keep-swinging-friends-october-30-2026-749221",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/749/221/compressed/csm_david_bowie_ohl-019112_ausschnitt_f62904d43f.jpg?1788378821",
+      "sourceUrl": "https://app.opendate.io/e/boys-keep-swinging-friends-october-30-2026-749221",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -7705,6 +7957,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-10-31-d617604b5a9d",
+    "title": "Pocket Knife(PJ Harvey)-DEVO Cup(Devo) Queens of Punk(Poison Idea) Teen 78(TV Personalities)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-10-31T00:00:00-07:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-10-31-34fe20865aba",
     "title": "THE MISFITS / MENACE /SAXON / RIP / RUDIMENTARY PENI + COSTUME CONTEST & DANCE PARTY",
     "subtitle": "Source-discovered venue event · details need review",
@@ -7966,6 +8265,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-10-31-0fa0ba2b97ce",
+    "title": "is this really HALLOWEEN? w/ Golem Pink + Cassie Candles & the Cocker Spaniels + Koa Koala (Tacoma) + Gwyniver",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: come sit & get your portrait drawn while strange music plays",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/is-this-really-halloween-w-golem-pink-cassie-candles-the-cocker-spaniels-koa-koala-tacoma-gwyniver-october-31-2026-749976",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/is-this-really-halloween-w-golem-pink-cassie-candles-the-cocker-spaniels-koa-koala-tacoma-gwyniver-october-31-2026-749976",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/749/976/compressed/1000017210.jpg?1788835144",
+      "sourceUrl": "https://app.opendate.io/e/is-this-really-halloween-w-golem-pink-cassie-candles-the-cocker-spaniels-koa-koala-tacoma-gwyniver-october-31-2026-749976",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -8369,6 +8719,50 @@ window.SHOWS_EVENTS = [
       ]
     },
     "doorsAt": "2026-10-31T20:00:00-07:00"
+  },
+  {
+    "id": "auto-kenton-club-2026-11-01-17b238795a0e",
+    "title": "Beelzebubs Bazaar a Free Market",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Markets",
+    "tags": [
+      "Source-listed Markets",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-01T00:00:00-07:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "king-farmers-2026-11-01",
@@ -8873,6 +9267,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-11-02-f41f25ad60de",
+    "title": "Eric Silverman + Sam Plecker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Royal Oakie Records Showcase",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/eric-silverman-sam-plecker-november-02-2026-750305",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/eric-silverman-sam-plecker-november-02-2026-750305",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/750/305/compressed/Eric_Silverman_by_Pearl_Mathilde_Martin-Eagle_HMM-909_crop.jpg?1788908813",
+      "sourceUrl": "https://app.opendate.io/e/eric-silverman-sam-plecker-november-02-2026-750305",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -9808,6 +10253,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-04-d36a9a1d106a",
+    "title": "Josh Gross (Ashland) + Sun Blood Stories (duo set) + Cameron Royce",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/josh-gross-ashland-sun-blood-stories-duo-set-cameron-royce-november-04-2026-762558",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/josh-gross-ashland-sun-blood-stories-duo-set-cameron-royce-november-04-2026-762558",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/762/558/compressed/unnamed.jpg?1791366164",
+      "sourceUrl": "https://app.opendate.io/e/josh-gross-ashland-sun-blood-stories-duo-set-cameron-royce-november-04-2026-762558",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-04-e2275423ec2d",
     "title": "NO FUN KARAOKE",
     "subtitle": "Source-discovered venue event · details need review",
@@ -10711,6 +11207,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-11-06-aec3d792cf16",
+    "title": "National Diet-Horsebag-Sun Blood Stories",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-06T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-11-06-f3fb577f41c7",
     "title": "First Thursday Crafts & Cocktails",
     "subtitle": "Source-discovered venue event · details need review",
@@ -11183,6 +11723,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-06-41523bf6d38f",
+    "title": "Masonique + RLLBLL + Creature Guts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/masonique-rllbll-creature-guts-november-06-2026-794038",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/masonique-rllbll-creature-guts-november-06-2026-794038",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/794/038/compressed/Masonique_BandStill_15.jpg?1792887274",
+      "sourceUrl": "https://app.opendate.io/e/masonique-rllbll-creature-guts-november-06-2026-794038",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-06-665da32da481",
     "title": "SPIRITS with Hard Pill, Drawn By Knives, These Cursed Hands, & Pitch Black Mass",
     "subtitle": "Source-discovered venue event · details need review",
@@ -11373,6 +11964,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-11-07-749f7900c0f3",
+    "title": "DJ Action Slacks",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-07T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -12980,6 +13615,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-09-c53908b06207",
+    "title": "Frank Hurricane + Sawtooth + Tara Zorthian (LA) + The Modern Folk",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/frank-hurricane-sawtooth-tara-zorthian-la-the-modern-folk-november-09-2026-788090",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/frank-hurricane-sawtooth-tara-zorthian-la-the-modern-folk-november-09-2026-788090",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/788/090/compressed/Screenshot_2026-10-16_at_3.08.36%E2%80%AFPM.jpg?1792188673",
+      "sourceUrl": "https://app.opendate.io/e/frank-hurricane-sawtooth-tara-zorthian-la-the-modern-folk-november-09-2026-788090",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-09-401c71bdfe86",
     "title": "Jake Minch – Getting Big Tour w/Alix Page – All Ages",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13369,6 +14055,57 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-11-10T19:30:00-08:00"
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-11-10-ef4fcfe9e6f0",
+    "title": "Morricone Music",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: An evening celebrating the life & music of Italian composer Ennio Morricone.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/morricone-music-november-10-2026-778385",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/morricone-music-november-10-2026-778385",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/778/385/compressed/meta_eyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ__.jpg?1791573560",
+      "sourceUrl": "https://app.opendate.io/e/morricone-music-november-10-2026-778385",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "crystal-the-black-angels-with-ghostwoman-2026-11-10",
@@ -14362,6 +15099,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-11-13-5f7477d16f44",
+    "title": "Mini Blinds-Queen Rodeo-Snakey Dublay",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-13T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-13-6dd5973cfd0e",
     "title": "Heather Christie & The Starlettes",
     "subtitle": "Source-discovered venue event · details need review",
@@ -14823,6 +15604,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-11-14-e3b4364901a6",
+    "title": "Isabeau Waia’u Walker-Elly",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-14T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -16866,6 +17691,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-18-870ac2f503a5",
+    "title": "Hewn + Sean Atkins (Boise) + Grover (Bellingham)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/hewn-sean-atkins-boise-grover-bellingham-november-18-2026-778056",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/hewn-sean-atkins-boise-grover-bellingham-november-18-2026-778056",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/778/056/compressed/Screenshot_2026-10-08_at_1.23.09%E2%80%AFPM.jpg?1791491136",
+      "sourceUrl": "https://app.opendate.io/e/hewn-sean-atkins-boise-grover-bellingham-november-18-2026-778056",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-11-18-299eb6ddbc4c",
     "title": "MADDIE ZAHM – Everything All The Time Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17264,6 +18140,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-11-19-44a520d7083d",
+    "title": "Glass Egg (Seattle) + Femme Cell + Found Space",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/glass-egg-seattle-femme-cell-found-space-november-19-2026-754398",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/glass-egg-seattle-femme-cell-found-space-november-19-2026-754398",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/754/398/compressed/Screenshot_2026-09-21_at_10.56.11%E2%80%AFPM.jpg?1790056726",
+      "sourceUrl": "https://app.opendate.io/e/glass-egg-seattle-femme-cell-found-space-november-19-2026-754398",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -18071,6 +18998,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-11-21-8abded26cccf",
+    "title": "So Pitted-Sea Moss-Snorkler(Tennessee)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-21T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -19506,6 +20477,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-11-27-aa8e2a9fac94",
+    "title": "Madison True Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-27T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-27-617a5265d34f",
     "title": "Heather Christie & The Starlettes",
     "subtitle": "Source-discovered venue event · details need review",
@@ -19811,6 +20826,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-11-28-45ad80234ba6",
+    "title": "Muscle Cats-One Drink and Other lies",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-28T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -23099,6 +24158,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-08-0813fbaaf9c6",
+    "title": "Mother Soki + baileyrp",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/mother-soki-baileyrp-december-08-2026-759224",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/mother-soki-baileyrp-december-08-2026-759224",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/759/224/compressed/01KXKMKNTVPX5H1RM8VV482YCC-large.jpg?1790855346",
+      "sourceUrl": "https://app.opendate.io/e/mother-soki-baileyrp-december-08-2026-759224",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-08-993218c2c603",
     "title": "Party Portal Shaqtime",
     "subtitle": "Source-discovered venue event · details need review",
@@ -24327,6 +25437,57 @@ window.SHOWS_EVENTS = [
     "sourceNote": "Directions point to Outlet; the market spans several nearby businesses."
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-12-441ae829116e",
+    "title": "She Ate: A Food Drive for Esther's Pantry",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T16:30:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: PSuggested donation ticket available for purchase, proceeds go towards expenses & the remaining will be donated directly to Esther’s Pantryop Up Drag Performances Music by Jackpott",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-december-12-2026-788550",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-december-12-2026-788550",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/788/550/compressed/Untitled_design_%282%29.jpg?1792483346",
+      "sourceUrl": "https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-december-12-2026-788550",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-12-12-defccee49b8b",
     "title": "Eyes Set To Kill",
     "subtitle": "Source-discovered venue event · details need review",
@@ -24548,6 +25709,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion",
     "seriesId": "crafty-wonderland-holiday-2026",
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-13-2ffd11b1d3c0",
+    "title": "An Orange Vanilla Christmas: An Original Musical w/ Tradie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/an-orange-vanilla-christmas-an-original-musical-w-tradie-december-13-2026-794075",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/an-orange-vanilla-christmas-an-original-musical-w-tradie-december-13-2026-794075",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/794/075/compressed/Untitled_design_%284%29.jpg?1792825219",
+      "sourceUrl": "https://app.opendate.io/e/an-orange-vanilla-christmas-an-original-musical-w-tradie-december-13-2026-794075",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-hawthorne-theatre-2026-12-13-81aa38658a7a",
@@ -24883,6 +26095,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-15-4d1cdfcd848e",
+    "title": "Tracey Nelson + friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/tracey-nelson-friends-december-15-2026-779468",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/tracey-nelson-friends-december-15-2026-779468",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/779/468/compressed/cropped-event-image.jpg?1792023513",
+      "sourceUrl": "https://app.opendate.io/e/tracey-nelson-friends-december-15-2026-779468",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
