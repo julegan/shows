@@ -5007,6 +5007,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm-event/blitzkid-modern-hel-tour-2026-with-guests/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/96/27/34_Original.jpg?v=7",
+      "sourceUrl": "https://www.danteslive.com/tm-event/blitzkid-modern-hel-tour-2026-with-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -5493,7 +5500,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-expansion"
+    "addedIn": "2026-10-17-expansion",
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/ho99o9-n8noface-sincerely-the-void.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/ho99o9-n8noface-sincerely___-the-void/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "turn-turn-turn-cormae-new-here-combobox-2026-10-28",
@@ -6588,6 +6602,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://dazestyle.bandcamp.com/album/not-through-blood"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/pain-of-truth.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/pain-of-truth/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -9815,6 +9836,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm_genre/hardcore-punk/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/10/94_Original.jpg?v=3",
+      "sourceUrl": "https://www.danteslive.com/tm-event/true-fear-with-resist-la-crucible-of-absolution-oddities/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -12681,6 +12709,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.danteslive.com/tm_genre/hardcore-punk/"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/52/44_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/deathtape-with-salt-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -12835,6 +12870,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://staticdress.bandcamp.com/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/static-dress.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/static-dress/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -12887,6 +12929,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://metalchurchofficial.com/home"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/53/17/93_Original.jpg?v=5",
+      "sourceUrl": "https://www.danteslive.com/tm-event/metal-church-armored-saint-with-livekill/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -13950,6 +13999,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/kingdom-of-giants"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/kingdom-of-giants.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/kingdom-of-giants/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -14763,6 +14819,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://www.season-of-mist.com/bands/christian-death/"
       ]
+    },
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/08/christian-death.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/christian-death/hawthorne-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
@@ -14911,6 +14974,13 @@ window.SHOWS_EVENTS = [
       "urls": [
         "https://sharptonerecords.co/collections/comeback-kid"
       ]
+    },
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/00/53/94_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/",
+      "origin": "official-event-page",
+      "credit": "Official event listing",
+      "usageApproved": null
     }
   },
   {
