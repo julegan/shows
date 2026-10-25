@@ -205,7 +205,14 @@
       "name": "Kenton Club",
       "status": "adapter-needed",
       "priority": "underground-music",
-      "reason": "Many bills lack posted performance time; staging adapter needed."
+      "reason": "Conservative dated show-roster parser built; exact weekday plus <=120-day future window, unknown times preserved. Awaiting successful read-only live GitHub-runner probe before auto-enabling.",
+      "url": "https://www.kentonclub.com/",
+      "baseUrl": "https://www.kentonclub.com",
+      "venue": "Kenton Club",
+      "address": "2025 N Kilpatrick St, Portland, OR 97217",
+      "neighborhood": "Kenton",
+      "adapter": "kenton-official-html",
+      "venueRegistryId": "kenton-club"
     },
     {
       "id": "shanghai-tunnel",
