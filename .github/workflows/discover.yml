@@ -65,11 +65,13 @@ jobs:
         if: steps.pending.outputs.skip != 'true'
         run: |
           node --check scripts/discover-events.js
+          node --check scripts/source-change-review.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
           node --check app.js
           node --check events.js
           node tests/source-health.js
+          node tests/source-change-review.js
           node tests/discovery.js
           node tests/artwork.js
           node tests/calendar-horizon.js
