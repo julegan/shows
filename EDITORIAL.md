@@ -1,6 +1,6 @@
 # SHOWS editorial priorities
 
-SHOWS is a provisional name for a curated Portland calendar. The original audience and music focus remain the foundation as other interests are added.
+SHOWS is a provisional name for a curated Portland **music-first** calendar. The default discovery feed combines underground music with a selective layer of related independent art and culture. It is deliberately not a general Portland city/community calendar.
 
 ## First priority: underground music
 
@@ -12,7 +12,11 @@ Queer-friendly and inclusive spaces matter. Queer identity is not a substitute f
 
 ## Additional interests
 
-Unusual maker, vintage, zine, record, tattoo, occult, and pop-up markets; notable farmers markets; useful low-cost/free learning; independent arts; community participation; and credible humane animal-welfare activities broaden the calendar. They remain welcome. They do not displace the core music research when more events are requested.
+Independent art, zines, DIY, maker fairs, vintage/record/tattoo/occult pop-ups, and unusual markets **fit the mixed feed** when genuinely relevant to the underground creative community. Routine farmers markets, generic neighborhood/community activities, recurring general-interest listings, and unrelated animal-welfare or workshop entries are **not default-feed content**. Previously approved historical records remain intact; this is a discovery and source-priority change, not a data deletion or a decision to make a comprehensive city calendar. Stop expanding routine farmers markets simply to grow event totals.
+
+## Default experience and coverage priorities
+
+The homepage opens to a chronological list beginning on the current date in Portland. **By date** is the initial view on mobile and desktop; **Places** and **Month** remain available. Month should never be required to reach today's event listings. Promote source-provided flyers with attribution where allowed, and do not fabricate artwork.
 
 ## Venue-first coverage before genre-based presentation
 
