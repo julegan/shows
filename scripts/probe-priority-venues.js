@@ -29,6 +29,12 @@ async function inspect(item){
  result.sampleEventLinks=[...new Set(likely)].slice(0,18);
  const clues=[...body.matchAll(/(?:OCTOBER|November|THE WELL|EVENTS?|AFTON|data-[a-z]+|tickets\.|calendar)/gi)].slice(0,25);
  result.contextSamples=clues.map(x=>decode(body.slice(Math.max(0,x.index-90),x.index+190))).filter(x=>x.length>=20).slice(0,12);
+ result.providerMentions={afton:(body.match(/afton/gi)||[]).length,embed:(body.match(/embed/gi)||[]).length,iframe:(body.match(/iframe/gi)||[]).length};
+ result.externalScripts=[...body.matchAll(/<script[^>]+src=["']([^"']+)["']/gi)].map(m=>m[1]).filter(s=>/afton|event|ticket|embed|calendar|shows/i.test(s)).map(s=>{try{let u=new URL(s,item.url);return u.origin+u.pathname}catch(_){return null}}).filter(Boolean).slice(0,15);
+ result.providerContext=[...body.matchAll(/afton(?:tickets)?/gi)].slice(0,5).map(m=>{
+   const slice=body.slice(Math.max(0,m.index-270),Math.min(body.length,m.index+270));
+   return slice.replace(/\b(?:key|token|secret|auth|password)\s*[:=]\s*["'][^"']+["']/gi,"[redacted]").replace(/\s+/g," ").slice(0,510);
+ });
  result.hasStructuredEvents=/application\/ld\+json|schema\.org\/(?:Event|MusicEvent)/i.test(body);
  return result;
 }
