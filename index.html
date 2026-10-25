@@ -4,70 +4,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#1c2522">
-  <meta name="description" content="Underground metal, punk, goth, rock and hardcore shows, alongside Portland's independent culture and community.">
-  <title>SHOWS — Portland, on your calendar</title>
+  <meta name="description" content="Portland's music-first calendar for punk, metal, goth, hardcore, independent art, zines and unusual markets.">
+  <title>SHOWS — Portland music and independent culture</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./preview.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to calendar</a>
+  <a class="skip-link" href="#main">Skip to events</a>
   <header class="masthead">
     <div class="frame nav">
       <a class="logo" href="./" aria-label="SHOWS home">SHOWS<span aria-hidden="true">.</span></a>
-      <span class="nav-location">PORTLAND, OREGON <span aria-hidden="true">↗</span> A CALENDAR FOR CURIOSITY</span>
-      <a href="#about" class="nav-about">About this edition <span aria-hidden="true">↗</span></a>
+      <span class="nav-location">PORTLAND, OREGON · MUSIC + INDEPENDENT CULTURE</span>
+      <a href="#about" class="nav-about">About SHOWS ↗</a>
     </div>
-    <div class="frame hero">
-      <div><p class="eyebrow">Go somewhere. Learn something. Get involved.</p>
-      <h1>What's happening<br><em>around you?</em></h1></div>
-      <p>Underground metal, punk, goth, rock, and hardcore. Independent culture and community alongside them. Find a show, explore a place, and put it on your calendar.</p>
+    <div class="frame hero preview-hero">
+      <div><p class="eyebrow">Portland shows and culture / find your next thing</p>
+        <h1>One feed.<br><em>Many discoveries.</em></h1></div>
+      <p>Underground metal, punk, goth, rock, hardcore, plus independent art, zines, DIY and unusual markets. Find something happening and put it on your calendar.</p>
     </div>
   </header>
-  <main id="main" tabindex="-1" class="frame">
-    <aside class="pilot-note"><span class="pilot-dot" aria-hidden="true">●</span><strong>Working pilot</strong><span> Source-checked listings through December 13, 2026. This is a curated snapshot; always confirm current details with the organizer.</span></aside>
-    <section class="controls" aria-label="Explore events">
-      <div class="control-top">
-        <div class="month-nav">
-          <button id="previous" class="icon-button" type="button" aria-label="Previous month">←</button>
-          <h2 id="period" aria-live="polite"></h2>
-          <button id="next" class="icon-button" type="button" aria-label="Next month">→</button>
-          <button id="today" class="small-button" type="button">Today</button>
-        </div>
-        <div class="view-switch" role="group" aria-label="Calendar view">
-          <button type="button" data-view="month" aria-pressed="true">Month</button>
-          <button type="button" data-view="agenda" aria-pressed="false">List</button>
-          <button type="button" data-view="places" aria-pressed="false">Places</button>
-        </div>
-      </div>
-      <div class="filter-row">
-        <label class="search-box" for="search"><span aria-hidden="true">⌕</span><span class="sr-only">Search events, organizers and places</span><input id="search" type="search" placeholder="Search music, workshops, venues..." autocomplete="off"></label>
-        <label class="select-box" for="category"><span class="sr-only">Filter by interest</span><select id="category"><option value="all">All interests</option></select></label>
-        <label class="select-box" for="musicStyle"><span class="sr-only">Filter by music style</span><select id="musicStyle"><option value="all">All music styles</option></select></label>
-        <label class="select-box" for="neighborhood"><span class="sr-only">Filter by neighborhood</span><select id="neighborhood"><option value="all">All neighborhoods</option></select></label>
-      </div>
-      <div class="quick-row">
-        <div class="quick-buttons" role="group" aria-label="When and price">
-          <button type="button" data-quick="all" aria-pressed="true">Any date</button>
-          <button type="button" data-quick="today" aria-pressed="false">Today</button>
-          <button type="button" data-quick="weekend" aria-pressed="false">This weekend</button>
-          <button type="button" data-quick="seven" aria-pressed="false">Next 7 days</button>
-          <button type="button" data-quick="free" aria-pressed="false">Free</button>
-          <button type="button" data-quick="saved" aria-pressed="false">★ Saved</button>
-        </div>
-        <button id="reset" class="text-button" type="button">Clear filters</button>
-      </div>
+  <main class="frame preview-shell" id="main" tabindex="-1">
+    <section class="preview-intro" aria-labelledby="previewTitle">
+      <h2 id="previewTitle">Happening from today</h2>
+      <p>Shows and the creative culture around them, organized by day. Choose a date, explore venues, or open the month overview.</p>
     </section>
-    <div class="results-heading">
-      <p id="resultCount" role="status" aria-live="polite"></p>
-      <button type="button" id="exportVisible" class="export-button">↓ Export visible events (.ics)</button>
+    <div class="preview-navigation" role="group" aria-label="Browse events">
+      <button class="preview-tab" type="button" data-view="dates" aria-pressed="true">By date</button>
+      <button class="preview-tab" type="button" data-view="places" aria-pressed="false">Places</button>
+      <button class="preview-tab" type="button" data-view="month" aria-pressed="false">Month</button>
     </div>
-    <section id="calendar" aria-label="Calendar results"></section>
-    <section id="about" class="about-grid" aria-label="About SHOWS">
-      <div><p class="eyebrow dark">A WORKING BEGINNING</p><h2>The calendar comes first.</h2></div>
-      <div><p>SHOWS starts with Portland's underground metal, punk, goth, rock, hardcore, and DIY scenes. Markets, creative learning, and community events broaden that discovery. SHOWS is a provisional name. Inclusion is not endorsement; original organizers get the credit.</p><p>No sign-in, analytics, behavioral tracking, or user profiles. Saved events are stored only in this browser. Calendar and map links open external services only when you choose them.</p><p class="fineprint">Event times are shown in Portland's Pacific Time zone. Published details can change. Sources checked October 17, 2026. Recurring entries include only the dates in this snapshot.</p></div>
+    <section class="preview-filters" aria-label="Find events">
+      <label class="preview-search" for="search">Search events or venues
+        <input type="search" id="search" autocomplete="off" placeholder="Band, venue, style, artist…"></label>
+      <label class="preview-date" for="fromDate" id="fromDateLabel">From date
+        <input type="date" id="fromDate"></label>
+      <label for="neighborhood">Neighborhood
+        <select id="neighborhood"><option value="">All neighborhoods</option></select></label>
+      <label id="styleLabel" for="style">Music style
+        <select id="style"><option value="">All styles</option></select></label>
+    </section>
+    <div class="preview-actions">
+      <button type="button" id="jumpToday">Start today</button>
+      <button type="button" id="freeOnly" aria-pressed="false">Free</button>
+      <button type="button" id="savedOnly" aria-pressed="false">★ Saved</button>
+      <button type="button" id="clearFilters">Clear filters</button>
+      <button type="button" id="exportVisible">↓ Export listed events (.ics)</button>
+    </div>
+    <div class="shows-month-controls" id="monthControls" hidden>
+      <button type="button" id="previousMonth" aria-label="Previous month">←</button>
+      <h3 id="monthPeriod" aria-live="polite"></h3>
+      <button type="button" id="nextMonth" aria-label="Next month">→</button>
+    </div>
+    <p class="preview-summary" id="summary" role="status" aria-live="polite"></p>
+    <section id="results" aria-label="Event listings"></section>
+    <button type="button" id="showMore" class="preview-more" hidden>Show more events ↓</button>
+    <section id="about" class="preview-note" aria-label="About SHOWS">
+      <p><strong>SHOWS is a music-first calendar for Portland's independent scenes.</strong> The mixed feed includes select art and DIY events, zines, and unusual markets—not routine farmers markets or a comprehensive city events feed. Coverage is evolving, and inclusion is not endorsement.</p>
+      <p>Dates and times reflect published organizer details and can change. Open the source listing to confirm before attending. Times use Portland's Pacific Time zone; unknown start or end times are identified in calendar exports. There are no accounts or behavioral tracking. Saved events stay in this browser.</p>
     </section>
   </main>
-  <footer class="footer"><div class="frame footer-inner"><span>SHOWS / PORTLAND</span><span>Independent discovery. Original organizers first.</span><a href="https://github.com/julegan/shows" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></footer>
-  <dialog id="eventDialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
+  <footer class="footer"><div class="frame footer-inner"><span>SHOWS / PORTLAND</span><span>Curated discovery. Original organizers first.</span><a href="https://github.com/julegan/shows" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></footer>
+  <dialog id="eventDialog" class="preview-dialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
   <script src="./events.js"></script>
   <script src="./app.js"></script>
 </body>
