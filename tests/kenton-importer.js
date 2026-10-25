@@ -21,7 +21,7 @@ assert.equal(rows[0].dateOnly,"2026-10-24");
 assert.match(rows[0].title,/Heirloom Monsters Mask Appeal/);
 assert(!rows[0].title.includes("BAD INJECTION"),"Script content excluded");
 assert.equal(rows[1].dateOnly,"2026-11-01");
-assert.match(rows[1].title,/Bazaar/);
+assert.equal(rows[1].title,"Beelzebubs Bazaar a Free Market","Unlabeled market hours are not the title or guessed show time");
 assert.equal(rows[4].dateOnly,"2026-11-20");
 assert(!rows.some(x=>x.title.includes("wfkcbooking")));
 assert.equal(resolvedDay("Friday","November",20,now),"2026-11-20");
