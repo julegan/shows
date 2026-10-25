@@ -191,7 +191,14 @@
       "name": "Turn! Turn! Turn!",
       "status": "adapter-needed",
       "priority": "underground-music",
-      "reason": "Verify independent booking/ticket API for dated events."
+      "reason": "Official turnturnturnpdx.com/entertainment embeds approved OpenDate account /v/turn-turn-turn-3116. Read-only roster probe 40170844776 found dated individual event URLs, labeled doors/show times, and event flyers. Detail schema confirmed; end-to-end reconciliation probe pending.",
+      "url": "https://app.opendate.io/v/turn-turn-turn-3116?layout=iframe",
+      "baseUrl": "https://turnturnturnpdx.com",
+      "venue": "Turn! Turn! Turn!",
+      "address": "8 NE Killingsworth St, Portland, OR 97211",
+      "neighborhood": "Kenton",
+      "adapter": "turnturnturn-opendate",
+      "venueRegistryId": "turn-turn-turn"
     },
     {
       "id": "doomtown-pdx",
