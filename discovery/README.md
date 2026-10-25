@@ -1,3 +1,15 @@
+## Changes to already-published event listings
+
+The daily combined workflow also performs a **non-destructive discrepancy review** using live source records from the same venue discovery run. It compares previously approved future events only when the official event-specific HTTPS permalink occurs **exactly once** in both the approved dataset and the current observed source rows.
+
+- Date changes, venue moves, and newly listed performance-time changes (only when the old and new time semantics are both `listed`) are flagged for review.
+- If an original source explicitly reports that a matching event is canceled, postponed or rescheduled, it is flagged. The collector **does not** automatically change, hide, delete, mark canceled, or reschedule any approved record.
+- A venue's missing entry is **never** treated as a cancellation: calendars may paginate incompletely or temporarily omit shows. Shared homepages and reused event URLs are not considered unique event identifiers.
+- Potential changes appear near the top of `discovery/latest-review.md` and the GitHub Action Summary. If there are no new events or artwork, the evidence remains in the workflow's uploaded report artifact, without generating an empty data PR.
+
+This is an initial safety-oriented observation layer, **not** a complete recurring revalidation or cancellation-alert service. Detailed official source confirmation and editorial approval remain mandatory.
+
+
 ## Review quality and source-health reporting
 
 Each combined refresh now places a concise **Source health (this run)** table before its detailed candidate listings. The table distinguishes checked, empty and failed sources; lists their examined items, new events, music/unclassified records, source artwork, holds and skips. It does not equate successful fetching with complete venue coverage.
