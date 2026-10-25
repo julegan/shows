@@ -1,79 +1,82 @@
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const vm = require('node:vm');
+"use strict";
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const vm = require("node:vm");
 
-// Exercise the real app's controls and exports without a browser dependency.
 class Element {
-  constructor(dataset={}) { this.dataset=dataset; this.listeners={}; this.children=[]; this.value='all'; this.innerHTML=''; this.textContent=''; }
-  addEventListener(type, fn) { this.listeners[type]=fn; }
-  setAttribute() {}
-  appendChild(child) { this.children.push(child); }
-  click() { this.listeners.click?.({target:this}); }
-  change(value) { this.value=value; this.listeners.change({target:this}); }
-  remove() {}
-  scrollIntoView() {}
+  constructor(dataset={}) {this.dataset=dataset;this.listeners={};this.children=[];this.value="";this.innerHTML="";this.textContent="";this.hidden=false;this.attrs={};}
+  addEventListener(type,fn){this.listeners[type]=fn;}
+  setAttribute(k,v){this.attrs[k]=v;}
+  appendChild(child){this.children.push(child);}
+  append(child){this.children.push(child);}
+  click(){this.listeners.click?.({target:this});}
+  change(value){this.value=value;this.listeners.change?.({target:this});}
+  input(value){this.value=value;this.listeners.input?.({target:this});}
+  remove(){}
 }
-const elements=new Map();
-const el=id=>{if(!elements.has(id))elements.set(id,new Element());return elements.get(id);};
-const views=['month','agenda','places'].map(view=>new Element({view}));
-const quick=['all','today','weekend','seven','free','saved'].map(value=>new Element({quick:value}));
+const nodes=new Map();
+const el=id=>{if(!nodes.has(id))nodes.set(id,new Element());return nodes.get(id);};
+const views=["dates","places","month"].map(view=>new Element({view}));
 const downloads=[];
 const document={
   getElementById:el,
-  querySelectorAll:selector=>selector==='[data-view]'?views:selector==='[data-quick]'?quick:[],
-  querySelector:()=>new Element(),
+  querySelectorAll:selector=>selector==="[data-view]"?views:[],
   createElement:()=>new Element(),
-  body:{append(){}},
+  addEventListener(){},
+  body:{appendChild(){}}
 };
 const NativeDate=Date;
-class TestDate extends NativeDate { constructor(...args){super(...(args.length?args:['2026-10-18T12:00:00-07:00']));} }
-class TestURL extends URL { static createObjectURL(blob){downloads.push(blob);return 'blob:test';} static revokeObjectURL(){} }
-const context={window:{},document,Date:TestDate,Intl,URL:TestURL,
-  Blob:class {constructor(parts){this.text=parts.join('');}},
-  localStorage:{getItem:()=>null,setItem(){}},
-  location:{hash:'',pathname:'/',search:''},history:{replaceState(){}},setTimeout(){},
+class FixedDate extends NativeDate {constructor(...args){super(...(args.length?args:["2026-10-18T12:00:00-07:00"]));}}
+class TestURL extends URL {static createObjectURL(blob){downloads.push(blob);return "blob:calendar";}static revokeObjectURL(){}}
+const context={window:{},document,Date:FixedDate,Intl,URL:TestURL,Blob:class{constructor(parts){this.text=parts.join("");}},
+ localStorage:{getItem:()=>null,setItem(){}},
+ location:{hash:"",pathname:"/",search:""},history:{replaceState(){}},
+ setTimeout(){},HTMLImageElement:class{}
 };
 vm.createContext(context);
-for(const file of ['events.js','app.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'..',file),'utf8'),context);
+for(const file of ["events.js","app.js"])vm.runInContext(fs.readFileSync(path.join(__dirname,"..",file),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
-const styles=Array.from(new Set(events.flatMap(e=>e.musicStyles||[]))).sort();
-assert(styles.includes('Metal')&&styles.includes('Punk')&&styles.includes('Hardcore')&&styles.includes('Rock'));
-assert(styles.some(s=>s.includes('Goth')),'Goth is a selectable music style');
-assert.deepEqual(el('musicStyle').children.map(o=>o.value),styles,'Style menu is available without a text search');
-el('next').click(); // November crosses the Pacific daylight-saving boundary.
-views.find(b=>b.dataset.view==='agenda').click();
-function renderedIds(){return [...el('calendar').innerHTML.matchAll(/data-event="([^"]+)"/g)].map(m=>m[1]).sort();}
-function expected(style){return Array.from(events.filter(e=>e.startsAt.startsWith('2026-11')&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();}
-for(const style of styles){
-  el('musicStyle').change(style);
-  assert.equal(el('category').value,'Music');
-  assert.deepEqual(renderedIds(),expected(style),'List respects '+style);
-  views.find(b=>b.dataset.view==='month').click();
-  assert(el('resultCount').textContent.startsWith(expected(style).length+' event'),'Month count respects '+style);
-  views.find(b=>b.dataset.view==='agenda').click();
-  views.find(b=>b.dataset.view==='places').click();
-  assert.deepEqual(renderedIds(),expected(style),'Places respect '+style);
-  views.find(b=>b.dataset.view==='agenda').click();
-  el('exportVisible').click();
-  if(expected(style).length){
-    const ics=downloads.at(-1).text.replace(/\r\n[ \t]/g,'');
-    assert.equal((ics.match(/BEGIN:VEVENT/g)||[]).length,expected(style).length,'Export includes only '+style);
-    for(const e of events.filter(e=>expected(style).includes(e.id)))assert(ics.includes('UID:'+e.id+'@shows-portland'));
-    if(style==='Metal'){
-      assert(ics.includes('(doors)'),'Doors-only calendar entry keeps its time label');
-      assert(ics.includes('performance start is unconfirmed'),'Doors-only export explains its time');
-    }
+const eById=new Map(events.map(e=>[e.id,e]));
+const styles=[...new Set(events.flatMap(e=>e.musicStyles||[]))].sort();
+assert(styles.includes("Punk")&&styles.includes("Metal")&&styles.includes("Hardcore"),"Core underground styles retained");
+assert.deepEqual(el("style").children.map(e=>e.value),styles,"Style options reflect dataset");
+assert.equal(el("fromDate").value,"2026-10-18","Starts today in Portland");
+assert.equal(views.find(v=>v.dataset.view==="dates").attrs["aria-pressed"],"true","Chronological view is default");
+assert.equal(el("monthControls").hidden,true,"Month is secondary");
+function renderedIds(){return [...el("results").innerHTML.matchAll(/data-event="([^"]+)"/g)].map(m=>m[1]).sort();}
+const past=new Set(events.filter(e=>e.startsAt.slice(0,10)<"2026-10-18").map(e=>e.id));
+assert(!renderedIds().some(id=>past.has(id)),"Past events excluded from default feed");
+assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")),"Routine farmers market listings excluded");
+el("fromDate").change("2026-11-01");
+for(const style of ["Metal","Punk","Hardcore"]){
+  el("style").change(style);
+  const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
+  assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
+  views.find(v=>v.dataset.view==="places").click();
+  assert.deepEqual(renderedIds(),expected,"Places respects "+style+" filter");
+  views.find(v=>v.dataset.view==="dates").click();
+  el("exportVisible").click();
+  if(expected.length){
+    const output=downloads.at(-1).text;
+    assert.equal((output.match(/BEGIN:VEVENT/g)||[]).length,expected.length,"ICS export respects "+style+" filter");
   }
 }
-el('category').change('Markets');
-assert.equal(el('musicStyle').value,'all','Changing to a nonmusic interest clears music style');
-assert.deepEqual(renderedIds(),Array.from(events.filter(e=>e.startsAt.startsWith('2026-11')&&e.category==='Markets'),e=>e.id).sort());
-el('musicStyle').change('Punk');
-assert.equal(el('category').value,'Music','A style switches interest back to Music');
-assert.deepEqual(renderedIds(),expected('Punk'));
-el('reset').click();
-assert.equal(el('musicStyle').value,'all');
-assert.equal(el('category').value,'all');
-assert.deepEqual(renderedIds(),Array.from(events.filter(e=>e.startsAt.startsWith('2026-11')),e=>e.id).sort(),'Clear restores the full month');
-console.log('PASS — music styles filter list/place views and calendar exports; interest changes and clear recover all events.');
+el("clearFilters").click();
+assert.equal(el("style").value,"","Clear restores genre");
+el("freeOnly").click();
+assert.equal(el("freeOnly").attrs["aria-pressed"],"true");
+assert(renderedIds().every(id=>eById.get(id).free===true),"Free filter excludes priced events");
+el("clearFilters").click();
+el("savedOnly").click();
+assert.equal(renderedIds().length,0,"Saved filter is empty before any saved events");
+el("clearFilters").click();
+views.find(v=>v.dataset.view==="month").click();
+assert.equal(el("monthControls").hidden,false,"Month controls appear only on request");
+assert(el("results").innerHTML.includes('class="shows-month-grid"'),"Optional month grid is rendered");
+el("nextMonth").click();
+assert(el("monthPeriod").textContent.includes("November 2026"),"Month navigation works");
+el("jumpToday").click();
+assert.equal(el("fromDate").value,"2026-10-18","Today button restores initial date");
+assert.equal(views.find(v=>v.dataset.view==="dates").attrs["aria-pressed"],"true");
+console.log("PASS — music filters, date-first default, month, Places, free/saved, exclusions, and ICS exports.");

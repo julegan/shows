@@ -16,6 +16,9 @@ jobs:
           node --check app.js
           node --check events.js
           node --check scripts/discover-events.js
+      - name: Verify date-first music and culture browsing
+        run: node tests/music-filters.js
+
       - name: Validate sample events
         run: |
           node tests/validate.js

@@ -25,9 +25,9 @@ assert(added.filter(e=>e.title.includes('tribute')||e.subtitle.includes('Tribute
 assert(events.filter(e=>e.addedIn==='2026-10-17-venue-coverage').length===36,'Major venue expansion intact');
 const app=fs.readFileSync(path.join(__dirname,'..','app.js'),'utf8');
 const css=fs.readFileSync(path.join(__dirname,'..','styles.css'),'utf8');
-assert(app.includes('function artMarkup('),'Central artwork renderer');
-assert(app.includes("artMarkup(e,true)"),'Detail view artwork');
-assert(app.includes("artMarkup(e)"),'List cards artwork');
-assert(app.includes("arts.usageApproved===true"),'Flyer artwork opt-in only');
+assert(app.includes('function art('),'Central artwork renderer');
+assert(app.includes("art(e,true)"),'Detail view artwork');
+assert(app.includes("art(e, false)"),'List cards artwork');
+assert(app.includes("a.usageApproved === true"),'Flyer artwork opt-in only');
 assert(css.includes('.show-art--goth')&&css.includes('.show-art--metal'),'Independent fallback palettes');
 console.log('PASS — 27 independent venue bills, unknown genre policy, preserved batches and accessible editorial thumbnail hooks.');
