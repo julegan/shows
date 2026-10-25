@@ -11,9 +11,14 @@ SHOWS uses **event-specific flyers and artist photographs from original organize
 - Keep an opt-out mechanism for source owners or event organizers, and never treat an image URL as evidence of permission to mirror it.
 - Maintain WCAG 2.1 AA testing for contrast, keyboard support, and readable event information independent of imagery.
 
+
+## Coordinated daily refresh
+
+The daily canonical action now runs event discovery **and then** this artwork backfill on the same working event dataset, opening one combined review PR if either changes. The separate **Propose existing event flyers** action is manual-only for focused batches; it no longer runs a conflicting twice-weekly schedule. Combined runs rotate up to 35 eligible music listings each day. A pending canonical review PR intentionally blocks further proposals until it is resolved. All original image attribution, usage review and no-mirroring rules below still apply.
+
 ## Backfilling existing shows
 
-The review-only GitHub Action **Propose existing event flyers** checks 35 eligible public, event-specific URLs per batch. Batch numbers are **zero-based**, and scheduled runs rotate. It prioritizes live music and the key underground venues rather than total event volume. Supported detail-page sources include Twilight, Star Theater, Dante's, Hawthorne Theatre/Lounge, Wonder Ballroom, Crystal Ballroom, Coffin Club, and selected other official providers. A venue homepage alone is deliberately not enough to select a poster.
+The manual-only GitHub Action **Propose existing event flyers** checks 35 eligible public, event-specific URLs per batch. The daily combined refresh calls the same collector after discovering new events. Batch numbers are **zero-based**, and scheduled runs rotate. It prioritizes live music and the key underground venues rather than total event volume. Supported detail-page sources include Twilight, Star Theater, Dante's, Hawthorne Theatre/Lounge, Wonder Ballroom, Crystal Ballroom, Coffin Club, and selected other official providers. A venue homepage alone is deliberately not enough to select a poster.
 
 The action tries event JSON-LD/social images, plus images whose alt text matches the event title and the official Dante's TicketWeb event photo. It preserves provenance and requires pull-request approval. The workflow's **Summary** shows attempted pages, proposals, and unresolved gaps. A downloadable **artwork-review** artifact contains the full source report even when the run finds zero images; zero proposals means no PR, not a broken run. Use a different `batch` input to review other eligible pages. If a review PR is already open, the action intentionally skips until it is resolved.
 
