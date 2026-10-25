@@ -16,6 +16,8 @@ jobs:
           node --check app.js
           node --check events.js
           node --check scripts/discover-events.js
+          node --check scripts/backfill-artwork.js
+          node --check scripts/report-calendar-horizon.js
       - name: Verify date-first music and culture browsing
         run: node tests/music-filters.js
 
@@ -23,6 +25,7 @@ jobs:
         run: |
           node tests/validate.js
           node tests/discovery.js
+          node tests/calendar-horizon.js
 
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
