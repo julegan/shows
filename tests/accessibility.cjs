@@ -55,6 +55,15 @@ async function showsViews(browser,viewport){
   assert.equal(await page.locator(".shows-month-grid").count(),0,"Month overview should not load by default");
   assert(!(/mobile-first experiment|compare these two working layouts/i).test(await page.locator("body").innerText()),"No test copy in released homepage");
   errors.push(...await audit(page,"SHOWS date-first "+viewport.width));
+  // Venue-calendar artwork must render, not silently become "No flyer available".
+  // The Gilla Band flyer is explicitly attributed to Mississippi Studios.
+  await page.locator("#fromDate").fill("2026-10-30");
+  await page.locator("#search").fill("Gilla Band");
+  assert(await page.locator(".preview-event").count()>0,"Music from venue calendar appears in feed");
+  assert(await page.locator(".preview-event .preview-art img").count()>0,
+    "Attributed official-venue-calendar image renders on event card");
+  await page.locator("#search").fill("");
+  await page.locator("#jumpToday").click();
   // Browsing earlier dates is possible without loading them by default.
   await page.locator("#fromDate").fill("2026-10-17");
   assert.equal(await page.locator("#fromDate").inputValue(),"2026-10-17");
