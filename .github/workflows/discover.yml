@@ -31,28 +31,24 @@ jobs:
           existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/refresh-") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
           if [ "$existing" -gt 0 ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Canonical review PR already open. Merge or close it before the next combined proposal." >> "$GITHUB_STEP_SUMMARY"
+            echo "Canonical review PR is pending: collect and validate source/venue/artwork evidence as usual, but do not open a competing PR. Reports remain attached to this workflow run." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Show baseline priority coverage
         run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
       - name: Discover source-listed upcoming events
-        if: steps.pending.outputs.skip != 'true'
         run: node scripts/discover-events.js
       - name: Propose official art for existing and newly discovered music listings
-        if: steps.pending.outputs.skip != 'true'
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
           ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
         run: node scripts/backfill-artwork.js
       - name: Record source outcomes and monthly horizon
-        if: steps.pending.outputs.skip != 'true'
         run: |
           sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "Full discovery report is saved as the review artifact and committed to any proposal PR." >> "$GITHUB_STEP_SUMMARY"
           cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
           node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
       - name: Retain both review reports even on no-change days
-        if: steps.pending.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: shows-refresh-review-${{ github.run_number }}
@@ -62,7 +58,6 @@ jobs:
           retention-days: 30
           if-no-files-found: error
       - name: Validate combined source, artwork and calendar data
-        if: steps.pending.outputs.skip != 'true'
         run: |
           node --check scripts/discover-events.js
           node --check scripts/source-change-review.js

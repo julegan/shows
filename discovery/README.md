@@ -1,3 +1,11 @@
+## Continue source collection while reviews are pending
+
+The daily Actions workflow **always** checks configured venue/promoter sources, reviews artwork, validates the proposed local dataset and saves its health, coverage and discrepancy reports—even when an earlier editorial refresh PR is still open. A pending canonical refresh/discovery/artwork PR blocks **only the final step that would push another branch and open a competing PR**.
+
+This avoids a blind spot in source-health reporting without bypassing human approval: unmerged discoveries are discarded from the runner's local worktree at the end of the job, and no new event data becomes public until a reviewer merges a canonical PR and the separate portfolio snapshot PR. Once a pending review is resolved, the next regular run can propose any still-relevant changes. The latest run's report artifact is retained for 30 days.
+
+The collector does **not** automatically update an existing open PR or accumulate a persistent staging database. That remains future work if a daily review backlog becomes common.
+
 ## Changes to already-published event listings
 
 The daily combined workflow also performs a **non-destructive discrepancy review** using live source records from the same venue discovery run. It compares previously approved future events only when the official event-specific HTTPS permalink occurs **exactly once** in both the approved dataset and the current observed source rows.

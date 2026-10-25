@@ -24,6 +24,7 @@ jobs:
       - name: Validate sample events
         run: |
           node tests/validate.js
+          node tests/workflow-review-queue.js
           node tests/discovery.js
           node tests/calendar-horizon.js
 
