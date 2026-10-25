@@ -83,6 +83,7 @@ async function main(){
  const batchCount=Math.max(1,Math.ceil(pending.length/max));
  const batch=process.env.ARTWORK_BATCH_MODE==="rotate"?requestedBatch%batchCount:requestedBatch;
  let attempted=0,proposed=0;
+ const proposalRows=[];
  const failures=[];
  const cache=new Map();
  for(const e of pending.slice(batch*max,(batch+1)*max)){
@@ -97,7 +98,7 @@ async function main(){
     cache.set(url,eventPhotoFromHtml(body,url,e));
    }
    const artwork=cache.get(url);
-   if(artwork){e.artwork=artwork;proposed++;}
+   if(artwork){e.artwork=artwork;proposed++;proposalRows.push("- "+e.title+" ("+e.venue+") — "+artwork.sourceUrl+" — "+artwork.url);}
    else failures.push(e.id+": no event artwork on source page");
   }catch(err){failures.push(e.id+": "+String(err.message||err));}
  }
@@ -117,7 +118,7 @@ async function main(){
   "Music listings still missing artwork: "+events.filter(e=>e.category==="Music"&&!e.artwork).length,
   "Music listings without supported event-detail URLs: "+events.filter(e=>e.category==="Music"&&!e.artwork&&!originalUrl(e)).length,
   "",
-  ...events.filter(e=>e.artwork&&e.artwork.origin==="official-event-page").slice(-proposed).map(e=>"- "+e.title+" — "+e.artwork.sourceUrl+" — "+e.artwork.url),
+  ...(proposalRows.length?proposalRows:["No event-specific artwork was found in this batch."]),
   "",
   "## Unavailable or unclear","",...failures.map(x=>"- "+x),"",
   "A successful run with zero proposals creates no PR. This review report is preserved in the workflow artifacts.",
