@@ -4933,7 +4933,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/catch-your-breath-not-broken-enough-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/catch-your-breath-not-broken-enough-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-10-27-7b3ec7b18128",
@@ -5436,7 +5443,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/basement.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/basement/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-mississippi-polaris-2026-10-28-2c11d05483d5",
@@ -7972,7 +7986,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/rival-sons-domestic-bliss-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/rival-sons-domestic-bliss-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "indie-no-samantha-hart-the-living-room-naomi-march-etta-dean-2026-11-01",
@@ -9434,7 +9455,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/periphery-a-pale-white-dot-us-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-11-05-cf3c3e7b3f20",
@@ -14858,7 +14886,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/state-champs.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "hawthorne-christian-death-2026-11-17",
@@ -16832,7 +16867,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/alter-bridge-what-lies-within-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "dantes-distant-2026-11-24",
@@ -17059,7 +17101,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/05/Saosin-PDX-2026-Square.png",
+      "sourceUrl": "https://roselandpdx.com/event/saosin-20-years-of-self-titled/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-no-fun-2026-11-25-1f7ec0dd8f78",
@@ -17607,7 +17656,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/the-amity-affliction-house-of-cards-2026.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/the-amity-affliction-house-of-cards-2026/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Roseland Theater official event listing",
+      "usageApproved": null
+    }
   },
   {
     "id": "revolution-neurosis-with-trigger-object-and-additional-guests-2026-11-28",

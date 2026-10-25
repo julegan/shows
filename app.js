@@ -75,7 +75,7 @@
   function art(e, detail) {
     const a = e.artwork;
     const ok = a && /^https:\/\/[^<>"'\s]+$/i.test(a.url || "") && /^https:\/\//i.test(a.sourceUrl || "") &&
-      (a.origin === "official-event-page" || a.usageApproved === true) && a.usageApproved !== false;
+      (a.origin === "official-event-page" || a.origin === "official-venue-calendar" || a.usageApproved === true) && a.usageApproved !== false;
     const content = ok ? '<img alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin" src="' + esc(a.url) + '">' : '<span>No flyer available</span>';
     return '<span aria-hidden="true" class="' + (detail ? "preview-detail-art" : "preview-art") + '">' + content + '</span>';
   }
