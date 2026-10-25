@@ -43,7 +43,7 @@ const verified=[
  adapter.parseDetail(detail(items[1],{description:"Local bands are playing music."}),items[1]),
  adapter.parseDetail(detail(items[2],{description:"A food drive fundraiser for Esther's Pantry."}),items[2])
 ];
-assert.equal(verified[0].sourceVerifiedMusic,true);
+assert.equal(verified[0].sourceVerifiedMusic,true,JSON.stringify(verified[0]));
 assert.equal(verified[2].sourceVerifiedMusic,false,"Fundraiser does not become a concert from venue association");
 assert.equal(adapter.parseDetail(detail(items[0],{venue:"Other Club"}),items[0]).hold?.startsWith("Original ticket event venue"),true);
 assert.match(adapter.parseDetail(detail(items[0],{status:"https://schema.org/EventCancelled"}),items[0]).hold,/status requires/);
