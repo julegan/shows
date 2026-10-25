@@ -27,8 +27,8 @@ assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"paused-secondary","No Fun must not dominate scheduled discovery");
 assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top core source");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","mississippi-polaris","holocene","starday-tavern"]);
-assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html"].includes(s.adapter)),"Never run unverified adapters");
+assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","mississippi-polaris","holocene","starday-tavern","kenton-club"]);
+assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html"].includes(s.adapter)),"Never run unverified adapters");
 for(const id of ["coffin-club","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
@@ -52,4 +52,5 @@ assert.equal(byVenue["holocene"].ingestionStatus,"active-adapter","Holocene orig
 assert.equal(byId["starday-tavern"].status,"pilot-enabled","Source-verified original Starday public calendar is review-only");
 assert.equal(byVenue["starday-tavern"].ingestionStatus,"active-adapter");
 assert.equal(byId["kenton-club"].adapter,"kenton-official-html");
-assert.equal(byId["kenton-club"].status,"adapter-needed","Wait for a successful GitHub-runner Kenton live source probe before enabling");
+assert.equal(byId["kenton-club"].status,"pilot-enabled","Official Kenton importer passed GitHub Actions probe 40170404712");
+assert.equal(byVenue["kenton-club"].ingestionStatus,"active-adapter");
