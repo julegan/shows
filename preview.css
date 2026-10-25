@@ -108,3 +108,54 @@
 
 .preview-place a{color:#1d5035;text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:720}
 .preview-dialog .detail-info a{color:#1d5035;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Production page intro: restrained editorial treatment instead of a campaign hero. */
+.shows-intro{
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(220px,.7fr);
+  align-items:end;
+  gap:clamp(16px,4vw,52px);
+  padding:clamp(24px,3.2vw,39px) 0 26px;
+  border-bottom:1px solid #bbc8b9;
+}
+.shows-intro .shows-intro-label{
+  color:#455648;
+  font-size:10px;
+  line-height:1.4;
+  font-weight:790;
+  letter-spacing:.135em;
+  text-transform:uppercase;
+  margin:0 0 9px;
+}
+.shows-intro h1{
+  font-size:clamp(2.1rem,4.5vw,3.75rem);
+  font-weight:760;
+  line-height:1.04;
+  letter-spacing:-.057em;
+  margin:0;
+  text-wrap:balance;
+}
+.shows-intro .shows-intro-description{
+  color:#3e5143;
+  font-size:13px;
+  font-weight:500;
+  line-height:1.55;
+  margin:0;
+  max-width:370px;
+}
+.shows-intro+.preview-navigation{padding-top:16px}
+@media(max-width:680px){
+  .shows-intro{
+    display:block;
+    padding:24px 0 18px;
+  }
+  .shows-intro h1{font-size:clamp(2.05rem,8.2vw,2.9rem)}
+  .shows-intro .shows-intro-description{
+    max-width:470px;
+    margin-top:11px;
+    font-size:12px;
+    line-height:1.5;
+  }
+  .shows-intro+.preview-navigation{padding-top:12px}
+}
