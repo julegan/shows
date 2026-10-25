@@ -156,9 +156,9 @@
       "name": "Turn! Turn! Turn!",
       "tier": "core",
       "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
+      "calendarUrl": "https://turnturnturnpdx.com/entertainment/",
       "aliases": [],
-      "notes": "Source-specific importer needed"
+      "notes": "Venue embeds original Opendate account; event date, separately labeled doors/show time, and first-party artwork visible. Candidate import awaiting successful live detail-verification probe."
     },
     {
       "id": "the-fixin-to",
