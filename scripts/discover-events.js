@@ -14,6 +14,7 @@ const crystal=require("./crystal-importer");
 const indie=require("./mississippi-polaris-importer");
 const holocene=require("./holocene-importer");
 const starday=require("./starday-importer");
+const kenton=require("./kenton-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -63,6 +64,7 @@ function urlOf(item,src){
   // Revalidate event-specific paths and room identity for every discovered URL.
   if(src.adapter==="hosted-venue-html")return hosted.safeEventUrl(u.href,src);
   if(src.adapter==="dantes-live-html")return dantes.safeDantesUrl(u.href,src);
+  if(src.adapter==="kenton-official-html")return u.href===kenton.SOURCE_URL?u.href:null;
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
   if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
@@ -90,7 +92,7 @@ function extract(item,src,now){
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  // Every dated venue event is eligible; classify rather than discard unrelated categories.
  const stamp=item.startDate??item.startTime??item.start;
- const dateOnly=src.adapter==="black-water-ics"&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
+ const dateOnly=["black-water-ics","kenton-official-html"].includes(src.adapter)&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
  if(stamp==null&&!dateOnly)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
  if(dateOnly){
@@ -119,7 +121,7 @@ function extract(item,src,now){
  const sourceMatch=reviewed.forEvent({url,title,venue:item.venue||src.venue,date});
  const classification=sourceMatch||classifyEvent(item),category=classification.category;
  const asof=localDay(now);
- const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:url;
+ const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:src.adapter==="kenton-official-html"?url+"|"+norm(title):url;
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
@@ -173,13 +175,14 @@ async function fetchItems(source){
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
- if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
+ if(u.protocol!=="https:"||(!blackWaterIcs&&u.hostname!==home.hostname)||!["squarespace-json","twilight-html","star-theater-html","promoter-list-html","black-water-ics","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html"].includes(source.adapter))throw Error("Unsafe or unsupported source adapter");
  const response=await fetch(u,{headers:{"Accept":source.adapter==="squarespace-json"?"application/json":blackWaterIcs?"text/calendar":"text/html","User-Agent":"SHOWS-event-review/0.1"},signal:AbortSignal.timeout(18000),redirect:blackWaterIcs?"follow":"error"});
  if(blackWaterIcs&&new URL(response.url).hostname!=="calendar.google.com")throw Error("Public calendar redirected outside approved Google host");
  if(!response.ok)throw Error("HTTP "+response.status);
  const body=await response.text();
  if(body.length>3000000)throw Error("Feed exceeds size limit");
  if(source.adapter==="black-water-ics")return adapters.parseBlackWaterIcs(body,source,localDay(new Date()));
+ if(source.adapter==="kenton-official-html")return kenton.parseKenton(body);
  if(source.adapter==="mississippi-polaris-html")return indie.parseMississippi(body,source);
  if(source.adapter==="starday-google-html")return starday.parseStarday(body,source);
  if(source.adapter==="holocene-event-html"){
