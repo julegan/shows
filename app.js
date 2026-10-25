@@ -106,6 +106,7 @@
     }
     return html || '<div class="preview-empty"><h3>No listings found.</h3><p>Try a different start date or clear search and filters. Music coverage is still growing.</p></div>';
   }
+  function mapLink(address) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address); }
   function renderPlaces(items) {
     if (!items.length) return '<div class="preview-empty"><h3>No places found.</h3><p>Try another start date or clear filters.</p></div>';
     const places = new Map();
@@ -115,8 +116,9 @@
     }
     return '<div class="preview-place-list">' + [...places].sort((a,b) => a[0].localeCompare(b[0])).map(([name, list]) =>
       '<article class="preview-place"><h3>' + esc(name) + '</h3><p>' + esc(list[0].neighborhood || "Portland") +
-      ' · ' + list.length + ' upcoming listing' + (list.length === 1 ? "" : "s") +
-      '</p>' + list.slice(0, 8).map(e =>
+      ' · ' + list.length + ' listing' + (list.length === 1 ? "" : "s") +
+      '</p>' + (list[0].address ? '<p>'+esc(list[0].address)+'</p><p><a href="'+esc(mapLink(list[0].address))+'" target="_blank" rel="noopener noreferrer">Directions ↗</a></p>' : '') +
+      list.slice(0, 8).map(e =>
         '<button type="button" data-event="' + esc(e.id) + '"><span>' + esc(dateShort.format(new Date(e.startsAt))) +
         ' · ' + esc(clock(e)) + '</span>' + esc(e.title) + ' ↗</button>').join("") +
       (list.length > 8 ? '<p>And ' + (list.length - 8) + ' more dates. Refine filters or use By date for the full list.</p>' : "") +
@@ -202,6 +204,7 @@
       '</p><div class="detail-info"><div><strong>When</strong><span>'+esc(dateLong.format(new Date(e.startsAt)))+'<br>'+esc(clock(e))+
       (e.endsAt?' – '+esc(timeFormat.format(new Date(e.endsAt))):' · end time unconfirmed')+
       '</span></div><div><strong>Where</strong><span>'+esc(e.venue)+'<br>'+esc(e.address||"Address not confirmed")+
+      (e.address ? ' · <a href="'+esc(mapLink(e.address))+'" target="_blank" rel="noopener noreferrer">Directions ↗</a>' : '')+
       '</span></div><div><strong>Cost</strong><span>'+esc(e.price||"Unconfirmed")+
       '</span></div><div><strong>Ages</strong><span>'+esc(e.age||"Unconfirmed")+
       '</span></div></div><p class="detail-description">'+esc(e.description||"")+'</p>'+
