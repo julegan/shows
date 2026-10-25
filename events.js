@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-22",
-  "coverageThrough": "2027-01-22",
-  "totalOccurrences": 470,
-  "addedOccurrences": 62,
-  "batchId": "auto-discovery-2026-10-22-11",
+  "sourceCheckedAt": "2026-10-24",
+  "coverageThrough": "2027-05-17",
+  "totalOccurrences": 620,
+  "addedOccurrences": 150,
+  "batchId": "auto-discovery-2026-10-24-14",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -44,11 +44,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-22-10",
       "addedOccurrences": 5
+    },
+    {
+      "batchId": "auto-discovery-2026-10-22-11",
+      "addedOccurrences": 62
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 204
+  "musicOccurrences": 220
 };
 window.SHOWS_EVENTS = [
   {
@@ -3620,6 +3624,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-10-24-afae5ee00eee",
+    "title": "Sad Times Presents!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-24T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=cDI2MmppdG1iNjhiOGVmMGNla3Q3cm0xOGpfMjAyNjEwMjVUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=cDI2MmppdG1iNjhiOGVmMGNla3Q3cm0xOGpfMjAyNjEwMjVUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "kenton-club-weird-rainbow-little-hexes-heirloom-monsters-mask-appeal-2026-10-24",
     "title": "Weird Rainbow + Little Hexes + Heirloom Monsters + Mask Appeal",
     "subtitle": "Rock · live bill",
@@ -3778,6 +3826,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-25-ebf761635243",
+    "title": "El Sobrente & The Remainders",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-25T17:30:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjEwMjZUMDAzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjEwMjZUMDAzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "adx-my-friend-blue-2026-10-25",
@@ -4254,6 +4346,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-10-25-cb4176e4f708",
+    "title": "Stankaroke",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-25T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjEwMjZUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjEwMjZUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "adx-music-monday-2026-10-26",
     "title": "Music Monday at ADX",
     "subtitle": "Local musicians and short sets",
@@ -4288,6 +4424,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-26-349afa375504",
+    "title": "Open Mic with Noah Powell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-26T18:30:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEwMjdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEwMjdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-no-fun-2026-10-26-7f94fb1c2a31",
@@ -4593,7 +4773,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-26T19:30:00-07:00"
+    "doorsAt": "2026-10-26T19:30:00-07:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/755/388/compressed/Screenshot_2026-09-22_at_8.54.24%E2%80%AFPM.jpg?1790135762",
+      "sourceUrl": "https://app.opendate.io/e/mania-mnemonic-pulse-andrew-black-dj-music-medieval-october-26-2026-755388",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-holocene-2026-10-26-53191e32d6da",
@@ -5279,6 +5466,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-10-27-e51d4b294fb1",
+    "title": "Romo's Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-27T22:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjEwMjhUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjEwMjhUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "shemanski-farmers-2026-10-28",
     "title": "Shemanski Park Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -5395,6 +5626,50 @@ window.SHOWS_EVENTS = [
     "startTimeKind": "doors",
     "sourceNote": "Calendar time is doors. The show start is unconfirmed.",
     "accessibility": "The venue reports an upstairs space without an elevator; contact it ahead about accommodation needs."
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-28-30f7c21a42f6",
+    "title": "Noah Powell & The Fantastic Happy Hour Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T18:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjEwMjlUMDEwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjEwMjlUMDEwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-basement-with-high-vis-big-boy-lowertown-2026-10-28",
@@ -5599,7 +5874,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-10-28T19:30:00-07:00"
+    "doorsAt": "2026-10-28T19:30:00-07:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/749/681/compressed/IMG_0135.jpg?1788520562",
+      "sourceUrl": "https://app.opendate.io/e/cormae-new-here-combobox-october-28-2026-749681",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "crystal-everclear-with-american-hi-fi-2026-10-28",
@@ -5952,6 +6234,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-10-28-a2f34f546d68",
+    "title": "Emo Night w Reggie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-28T22:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjEwMjlUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjEwMjlUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-10-29-19a3a2bc3b15",
     "title": "TELEVISION / WIPERS / PJ HARVEY / NOMEANSNO",
     "subtitle": "Source-discovered venue event · details need review",
@@ -6029,6 +6355,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-29-db0735ec019f",
+    "title": "The Reverb Brothers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T17:30:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MjZwMmJuZXMxZzk1cGZjb21kY2tucmNnaGcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MjZwMmJuZXMxZzk1cGZjb21kY2tucmNnaGcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-hawthorne-theatre-2026-10-29-3978d33d1954",
@@ -6164,6 +6534,50 @@ window.SHOWS_EVENTS = [
       ]
     },
     "doorsAt": "2026-10-29T19:30:00-07:00"
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-29-82255c525956",
+    "title": "Hammerhead Tsunami + The Purple Knif +",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZThrcHFtcDBtaDVucGYydTYxbDgzNDRiZWcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZThrcHFtcDBtaDVucGYydTYxbDgzNDRiZWcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "indie-no-kallohumina-subvert-savant-moushumi-ghose-2026-10-29",
@@ -6594,6 +7008,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-10-30-034b12a88377",
+    "title": "Someday Diamonds",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T17:30:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MGVwMnRwdWZjbjhlY2Y5NHM2dm5hY3R2N2YgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MGVwMnRwdWZjbjhlY2Y5NHM2dm5hY3R2N2YgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-pain-of-truth-2026-10-30",
     "title": "Pain of Truth",
     "subtitle": "Hardcore · With Missing Link, Fatal Realm, Locked Shut",
@@ -7000,6 +7458,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-10-30-ce28204849a7",
+    "title": "Country Side Ride",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MzVmajJxa2w1a2FxamExcHYxNjRjYmN0cDJfMjAyNjEwMzFUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MzVmajJxa2w1a2FxamExcHYxNjRjYmN0cDJfMjAyNjEwMzFUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -7576,6 +8078,50 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-10-31T19:00:00-07:00"
   },
   {
+    "id": "auto-starday-tavern-2026-10-31-87f3dbf791e0",
+    "title": "Volume Bomb Halloween",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MmxxcXFmZDZuampvNWtycjY0MmtlamZwdjMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MmxxcXFmZDZuampvNWtycjY0MmtlamZwdjMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-10-31-c7509d815c72",
     "title": "BOSCO&rsquo;S HAUS OF WHORRORS: Halloween Night Direct from TRANSylvania",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -8127,7 +8673,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/62aa5d3f408f1681bc0ddb81/6a091de7337eee08aeb73e61_smashing%20web.avif",
+      "sourceUrl": "https://www.rosequarter.com/calendar-events/the-smashing-pumpkins-nov-1-2026",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-dantes-2026-11-01-1fdd4777df3d",
@@ -8227,6 +8780,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-02-43cdb259ba01",
+    "title": "Open Mic with Scott Allen",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-02T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMDNUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMDNUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -9313,6 +9910,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-04-e33d3f9a5bde",
+    "title": "The Bootleggers + Portland Reggae Alliance",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N3A0aWphMGY0b2VyZ2VncWh1b3JuNDZsdWIgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N3A0aWphMGY0b2VyZ2VncWh1b3JuNDZsdWIgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-11-04-d4a8b47cc5a5",
     "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -9558,6 +10199,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-05-e9455e986d09",
+    "title": "Blue Flags Black Grass + Dumpster Joe & The Boys",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Y2ludWg4OWw3bnEyanZhZmNnMzBvYmFlc2VfMjAyNjExMDZUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Y2ludWg4OWw3bnEyanZhZmNnMzBvYmFlc2VfMjAyNjExMDZUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "wonder-buzzcocks-with-grade-2-whisper-hiss-2026-11-05",
     "title": "Buzzcocks with Grade 2 & Whisper Hiss",
     "subtitle": "Live show · Punk",
@@ -9661,7 +10346,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-05T19:30:00-08:00"
+    "doorsAt": "2026-11-05T19:30:00-08:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/761/324/compressed/ck1.jpg?1791069689",
+      "sourceUrl": "https://app.opendate.io/e/carrion-kids-cherry-cheeks-amy-beth-thee-creeps-november-05-2026-761324",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-mississippi-polaris-2026-11-05-8e325aeca8c7",
@@ -10065,6 +10757,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-06-50d4f3ab2141",
+    "title": "Special Guest By Flowtenders",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MG90aDR0b2FjNGVzOHFiYTA0MHYwMGltaDNfMjAyNjExMDdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MG90aDR0b2FjNGVzOHFiYTA0MHYwMGltaDNfMjAyNjExMDdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -10497,6 +11233,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-06-6326f3c05333",
+    "title": "The Flowtenders Power Friday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=c2NqZWtmZ29jcnNubnQxZmI5aTlnNzFoNmJfMjAyNjExMDdUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=c2NqZWtmZ29jcnNubnQxZmI5aTlnNzFoNmJfMjAyNjExMDdUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-11-06-c36321b05efc",
     "title": "THE HYRULE BALL",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -10761,6 +11541,57 @@ window.SHOWS_EVENTS = [
     "seriesId": "saturday-market-2026"
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-07-2f3630166587",
+    "title": "Shamanic Sound Healing: a Portal Experience",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T11:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/47843621/shamanic-sound-healinga-portal-experience-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/47843621/shamanic-sound-healinga-portal-experience-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ab529a9d58d6bc7d617c6519b045eb49.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-07-cf69b9516617",
     "title": "RHYTHM IS A DANCER: An early evening 90s Dance Party hosted by SNAP! – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -11003,6 +11834,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-07-f83fffaa4374",
+    "title": "Funkanalia Residency",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MHJpaml0NnR2aThpcWFkNTZkMWc2bWNhZjhfMjAyNjExMDhUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MHJpaml0NnR2aThpcWFkNTZkMWc2bWNhZjhfMjAyNjExMDhUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "turn-turn-turn-iroiro-seattle-blesst-chest-trigger-object-grapefruit-2026-11-07",
     "title": "Iroiro (Seattle) + Blesst Chest + Trigger Object + Grapefruit",
     "subtitle": "rock, psychedelic rock, shoegaze · live bill",
@@ -11065,7 +11940,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-07T19:30:00-08:00"
+    "doorsAt": "2026-11-07T19:30:00-08:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/786/227/compressed/0045547725_10.jpg?1792117316",
+      "sourceUrl": "https://app.opendate.io/e/iroiro-seattle-blesst-chest-trigger-object-grapefruit-november-07-2026-786227",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-wonder-ballroom-2026-11-07-2d9c7822971e",
@@ -11249,6 +12131,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-07-8e99dd5da94b",
+    "title": "SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -11524,6 +12457,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "lents-farmers-2026"
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-08-7927bf60f606",
+    "title": "Bromf + Lee Walker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MWtobmxmMjNtdGNiNjRxMmYxcWpya3ZzN2EgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MWtobmxmMjNtdGNiNjRxMmYxcWpya3ZzN2EgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-dantes-2026-11-08-a08ca56ffa5b",
@@ -11859,6 +12836,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-09-1f48954a3784",
+    "title": "Open Mic with Snow Bootz The Tiger",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMTBUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMTBUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-09-d73e786d81e8",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -12059,6 +13080,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-10-c581fbb1bba8",
+    "title": "Paul Brainard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=amJwYTdxNWU4cmc3bzVvcmMxbGFzc2hncnZfMjAyNjExMTFUMDMwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=amJwYTdxNWU4cmc3bzVvcmMxbGFzc2hncnZfMjAyNjExMTFUMDMwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-10-6372def9ca53",
     "title": "Poser Tom's Roadshow Arcade",
     "subtitle": "Source-discovered venue event · details need review",
@@ -12105,6 +13170,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-10-6c5d2175a73b",
+    "title": "The Low Bar Chorale - Laura Gibson 20th Anniversary Singalong (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/85508195/the-low-bar-chorale-laura-gibson-20th-anniversary-singalong-night-2-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/85508195/the-low-bar-chorale-laura-gibson-20th-anniversary-singalong-night-2-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f7ee43cfda538cdc1faf326a6f1a2912.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -12350,6 +13466,145 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-10-e789913dc95d",
+    "title": "Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Mm1hZ3Rva2RyYWlodmNraG05djU0N2EzZzFfMjAyNjExMTFUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Mm1hZ3Rva2RyYWlodmNraG05djU0N2EzZzFfMjAyNjExMTFUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-11-e69636edca1b",
+    "title": "Mayya Marie + Noah Powell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MmVhOXBsMWpqZjdiNmJnMmlhcWgxNDNvYjdfMjAyNjExMTJUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MmVhOXBsMWpqZjdiNmJnMmlhcWgxNDNvYjdfMjAyNjExMTJUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-11-f4da28616de8",
+    "title": "Lady Killers hosted by Ally J Ward & Devan Daily",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/72469595/lady-killers-hosted-by-ally-j-ward-devan-daily-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/72469595/lady-killers-hosted-by-ally-j-ward-devan-daily-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/309da4db677600ebd7b1d0c9dc39cabe.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-11-b24bd9bb8279",
     "title": "A STRANGE BIRD with Vega Black, Zane Thomas & Bikehouse",
     "subtitle": "Source-discovered venue event · details need review",
@@ -12551,6 +13806,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-11-11-c472aeab2d9f",
+    "title": "Tank and the Bangas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Ariel J., Zeus (DJ)",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/70680916/tank-and-the-bangas-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/70680916/tank-and-the-bangas-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/69b0596bc99e123a387deb2817850b3b.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-11-e9fe7ed849e6",
     "title": "BIEBER AND A BEAT: A JUSTIN BIEBER NIGHT – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -12597,6 +13903,94 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-11-e1ff8bc0a4b0",
+    "title": "Gnosis Drum & Bass",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=bmpndHZnYWZianRwZHZrdWxxcTk4Zjd0Z3VfMjAyNjExMTJUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=bmpndHZnYWZianRwZHZrdWxxcTk4Zjd0Z3VfMjAyNjExMTJUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-12-e098a31cd88d",
+    "title": "Claes Almroth Trio",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NTlmbzc5ajVkMXNncjV1anJmODRlZnZoa2ZfMjAyNjExMTNUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NTlmbzc5ajVkMXNncjV1anJmODRlZnZoa2ZfMjAyNjExMTNUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -12810,6 +14204,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-11-12-c5746b72e574",
+    "title": "DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: The Minus 5",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/93574914/driveby-truckers-heathens-homecoming-west-2026-night-1-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/93574914/driveby-truckers-heathens-homecoming-west-2026-night-1-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c3ffd6d080a5455a33b57229c54a9ffd.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-1-1876-last-thread-altar-girl-kids-on-2026-11-12",
     "title": "Shoot the Moon Fest · Night 1: 1876, Last Thread, Altar Girl, Kids on Fire",
     "subtitle": "Punk, Punk rock, Indigenous punk · live bill",
@@ -12913,6 +14358,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-13-6dd5973cfd0e",
+    "title": "Heather Christie & The Starlettes",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NDA4YjcydWI4cHFmdGpwazZpZzhvczNlNDhfMjAyNjExMTRUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NDA4YjcydWI4cHFmdGpwazZpZzhvczNlNDhfMjAyNjExMTRUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -13148,6 +14637,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-13-0d20c3e29c61",
+    "title": "Champale Supernova",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=bHFodXRsdDQ3czM3NGJkNTR2cTEyNWNoajAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=bHFodXRsdDQ3czM3NGJkNTR2cTEyNWNoajAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -13610,6 +15143,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-14-da3816ffb13b",
+    "title": "Dj Nordicktrak",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZmNtNzh2Ym1hYjhzMTI3ZWNqNzNkamQyNTggbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZmNtNzh2Ym1hYjhzMTI3ZWNqNzNkamQyNTggbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -14509,6 +16086,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-16-a4b8fcbf52f3",
+    "title": "Open Mic with Scott Allen",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMTdUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMTdUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-16-dacc97509f56",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -14690,6 +16311,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-17-986cfdc3f9cc",
+    "title": "James T & Friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Mm4xMmViaG92NW92cjRhNDMzdmtxamNrZmpfMjAyNjExMThUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Mm4xMmViaG92NW92cjRhNDMzdmtxamNrZmpfMjAyNjExMThUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-twilight-2026-11-17-62103d6904f4",
@@ -15050,6 +16715,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-starday-tavern-2026-11-17-d016f3ab3a48",
+    "title": "Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NWltc3U1OWVxamc2ajJ2amd2dDJtdnVtYW1fMjAyNjExMThUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NWltc3U1OWVxamc2ajJ2amd2dDJtdnVtYW1fMjAyNjExMThUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "dantes-comeback-kid-2026-11-18",
     "title": "Comeback Kid",
     "subtitle": "Hardcore punk · With The Warriors, Dead Heat, Barrio Slam",
@@ -15256,6 +16965,101 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-11-18-52f85819f3f3",
+    "title": "Silvertongue // Bikini Drone // AUROCHS – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/silvertongue-bikini-drone-aurochs-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/silvertongue-bikini-drone-aurochs-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/silvertongue-bikini-drone-aurochs-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/silvertongue-bikini-drone-aurochs-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-18-873e43da4da7",
+    "title": "Gnosis",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZzNoNmYwM2VjMjFkaWk3aTBqcHZta2RkMDRfMjAyNjExMTlUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZzNoNmYwM2VjMjFkaWk3aTBqcHZta2RkMDRfMjAyNjExMTlUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-11-19-c6d979476421",
     "title": "2Dead Boyz x The Underachievers",
     "subtitle": "Source-discovered venue event · details need review",
@@ -15417,6 +17221,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-19-32b7b2ca6431",
+    "title": "Dub Orquestra",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NzNuaDkwaTFlOW1laXJxbGQ2cDJjbnFob3MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NzNuaDkwaTFlOW1laXJxbGQ2cDJjbnFob3MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -15712,6 +17560,50 @@ window.SHOWS_EVENTS = [
     ]
   },
   {
+    "id": "auto-starday-tavern-2026-11-20-3ee31e0fe03f",
+    "title": "2nd Base",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=bjBmYWhmaXQ3aHI2YzJndmwxcnNpcHVsa2MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=bjBmYWhmaXQ3aHI2YzJndmwxcnNpcHVsa2MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "turn-turn-turn-beta-voids-byproxy-dj-ben-w-total-punk-souvenir-shop-2026-11-20",
     "title": "Beta Voids + Byproxy + DJ Ben w/ Total Punk Souvenir Shop",
     "subtitle": "punk, hardcore punk, post-punk · live bill",
@@ -15769,7 +17661,14 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-underground-music",
-    "doorsAt": "2026-11-20T19:30:00-08:00"
+    "doorsAt": "2026-11-20T19:30:00-08:00",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/780/500/compressed/Beta-Voids.jpg?1792014516",
+      "sourceUrl": "https://app.opendate.io/e/beta-voids-byproxy-dj-ben-w-total-punk-souvenir-shop-november-20-2026-780500",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "indie-tw-drag-the-river-dewey-nielsen-band-2026-11-20",
@@ -16292,6 +18191,50 @@ window.SHOWS_EVENTS = [
     "seriesId": "outlet-riso-basics-2026"
   },
   {
+    "id": "auto-starday-tavern-2026-11-21-4dbf8193e2f2",
+    "title": "Scott Strickland",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=aWRjcTRzZXZxOTIycHE3aTU4NThhNXFkY3MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=aWRjcTRzZXZxOTIycHE3aTU4NThhNXFkY3MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-fear-factory-2026-11-21",
     "title": "Fear Factory — Cybernetic Domination Tour",
     "subtitle": "Industrial metal · With Darkest Hour, Brotality, Ligature Marks",
@@ -16349,6 +18292,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-21-1a7874ab8b60",
+    "title": "Seb El Zin",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NXRva2I2MXU3c2VnZ2dic200bHEyNXQyczQgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NXRva2I2MXU3c2VnZ2dic200bHEyNXQyczQgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -16472,6 +18459,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "lents-farmers-2026"
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-22-47e12b9d1ff5",
+    "title": "Jen Howard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NnJwYXBib3YxN2c2cG92cHN1aHFjNDlnaDcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NnJwYXBib3YxN2c2cG92cHN1aHFjNDlnaDcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "star-theater-psycroptic-with-inferi-cognitive-summoning-the-lich-2026-11-22",
@@ -16722,6 +18753,94 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-22-e5da4d34c1a1",
+    "title": "Stankaroke",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjExMjNUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjExMjNUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-23-f11685f0e458",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMjRUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMjRUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -17021,6 +19140,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-24-03837928ef48",
+    "title": "Romo's Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjExMjVUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjExMjVUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "shemanski-farmers-2026-11-25",
     "title": "Shemanski Park Farmers Market · Harvest Market",
     "subtitle": "Special pre-Thanksgiving market",
@@ -17055,6 +19218,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "shemanski-farmers-2026"
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-25-8e5358482847",
+    "title": "Noah Powell & The Fantastic Happy Hour Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjExMjZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjExMjZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-saosin-with-silent-planet-like-moths-to-flames-save-us-2026-11-25",
@@ -17161,6 +19368,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-25-eb3cb186fb56",
+    "title": "Emo Night w Reggie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjExMjZUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjExMjZUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-26-8c0a5433c7fb",
     "title": "CLOSED",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17207,6 +19458,94 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-26-e7dc62445584",
+    "title": "Deer Lodge",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-26T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NG8wMG9vODU5ZTdyZzg2YWJyamZkZHFtbWJfMjAyNjExMjdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NG8wMG9vODU5ZTdyZzg2YWJyamZkZHFtbWJfMjAyNjExMjdUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-27-617a5265d34f",
+    "title": "Heather Christie & The Starlettes",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=OW92ZzFmMHJwM3ExbXJjYTJhZmFtdGRjb2NfMjAyNjExMjhUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=OW92ZzFmMHJwM3ExbXJjYTJhZmFtdGRjb2NfMjAyNjExMjhUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -17428,6 +19767,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-27-1b71fea5a953",
+    "title": "Joseph Konty",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MDFzOTBkMWd2Y2RmcTFzZnZrMG41ZzRraG8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MDFzOTBkMWd2Y2RmcTFzZnZrMG41ZzRraG8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -17925,6 +20308,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-29-e6bf6912a86d",
+    "title": "El Sobrente & The Remainders",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjExMzBUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjExMzBUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-29-f256ffaa8eb2",
     "title": "Chai & Roses: Disco Tea Dance Party for QTBIPOC & Allies – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -18107,6 +20534,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-30-fa1db602fd34",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMDFUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMDFUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -18515,6 +20986,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-02-099b98f82774",
+    "title": "Gnosis Drum & Bass",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ajIyOGtjaWFpbmpzZTRrdjU1M2NkZGpqczNfMjAyNjEyMDNUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ajIyOGtjaWFpbmpzZTRrdjU1M2NkZGpqczNfMjAyNjEyMDNUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-12-02-cebeec8bef78",
     "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -18599,6 +21114,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-03-6ad8ecd8fd0d",
+    "title": "Blue Flags Black Grass + Dumpster Joe & The Boys",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Y2ludWg4OWw3bnEyanZhZmNnMzBvYmFlc2VfMjAyNjEyMDRUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Y2ludWg4OWw3bnEyanZhZmNnMzBvYmFlc2VfMjAyNjEyMDRUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-crystal-ballroom-2026-12-03-b5edb7716cf4",
@@ -18837,6 +21396,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-04-12bbc12abbc5",
+    "title": "Sam Henson Holiday Happy Hour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T16:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-12-04-042722267a19",
     "title": "Renee Christine – EARLY SHOW! – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -19020,6 +21623,50 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-04-f19e8610dbad",
+    "title": "Twisted Blue + Izy Cactus",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NHFrZXRtMDI4c3Y3aDVyNm9xczU0OXM3dnAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NHFrZXRtMDI4c3Y3aDVyNm9xczU0OXM3dnAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -19243,6 +21890,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "saturday-market-2026"
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-05-ca0203ee8b58",
+    "title": "Aiden Fritchman",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2U4MGN2N2hxNnB2ajVpNXF1b2ZjZ3ZpYnAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2U4MGN2N2hxNnB2ajVpNXF1b2ZjZ3ZpYnAgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-frankie-and-the-witch-fingers-gibby-haynes-with-spoon-bender-jonn-2026-12-05",
@@ -19475,6 +22166,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-05-343ebb636253",
+    "title": "Superocean + TBA + TBA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MHA3a2pzMzU5OWw3YmhtcDE2ZWFobzVqbTQgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MHA3a2pzMzU5OWw3YmhtcDE2ZWFobzVqbTQgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "moda-triumph-the-rock-roll-machine-reloaded-tour-2026-12-05",
     "title": "Triumph — The Rock & Roll Machine Reloaded Tour",
     "subtitle": "Live show · Rock",
@@ -19518,6 +22253,57 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-dantes-2026-12-05-e7e199508ab6",
+    "title": "DEAD ANIMAL ASSEMBLY PLANT with At The Heart Of The World & a special performance by Cryptid Creek Suspensions",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/dead-animal-assembly-plant-with-at-the-heart-of-the-world-a-special-performance-by-cryptid-creek-suspensions/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/dead-animal-assembly-plant-with-at-the-heart-of-the-world-a-special-performance-by-cryptid-creek-suspensions/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/11/20/64_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/dead-animal-assembly-plant-with-at-the-heart-of-the-world-a-special-performance-by-cryptid-creek-suspensions/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-dantes-2026-12-06-26195df233d8",
@@ -19917,6 +22703,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-07-ed60ebdcfc1b",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-07T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMDhUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMDhUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-07-1096414ab32f",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -20116,6 +22946,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-08-cfdb41c32a3d",
+    "title": "Paul Brainard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=amJwYTdxNWU4cmc3bzVvcmMxbGFzc2hncnZfMjAyNjEyMDlUMDMwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=amJwYTdxNWU4cmc3bzVvcmMxbGFzc2hncnZfMjAyNjEyMDlUMDMwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-08-5308fbb260f2",
     "title": "Poser Tom's Roadshow Arcade",
     "subtitle": "Source-discovered venue event · details need review",
@@ -20222,6 +23096,94 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-08-993218c2c603",
+    "title": "Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Mm1hZ3Rva2RyYWlodmNraG05djU0N2EzZzFfMjAyNjEyMDlUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Mm1hZ3Rva2RyYWlodmNraG05djU0N2EzZzFfMjAyNjEyMDlUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-09-62053fc8be9d",
+    "title": "Noah Powell & The Fantastic Happy Hour Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MmVhOXBsMWpqZjdiNmJnMmlhcWgxNDNvYjdfMjAyNjEyMTBUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MmVhOXBsMWpqZjdiNmJnMmlhcWgxNDNvYjdfMjAyNjEyMTBUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -20434,6 +23396,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-10-c1ee6f599a9e",
+    "title": "Claes Almroth Trio",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NTlmbzc5ajVkMXNncjV1anJmODRlZnZoa2ZfMjAyNjEyMTFUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NTlmbzc5ajVkMXNncjV1anJmODRlZnZoa2ZfMjAyNjEyMTFUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "crystal-angine-de-poitrine-with-zouz-2026-12-10",
     "title": "Angine de Poitrine with Zouz",
     "subtitle": "Live show · Rock, Noise & experimental",
@@ -20478,7 +23484,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/AngineDePoitrine26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277005-angine-de-poitrine",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "auto-holocene-2026-12-10-fe011809e484",
@@ -20698,6 +23711,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-10-c93640484f74",
+    "title": "Thee Honeybuds",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MmRibGdxMmo1bmFnMDBhZ3JqdnB2OW9mMDkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MmRibGdxMmo1bmFnMDBhZ3JqdnB2OW9mMDkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-12-10-932fa9eab451",
     "title": "MISSIO: Love & Heartbreak Tour w/ Ryan Oakes, Wrung",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -20784,6 +23841,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion",
     "seriesId": "crafty-wonderland-holiday-2026",
     "sourceNote": "Weekend hours use the organizer’s 5 PM close; a participating vendor’s calendar lists 6 PM."
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-11-8d3031aa779e",
+    "title": "Heather Christie & The Starlettes",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NDA4YjcydWI4cHFmdGpwazZpZzhvczNlNDhfMjAyNjEyMTJUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NDA4YjcydWI4cHFmdGpwazZpZzhvczNlNDhfMjAyNjEyMTJUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-hawthorne-theatre-2026-12-11-e6fa128b94e4",
@@ -20879,7 +23980,14 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ],
-    "addedIn": "2026-10-17-venue-coverage"
+    "addedIn": "2026-10-17-venue-coverage",
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/AngineDePoitrine26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/276842-angine-de-poitrine",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    }
   },
   {
     "id": "indie-no-void-lord-support-tba-2026-12-11",
@@ -20917,6 +24025,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-12-11T19:00:00-08:00"
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-11-57e3b7154665",
+    "title": "Birthday show for Violet Discord",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MW1xaHJzNnZybHUxYzRza2V2OTAwczhybGMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MW1xaHJzNnZybHUxYzRza2V2OTAwczhybGMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-dantes-2026-12-11-b47a7bf1c018",
@@ -20965,6 +24117,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-11-27bdd1b7ade6",
+    "title": "Candi Pop Christmas Party: A Girly Pop Dance Party – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/candi-pop-christmas-party-a-girly-pop-dance-party-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/candi-pop-christmas-party-a-girly-pop-dance-party-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/candi-pop-christmas-party-a-girly-pop-dance-party-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/candi-pop-christmas-party-a-girly-pop-dance-party-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -21496,6 +24699,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-14-26d9db5641e4",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-14T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMTVUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMTVUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-14-b873e6376988",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21592,6 +24839,94 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-15-b9f2283a7bdb",
+    "title": "James T & Friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-15T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=Mm4xMmViaG92NW92cjRhNDMzdmtxamNrZmpfMjAyNjEyMTZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=Mm4xMmViaG92NW92cjRhNDMzdmtxamNrZmpfMjAyNjEyMTZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-15-20644532b4f3",
+    "title": "Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-15T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NWltc3U1OWVxamc2ajJ2amd2dDJtdnVtYW1fMjAyNjEyMTZUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NWltc3U1OWVxamc2ajJ2amd2dDJtdnVtYW1fMjAyNjEyMTZUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -21696,6 +25031,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-16-23a32e383d96",
+    "title": "Gnosis",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZzNoNmYwM2VjMjFkaWk3aTBqcHZta2RkMDRfMjAyNjEyMTdUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZzNoNmYwM2VjMjFkaWk3aTBqcHZta2RkMDRfMjAyNjEyMTdUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2026-12-17-5f4f54b8c2c5",
     "title": "Honey Revenge x Dead Poet Society",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21794,6 +25173,94 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-18-10bdd54888d0",
+    "title": "Which Dave",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2RzcGFjdnA0cmF2b29sbG9xbnZxbXQzZGkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2RzcGFjdnA0cmF2b29sbG9xbnZxbXQzZGkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-18-5b5eaa21d85f",
+    "title": "Boy Dinner + TBD + TBD",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MGFiNDY4MWdtZ3NsazBhcWpxYW44M2JxcDIgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MGFiNDY4MWdtZ3NsazBhcWpxYW44M2JxcDIgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
     "title": "You, The Audience • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -21833,6 +25300,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-19-ba7e85799018",
+    "title": "The Last Argonauts + TBD + TBD",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NjFpOWQyYTBuNHA2OHVqbHVhODBtZ3VpcWEgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NjFpOWQyYTBuNHA2OHVqbHVhODBtZ3VpcWEgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -21937,6 +25448,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-21-3faa56515b4b",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMjJUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMjJUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-21-51bb53eba14d",
     "title": "Bridgetown Trivia",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21983,6 +25538,94 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-22-49a4dd0a4d4c",
+    "title": "Romo's Party Portal Shaqtime",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-22T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjEyMjNUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjEyMjNUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-23-633a3072d3da",
+    "title": "Noah Powell & The Fantastic Happy Hour Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-23T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjEyMjRUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjEyMjRUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -22087,6 +25730,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-24-b6b74622aeef",
+    "title": "Deer Lodge",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-24T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NG8wMG9vODU5ZTdyZzg2YWJyamZkZHFtbWJfMjAyNjEyMjVUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NG8wMG9vODU5ZTdyZzg2YWJyamZkZHFtbWJfMjAyNjEyMjVUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-25-7de9d8a1a95c",
     "title": "CLOSED",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22137,6 +25824,138 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-25-fb02c47dac2d",
+    "title": "Heather Christie & The Starlettes",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-25T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=OW92ZzFmMHJwM3ExbXJjYTJhZmFtdGRjb2NfMjAyNjEyMjZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=OW92ZzFmMHJwM3ExbXJjYTJhZmFtdGRjb2NfMjAyNjEyMjZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-25-571306d2fd10",
+    "title": "Country Side Ride",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-25T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MzVmajJxa2w1a2FxamExcHYxNjRjYmN0cDJfMjAyNjEyMjZUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MzVmajJxa2w1a2FxamExcHYxNjRjYmN0cDJfMjAyNjEyMjZUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-27-0268457e9af4",
+    "title": "El Sobrente & The Remainders",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-27T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjEyMjhUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjEyMjhUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-27-3a50f6cec19f",
     "title": "Henry Ivie-Gardner • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -22176,6 +25995,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-27-7be0fb74805a",
+    "title": "Stankaroke",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-27T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjEyMjhUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjEyMjhUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -22226,6 +26089,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-28-1e6488c48248",
+    "title": "Open Mic with Lucas Benoit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-28T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMjlUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjEyMjlUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -22422,6 +26329,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-30-b632631cc475",
+    "title": "Emo Night w Reggie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjEyMzFUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjEyMzFUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-12-31-7b14a6bb573a",
     "title": "2000s New Year’s Eve Y2K Ball",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22468,6 +26419,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-12-31-acc28d246b17",
+    "title": "JERRY JOSEPH",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/jerry-joseph/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/jerry-joseph/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/64/75/13_Original.jpg?v=5",
+      "sourceUrl": "https://www.danteslive.com/tm-event/jerry-joseph/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -23093,6 +27095,3143 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-01-23-7f5795d3911e",
+    "title": "Dungeons & Drag Queens – EARLY SHOW! – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/dungeons-drag-queens-early-show-21-2/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/dungeons-drag-queens-early-show-21-2/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/dungeons-drag-queens-early-show-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/dungeons-drag-queens-early-show-21-2/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-01-23-b9a2689a33e5",
+    "title": "Super Diamond – The Neil Diamond Tribute",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279034-super-diamond-the-neil-diamond-tribute/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279034-super-diamond-the-neil-diamond-tribute/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/SuperDiamond27-UYShyo.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279034-super-diamond-the-neil-diamond-tribute/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-01-26-b6554e94fbdd",
+    "title": "TesseracT",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-26T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/tesseract/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/tesseract/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/tesseract.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/tesseract/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-01-28-c2dd83391821",
+    "title": "Fruition",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278536-fruition/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278536-fruition/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/08/Fruition_26-1a54D0.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278536-fruition/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-01-28-479e6244c361",
+    "title": "Madds Buckley 2026/2027 North American Tour – w/ Sparkbird – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/madds-buckley-2026-2027-north-american-tour-w-sparkbird-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/madds-buckley-2026-2027-north-american-tour-w-sparkbird-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/08/madds-buckley-2026-2027-north-american-tour-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/madds-buckley-2026-2027-north-american-tour-w-sparkbird-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-01-29-677e73701aaf",
+    "title": "Portland’s Folk Festival",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-29T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/276751-portlands-folk-festival/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/276751-portlands-folk-festival/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/05/FolkFest27-mtrQyx.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/276751-portlands-folk-festival/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-01-30-76e848e72fa9",
+    "title": "Portland’s Folk Festival",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-30T15:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/276749-portlands-folk-festival/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/276749-portlands-folk-festival/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/05/FolkFest27-mtrQyx.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/276749-portlands-folk-festival/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-02-03-e7d011ffc28e",
+    "title": "Rare Americans",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/rare-americans-welcome-to-crooked-city-tour/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/rare-americans-welcome-to-crooked-city-tour/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/rare-americans-welcome-to-crooked-city-tour.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/rare-americans-welcome-to-crooked-city-tour/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-02-04-5c0c8ea86560",
+    "title": "Smith & Myers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-04T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/smith-myers/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/smith-myers/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/smith-myers-1.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/smith-myers/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-02-04-7cc4fec77f1c",
+    "title": "Romare (live) – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-04T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/romare-live-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/romare-live-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/romare-live-21-1.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/romare-live-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-02-05-4d750108f78a",
+    "title": "Whitey Morgan and the 78’s",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/whitey-morgan-and-the-78s-2/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/whitey-morgan-and-the-78s-2/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/whitey-morgan-and-the-78s.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/whitey-morgan-and-the-78s-2/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-02-09-cba3ae68a926",
+    "title": "Wolves In The Throne Room",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/wolves-in-the-throne-room/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/wolves-in-the-throne-room/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/wolves-in-the-throne-room.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/wolves-in-the-throne-room/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-16-9f9963c6c9cb",
+    "title": "La Roux",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278647-la-roux/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278647-la-roux/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/09/LaRoux27-6sXdOH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278647-la-roux/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-02-19-be8fe8c03d91",
+    "title": "THE MOVEMENT TOUR: WINTER 2027 | Wonder BallroomThe Movement",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/the-movement-tour-winter-2027/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/the-movement-tour-winter-2027/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/09/the-movement-tour-winter-2027.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/the-movement-tour-winter-2027/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-02-19-e4dbb55e353f",
+    "title": "Bella Poarch Presents Picnic at the Cemetery Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/bella-poarch-presents-picnic-at-the-cemetery-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/bella-poarch-presents-picnic-at-the-cemetery-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/10/bella-poarch-presents-picnic-at-the-cemetery-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/bella-poarch-presents-picnic-at-the-cemetery-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-02-19-d15567cdf678",
+    "title": "REVEREND HORTON HEAT with Special Guest",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/reverend-horton-heat-with-special-guest/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/reverend-horton-heat-with-special-guest/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/76/74_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/reverend-horton-heat-with-special-guest/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-02-20-efcddc6c88ad",
+    "title": "JOS&Eacute; JAMES SINGS SINATRA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/05/70/74_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-22-8d9575898f06",
+    "title": "Sylvan Esso",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-22T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/277205-sylvan-esso/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/277205-sylvan-esso/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/07/SylvanEsso_26-nBYvRH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/277205-sylvan-esso/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-23-571380f59ec8",
+    "title": "Sylvan Esso",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-23T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/277206-sylvan-esso/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/277206-sylvan-esso/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/07/SylvanEsso_26-nBYvRH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/277206-sylvan-esso/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-02-27-cc587c3b6b85",
+    "title": "Blue October: Foiled 20th Anniversary World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/blue-october-foiled-20th-anniversary-world-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-02-27-3eb1779ae2c5",
+    "title": "DeathByRomy Fever Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/deathbyromy-fever-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/deathbyromy-fever-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/10/deathbyromy.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/deathbyromy-fever-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-02-27-050cd00292ae",
+    "title": "SUNGAZER",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/sungazer/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/sungazer/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/05/93/44_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/sungazer/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-02-27-89822892dd08",
+    "title": "Valley",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/valley-do-you-need-to-be-entertained-tour/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/valley-do-you-need-to-be-entertained-tour/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/09/valley-do-you-need-to-be-entertained-tour.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/valley-do-you-need-to-be-entertained-tour/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-02-28-0c504857f1c6",
+    "title": "Blue October: Foiled 20th Anniversary World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour-2/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour-2/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/blue-october-foiled-20th-anniversary-world-tour-1.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/blue-october-foiled-20th-anniversary-world-tour-2/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-02-28-c5c8e46957cd",
+    "title": "Eluveitie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/eluveitie-2/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/eluveitie-2/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/09/eluveitie.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/eluveitie-2/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-03-02-9dd3ba2ada4b",
+    "title": "Caroline Rose",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/caroline-rose-2/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/caroline-rose-2/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/caroline-rose.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/caroline-rose-2/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-02-98ba989471da",
+    "title": "GIRL ULTRA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/girl-ultra/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/girl-ultra/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/99/64_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/girl-ultra/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-03-04-34b1c8a95d04",
+    "title": "Alan Walker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278693-alan-walker/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278693-alan-walker/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/09/AlanWalker27-6SN6EM.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278693-alan-walker/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-03-05-2d37a722507d",
+    "title": "Blondshell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/276943-blondshell/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/276943-blondshell/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/08/Blondshell26-dZbxZI.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/276943-blondshell/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-06-7c41bf1cd256",
+    "title": "Biamp Portland Jazz Festival: Lila Downs with Bobby Torres Ensemble",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/biamp-portland-jazz-festival-lila-downs-with-bobby-torres-ensemble/roseland-theater/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/biamp-portland-jazz-festival-lila-downs-with-bobby-torres-ensemble/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/biamp-portland-jazz-festival-lila-downs-with-bobby-torres-ensemble.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/biamp-portland-jazz-festival-lila-downs-with-bobby-torres-ensemble/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-03-06-1cad365b7ff1",
+    "title": "Sam Gendel + Sam Wilkes – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/sam-gendel-sam-wilkes-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/sam-gendel-sam-wilkes-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/sam-gendel-sam-wilkes-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/sam-gendel-sam-wilkes-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-03-10-86e9079ff7e5",
+    "title": "The Lemonheads: The Love Chant Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-10T19:45:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/the-lemonheads-the-love-chant-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/the-lemonheads-the-love-chant-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/09/the-lemonheads-the-love-chant-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/the-lemonheads-the-love-chant-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-03-10-49c34798e7b2",
+    "title": "Braxton Keith",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279010-braxton-keith/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279010-braxton-keith/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/09/Braxton26-pR58EB.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279010-braxton-keith/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-12-f46db4034da9",
+    "title": "SML &#8211; Night 1",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/sml-night-1/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/sml-night-1/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/78/64_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/sml-night-1/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-13-9a21b6f0c218",
+    "title": "Chelsea Cutler – IS THIS THE END? Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/chelsea-cutler-is-this-the-end-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/chelsea-cutler-is-this-the-end-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/chelsea-cutler-is-this-the-end-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/chelsea-cutler-is-this-the-end-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-13-4811276b8b29",
+    "title": "SML &#8211; Night 2",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/sml-night-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/sml-night-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/78/74_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/sml-night-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-14-abc285d8be04",
+    "title": "NERVOSA with Castrator & Anger Within",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-14T18:30:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/nervosa-with-castrator-anger-within/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/nervosa-with-castrator-anger-within/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/97/62/54_Original.jpg?v=7",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/nervosa-with-castrator-anger-within/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-03-15-b9adce3bdb00",
+    "title": "Nile + Coroner",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-15T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/nile-coroner/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/nile-coroner/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/09/nile-coroner.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/nile-coroner/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-18-8d91f2154040",
+    "title": "Northlane: THE ANEMOIA TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-18T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/northlane-the-anemoia-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/northlane-the-anemoia-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/northlane-the-anemoia-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/northlane-the-anemoia-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-03-20-1f805ac3b0a3",
+    "title": "Helena Deland – EARLY SHOW! – 21+",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-20T18:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/helena-deland-early-show-21/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/helena-deland-early-show-21/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/helena-deland-early-show-21.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/helena-deland-early-show-21/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-21-35bf85704cb4",
+    "title": "HANS WILLIAMS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-21T18:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/hans-williams/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/hans-williams/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/73/84_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/hans-williams/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-25-558455b79d38",
+    "title": "KASH'D OUT w/ CYDEWAYS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/kashd-out-w-cydeways/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/kashd-out-w-cydeways/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/93/24_Original.jpg?v=7",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/kashd-out-w-cydeways/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-25-042fe42aa5a1",
+    "title": "Wheeler Walker Jr. – Pullin’ Out: The Farewell Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/wheeler-walker-jr-pullin-out-the-farewell-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/wheeler-walker-jr-pullin-out-the-farewell-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/wheeler-walker-jr-pullin-out-the-farewell-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/wheeler-walker-jr-pullin-out-the-farewell-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-03-30-5d900e57fb08",
+    "title": "CAIOLA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/caiola/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/caiola/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/03/76/04_Original.jpg?v=4",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/caiola/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-03-30-df21e7273052",
+    "title": "The Mary Wallopers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278187-the-mary-wallopers/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278187-the-mary-wallopers/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/08/TheMaryWallopers_26-S4TCyo.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278187-the-mary-wallopers/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-01-8587402fac72",
+    "title": "Nothing But Thieves",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-01T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/277040-nothing-but-thieves/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/277040-nothing-but-thieves/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/277040-nothing-but-thieves/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-02-f16e9ff39c70",
+    "title": "The Elovaters",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-02T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279180-the-elovaters/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279180-the-elovaters/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/Elovaters_27-WnXgAj.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279180-the-elovaters/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-04-02-554fd959fa9e",
+    "title": "GLOW JOB 2027: GLOW HARD OR GLOW HOME (NIGHT 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-02T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-1/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-1/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/64/98/53_Original.jpg?v=7",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-1/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-04-03-ca8397422a88",
+    "title": "GLOW JOB 2027: GLOW HARD OR GLOW HOME (NIGHT 2))",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-03T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/64/98/93_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/glow-job-2027-glow-hard-or-glow-home-night-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-04-04-658bacbfe418",
+    "title": "Four Year Strong: Rise or Die Trying 25 Year Anniversary Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-04T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/four-year-strong-rise-or-die-trying-25-year-anniversary-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/four-year-strong-rise-or-die-trying-25-year-anniversary-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/four-year-strong-rise-or-die-trying-25-year-anniversary-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/four-year-strong-rise-or-die-trying-25-year-anniversary-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-04-06-e1ae72cbb1ae",
+    "title": "Sleaford Mods",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-06T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/sleaford-mods-2/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/sleaford-mods-2/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/sleaford-mods.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/sleaford-mods-2/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-04-08-d6c40f72bbf5",
+    "title": "Jersey",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-08T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/jersey/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/jersey/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/jersey.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/jersey/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-04-11-bfb70a4357d7",
+    "title": "Jack & Jack – All Ages",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-11T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/jack-jack-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/jack-jack-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/10/jack-jack-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/jack-jack-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-16-7265d745f287",
+    "title": "Lambrini Girls",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-16T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278493-lambrini-girls/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278493-lambrini-girls/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/LambriniGirls_26-0kGwos.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278493-lambrini-girls/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-20-d8247133539d",
+    "title": "FKJ",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-20T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/277132-fkj/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/277132-fkj/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/06/FKJ26-jfSi1k.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/277132-fkj/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-04-22-5607e4d9a61a",
+    "title": "The Warning – Everything’s Falling World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/the-warning-everythings-falling-world-tour/roseland-theater/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/the-warning-everythings-falling-world-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/09/the-warning-everythings-falling-world-tour-1.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/the-warning-everythings-falling-world-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-27-1c13a803bdd5",
+    "title": "The Interrupters",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-27T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/278583-the-interrupters/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/278583-the-interrupters/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/278583-the-interrupters/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-04-30-ec580062d423",
+    "title": "FAUN – USA & CANADA TOUR 2027",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-30T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/faun-usa-canada-tour-2027/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/faun-usa-canada-tour-2027/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/faun-usa-canada-tour-2027.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/faun-usa-canada-tour-2027/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-05-04-a6b50393d360",
+    "title": "Terrian: Mad Big World Tour – All Ages!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-04T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/event/terrian-mad-big-world-tour-all-ages/holocene/portland/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/event/terrian-mad-big-world-tour-all-ages/holocene/portland/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.holocene.org/wp-content/uploads/2026/09/terrian-mad-big-world-tour-all-ages.jpeg",
+      "sourceUrl": "https://www.holocene.org/event/terrian-mad-big-world-tour-all-ages/holocene/portland/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-05-09-cc5af3d6a70d",
+    "title": "Saint Levant",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-09T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/277966-saint-levant/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/277966-saint-levant/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/07/SaintLevant26-NSKjoZ.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/277966-saint-levant/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-05-12-75753d7308e6",
+    "title": "Haiden Henderson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-12T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/haiden-henderson-2/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/haiden-henderson-2/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/09/haiden-henderson.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/haiden-henderson-2/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-05-17-a0c3bb5ca94c",
+    "title": "THE LIMI&Ntilde;ANAS with Native Sun",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-17T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/the-liminanas-with-native-sun/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/the-liminanas-with-native-sun/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/42/27/83_Original.jpg?v=6",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/the-liminanas-with-native-sun/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   }
