@@ -42,7 +42,7 @@ function artworkCandidate(raw,pageUrl){
   return u.href;
  }catch(_){return null;}
 }
-function eventArtworkFromHtml(html,pageUrl){
+function eventArtworkFromHtml(html,pageUrl,expectedTitle){
  const page=new URL(pageUrl);
  const fromSchema=[];
  for(const m of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){
@@ -54,6 +54,23 @@ function eventArtworkFromHtml(html,pageUrl){
     for(const candidate of Array.isArray(obj.image)?obj.image:[obj.image])if(candidate)fromSchema.push(candidate);
    }
   }catch(_){}
+ }
+ // A specifically labelled event image is stronger evidence than a generic
+ // social-preview image. Only accept this fallback when a matching event title
+ // was supplied by the caller and the image appears on its approved detail page.
+ if(expectedTitle){
+  const firstWord=clean(expectedTitle).toLowerCase().split(/[^a-z0-9]+/)
+   .find(w=>w.length>=4&&!["with","live","show","tour","from","the"].includes(w));
+  if(firstWord){
+   for(const tag of String(html).matchAll(/<img\b[^>]*>/gi)){
+    const attrs=Object.fromEntries([...tag[0].matchAll(/([A-Za-z:-]+)\s*=\s*["']([^"']*)["']/g)].map(x=>[x[1].toLowerCase(),x[2]]));
+    const alt=clean(attrs.alt||"").toLowerCase();
+    if(alt.split(/[^a-z0-9]+/).includes(firstWord)){
+     const u=artworkCandidate(attrs.src||attrs["data-src"],pageUrl);
+     if(u)fromSchema.push(u);
+    }
+   }
+  }
  }
  const metas=[...String(html).matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);
  for(const m of metas){
