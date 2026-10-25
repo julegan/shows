@@ -15,6 +15,7 @@ const indie=require("./mississippi-polaris-importer");
 const holocene=require("./holocene-importer");
 const starday=require("./starday-importer");
 const kenton=require("./kenton-importer");
+const turn=require("./turnturnturn-opendate");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -65,6 +66,7 @@ function urlOf(item,src){
   if(src.adapter==="hosted-venue-html")return hosted.safeEventUrl(u.href,src);
   if(src.adapter==="dantes-live-html")return dantes.safeDantesUrl(u.href,src);
   if(src.adapter==="kenton-official-html")return u.href===kenton.SOURCE_URL?u.href:null;
+  if(src.adapter==="turnturnturn-opendate")return turn.officialEventUrl(u.href);
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
   if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
@@ -147,14 +149,14 @@ function reconcile(existing,records){
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
   const source=a.discovery?.sourceId;
-  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(source)
+  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn"].includes(source)
     &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
     &&(source!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
  };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
   if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
    skipped.push({sourceId:e.discovery?.sourceId,skip:"Already present",title:e.title,url:e.url});continue;
   }
@@ -172,6 +174,31 @@ async function fetchItems(source){
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
+ if(source.adapter==="turnturnturn-opendate"){
+  if(source.url!==turn.CALENDAR_URL||source.baseUrl!=="https://turnturnturnpdx.com")throw Error("Unapproved venue calendar host");
+  const check=async url=>{
+   const u=new URL(url);
+   if(u.protocol!=="https:"||u.hostname!=="app.opendate.io"||u.username||u.password)throw Error("Unapproved OpenDate host");
+   const response=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},
+    signal:AbortSignal.timeout(14000),redirect:"error"});
+   if(!response.ok||!response.headers.get("content-type")?.includes("text/html"))throw Error("OpenDate public event page returned "+response.status);
+   const body=await response.text();
+   if(body.length>1400000)throw Error("OpenDate public document too large");
+   return body;
+  };
+  const official=turn.parseRoster(await check(source.url)),reviewed=[];
+  for(let i=0;i<official.length;i+=4){
+   const batch=await Promise.all(official.slice(i,i+4).map(async item=>{
+    if(item.hold)return item;
+    try{return turn.parseDetail(await check(item.fullUrl),item);}
+    catch(e){return {hold:"Official event page unavailable: "+String(e.message||e),url:item.fullUrl,title:item.title};}
+   }));
+   reviewed.push(...batch);
+  }
+  if(!reviewed.some(x=>x.startDate))throw Error("No valid original OpenDate event-detail records");
+  return reviewed;
+ }
+
  const u=new URL(source.url),home=new URL(source.baseUrl);
  const blackWaterIcs=source.adapter==="black-water-ics" && u.href==="https://calendar.google.com/calendar/ical/blackwater.venue.calendar%40gmail.com/public/basic.ics"
    && home.origin==="https://bar.blackwaterpdx.com";
