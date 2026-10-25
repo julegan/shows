@@ -27,6 +27,7 @@ async function run(){
   if(u.hostname==="app.opendate.io"&&u.pathname.startsWith("/e/")){
    const detail=await get(u.href);console.log("DETAIL_BYTES",detail.length);
    console.log("DETAIL_JSONLD",/application\/ld\+json/.test(detail));
+   console.log("DETAIL_SCHEMA",JSON.stringify([...detail.matchAll(/<script[^>]*type=["\x27]application\/ld\+json["\x27][^>]*>([\s\S]*?)<\/script>/gi)].map(x=>x[1].slice(0,2100))));
    console.log("DETAIL_CONTEXT",detail.slice(Math.max(0,detail.indexOf("Doors")-250),Math.max(0,detail.indexOf("Doors")-250)+1200).replace(/\s+/g," ").slice(0,1200));
    console.log("DETAIL_IMAGES",JSON.stringify([...detail.matchAll(/<img\b[^>]{0,900}>/gi)].slice(0,6).map(m=>m[0].slice(0,550))));
   }
