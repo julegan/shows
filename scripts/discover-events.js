@@ -16,6 +16,7 @@ const holocene=require("./holocene-importer");
 const starday=require("./starday-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
+const {sourceHealthSummary}=require("./source-health");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -152,13 +153,13 @@ function reconcile(existing,records){
   const e=x.event,day=e.startsAt.slice(0,10);
   const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
   if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
-   skipped.push({skip:"Already present",title:e.title,url:e.url});continue;
+   skipped.push({sourceId:e.discovery?.sourceId,skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
-   held.push({hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
+   held.push({sourceId:e.discovery?.sourceId,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
   if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
-   held.push({hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
+   held.push({sourceId:e.discovery?.sourceId,hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   accepted.push(e);seen.add(key);
  }
@@ -345,9 +346,10 @@ async function fetchItems(source){
   return url?{...item,artwork:{url,sourceUrl:source.url,origin:"official-event-page",credit:"Venue event listing",usageApproved:null}}:item;
  });
 }
-function report(r,errors,now){
+function report(r,errors,now,sourceRuns=[],sourceRegistry=[]){
  const lines=["# SHOWS automated discovery review — "+localDay(now),"",
   "Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.","",
+  sourceHealthSummary({sourceRuns,sourceRegistry,accepted:r.accepted,held:r.held,skipped:r.skipped,errors}),
   "## New candidates: "+r.accepted.length,"",
   ...[...new Set(r.accepted.map(e=>e.discovery?.sourceId).filter(Boolean))].map(id=>"- "+id+": "+r.accepted.filter(e=>e.discovery?.sourceId===id).length+" proposals"),"" ,
   "| Date | Event | Venue | Listed time | Primary listing |",
@@ -370,11 +372,12 @@ async function run(opts={}){
  const parsed=parseFile(fs.readFileSync(path.join(root,"events.js"),"utf8"));
  const sources=registry.sources.filter(s=>s.status==="pilot-enabled");
  if(!sources.length)throw Error("No active sources");
- const now=opts.now||new Date(),found=[],errors=[];
+ const now=opts.now||new Date(),found=[],errors=[],sourceRuns=[];
  for(const src of sources){
   try{
    const items=opts.load?await opts.load(src):await fetchItems(src);
    if(!Array.isArray(items))throw Error("Source did not return an array");
+   sourceRuns.push({id:src.id,status:items.length?"checked":"empty",examined:items.length});
    if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
    for(const item of items){
     if(item?.hold){found.push({...item,sourceId:src.id});continue;}
@@ -382,15 +385,15 @@ async function run(opts={}){
     found.push(record.event?record:{...record,sourceId:src.id});
    }
    console.log(src.id+": "+items.length+" source items examined");
-  }catch(e){errors.push({source:src.id,error:String(e.message||e)});console.error(src.id+": "+String(e.message||e));}
+  }catch(e){errors.push({source:src.id,error:String(e.message||e)});sourceRuns.push({id:src.id,status:"failed",examined:0});console.error(src.id+": "+String(e.message||e));}
  }
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
  const result=reconcile(parsed.events,found);
  console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
- if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now));
- if(!result.accepted.length)return {...result,errors};
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources));
+ if(!result.accepted.length)return {...result,errors,sourceRuns};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
@@ -402,7 +405,7 @@ async function run(opts={}){
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
  }
- return {...result,errors,output};
+ return {...result,errors,sourceRuns,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
 module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};

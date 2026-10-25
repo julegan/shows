@@ -1,3 +1,12 @@
+## Review quality and source-health reporting
+
+Each combined refresh now places a concise **Source health (this run)** table before its detailed candidate listings. The table distinguishes checked, empty and failed sources; lists their examined items, new events, music/unclassified records, source artwork, holds and skips. It does not equate successful fetching with complete venue coverage.
+
+The classification section highlights titles requiring human confirmation instead of inferring a concert or genre from the venue alone. A separate source-connection list identifies `adapter-needed` and `source-blocked` venues. Full candidate/hold evidence remains in `discovery/latest-review.md` and the 30-day Actions artifact, while the workflow Summary prints only the concise beginning. When a run has no event-data changes, its health report is still uploaded as an artifact; no empty PR is created.
+
+**Important:** The `source health` table is a per-run observation, not a persistent historical uptime tracker or a guarantee that listings have not moved/canceled. Future monitoring should compare consecutive runs and flag vanished or changed approved events without automatically deleting them.
+
+
 # SHOWS coordinated discovery and artwork reviews
 
 **Current workflow (October 2026):** Discovery and original music artwork collection run together in one daily, review-only GitHub Action. The earlier separate artwork action is retained **only for manual targeted backfills**.

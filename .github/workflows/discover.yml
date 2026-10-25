@@ -47,7 +47,8 @@ jobs:
       - name: Record source outcomes and monthly horizon
         if: steps.pending.outputs.skip != 'true'
         run: |
-          cat discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "Full discovery report is saved as the review artifact and committed to any proposal PR." >> "$GITHUB_STEP_SUMMARY"
           cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
           node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
       - name: Retain both review reports even on no-change days
@@ -68,6 +69,7 @@ jobs:
           node --check scripts/report-calendar-horizon.js
           node --check app.js
           node --check events.js
+          node tests/source-health.js
           node tests/discovery.js
           node tests/artwork.js
           node tests/calendar-horizon.js
@@ -95,7 +97,7 @@ jobs:
             echo "Official source discoveries and event-specific artwork are staged for editorial review. Confirm event identity, dates, venues, time types, and image rights before merging. Nothing publishes automatically."
             echo
             echo "## Discovery snapshot"
-            sed -n '1,9p' discovery/latest-review.md
+            sed -n '1,/## New candidates:/p' discovery/latest-review.md
             echo
             echo "## Artwork snapshot"
             sed -n '1,17p' discovery/artwork-backfill-review.md
