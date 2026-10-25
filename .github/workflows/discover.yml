@@ -97,7 +97,7 @@ jobs:
             echo "Official source discoveries and event-specific artwork are staged for editorial review. Confirm event identity, dates, venues, time types, and image rights before merging. Nothing publishes automatically."
             echo
             echo "## Discovery snapshot"
-            sed -n '1,9p' discovery/latest-review.md
+            sed -n '1,/## New candidates:/p' discovery/latest-review.md
             echo
             echo "## Artwork snapshot"
             sed -n '1,17p' discovery/artwork-backfill-review.md
