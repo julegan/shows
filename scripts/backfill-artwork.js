@@ -41,11 +41,40 @@ function originalUrl(event){
  }catch(_){return null;}
 }
 // Define sorting dependencies before invoking Array.sort (its comparator executes immediately).
-const distinctSourceOwners=["The Coffin Club","High Limit Room","High Water Mark Lounge","Twilight Cafe and Bar","Star Theater","No Fun"];
+// Core SHOWS venues and actual music shows come before general recurring events.
+const distinctSourceOwners=["Twilight Cafe and Bar","The Coffin Club","Star Theater","Dante's",
+ "Hawthorne Theatre","Hawthorne Lounge","Wonder Ballroom","Roseland Theater","Crystal Ballroom",
+ "Turn! Turn! Turn!","High Limit Room","High Water Mark Lounge","No Fun","Moda Center"];
 function priority(venue){const i=distinctSourceOwners.indexOf(venue);return i<0?999:i;}
 function pendingForArtwork(input){
+ const parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+ const p=k=>parts.find(x=>x.type===k).value,today=p("year")+"-"+p("month")+"-"+p("day");
  return input.filter(e=>!e.artwork&&originalUrl(e))
-  .sort((a,b)=>priority(a.venue)-priority(b.venue)||a.startsAt.localeCompare(b.startsAt)||a.id.localeCompare(b.id));
+  .sort((a,b)=>Number(b.category==="Music")-Number(a.category==="Music")
+    ||Number(a.startsAt.slice(0,10)<today)-Number(b.startsAt.slice(0,10)<today)
+    ||priority(a.venue)-priority(b.venue)
+    ||a.startsAt.localeCompare(b.startsAt)||a.id.localeCompare(b.id));
+}
+function normalizeText(s){return String(s||"").replace(/&amp;/gi,"&").replace(/<[^>]+>/g," ")
+ .toLowerCase().replace(/[^a-z0-9]+/g," ").trim().replace(/\s+/g," ");}
+function imageAttributes(tag){
+ return Object.fromEntries([...String(tag).matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)]
+   .map(m=>[m[1].toLowerCase(),m[2]??m[3]]));
+}
+// Official event-specific photographs can be published instead of posters.
+// Require matching alt text, or Dante's verified event-img with a TicketWeb image URL.
+function eventPhotoFromHtml(html,pageUrl,event){
+ for(const m of String(html).matchAll(/<img\b[^>]*>/gi)){
+  const a=imageAttributes(m[0]),alt=normalizeText(a.alt),title=normalizeText(event.title);
+  const named=alt.length>=5&&title.length>=5&&(alt===title||alt.startsWith(title+" ")||title.startsWith(alt+" "));
+  const dantes=event.venue==="Dante's"&&new URL(pageUrl).hostname==="www.danteslive.com"
+    &&(alt==="event img"||/\bevent-img\b/i.test(a.class||""));
+  if(!named&&!dantes)continue;
+  const candidate=require("./priority-importers").artworkCandidate(a.src||a["data-src"]||a["data-lazy-src"],pageUrl);
+  if(!candidate||dantes&&!named&&!/^https:\/\/i\.ticketweb\.com\/i\//i.test(candidate))continue;
+  return {url:candidate,sourceUrl:pageUrl,origin:"official-event-page",credit:"Official event page",usageApproved:null};
+ }
+ return eventArtworkFromHtml(html,pageUrl);
 }
 async function main(){
  const pending=pendingForArtwork(events);
@@ -65,7 +94,7 @@ async function main(){
     if(!response.ok)throw new Error("HTTP "+response.status);
     const body=await response.text();
     if(body.length>1000000)throw new Error("Page too large");
-    cache.set(url,eventArtworkFromHtml(body,url));
+    cache.set(url,eventPhotoFromHtml(body,url,e));
    }
    const artwork=cache.get(url);
    if(artwork){e.artwork=artwork;proposed++;}
