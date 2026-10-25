@@ -17,44 +17,90 @@ async function audit(page,label){
   console.log(JSON.stringify({view:label,violations,passes:results.passes.length}));
   return violations.map(v=>({view:label,...v}));
 }
+async function assertFavicon(page,label){
+  const href=await page.locator('link[rel="icon"]').getAttribute("href");
+  assert(href, label+" must declare a favicon");
+  const result=await page.evaluate(async url=>{
+    const response=await fetch(url,{cache:"no-store"});
+    return {ok:response.ok,status:response.status,text:await response.text()};
+  },new URL(href,page.url()).href);
+  assert(result.ok&&result.text.includes("<svg"),label+" favicon resource must load as an SVG");
+}
 async function showsViews(browser,viewport){
   const page=await browser.newPage({viewport});
+  const pageErrors=[];
   const errors=[];
-  await page.goto(origin+(isPortfolio?"/projects/shows/":"/"),{waitUntil:"networkidle"});
-  errors.push(...await audit(page,"SHOWS month "+viewport.width));
-  if(viewport.width<=680){
-    const day=page.locator(".day:not(.outside) .mobile-day").first();
-    assert(await day.isVisible(),"Mobile month should offer a date-sized tap target");
-    assert.equal(await page.locator(".day .event-chip:visible").count(),0,"Mobile month should not stack event titles");
-    const gridFits=await page.locator(".month-grid").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
-    assert(gridFits,"Mobile month must not overflow horizontally");
-    await day.click();
-    assert(await page.locator(".selected-day-header").isVisible(),"Selecting a date should show its details");
-    errors.push(...await audit(page,"SHOWS selected day "+viewport.width));
-    await page.locator("[data-clear-day]").click();
-  }
-  await page.locator('[data-view="agenda"]').click();
-  errors.push(...await audit(page,"SHOWS list "+viewport.width));
-  if(!isPortfolio){
-    const tba=page.locator('button.event-card').filter({hasText:"IRON LUNG (WA)"}).first();
-    assert(await tba.count(),"Official Black Water date-only events should appear in List");
-    assert((await tba.innerText()).includes("Time TBA"),"Date-only events must never display a fabricated midnight start");
-    await tba.click();
-    const label=await page.locator("#eventDialog").innerText();
-    assert(label.includes("Time TBA"),"Date-only detail should show unknown time");
-    const href=await page.locator('#eventDialog a').filter({hasText:"Google Calendar"}).getAttribute("href");
-    assert.equal(new URL(href).searchParams.get("dates"),"20261022/20261023","Google Calendar should use all-day date-only placeholder");
-    await page.locator("[data-close]").click();
-  }
-  const event=page.locator("button.event-card").first();
-  if(await event.count()){
-    await event.click();
-    assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Event detail dialog must open");
-    errors.push(...await audit(page,"SHOWS event detail "+viewport.width));
-    await page.locator("[data-close]").click();
-  } else console.log("No events in displayed month; event dialog scan skipped");
+  page.on("pageerror",e=>pageErrors.push(e.message));
+  const response=await page.goto(origin+(isPortfolio?"/projects/shows/":"/"),{waitUntil:"domcontentloaded"});
+  assert.equal(response.status(),200,"SHOWS homepage must load");
+  if(isPortfolio)await assertFavicon(page,"SHOWS");
+  const ymd=()=>{
+    const fields=new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
+    const p=t=>fields.find(x=>x.type===t).value;return p("year")+"-"+p("month")+"-"+p("day");
+  };
+  const start=ymd();
+  assert.equal(await page.locator("#fromDate").inputValue(),start,"Homepage defaults to today's Portland-local date");
+  assert.equal(await page.locator('[data-view="dates"]').getAttribute("aria-pressed"),"true","Chronological list is default");
+  assert.equal(await page.locator("#monthControls").isVisible(),false,"Month controls should not dominate the landing page");
+  assert.equal(await page.locator(".shows-month-grid").count(),0,"Month overview should not load by default");
+  assert(!(/mobile-first experiment|compare these two working layouts/i).test(await page.locator("body").innerText()),"No test copy in released homepage");
+  errors.push(...await audit(page,"SHOWS date-first "+viewport.width));
+  // Browsing earlier dates is possible without loading them by default.
+  await page.locator("#fromDate").fill("2026-10-17");
+  assert.equal(await page.locator("#fromDate").inputValue(),"2026-10-17");
+  const list=page.locator(".preview-event");
+  assert(await list.count()>0,"Historical events can be browsed intentionally");
+  assert(!(await page.locator("#results").innerText()).includes("Lents Farmers Market"),"Routine farmers markets stay out of the feed");
+  const art=page.locator(".preview-event .preview-art").first();
+  assert(await art.isVisible(),"Original flyer or neutral missing-source treatment remains visible");
+  await list.first().click();
+  assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Event dialog opens");
+  assert(await page.locator("#eventDialog .preview-detail-art").isVisible(),"Artwork is visible in detail");
+  const google=await page.locator("#eventDialog a").filter({hasText:"Google Calendar"}).getAttribute("href");
+  assert(google&&google.includes("calendar.google.com"),"Google Calendar export exists");
+  const dl=page.waitForEvent("download");
+  await page.locator("[data-ics]").first().click();
+  const file=await dl;
+  assert(file.suggestedFilename().endsWith(".ics"),"Apple/Outlook export downloads a calendar file");
+  errors.push(...await audit(page,"SHOWS event detail "+viewport.width));
+  const eventTitle=await page.locator("#dialogTitle").innerText();
+  await page.locator("[data-save]").first().click();
+  await page.locator("[data-close]").click();
+  await page.locator("#savedOnly").click();
+  assert.equal(await page.locator("#savedOnly").getAttribute("aria-pressed"),"true");
+  assert((await page.locator("#results").innerText()).includes(eventTitle),"Saved filter returns the saved event");
+  await page.locator("#clearFilters").click();
+  assert.equal(await page.locator("#savedOnly").getAttribute("aria-pressed"),"false");
+  await page.locator("#freeOnly").click();
+  assert.equal(await page.locator("#freeOnly").getAttribute("aria-pressed"),"true");
+  await page.locator("#clearFilters").click();
   await page.locator('[data-view="places"]').click();
+  assert.equal(await page.locator('[data-view="places"]').getAttribute("aria-pressed"),"true");
+  assert(await page.locator(".preview-place").count()>0,"Places still groups events by venue");
   errors.push(...await audit(page,"SHOWS places "+viewport.width));
+  await page.locator('[data-view="month"]').click();
+  assert.equal(await page.locator('[data-view="month"]').getAttribute("aria-pressed"),"true");
+  assert(await page.locator("#monthControls").isVisible(),"Month navigation visible in month mode");
+  assert(await page.locator(".shows-month-date").count()>=28,"Month overview has navigable dates");
+  errors.push(...await audit(page,"SHOWS optional month "+viewport.width));
+  if(viewport.width<=680){
+    const gridFits=await page.locator(".shows-month-grid").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
+    assert(gridFits,"Mobile month grid must not scroll horizontally");
+  }
+  await page.locator("#nextMonth").click();
+  assert.match(await page.locator("#monthPeriod").innerText(),/November|December|January|February|March|April|May|June|July|August|September|October/);
+  const day=page.locator(".shows-month-date").first();
+  const selected=await day.getAttribute("data-day");
+  await day.click();
+  assert.equal(await page.locator("#fromDate").inputValue(),selected,"Selecting month day opens the date-first list");
+  assert.equal(await page.locator('[data-view="dates"]').getAttribute("aria-pressed"),"true");
+  await page.locator("#search").fill("nonexistent--show--query--987987");
+  assert.match(await page.locator("#results").innerText(),/No listings found/,"Empty search has an explanation");
+  await page.locator("#jumpToday").click();
+  assert.equal(await page.locator("#fromDate").inputValue(),start,"Today button restores default date");
+  assert.deepEqual(pageErrors,[],"No uncaught browser errors");
+  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
+  assert.equal(overflow,false,"Homepage must fit horizontally at "+viewport.width);
   await page.close();
   return errors;
 }
@@ -67,8 +113,10 @@ async function main(){
     const page=await browser.newPage({viewport});
     await page.goto(origin+"/",{waitUntil:"networkidle"});
     issues.push(...await audit(page,"Portfolio home "+viewport.width));
+    await assertFavicon(page,"Portfolio home");
     await page.goto(origin+"/projects/",{waitUntil:"networkidle"});
     issues.push(...await audit(page,"Portfolio projects "+viewport.width));
+    await assertFavicon(page,"Projects");
     await page.close();
    }
   }
