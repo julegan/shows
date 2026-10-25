@@ -2,13 +2,15 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
-const {localTime,parseFile,itemsOf,urlOf,music,extract,reconcile,run}=require("../scripts/discover-events");
+const {localTime,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,extract,reconcile,run}=require("../scripts/discover-events");
 const root=path.resolve(__dirname,"..");
 const source=JSON.parse(fs.readFileSync(path.join(root,"discovery/sources.json"),"utf8")).sources.find(x=>x.id==="no-fun");
 const now=new Date("2026-10-17T21:00:00-07:00");
 assert.equal(localTime("2026-10-26T03:00:00Z"),"2026-10-25T20:00:00-07:00");
 assert.equal(localTime("2026-11-03T04:00:00Z"),"2026-11-02T20:00:00-08:00");
 assert.equal(localTime(Date.parse("2026-11-03T04:00:00Z")),"2026-11-02T20:00:00-08:00");
+assert.equal(DISCOVERY_HORIZON_DAYS,400);
+assert.equal(discoveryEndDay(now),"2027-11-21");
 assert.deepEqual(itemsOf({upcoming:[{title:"Concert"}]}),[{title:"Concert"}]);
 assert.throws(()=>itemsOf({unknown:[]}),/No supported/);
 assert.equal(urlOf({urlId:"test-gig"},source),"https://www.nofunportland.com/events/test-gig");
@@ -20,6 +22,8 @@ assert.equal(extract({...item,title:"Independent Karaoke Night",sourceVerifiedMu
 assert.equal(extract({...item,title:"Screenprinting Workshop",sourceVerifiedMusic:false},source,now).event?.category,"Workshops");
 const candidate=extract(item,source,now);
 assert(candidate.event);
+assert(extract({...item,startDate:Date.parse("2027-04-16T03:00:00Z")},source,now).event,"Future-year event within 400 days is eligible");
+assert.equal(extract({...item,startDate:Date.parse("2027-12-16T04:00:00Z")},source,now).skip,"Outside review period");
 const e=candidate.event;
 assert.equal(e.startsAt,"2026-11-02T20:00:00-08:00");
 assert.equal(e.startTimeKind,"listed");
