@@ -11,27 +11,29 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Black Water | Checked | 7 | 0 | 0 | 0 | 0 | 0 | 7 |
 | Soundcontrol PDX | Checked | 4 | 0 | 0 | 0 | 0 | 4 | 0 |
 | Twilight Cafe and Bar | Checked | 42 | 0 | 0 | 0 | 0 | 16 | 26 |
-| Star Theater | Checked | 43 | 0 | 0 | 0 | 0 | 4 | 39 |
-| Dante's | Checked | 50 | 0 | 0 | 0 | 0 | 19 | 31 |
+| Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
+| Dante's | Checked | 50 | 1 | 0 | 1 | 1 | 19 | 30 |
 | Roseland Theater | Checked | 35 | 0 | 0 | 0 | 0 | 11 | 24 |
 | Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 10 | 23 |
 | Hawthorne Theatre | Checked | 43 | 0 | 0 | 0 | 0 | 7 | 36 |
 | Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 6 | 48 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 10 | 20 |
-| Turn! Turn! Turn! | Checked | 22 | 16 | 13 | 3 | 16 | 1 | 5 |
-| Kenton Club | Checked | 11 | 10 | 9 | 0 | 0 | 0 | 1 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
+| Revolution Hall | Checked | 30 | 2 | 0 | 2 | 2 | 8 | 20 |
+| Turn! Turn! Turn! | Checked | 22 | 0 | 0 | 0 | 0 | 1 | 21 |
+| Kenton Club | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 2 | 26 |
 | Holocene | Checked | 46 | 0 | 0 | 0 | 0 | 9 | 37 |
 | Starday Tavern | Checked | 1586 | 0 | 0 | 0 | 0 | 1095 | 491 |
 
 ### Classification review
 
-New candidate categories: **Markets** 1 · **Music** 22 · **Unclassified** 3.
-**3 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Unclassified** 5.
+**5 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Turn! Turn! Turn!: Morricone Music — https://app.opendate.io/e/morricone-music-november-10-2026-778385
-- Turn! Turn! Turn!: She Ate: A Food Drive for Esther's Pantry — https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-december-12-2026-788550
-- Turn! Turn! Turn!: An Orange Vanilla Christmas: An Original Musical w/ Tradie — https://app.opendate.io/e/an-orange-vanilla-christmas-an-original-musical-w-tradie-december-13-2026-794075
+- Dante's: MUSTARD PLUG with The Planet Smashers & The Venomous Pinks — https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/
+- Show Bar at Revolution Hall: Heathens Homecoming West 2026 Night 1 After Party (Free) — https://www.etix.com/ticket/p/36141981/heathens-homecoming-west-2026-night-1-after-party-free-portland-show-bar-at-revolution-hall
+- Show Bar at Revolution Hall: Heathens Homecoming West 2026 Pre-Party Showcase (Free) — https://www.etix.com/ticket/p/65225470/heathens-homecoming-west-2026-preparty-showcase-free-portland-show-bar-at-revolution-hall
+- Polaris Hall: SOLD OUT: Pedro the Lion (Night 1) — https://www.etix.com/ticket/p/47201881/sold-outpedro-the-lion-night-1-portland-polaris-hall
+- Mississippi Studios: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) — https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios
 
 ### Connections requiring work
 
@@ -50,41 +52,21 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 
 No changed published events were confirmed by uniquely matching source records in this run.
 
-## New candidates: 26
+## New candidates: 5
 
-- turn-turn-turn: 16 proposals
-- kenton-club: 10 proposals
+- dantes: 1 proposals
+- revolution-hall: 2 proposals
+- mississippi-polaris: 2 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-10-25 | Amy Beth & Thee Creeps + Left of the Dial + Tispur | Turn! Turn! Turn! | 15:30 (doors/show unverified) | https://app.opendate.io/e/amy-beth-thee-creeps-left-of-the-dial-tispur-october-25-2026-790447 |
-| 2026-10-27 | Brites + Holy Pinto (WI) + Worse | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/brites-holy-pinto-wi-worse-october-27-2026-755387 |
-| 2026-10-29 | Ramble Tamble (CCR) + Ragged Hounds (Neil Young) + DJ Stone Bunny | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/ramble-tamble-ccr-ragged-hounds-neil-young-dj-stone-bunny-october-29-2026-778151 |
-| 2026-10-30 | Boys Keep Swinging + friends | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/boys-keep-swinging-friends-october-30-2026-749221 |
-| 2026-10-31 | is this really HALLOWEEN? w/ Golem Pink + Cassie Candles & the Cocker Spaniels + Koa Koala (Tacoma) + Gwyniver | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/is-this-really-halloween-w-golem-pink-cassie-candles-the-cocker-spaniels-koa-koala-tacoma-gwyniver-october-31-2026-749976 |
-| 2026-11-02 | Eric Silverman + Sam Plecker | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/eric-silverman-sam-plecker-november-02-2026-750305 |
-| 2026-11-04 | Josh Gross (Ashland) + Sun Blood Stories (duo set) + Cameron Royce | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/josh-gross-ashland-sun-blood-stories-duo-set-cameron-royce-november-04-2026-762558 |
-| 2026-11-06 | Masonique + RLLBLL + Creature Guts | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/masonique-rllbll-creature-guts-november-06-2026-794038 |
-| 2026-11-09 | Frank Hurricane + Sawtooth + Tara Zorthian (LA) + The Modern Folk | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/frank-hurricane-sawtooth-tara-zorthian-la-the-modern-folk-november-09-2026-788090 |
-| 2026-11-10 | Morricone Music | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/morricone-music-november-10-2026-778385 |
-| 2026-11-18 | Hewn + Sean Atkins (Boise) + Grover (Bellingham) | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/hewn-sean-atkins-boise-grover-bellingham-november-18-2026-778056 |
-| 2026-11-19 | Glass Egg (Seattle) + Femme Cell + Found Space | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/glass-egg-seattle-femme-cell-found-space-november-19-2026-754398 |
-| 2026-12-08 | Mother Soki + baileyrp | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/mother-soki-baileyrp-december-08-2026-759224 |
-| 2026-12-12 | She Ate: A Food Drive for Esther's Pantry | Turn! Turn! Turn! | 16:30 (doors/show unverified) | https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-december-12-2026-788550 |
-| 2026-12-13 | An Orange Vanilla Christmas: An Original Musical w/ Tradie | Turn! Turn! Turn! | 19:30 (doors/show unverified) | https://app.opendate.io/e/an-orange-vanilla-christmas-an-original-musical-w-tradie-december-13-2026-794075 |
-| 2026-12-15 | Tracey Nelson + friends | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/tracey-nelson-friends-december-15-2026-779468 |
-| 2026-10-30 | Salo Panto-Laboratorios Morena Heaven Skate-Los Res | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-10-31 | Pocket Knife(PJ Harvey)-DEVO Cup(Devo) Queens of Punk(Poison Idea) Teen 78(TV Personalities) | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-01 | Beelzebubs Bazaar a Free Market | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-06 | National Diet-Horsebag-Sun Blood Stories | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-07 | DJ Action Slacks | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-13 | Mini Blinds-Queen Rodeo-Snakey Dublay | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-14 | Isabeau Waia’u Walker-Elly | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-21 | So Pitted-Sea Moss-Snorkler(Tennessee) | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-27 | Madison True Band | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-11-28 | Muscle Cats-One Drink and Other lies | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
+| 2027-01-15 | MUSTARD PLUG with The Planet Smashers & The Venomous Pinks | Dante's | 20:30 (doors/show unverified) | https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/ |
+| 2026-11-12 | Heathens Homecoming West 2026 Night 1 After Party (Free) | Show Bar at Revolution Hall | 23:00 (doors/show unverified) | https://www.etix.com/ticket/p/36141981/heathens-homecoming-west-2026-night-1-after-party-free-portland-show-bar-at-revolution-hall |
+| 2026-11-13 | Heathens Homecoming West 2026 Pre-Party Showcase (Free) | Show Bar at Revolution Hall | 17:00 (doors/show unverified) | https://www.etix.com/ticket/p/65225470/heathens-homecoming-west-2026-preparty-showcase-free-portland-show-bar-at-revolution-hall |
+| 2026-11-07 | SOLD OUT: Pedro the Lion (Night 1) | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47201881/sold-outpedro-the-lion-night-1-portland-polaris-hall |
+| 2026-11-08 | Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## Held for review: 1196
+## Held for review: 1192
 
 - [soundcontrol-pdx] (2026-10-31) V.I.S. • Angurvadal • Iron Firmament • Viduus — Verified date 2026-10-31 but no performance start or doors time; Ticket page HTTP 403; date-only staging https://www.treetix.com/event?id=204931&cal=soundcontrol
 - [soundcontrol-pdx] (2026-11-11) PARALYSIS EXPLETIVE — Verified date 2026-11-11 but no performance start or doors time; Ticket page has no explicit AM/PM showtime; stage date-only https://www.treetix.com/event?id=204939&cal=soundcontrol
@@ -163,8 +145,6 @@ No changed published events were confirmed by uniquely matching source records i
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] Pigeons Playing Ping Pong - Fall Tour 2026 — Missing original Etix ticket URL, exact room or title 
-- [revolution-hall] Dead Astaire — Missing original Etix ticket URL, exact room or title 
 - [revolution-hall] The Dillinger Escape Plan - Final Calculating Infinity Shows — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/31018483/the-dillinger-escape-plan-final-calculating-infinity-shows-portland-revolution-hall
 - [revolution-hall] Team Dresch (Record Release Show) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/45914963/team-dresch-record-release-show-portland-revolution-hall
 - [revolution-hall] RESCHEDULED TO 3/29/27: Death From Above 1979 - Private Lives Tour — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/86535788/rescheduled-to-32927death-from-above-1979-private-lives-tour-portland-revolution-hall
@@ -174,8 +154,6 @@ No changed published events were confirmed by uniquely matching source records i
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
-- [mississippi-polaris] Untitled — Source venue ID and original ticket room disagree 
-- [mississippi-polaris] Untitled — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [holocene] Tyler Ballgame — Source schema does not confirm the Holocene venue https://www.holocene.org/event/tyler-ballgame/monqui-presents/portland-oregon/

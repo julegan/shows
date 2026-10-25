@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-25",
   "coverageThrough": "2027-05-17",
-  "totalOccurrences": 646,
-  "addedOccurrences": 26,
-  "batchId": "auto-discovery-2026-10-25-15",
+  "totalOccurrences": 651,
+  "addedOccurrences": 5,
+  "batchId": "auto-discovery-2026-10-25-16",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -52,6 +52,10 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-24-14",
       "addedOccurrences": 150
+    },
+    {
+      "batchId": "auto-discovery-2026-10-25-15",
+      "addedOccurrences": 26
     }
   ],
   "newLiveBills": 0,
@@ -12770,6 +12774,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-07-d67984dbf6c6",
+    "title": "SOLD OUT: Pedro the Lion (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Earlimart",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/47201881/sold-outpedro-the-lion-night-1-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/47201881/sold-outpedro-the-lion-night-1-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2e792d7d169968cf873c3fca4369f14e.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-07-8e99dd5da94b",
     "title": "SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13184,6 +13239,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-08-2c49c3bdf06c",
+    "title": "Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -15056,6 +15162,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-11-12-9fa114110a2c",
+    "title": "Heathens Homecoming West 2026 Night 1 After Party (Free)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T23:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/36141981/heathens-homecoming-west-2026-night-1-after-party-free-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/36141981/heathens-homecoming-west-2026-night-1-after-party-free-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/9b3568d6105404d0d569552c08b1ce3a.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-11-13-1b13559da346",
     "title": "L.I.E. / CHATTERBOX / TEMPLE / SPEAK OF THE DEAD",
     "subtitle": "Source-discovered venue event · details need review",
@@ -15139,6 +15296,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-25",
     "discovery": {
       "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-13-6a5763001dd0",
+    "title": "Heathens Homecoming West 2026 Pre-Party Showcase (Free)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Jerry Joseph, Drunken Prayer, Snarlin' Yarns",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/65225470/heathens-homecoming-west-2026-preparty-showcase-free-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/65225470/heathens-homecoming-west-2026-preparty-showcase-free-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/4c79366c303b9f5d3921b5ec24e9c9b4.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -28217,6 +28425,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-15-994729e5f0a0",
+    "title": "MUSTARD PLUG with The Planet Smashers & The Venomous Pinks",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-15T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-25",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/10/02/44_Original.jpg?v=4",
+      "sourceUrl": "https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
