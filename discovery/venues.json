@@ -136,9 +136,9 @@
       "name": "Kenton Club",
       "tier": "core",
       "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
+      "calendarUrl": "https://www.kentonclub.com/",
       "aliases": [],
-      "notes": "Source-specific importer needed"
+      "notes": "Official posted line-up roster has no event-specific permalinks and generally no showtimes. Conservative importer built; pending live GitHub-runner verification. Date-only listings are never treated as confirmed showtime."
     },
     {
       "id": "shanghai-tunnel",
