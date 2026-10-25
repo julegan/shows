@@ -1,3 +1,11 @@
+## Kenton Club — verified first-party roster (October 2026)
+
+Kenton Club's [official show calendar](https://www.kentonclub.com/) was reachable from GitHub Actions in [live probe 40170404712](https://github.com/julegan/shows/actions/runs/40170404712). It returned **12** date-confirmed upcoming roster entries, of which **10** were candidates not already represented in SHOWS. The daily collector now includes this venue as `pilot-enabled` / `active-adapter`.
+
+The source generally omits confirmed showtimes, explicit years and event-specific permalinks. Its importer requires a uniquely matching future weekday/date within 120 days and stores a **date-only** event with an explicitly labeled midnight sorting anchor. It never invents showtimes, genres or artwork. The official shared roster URL is displayed as attribution but is never treated as event-specific cancellation evidence. Markets take precedence over broad music-show classification. Every proposed bill requires editorial verification before merge.
+
+If the source removes its official heading, changes its roster layout or blocks the runner, collection must hold or fail visibly rather than guessing.
+
 ## Continue source collection while reviews are pending
 
 The daily Actions workflow **always** checks configured venue/promoter sources, reviews artwork, validates the proposed local dataset and saves its health, coverage and discrepancy reports—even when an earlier editorial refresh PR is still open. A pending canonical refresh/discovery/artwork PR blocks **only the final step that would push another branch and open a competing PR**.
