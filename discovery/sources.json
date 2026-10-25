@@ -203,16 +203,17 @@
     {
       "id": "kenton-club",
       "name": "Kenton Club",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "underground-music",
-      "reason": "Conservative dated show-roster parser built; exact weekday plus <=120-day future window, unknown times preserved. Awaiting successful read-only live GitHub-runner probe before auto-enabling.",
+      "reason": "Verified on GitHub Actions live probe 40170404712: 12 official future date-matched show entries, 10 new candidates, 2 already represented. Year resolved by exact weekday and 120-day horizon; no showtimes or unique event URLs invented. Review-only.",
       "url": "https://www.kentonclub.com/",
       "baseUrl": "https://www.kentonclub.com",
       "venue": "Kenton Club",
       "address": "2025 N Kilpatrick St, Portland, OR 97217",
       "neighborhood": "Kenton",
       "adapter": "kenton-official-html",
-      "venueRegistryId": "kenton-club"
+      "venueRegistryId": "kenton-club",
+      "enabledReason": "Read-only GitHub Actions probe 40170404712 on 2026-10-24 Pacific: official HTTPS show roster yielded 12 dated entries, 10 potential additions."
     },
     {
       "id": "shanghai-tunnel",
