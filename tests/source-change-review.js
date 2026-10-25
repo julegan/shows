@@ -1,0 +1,35 @@
+"use strict";
+const assert=require("node:assert/strict");
+const {normalizeUrl,detectPublishedChanges,renderChangeReview}=require("../scripts/source-change-review");
+const make=(url,startsAt,venue="Star Theater",kind="listed")=>({url,startsAt,venue,title:"Metal Night",startTimeKind:kind,discovery:{sourceId:"star-theater"}});
+const original="https://www.startheaterportland.com/tm-event/metal-night/";
+assert.equal(normalizeUrl("https://bar.blackwaterpdx.com/"),null);
+assert.equal(normalizeUrl("https://roselandpdx.com/events/"),null);
+assert.equal(normalizeUrl("javascript:alert(1)"),null);
+const existing=[make(original,"2027-02-15T20:00:00-08:00")];
+const observed=event=>[{event}];
+const at="2026-10-24";
+let delta=detectPublishedChanges(existing,observed(make(original,"2027-02-16T20:00:00-08:00")),{today:at});
+assert.equal(delta.changes.length,1);
+assert.equal(delta.changes[0].kind,"Date changed");
+assert.match(renderChangeReview(delta),/2027-02-15 → 2027-02-16/);
+delta=detectPublishedChanges(existing,observed(make(original,"2027-02-15T21:00:00-08:00")),{today:at});
+assert.equal(delta.changes[0].kind,"Listed time changed");
+delta=detectPublishedChanges([{...existing[0],startTimeKind:"doors"}],observed(make(original,"2027-02-15T21:00:00-08:00")),{today:at});
+assert.equal(delta.changes.length,0,"Doors and listed performance times are not equivalent");
+delta=detectPublishedChanges(existing,observed(make(original,"2027-02-15T20:00:00-08:00","Other venue")),{today:at});
+assert.equal(delta.changes[0].kind,"Venue changed");
+delta=detectPublishedChanges(existing,[{url:original,hold:"Official event canceled",sourceId:"star-theater"}],{today:at});
+assert.equal(delta.changes[0].kind,"Official status requires review");
+delta=detectPublishedChanges(existing,[],{today:at});
+assert.equal(delta.changes.length,0,"A missing event from today's retrieved pages is not a cancellation");
+delta=detectPublishedChanges([make("https://bar.blackwaterpdx.com/","2027-03-01T00:00:00-08:00","Black Water")],
+ [{event:make("https://bar.blackwaterpdx.com/","2027-03-02T00:00:00-08:00","Black Water")}],{today:at});
+assert.equal(delta.changes.length,0,"Shared venue homepage is not a unique event link");
+delta=detectPublishedChanges([...existing,{...existing[0],id:"second"}],
+ observed(make(original,"2027-02-16T20:00:00-08:00")),{today:at});
+assert.equal(delta.changes.length,0);
+assert.equal(delta.ambiguous.length,1,"Reused event links must be held");
+delta=detectPublishedChanges(existing,observed(make(original,"2027-02-15T20:00:00-08:00")),{today:at});
+assert.equal(delta.changes.length,0,"Unchanged approved event is not reported");
+console.log("PASS — review-only, uniquely matching official event schedule changes; no missing-is-canceled inference");
