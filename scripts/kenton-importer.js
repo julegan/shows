@@ -53,7 +53,7 @@ function parseKenton(html,{now=new Date()}={}){
  let active=null;
  const finish=()=>{
   if(!active)return;
-  const title=active.title.filter(x=>!/^\s*$/.test(x)).join(" ").replace(/\s+/g," ").trim();
+  const title=active.title.filter(x=>!/^\s*$/.test(x)&&!/^\d{1,2}-\d{1,2}$/.test(x)).join(" ").replace(/\s+/g," ").trim();
   if(!title||title.length>250){holds.push({hold:"Missing or implausibly long bill title",dateOnly:active.date,title:title.slice(0,100)});active=null;return;}
   const unsafe=/^(?:https?:\/\/|mailto:|contact|wfkcbooking|copyright|2025 N Kilpatrick)/i;
   if(unsafe.test(title)){active=null;return;}
