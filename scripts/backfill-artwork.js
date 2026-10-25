@@ -12,17 +12,25 @@ if(!match)throw new Error("Cannot locate source event array");
 const events=JSON.parse(match[1]);
 // Only public event detail pages already supplied by a verified venue/promoter may be read.
 const permitted=[
- {host:"www.twilightcafeandbar.com",route:/^\/event\/\d+\//,venues:["Twilight Cafe and Bar"]},
- {host:"www.startheaterportland.com",route:/^\/tm-event\//,venues:["Star Theater"]},
- {host:"www.nofunportland.com",route:/^\/events\/[^/]+\/?$/,venues:["No Fun"]},
+ {host:"www.twilightcafeandbar.com",route:/^\/event\/\d+(?:\/[^?#]*)?\/?$/i,venues:["Twilight Cafe and Bar"]},
+ {host:"twilightcafeandbar.com",route:/^\/event\/\d+(?:\/[^?#]*)?\/?$/i,venues:["Twilight Cafe and Bar"]},
+ {host:"www.startheaterportland.com",route:/^\/tm-event\/[a-z0-9-]+\/?$/i,venues:["Star Theater"]},
+ {host:"www.danteslive.com",route:/^\/tm-event\/[a-z0-9-]+\/?$/i,venues:["Dante's"]},
+ {host:"hawthornetheatre.com",route:/^\/event\/[^/]+\/hawthorne-(?:theatre|lounge)\/portland-oregon\/?$/i,venues:["Hawthorne Theatre","Hawthorne Lounge"]},
+ {host:"wonderballroom.com",route:/^\/event\/[^/]+\/wonder-ballroom\/portland-oregon\/?$/i,venues:["Wonder Ballroom"]},
+ {host:"roselandpdx.com",route:/^\/event\/[^/]+\/roseland-theater\/portland-oregon\/?$/i,venues:["Roseland Theater"]},
+ {host:"www.mcmenamins.com",route:/^\/events\/\d+-[a-z0-9-]+\/?$/i,venues:["Crystal Ballroom"]},
+ {host:"www.rosequarter.com",route:/^\/calendar-events\/[a-z0-9-]+\/?$/i,venues:["Moda Center"]},
+ {host:"app.opendate.io",route:/^\/e\/[a-z0-9-]+-\d+\/?$/i,venues:["Turn! Turn! Turn!"]},
+ {host:"www.nofunportland.com",route:/^\/events\/[^/]+\/?$/i,venues:["No Fun"]},
  {host:"tickets.venuepilot.com",route:/^\/e\/[^/]+-the-coffin-portland-[a-z0-9]+$/i,venues:["The Coffin Club"]},
  {host:"aftontickets.com",route:/^\/event\/buyticket\/[a-zA-Z0-9]+$/,venues:["High Limit Room"]},
- {host:"www.treetix.com",route:/^\/(?:event|\d+\/highwatermark)\/?$/,venues:["High Water Mark Lounge"]}
+ {host:"www.treetix.com",route:/^\/event$/,venues:["High Water Mark Lounge"]}
 ];
 function originalUrl(event){
  try{
   const u=new URL(event.url);
-  if(u.protocol!=="https:"||u.username||u.password)return null;
+  if(u.protocol!=="https:"||u.username||u.password||u.hash)return null;
   if(u.hostname==="tickets.venuepilot.com"&&u.searchParams.get("direct")==="true"&&[...u.searchParams.keys()].length===1)u.search="";
   const treetix=u.hostname==="www.treetix.com"&&u.pathname==="/event"
    &&/^\d+$/.test(u.searchParams.get("id")||"")
