@@ -51,7 +51,7 @@ assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")
 el("fromDate").change("2026-11-01");
 for(const style of ["Metal","Punk","Hardcore"]){
   el("style").change(style);
-  const expected=events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)).map(e=>e.id).sort();
+  const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
   assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
   views.find(v=>v.dataset.view==="places").click();
   assert.deepEqual(renderedIds(),expected,"Places respects "+style+" filter");
