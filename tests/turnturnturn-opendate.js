@@ -21,9 +21,9 @@ const items=adapter.parseRoster("<html><h1>Turn! Turn! Turn!</h1>"+cards+"</html
 assert.equal(items.length,3,"All dated source card events included");
 assert.equal(items[0].title,"CorMae + New Here + Combobox");
 assert.equal(items[0].dateOnly,"2026-10-28");
-assert.equal(items[0].startDate,"2026-10-28T20:00:00-07:00");
-assert.equal(items[1].startDate,"2026-11-07T20:00:00-08:00","PST shift across DST");
-assert.equal(items[2].startDate,"2026-11-07T16:30:00-08:00");
+assert.equal(items[0].startDate,"2026-10-29T03:00:00.000Z","Pacific time is converted to UTC before extraction");
+assert.equal(items[1].startDate,"2026-11-08T04:00:00.000Z","PST shift across DST");
+assert.equal(items[2].startDate,"2026-11-08T00:30:00.000Z");
 assert.equal(items[0].artwork?.origin,"official-event-page");
 assert.equal(items[0].artwork?.usageApproved,null);
 assert.equal(adapter.officialArtwork("https://attacker.invalid/image.png",items[0].fullUrl),null);
