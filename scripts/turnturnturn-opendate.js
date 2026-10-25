@@ -113,7 +113,11 @@ function parseDetail(html,card){
  if(!/eventscheduled$/.test(status))return {hold:"Missing or unsupported official ticket-event status",title:card.title,url};
  const description=textOf(schema.description||"").slice(0,950);
  const explicitMusic=/\b(?:live music|live band|bands?|concert|musician|music performance|punk show|music set|DJ set|live show)\b/i.test(description);
- return {...card,sourceVerifiedMusic:schema["@type"]==="MusicEvent"||explicitMusic,
+ // The original venue ticketing system calls these shows. An event-specific artist bill
+ // provides format evidence, but general venue reputation alone never does.
+ const nonMusic=/\b(?:food drive|food pantry|fundraiser|market|bazaar|workshop|comedy|film|screening|theater|theatre|musical|karaoke|trivia|open mic|drag show)\b/i.test(card.title);
+ const concertBill=/\s+\+\s+|\s+w\/\s+|\bDJ\s+[A-Za-z]|\b(?:live music|music night)\b/i.test(card.title);
+ return {...card,sourceVerifiedMusic:schema["@type"]==="MusicEvent"||explicitMusic||(!nonMusic&&concertBill),
   sourceEventType:schema["@type"],
   description:"Original OpenDate event detail: "+(description||"Event-specific description not published."),
   artwork:officialArtwork(schema.image,url)||card.artwork};
