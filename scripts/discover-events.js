@@ -17,6 +17,7 @@ const starday=require("./starday-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
+const {detectPublishedChanges,renderChangeReview}=require("./source-change-review");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -346,10 +347,11 @@ async function fetchItems(source){
   return url?{...item,artwork:{url,sourceUrl:source.url,origin:"official-event-page",credit:"Venue event listing",usageApproved:null}}:item;
  });
 }
-function report(r,errors,now,sourceRuns=[],sourceRegistry=[]){
+function report(r,errors,now,sourceRuns=[],sourceRegistry=[],changeReview=null){
  const lines=["# SHOWS automated discovery review — "+localDay(now),"",
   "Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.","",
   sourceHealthSummary({sourceRuns,sourceRegistry,accepted:r.accepted,held:r.held,skipped:r.skipped,errors}),
+  renderChangeReview(changeReview),
   "## New candidates: "+r.accepted.length,"",
   ...[...new Set(r.accepted.map(e=>e.discovery?.sourceId).filter(Boolean))].map(id=>"- "+id+": "+r.accepted.filter(e=>e.discovery?.sourceId===id).length+" proposals"),"" ,
   "| Date | Event | Venue | Listed time | Primary listing |",
@@ -388,12 +390,13 @@ async function run(opts={}){
   }catch(e){errors.push({source:src.id,error:String(e.message||e)});sourceRuns.push({id:src.id,status:"failed",examined:0});console.error(src.id+": "+String(e.message||e));}
  }
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
+ const changes=detectPublishedChanges(parsed.events,found,{today:localDay(now)});
  const result=reconcile(parsed.events,found);
  console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
- if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources));
- if(!result.accepted.length)return {...result,errors,sourceRuns};
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources,changes));
+ if(!result.accepted.length)return {...result,errors,sourceRuns,changes};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
@@ -405,7 +408,7 @@ async function run(opts={}){
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
  }
- return {...result,errors,sourceRuns,output};
+ return {...result,errors,sourceRuns,changes,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
 module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};
