@@ -61,6 +61,8 @@ jobs:
         run: |
           node --check scripts/discover-events.js
           node --check scripts/source-change-review.js
+          node --check scripts/turnturnturn-opendate.js
+          node tests/turnturnturn-opendate.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
           node --check app.js

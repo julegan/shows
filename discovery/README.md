@@ -1,3 +1,11 @@
+## Turn! Turn! Turn! — official OpenDate calendar research
+
+The [official venue entertainment page](https://turnturnturnpdx.com/entertainment/) embeds its original [OpenDate show roster](https://app.opendate.io/v/turn-turn-turn-3116?layout=iframe). Read-only GitHub runner probe [40170844776](https://github.com/julegan/shows/actions/runs/40170844776) confirmed HTTPS access to the official venue and provider, event-specific ticketing URLs, separately labeled **doors** and **show** times, original per-event images, and source event schema. This provider is referenced from the actual venue site, not an unverified listing aggregator.
+
+The adapter must additionally validate every detail page's unique event URL, published date, title, venue name, 8 NE Killingsworth location, and `EventScheduled` status before proposing candidates. Published showtime is used only when explicitly labeled `Show:`, normalized in the Portland Pacific timezone across daylight saving changes. Images remain source-attributed external references with `usageApproved:null`, not a blanket copyright license. Event category/genre is not guessed from band names or venue reputation; primary descriptive evidence is required. Multiple performances on one venue date remain distinct when their ticket URLs and start times differ.
+
+**Activated:** The official event-detail importer is now `pilot-enabled` following the [successful live GitHub Actions probe](https://github.com/julegan/shows/actions/runs/40171261702): 22 event-specific records verified; 16 new candidate events with official artwork; five already represented and one held by reconciliation. Its output still requires a separate human-reviewed discovery PR. Every candidate remains editorial review-only; SHOWS must not auto-publish. This importer does not resolve the separately blocked Coffin Club VenuePilot credential or High Limit Afton feed.
+
 ## Kenton Club — verified first-party roster (October 2026)
 
 Kenton Club's [official show calendar](https://www.kentonclub.com/) was reachable from GitHub Actions in [live probe 40170404712](https://github.com/julegan/shows/actions/runs/40170404712). It returned **12** date-confirmed upcoming roster entries, of which **10** were candidates not already represented in SHOWS. The daily collector now includes this venue as `pilot-enabled` / `active-adapter`.
