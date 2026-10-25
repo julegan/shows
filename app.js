@@ -61,8 +61,9 @@
       const count = counts.get(day) || 0;
       const label = dateLong.format(new Date(day+'T12:00:00Z'));
       html += '<button type="button" class="shows-month-date'+(day===today?' shows-month-today':'')+'" data-day="'+day+
-        '" aria-label="'+n+(count?' '+count+' events':'')+' — '+esc(label)+'. Open day in list"><span class="shows-date-number">'+n+
-        '</span>'+(count?'<span class="shows-date-count">'+count+' <span class="sr-only">events</span></span>':'')+'</button>';
+        '"><span class="shows-date-number">'+n+
+        '</span>'+(count?'<span class="shows-date-count">'+count+' <span class="sr-only">events</span></span>':'')+
+        '<span class="sr-only"> '+esc(label)+': open day in list.</span></button>';
     }
     return html+'</div>';
   }
