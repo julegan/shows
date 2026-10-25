@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       batch:
-        description: "Zero-based group of 35 source pages"
+        description: "Zero-based group of up to 35 upcoming music event pages"
         required: false
         default: "0"
   schedule:
@@ -47,6 +47,16 @@ jobs:
           path: discovery/artwork-backfill-review.md
           retention-days: 30
           if-no-files-found: error
+      - name: Explain artwork results
+        if: steps.pending.outputs.skip != 'true'
+        run: cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Save artwork report even when no PR is created
+        if: steps.pending.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: shows-artwork-report
+          path: discovery/artwork-backfill-review.md
+          retention-days: 30
       - name: Verify data and tests
         if: steps.pending.outputs.skip != 'true'
         run: |
