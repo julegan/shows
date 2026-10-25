@@ -109,18 +109,23 @@ async function main(){
   "# Source artwork backfill review","",
   "This file contains external artwork links from official event pages. Review usage terms before publishing; the image files are not copied.","",
   "Batch: "+batch+" (zero-indexed)",
+  "Eligible event-detail URLs: "+pending.length,
   "Attempted listings: "+attempted,
   "New event artwork references: "+proposed,
   "Remaining eligible event pages: "+Math.max(0,pending.length-(batch*max+attempted)),
   "Not found or unavailable: "+failures.length,
+  "Music listings still missing artwork: "+events.filter(e=>e.category==="Music"&&!e.artwork).length,
+  "Music listings without supported event-detail URLs: "+events.filter(e=>e.category==="Music"&&!e.artwork&&!originalUrl(e)).length,
   "",
   ...events.filter(e=>e.artwork&&e.artwork.origin==="official-event-page").slice(-proposed).map(e=>"- "+e.title+" — "+e.artwork.sourceUrl+" — "+e.artwork.url),
   "",
-  "## Unavailable or unclear","",...failures.map(x=>"- "+x)
+  "## Unavailable or unclear","",...failures.map(x=>"- "+x),"",
+  "A successful run with zero proposals creates no PR. This review report is preserved in the workflow artifacts.",
+  "A generic venue calendar is not event-specific image evidence; those gaps require verified event media links."
  ].join("\n")+"\n";
  fs.mkdirSync(path.join(root,"discovery"),{recursive:true});
  fs.writeFileSync(path.join(root,"discovery","artwork-backfill-review.md"),report);
- console.log(JSON.stringify({attempted,proposed,remaining:pending.length-attempted,failures:failures.length}));
+ console.log(JSON.stringify({batch,batchCount,eligible:pending.length,attempted,proposed,remaining:pending.length-attempted,failures:failures.length,missingMusic:events.filter(e=>e.category==="Music"&&!e.artwork).length}));
 }
 if(require.main===module)main().catch(err=>{console.error(err);process.exitCode=1});
-module.exports={originalUrl,pendingForArtwork};
+module.exports={originalUrl,pendingForArtwork,eventPhotoFromHtml};
