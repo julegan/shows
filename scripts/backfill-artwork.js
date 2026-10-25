@@ -146,7 +146,7 @@ async function main(){
     const html=cache.get(url);
     if(!titleMatches(html,e))outcome="TITLE_NOT_VERIFIED";
     else {
-     artwork=eventArtworkFromHtml(html,url);
+     artwork=eventArtworkFromHtml(html,url,e.title);
      outcome=artwork?"PROPOSED":"NO_EVENT_IMAGE";
     }
    }catch(error){outcome=reason(error);}
