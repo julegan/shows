@@ -1,0 +1,26 @@
+name: Probe Kenton official schedule (read-only)
+on:
+  push:
+    branches: [feature/kenton-official-calendar]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Kenton first-party schedule parser
+        run: node tests/kenton-importer.js
+      - name: Inspect live venue calendar without publishing
+        run: node scripts/probe-kenton.js | tee /tmp/kenton-probe.txt
+      - name: Summarize coverage probe
+        run: |
+          echo "## Kenton primary show-roster probe (read-only)" >> "$GITHUB_STEP_SUMMARY"
+          echo '~~~json' >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/kenton-probe.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '~~~' >> "$GITHUB_STEP_SUMMARY"
