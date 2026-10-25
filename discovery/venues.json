@@ -135,10 +135,10 @@
       "id": "kenton-club",
       "name": "Kenton Club",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": null,
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://www.kentonclub.com/",
       "aliases": [],
-      "notes": "Source-specific importer needed"
+      "notes": "Enabled verified first-party date-only show roster import after live runner probe 40170404712. No showtime or event-specific permalinks; each date must match official weekday and a 120-day horizon. Requires editorial merge."
     },
     {
       "id": "shanghai-tunnel",
