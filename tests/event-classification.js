@@ -40,7 +40,7 @@ const path=require("node:path");
 const registry=require("../discovery/reviewed-classifications.json");
 const text=fs.readFileSync(path.resolve(__dirname,"../events.js"),"utf8");
 const current=backfill(text);
-const objects=JSON.parse(text.match(/window\\.SHOWS_EVENTS\\s*=\\s*(\\[[\\s\\S]*?\\]);\\s*$/)[1]);
+const objects=JSON.parse(text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/)[1]);
 assert.equal(current.changed.length,0,"Classification backfill must be idempotent after reviewed events are updated");
 assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music").length,
  "Conservative source-reviewed Music count must match actual, growing dataset");
