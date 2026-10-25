@@ -1,36 +1,23 @@
-# SHOWS automatic discovery pilot
+# SHOWS coordinated discovery and artwork reviews
 
-**Current state (October 21, 2026):** Daily event discovery and twice-weekly artwork collection are operating as *review-only* GitHub Actions; both successfully generated PRs after the October 21 incident fix. The priority reset proposed here pauses No Fun daily intake. Existing approved events remain in the site. New sources do not become live importers simply by appearing in the source registry. No changes are automatically published.
+**Current workflow (October 2026):** Discovery and original music artwork collection run together in one daily, review-only GitHub Action. The earlier separate artwork action is retained **only for manual targeted backfills**.
 
-## What runs
+## Daily update cycle
 
-1. GitHub Actions `.github/workflows/discover.yml` attempts discovery daily at **16:17 UTC** (9:17 a.m. Pacific daylight time or 8:17 a.m. Pacific standard time), with a manual Run workflow option. GitHub cron is best-effort and can be delayed.
-2. The ranked source registries (`discovery/venues.json` and `discovery/sources.json`) put **Black Water, High Water Mark, Twilight, Coffin Club, Star Theater, Dante's, Roseland, Wonder, Hawthorne, and High Limit Room** first. Working enabled importers now cover **Black Water's public date-only iCalendar feed, Soundcontrol promoter leads, Twilight, Star Theater, Roseland Theater, and Hawthorne Theatre**. High Water Mark's site is source-blocked, so Soundcontrol is an approved partial lead source. The remaining unconnected top venues (Coffin Club, Dante's, Wonder Ballroom, and High Limit Room) are explicit **adapter-needed** work. **No Fun's working Squarespace importer is paused for daily discovery**; previously reviewed events remain. Do not equate registry membership with tested source ingestion.
-3. `scripts/discover-events.js` fetches only allowlisted **enabled** HTTPS sources, limits size and runtime, extracts dated listings, converts timestamps into America/Los_Angeles with DST, compares against approved events, and **holds** time, venue or identity conflicts. It does **not** fetch No Fun while that source has status `paused-secondary`. A priority coverage table appears in each workflow summary even if another open editorial PR blocks collection.
-4. The job runs syntax checks plus old and new regression suites. If newly proposed bills survive, it creates a **pull request** containing the candidate `events.js` update and `discovery/latest-review.md` with source links and missing information. It never commits directly to main or to the portfolio's website.
-5. **Julie or an authorized editor must review the original venue listing and approve/merge the PR.** Published show start vs doors is explicitly unverified until review: `startTimeKind: "listed"`, displayed as **Listed time**, and exported with **time unverified** in the calendar title. Candidate genre tags, end times, prices and access information are not invented. Tickets and cancellations are not monitored by this pilot.
-6. A second scheduled workflow in `julegan/portfolio`, after its separate PR is merged, checks the **approved main branch** of the canonical SHOWS repository and proposes a matching `dist/projects/shows/events.js` sync PR. It never publishes without portfolio review and whatever hosting deployment process the portfolio uses.
+1. **At 16:17 UTC daily (best effort)**, `.github/workflows/discover.yml` checks for another open discovery/artwork/refresh PR. It pauses rather than generating an overlapping proposal while the previous one is awaiting approval.
+2. **Discover new venue events** from existing verified first-party venue and promoter adapters. Dates from the current Portland day through **400 calendar days ahead** are eligible; next-year dates are not artificially capped at December. This is a collection *window*, not a claim that venues have announced that many months.
+3. **Collect original event artwork** from eligible official event-specific pages against the freshly discovered dataset. Scheduled runs rotate through up to 35 missing-image music entries; the manual `artwork_batch` input selects an exact zero-based group.
+4. **Validate and report** source holds/errors, missing artwork, priority venue coverage and future counts **by month**, including empty months. Both source and artwork reports are saved as downloadable Actions artifacts even if no new data is proposed.
+5. **Open one combined canonical PR** when new events or artwork exist. Human review of event identity, venue, times, classification, provenance and image use is mandatory. The workflow never commits to `main`.
+6. **Sync only approved SHOWS data** to `julegan/portfolio` through the separate scheduled, review-only portfolio sync. A second merge and successful Cloudflare deployment are required before the live calendar changes.
 
-## Requirements before the first production run
+## Setup and operational constraints
 
-- Merge **both** infrastructure PRs so the scheduled workflows exist on each default branch.
-- On **both** repositories, visit GitHub **Settings → Actions → General → Workflow permissions** and enable **Allow GitHub Actions to create and approve pull requests**. This toggle permits the bot to *create* review PRs; the workflows do not programmatically approve them. The YAML asks for `contents: write` and `pull-requests: write`. GitHub may enforce stricter org settings.
-- In `julegan/shows`, select **Actions → Discover venue events (review-only) → Run workflow**. Examine its logs. If No Fun doesn't expose a readable JSON event collection, the job **fails visibly** without inventing results; the adapter needs revision.
-- Confirm any discovered items against the actual No Fun calendar and ensure the reviewed PR has correct times, prices, venues, program relevance and duplicates before merging. GitHub may require a separate **Approve workflows to run** action for CI checks on PRs generated by `GITHUB_TOKEN`.
-- Check the portfolio's **Actions → Sync approved SHOWS calendar (review-only)** workflow after an approved canonical data PR has landed. If its sync PR is merged, verify the published /projects/shows/ site actually deploys the change—merging GitHub files is not necessarily a hosting deployment.
+Both repositories require GitHub Actions permission to **create pull requests**. The workflows do not auto-approve or auto-merge. Once this infrastructure PR merges, run **Actions → Refresh SHOWS listings and original artwork (review-only) → Run workflow** and inspect its report and proposed PR. Resolve pending automated PRs to permit future cycles. GitHub cron and Cloudflare deployment are not real-time guarantees.
 
-## Guardrails
+Prioritize Black Water, High Water Mark, Twilight, Coffin Club, Star Theater, Dante's, Roseland, Wonder, Hawthorne, High Limit and adjacent underground promoters. **No Fun stays paused** as a secondary daily source. Coffin Club and High Limit remain adapter-needed; High Water Mark's direct site remains blocked and must not be bypassed. Missing official flyers remain neutral placeholders; never synthesize event poster imagery. Honor source attribution and image rights.
 
-- No login, user tracking, image scraping, paid third-party service, new secret, or raw social-platform scraping is part of this MVP.
-- Only the configured source host is fetched; data fields come from public venue pages. A site URL does not automatically authorize unlimited scraping, and the collection formatter is not a supported durable integration. Keep fetch frequency modest and honor site access restrictions.
-- The normal event calendar validation originally assumed 2026 forever. It now accepts explicit Pacific offsets in later years, without removing the preserved legacy batch tests.
-- A pending discovery PR blocks subsequent discovery PR creation, preventing repetitive duplicate review requests. Discovery runs also skip PR creation if there are no new candidates; source errors appear in the Actions logs.
-- Dated event listings can change or be canceled. This release does **not** implement cancellation/change tracking or background live availability checks.
-- Automated PRs produced using `GITHUB_TOKEN` may require a person to approve the CI run; the workflow runs checks **before pushing** its own PR as well.
-
-## Next adapters
-
-**Next source adapter investment:** The ten priority venues, especially **Coffin Club, Dante's, Roseland, Wonder, Hawthorne and High Limit Room**; follow with the Kenton, Shanghai Tunnel, Turn! Turn! Turn! and underground promoter circuit. Reuse official calendar/event-detail feeds only after verifying accessibility, format, date/time semantics, appropriate access and source provenance. Black Water's date-only feed remains usable, while High Water Mark relies on partial promoter coverage. No Fun remains secondary, with its daily importer paused. Build one verified adapter at a time and add regression tests and a live probe before enabling scheduled import.
+**Still unresolved:** Source-side cancellations, reschedules and updates to previously approved entries are not tracked by this append-only collector. Artwork and new-event intake are automated; ongoing event validity will need a separate reconciliation workflow. Public source calendars often publish only a few months ahead, so an empty summer 2027 does not mean the 400-day importer failed.
 
 ## Historical October 17 pilot probe (for reference)
 

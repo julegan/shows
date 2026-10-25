@@ -6,8 +6,9 @@ on:
         description: "Zero-based group of up to 35 upcoming music event pages"
         required: false
         default: "0"
-  schedule:
-    - cron: "37 18 * * 2,5"
+concurrency:
+  group: shows-refresh
+  cancel-in-progress: false
 permissions:
   contents: write
   pull-requests: write
@@ -25,7 +26,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          open="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/artwork-"))] | length')"
+          open="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/artwork-") or startswith("automation/refresh-") or startswith("automation/discovery-"))] | length')"
           if [ "$open" -gt 0 ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "Artwork review already pending. Merge or close that review PR before rerunning." >> "$GITHUB_STEP_SUMMARY"

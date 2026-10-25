@@ -1,62 +1,102 @@
-name: Discover venue events (review-only)
+name: Refresh SHOWS listings and original artwork (review-only)
 on:
   schedule:
     - cron: '17 16 * * *'
   workflow_dispatch:
+    inputs:
+      artwork_batch:
+        description: 'Zero-based group of up to 35 missing music images (manual runs)'
+        required: false
+        default: '0'
 permissions:
   contents: write
   pull-requests: write
 concurrency:
-  group: shows-discovery
+  group: shows-refresh
   cancel-in-progress: false
 jobs:
-  discover:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check pending editorial PRs
+      - name: Check pending editorial review PRs
         id: pending
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/discovery-"))] | length')"
+          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/refresh-") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
           if [ "$existing" -gt 0 ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "One unreviewed discovery PR already exists. Refusing to create another." >> "$GITHUB_STEP_SUMMARY"
+            echo "Canonical review PR already open. Merge or close it before the next combined proposal." >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Report priority venue readiness and coverage
-        run: node scripts/report-priority-coverage.js | tee -a "$GITHUB_STEP_SUMMARY"
-      - name: Discover from enabled primary sources
+      - name: Show baseline priority coverage
+        run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Discover source-listed upcoming events
         if: steps.pending.outputs.skip != 'true'
         run: node scripts/discover-events.js
-      - name: Run source and event tests
+      - name: Propose official art for existing and newly discovered music listings
+        if: steps.pending.outputs.skip != 'true'
+        env:
+          ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
+        run: node scripts/backfill-artwork.js
+      - name: Record source outcomes and monthly horizon
+        if: steps.pending.outputs.skip != 'true'
+        run: |
+          cat discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
+          cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
+          node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain both review reports even on no-change days
+        if: steps.pending.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: shows-refresh-review-${{ github.run_number }}
+          path: |
+            discovery/latest-review.md
+            discovery/artwork-backfill-review.md
+          retention-days: 30
+          if-no-files-found: error
+      - name: Validate combined source, artwork and calendar data
         if: steps.pending.outputs.skip != 'true'
         run: |
           node --check scripts/discover-events.js
+          node --check scripts/backfill-artwork.js
+          node --check scripts/report-calendar-horizon.js
           node --check app.js
           node --check events.js
           node tests/discovery.js
+          node tests/artwork.js
+          node tests/calendar-horizon.js
           node tests/source-priority.js
           node tests/validate.js
-      - name: Create candidate review PR
+      - name: Propose one combined editorial review PR
         if: steps.pending.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet -- events.js; then
-            echo "No new event candidates. Nothing proposed." >> "$GITHUB_STEP_SUMMARY"
+            echo "No source-confirmed new events or artwork. Review reports remain in this run." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          branch="automation/discovery-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
-          git config user.name "SHOWS discovery bot"
+          branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+          git config user.name "SHOWS refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add -- events.js discovery/latest-review.md
-          git commit -m "Propose newly discovered primary-source venue events for review"
+          git add -- events.js discovery/latest-review.md discovery/artwork-backfill-review.md
+          git commit -m "Propose source-confirmed Portland shows and original flyers"
           git push --set-upstream origin "$branch"
-          gh pr create --title "Review newly discovered Portland music listings" --head "$branch" --base main --body-file discovery/latest-review.md
-          echo "Created an editorial review PR. The portfolio site is NOT updated." >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "# Combined SHOWS discovery + artwork review"
+            echo
+            echo "One staged review for upcoming venue events and source-attributed original flyers. Confirm event identity, dates, venues, doors/show times and image usage before merging. The portfolio is NOT automatically published."
+            echo
+            cat discovery/latest-review.md
+            echo
+            cat discovery/artwork-backfill-review.md
+          } > /tmp/shows-refresh-review.md
+          gh pr create --title "Review refreshed Portland shows and original flyers" --head "$branch" --base main --body-file /tmp/shows-refresh-review.md
+          echo "Review canonical PR first; the portfolio's approved-data sync will then propose its separate publication PR." >> "$GITHUB_STEP_SUMMARY"
