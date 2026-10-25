@@ -155,10 +155,10 @@
       "id": "turn-turn-turn",
       "name": "Turn! Turn! Turn!",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://turnturnturnpdx.com/entertainment/",
       "aliases": [],
-      "notes": "Venue embeds original Opendate account; event date, separately labeled doors/show time, and first-party artwork visible. Candidate import awaiting successful live detail-verification probe."
+      "notes": "First-party embedded OpenDate source passed live GitHub Actions end-to-end event-detail probe. Separate verified show/doors times, artist bill, original images. Unverified event format and style remain under editorial review."
     },
     {
       "id": "the-fixin-to",
