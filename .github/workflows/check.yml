@@ -16,6 +16,7 @@ jobs:
           node --check app.js
           node --check events.js
           node --check scripts/discover-events.js
+          node --check scripts/kenton-importer.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
       - name: Verify date-first music and culture browsing
@@ -26,6 +27,7 @@ jobs:
           node tests/validate.js
           node tests/workflow-review-queue.js
           node tests/discovery.js
+          node tests/kenton-importer.js
           node tests/calendar-horizon.js
 
       - name: Validate original venue research priorities
