@@ -51,3 +51,5 @@ assert.equal(byVenue["holocene"].ingestionStatus,"active-adapter","Holocene orig
 
 assert.equal(byId["starday-tavern"].status,"pilot-enabled","Source-verified original Starday public calendar is review-only");
 assert.equal(byVenue["starday-tavern"].ingestionStatus,"active-adapter");
+assert.equal(byId["kenton-club"].adapter,"kenton-official-html");
+assert.equal(byId["kenton-club"].status,"adapter-needed","Wait for a successful GitHub-runner Kenton live source probe before enabling");
