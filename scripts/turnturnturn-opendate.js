@@ -110,7 +110,7 @@ function parseDetail(html,card){
  const status=String(schema.eventStatus||"").toLowerCase();
  if(/cancel|postpon|resched|moved/.test(status))
   return {hold:"Official OpenDate event status requires cancellation/reschedule review: "+status,title:card.title,url};
- if(!/EventScheduled$/.test(status))return {hold:"Missing or unsupported official ticket-event status",title:card.title,url};
+ if(!/eventscheduled$/.test(status))return {hold:"Missing or unsupported official ticket-event status",title:card.title,url};
  const description=textOf(schema.description||"").slice(0,950);
  const explicitMusic=/\b(?:live music|live band|bands?|concert|musician|music performance|punk show|music set|DJ set|live show)\b/i.test(description);
  return {...card,sourceVerifiedMusic:schema["@type"]==="MusicEvent"||explicitMusic,
