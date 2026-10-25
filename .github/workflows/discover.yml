@@ -92,11 +92,23 @@ jobs:
           {
             echo "# Combined SHOWS discovery + artwork review"
             echo
-            echo "One staged review for upcoming venue events and source-attributed original flyers. Confirm event identity, dates, venues, doors/show times and image usage before merging. The portfolio is NOT automatically published."
+            echo "Official source discoveries and event-specific artwork are staged for editorial review. Confirm event identity, dates, venues, time types, and image rights before merging. Nothing publishes automatically."
             echo
-            cat discovery/latest-review.md
+            echo "## Discovery snapshot"
+            sed -n '1,9p' discovery/latest-review.md
             echo
-            cat discovery/artwork-backfill-review.md
+            echo "## Artwork snapshot"
+            sed -n '1,17p' discovery/artwork-backfill-review.md
+            echo
+            echo "## Full evidence"
+            echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
+            echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
+            echo "- [Action run and month-by-month summary](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
           } > /tmp/shows-refresh-review.md
+          # Keep the GitHub PR description small even when hundreds of events are found.
+          if [ "$(wc -c < /tmp/shows-refresh-review.md)" -gt 12000 ]; then
+            echo "Combined PR summary unexpectedly exceeded 12 KB; check report formatting." >&2
+            exit 1
+          fi
           gh pr create --title "Review refreshed Portland shows and original flyers" --head "$branch" --base main --body-file /tmp/shows-refresh-review.md
           echo "Review canonical PR first; the portfolio's approved-data sync will then propose its separate publication PR." >> "$GITHUB_STEP_SUMMARY"
