@@ -33,6 +33,16 @@ async function showsViews(browser,viewport){
   page.on("pageerror",e=>pageErrors.push(e.message));
   const response=await page.goto(origin+(isPortfolio?"/projects/shows/":"/"),{waitUntil:"domcontentloaded"});
   assert.equal(response.status(),200,"SHOWS homepage must load");
+  assert.equal(await page.locator("main h1").count(),1,"Event browsing page has one primary heading");
+  assert.equal(await page.locator("main h1").innerText(),"Upcoming in Portland","Direct page heading replaces slogan");
+  assert.equal(await page.locator(".masthead .hero").count(),0,"No oversized marketing hero above events");
+  assert.equal(await page.locator(".shows-intro").count(),1,"Compact editorial intro appears above browsing");
+  if(viewport.width<=680){
+    const headerHeight=await page.locator(".masthead").evaluate(el=>el.getBoundingClientRect().height);
+    const introHeight=await page.locator(".shows-intro").evaluate(el=>el.getBoundingClientRect().height);
+    assert(headerHeight<=155,"Mobile masthead must leave room for event browsing");
+    assert(introHeight<=225,"Mobile editorial intro should remain compact");
+  }
   if(isPortfolio)await assertFavicon(page,"SHOWS");
   const ymd=()=>{
     const fields=new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date());
