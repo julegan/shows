@@ -54,3 +54,6 @@ assert.equal(byVenue["starday-tavern"].ingestionStatus,"active-adapter");
 assert.equal(byId["kenton-club"].adapter,"kenton-official-html");
 assert.equal(byId["kenton-club"].status,"pilot-enabled","Official Kenton importer passed GitHub Actions probe 40170404712");
 assert.equal(byVenue["kenton-club"].ingestionStatus,"active-adapter");
+
+assert.equal(byId['turn-turn-turn'].adapter,'turnturnturn-opendate');
+assert.equal(byId['turn-turn-turn'].status,'adapter-needed','Do not enable until full OpenDate detail verification passes');
