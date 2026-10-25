@@ -14,5 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Inspect approved public source HTML without publishing
-        run: node scripts/probe-turnturnturn.js
+      - name: Verify original event detail import without publishing
+        run: |
+          node tests/turnturnturn-opendate.js
+          node scripts/probe-turnturnturn-importer.js
