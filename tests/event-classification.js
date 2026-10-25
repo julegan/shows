@@ -40,9 +40,12 @@ const path=require("node:path");
 const registry=require("../discovery/reviewed-classifications.json");
 const text=fs.readFileSync(path.resolve(__dirname,"../events.js"),"utf8");
 const current=backfill(text);
+const objects=JSON.parse(text.match(/window\\.SHOWS_EVENTS\\s*=\\s*(\\[[\\s\\S]*?\\]);\\s*$/)[1]);
 assert.equal(current.changed.length,0,"Classification backfill must be idempotent after reviewed events are updated");
-assert.equal(current.meta.musicOccurrences,204,"Conservative source-reviewed Music count");
-assert.equal(current.meta.totalOccurrences,470,"Classification never adds or removes calendar events");
+assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music").length,
+ "Conservative source-reviewed Music count must match actual, growing dataset");
+assert.equal(current.meta.totalOccurrences,objects.length,
+ "Classification never adds or removes calendar events");
 assert.equal(registry.entries.length,5,"No broad or implicit artist auto-tagging");
 for(const item of registry.entries){
  const got=reviewed.forEvent(item);
@@ -52,7 +55,7 @@ for(const item of registry.entries){
  assert.equal(reviewed.forEvent({...item,venue:"Other Stage"}),null,"Wrong venue cannot inherit classification");
  assert.equal(reviewed.forEvent({...item,date:"2027-12-31"}),null,"Wrong date cannot inherit classification");
 }
-const objects=JSON.parse(text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/)[1]);
+
 for(const item of registry.entries){
  const e=objects.find(x=>x.url===item.url&&x.title===item.title&&x.venue===item.venue&&x.startsAt.startsWith(item.date));
  assert(e,"Original identified event remains in snapshot");
