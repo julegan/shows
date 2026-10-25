@@ -110,6 +110,7 @@
 .preview-dialog .detail-info a{color:#1d5035;text-decoration:underline;text-underline-offset:3px}
 
 
+body:not([data-preview]) .preview-shell{padding-top:0}
 /* Production page intro: restrained editorial treatment instead of a campaign hero. */
 .shows-intro{
   display:grid;
