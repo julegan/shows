@@ -160,3 +160,46 @@ body:not([data-preview]) .preview-shell{padding-top:0}
   }
   .shows-intro+.preview-navigation{padding-top:12px}
 }
+
+/* iOS Safari: a native date input has an intrinsic width. Allow its grid/flex
+   track to shrink instead of making the entire SHOWS page horizontally scroll. */
+.preview-filters,
+.preview-filters label{min-width:0;max-width:100%}
+.preview-filters label{grid-template-columns:minmax(0,1fr)}
+.preview-filters .preview-date{min-width:0;max-width:100%}
+.preview-filters .preview-date input[type="date"]{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+@media(max-width:680px){
+  .preview-filters .preview-date{
+    flex:1 1 100%;
+    width:100%;
+  }
+}
+
+
+/* Safari misplaces native date text. Show a centered display label while
+   retaining the original native input as a full-size accessible picker. */
+.preview-filters .preview-date-field{
+ position:relative;display:flex;align-items:center;justify-content:center;
+ width:100%;min-width:0;max-width:100%;height:44px;padding:0 11px;
+ box-sizing:border-box;border:1px solid #929e93;border-radius:4px;background:#fff;overflow:hidden;
+}
+.preview-filters .preview-date-display{
+ display:block;width:100%;min-width:0;white-space:nowrap;overflow:hidden;
+ text-overflow:ellipsis;text-align:center;line-height:1.2;color:var(--ink);
+ font-size:inherit;font-weight:inherit;pointer-events:none;
+}
+.preview-filters .preview-date-field input[type="date"]{
+ position:absolute;inset:0;z-index:1;display:block;
+ -webkit-appearance:none;appearance:none;
+ width:100%;min-width:0;max-width:100%;height:100%;min-height:0;
+ box-sizing:border-box;margin:0;padding:0;border:0;border-radius:0;
+ background:transparent;opacity:0;cursor:pointer;
+}
+.preview-filters .preview-date-field:focus-within{outline:3px solid #24518c;outline-offset:3px}
+.preview-filters .preview-date-field input[type="date"]:focus-visible{outline:none}
