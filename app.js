@@ -5,6 +5,7 @@
   const $ = (id) => document.getElementById(id);
   const dateLong = new Intl.DateTimeFormat("en-US", {timeZone: zone, weekday: "long", month: "long", day: "numeric"});
   const dateShort = new Intl.DateTimeFormat("en-US", {timeZone: zone, month: "short", day: "numeric"});
+  const dateDisplayFormat = new Intl.DateTimeFormat("en-US", {timeZone: "UTC", month: "short", day: "numeric", year: "numeric"});
   const timeFormat = new Intl.DateTimeFormat("en-US", {timeZone: zone, hour: "numeric", minute: "2-digit"});
   const state = {view: "dates", start: ymdDate(new Date()), month: ymdDate(new Date()).slice(0,7), search: "", neighborhood: "", style: "", onlyFree: false, onlySaved: false, limit: 60};
   const today = state.start;
@@ -125,6 +126,9 @@
       '</article>').join("") + '</div>';
   }
   function render() {
+    // Synchronize the visible date with the native picker every time the view changes.
+    $("fromDate").value = state.start;
+    $("fromDateDisplay").textContent = dateDisplayFormat.format(new Date(state.start + "T12:00:00Z"));
     const items = filtered();
     const monthLabel = new Intl.DateTimeFormat("en-US",{timeZone:"UTC",month:"long",year:"numeric"}).format(new Date(state.month+"-01T12:00:00Z"));
     $("summary").textContent = items.length + " matching event listing" + (items.length === 1 ? "" : "s") +
