@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-29",
   "coverageThrough": "2027-06-11",
-  "totalOccurrences": 705,
-  "addedOccurrences": 8,
-  "batchId": "auto-discovery-2026-10-29-21",
+  "totalOccurrences": 708,
+  "addedOccurrences": 3,
+  "batchId": "2026-10-29-outlook-coverage",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -64,11 +64,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-29-20",
       "addedOccurrences": 46
+    },
+    {
+      "batchId": "auto-discovery-2026-10-29-21",
+      "addedOccurrences": 8
     }
   ],
-  "newLiveBills": 0,
+  "newLiveBills": 3,
   "newDjNights": 0,
-  "musicOccurrences": 267
+  "musicOccurrences": 270
 };
 window.SHOWS_EVENTS = [
   {
@@ -34423,5 +34427,163 @@ window.SHOWS_EVENTS = [
       "sourceId": "wonder-ballroom",
       "method": "primary-source-collection"
     }
+  },
+  {
+    "id": "outlook-aladdin-2026-10-29-protomartyr",
+    "title": "Protomartyr with Accessory",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "doorsAt": "2026-10-29T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "accessibility": null,
+    "description": "Protomartyr with Accessory. Official Aladdin listing publishes doors at 7 PM and show at 8 PM. Admission and age restriction were not verified.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.aladdin-theater.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "Aladdin Theater official tickets",
+        "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
+  },
+  {
+    "id": "outlook-aladdin-2026-11-02-king-buffalo",
+    "title": "King Buffalo with L.A. Witch",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-02T20:00:00-08:00",
+    "doorsAt": "2026-11-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "accessibility": null,
+    "description": "King Buffalo with L.A. Witch. Official Aladdin calendar confirms November 2, 2026, doors at 7 PM and show at 8 PM. Check official tickets for admission and age restrictions.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.aladdin-theater.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "King Buffalo",
+        "url": "https://kingbuffalo.com/band",
+        "kind": "artist",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "Aladdin Theater official tickets",
+        "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "musicStyleEvidence": {
+      "basis": "King Buffalo describes its music as heavy psychedelic rock on its official band page.",
+      "urls": [
+        "https://kingbuffalo.com/band"
+      ]
+    },
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
+  },
+  {
+    "id": "outlook-mission-2026-11-06-gully-boys",
+    "title": "Gully Boys with Pollyanna and Nonbinary Girlfriend",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "doorsAt": "2026-11-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "All ages",
+    "accessibility": null,
+    "description": "Gully Boys, Pollyanna and Nonbinary Girlfriend. Official Mission Theater page confirms November 6, 2026, 7 PM doors and 8 PM show, all ages. Admission remains unverified. The venue’s West End Entertainment District promotion is not an additional performer.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277583-gully-boys",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277583-gully-boys",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official event biography describes Pollyanna as a DIY band blending rock, pop and punk; these styles describe that supporting artist on a mixed bill.",
+      "urls": [
+        "https://www.mcmenamins.com/events/277583-gully-boys"
+      ]
+    },
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
   }
 ];
