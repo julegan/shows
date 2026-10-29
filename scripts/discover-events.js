@@ -17,6 +17,7 @@ const starday=require("./starday-importer");
 const kenton=require("./kenton-importer");
 const turn=require("./turnturnturn-opendate");
 const offbeat=require("./offbeat-importer");
+const aladdin=require("./aladdin-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -69,6 +70,7 @@ function urlOf(item,src){
   if(src.adapter==="kenton-official-html")return u.href===kenton.SOURCE_URL?u.href:null;
   if(src.adapter==="turnturnturn-opendate")return turn.officialEventUrl(u.href);
   if(src.adapter==="offbeat-official-html")return offbeat.eventUrl(u.href);
+  if(src.adapter==="aladdin-official-html")return aladdin.ticketUrl(u.href);
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
   if(src.adapter==="crystal-official-html")return crystal.safeCrystalUrl(u.href);
@@ -151,15 +153,15 @@ function reconcile(existing,records){
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
   const source=a.discovery?.sourceId;
-  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat"].includes(source)
+  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater"].includes(source)
     &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
     &&(source!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
  };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
   const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
-  if(seen.has(key)||existing.some(v=>v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
+  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
+  if(seen.has(key)||existing.some(v=>(e.discovery?.sourceId==="aladdin-theater"&&aladdin.ticketUrl(e.url)&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
    skipped.push({sourceId:e.discovery?.sourceId,skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
@@ -175,6 +177,7 @@ function reconcile(existing,records){
 async function fetchItems(source){
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.
+ if(source.adapter==="aladdin-official-html")return aladdin.fetchEvents(source);
  if(source.adapter==="offbeat-official-html")return offbeat.fetchEvents(source);
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
  if(source.adapter==="starday-google-html")return starday.fetchOfficialStarday(source);
@@ -416,6 +419,7 @@ async function run(opts={}){
    sourceRuns.push({id:src.id,status:items.length?"checked":"empty",examined:items.length});
    if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
    for(const item of items){
+    if(item?.skip){found.push({...item,sourceId:src.id});continue;}
     if(item?.hold){found.push({...item,sourceId:src.id});continue;}
     const record=extract(item,src,now);
     found.push(record.event?record:{...record,sourceId:src.id});

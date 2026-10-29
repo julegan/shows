@@ -1,0 +1,32 @@
+"use strict";
+const assert=require('node:assert/strict');
+const a=require('../scripts/aladdin-importer');
+const {extract,reconcile,run}=require('../scripts/discover-events');
+const src=require('../discovery/sources.json').sources.find(s=>s.id==='aladdin-theater');
+const url='https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater';
+function card({title='King Buffalo',venue='Aladdin Theater',ticket=url,id='84319558',date='Mon, November 2nd, 2026',doors='7PM',show='8PM',stamp='2026-11-03T03:00:00Z',meta='2026-11-02T20:00:00+00:00'}={}){
+ return '<div class="event event--list-style event-background-images" data-event-id="'+id+'"><meta itemprop="startDate" content="'+meta+'"><div class="event-image"><a href="'+ticket+'"><img src="https://cdn.etix.com/etix/performance-image/performance_image_1200w/flyer.jpg"></a></div><h3 itemprop="name">'+title+'</h3><div class="event-summary event-supporting">L.A. Witch</div><span class="event-date--full">'+date+'</span><span class="event-doors-showtime" data-event-doors="'+stamp+'">Doors: '+doors+' / Show: '+show+'</span><div class="event-venue">'+venue+'</div><a href="'+ticket+'">Tickets</a></div>';
+}
+const page=(cards,count=cards.length)=>'<div id="feed-primary" data-events-count="'+count+'">'+cards.join('')+'</div>';
+const row=a.parseAladdin(page([card()]),src)[0];assert.equal(row.startDate,'2026-11-03T04:00:00.000Z','Source metadata +00:00 must not shift the printed Pacific showtime');assert(row.artwork);assert.equal(row.artwork.usageApproved,null);
+assert(a.parseCard(card({date:'Tonight'}),src).startDate,'Relative date uses independent source UTC date, not machine today');
+assert(a.parseCard(card({date:'Today',stamp:''}),src).hold);
+assert(a.parseCard(card({date:'Tue, November 2nd, 2026'}),src).hold);
+assert(a.parseCard(card({stamp:'2026-11-03T05:00:00Z'}),src).hold);
+assert(a.parseCard(card({show:'Doors only'}),src).hold);
+assert(a.parseCard(card({show:'6PM',meta:'2026-11-02T18:00:00+00:00'}),src).hold,'Show before doors held');
+assert(a.parseCard(card({meta:'2026-11-02T21:00:00+00:00'}),src).hold);
+assert(a.parseCard(card({id:'99999999'}),src).hold);
+assert(a.parseCard(card({ticket:url.replace('-aladdin-theater','-crystal-ballroom')}),src).hold);
+assert(a.parseCard(card({venue:'- Crystal Ballroom -',ticket:url.replace('-aladdin-theater','-crystal-ballroom')}),src).skip);
+for(const prefix of ['RESCHEDULED: ','POSTPONED: ','CANCELLED: ','VIP UPGRADE: '])assert(a.parseCard(card({title:prefix+'King Buffalo'}),src).hold);
+assert(a.parseCard(card({title:'SOLD OUT: King Buffalo'}),src).startDate,'Sold-out shows remain discoverable');
+assert.equal(a.ticketUrl(url+'?tracking=1'),null);assert.equal(a.ticketUrl(url.replace('www.etix.com','attacker.invalid')),null);
+assert.throws(()=>a.parseAladdin(page([card()],2),src),/pagination incomplete/);
+assert.throws(()=>a.parseAladdin('No calendar',src),/feed missing/);
+assert.equal(a.parseAladdin(page([card(),card()]),src).length,1);
+const daylight=a.parseCard(card({date:'Fri, March 26th, 2027',stamp:'2027-03-27T02:00:00Z',meta:'2027-03-26T20:00:00+00:00'}),src);assert.equal(daylight.startDate,'2027-03-27T03:00:00.000Z');
+const event=extract(row,src,new Date('2026-10-29T12:00:00-07:00')).event;assert(event);assert.equal(event.category,'Unclassified','No music or genre inference from band familiarity');assert.deepEqual(event.musicStyles,[]);assert.equal(event.endsAt,null);assert.equal(reconcile([event],[{event}]).accepted.length,0);const manual={...event,id:'manual-king-buffalo',title:'King Buffalo with L.A. Witch'};assert.equal(reconcile([manual],[{event}]).skipped.length,1,'Same original ticket, venue and time dedupes expanded manual billing');assert.equal(reconcile([{...manual,startsAt:'2026-11-02T21:00:00-08:00'}],[{event}]).held.length,1,'Changed time still held');
+const second={...event,id:'independent-late-performance',url:event.url.replace('/84319558/','/84319559/'),startsAt:'2026-11-02T22:00:00-08:00'};
+assert.equal(reconcile([],[{event},{event:second}]).accepted.length,2,'Distinct official ticket IDs and times preserve early and late shows');
+(async()=>{const output=await run({now:new Date('2026-10-29T12:00:00-07:00'),write:false,load:async s=>s.id==='aladdin-theater'?[{skip:'Offsite event on Aladdin calendar',title:'Other Room'}]:[]});assert(output.skipped.some(x=>x.sourceId==='aladdin-theater'&&x.skip.includes('Offsite')));assert(!output.held.some(x=>x.title==='Other Room'));console.log('PASS — Aladdin exact ticket room/id, Pacific/DST metadata trap, whole-feed completeness, statuses, deduplication and offsite reporting');})().catch(e=>{console.error(e);process.exitCode=1});
