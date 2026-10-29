@@ -22,4 +22,30 @@ assert.match(h.parseDetail(page({date:"2026-10-22T21:00:00"}),url).hold,/timezon
 assert.match(h.parseDetail(page({date:"2026-10-22T21:00:00-0800"}),url).hold,/timezone\/DST/);
 assert.match(h.parseDetail(page({canonical:"https://www.holocene.org/event/other/holocene/portland/"}),url).hold,/conflicts/);
 assert.equal(h.parseDetail(page({date:"2027-01-22T20:00:00-0800"}),url).startDate,"2027-01-23T04:00:00.000Z");
-console.log("PASS — Holocene official venue Event schema, dated source timezone/DST, cancellation, canonical URL and flyer review provenance");
+
+const newUrl="https://www.holocene.org/events/2026-11-24-spanish-love-songs-the-cost-of-living-tour";
+assert.equal(h.safeUrl(newUrl),newUrl);
+assert.equal(h.safeUrl(newUrl+"?q=bad"),null);
+assert.equal(h.safeUrl("https://www.holocene.org/events/2026-13-24-invalid"),null);
+assert.deepEqual(h.links('<a href="/events/2026-11-24-spanish-love-songs-the-cost-of-living-tour">Show</a><a href="'+newUrl+'">Duplicate</a>'),[newUrl]);
+function rendered({heading="Spanish Love Songs",day="Tuesday, November 24, 2026",label="Doors",time="7PM",venue="1001 SE Morrison St, Portland"}={}){
+ return '<html><head><meta property="og:image" content="https://www.holocene.org/events/poster.jpg"></head><body>'+
+  '<main><p>'+day+'</p><h1>'+heading+'</h1><dl><dt>'+label+'</dt><dd>'+time+
+  '</dd><dt>Venue</dt><dd>'+venue+'</dd></dl></main><h2>More nights at Holocene</h2></body></html>';
+}
+const newEntry=h.parseDetail(rendered(),newUrl);
+assert.equal(newEntry.venue,"Holocene");
+assert.equal(newEntry.startDate,"2026-11-25T03:00:00.000Z");
+assert.match(newEntry.timeEvidence,/doors, NOT confirmed performance start/);
+assert.equal(newEntry.artwork.sourceUrl,newUrl);
+assert.equal(newEntry.artwork.usageApproved,null);
+assert.match(h.parseDetail(rendered({day:"Wednesday, November 24, 2026"}),newUrl).hold,/date\/weekday/);
+assert.match(h.parseDetail(rendered({venue:"Other Venue"}),newUrl).hold,/does not confirm/);
+assert.match(h.parseDetail(rendered({label:"Check In",time:"7PM"}),newUrl).hold,/no explicit Starts or Doors/);
+assert.match(h.parseDetail(rendered({heading:"EVENT CANCELED"}),newUrl).hold,/canceled/);
+const started=h.parseDetail(rendered({label:"Starts",time:"9PM"}),newUrl);
+assert.equal(started.startDate,"2026-11-25T05:00:00.000Z");
+assert.match(started.timeEvidence,/event start/);
+assert.match(h.parseDetail(page({date:"2026-11-25T21:00:00-0800",canonical:newUrl}),newUrl).hold,/conflicts with dated permalink/);
+
+console.log("PASS — Holocene legacy Event schema plus current calendar, verified weekday/venue, starts/doors labels and artwork provenance");

@@ -3,7 +3,7 @@
  * A source-published start timestamp may mean doors rather than performance;
  * retain that caveat in review descriptions, never call it a verified showtime.
  */
-const {eventArtworkFromHtml}=require("./priority-importers");
+const {eventArtworkFromHtml,wallToPacific,time24}=require("./priority-importers");
 const HOST="https://www.holocene.org";
 const plain=s=>String(s||"").replace(/&#(?:x([0-9a-f]+)|(\d+));/gi,(_,h,d)=>String.fromCodePoint(parseInt(h||d,h?16:10)))
  .replace(/&(?:amp|apos|quot|nbsp|lt|gt);/gi,x=>({"&amp;":"&","&apos;":"'","&quot;":'"',"&nbsp;":" ","&lt;":"<","&gt;":">"}[x.toLowerCase()]||" "))
@@ -12,7 +12,7 @@ function safeUrl(raw){
  try{
   const u=new URL(String(raw||"").replace(/&amp;/gi,"&"),HOST);
   if(u.protocol!=="https:"||u.hostname!=="www.holocene.org"||u.port||u.username||u.password||u.search||u.hash)return null;
-  return /^\/event\/[a-z0-9][a-z0-9-]*\/[a-z0-9-]+\/(?:portland|portland-oregon)\/?$/i.test(u.pathname)?u.href:null;
+  return (/^\/event\/[a-z0-9][a-z0-9-]*\/[a-z0-9-]+\/(?:portland|portland-oregon)\/?$/i.test(u.pathname)||/^\/events\/20\d\d-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])-[a-z0-9][a-z0-9-]*\/?$/i.test(u.pathname))?u.href:null;
  }catch(_){return null}
 }
 function links(html){
@@ -36,10 +36,48 @@ function schemaEvents(html){
  }
  return events;
 }
+
+/* Holocene migrated to /calendar with date-specific /events/YYYY-MM-DD-slug
+ * pages. A URL date alone is not evidence: require matching full printed day
+ * and date, official venue address, and an explicitly labelled time. */
+function renderedDetail(html,primary){
+ const pathDate=primary.match(/\/events\/(20\d\d-\d\d-\d\d)-[a-z0-9-]+\/?$/i)?.[1];
+ if(!pathDate)return {hold:"Not a dated Holocene event permalink",url:primary};
+ const check=new Date(pathDate+"T12:00:00Z");
+ if(!Number.isFinite(check.valueOf())||check.toISOString().slice(0,10)!==pathDate)
+  return {hold:"Invalid official event permalink date",url:primary};
+ const page=String(html||"").replace(/<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>/gi," ");
+ const title=plain(page.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||"").slice(0,280);
+ if(!title)return {hold:"Official event page has no event-specific heading",url:primary};
+ const text=plain(page).split(/More nights at Holocene/i)[0];
+ const published=new Intl.DateTimeFormat("en-US",{timeZone:"UTC",weekday:"long",month:"long",day:"numeric",year:"numeric"}).format(check);
+ if(!text.toLowerCase().includes(published.toLowerCase()))
+  return {hold:"Official page date/weekday missing or conflicts with dated permalink",title,url:primary};
+ if(!/\bVenue\s+(?:Holocene\s+)?1001\s+(?:SE|Southeast)\s+Morrison\b/i.test(text))
+  return {hold:"Official event detail does not confirm 1001 SE Morrison venue",title,url:primary};
+ if(/\b(?:show|event)\s+(?:canceled|cancelled|postponed)\b|\brescheduled\s+to\b/i.test(text.slice(0,600)))
+  return {hold:"Official source marks an event as canceled or rescheduled",title,url:primary};
+ const label=text.match(/\bStarts\s+(\d{1,2}(?::[0-5]\d)?\s*[ap]m)\b/i)
+   ||text.match(/\bDoors\s+(\d{1,2}(?::[0-5]\d)?\s*[ap]m)\b/i);
+ if(!label)return {hold:"Original event page has no explicit Starts or Doors time",title,url:primary};
+ const clock=time24(label[1]);
+ const [year,month,day]=pathDate.split("-").map(Number);
+ const startDate=clock&&wallToPacific(year,month,day,clock);
+ if(!startDate)return {hold:"Published event time is invalid in Portland's timezone",title,url:primary};
+ const kind=/\bStarts\b/i.test(label[0])?"Starts":"Doors";
+ const artwork=eventArtworkFromHtml(html,primary);
+ return {title,venue:"Holocene",fullUrl:primary,startDate,
+  sourceVerifiedMusic:false,
+  timeEvidence:"Official Holocene page labels "+label[1].toUpperCase().replace(/\s+/g,"")+" as "+(kind==="Doors"?"doors, NOT confirmed performance start":"Starts (event start); verify performance versus doors"),
+  description:"Original venue event detail; full printed weekday/date matches dated permalink and venue. Review classification, status and image rights.",
+  ...(artwork?{artwork}:{})};
+}
+
 function parseDetail(html,url){
  const primary=safeUrl(url);
  if(!primary)return {hold:"Event URL does not match original Holocene calendar",url};
  const data=schemaEvents(html);
+ if(data.length===0&&/\/events\/20\d\d-/.test(primary))return renderedDetail(html,primary);
  if(data.length!==1)return {hold:"Missing or ambiguous source-published event schema with a year",url:primary};
  const e=data[0],title=plain(e.name).slice(0,280),loc=Array.isArray(e.location)?e.location[0]:e.location;
  if(!title)return {hold:"No official event title",url:primary};
@@ -49,6 +87,8 @@ function parseDetail(html,url){
  // Event times can be labeled as doors by the site, and this is disclosed.
  if(typeof e.startDate!=="string"||!/^20\d\d-\d\d-\d\dT\d\d:\d\d(?::\d\d)?(?:-07:00|-08:00|-0700|-0800)$/.test(e.startDate))
   return {hold:"Missing original dated event timezone",title,url:primary};
+ const datedPath=primary.match(/\/events\/(20\d\d-\d\d-\d\d)-/i)?.[1];
+ if(datedPath&&!e.startDate.startsWith(datedPath+"T"))return {hold:"Original event schema date conflicts with dated permalink",title,url:primary};
  const date=new Date(e.startDate);if(!Number.isFinite(date.valueOf()))return {hold:"Invalid original event timestamp",title,url:primary};
  const pieces=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23",timeZoneName:"shortOffset"}).formatToParts(date).map(p=>[p.type,p.value]));
  const input=e.startDate.match(/^(20\d\d-\d\d-\d\d)T(\d\d):(\d\d)/),offset=(e.startDate.match(/([+-]\d{2}:?\d{2})$/)?.[1]||"").replace(/^([+-]\d\d)(\d\d)$/,"$1:$2");
