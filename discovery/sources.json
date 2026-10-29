@@ -319,6 +319,20 @@
       "adapter": "offbeat-official-html",
       "reason": "Venue-owned calendar linked by official Friends of Noise event-calendar embed. Verify roster and each original detail page; collect all future dated venue events and classify afterward. Review PRs only.",
       "enabledReason": "Read-only GitHub Actions live probe 40973251804 verified nine original roster/detail records with event-specific posters; one inconsistent performance clock held. Review-only daily intake."
+    },
+    {
+      "id": "aladdin-theater",
+      "name": "Aladdin Theater",
+      "venue": "Aladdin Theater",
+      "venueRegistryId": "aladdin-theater",
+      "status": "adapter-needed",
+      "priority": "expansion",
+      "adapter": "aladdin-official-html",
+      "url": "https://www.aladdin-theater.com/",
+      "baseUrl": "https://www.aladdin-theater.com",
+      "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+      "neighborhood": "Brooklyn",
+      "reason": "Original complete venue feed with independent UTC doors dates and printed show clocks; exact Aladdin room and Etix event ID required. Offsite shows skipped and changed-status cards held. Pending live importer verification."
     }
   ],
   "editorialPriority": [
