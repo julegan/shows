@@ -334,6 +334,20 @@
       "neighborhood": "Brooklyn",
       "reason": "Collect all future dated Aladdin-room events for editorial classification. Independently verify source UTC doors date, printed Pacific show clock, local-clock metadata and exact Etix event ID. Fail on incomplete feed count; skip offsite cards; hold rescheduled or ambiguous ticket identities.",
       "enabledReason": "Read-only GitHub Actions probe 40974636056 inspected all 97 advertised source cards: 85 valid Aladdin date/time/room records, nine offsite exclusions and three source holds. Original event images retained; formats and genres require review. No automatic publication."
+    },
+    {
+      "id": "mission-theater",
+      "name": "Mission Theater",
+      "venue": "Mission Theater",
+      "venueRegistryId": "mission-theater",
+      "status": "adapter-needed",
+      "priority": "expansion",
+      "adapter": "mission-official-html",
+      "url": "https://www.mcmenamins.com/mission-theater",
+      "baseUrl": "https://www.mcmenamins.com",
+      "address": "1624 NW Glisan St, Portland, OR 97209",
+      "neighborhood": "Northwest District",
+      "reason": "Original Mission venue roster with individually verified year-bearing event detail pages. Keep show, presentation, dance, film and unlabeled starts distinct; no venue-derived genre assumptions. Pending live verification."
     }
   ],
   "editorialPriority": [
