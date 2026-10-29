@@ -22,6 +22,10 @@ Recommended next stage: a **leads-only** source importer using original WordPres
 
 **October 29 implementation:** The combined SHOWS refresh now checks public Doomtown WordPress posts, saving `discovery/doomtown-leads-review.md` with original URLs, printed date snippets, venue references and first-party artwork leads. It remains lead-only (no event ingestion, no verified date claim or artwork rights); errors are visible in the report instead of silently presenting zero shows. Confirm public API access on a GitHub runner after merge, then corroborate any candidate with the original venue or ticket issuer before an event importer can be activated.
 
+## Starday reliability — bounded original-source retry
+
+The Starday Tavern original venue page can occasionally exceed the default 18-second calendar fetch limit. The dedicated original-site collector now uses a 25-second deadline and retries **once only** after a transient network/timeout error or HTTP 502/503/504. It uses the unchanged first-party `https://stardaytavern.com/` URL without following redirects, and still rejects HTTP 403, invalid HTML, mismatched first-party identity and invalid event data. This is source availability resilience, not evidence of improved venue coverage until checked in a live GitHub runner.
+
 ## Existing dependencies
 
 - **The Coffin Club:** VenuePilot authorized app ID still required for enabled automated data access.

@@ -33,3 +33,40 @@ assert(candidates.every(x=>x.event),"Both time-specific original venue events be
 assert.equal(reconcile([],candidates).accepted.length,2,"Separately timed and ticketed Starday events are retained");
 assert.equal(reconcile([],[candidates[0],{event:{...candidates[0].event,id:"different"}}]).accepted.length,1);
 console.log("PASS — Starday source date/time, Google original eid identity, HTML encoded events, same-date shows and DST holds");
+
+
+// The direct original-site collector retries only transient failures, never
+// access restrictions, invalid HTML or mismatched source configuration.
+(async()=>{
+ const actual={id:"starday-tavern",adapter:"starday-google-html",url:"https://stardaytavern.com/",baseUrl:"https://stardaytavern.com"};
+ const success=()=>({ok:true,headers:{get:()=> "text/html; charset=utf-8"},
+  text:async()=>html([row(id),row(id2,"2026-10-24T22:00:00-07:00","Late Show")])});
+ let attempts=0;
+ const recovered=await s.fetchOfficialStarday(actual,async (_url,options)=>{
+  assert.equal(options.redirect,"error");
+  assert.equal(_url,"https://stardaytavern.com/");
+  attempts++;
+  if(attempts===1)throw Object.assign(Error("The operation was aborted due to timeout"),{name:"TimeoutError"});
+  return success();
+ });
+ assert.equal(attempts,2,"A single timeout gets one retry");
+ assert.equal(recovered.length,2,"Recovered official events are parsed, not silently skipped");
+ let denied=0;
+ await assert.rejects(s.fetchOfficialStarday(actual,async()=>{denied++;return {ok:false,status:403}}),/HTTP 403/);
+ assert.equal(denied,1,"HTTP 403 is never retried");
+ let busy=0;
+ await s.fetchOfficialStarday(actual,async()=>{busy++;return busy===1?{ok:false,status:503}:success()});
+ assert.equal(busy,2,"HTTP 503 is retried at most once");
+ let expired=0;
+ await assert.rejects(s.fetchOfficialStarday(actual,async()=>{
+  expired++;throw Object.assign(Error("The operation was aborted due to timeout"),{name:"TimeoutError"});
+ }),/timeout/);
+ assert.equal(expired,2,"Even recurring timeouts stop after two attempts");
+ let malformed=0;
+ await assert.rejects(s.fetchOfficialStarday(actual,async()=>{
+  malformed++;return {ok:true,headers:{get:()=> "text/html"},text:async()=>"<html>No calendar data</html>"};
+ }),/calendar missing/);
+ assert.equal(malformed,1,"Source structure errors are not network retries");
+ await assert.rejects(s.fetchOfficialStarday({...actual,url:"https://attacker.example/"},async()=>success()),/Unapproved Starday/);
+ console.log("PASS — Starday original-site transient retries, hard 403, bounded timeouts and strict parser");
+})().catch(e=>{console.error(e);process.exitCode=1});
