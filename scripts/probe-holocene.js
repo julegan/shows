@@ -8,5 +8,5 @@ const src=require("../discovery/sources.json").sources.find(x=>x.id==="holocene"
   examples:valid.slice(0,6).map(x=>({title:x.title,venue:x.venue,startDate:x.startDate,url:x.fullUrl})),
   holds:held.slice(0,8).map(x=>({reason:x.hold,url:x.url}))}));
  if(valid.length<8)throw Error("Insufficient source-published Holocene venue/time evidence; do not activate");
- console.log("PASS — Original Holocene venue event schema verifies full local dates and timezone");
+ console.log("PASS — Official Holocene event detail validates local dates, venue and labelled starts/doors");
 })().catch(e=>{console.error("HOLOCENE SOURCE FAILED "+e.message);process.exitCode=1});
