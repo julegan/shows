@@ -10,7 +10,7 @@ async function main(){
  const original=await request("https://friendsofnoise.org/event-calendar/");
  const embeds=[...original.matchAll(/https:\/\/app\.opendate\.io\/v\/[^\s"'<>]+/g)].map(m=>m[0].replace(/&amp;/g,"&"));
  console.log("OFFBEAT EMBEDS "+JSON.stringify([...new Set(embeds)]));
- if(!embeds.length)throw Error("Official venue no longer embeds OpenDate");
+ if(!embeds.length){console.log("CALENDAR MARKUP "+original);return;}
  const roster=await request(embeds[0]);console.log("ROSTER SAMPLE "+roster.slice(-28000));
  const urls=[...new Set([...roster.matchAll(/https:\/\/app\.opendate\.io\/e\/[a-z0-9-]+/gi)].map(m=>m[0]))];
  console.log("EVENT URLS "+JSON.stringify(urls));
