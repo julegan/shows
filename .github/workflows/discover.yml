@@ -37,6 +37,8 @@ jobs:
         run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
       - name: Discover source-listed upcoming events
         run: node scripts/discover-events.js
+      - name: Collect original underground-show leads (review-only)
+        run: node scripts/doomtown-leads.js
       - name: Propose official art for existing and newly discovered music listings
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
@@ -47,6 +49,8 @@ jobs:
           sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "Full discovery report is saved as the review artifact and committed to any proposal PR." >> "$GITHUB_STEP_SUMMARY"
           cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,6p' discovery/doomtown-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "Full Doomtown original-promoter lead report is in the uploaded artifact. WordPress post dates are not event dates." >> "$GITHUB_STEP_SUMMARY"
           node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
       - name: Retain both review reports even on no-change days
         uses: actions/upload-artifact@v4
@@ -55,6 +59,7 @@ jobs:
           path: |
             discovery/latest-review.md
             discovery/artwork-backfill-review.md
+            discovery/doomtown-leads-review.md
           retention-days: 30
           if-no-files-found: error
       - name: Validate combined source, artwork and calendar data
@@ -73,6 +78,8 @@ jobs:
           node tests/artwork.js
           node tests/calendar-horizon.js
           node tests/source-priority.js
+          node --check scripts/doomtown-leads.js
+          node tests/doomtown-leads.js
           node tests/validate.js
       - name: Propose one combined editorial review PR
         if: steps.pending.outputs.skip != 'true'
@@ -87,7 +94,7 @@ jobs:
           git config user.name "SHOWS refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add -- events.js discovery/latest-review.md discovery/artwork-backfill-review.md
+          git add -- events.js discovery/latest-review.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md
           git commit -m "Propose source-confirmed Portland shows and original flyers"
           git push --set-upstream origin "$branch"
           {
@@ -104,6 +111,7 @@ jobs:
             echo "## Full evidence"
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
             echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
+            echo "- [Doomtown primary-promoter leads (not confirmed event dates)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/doomtown-leads-review.md)"
             echo "- [Action run and month-by-month summary](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
           } > /tmp/shows-refresh-review.md
           # Keep the GitHub PR description small even when hundreds of events are found.
