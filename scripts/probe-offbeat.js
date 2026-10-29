@@ -8,15 +8,10 @@ async function request(url){
 }
 async function main(){
  const original=await request("https://friendsofnoise.org/event-calendar/");
- const embeds=[...original.matchAll(/https:\/\/app\.opendate\.io\/v\/[^\s"'<>]+/g)].map(m=>m[0].replace(/&amp;/g,"&"));
- console.log("OFFBEAT EMBEDS "+JSON.stringify([...new Set(embeds)]));
- if(!embeds.length){for(const u of ["https://calendar.friendsofnoise.org/embed.js","https://calendar.friendsofnoise.org/"])console.log("OFFICIAL CALENDAR "+u+" "+await request(u));return;}
- const roster=await request(embeds[0]);console.log("ROSTER SAMPLE "+roster.slice(-28000));
- const urls=[...new Set([...roster.matchAll(/https:\/\/app\.opendate\.io\/e\/[a-z0-9-]+/gi)].map(m=>m[0]))];
- console.log("EVENT URLS "+JSON.stringify(urls));
- for(const url of urls.slice(0,3)){
- const detail=await request(url);
- console.log("DETAIL "+JSON.stringify({url,schemas:[...detail.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]),text:detail.replace(/<[^>]*>/g," ").replace(/\s+/g," ").slice(-14000)}));
- }
+ if(!original.includes('https://calendar.friendsofnoise.org/embed.js'))throw Error("Official embed link changed");
+ const roster=await request("https://calendar.friendsofnoise.org/");
+ const urls=[...new Set([...roster.matchAll(/https:\/\/calendar\.friendsofnoise\.org\/shows\/[a-z0-9-]+/gi)].map(m=>m[0]))];
+ console.log("ROSTER URLS "+JSON.stringify(urls));
+ for(const url of urls.slice(0,2))console.log("SHOW PAGE "+JSON.stringify({url,html:await request(url)}));
 }
 main().catch(e=>{console.error(e.message);process.exitCode=1;});
