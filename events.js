@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-25",
-  "coverageThrough": "2027-05-17",
-  "totalOccurrences": 651,
-  "addedOccurrences": 5,
-  "batchId": "auto-discovery-2026-10-25-16",
+  "sourceCheckedAt": "2026-10-29",
+  "coverageThrough": "2027-06-11",
+  "totalOccurrences": 697,
+  "addedOccurrences": 46,
+  "batchId": "auto-discovery-2026-10-29-20",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -56,11 +56,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-25-15",
       "addedOccurrences": 26
+    },
+    {
+      "batchId": "auto-discovery-2026-10-25-16",
+      "addedOccurrences": 5
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 242
+  "musicOccurrences": 259
 };
 window.SHOWS_EVENTS = [
   {
@@ -9766,6 +9770,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-03-21d532ab7036",
+    "title": "Tagua Tagua (Brazil) + Orlas (NYC) + Brother vs Robot",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/tagua-tagua-brazil-orlas-nyc-brother-vs-robot-november-03-2026-754723",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/tagua-tagua-brazil-orlas-nyc-brother-vs-robot-november-03-2026-754723",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/754/723/compressed/Screenshot_2026-09-22_at_2.00.30%E2%80%AFPM.jpg?1790111294",
+      "sourceUrl": "https://app.opendate.io/e/tagua-tagua-brazil-orlas-nyc-brother-vs-robot-november-03-2026-754723",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-03-c946609f25d0",
     "title": "Worst Party Ever / Equipment",
     "subtitle": "Source-discovered venue event · details need review",
@@ -12016,6 +12071,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-11-07-a93538df29e1",
+    "title": "DJ Action Slacks Flame Vintage Vinyl Dance Party Uninhitied 1956",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-07T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-11-07-6e50c45570cc",
     "title": "HABAK / MALAKILI / VERDANT VORCE / LAUGHTER",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13243,6 +13342,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-08-53efceb212d7",
+    "title": "Pedro the Lion (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Earlimart",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/81027746/pedro-the-lion-night-2-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/81027746/pedro-the-lion-night-2-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2e792d7d169968cf873c3fca4369f14e.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-08-2c49c3bdf06c",
     "title": "Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13436,6 +13586,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-11-08-249f1f625770",
+    "title": "The Keening (Album Release Show) w/ Last (SLC), Jenny Haniver",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468585/the-keening-album-release-show-w-last-slc-jenny-haniver",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468585/the-keening-album-release-show-w-last-slc-jenny-haniver",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/c39xfb9yimap0xkx3f7j.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468585/the-keening-album-release-show-w-last-slc-jenny-haniver",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },
@@ -13721,6 +13922,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-09-71fb68967ced",
+    "title": "Emily Scott Robinson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: LVDY",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/56662102/emily-scott-robinson-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/56662102/emily-scott-robinson-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7fa180b58c2c22355b4d00686d112dd9.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-11-09-c53908b06207",
     "title": "Frank Hurricane + Sawtooth + Tara Zorthian (LA) + The Modern Folk",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13818,6 +14070,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-09-063b4e57ecc1",
+    "title": "James Ivy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Harry Teardrop",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/73058347/james-ivy-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/73058347/james-ivy-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fbf8c9cd73611c6ac042fa640fbd491f.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -14066,6 +14369,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-10-971b4d734d87",
+    "title": "Craig Finn & The Band of Forgiveness",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/81091663/craig-finn-the-band-of-forgiveness-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/81091663/craig-finn-the-band-of-forgiveness-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fbf94eac4a54ddbc1ede53ac9f088805.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "dantes-jon-spencer-2026-11-10",
     "title": "Jon Spencer",
     "subtitle": "Garage punk / rock · With Genre Is Death",
@@ -14210,6 +14564,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-25",
     "discovery": {
       "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-10-55ab1a8b284e",
+    "title": "SOLD OUT: Armand Hammer",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Sha Ray & DJ Haram",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/70357231/sold-outarmand-hammer-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/70357231/sold-outarmand-hammer-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8a7af4c06c4b85322d1c9602f88036e3.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -14649,6 +15054,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-11-4156e79e836a",
+    "title": "Other Lives",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Kelcey Ayer, The Casual Scene",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/31311165/other-lives-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/31311165/other-lives-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ab2f1ff248c8074d00b7a79e125c2616.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-11-c472aeab2d9f",
     "title": "Tank and the Bangas",
     "subtitle": "Source-discovered venue event · details need review",
@@ -14696,6 +15152,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-11-faf18272a9ca",
+    "title": "Vansire",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Ann Annie",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/85298255/vansire-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/85298255/vansire-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/deec45d7061175a07a08977113182af7.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
     }
   },
@@ -15094,6 +15601,101 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-12-0b7b1ac31f2a",
+    "title": "Goodnight, Texas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Wheelwright",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/51369445/goodnighttexas-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/51369445/goodnighttexas-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/55622a9b19b2a175efa008058808d5f6.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-12-2bf976374d0c",
+    "title": "Los Duendos Malos",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MGMxZnBrZjg5M3R1azdzYnBmNmVjbmIyajkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MGMxZnBrZjg5M3R1azdzYnBmNmVjbmIyajkgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -15512,6 +16114,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-13-8407dc7a7d3e",
+    "title": "DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Møtrik",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/91797471/driveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/91797471/driveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c3ffd6d080a5455a33b57229c54a9ffd.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -15982,6 +16635,57 @@ window.SHOWS_EVENTS = [
     "seriesId": "outlet-riso-basics-2026"
   },
   {
+    "id": "auto-revolution-hall-2026-11-14-607ed804f2ae",
+    "title": "Heathens Homecoming West 2026 - Patterson Hood in conversation with Willy Vlautin",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T14:30:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/76838757/heathens-homecoming-west-2026-patterson-hood-in-conversation-with-willy-vlautin-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/76838757/heathens-homecoming-west-2026-patterson-hood-in-conversation-with-willy-vlautin-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/02dd101d7215b16bc6cab0baf775a66f.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-11-14-d28edd181687",
     "title": "Earlybirds Club",
     "subtitle": "Source-discovered venue event · details need review",
@@ -16384,6 +17088,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-11-14-13433d731f6e",
+    "title": "SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 3)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: The Delines",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/54137237/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-3-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/54137237/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-3-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c3ffd6d080a5455a33b57229c54a9ffd.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "az-th-sutekh-hexen-sin-pavilion-infinexhuma-sam-an-messiah-claimant-2026-11-14",
     "title": "Sutekh Hexen + Sin Pavilion + Infinexhuma + Sam An + Messiah Claimant",
     "subtitle": "black metal, experimental, noise · live bill",
@@ -16777,6 +17532,101 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-11-15-532301cba034",
+    "title": "Sleep Debts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MXByMzAxZ3AwbzY5dHA2Y2J1ZW50MHV0cmYgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MXByMzAxZ3AwbzY5dHA2Y2J1ZW50MHV0cmYgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-15-32cf09371412",
+    "title": "SOLD OUT: Ron Funches",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/46185869/sold-outron-funches-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/46185869/sold-outron-funches-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/0833bee748230824c44044d1befe3cac.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -19254,6 +20104,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-11-21-9740f13162fe",
+    "title": "So Pitted-Sea Moss-Snorkler(Tennessee) King Compost",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-21T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "psu-farmers-2026-11-21",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -20277,6 +21171,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-11-24-4cb61c065a31",
+    "title": "\"The Comedy Wonderland\"-A Comedy Stand-up Showcase",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468547/the-comedy-wonderland-a-comedy-stand-up-showcase",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468547/the-comedy-wonderland-a-comedy-stand-up-showcase",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-boston-manor-2026-11-24",
     "title": "Boston Manor",
     "subtitle": "With Ben Quad, Super Sometimes",
@@ -21076,6 +22014,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-11-28-f14ec130d702",
+    "title": "Muscle Cats-One Drink and Other lies Creature Party",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-28T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "kenton-club",
       "method": "primary-source-collection"
@@ -22663,6 +23645,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-12-04-93e6c27c4106",
+    "title": "Passengers-Object Unto Earth-Milton Ire Void-Pscyclops",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-04T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-04-12bbc12abbc5",
     "title": "Sam Henson Holiday Happy Hour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -23075,6 +24101,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-12-05-ee0bf6895a89",
+    "title": "DJ Action Slacks Flame Vintage Vinyl Dance Party",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-05T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -25123,6 +26193,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-12-11-37bb69bce2a5",
+    "title": "Exploding Whales-Trouble Cuts Desert Shame",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-11T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "crafty-wonderland-2026-12-11",
     "title": "Crafty Wonderland · First Pick Party",
     "subtitle": "Handmade goods and independent makers",
@@ -25305,6 +26419,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-twilight-2026-12-11-a8be39e679a1",
+    "title": "Clyde McGee & The Milltailers, Jesco Payne & the Pain Killers, Brooklyn Del & The Revelators",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468545/clyde-mcgee-the-milltailers-jesco-payne-the-pain-killers-brooklyn-del-the-revelators",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468545/clyde-mcgee-the-milltailers-jesco-payne-the-pain-killers-brooklyn-del-the-revelators",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/nlo3ic5p910gm6mtk3ri.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468545/clyde-mcgee-the-milltailers-jesco-payne-the-pain-killers-brooklyn-del-the-revelators",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -27245,6 +28410,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-12-25-7e2033ecae37",
+    "title": "Closed Merry Christmas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-25T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-25-7de9d8a1a95c",
     "title": "CLOSED",
     "subtitle": "Source-discovered venue event · details need review",
@@ -27379,6 +28588,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-12-26-0b5dc2f52344",
+    "title": "NO Show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-26T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -28137,6 +29390,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2027-01-03-fb229dc23d12",
+    "title": "Conjurer w/ Armed for Apocalypse & Guest",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-03T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468546/conjurer-w-armed-for-apocalypse-guest",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468546/conjurer-w-armed-for-apocalypse-guest",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/ohvgruc9qxzwbdsau9bg.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468546/conjurer-w-armed-for-apocalypse-guest",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-01-03-7a64550f36b5",
     "title": "The Hugs // Brites // Tradie – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28519,6 +29823,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-01-17-0ecdb5f159ed",
+    "title": "Midwinter Indulgence",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-17T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/midwinter-indulgence/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/midwinter-indulgence/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/11/99/54_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/midwinter-indulgence/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-19-41d35dee75e0",
+    "title": "DOMINIQUE & THE DIAMONDS with Satán Es Real",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-19T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/dominique-the-diamonds-with-satan-es-real/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/dominique-the-diamonds-with-satan-es-real/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/11/85/14_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/dominique-the-diamonds-with-satan-es-real/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -29228,6 +30634,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-02-12-75064dd50662",
+    "title": "2000’s Rave",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-12T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/2000s-rave/hawthorne-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/2000s-rave/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/10/2000s-rave-1.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/2000s-rave/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-02-16-9f9963c6c9cb",
     "title": "La Roux",
     "subtitle": "Source-discovered venue event · details need review",
@@ -29481,6 +30937,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2027-02-20-cfd498cd4dc3",
+    "title": "REVEREND HORTON HEAT with Special Guest",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/reverend-horton-heat-with-special-guest/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/reverend-horton-heat-with-special-guest/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/07/73/94_Original.jpg?v=5",
+      "sourceUrl": "https://www.danteslive.com/tm-event/reverend-horton-heat-with-special-guest/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-02-22-8d9575898f06",
     "title": "Sylvan Esso",
     "subtitle": "Source-discovered venue event · details need review",
@@ -29579,6 +31086,99 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-02-25-612c04461719",
+    "title": "Beast In Black: North American Tour 2027",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/beast-in-black-north-american-tour-2027/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/beast-in-black-north-american-tour-2027/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/beast-in-black-north-american-tour-2027.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/beast-in-black-north-american-tour-2027/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-02-25-331fbed6506b",
+    "title": "CODEFENDANTS + Jakob Nowell and THE CASTLE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/codefendants-jakob-nowell-and-the-castle/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/codefendants-jakob-nowell-and-the-castle/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -30188,6 +31788,106 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-roseland-2027-03-08-ab9a28018a22",
+    "title": "Frank Turner & The Sleeping Souls: Last Evenings World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-08T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/frank-turner-the-sleeping-souls-last-evenings-world-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-09-c18980162e7d",
+    "title": "Frank Turner & The Sleeping Souls: Last Evenings World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-09T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour-2/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour-2/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/frank-turner-the-sleeping-souls-last-evenings-world-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/frank-turner-the-sleeping-souls-last-evenings-world-tour-2/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2027-03-10-86e9079ff7e5",
     "title": "The Lemonheads: The Love Chant Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30234,6 +31934,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-10-5db9180a570c",
+    "title": "2hollis: The Pirouette Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/2hollis-the-pirouette-tour/roseland-theater/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/2hollis-the-pirouette-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/2hollis-the-pirouette-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/2hollis-the-pirouette-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "roseland",
       "method": "primary-source-collection"
     }
   },
@@ -30285,6 +32035,106 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-11-ab52dde311a9",
+    "title": "2hollis: The Pirouette Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/2hollis-the-pirouette-tour-2/roseland-theater/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/2hollis-the-pirouette-tour-2/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/10/2hollis-the-pirouette-tour.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/2hollis-the-pirouette-tour-2/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-03-12-60aa893a7e8a",
+    "title": "Haken – In A Fever Dream Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/haken-in-a-fever-dream-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/haken-in-a-fever-dream-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/10/haken-in-a-fever-dream-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/haken-in-a-fever-dream-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -30795,6 +32645,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-star-theater-2027-03-26-850863c243ee",
+    "title": "ACTORS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/actors/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/actors/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/11/85/24_Original.jpg?v=2",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/actors/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-30-5d900e57fb08",
     "title": "CAIOLA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31251,6 +33152,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-wonder-ballroom-2027-04-10-50d287732311",
+    "title": "Gus Dapperton",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-10T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/gus-dapperton-4-dear-life-tour/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/gus-dapperton-4-dear-life-tour/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/gus-dapperton-4-dear-life-tour.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/gus-dapperton-4-dear-life-tour/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-04-11-bfb70a4357d7",
     "title": "Jack & Jack – All Ages",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31302,6 +33253,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-wonder-ballroom-2027-04-12-f8b67dd4bc20",
+    "title": "Destroy Boys",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-12T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/destroy-boys-2/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/destroy-boys-2/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/destroy-boys.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/destroy-boys-2/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-04-16-7265d745f287",
     "title": "Lambrini Girls",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31347,6 +33348,57 @@ window.SHOWS_EVENTS = [
       "usageApproved": null
     },
     "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-04-18-dd0b7412ed87",
+    "title": "brakence",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-18T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279466-brakence/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279466-brakence/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/brakence26-79oors.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279466-brakence/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
@@ -31754,6 +33806,209 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-06-04-f7e547e80c58",
+    "title": "An evening with They Might Be Giants",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-04T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279496-an-evening-with-they-might-be-giants/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279496-an-evening-with-they-might-be-giants/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/TMBG27-PYWpkH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279496-an-evening-with-they-might-be-giants/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-06-05-0ea4edd8bc08",
+    "title": "An evening with They Might Be Giants",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-05T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279493-an-evening-with-they-might-be-giants/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279493-an-evening-with-they-might-be-giants/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/TMBG27-PYWpkH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279493-an-evening-with-they-might-be-giants/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-06-06-64a84a12faba",
+    "title": "An evening with They Might Be Giants",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-06T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279495-an-evening-with-they-might-be-giants/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279495-an-evening-with-they-might-be-giants/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/TMBG27-PYWpkH.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279495-an-evening-with-they-might-be-giants/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-06-11-dde6b3ca9935",
+    "title": "NSQK",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-11T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/nsqk-presents-mosca/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/nsqk-presents-mosca/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/10/nsqk-presents-mosca.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/nsqk-presents-mosca/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
       "method": "primary-source-collection"
     }
   }
