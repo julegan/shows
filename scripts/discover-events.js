@@ -174,6 +174,7 @@ async function fetchItems(source){
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
+ if(source.adapter==="starday-google-html")return starday.fetchOfficialStarday(source);
  if(source.adapter==="turnturnturn-opendate"){
   if(source.url!==turn.CALENDAR_URL||source.baseUrl!=="https://turnturnturnpdx.com")throw Error("Unapproved venue calendar host");
   const check=async url=>{

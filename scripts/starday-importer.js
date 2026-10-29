@@ -64,4 +64,44 @@ function parseStarday(html,source){
  }
  return out;
 }
-module.exports={htmlDecode,sourceUrl,startISO,records,parseItem,parseStarday};
+
+/*
+ * Starday's original venue calendar sometimes exceeds the default 18-second
+ * response timeout. Retry ONE transient transport error or 502/503/504 while
+ * keeping the same first-party HTTPS URL and no redirects. Never retry 403.
+ * Validation failures are held, never treated as an empty event calendar.
+ */
+const STARDAY_URL="https://stardaytavern.com/";
+function transientStardayFailure(e){
+ return e?.name==="TimeoutError"||e?.name==="AbortError"||
+   /^(?:fetch failed|network timeout)$/i.test(String(e?.message||""));
+}
+async function fetchOfficialStarday(source,request=fetch){
+ if(source?.id!=="starday-tavern"||source.adapter!=="starday-google-html"||
+    source.url!==STARDAY_URL||source.baseUrl!=="https://stardaytavern.com")
+  throw Error("Unapproved Starday original source");
+ for(let attempt=0;attempt<2;attempt++){
+  try{
+   const response=await request(STARDAY_URL,{
+    headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},
+    redirect:"error",signal:AbortSignal.timeout(25000)
+   });
+   if(!response.ok){
+    // Service-side temporary failures may clear; forbidden/blocked access won't.
+    if(attempt===0&&[502,503,504].includes(response.status))continue;
+    throw Error("HTTP "+response.status);
+   }
+   if(!response.headers.get("content-type")?.includes("text/html"))throw Error("Starday official calendar was not HTML");
+   const html=await response.text();
+   // Content and structure checks remain the parser's responsibility.
+   // A malformed feed will NOT trigger the network retry.
+   return parseStarday(html,source);
+  }catch(e){
+   if(attempt===0&&transientStardayFailure(e))continue;
+   throw e;
+  }
+ }
+ throw Error("Starday source retry exhausted");
+}
+
+module.exports={htmlDecode,sourceUrl,startISO,records,parseItem,parseStarday,transientStardayFailure,fetchOfficialStarday};
