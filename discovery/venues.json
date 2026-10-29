@@ -346,6 +346,33 @@
         "Showbar"
       ],
       "notes": "Separate stage with official room id 21322; 10 dated official cards live verified using original Show Bar Etix event links. Shared Revolution Hall source, editorial review-only."
+    },
+    {
+      "id": "the-off-beat",
+      "name": "The Off Beat",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://friendsofnoise.org/event-calendar/",
+      "aliases": [],
+      "notes": "Friends of Noise official venue and calendar verified 2026-10-29. All-ages music space; inspect embedded calendar and validate room identity before enabling an adapter. Historical outlook benefit listings are leads, not future dates."
+    },
+    {
+      "id": "aladdin-theater",
+      "name": "Aladdin Theater",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.aladdin-theater.com/",
+      "aliases": [],
+      "notes": "Official calendar and original Etix links verified 2026-10-29. Three fields must be checked independently: year/date, show versus doors, and actual room (calendar includes offsite Crystal and other venues). Two manual bills proposed; no automatic intake enabled."
+    },
+    {
+      "id": "mission-theater",
+      "name": "Mission Theater",
+      "tier": "expansion",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.mcmenamins.com/mission-theater",
+      "aliases": [],
+      "notes": "Official Gully Boys dated page verified 2026-10-29. One manual bill proposed. McMenamins calendar mixes music with films/talks; preserve source formats and separate West End promotional headings from artist billing. No automatic intake enabled."
     }
   ],
   "supplementaryDiscovery": [
