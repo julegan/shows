@@ -351,10 +351,13 @@
       "id": "the-off-beat",
       "name": "The Off Beat",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
-      "calendarUrl": "https://friendsofnoise.org/event-calendar/",
-      "aliases": [],
-      "notes": "Friends of Noise official venue and calendar verified 2026-10-29. All-ages music space; inspect embedded calendar and validate room identity before enabling an adapter. Historical outlook benefit listings are leads, not future dates."
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://calendar.friendsofnoise.org/",
+      "aliases": [
+        "Friends of Noise / The Off Beat",
+        "Friends Of Noise / The Off Beat"
+      ],
+      "notes": "Venue-owned calendar linked from official event-calendar embed. Live runner 40973251804 verified nine source-specific dated event details and original images; Larry and His Flask March 26 time conflict held. Daily review-only adapter; no auto-publication."
     },
     {
       "id": "aladdin-theater",

@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: '22'
       - name: Inspect venue-linked public calendar without publishing
-        run: node scripts/probe-offbeat.js
+        run: |
+          node tests/offbeat-importer.js
+          node scripts/probe-offbeat.js

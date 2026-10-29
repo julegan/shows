@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-29",
   "coverageThrough": "2027-06-11",
-  "totalOccurrences": 708,
-  "addedOccurrences": 3,
-  "batchId": "2026-10-29-outlook-coverage",
+  "totalOccurrences": 717,
+  "addedOccurrences": 9,
+  "batchId": "2026-10-29-offbeat-connection",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -68,11 +68,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-29-21",
       "addedOccurrences": 8
+    },
+    {
+      "batchId": "2026-10-29-outlook-coverage",
+      "addedOccurrences": 3
     }
   ],
-  "newLiveBills": 3,
+  "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 270
+  "musicOccurrences": 279
 };
 window.SHOWS_EVENTS = [
   {
@@ -34585,5 +34589,464 @@ window.SHOWS_EVENTS = [
     },
     "addedIn": "2026-10-29-outlook-coverage",
     "sourceCategories": []
+  },
+  {
+    "id": "auto-the-off-beat-2026-10-29-edd211afceb2",
+    "title": "10/29 OsoSuckaK, TzoTopStar, Lul Dada, BagBoyMoe, AZ Gutter",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 29, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $31.00 Get Tickets 10/29 OsoSuckaK TzoTopStar Lul Dada BagBoyMoe AZ Gutter The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show All Ages • All Access • No Booze • No J",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/050/compressed/10_29.jpg?1791490773",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-10-30-b17eaf4348ca",
+    "title": "10/30 Kill Michael, Beautiful Freaks, Starly Kind, Hound",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 30, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 10/30 Kill Michael Beautiful Freaks Starly Kind Hound The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access • ",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/012/compressed/014F8134-B414-484D-95E3-2EFEDBC6D117.jpg?1791488158",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-10-31-5184b526eeec",
+    "title": "10/31 Masquerade of Madness",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 31, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $16.08 Get Tickets 10/31 Join us if you dare for the 3rd annual Masquerade of Madness Cover show at the Off Beat on Oct 31st. Featuring Sparks by Slightest Ure - Sparks Pa",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/612/compressed/IMG_0980.jpg?1792362687",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-05-6bd8874520d5",
+    "title": "11/5 Phalseprofit, Refugio, Zephyr, Zae Shiki",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 5, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $17.32 Get Tickets 11/5 Phaseprofit Refugio Zephyr Zae Shiki The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze • N",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/754/716/compressed/IMG_3488.jpg?1790110933",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-06-0476b84b8559",
+    "title": "11/6 Doombia Album Release",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 6, 2026 · 7:30 pm - 11:30 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/6 Doombia DJ Lissex The Melts De La Flor The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $10 ADV /$12 DOS All Ages • All Access • No Booze •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/761/725/compressed/Doombias_New_Logo2.jpg?1792104947",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-13-8446a006cf28",
+    "title": "11/13 High Glow, Die Right, Midnight Morning, Sertraline",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 13, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/13 High Glow Die Right Midnight Morning Sertraline The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/616/compressed/OFFBEAT_NOV13_instagram.jpg?1790969417",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-20-3929789d8876",
+    "title": "11/20 Heaven Skate, Rheumatoid Trapezoid, Steevee Von Schneedle, Dopamean",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 20, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/20 Heaven Skate Rheumatoid Trapezoid Steevee Von Schneedle Dopamean The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ag",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/775/412/compressed/oiboiboibcoibec.jpg?1791403620",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-12-03-7b91d87edaa0",
+    "title": "12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 3, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $22.99 Get Tickets 12/3 Mel Bryant & The Mercy Makers Everybody's Worried About Owen Trans Panic The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $20 ADV /$25 DOS ",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/756/887/compressed/_Q2A1329.jpg?1790294922",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-12-21-064fe0f81f04",
+    "title": "12/21 Rotting Carcass, Miss March, Crazy Ben",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 21, 2026 · 7:00 pm - 10:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $18.35 Get Tickets 12/21 Rotting Carcass Miss March Crazy Ben The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/750/233/compressed/1000032481.jpg?1793048319",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
   }
 ];

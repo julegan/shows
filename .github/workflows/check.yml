@@ -30,6 +30,7 @@ jobs:
           node tests/discovery.js
           node tests/kenton-importer.js
           node tests/turnturnturn-opendate.js
+          node tests/offbeat-importer.js
           node tests/calendar-horizon.js
 
       - name: Validate original venue research priorities

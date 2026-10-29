@@ -1,6 +1,6 @@
 "use strict";
 // The calendar is linked by Friends of Noise's official event-calendar page.
-const {wallToPacific,time24}=require('./priority-importers');
+const {wallToPacific}=require('./priority-importers');
 const {eventSchema}=require('./turnturnturn-opendate');
 function localTime(value){
  const parts=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23',timeZoneName:'longOffset'}).formatToParts(new Date(value)).map(x=>[x.type,x.value]));

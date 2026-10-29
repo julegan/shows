@@ -1,0 +1,41 @@
+"use strict";
+const assert=require('node:assert/strict');
+const a=require('../scripts/offbeat-importer');
+const {extract,reconcile}=require('../scripts/discover-events');
+const src=require('../discovery/sources.json').sources.find(x=>x.id==='the-off-beat');
+const slug='10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012';
+const url=a.CALENDAR_URL+'shows/'+slug;
+const card='<article class="card"><h2 class="title"><a href="'+url+'">Kill Michael</a></h2><time datetime="2026-10-30T19:00:00-07:00">October 30</time><p>Venue: The Off Beat Organized By: The Off Beat</p></article>';
+const roster='<title>Upcoming Events — Friends of Noise</title>'+card;
+const item=a.parseRoster(roster)[0];assert.equal(item.fullUrl,url);
+const schema={'@type':'MusicEvent',name:'Kill Michael',startDate:'2026-10-31T02:00:00.000Z',eventStatus:'https://schema.org/EventScheduled',location:{name:'Friends of Noise / The Off Beat',address:'Portland, OR'},image:['https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/012/compressed/poster.jpg']};
+const page=(changes={},body='The Off Beat 8440 N Interstate Ave 6:30 Doors 7:00 Show')=>'<h1>Kill Michael</h1><p>'+body+'</p><a href="https://app.opendate.io/e/'+slug+'?utm_source=friends_of_noise">Tickets</a><script type="application/ld+json">'+JSON.stringify({...schema,...changes})+'</script>';
+const parsed=a.parseDetail(page(),item);assert(!parsed.hold);assert(parsed.sourceVerifiedMusic);assert(parsed.artwork);assert.equal(parsed.artwork.usageApproved,null);
+assert.equal(a.eventUrl(url+'/'),url);assert.equal(a.eventUrl(url+'?token=oops'),null);assert.equal(a.eventUrl(url.replace('calendar.friendsofnoise.org','evil.invalid')),null);
+assert(a.parseRoster(roster.replace('Venue: The Off Beat','Venue: Another Room'))[0].hold);
+assert(a.parseRoster(roster.replace('-07:00','-08:00'))[0].hold,'Wrong DST offset held');
+assert(a.parseRoster(roster+card)[1].hold,'Duplicate provider ID held');
+assert(a.validStart('2026-11-06T19:30:00-08:00'));assert(a.validStart('2027-03-26T18:30:00-07:00'));
+assert(!a.validStart('2026-03-08T02:30:00-08:00'),'Nonexistent Pacific time rejected');
+assert(a.parseDetail(page({startDate:'2026-10-31T03:00:00.000Z'}),item).hold);
+assert(a.parseDetail(page({name:'Other Band'}),item).hold);
+assert(a.parseDetail(page({location:{name:'Other Room',address:'Portland, OR'}}),item).hold);
+assert(a.parseDetail(page({},'8440 N Interstate Ave 6:30 Doors 8:00 Show'),item).hold);
+assert(a.parseDetail(page().replace(slug+'?utm','other-event-2026-778013?utm'),item).hold);
+assert(!a.parseDetail(page({image:['https://evil.invalid/poster.jpg']}),item).artwork);
+assert(!a.parseDetail(page({image:[schema.image[0].replace('778/012','778/013')]}),item).artwork,'Another event image rejected');
+for(const status of ['EventCancelled','EventPostponed','EventRescheduled'])assert(a.parseDetail(page({eventStatus:'https://schema.org/'+status}),item).hold);
+assert(a.parseDetail(page({eventStatus:null}),item).hold);
+assert(!a.parseDetail(page({'@type':'Event'}),item).sourceVerifiedMusic,'Venue does not establish music format');
+const transformed=extract(parsed,src,new Date('2026-10-29T12:00:00-07:00'));assert(transformed.event);assert.equal(transformed.event.category,'Music');assert.deepEqual(transformed.event.musicStyles,[],'No invented genres');
+assert.equal(transformed.event.endsAt,null);assert.equal(reconcile([transformed.event],[transformed]).accepted.length,0);
+(async()=>{
+ const original=global.fetch;const headers={get:k=>k==='content-type'?'text/html':null};
+ try{
+ global.fetch=async u=>({ok:true,status:200,headers,text:async()=>String(u)===a.CALENDAR_URL?roster:page()});
+ assert.equal((await a.fetchEvents(src)).filter(x=>!x.hold).length,1);
+ global.fetch=async()=>({ok:false,status:302,headers:{get:()=> 'https://evil.invalid/steal'}});
+ await assert.rejects(a.fetchEvents(src),/redirect changed/);
+ }finally{global.fetch=original;}
+ console.log('PASS — Off Beat original venue, matching roster/detail/show clock, DST, cancellation holds, original artwork, deduplication and redirect boundaries');
+})().catch(e=>{console.error(e);process.exitCode=1;});
