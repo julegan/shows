@@ -1,12 +1,12 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-10-29T21:16:22.929Z; Portland date: 2026-10-29. This workflow does not publish images.
+Generated 2026-10-29T22:36:48.851Z; Portland date: 2026-10-29. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **198**
-- Already have image references: **119**
+- Upcoming music listings: **206**
+- Already have image references: **127**
 - Missing artwork: **79**
 - Missing listings with supported individual source pages: **26**
 - Missing listings needing another source or individual permalink: **53**
@@ -46,31 +46,31 @@ No new verified images proposed in this batch. The action completed successfully
 ## Unsupported or unavailable source pages
 
 - Roman Candle + Postdrome + Asthelifeleavesyoureyes + XcaliberX (High Limit Room) — TITLE_NOT_VERIFIED — https://aftontickets.com/event/buyticket/57jml3v89v
-- The Black Angels with GHOSTWOMAN (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/276344-the-black-angels
 - PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — FETCH_ERROR — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
+- The Black Angels with GHOSTWOMAN (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/276344-the-black-angels
 - Silverstein with Story of the Year — Camp Screamo Tour (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/278093-silverstein
-- Taste Nate • Oscar Goldman • Broken Toyz • Yourhomie Kyle • Diction Uno • Kable Roc • Grim Jim (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/taste-nate-oscar-goldman-broken-toyz-yourhomie-kyle-diction-uno-kable-roc-grim-jim
-- Ariana Giokaris • Not Lenny • underexposed • Naomi March (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/underexposed-ariana-giokaris-naomi-march-no-lenny
 - The Seditionists, Creatura, The Kieths (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/the-seditionists-creatura-the-kieths
+- Ariana Giokaris • Not Lenny • underexposed • Naomi March (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/underexposed-ariana-giokaris-naomi-march-no-lenny
+- Taste Nate • Oscar Goldman • Broken Toyz • Yourhomie Kyle • Diction Uno • Kable Roc • Grim Jim (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/taste-nate-oscar-goldman-broken-toyz-yourhomie-kyle-diction-uno-kable-roc-grim-jim
 - Mary Chicken Soup & Rice • The Vardaman Ensemble • Iron Sheep (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/mary-chicken-soup-rice-the-vardaman-ensemble-iron-sheep
-- TULOC • Total System Failure • Takashita • Our Ichor (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tuloc-total-system-failure-takashita-our-ichor
 - Love Hiss • Crime Time • High Five Danger (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/love-hiss-crime-time-high-five-danger
-- Sure • Sean Martin West • Terrible Pop (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop
+- TULOC • Total System Failure • Takashita • Our Ichor (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tuloc-total-system-failure-takashita-our-ichor
 - Under Utopia, Silver Shores, American Crows (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows
+- Sure • Sean Martin West • Terrible Pop (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop
 - Seb El Zin • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/seb-el-zin-tba-tba
+- molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
 - Amy Bleu • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/amy-bleu-tba-tba
 - Jen Howard • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/jen-howard-tba-tba
-- molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
-- Void Lord • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/void-lord-tba-tba
 - Sang Bleu with support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sang-bleu-tba-tba
+- Void Lord • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/void-lord-tba-tba
 - Softgaze • Greyhound Go • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/softgaze-tba-tba
 - Senior Week • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/senior-week-tba-tba
-- Henry Ivie-Gardner • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba
 - Tito Padrino • 61TO16 • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tito-padrino-61to16-tba
 - You, The Audience • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/you-the-audience-tba-tba
+- Henry Ivie-Gardner • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba
 - Etta Dean • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/etta-dean-tba-tba
-- Jake Soffer • Jarrett Tetsuo Domen • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba
 - BLISTER • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/blister-tba-tba
+- Jake Soffer • Jarrett Tetsuo Domen • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba
 
 ## Next steps
 
