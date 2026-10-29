@@ -304,6 +304,20 @@
       ],
       "reason": "Pause automatic daily intake to prevent a secondary venue from dominating review queues. Keep existing approved SHOWS listings and this tested adapter for future opt-in/manual use; do not auto-fetch until the owner explicitly re-enables it.",
       "venueRegistryId": "no-fun"
+    },
+    {
+      "id": "the-off-beat",
+      "name": "The Off Beat / Friends of Noise",
+      "venue": "The Off Beat",
+      "venueRegistryId": "the-off-beat",
+      "status": "adapter-needed",
+      "priority": "underground-music",
+      "url": "https://calendar.friendsofnoise.org/",
+      "baseUrl": "https://calendar.friendsofnoise.org",
+      "address": "8440 N Interstate Ave, Portland, OR 97217",
+      "neighborhood": "Kenton",
+      "adapter": "offbeat-official-html",
+      "reason": "Venue-owned calendar linked by official Friends of Noise event-calendar embed. Verify roster and each original detail page; collect all future dated venue events and classify afterward. Review PRs only."
     }
   ],
   "editorialPriority": [
