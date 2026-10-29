@@ -206,7 +206,9 @@
       "name": "Doomtown PDX",
       "status": "adapter-needed",
       "priority": "underground-music",
-      "reason": "Promoter discovery should resolve venue and date via original announcements."
+      "reason": "Original Doomtown WordPress posts are gathered daily into a separate review-only leads report. Publication date is not an event date; primary venue/organizer/ticket corroboration is required before event importer activation.",
+      "leadFeed": "https://doomtownpdx.com/wp-json/wp/v2/posts",
+      "leadMode": "review-only-not-event-adapter"
     },
     {
       "id": "kenton-club",

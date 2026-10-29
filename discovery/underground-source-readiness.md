@@ -20,6 +20,8 @@ The independent [Doomtown PDX](https://doomtownpdx.com/) WordPress site publishe
 
 Recommended next stage: a **leads-only** source importer using original WordPress post IDs/permalinks, artwork provenance, venue and advertised lineup, plus explicit weekday/year/time conflict reporting. Corroborate questionable bills with original venue/organizer records before they become actual SHOWS event candidates. Do not assign invented local clock times or reuse the post publication time as a performance start.
 
+**October 29 implementation:** The combined SHOWS refresh now checks public Doomtown WordPress posts, saving `discovery/doomtown-leads-review.md` with original URLs, printed date snippets, venue references and first-party artwork leads. It remains lead-only (no event ingestion, no verified date claim or artwork rights); errors are visible in the report instead of silently presenting zero shows. Confirm public API access on a GitHub runner after merge, then corroborate any candidate with the original venue or ticket issuer before an event importer can be activated.
+
 ## Existing dependencies
 
 - **The Coffin Club:** VenuePilot authorized app ID still required for enabled automated data access.

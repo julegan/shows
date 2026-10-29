@@ -68,6 +68,8 @@ jobs:
           node tests/mississippi-polaris-importer.js
           node --check scripts/holocene-importer.js
           node tests/holocene-importer.js
+          node --check scripts/doomtown-leads.js
+          node tests/doomtown-leads.js
           node --check scripts/probe-holocene.js
           node --check scripts/probe-mississippi.js
           node --check scripts/probe-crystal-revolution.js
