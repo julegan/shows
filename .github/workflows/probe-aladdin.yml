@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: '22'
       - name: Inspect original venue listing without publishing
-        run: node scripts/probe-aladdin.js
+        run: |
+          node tests/aladdin-importer.js
+          node scripts/probe-aladdin.js

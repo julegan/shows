@@ -363,10 +363,10 @@
       "id": "aladdin-theater",
       "name": "Aladdin Theater",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.aladdin-theater.com/",
       "aliases": [],
-      "notes": "Official calendar and original Etix links verified 2026-10-29. Three fields must be checked independently: year/date, show versus doors, and actual room (calendar includes offsite Crystal and other venues). Two manual bills proposed; no automatic intake enabled."
+      "notes": "Official complete feed verified in live probe 40974636056: 85 Aladdin-room date/time records of 97 source cards, nine offsite exclusions, three source holds. Exact venue label plus ticket/event ID, source UTC doors and local show-clock validation. Daily review-only intake; no claim all cards are music."
     },
     {
       "id": "mission-theater",
