@@ -372,10 +372,10 @@
       "id": "mission-theater",
       "name": "Mission Theater",
       "tier": "expansion",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.mcmenamins.com/mission-theater",
       "aliases": [],
-      "notes": "Official Gully Boys dated page verified 2026-10-29. One manual bill proposed. McMenamins calendar mixes music with films/talks; preserve source formats and separate West End promotional headings from artist billing. No automatic intake enabled."
+      "notes": "One-request original Mission venue calendar adapter cross-checks year-bearing search data with visible title/date/time/venue cards. Runner 40977016290 verified 45 dated Mission records, 44 new candidates and one existing Gully Boys URL. Formats and styles require review; non-Mission promotions excluded."
     }
   ],
   "supplementaryDiscovery": [
