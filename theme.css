@@ -1,0 +1,135 @@
+/* SHOWS production palette: soft black, neutral grays, original-color flyers.
+   Loaded after the shared layout styles so the A/B experiments stay independent. */
+:root {
+  color-scheme: dark;
+  --ink: #f0efed;
+  --sub: #bbb9b6;
+  --hair: #49494c;
+  --cream: #151517;
+  --paper: #1e1e21;
+  --dark: #151517;
+  --lime: #e3e1dc;
+  --coral: #c6c3be;
+  --blue: #bcbcc2;
+  --surface-raised: #262629;
+  --control-border: #7d7d82;
+  --selected: #e3e1dc;
+  --selected-ink: #202022;
+  --focus: #f0efed;
+  --shadow: 0 18px 64px rgb(0 0 0 / .45);
+  background: var(--cream);
+  color: var(--ink);
+}
+body { background: var(--cream); color: var(--ink); }
+::selection { background: var(--selected); color: var(--selected-ink); }
+input, select, button { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline-color: var(--focus);
+}
+.masthead { background: var(--cream); color: var(--ink); }
+.nav { border-bottom-color: var(--hair); }
+.logo span { color: var(--sub); }
+.nav-location, .nav-about, .footer { color: var(--sub); }
+.shows-intro { border-bottom-color: var(--hair); }
+.shows-intro .shows-intro-label { color: var(--sub); }
+.shows-intro h1 { font-weight: 650; }
+.shows-intro .shows-intro-description { color: var(--sub); }
+
+/* Neutral controls retain explicit labels and pressed states. */
+.preview-choice a, .preview-tab,
+.preview-actions button, .preview-more,
+.shows-month-controls button {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--control-border);
+}
+.preview-choice a:hover, .preview-tab:hover,
+.preview-actions button:hover:not(:disabled), .preview-more:hover,
+.shows-month-controls button:hover { background: var(--surface-raised); }
+.preview-choice a[aria-current=page], .preview-tab[aria-pressed=true],
+.preview-actions button[aria-pressed=true] {
+  background: var(--selected);
+  color: var(--selected-ink);
+  border-color: var(--selected);
+}
+.preview-filters label { color: var(--sub); }
+.preview-filters input, .preview-filters select,
+.preview-filters .preview-date-field {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--control-border);
+}
+.preview-filters input::placeholder { color: #aaa8a6; opacity: 1; }
+.preview-filters .preview-date-field:focus-within { outline-color: var(--focus); }
+.preview-filters .preview-date-field input[type=date] { background: transparent; }
+.preview-filters select option { background: var(--paper); color: var(--ink); }
+.preview-summary, .preview-info, .shows-month-help { color: var(--sub); }
+
+/* Flyers carry the color; the surrounding event hierarchy stays quiet. */
+.preview-day-heading { background: var(--cream); border-bottom-color: var(--hair); }
+.preview-day-heading h3 { font-weight: 650; }
+.preview-day-heading span { color: var(--sub); }
+.preview-event, .preview-place, .preview-empty {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--hair);
+}
+.preview-event { transition: background .15s, border-color .15s; }
+.preview-event:hover { background: #242427; border-color: #9b9995; }
+.preview-event-title { font-weight: 700; }
+.preview-event .preview-art, .preview-dialog .preview-detail-art {
+  background: #19191b;
+  color: var(--sub);
+  border-color: var(--hair);
+}
+.preview-art img, .preview-detail-art img { filter: none; }
+.preview-eyebrow, .preview-meta, .preview-place p,
+.preview-place button span, .preview-empty p { color: var(--sub); }
+.preview-place button {
+  color: var(--ink);
+  border-top-color: var(--hair);
+}
+.preview-place a, .preview-info a, .preview-dialog .detail-info a { color: var(--ink); }
+.preview-note { color: var(--sub); }
+.preview-note strong { color: var(--ink); }
+.footer { background: #111113; border-top: 1px solid var(--hair); }
+
+/* Month keeps dates and counts legible without category-dependent colors. */
+.shows-month-grid { background: var(--paper); border-color: var(--hair); }
+.shows-weekday, .shows-month-date, .shows-month-blank { border-color: var(--hair); }
+.shows-weekday { background: var(--surface-raised); color: var(--sub); }
+.shows-month-blank { background: #19191b; }
+.shows-month-date { background: var(--paper); color: var(--ink); }
+.shows-month-date:hover { background: #303034; }
+.shows-month-today { background: #303034; }
+.shows-month-today .shows-date-number {
+  background: var(--selected);
+  color: var(--selected-ink);
+}
+.shows-date-count { background: #39393d; color: var(--ink); }
+
+/* Event details, keyboard focus and native pickers share the dark palette. */
+dialog { background: var(--paper); color: var(--ink); border: 1px solid var(--hair); }
+dialog::backdrop { background: rgb(0 0 0 / .76); }
+.dialog-close { background: var(--surface-raised); color: var(--ink); border-color: var(--control-border); }
+.detail-tag, .detail-sub, .detail-info strong, .detail-note,
+.detail-footnote, .art-credit { color: var(--sub); }
+.detail-note strong { color: var(--ink); }
+.detail-actions a, .detail-actions button {
+  background: var(--surface-raised);
+  border-color: var(--control-border);
+  color: var(--ink);
+}
+.detail-actions .primary, .detail-actions .accent {
+  background: var(--selected);
+  border-color: var(--selected);
+  color: var(--selected-ink);
+}
+.detail-actions a:hover, .detail-actions button:hover { border-color: var(--ink); }
+.detail-actions .primary:hover, .detail-actions .accent:hover { background: #f3f1ed; }
+.preview-dialog a:focus-visible, .preview-dialog button:focus-visible { outline-color: var(--focus); }
+
+/* Give long bills room and keep missing-flyer frames at the source ratio. */
+.preview-cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.preview-event .preview-art { align-self: flex-start; }
+@media (max-width: 680px) { .preview-cards { grid-template-columns: 1fr; } }
