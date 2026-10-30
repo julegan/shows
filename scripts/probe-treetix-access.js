@@ -32,6 +32,8 @@ async function inspect(url) {
     const html = Buffer.concat(chunks).toString('utf8');
     return {
       url, status: response.status, bytes: size,
+      publicListingPreview: /highwatermarklounge.com\/index.cfm|treetix.com\/event/.test(url) ? html.replace(/<script\b[\s\S]*?<\/script>/gi, '').replace(/<style\b[\s\S]*?<\/style>/gi, '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').slice(0, 16000) : undefined,
+      eventCardSamples: url.endsWith('/index.cfm') ? [...html.matchAll(/<a[^>]*href="https:\/\/www\.treetix\.com\/event\?[^"]+"[^>]*>[\s\S]*?<\/a>/gi)].slice(0, 2).map(m => m[0]) : undefined,
       apiInvitationPresent: /REST API for event listing services/i.test(html),
       ticketLinkMarkers: (html.match(/treetix\.com\/event\?/gi) || []).length,
       result: 'public response only; not a validated feed or permission grant'
