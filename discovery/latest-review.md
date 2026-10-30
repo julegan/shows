@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-10-29
+# SHOWS automated discovery review — 2026-10-30
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,41 +8,34 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
+| Black Water | Checked | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | Soundcontrol PDX | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Twilight Cafe and Bar | Checked | 46 | 0 | 0 | 0 | 0 | 14 | 32 |
-| Star Theater | Checked | 43 | 0 | 0 | 0 | 0 | 4 | 39 |
-| Dante's | Checked | 48 | 0 | 0 | 0 | 0 | 45 | 3 |
-| Roseland Theater | Checked | 34 | 0 | 0 | 0 | 0 | 7 | 27 |
-| Wonder Ballroom | Checked | 35 | 0 | 0 | 0 | 0 | 10 | 25 |
-| Hawthorne Theatre | Checked | 44 | 0 | 0 | 0 | 0 | 6 | 38 |
-| Crystal Ballroom | Checked | 55 | 0 | 0 | 0 | 0 | 5 | 50 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 8 | 22 |
-| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
+| Twilight Cafe and Bar | Checked | 46 | 0 | 0 | 0 | 0 | 13 | 33 |
+| Star Theater | Checked | 43 | 1 | 1 | 0 | 1 | 4 | 38 |
+| Dante's | Checked | 47 | 0 | 0 | 0 | 0 | 17 | 30 |
+| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 7 | 26 |
+| Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 10 | 24 |
+| Hawthorne Theatre | Checked | 43 | 0 | 0 | 0 | 0 | 6 | 37 |
+| Crystal Ballroom | Checked | 56 | 1 | 0 | 1 | 1 | 5 | 50 |
+| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 9 | 20 |
+| Turn! Turn! Turn! | Checked | 19 | 1 | 1 | 0 | 1 | 2 | 16 |
 | Kenton Club | Checked | 17 | 0 | 0 | 0 | 0 | 1 | 16 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
-| Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 39 | 8 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 3 | 25 |
+| Holocene | Checked | 47 | 1 | 1 | 0 | 1 | 38 | 8 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 1095 | 493 |
-| The Off Beat / Friends of Noise | Checked | 10 | 0 | 0 | 0 | 0 | 1 | 9 |
-| Aladdin Theater | Checked | 97 | 83 | 0 | 83 | 83 | 3 | 11 |
-| Mission Theater | Checked | 47 | 44 | 1 | 41 | 44 | 1 | 2 |
+| The Off Beat / Friends of Noise | Checked | 9 | 0 | 0 | 0 | 0 | 1 | 8 |
+| Aladdin Theater | Checked | 96 | 0 | 0 | 0 | 0 | 3 | 93 |
+| Mission Theater | Checked | 43 | 0 | 0 | 0 | 0 | 0 | 43 |
 
 ### Classification review
 
-New candidate categories: **Music** 1 · **Other** 1 · **Performance** 1 · **Unclassified** 124.
-**124 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 3 · **Unclassified** 4.
+**4 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Aladdin Theater: Ax and the Hatchetmen: The Late Checkout Tour 2026 — https://www.etix.com/ticket/p/33035472/ax-and-the-hatchetmenthe-late-checkout-tour-2026-portland-aladdin-theater
-- Aladdin Theater: The Brothers Comatose — https://www.etix.com/ticket/p/40016337/the-brothers-comatose-portland-aladdin-theater
-- Aladdin Theater: Buena Vista Orchestra — https://www.etix.com/ticket/p/56309728/buena-vista-orchestra-portland-aladdin-theater
-- Aladdin Theater: Greg Freeman — https://www.etix.com/ticket/p/38148085/greg-freeman-portland-aladdin-theater
-- Aladdin Theater: Jake Xerxes Fussell — https://www.etix.com/ticket/p/81125006/jake-xerxes-fussell-portland-aladdin-theater
-- Aladdin Theater: Kathy Griffin: New face, New tour — https://www.etix.com/ticket/p/94240898/kathy-griffinnew-facenew-tour-portland-aladdin-theater
-- Aladdin Theater: Marc Broussard — https://www.etix.com/ticket/p/47642458/marc-broussard-portland-aladdin-theater
-- Aladdin Theater: Warren Miller's "Days Off" — https://www.etix.com/ticket/p/30714907/warren-millers-days-off-portland-aladdin-theater
-- Aladdin Theater: Warren Miller's "Days Off" — https://www.etix.com/ticket/p/82430430/warren-millers-days-off-portland-aladdin-theater
-- Aladdin Theater: Warren Miller's "Days Off" — https://www.etix.com/ticket/p/59712086/warren-millers-days-off-portland-aladdin-theater
-- Plus 114 other unclassified candidates in the full event table below.
+- Crystal Ballroom: Enjambre — https://www.crystalballroompdx.com/events/279530-enjambre/
+- Show Bar at Revolution Hall: Holy Wave — https://www.etix.com/ticket/p/47425593/holy-wave-portland-show-bar-at-revolution-hall
+- Polaris Hall: Alex Cameron — https://www.etix.com/ticket/p/59428735/alex-cameron-portland-polaris-hall
+- Mississippi Studios: Karina Rykman - Late Checkout Tour 2026 — https://www.etix.com/ticket/p/68336235/karina-rykman-late-checkout-tour-2026-portland-mississippi-studios
 
 ### Connections requiring work
 
@@ -68,144 +61,27 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 127
+## New candidates: 7
 
-- aladdin-theater: 83 proposals
-- mission-theater: 44 proposals
+- star-theater: 1 proposals
+- crystal-ballroom: 1 proposals
+- revolution-hall: 1 proposals
+- turn-turn-turn: 1 proposals
+- mississippi-polaris: 2 proposals
+- holocene: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-10-30 | Ax and the Hatchetmen: The Late Checkout Tour 2026 | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/33035472/ax-and-the-hatchetmenthe-late-checkout-tour-2026-portland-aladdin-theater |
-| 2026-10-31 | The Brothers Comatose | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/40016337/the-brothers-comatose-portland-aladdin-theater |
-| 2026-11-01 | Buena Vista Orchestra | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/56309728/buena-vista-orchestra-portland-aladdin-theater |
-| 2026-11-03 | Greg Freeman | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/38148085/greg-freeman-portland-aladdin-theater |
-| 2026-11-05 | Jake Xerxes Fussell | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/81125006/jake-xerxes-fussell-portland-aladdin-theater |
-| 2026-11-06 | Kathy Griffin: New face, New tour | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/94240898/kathy-griffinnew-facenew-tour-portland-aladdin-theater |
-| 2026-11-07 | Marc Broussard | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47642458/marc-broussard-portland-aladdin-theater |
-| 2026-11-08 | Warren Miller's "Days Off" | Aladdin Theater | 13:00 (doors/show unverified) | https://www.etix.com/ticket/p/30714907/warren-millers-days-off-portland-aladdin-theater |
-| 2026-11-08 | Warren Miller's "Days Off" | Aladdin Theater | 16:00 (doors/show unverified) | https://www.etix.com/ticket/p/82430430/warren-millers-days-off-portland-aladdin-theater |
-| 2026-11-08 | Warren Miller's "Days Off" | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/59712086/warren-millers-days-off-portland-aladdin-theater |
-| 2026-11-10 | Foy Vance World Tour / 2026 & 2027 | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/68643294/foy-vance-world-tour-2026-2027-portland-aladdin-theater |
-| 2026-11-11 | Squirrel Flower | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/90140768/squirrel-flower-portland-aladdin-theater |
-| 2026-11-13 | Johnny Franco & His Real Brother Dom | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/43397868/johnny-franco-his-real-brother-dom-portland-aladdin-theater |
-| 2026-11-14 | SOLD OUT: Son Volt | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/32470232/sold-outson-volt-portland-aladdin-theater |
-| 2026-11-15 | Joanne Shaw Taylor | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/78756159/joanne-shaw-taylor-portland-aladdin-theater |
-| 2026-11-16 | Vocalocity: We’re Halfway There | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/39115686/vocalocitywere-halfway-there-portland-aladdin-theater |
-| 2026-11-17 | The Portland GrandSLAM | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/78379012/the-portland-grandslam-portland-aladdin-theater |
-| 2026-11-18 | Agriculture | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/62124928/agriculture-portland-aladdin-theater |
-| 2026-11-19 | Todd Rundgren: DAMNED IF I DO TOUR | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/33295250/todd-rundgrendamned-if-i-do-tour-portland-aladdin-theater |
-| 2026-11-20 | Grief Sucks: A One Man Show By KevOnStage | Aladdin Theater | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/89590950/grief-sucksa-one-man-show-by-kevonstage-portland-aladdin-theater |
-| 2026-11-21 | Paula Poundstone | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/38968586/paula-poundstone-portland-aladdin-theater |
-| 2026-11-22 | SOLD OUT: Haley Heynderickx | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-portland-aladdin-theater |
-| 2026-11-23 | Haley Heynderickx | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/40830725/haley-heynderickx-portland-aladdin-theater |
-| 2026-11-25 | SOLD OUT: Emma Ruth Rundle - THESE KILLING TIMES | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/53477310/sold-outemma-ruth-rundle-these-killing-times-portland-aladdin-theater |
-| 2026-11-27 | The Storm Large Holiday Ordeal (Night 1) | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/36374313/the-storm-large-holiday-ordeal-night-1-portland-aladdin-theater |
-| 2026-11-28 | The Storm Large Holiday Ordeal (Night 2) | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/68026462/the-storm-large-holiday-ordeal-night-2-portland-aladdin-theater |
-| 2026-11-29 | SOLD OUT: Marc Maron: Yammering into the Void Tour (Early Show) | Aladdin Theater | 16:00 (doors/show unverified) | https://www.etix.com/ticket/p/38666206/sold-outmarc-maronyammering-into-the-void-tour-early-show-portland-aladdin-theater |
-| 2026-11-29 | SOLD OUT: Marc Maron: Yammering into the Void Tour | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/63564093/sold-outmarc-maronyammering-into-the-void-tour-portland-aladdin-theater |
-| 2026-12-01 | A John Waters Christmas | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/52472471/a-john-waters-christmas-portland-aladdin-theater |
-| 2026-12-03 | Zepparella the Led Zeppelin Powerhouse | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/32952057/zepparella-the-led-zeppelin-powerhouse-portland-aladdin-theater |
-| 2026-12-04 | Cat Clyde & Dean Johnson | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/48494309/cat-clyde-dean-johnson-portland-aladdin-theater |
-| 2026-12-05 | Matt Rogers: THIS TIME IT’S *REALLY* CHRISTMAS Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/80307484/matt-rogersthis-time-its-reallychristmas-tour-portland-aladdin-theater |
-| 2026-12-06 | Pete Yorn solo acoustic - 25th Anniversary of musicforthemorningafter | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/63972028/pete-yorn-solo-acoustic-25th-anniversary-of-musicforthemorningafter-portland-aladdin-theater |
-| 2026-12-09 | The Bobby Lees | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/94256309/the-bobby-lees-portland-aladdin-theater |
-| 2026-12-11 | Pokey LaFarge | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55334627/pokey-lafarge-portland-aladdin-theater |
-| 2026-12-15 | JD McPherson - SOCKS: A Rock N’ Roll Christmas Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/80605810/jd-mcpherson-socksa-rock-nroll-christmas-tour-portland-aladdin-theater |
-| 2026-12-18 | TATAS for TOYS | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/75662674/tatas-for-toys-portland-aladdin-theater |
-| 2026-12-19 | True Loves | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/38815767/true-loves-portland-aladdin-theater |
-| 2026-12-31 | Jenny Don't and the Spurs Cowboy Prom NYE 2026 | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/40559385/jenny-dont-and-the-spurs-cowboy-prom-nye-2026-portland-aladdin-theater |
-| 2027-01-14 | Five For Fighting with String Quartet | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/93170768/five-for-fighting-with-string-quartet-portland-aladdin-theater |
-| 2027-01-17 | True Widow | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/45431061/true-widow-portland-aladdin-theater |
-| 2027-01-23 | Brian Posehn | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/68708051/brian-posehn-portland-aladdin-theater |
-| 2027-01-30 | Bonnie “Prince” Billy (Night 1) | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/68309465/bonnie-princebilly-night-1-portland-aladdin-theater |
-| 2027-01-31 | Bonnie “Prince” Billy (Night 2) | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/66870556/bonnie-princebilly-night-2-portland-aladdin-theater |
-| 2027-02-02 | Science on Tap: The Counting of Crows | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/55592168/science-on-tapthe-counting-of-crows-portland-aladdin-theater |
-| 2027-02-03 | Falco & Book Play Jerry Garcia | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/84384147/falco-book-play-jerry-garcia-portland-aladdin-theater |
-| 2027-02-04 | WINONA FIGHTER is BRUTAL & EXTREMELY UNDERRATED…the tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/94290671/winona-fighter-is-brutal-extremely-underratedthe-tour-portland-aladdin-theater |
-| 2027-02-05 | Legends: Keola Beamer & Henry Kapono, with Moanalani Beamer, hula | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97553913/legendskeola-beamer-henry-kaponowith-moanalani-beamerhula-portland-aladdin-theater |
-| 2027-02-07 | Watch What Crappens: In The Mix Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/70423694/watch-what-crappensin-the-mix-tour-portland-aladdin-theater |
-| 2027-02-10 | Jess Williamson | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/96546512/jess-williamson-portland-aladdin-theater |
-| 2027-02-11 | 2027 Fly Fishing Film Tour | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/73037278/2027-fly-fishing-film-tour-portland-aladdin-theater |
-| 2027-02-12 | Los Lobos | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/70698019/los-lobos-portland-aladdin-theater |
-| 2027-02-13 | Los Lobos | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/36455150/los-lobos-portland-aladdin-theater |
-| 2027-02-14 | Colin Mochrie & Friends Valentine's Day Show | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/73375478/colin-mochrie-friends-valentines-day-show-portland-aladdin-theater |
-| 2027-02-16 | Mania: The ABBA Tribute | Aladdin Theater | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/64714422/maniathe-abba-tribute-portland-aladdin-theater |
-| 2027-02-17 | Joan Osborne - Relish Live | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/65530668/joan-osborne-relish-live-portland-aladdin-theater |
-| 2027-02-18 | DENNY LOVE: SHOW LOVE TOUR | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/73189164/denny-loveshow-love-tour-portland-aladdin-theater |
-| 2027-02-19 | Ladysmith Black Mambazo | Aladdin Theater | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/80770165/ladysmith-black-mambazo-portland-aladdin-theater |
-| 2027-02-20 | Jason Cheny | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/78645905/jason-cheny-portland-aladdin-theater |
-| 2027-02-26 | Marian Hill ACT TWO: THE TOUR | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/57112182/marian-hill-act-twothe-tour-portland-aladdin-theater |
-| 2027-02-27 | G. Love & Special Sauce - Yeah, It’s That Easy 30th Anniversary Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/36069643/glove-special-sauce-yeahits-that-easy-30th-anniversary-tour-portland-aladdin-theater |
-| 2027-03-05 | Vincent Lima | Aladdin Theater | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/39308269/vincent-lima-portland-aladdin-theater |
-| 2027-03-06 | Michael Kosta | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/41256109/michael-kosta-portland-aladdin-theater |
-| 2027-03-11 | Trish Toledo with The Charities | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/41230690/trish-toledo-with-the-charities-portland-aladdin-theater |
-| 2027-03-12 | David Nihill: Taking Tangents Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/51834096/david-nihilltaking-tangents-tour-portland-aladdin-theater |
-| 2027-03-13 | Larry Carlton | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97238538/larry-carlton-portland-aladdin-theater |
-| 2027-03-14 | 40 FINGERS | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/60927424/40-fingers-portland-aladdin-theater |
-| 2027-03-20 | Rising Appalachia - Trade My Troubles Tour (Early Show) | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/71350484/rising-appalachia-trade-my-troubles-tour-early-show-portland-aladdin-theater |
-| 2027-03-20 | Rising Appalachia - Trade My Troubles Tour (Late Show) | Aladdin Theater | 21:30 (doors/show unverified) | https://www.etix.com/ticket/p/36885413/rising-appalachia-trade-my-troubles-tour-late-show-portland-aladdin-theater |
-| 2027-03-26 | Will Burkart | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/31464870/will-burkart-portland-aladdin-theater |
-| 2027-03-31 | Susannah Joffe - The Dust Settles Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/44752985/susannah-joffe-the-dust-settles-tour-portland-aladdin-theater |
-| 2027-04-02 | THAO - "Show Me" Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55140873/thao-show-metour-portland-aladdin-theater |
-| 2027-04-03 | Iceage | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/74384514/iceage-portland-aladdin-theater |
-| 2027-04-05 | Bruce Cockburn | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/57495192/bruce-cockburn-portland-aladdin-theater |
-| 2027-04-10 | JUDY COLLINS - SWEET JUDY BLUE EYES: FAREWELL | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/74207635/judy-collins-sweet-judy-blue-eyesfarewell-portland-aladdin-theater |
-| 2027-04-26 | Mei Semones | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/58671767/mei-semones-portland-aladdin-theater |
-| 2027-05-01 | CG5 Presents: The GAMER Tour | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/80509440/cg5-presentsthe-gamer-tour-portland-aladdin-theater |
-| 2027-05-11 | Alaska Thunderf*ck: The Revolution Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/62407073/alaska-thunderfckthe-revolution-tour-portland-aladdin-theater |
-| 2027-05-13 | cleopatrick | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/56883326/cleopatrick-portland-aladdin-theater |
-| 2027-05-16 | The Arcadian Wild - Make It Out Alive Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/68504589/the-arcadian-wild-make-it-out-alive-tour-portland-aladdin-theater |
-| 2027-05-22 | Al Stewart: Farewell Tour with special guests, The Empty Pockets | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/88121887/al-stewartfarewell-tour-with-special-gueststhe-empty-pockets-portland-aladdin-theater |
-| 2027-05-23 | The Aces: The Kiss Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97525643/the-acesthe-kiss-tour-portland-aladdin-theater |
-| 2027-05-27 | John Splithoff 2027 Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91810152/john-splithoff-2027-tour-portland-aladdin-theater |
-| 2026-10-29 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/278752-mission-theater-history-art-tour |
-| 2026-10-29 | The Haunt The Ghost Tour | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278125-the-haunt |
-| 2026-10-30 | Jesse Sykes and Great Lake Swimmers: Caught Light Tour 2026 | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/277447-jesse-sykes-and-great-lake-swimmers-caught-light-tour-2026 |
-| 2026-10-31 | Patrick Wolf | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/277814-patrick-wolf |
-| 2026-11-01 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279341-mission-theater-history-art-tour |
-| 2026-11-01 | Taylor Bickett Fairhazel | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/276626-taylor-bickett |
-| 2026-11-03 | Georgia Parker Tashi T | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279035-georgia-parker |
-| 2026-11-04 | OMSI Science Pub: Nature’s Copycat: Convergent Evolution Throughout Time | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/273893-omsi-science-pub-natures-copycat-convergent-evolution-throughout-time |
-| 2026-11-05 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279340-mission-theater-history-art-tour |
-| 2026-11-07 | Deante' Hitchcock | Mission Theater | 20:30 (doors/show unverified) | https://www.mcmenamins.com/events/278657-deante-hitchcock |
-| 2026-11-08 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279339-mission-theater-history-art-tour |
-| 2026-11-09 | Mushrooms Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/279145-mushrooms |
-| 2026-11-11 | The Hails Duck Pond Tour Meldrop | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/277463-the-hails |
-| 2026-11-12 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279338-mission-theater-history-art-tour |
-| 2026-11-13 | Tik Tok: 2010s Recession Pop Dance Night Featuring DJ Dance Dance | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/277290-tik-tok-2010s-recession-pop-dance-night |
-| 2026-11-14 | Shwayze - The Nostalgia Tour Asher Roth Chiddy Bang | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278292-shwayze-the-nostalgia-tour |
-| 2026-11-15 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279337-mission-theater-history-art-tour |
-| 2026-11-15 | Will Vinton Day Celebration | Mission Theater | 15:00 (doors/show unverified) | https://www.mcmenamins.com/events/279445-will-vinton-day-celebration |
-| 2026-11-18 | Dev Lemons | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/277821-dev-lemons |
-| 2026-11-19 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279336-mission-theater-history-art-tour |
-| 2026-11-20 | Crooked Looks and Ray Ramano | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279115-crooked-looks-and-ray-ramano |
-| 2026-11-21 | MECH & Tinhorn | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278651-mech-tinhorn |
-| 2026-11-25 | The Shindig Show with Jimmy Shin | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279116-the-shindig-show-with-jimmy-shin |
-| 2026-11-26 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279334-mission-theater-history-art-tour |
-| 2026-11-27 | Holiday Music Bingo | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/279538-holiday-music-bingo |
-| 2026-11-28 | Sound & Vision starring The Christopher Brown Quartet including David Bowie classics and deep cuts with a visual narrative by VJ Gregarious | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278032-sound-vision |
-| 2026-11-29 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279333-mission-theater-history-art-tour |
-| 2026-12-01 | OMSI SCience Pub: The River Remembers: Community, Science, and the Future of Portland Harbor | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/273892-omsi-science-pub-the-river-remembers-community-science-and-the-future-of-portland-harbor |
-| 2026-12-03 | Demolicious: Champion of Champions | Mission Theater | 18:30 (doors/show unverified) | https://www.mcmenamins.com/events/279178-demolicious-champion-of-champions |
-| 2026-12-04 | Nerves: The Live Audiovisual Experience | Mission Theater | 19:30 (doors/show unverified) | https://www.mcmenamins.com/events/279221-nerves-the-live-audiovisual-experience |
-| 2026-12-05 | An Evening with Catch Magazine | Mission Theater | 18:00 (doors/show unverified) | https://www.mcmenamins.com/events/279446-an-evening-with-catch-magazine |
-| 2026-12-08 | Apes of the State Pigeon Pit | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278150-apes-of-the-state |
-| 2026-12-09 | Apes of the State Pigeon Pit | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278151-apes-of-the-state |
-| 2026-12-12 | BodyMagick Temple Burlesque Winter Showcase 2026 | Mission Theater | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/278983-bodymagick-temple-burlesque |
-| 2026-12-18 | Dr. Brady Smith | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/278043-dr-brady-smith |
-| 2026-12-31 | New Year's Eve with Garcia Birthday Band | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278879-new-years-eve-with-garcia-birthday-band |
-| 2027-01-15 | Tanael Joachim | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278563-tanael-joachim |
-| 2027-01-21 | 44phantom | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279388-44phantom |
-| 2027-02-20 | Alt Bloom | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279440-alt-bloom |
-| 2027-03-08 | Biamp Portland Jazz Festival Presented by PDX Jazz | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279176-biamp-portland-jazz-festival-presented-by-pdx-jazz |
-| 2027-03-30 | Sarah Julia | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279408-sarah-julia |
-| 2027-04-01 | Victoryland | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279396-victoryland |
-| 2027-04-15 | Alex Sampson | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279123-alex-sampson |
-| 2027-05-13 | Keo | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279124-keo |
+| 2027-02-21 | CHARLIE HUNTER & ELLA FEINGOLD | Star Theater | 20:00 (doors/show unverified) | https://www.startheaterportland.com/tm-event/charlie-hunter-ella-feingold/ |
+| 2027-05-16 | Enjambre | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/279530-enjambre/ |
+| 2026-11-15 | Holy Wave | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47425593/holy-wave-portland-show-bar-at-revolution-hall |
+| 2026-11-21 | Joel P West + Jennie Wayne | Turn! Turn! Turn! | 16:00 (doors/show unverified) | https://app.opendate.io/e/joel-p-west-jennie-wayne-november-21-2026-795903 |
+| 2026-11-12 | Alex Cameron | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/59428735/alex-cameron-portland-polaris-hall |
+| 2026-11-13 | Karina Rykman - Late Checkout Tour 2026 | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/68336235/karina-rykman-late-checkout-tour-2026-portland-mississippi-studios |
+| 2026-11-21 | Laffy Taffy Presents: Twerky Twerky Twerky (A Friendsgiving Function) | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-21-laffy-taffy-presents-twerky-twerky-twerky-a-friendsgiving-function |
 
-## Held for review: 1244
+## Held for review: 1214
 
-- [twilight] Atypical Prototype (No Doubt) w/ You Last & The Takey Takeys (Me First and The Gimme Gimmes), Bad Year (Bouncing Souls) — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467136/atypical-prototype-no-doubt-w-you-last-the-takey-takeys-me-first-and-the-gimme-gimmes-bad-year-bouncing-souls
 - [twilight] Precious Machinery (Siouxsie and the Banshees) w/, Beat-on Brats (Ramones), Radio Clash (The Clash) — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467259/precious-machinery-siouxsie-and-the-banshees-w-beat-on-brats-ramones-radio-clash-the-clash
 - [twilight] Pacific Monkeys (Arctic Monkeys Tribute) w/ KM3 (The Cure Tribute) — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467043/pacific-monkeys-arctic-monkeys-tribute-w-km3-the-cure-tribute
 - [twilight] Veredas w/ Mike Mannequin, Miss Honey — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467415/veredas-w-mike-mannequin-miss-honey
@@ -223,51 +99,23 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-12/
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-13/
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/fusion-halloween-edition/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-23/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/kurt-travis-with-mella-resilia-guest/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-4/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/de-la-flor-followed-by-sinferno-cabaret/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-9/
+- [dantes] HOTWAX disco~glam~metal~punk~hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-23/
+- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-4/
+- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-9/
 - [dantes] TRUE FEAR with Resist LA, When The Broken Burn, Crucible of Absolution, & Oddities — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/true-fear-with-resist-la-crucible-of-absolution-oddities/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/spirits/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/stop-light-observations-with-special-guest/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/the-hollow-winter-burn/
+- [dantes] HOTWAX disco~glam~metal~punk~hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/
+- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-10/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/karaoke-from-hell-114/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/jon-spencer-with-guest/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/a-strange-bird-with-vega-black-zane-thomas-bikehouse/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/deathtape-with-salt-guests/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/metal-church-armored-saint-with-livekill/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sabbath-live-with-harrahs-void-3st-kingdozer/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/louie-the-singer/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-11/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/brokencyde-with-dot-dot-curve-auntie-boy/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sick-a-year-in-our-bodies-fundraiser-showcase/
+- [dantes] JON SPENCER with Genre Is Death — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/jon-spencer-with-guest/
+- [dantes] DEATHTAPE with Salt+ & Guests — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/deathtape-with-salt-guests/
+- [dantes] METAL CHURCH / ARMORED SAINT with Livekill — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/metal-church-armored-saint-with-livekill/
+- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/
+- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-11/
+- [dantes] COMEBACK KID with The Warriors, Dead Heat, & Barrio Slam — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/
 - [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/tv-viking-followed-by-sinferno-cabaret/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-12/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-13/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/silent-civilian-ft-jonny-santos-of-spineshank-rebirth-of-the-temple-20th-anniversary/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smells-like-nirvana-tribute-to-nirvana-with-dead-original/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/battery-inc-with-finn/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/dead-animal-assembly-plant-with-at-the-heart-of-the-world-a-special-performance-by-cryptid-creek-suspensions/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/the-naughty-list/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-14/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/temper-city-94-7fm-december-2-remember/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/black-lodge-burlesque/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-15/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/magenta-wave-with-guests/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-16/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-17/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/jerry-joseph/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/reverend-horton-heat-with-special-guest/
+- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
+- [dantes] DISTANT with Heavy//Hitter, Torn Open, Katywentmissing, & Glasseater — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
+- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-14/
 - [roseland] Rival Sons – Domestic Bliss Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/rival-sons-domestic-bliss-tour/roseland-theater/portland-oregon/
 - [roseland] Periphery – A Pale White Dot US Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
@@ -296,8 +144,9 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] RESCHEDULED TO 3/29/27: Death From Above 1979 - Private Lives Tour — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/86535788/rescheduled-to-32927death-from-above-1979-private-lives-tour-portland-revolution-hall
-- [revolution-hall] SOLD OUT: 80s + 90s Video Dance Attack Halloween Party — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53107166/sold-out80s-90s-video-dance-attack-halloween-party-portland-revolution-hall
+- [revolution-hall] Glitterfox - The New Frontier — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/87265256/glitterfox-the-new-frontier-portland-revolution-hall
+- [revolution-hall] DICE — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/81002831/dice-portland-show-bar-at-revolution-hall
+- [revolution-hall] SOLD OUT: 80s + 90s Video Dance Attack Halloween Party — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/53107166/sold-out80s-90s-video-dance-attack-halloween-party-portland-revolution-hall
 - [revolution-hall] Plini - An Unnameable Desire North American Tour — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/70921869/plini-an-unnameable-desire-north-american-tour-portland-revolution-hall
 - [revolution-hall] Slothrust: The Dystopian Theatre Tour — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/96157741/slothrustthe-dystopian-theatre-tour-portland-revolution-hall
 - [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
@@ -310,7 +159,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [mississippi-polaris] Gilla Band — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/80447770/gilla-band-portland-mississippi-studios
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
-- [holocene] HARRYWEEN — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-10-29-harryween-harry-styles-halloween-dance-night
 - [holocene] SNAP! '90s Dance Party: WITCHES BALL — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-10-30-snap-90s-dance-party-witches-ball
 - [holocene] BETTY: A Queer Dance Party (HALLOWEEN EDITION) — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-10-31-betty-a-queer-dance-party-halloween-edition
 - [holocene] Dylan Thom — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-04-dylan-thom-w-horse-laugh
@@ -1448,7 +1296,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [aladdin-theater] RESCHEDULED TO 5/23/27: The Aces: The Kiss Tour — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/83493090/rescheduled-to-52327the-acesthe-kiss-tour-portland-aladdin-theater
 - [aladdin-theater] Aterciopelados: La Pipa De La Paz 30 Años Tour — Missing Aladdin title or matching original ticket room 
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
-- [mission-theater] Halloween Specials — Source search record lacks usable full-year date or event identity: 10/29/2026 
 
 ## Source errors: 1
 
