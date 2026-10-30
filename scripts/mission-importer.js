@@ -61,7 +61,7 @@ function parseRoster(html){
  }
  if(!seen.size)throw Error('No dated Mission-owned cards');
  for(const [url,row] of index)if(!seen.has(url)&&!rows.some(x=>x.url===url))rows.push({hold:'Year-bearing source event has no matching dated venue card',title:row.title,url});
- const heldUrls=new Set(rows.filter(x=>x.hold&&x.url).map(x=>x.url));return rows.filter(x=>!x.fullUrl||!heldUrls.has(x.fullUrl));
+ const heldUrls=new Set(rows.filter(x=>x.hold&&x.url).map(x=>x.url));return [...new Map(rows.filter(x=>!x.fullUrl||!heldUrls.has(x.fullUrl)).map(x=>[JSON.stringify(x),x])).values()];
 }
 async function request(url){const u=new URL(url);if(u.origin!==ROOT||u.username||u.password||u.search||u.hash||(u.href!==CALENDAR_URL&&!eventUrl(u.href)))throw Error('Unapproved Mission URL');const r=await fetch(u,{redirect:'error',signal:AbortSignal.timeout(18000),headers:{Accept:'text/html','User-Agent':'SHOWS-event-review/0.1'}});if(!r.ok||!r.headers.get('content-type')?.includes('text/html'))throw Error('Mission source HTTP '+r.status);const t=await r.text();if(t.length>2400000)throw Error('Mission source too large');return t;}
 async function fetchEvents(source){

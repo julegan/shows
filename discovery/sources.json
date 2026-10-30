@@ -340,14 +340,15 @@
       "name": "Mission Theater",
       "venue": "Mission Theater",
       "venueRegistryId": "mission-theater",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "expansion",
       "adapter": "mission-official-html",
       "url": "https://www.mcmenamins.com/mission-theater",
       "baseUrl": "https://www.mcmenamins.com",
       "address": "1624 NW Glisan St, Portland, OR 97209",
       "neighborhood": "Northwest District",
-      "reason": "Original Mission venue roster with individually verified year-bearing event detail pages. Keep show, presentation, dance, film and unlabeled starts distinct; no venue-derived genre assumptions. Pending live verification."
+      "reason": "One public venue-page request corroborates visible cards with year-bearing original event search data. Require event permalink, billing, venue and full date/weekday agreement; preserve published starting-time label and review unknown formats/styles. No per-event detail fanout or automatic publication.",
+      "enabledReason": "Live read-only GitHub runner 40977016290 verified all 45 dated Mission records in one request: 44 new review candidates and one already-present Gully Boys event. All Locations promotion is excluded; malformed source promo entries held. Original event images retained with unknown permissions."
     }
   ],
   "editorialPriority": [
