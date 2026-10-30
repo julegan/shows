@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: '22'
       - name: Inspect original Mission calendar without publishing
-        run: node scripts/probe-mission.js
+        run: |
+          node tests/mission-importer.js
+          node scripts/probe-mission.js
