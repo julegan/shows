@@ -1,0 +1,28 @@
+name: Inspect TreeTix public access (diagnostic only)
+on:
+  push:
+    branches: [discovery/treetix-access]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Inspect public pages without retries or publication
+        run: |
+          node --check scripts/probe-treetix-access.js
+          node scripts/probe-treetix-access.js | tee /tmp/treetix-access.txt
+      - name: Record access diagnostics
+        if: always()
+        run: |
+          echo '## TreeTix access diagnostics — not source acceptance' >> "$GITHUB_STEP_SUMMARY"
+          echo 'API access is still required. HTTP failures do not imply no shows or cancellations.' >> "$GITHUB_STEP_SUMMARY"
+          echo '```text' >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/treetix-access.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
