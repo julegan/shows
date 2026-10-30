@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: '22'
       - name: Inspect public pages without retries or publication
+        shell: bash
         run: |
           node --check scripts/probe-treetix-access.js
           node scripts/probe-treetix-access.js | tee /tmp/treetix-access.txt

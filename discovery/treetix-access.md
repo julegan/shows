@@ -10,6 +10,22 @@ The same local check returned HTTP 403 for both `https://www.highwatermarklounge
 
 `scripts/probe-treetix-access.js` repeats a bounded, read-only check from GitHub Actions. It inspects five known public pages, including the original ticket permalink recorded in the issue. It makes no private API requests, follows no redirects, uses no credentials and performs no retries. Its successful exit means the diagnostic completed, not that a usable feed exists. The workflow is manual after this review branch; it adds no daily polling job.
 
+## GitHub runner findings
+
+The [live runner check](https://github.com/julegan/shows/actions/runs/40978656215) on 2026-10-30 UTC differs from the local network:
+
+| Public page | Runner result | Interpretation |
+| --- | --- | --- |
+| TreeTix homepage | 403 | Access failure; the API invitation was verified locally |
+| High Water Mark root | 403 | Access failure |
+| High Water Mark `/index.cfm` | 200; 23 ticket-link references | Promising original venue roster, not yet an accepted dated-event feed |
+| Soundcontrol homepage | 403 | Promoter coverage remains blocked |
+| TreeTix High Water Mark event `204931` | 200 | Full date and venue confirmed, performance time ambiguous |
+
+The reachable roster includes visible weekday/month/day labels, original ticket IDs, and year-bearing event-specific flyer filenames. The first two sampled cards contain dates matching those filenames. The sample detail page confirms V.I.S., Angurvadal, Iron Firmament and Viduus on Saturday, October 31, 2026 at High Water Mark Lounge (Portland), but prints **“Doors 8 Show 8:30” without AM/PM**. Do not turn that into an invented 8:30 p.m. timestamp. The 23 references are not 23 verified concerts: the roster also includes karaoke, drag, open mic and market listings, and completeness has not been established.
+
+This creates a viable public-HTML investigation path alongside the API request. A future parser must cross-check all card dates/years/IDs, verify venue identity and source date on linked pages, retain unknown performance times for review, and inspect the public full-calendar link for completeness. Do not enable the source based on HTTP 200 or two sample cards alone. The API request is still useful for supported full inventory, clear timestamps and Soundcontrol's cross-venue coverage.
+
 ## Ready-to-send request
 
 To: support@treetix.com  

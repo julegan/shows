@@ -45,7 +45,7 @@ async function inspect(url) {
 async function run() {
   console.log(JSON.stringify({ checkedAt: new Date().toISOString(), mode: 'read-only; no retries, credentials, private API calls or event writes' }));
   for (const url of pages) console.log(JSON.stringify(await inspect(url)));
-  console.log('Diagnostic complete. A successful job does not mean these sources are connected. Issue #56 remains blocked on documented API access.');
+  console.log('Diagnostic complete. A successful job does not mean these sources are connected. API access remains pending; the public HTML alternative requires separate record and completeness validation.');
 }
 if (require.main === module) run().catch(error => { console.error(error.message); process.exitCode = 1; });
 module.exports = { inspect };
