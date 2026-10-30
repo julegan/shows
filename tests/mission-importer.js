@@ -16,7 +16,7 @@ assert.equal(a.eventUrl(url+'?ref=x'),null);assert.equal(a.eventUrl(url.replace(
 const presentation=a.parseRoster(page([card({time:'6pm doors, 7pm presentation'})]))[0];assert.deepEqual(presentation.categories,['Presentation']);assert(!presentation.sourceVerifiedMusic);
 const film=a.parseRoster(page([card({time:'6pm film'})]))[0];assert.deepEqual(film.categories,['Film screening']);
 assert.equal(a.times('1pm').kind,'listed');assert.equal(a.times('8pm doors, 8pm dance').kind,'dance');assert.equal(a.times('6pm show, 8pm show'),null);
-assert.equal(a.parseRoster(page([card({date:'Thursday, October 29'})],[{...record,date:'10/29/2026'}]))[0].startDate,'2026-11-?'.replace('2026-11-?','2026-10-30T03:00:00.000Z'));
+assert.equal(a.parseRoster(page([card({date:'Thursday, October 29'})],[{...record,date:'10/29/2026'}]))[0].startDate,'2026-10-30T03:00:00.000Z');
 const event=extract(e,src,new Date('2026-10-29T12:00:00-07:00')).event;assert(event);assert.equal(event.category,'Unclassified');assert.deepEqual(event.musicStyles,[]);assert.equal(event.endsAt,null);
 assert.equal(reconcile([{...event,id:'manual-gully',title:'Gully Boys with Pollyanna and Nonbinary Girlfriend'}],[{event}]).skipped.length,1);
 assert.equal(reconcile([{...event,id:'manual-gully',title:'Gully Boys with Pollyanna',startsAt:'2026-11-06T21:00:00-08:00'}],[{event}]).held.length,1);

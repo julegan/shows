@@ -14,14 +14,14 @@ const norm=s=>plain(s).toLowerCase().replace(/[^a-z0-9]/g,'');
 function sourceIndex(html){
  const tags=[...String(html).matchAll(/<div id="(?:mobileEventAutoComplete|eventAutoComplete)"[^>]*data-uk-autocomplete="([^"]+)"/g)];
  if(!tags.length)throw Error('Mission official year-bearing search data missing');
- const byUrl=new Map();
+ const byUrl=new Map();byUrl.invalidRecords=[];
  for(const m of tags){
  const decoded=m[1].replace(/&quot;/g,'"').replace(/&amp;/g,'&').replace(/&#39;/g,"'");
  if(!decoded.startsWith('{source:')||!decoded.endsWith('}'))throw Error('Mission search data format changed');
  let rows;try{rows=JSON.parse(decoded.slice(8,-1));}catch{throw Error('Mission year-bearing search data is not valid JSON');}
  if(!Array.isArray(rows)||!rows.length||rows.length>120)throw Error('Mission event search data empty or oversized');
  for(const row of rows){
- const url=eventUrl(row.url);if(!url||typeof row.title!=='string'||!/^\d{1,2}\/\d{1,2}\/20\d{2}$/.test(row.date||''))throw Error('Mission search record lacks original event identity/date');
+ const url=eventUrl(row.url);if(!url||typeof row.title!=='string'||!/^\d{1,2}\/\d{1,2}\/20\d{2}$/.test(row.date||'')){byUrl.invalidRecords.push({hold:'Source search record lacks usable full-year date or event identity: '+String(row.date||'unknown').slice(0,80),title:String(row.title||'Unknown source title').slice(0,250),url:url||undefined});continue;}
  const old=byUrl.get(url);if(old&&(old.date!==row.date||norm(old.title)!==norm(row.title)))throw Error('Contradictory Mission search records');byUrl.set(url,row);
  }
  }
@@ -30,7 +30,7 @@ function sourceIndex(html){
 function parseRoster(html){
  const raw=String(html),starts=[...raw.matchAll(/<div class="[^"]*\bevent detailed(?: movie)?"[^>]*>/g)];
  if(!starts.length||starts.length>180)throw Error('Mission detailed roster missing or exceeds bounded source count');
- const index=sourceIndex(raw),rows=[],seen=new Map();
+ const index=sourceIndex(raw),rows=[...index.invalidRecords],seen=new Map();
  for(let i=0;i<starts.length;i++){
  const c=raw.slice(starts[i].index,starts[i+1]?.index||raw.length).slice(0,24000);
  const title=plain(c.match(/<h3 class="uk-panel-title">([\s\S]*?)<\/h3>/)?.[1]);
