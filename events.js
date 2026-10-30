@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-10-29",
   "coverageThrough": "2027-06-11",
-  "totalOccurrences": 717,
-  "addedOccurrences": 9,
-  "batchId": "2026-10-29-offbeat-connection",
+  "totalOccurrences": 844,
+  "addedOccurrences": 127,
+  "batchId": "auto-discovery-2026-10-29-22",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -72,11 +72,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-10-29-outlook-coverage",
       "addedOccurrences": 3
+    },
+    {
+      "batchId": "2026-10-29-offbeat-connection",
+      "addedOccurrences": 9
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 279
+  "musicOccurrences": 280
 };
 window.SHOWS_EVENTS = [
   {
@@ -6447,6 +6451,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-10-29-6412b93c81f9",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T13:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278752-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278752-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278752-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "adx-casual-lettering-2026-10-29",
     "title": "Casual Practice: Intro to Casual Style Lettering",
     "subtitle": "Sign painting and brush lettering",
@@ -6611,6 +6666,57 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-the-off-beat-2026-10-29-edd211afceb2",
+    "title": "10/29 OsoSuckaK, TzoTopStar, Lul Dada, BagBoyMoe, AZ Gutter",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 29, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $31.00 Get Tickets 10/29 OsoSuckaK TzoTopStar Lul Dada BagBoyMoe AZ Gutter The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show All Ages • All Access • No Booze • No J",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/050/compressed/10_29.jpg?1791490773",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "indie-tw-atypical-prototype-you-last-the-takey-takeys-bad-year-cover-perfo-2026-10-29",
@@ -6842,6 +6948,52 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "outlook-aladdin-2026-10-29-protomartyr",
+    "title": "Protomartyr with Accessory",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "doorsAt": "2026-10-29T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "accessibility": null,
+    "description": "Protomartyr with Accessory. Official Aladdin listing publishes doors at 7 PM and show at 8 PM. Admission and age restriction were not verified.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.aladdin-theater.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "Aladdin Theater official tickets",
+        "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
+  },
+  {
     "id": "auto-turn-turn-turn-2026-10-29-f551aeb50683",
     "title": "Ramble Tamble (CCR) + Ragged Hounds (Neil Young) + DJ Stone Bunny",
     "subtitle": "Source-discovered venue event · details need review",
@@ -6988,6 +7140,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-10-29-7d5fb6664639",
+    "title": "The Haunt The Ghost Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278125-the-haunt",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278125-the-haunt",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TheGhostTour26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278125-the-haunt",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -7273,6 +7476,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-off-beat-2026-10-30-b17eaf4348ca",
+    "title": "10/30 Kill Michael, Beautiful Freaks, Starly Kind, Hound",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 30, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 10/30 Kill Michael Beautiful Freaks Starly Kind Hound The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access • ",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/012/compressed/014F8134-B414-484D-95E3-2EFEDBC6D117.jpg?1791488158",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-pain-of-truth-2026-10-30",
     "title": "Pain of Truth",
     "subtitle": "Hardcore · With Missing Link, Fatal Realm, Locked Shut",
@@ -7330,6 +7584,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-10-30-314bf45d3c43",
+    "title": "Ax and the Hatchetmen: The Late Checkout Tour 2026",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: The Rare Occasions",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/33035472/ax-and-the-hatchetmenthe-late-checkout-tour-2026-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/33035472/ax-and-the-hatchetmenthe-late-checkout-tour-2026-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/0f22fc911a0ae91c87a538f841bc93ea.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/33035472/ax-and-the-hatchetmenthe-late-checkout-tour-2026-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -7532,6 +7837,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-10-30-a4f32fd44fd1",
+    "title": "Jesse Sykes and Great Lake Swimmers: Caught Light Tour 2026",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277447-jesse-sykes-and-great-lake-swimmers-caught-light-tour-2026",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277447-jesse-sykes-and-great-lake-swimmers-caught-light-tour-2026",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/GreatLakeSwimmers26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277447-jesse-sykes-and-great-lake-swimmers-caught-light-tour-2026",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -8189,6 +8545,57 @@ window.SHOWS_EVENTS = [
     ]
   },
   {
+    "id": "auto-the-off-beat-2026-10-31-5184b526eeec",
+    "title": "10/31 Masquerade of Madness",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 31, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $16.08 Get Tickets 10/31 Join us if you dare for the 3rd annual Masquerade of Madness Cover show at the Off Beat on Oct 31st. Featuring Sparks by Slightest Ure - Sparks Pa",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/612/compressed/IMG_0980.jpg?1792362687",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-10-31-395507d1f4dd",
     "title": "KURT TRAVIS with Mella, Resilia, & Predisposed",
     "subtitle": "Source-discovered venue event · details need review",
@@ -8340,6 +8747,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-10-31-6b9903b2d014",
+    "title": "Patrick Wolf",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277814-patrick-wolf",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277814-patrick-wolf",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/PatrickWolf26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277814-patrick-wolf",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-10-31-21801104eac5",
     "title": "The 26th Annual Portland Erotic Ball",
     "subtitle": "Source-discovered venue event · details need review",
@@ -8386,6 +8844,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-10-31-97509fe8ad30",
+    "title": "The Brothers Comatose",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-10-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Water Tower",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/40016337/the-brothers-comatose-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/40016337/the-brothers-comatose-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/561041206ee5dfaebaadbcc2a6b50c35.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/40016337/the-brothers-comatose-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -8857,6 +9366,57 @@ window.SHOWS_EVENTS = [
     "seriesId": "lents-farmers-2026"
   },
   {
+    "id": "auto-mission-theater-2026-11-01-4716234bfc92",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-01T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279341-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279341-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279341-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-plini-with-night-verses-portraits-2026-11-01",
     "title": "Plini with Night Verses & Portraits",
     "subtitle": "Live show · Metal, Rock",
@@ -8902,6 +9462,108 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-mission-theater-2026-11-01-563dbbc2cb90",
+    "title": "Taylor Bickett Fairhazel",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-01T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/276626-taylor-bickett",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/276626-taylor-bickett",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TaylorBickett26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/276626-taylor-bickett",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-01-1968b224035e",
+    "title": "Buena Vista Orchestra",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/56309728/buena-vista-orchestra-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/56309728/buena-vista-orchestra-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/9c59a63de6c74da4729472af6af4448a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/56309728/buena-vista-orchestra-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-rival-sons-with-the-blue-stones-the-velveteers-2026-11-01",
@@ -9342,6 +10004,68 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "outlook-aladdin-2026-11-02-king-buffalo",
+    "title": "King Buffalo with L.A. Witch",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-02T20:00:00-08:00",
+    "doorsAt": "2026-11-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "accessibility": null,
+    "description": "King Buffalo with L.A. Witch. Official Aladdin calendar confirms November 2, 2026, doors at 7 PM and show at 8 PM. Check official tickets for admission and age restrictions.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.aladdin-theater.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "King Buffalo",
+        "url": "https://kingbuffalo.com/band",
+        "kind": "artist",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      },
+      {
+        "name": "Aladdin Theater official tickets",
+        "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "musicStyleEvidence": {
+      "basis": "King Buffalo describes its music as heavy psychedelic rock on its official band page.",
+      "urls": [
+        "https://kingbuffalo.com/band"
+      ]
+    },
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-02-c5680f571460",
     "title": "Mdou Moctar (Solo)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -9732,6 +10456,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-03-8463902bdb6f",
+    "title": "Georgia Parker Tashi T",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279035-georgia-parker",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279035-georgia-parker",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/GeorgiaParker26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279035-georgia-parker",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-03-9fdba59c7b9e",
+    "title": "Greg Freeman",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Trinity Ace",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/38148085/greg-freeman-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/38148085/greg-freeman-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/12f474f3048bc4edd7c7e5fee6784ec3.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/38148085/greg-freeman-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-03-69e7f27ec34b",
     "title": "SOLD OUT: Big Star Quintet (Night 2)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -9970,6 +10796,61 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-04-7a92f93a70de",
+    "title": "OMSI Science Pub: Nature’s Copycat: Convergent Evolution Throughout Time",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-04T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: presentation. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/273893-omsi-science-pub-natures-copycat-convergent-evolution-throughout-time",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Presentation"
+    ],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/273893-omsi-science-pub-natures-copycat-convergent-evolution-throughout-time",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": [
+          "Presentation"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/SciencePub1126.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/273893-omsi-science-pub-natures-copycat-convergent-evolution-throughout-time",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -10571,6 +11452,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-05-64a8926d13e7",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279340-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279340-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279340-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-11-05-fb0a9e4e02f0",
     "title": "First Thursday Crafts & Cocktails",
     "subtitle": "Source-discovered venue event · details need review",
@@ -10670,6 +11602,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Roseland Theater official event listing",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-05-6bd8874520d5",
+    "title": "11/5 Phalseprofit, Refugio, Zephyr, Zae Shiki",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 5, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $17.32 Get Tickets 11/5 Phaseprofit Refugio Zephyr Zae Shiki The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze • N",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/754/716/compressed/IMG_3488.jpg?1790110933",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -10920,6 +11903,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-05-36d532d1a03d",
+    "title": "Jake Xerxes Fussell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Dougie Poole",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/81125006/jake-xerxes-fussell-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/81125006/jake-xerxes-fussell-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b42edbbc0c4174a2c290bbc72c1e18df.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/81125006/jake-xerxes-fussell-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -11509,6 +12543,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-06-64a71e2205fe",
+    "title": "Kathy Griffin: New face, New tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/94240898/kathy-griffinnew-facenew-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/94240898/kathy-griffinnew-facenew-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ab39baa889f9982d6982cd806ba0846a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/94240898/kathy-griffinnew-facenew-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-06-0476b84b8559",
+    "title": "11/6 Doombia Album Release",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 6, 2026 · 7:30 pm - 11:30 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/6 Doombia DJ Lissex The Melts De La Flor The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $10 ADV /$12 DOS All Ages • All Access • No Booze •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/761/725/compressed/Doombias_New_Logo2.jpg?1792104947",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-11-06-103939f533f5",
     "title": "INOHA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -11693,6 +12829,56 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-independent-venues",
     "doorsAt": "2026-11-06T19:30:00-08:00"
+  },
+  {
+    "id": "outlook-mission-2026-11-06-gully-boys",
+    "title": "Gully Boys with Pollyanna and Nonbinary Girlfriend",
+    "subtitle": "Live music · discovered through the scheduled outlook",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Punk",
+      "Rock"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Rock"
+    ],
+    "eventFormat": "live",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "doorsAt": "2026-11-06T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "All ages",
+    "accessibility": null,
+    "description": "Gully Boys, Pollyanna and Nonbinary Girlfriend. Official Mission Theater page confirms November 6, 2026, 7 PM doors and 8 PM show, all ages. Admission remains unverified. The venue’s West End Entertainment District promotion is not an additional performer.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277583-gully-boys",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277583-gully-boys",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "musicStyleEvidence": {
+      "basis": "Official event biography describes Pollyanna as a DIY band blending rock, pop and punk; these styles describe that supporting artist on a mixed bill.",
+      "urls": [
+        "https://www.mcmenamins.com/events/277583-gully-boys"
+      ]
+    },
+    "addedIn": "2026-10-29-outlook-coverage",
+    "sourceCategories": []
   },
   {
     "id": "auto-hawthorne-theatre-2026-11-06-2541ab6da608",
@@ -12786,6 +13972,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-07T19:00:00-08:00"
   },
   {
+    "id": "auto-aladdin-theater-2026-11-07-9f8d7822bba5",
+    "title": "Marc Broussard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Cristina Vane",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/47642458/marc-broussard-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/47642458/marc-broussard-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/4fe8c18994b097599f2ce0799af736cd.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/47642458/marc-broussard-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-11-07-d22a0ddd2d06",
     "title": "Pancakes & Booze",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13037,6 +14274,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-07-f3c12857fdbb",
+    "title": "Deante' Hitchcock",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278657-deante-hitchcock",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278657-deante-hitchcock",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/DeanteH26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278657-deante-hitchcock",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "the-coffin-club-soft-vein-with-modele-chalice-sect-2026-11-07",
     "title": "Soft Vein with Modele & Chalice Sect",
     "subtitle": "Darkwave, Industrial, Coldwave · live bill",
@@ -13260,6 +14548,159 @@ window.SHOWS_EVENTS = [
     "seriesId": "lents-farmers-2026"
   },
   {
+    "id": "auto-mission-theater-2026-11-08-1b90ecbee627",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279339-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279339-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279339-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-08-999068a1d213",
+    "title": "Warren Miller's \"Days Off\"",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/30714907/warren-millers-days-off-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/30714907/warren-millers-days-off-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/49040e23c6320828759799f25a1eacc6.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/30714907/warren-millers-days-off-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-08-044024d018bc",
+    "title": "Warren Miller's \"Days Off\"",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/82430430/warren-millers-days-off-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/82430430/warren-millers-days-off-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/49040e23c6320828759799f25a1eacc6.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/82430430/warren-millers-days-off-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-08-7927bf60f606",
     "title": "Bromf + Lee Walker",
     "subtitle": "Source-discovered venue event · details need review",
@@ -13350,6 +14791,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-08-9c48707dca79",
+    "title": "Warren Miller's \"Days Off\"",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/59712086/warren-millers-days-off-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/59712086/warren-millers-days-off-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/49040e23c6320828759799f25a1eacc6.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/59712086/warren-millers-days-off-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -13884,6 +15376,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-09-a8a7d15463b1",
+    "title": "Mushrooms Forest Pub",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279145-mushrooms",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279145-mushrooms",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/ForestPubMushrooms1126.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279145-mushrooms",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-09-fc6eee4a7174",
     "title": "The Low Bar Chorale - Laura Gibson 20th Anniversary Singalong (Night 1)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -14183,6 +15726,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-10-e27453541235",
+    "title": "Foy Vance World Tour | 2026 & 2027",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Bonnie Bishop & Ryan McMullan",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/68643294/foy-vance-world-tour-2026-2027-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/68643294/foy-vance-world-tour-2026-2027-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/83f6bc7f639fde12acf8433cdf59623e.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/68643294/foy-vance-world-tour-2026-2027-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -15117,6 +16711,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-11-d9d277fb984e",
+    "title": "Squirrel Flower",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Sour Widows, How Strange It Is",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/90140768/squirrel-flower-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/90140768/squirrel-flower-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fb261eb5b93b62cb9ed2d67b430f6c9e.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/90140768/squirrel-flower-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-11-c472aeab2d9f",
     "title": "Tank and the Bangas",
     "subtitle": "Source-discovered venue event · details need review",
@@ -15164,6 +16809,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-11-566aa61cb455",
+    "title": "The Hails Duck Pond Tour Meldrop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277463-the-hails",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277463-the-hails",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TheHails26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277463-the-hails",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -15309,6 +17005,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-12-d5247efce8c7",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279338-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279338-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279338-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -16009,6 +17756,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-off-beat-2026-11-13-8446a006cf28",
+    "title": "11/13 High Glow, Die Right, Midnight Morning, Sertraline",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 13, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/13 High Glow Die Right Midnight Morning Sertraline The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/616/compressed/OFFBEAT_NOV13_instagram.jpg?1790969417",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-static-dress-2026-11-13",
     "title": "Static Dress",
     "subtitle": "Post-hardcore · With I Promised the World, Car Underwater, Sherane",
@@ -16230,6 +18028,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-13-82f1a58cc581",
+    "title": "Johnny Franco & His Real Brother Dom",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Album Release with Special Guests",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/43397868/johnny-franco-his-real-brother-dom-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/43397868/johnny-franco-his-real-brother-dom-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1d8e0dba0c52a9c7242b2bbc2497c9a5.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/43397868/johnny-franco-his-real-brother-dom-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-2-nox-novacula-berzerk-arcana-dj-crash-2026-11-13",
     "title": "Shoot the Moon Fest · Night 2: Nox Novacula, Berzerk, Arcana, DJ Crash",
     "subtitle": "Deathrock, Goth, Gothic rock · live bill",
@@ -16291,6 +18140,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-13-6758ec6792de",
+    "title": "Tik Tok: 2010s Recession Pop Dance Night Featuring DJ Dance Dance",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: dance. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277290-tik-tok-2010s-recession-pop-dance-night",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277290-tik-tok-2010s-recession-pop-dance-night",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TikTokDance26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277290-tik-tok-2010s-recession-pop-dance-night",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -17100,6 +19000,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-14-0660f090041c",
+    "title": "Shwayze - The Nostalgia Tour Asher Roth Chiddy Bang",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278292-shwayze-the-nostalgia-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278292-shwayze-the-nostalgia-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/JamesBrown.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278292-shwayze-the-nostalgia-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-14-13433d731f6e",
     "title": "SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 3)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17147,6 +19098,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-14-9f290f1fa1fa",
+    "title": "SOLD OUT: Son Volt",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Kelly Willis",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/32470232/sold-outson-volt-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/32470232/sold-outson-volt-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a27c5fe91b5b3485f79609de26a45d7d.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/32470232/sold-outson-volt-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -17388,6 +19390,57 @@ window.SHOWS_EVENTS = [
     "seriesId": "lents-farmers-2026"
   },
   {
+    "id": "auto-mission-theater-2026-11-15-140a08c3a408",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279337-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279337-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279337-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-15-340eb3601fc6",
     "title": "Fleetmac Wood present Chiffon Frenzy (Day Party!) – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17434,6 +19487,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-15-87ea75900289",
+    "title": "Will Vinton Day Celebration",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T15:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279445-will-vinton-day-celebration",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279445-will-vinton-day-celebration",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/WillvintonDay26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279445-will-vinton-day-celebration",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -17797,6 +19901,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-15-34cd7feb6129",
+    "title": "Joanne Shaw Taylor",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Robert John and the Wreck",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/78756159/joanne-shaw-taylor-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/78756159/joanne-shaw-taylor-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a6c131b087142e6899410c966814e3d9.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/78756159/joanne-shaw-taylor-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "twilight-cafe-and-bar-shoot-the-moon-fest-night-4-los-mal-hablados-chencha-undisputed-2026-11-15",
     "title": "Shoot the Moon Fest · Night 4: Los Mal Hablados, Chencha, Undisputed World Champion, Bill Skasby, Del Sol",
     "subtitle": "Skacore, Punk, Hardcore · live bill",
@@ -18071,6 +20226,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-16-597c0585ee9e",
+    "title": "Vocalocity: We’re Halfway There",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/39115686/vocalocitywere-halfway-there-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/39115686/vocalocitywere-halfway-there-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/506d3c58cb897cf8193d6c6fead848ca.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/39115686/vocalocitywere-halfway-there-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -18565,6 +20771,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-17-411eabc2a295",
+    "title": "The Portland GrandSLAM",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/78379012/the-portland-grandslam-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/78379012/the-portland-grandslam-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8d90ba3a2194bf68e2870e27eafba77f.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/78379012/the-portland-grandslam-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "wonder-the-residents-eskimo-live-tour-2026-11-17",
     "title": "The Residents — Eskimo Live! Tour",
     "subtitle": "Live show · Noise & experimental",
@@ -18650,6 +20907,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-18-c794d3522af1",
+    "title": "Agriculture",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Dry Socket, Pure Hex",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/62124928/agriculture-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/62124928/agriculture-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/9ae3b42bc4026824fb6d28cce752d980.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/62124928/agriculture-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -18759,6 +21067,57 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-mission-theater-2026-11-18-db0442c271ce",
+    "title": "Dev Lemons",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/277821-dev-lemons",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/277821-dev-lemons",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/DevLemons26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/277821-dev-lemons",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-turn-turn-turn-2026-11-18-870ac2f503a5",
@@ -19002,6 +21361,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-19-20f65302a20a",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279336-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279336-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279336-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -19471,6 +21881,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-19-6a7cdffb5c42",
+    "title": "Todd Rundgren: DAMNED IF I DO TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/33295250/todd-rundgrendamned-if-i-do-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/33295250/todd-rundgrendamned-if-i-do-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/cd6ae53f002e63bb3f6973fd7eb28118.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/33295250/todd-rundgrendamned-if-i-do-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-19-4ac48708684c",
     "title": "Amtrac @ PROCESS – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -19555,6 +22016,108 @@ window.SHOWS_EVENTS = [
         "originalCategories": []
       }
     ]
+  },
+  {
+    "id": "auto-the-off-beat-2026-11-20-3929789d8876",
+    "title": "11/20 Heaven Skate, Rheumatoid Trapezoid, Steevee Von Schneedle, Dopamean",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 20, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/20 Heaven Skate Rheumatoid Trapezoid Steevee Von Schneedle Dopamean The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ag",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/775/412/compressed/oiboiboibcoibec.jpg?1791403620",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-20-7e83b7230e97",
+    "title": "Grief Sucks: A One Man Show By KevOnStage",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/89590950/grief-sucksa-one-man-show-by-kevonstage-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/89590950/grief-sucksa-one-man-show-by-kevonstage-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fff2f525bb216c2cea29f09789ebba45.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/89590950/grief-sucksa-one-man-show-by-kevonstage-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-starday-tavern-2026-11-20-3ee31e0fe03f",
@@ -19665,6 +22228,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-20-621437cf5608",
+    "title": "Crooked Looks and Ray Ramano",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279115-crooked-looks-and-ray-ramano",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279115-crooked-looks-and-ray-ramano",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/CrookedLooks26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279115-crooked-looks-and-ray-ramano",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -20431,6 +23045,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-21-2e3df2e0380a",
+    "title": "MECH & Tinhorn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278651-mech-tinhorn",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278651-mech-tinhorn",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MechTinehorn26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278651-mech-tinhorn",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-21-10603f6e3db0",
+    "title": "Paula Poundstone",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/38968586/paula-poundstone-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/38968586/paula-poundstone-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/34c0bbcdebdc220cf5e05b474c8bb9a4.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/38968586/paula-poundstone-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-21-1a7874ab8b60",
     "title": "Seb El Zin",
     "subtitle": "Source-discovered venue event · details need review",
@@ -20843,6 +23559,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-22T19:30:00-08:00"
   },
   {
+    "id": "auto-aladdin-theater-2026-11-22-fed36c505622",
+    "title": "SOLD OUT: Haley Heynderickx",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a6cc14b4950f27b96f9e535f18a7ced8.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-22-34da21c31fdf",
     "title": "TV VIKING followed by Sinferno Cabaret",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21076,6 +23843,57 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-23-05533cb63a71",
+    "title": "Haley Heynderickx",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/40830725/haley-heynderickx-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/40830725/haley-heynderickx-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a6cc14b4950f27b96f9e535f18a7ced8.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/40830725/haley-heynderickx-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "roseland-alter-bridge-with-big-wreck-tim-montana-2026-11-24",
@@ -21599,6 +24417,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-11-25-6d67fa98a9f7",
+    "title": "SOLD OUT: Emma Ruth Rundle - THESE KILLING TIMES",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Cinder Well",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/53477310/sold-outemma-ruth-rundle-these-killing-times-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/53477310/sold-outemma-ruth-rundle-these-killing-times-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8dcc2bcffedd03bae137da1af7bbdd2b.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/53477310/sold-outemma-ruth-rundle-these-killing-times-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-25-6ccec6f41f69",
+    "title": "The Shindig Show with Jimmy Shin",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279116-the-shindig-show-with-jimmy-shin",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279116-the-shindig-show-with-jimmy-shin",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TGJimmy26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279116-the-shindig-show-with-jimmy-shin",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-25-eb3cb186fb56",
     "title": "Emo Night w Reggie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21689,6 +24609,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-11-26-9b320f72d816",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-26T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279334-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279334-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279334-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -21884,6 +24855,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-27-a7ea6658dc58",
+    "title": "Holiday Music Bingo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: event. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279538-holiday-music-bingo",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279538-holiday-music-bingo",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/BingoBeer.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279538-holiday-music-bingo",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "revolution-neurosis-with-great-falls-and-additional-guests-2026-11-27",
     "title": "Neurosis with Great Falls and additional guests",
     "subtitle": "Live show · Metal, Noise & experimental",
@@ -21992,6 +25014,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-27-3c5b3ce111c6",
+    "title": "The Storm Large Holiday Ordeal (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/36374313/the-storm-large-holiday-ordeal-night-1-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/36374313/the-storm-large-holiday-ordeal-night-1-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/4d410174050974d402cf8347a4cb661a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/36374313/the-storm-large-holiday-ordeal-night-1-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -22523,6 +25596,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-28-88318e30a2b6",
+    "title": "Sound & Vision starring The Christopher Brown Quartet including David Bowie classics and deep cuts with a visual narrative by VJ Gregarious",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278032-sound-vision",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278032-sound-vision",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/SoundVision26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278032-sound-vision",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "wonder-the-cure-depeche-mode-new-order-tribute-night-j-fell-and-nite-wav-2026-11-28",
     "title": "The Cure, Depeche Mode & New Order Tribute Night — J-Fell and Nite Wave",
     "subtitle": "Tribute performance · Goth & darkwave, Post-punk",
@@ -22569,6 +25693,57 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-venue-coverage"
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-28-265db4ca98b9",
+    "title": "The Storm Large Holiday Ordeal (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/68026462/the-storm-large-holiday-ordeal-night-2-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/68026462/the-storm-large-holiday-ordeal-night-2-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/4d410174050974d402cf8347a4cb661a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/68026462/the-storm-large-holiday-ordeal-night-2-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-star-theater-2026-11-28-a6f81228bfae",
@@ -22671,6 +25846,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-11-29-27a32beaf203",
+    "title": "Mission Theater History & Art Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: listed. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279333-mission-theater-history-art-tour",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279333-mission-theater-history-art-tour",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTours25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279333-mission-theater-history-art-tour",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-29-ffdff56acd02",
+    "title": "SOLD OUT: Marc Maron: Yammering into the Void Tour (Early Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/38666206/sold-outmarc-maronyammering-into-the-void-tour-early-show-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/38666206/sold-outmarc-maronyammering-into-the-void-tour-early-show-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7f887e98d20a70fc0107e00db0da6027.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/38666206/sold-outmarc-maronyammering-into-the-void-tour-early-show-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-29-e6bf6912a86d",
     "title": "El Sobrente & The Remainders",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22761,6 +26038,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-11-29-d44df2872e4c",
+    "title": "SOLD OUT: Marc Maron: Yammering into the Void Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/63564093/sold-outmarc-maronyammering-into-the-void-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/63564093/sold-outmarc-maronyammering-into-the-void-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7f887e98d20a70fc0107e00db0da6027.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/63564093/sold-outmarc-maronyammering-into-the-void-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -23045,6 +26373,61 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-12-01-0582b167daff",
+    "title": "OMSI SCience Pub: The River Remembers: Community, Science, and the Future of Portland Harbor",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-01T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: presentation. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/273892-omsi-science-pub-the-river-remembers-community-science-and-the-future-of-portland-harbor",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Presentation"
+    ],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/273892-omsi-science-pub-the-river-remembers-community-science-and-the-future-of-portland-harbor",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": [
+          "Presentation"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/SciencePub1226.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/273892-omsi-science-pub-the-river-remembers-community-science-and-the-future-of-portland-harbor",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-amorphis-insomnium-2026-12-01",
     "title": "Amorphis & Insomnium",
     "subtitle": "Metal · With Hinayana",
@@ -23101,6 +26484,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-01-9ed81739180a",
+    "title": "A John Waters Christmas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/52472471/a-john-waters-christmas-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/52472471/a-john-waters-christmas-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d14a74ef957dea935a538794d44055f3.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/52472471/a-john-waters-christmas-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -23479,6 +26913,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-expansion"
   },
   {
+    "id": "auto-mission-theater-2026-12-03-62d440e0bc53",
+    "title": "Demolicious: Champion of Champions",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279178-demolicious-champion-of-champions",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279178-demolicious-champion-of-champions",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTheaterGeneric.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279178-demolicious-champion-of-champions",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-12-03-7b91d87edaa0",
+    "title": "12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 3, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $22.99 Get Tickets 12/3 Mel Bryant & The Mercy Makers Everybody's Worried About Owen Trans Panic The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $20 ADV /$25 DOS ",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/756/887/compressed/_Q2A1329.jpg?1790294922",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-03-6ad8ecd8fd0d",
     "title": "Blue Flags Black Grass + Dumpster Joe & The Boys",
     "subtitle": "Source-discovered venue event · details need review",
@@ -23759,6 +27295,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-12-03-53968182ad24",
+    "title": "Zepparella the Led Zeppelin Powerhouse",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/32952057/zepparella-the-led-zeppelin-powerhouse-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/32952057/zepparella-the-led-zeppelin-powerhouse-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e1a973f10a2d8d6800a0a40b6f31a73f.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/32952057/zepparella-the-led-zeppelin-powerhouse-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-kenton-club-2026-12-04-93e6c27c4106",
     "title": "Passengers-Object Unto Earth-Milton Ire Void-Pscyclops",
     "subtitle": "Source-discovered venue event · details need review",
@@ -23893,6 +27480,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-12-04-ae1b031a6260",
+    "title": "Nerves: The Live Audiovisual Experience",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279221-nerves-the-live-audiovisual-experience",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279221-nerves-the-live-audiovisual-experience",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Nerves26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279221-nerves-the-live-audiovisual-experience",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-04-8e1c8d189b5a",
+    "title": "Cat Clyde & Dean Johnson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/48494309/cat-clyde-dean-johnson-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/48494309/cat-clyde-dean-johnson-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8fdd2d9f2eb417291e82ba6cbf37e235.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/48494309/cat-clyde-dean-johnson-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -24387,6 +28076,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-12-05-c1ff08ebe004",
+    "title": "An Evening with Catch Magazine",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279446-an-evening-with-catch-magazine",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279446-an-evening-with-catch-magazine",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/CatchMag26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279446-an-evening-with-catch-magazine",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "roseland-frankie-and-the-witch-fingers-gibby-haynes-with-spoon-bender-jonn-2026-12-05",
     "title": "Frankie and the Witch Fingers + Gibby Haynes with Spoon Bender & Jonny's Day Out",
     "subtitle": "Live show · Rock, Noise & experimental",
@@ -24614,6 +28354,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-05-511e76fd9b66",
+    "title": "Matt Rogers: THIS TIME IT’S *REALLY* CHRISTMAS Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/80307484/matt-rogersthis-time-its-reallychristmas-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/80307484/matt-rogersthis-time-its-reallychristmas-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/12c77242279ec2ff17233b78b4f09217.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/80307484/matt-rogersthis-time-its-reallychristmas-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -25154,6 +28945,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-12-06-c6b6aec02773",
+    "title": "Pete Yorn solo acoustic - 25th Anniversary of musicforthemorningafter",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/63972028/pete-yorn-solo-acoustic-25th-anniversary-of-musicforthemorningafter-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/63972028/pete-yorn-solo-acoustic-25th-anniversary-of-musicforthemorningafter-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f733909637e94841062caf51deb5d28d.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/63972028/pete-yorn-solo-acoustic-25th-anniversary-of-musicforthemorningafter-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-07-ed60ebdcfc1b",
     "title": "Open Mic with Lucas Benoit",
     "subtitle": "Source-discovered venue event · details need review",
@@ -25542,6 +29384,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-12-08-31ab04968b44",
+    "title": "Apes of the State Pigeon Pit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278150-apes-of-the-state",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278150-apes-of-the-state",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/ApesOfTheState26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278150-apes-of-the-state",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-miss-may-i-born-of-osiris-2026-12-08",
     "title": "Miss May I x Born of Osiris",
     "subtitle": "Metalcore · With Convictions, Downswing",
@@ -25799,6 +29692,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-12-09-831fadcf5451",
+    "title": "Apes of the State Pigeon Pit",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278151-apes-of-the-state",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278151-apes-of-the-state",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/ApesOfTheState26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278151-apes-of-the-state",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-09-bdbd989c1bd3",
     "title": "NO FUN KARAOKE",
     "subtitle": "Source-discovered venue event · details need review",
@@ -25945,6 +29889,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-09-0a3e4f95680c",
+    "title": "The Bobby Lees",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Forty Feet Tall, Buddy Wynkoop",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/94256309/the-bobby-lees-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/94256309/the-bobby-lees-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/83b2b722de817be3c9eb739bf9264d87.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/94256309/the-bobby-lees-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -26638,6 +30633,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-12-11-6da4418c8c5b",
+    "title": "Pokey LaFarge",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Cicada Rhythm",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/55334627/pokey-lafarge-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/55334627/pokey-lafarge-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8d8127c1646cb89b66c8e354726e401d.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/55334627/pokey-lafarge-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-void-lord-support-tba-2026-12-11",
     "title": "Void Lord • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -27211,6 +31257,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-12-12T19:00:00-08:00"
   },
   {
+    "id": "auto-mission-theater-2026-12-12-96f6cae6d9b0",
+    "title": "BodyMagick Temple Burlesque Winter Showcase 2026",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278983-bodymagick-temple-burlesque",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278983-bodymagick-temple-burlesque",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/BodyMagick26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278983-bodymagick-temple-burlesque",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "crafty-wonderland-2026-12-13",
     "title": "Crafty Wonderland Holiday Art + Craft Market",
     "subtitle": "Handmade goods and independent makers",
@@ -27688,6 +31785,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-12-15-e565d431834e",
+    "title": "JD McPherson - SOCKS: A Rock N’ Roll Christmas Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Melissa Carper",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/80605810/jd-mcpherson-socksa-rock-nroll-christmas-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/80605810/jd-mcpherson-socksa-rock-nroll-christmas-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2894195f25a4506ebbe4a7ceece6ec1b.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/80605810/jd-mcpherson-socksa-rock-nroll-christmas-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-12-15-4d1cdfcd848e",
     "title": "Tracey Nelson + friends",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28120,6 +32268,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mission-theater-2026-12-18-9a56855876fd",
+    "title": "Dr. Brady Smith",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278043-dr-brady-smith",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278043-dr-brady-smith",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionTheaterGeneric.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278043-dr-brady-smith",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-18-4f1bfc9c84eb",
+    "title": "TATAS for TOYS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/75662674/tatas-for-toys-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/75662674/tatas-for-toys-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2473dcaf060beef3af130c2022b1754a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/75662674/tatas-for-toys-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-18-5b5eaa21d85f",
     "title": "Boy Dinner + TBD + TBD",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28247,6 +32497,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2026-12-19-b22ccf0a8058",
+    "title": "True Loves",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/38815767/true-loves-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/38815767/true-loves-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f76ecc9b36a4b18d10cd07c58a0fc079.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/38815767/true-loves-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -28391,6 +32692,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2026-12-21-064fe0f81f04",
+    "title": "12/21 Rotting Carcass, Miss March, Crazy Ben",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 21, 2026 · 7:00 pm - 10:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $18.35 Get Tickets 12/21 Rotting Carcass Miss March Crazy Ben The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze •",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/750/233/compressed/1000032481.jpg?1793048319",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "2026-10-29-offbeat-connection",
+    "discovery": {
+      "sourceId": "the-off-beat",
       "method": "primary-source-collection"
     }
   },
@@ -29364,6 +33716,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2026-12-31-dc59c8cb47c5",
+    "title": "Jenny Don't and the Spurs Cowboy Prom NYE 2026",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Toody Cole and Her Band",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/40559385/jenny-dont-and-the-spurs-cowboy-prom-nye-2026-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/40559385/jenny-dont-and-the-spurs-cowboy-prom-nye-2026-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a09860cb3cdaef082b436aea9728c302.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/40559385/jenny-dont-and-the-spurs-cowboy-prom-nye-2026-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2026-12-31-2d4f0ff350af",
+    "title": "New Year's Eve with Garcia Birthday Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278879-new-years-eve-with-garcia-birthday-band",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278879-new-years-eve-with-garcia-birthday-band",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/nye-art-2022.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278879-new-years-eve-with-garcia-birthday-band",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-12-31-7b14a6bb573a",
     "title": "2000s New Year’s Eve Y2K Ball",
     "subtitle": "Source-discovered venue event · details need review",
@@ -29907,6 +34361,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-01-14-b3fd0e8ee1cc",
+    "title": "Five For Fighting with String Quartet",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Lace and Lee",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/93170768/five-for-fighting-with-string-quartet-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/93170768/five-for-fighting-with-string-quartet-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d42c698ba0915c9660c3e7fab7e2daf3.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/93170768/five-for-fighting-with-string-quartet-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-01-14-7fe242219d87",
     "title": "CLUB SLAYYY: SLAYYYTER + HYPERPOP NIGHT 🐰",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30047,6 +34552,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-01-15-0b300b454546",
+    "title": "Tanael Joachim",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/278563-tanael-joachim",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/278563-tanael-joachim",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/TanaelJoachim25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/278563-tanael-joachim",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -30196,6 +34752,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-01-17-2d8ccb59a881",
+    "title": "True Widow",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/45431061/true-widow-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/45431061/true-widow-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8cb7d8421f2be64e2d295c42d57ded89.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/45431061/true-widow-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2027-01-19-41d35dee75e0",
     "title": "DOMINIQUE & THE DIAMONDS with Satán Es Real",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30292,6 +34899,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-01-21-c82fe44212df",
+    "title": "44phantom",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279388-44phantom",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279388-44phantom",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/44Phantom26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279388-44phantom",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -30443,6 +35101,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-01-23-2e1b0106ae44",
+    "title": "Brian Posehn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/68708051/brian-posehn-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/68708051/brian-posehn-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/bc150b31d4e93b177d71d463446ebec1.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/68708051/brian-posehn-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -30701,6 +35410,210 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-01-30-8ae3102092b3",
+    "title": "Bonnie “Prince” Billy (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-30T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Tiny Vipers",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/68309465/bonnie-princebilly-night-1-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/68309465/bonnie-princebilly-night-1-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/809937b970c6d9a9d6d1016804be7270.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/68309465/bonnie-princebilly-night-1-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-01-31-20ac4edcae01",
+    "title": "Bonnie “Prince” Billy (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Tiny Vipers",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/66870556/bonnie-princebilly-night-2-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/66870556/bonnie-princebilly-night-2-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/809937b970c6d9a9d6d1016804be7270.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/66870556/bonnie-princebilly-night-2-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-02-4a54d8aa4b2e",
+    "title": "Science on Tap: The Counting of Crows",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/55592168/science-on-tapthe-counting-of-crows-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/55592168/science-on-tapthe-counting-of-crows-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d26c306de907e28c1d1b6804b308c299.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/55592168/science-on-tapthe-counting-of-crows-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-03-dd02f165f179",
+    "title": "Falco & Book Play Jerry Garcia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/84384147/falco-book-play-jerry-garcia-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/84384147/falco-book-play-jerry-garcia-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a34f6546dd06f76e6518478b4d151be3.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/84384147/falco-book-play-jerry-garcia-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2027-02-03-e7d011ffc28e",
     "title": "Rare Americans",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30801,6 +35714,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-02-04-6e3e229bd039",
+    "title": "WINONA FIGHTER is BRUTAL & EXTREMELY UNDERRATED…the tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/94290671/winona-fighter-is-brutal-extremely-underratedthe-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/94290671/winona-fighter-is-brutal-extremely-underratedthe-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e16af70eb6845c023570298c9bdfcf1c.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/94290671/winona-fighter-is-brutal-extremely-underratedthe-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-02-04-7cc4fec77f1c",
     "title": "Romare (live) – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30848,6 +35812,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-05-ce3ecedcd43d",
+    "title": "Legends: Keola Beamer & Henry Kapono, with Moanalani Beamer, hula",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/97553913/legendskeola-beamer-henry-kaponowith-moanalani-beamerhula-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/97553913/legendskeola-beamer-henry-kaponowith-moanalani-beamerhula-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/34f69c256a4e004e5e7658d51a5a3336.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/97553913/legendskeola-beamer-henry-kaponowith-moanalani-beamerhula-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -30902,6 +35917,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-02-07-68578c2aa916",
+    "title": "Watch What Crappens: In The Mix Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-07T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/70423694/watch-what-crappensin-the-mix-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/70423694/watch-what-crappensin-the-mix-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e0eb3517d245bbc4584e8baaa837abc3.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/70423694/watch-what-crappensin-the-mix-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2027-02-09-cba3ae68a926",
     "title": "Wolves In The Throne Room",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30948,6 +36014,159 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-10-0194164e6f82",
+    "title": "Jess Williamson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Andrew Sa",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/96546512/jess-williamson-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/96546512/jess-williamson-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f6747f456512f456e9d6703206c49f30.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/96546512/jess-williamson-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-11-f20938866404",
+    "title": "2027 Fly Fishing Film Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/73037278/2027-fly-fishing-film-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/73037278/2027-fly-fishing-film-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2890ffa1850b39bb8830b10d67d2ad9b.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/73037278/2027-fly-fishing-film-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-12-ba3a8eb28f8e",
+    "title": "Los Lobos",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/70698019/los-lobos-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/70698019/los-lobos-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e1f50d2b3ce34bc6df451c4361323f37.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/70698019/los-lobos-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -31002,6 +36221,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-02-13-2c04548663f5",
+    "title": "Los Lobos",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/36455150/los-lobos-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/36455150/los-lobos-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e1f50d2b3ce34bc6df451c4361323f37.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/36455150/los-lobos-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-14-d4111be6e943",
+    "title": "Colin Mochrie & Friends Valentine's Day Show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-14T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/73375478/colin-mochrie-friends-valentines-day-show-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/73375478/colin-mochrie-friends-valentines-day-show-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ea753076e70cfcf9c026c5de4f7d817b.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/73375478/colin-mochrie-friends-valentines-day-show-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-02-16-9f9963c6c9cb",
     "title": "La Roux",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31049,6 +36370,210 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-16-ff37bfc07215",
+    "title": "Mania: The ABBA Tribute",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-16T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/64714422/maniathe-abba-tribute-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/64714422/maniathe-abba-tribute-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/3993fe391ba63fcc2531f8cd433dfd12.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/64714422/maniathe-abba-tribute-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-17-3b5c93511b14",
+    "title": "Joan Osborne - Relish Live",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/65530668/joan-osborne-relish-live-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/65530668/joan-osborne-relish-live-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/63bbc42f75fccfff39d2e91b83eace4e.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/65530668/joan-osborne-relish-live-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-18-021b65e9d68a",
+    "title": "DENNY LOVE: SHOW LOVE TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/73189164/denny-loveshow-love-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/73189164/denny-loveshow-love-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/647c66ee032c60fd66e59972d01fc589.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/73189164/denny-loveshow-love-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-19-cef7d3a4cad9",
+    "title": "Ladysmith Black Mambazo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/80770165/ladysmith-black-mambazo-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/80770165/ladysmith-black-mambazo-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/93fd1558878391c600583f76c36f080c.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/80770165/ladysmith-black-mambazo-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -31251,6 +36776,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-02-20-f80ce1e422b9",
+    "title": "Alt Bloom",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279440-alt-bloom",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279440-alt-bloom",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/AltBloom27.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279440-alt-bloom",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-20-f3f1754cdbe9",
+    "title": "Jason Cheny",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/78645905/jason-cheny-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/78645905/jason-cheny-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/aa9a489fba05190c53a2ac8b97c5824e.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/78645905/jason-cheny-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -31501,6 +37128,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-02-26-44c559ec2685",
+    "title": "Marian Hill ACT TWO: THE TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-26T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/57112182/marian-hill-act-twothe-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/57112182/marian-hill-act-twothe-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5268d918059e623288cc17bf80e6e391.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/57112182/marian-hill-act-twothe-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-02-27-cc587c3b6b85",
     "title": "Blue October: Foiled 20th Anniversary World Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31597,6 +37275,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-02-27-99694b350d6e",
+    "title": "G. Love & Special Sauce - Yeah, It’s That Easy 30th Anniversary Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Todd Carey",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/36069643/glove-special-sauce-yeahits-that-easy-30th-anniversary-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/36069643/glove-special-sauce-yeahits-that-easy-30th-anniversary-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/690c90b9f84a02f9d6dd0425b559c096.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/36069643/glove-special-sauce-yeahits-that-easy-30th-anniversary-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -31954,6 +37683,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-05-0f534429379b",
+    "title": "Vincent Lima",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-05T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/39308269/vincent-lima-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/39308269/vincent-lima-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/671349128e89f709e3cf46c1cc5b9038.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/39308269/vincent-lima-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-03-05-2d37a722507d",
     "title": "Blondshell",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32055,6 +37835,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-06-780972486b02",
+    "title": "Michael Kosta",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/41256109/michael-kosta-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/41256109/michael-kosta-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b6d96239ff50a313d52011be26ba102d.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/41256109/michael-kosta-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-03-06-1cad365b7ff1",
     "title": "Sam Gendel + Sam Wilkes – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32152,6 +37983,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-03-08-923310db5aca",
+    "title": "Biamp Portland Jazz Festival Presented by PDX Jazz",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279176-biamp-portland-jazz-festival-presented-by-pdx-jazz",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279176-biamp-portland-jazz-festival-presented-by-pdx-jazz",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/StumptownJazz26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279176-biamp-portland-jazz-festival-presented-by-pdx-jazz",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -32407,6 +38289,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-11-309ed059da4c",
+    "title": "Trish Toledo with The Charities",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/41230690/trish-toledo-with-the-charities-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/41230690/trish-toledo-with-the-charities-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/037ca8baf93419b81bcef66fcdd3edfe.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/41230690/trish-toledo-with-the-charities-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2027-03-12-60aa893a7e8a",
     "title": "Haken – In A Fever Dream Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32453,6 +38386,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-03-12-bb2ffdabb1a9",
+    "title": "David Nihill: Taking Tangents Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/51834096/david-nihilltaking-tangents-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/51834096/david-nihilltaking-tangents-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f133c41cece0a2b03c610c4c2e686805.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/51834096/david-nihilltaking-tangents-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -32558,6 +38542,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-13-aa877dd96f41",
+    "title": "Larry Carlton",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/97238538/larry-carlton-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/97238538/larry-carlton-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/eb4932df473d6ce0a36731e97c4647c7.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/97238538/larry-carlton-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-13-4811276b8b29",
     "title": "SML &#8211; Night 2",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32656,6 +38691,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-03-14-3ab8ced0a52c",
+    "title": "40 FINGERS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-14T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/60927424/40-fingers-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/60927424/40-fingers-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1c84d5e8aabb30811719c7a850f1d6a7.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/60927424/40-fingers-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -32913,6 +38999,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-20-3277dcbfd1b5",
+    "title": "Rising Appalachia - Trade My Troubles Tour (Early Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-20T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Buffalo Kin",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/71350484/rising-appalachia-trade-my-troubles-tour-early-show-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/71350484/rising-appalachia-trade-my-troubles-tour-early-show-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b5b99dca74642e236bea8eae4a2ad603.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/71350484/rising-appalachia-trade-my-troubles-tour-early-show-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-03-20-102875fc3ca7",
+    "title": "Rising Appalachia - Trade My Troubles Tour (Late Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-20T21:30:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Buffalo Kin",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/36885413/rising-appalachia-trade-my-troubles-tour-late-show-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/36885413/rising-appalachia-trade-my-troubles-tour-late-show-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b5b99dca74642e236bea8eae4a2ad603.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/36885413/rising-appalachia-trade-my-troubles-tour-late-show-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-21-35bf85704cb4",
     "title": "HANS WILLIAMS",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33116,6 +39304,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-26-6ffc9ca72d64",
+    "title": "Will Burkart",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/31464870/will-burkart-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/31464870/will-burkart-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/32dc3152640cbc350e57aa7d0ef295b9.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/31464870/will-burkart-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-30-5d900e57fb08",
     "title": "CAIOLA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33163,6 +39402,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-03-30-93239e0e32ff",
+    "title": "Sarah Julia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279408-sarah-julia",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279408-sarah-julia",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/SarahJulia26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279408-sarah-julia",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -33218,6 +39508,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-31-a688affc089f",
+    "title": "Susannah Joffe - The Dust Settles Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-31T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/44752985/susannah-joffe-the-dust-settles-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/44752985/susannah-joffe-the-dust-settles-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1c2983b18caf2d5eb99fb2c5bca7954a.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/44752985/susannah-joffe-the-dust-settles-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-04-01-8587402fac72",
     "title": "Nothing But Thieves",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33265,6 +39606,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-04-01-179733a66090",
+    "title": "Victoryland",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-01T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279396-victoryland",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279396-victoryland",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Victoryland_26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279396-victoryland",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -33371,6 +39763,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-02-88a637af6e73",
+    "title": "THAO - \"Show Me\" Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-02T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/55140873/thao-show-metour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/55140873/thao-show-metour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5bea9885e1d10edbdfdb715b5c9e68c9.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/55140873/thao-show-metour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-04-03-ca8397422a88",
     "title": "GLOW JOB 2027: GLOW HARD OR GLOW HOME (NIGHT 2))",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33422,6 +39865,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-03-223039db186c",
+    "title": "Iceage",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-03T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/74384514/iceage-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/74384514/iceage-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/0445b682d652ce31ca5e7438c286937f.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/74384514/iceage-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-04-04-658bacbfe418",
     "title": "Four Year Strong: Rise or Die Trying 25 Year Anniversary Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33468,6 +39962,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-04-05-f461fbc8ac55",
+    "title": "Bruce Cockburn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-05T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/57495192/bruce-cockburn-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/57495192/bruce-cockburn-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/59d32f6254fa253a1f2e273fc23f7c02.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/57495192/bruce-cockburn-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -33622,6 +40167,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-10-954bbc982815",
+    "title": "JUDY COLLINS - SWEET JUDY BLUE EYES: FAREWELL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-10T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/74207635/judy-collins-sweet-judy-blue-eyesfarewell-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/74207635/judy-collins-sweet-judy-blue-eyesfarewell-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b3e26d6a2b0fce9495011379e4583c38.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/74207635/judy-collins-sweet-judy-blue-eyesfarewell-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-04-11-bfb70a4357d7",
     "title": "Jack & Jack – All Ages",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33719,6 +40315,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-04-15-c983a9c6737d",
+    "title": "Alex Sampson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-15T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279123-alex-sampson",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279123-alex-sampson",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/AlexSampson26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279123-alex-sampson",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -33926,6 +40573,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-26-acdffe8067f0",
+    "title": "Mei Semones",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/58671767/mei-semones-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/58671767/mei-semones-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6671ac21b575c772b1d3024919d49f49.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/58671767/mei-semones-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-04-27-1c13a803bdd5",
     "title": "The Interrupters",
     "subtitle": "Source-discovered venue event · details need review",
@@ -34023,6 +40721,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-01-efcf0b03cc1d",
+    "title": "CG5 Presents: The GAMER Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-01T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/80509440/cg5-presentsthe-gamer-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/80509440/cg5-presentsthe-gamer-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e789cf7e43996fafd406b99b3bf597e1.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/80509440/cg5-presentsthe-gamer-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -34129,6 +40878,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-05-11-c22cb0260a34",
+    "title": "Alaska Thunderf*ck: The Revolution Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-11T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/62407073/alaska-thunderfckthe-revolution-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/62407073/alaska-thunderfckthe-revolution-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/dcc3bd717a76284814e639c8fa025b70.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/62407073/alaska-thunderfckthe-revolution-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2027-05-12-75753d7308e6",
     "title": "Haiden Henderson",
     "subtitle": "Source-discovered venue event · details need review",
@@ -34175,6 +40975,159 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-13-b7c31d302368",
+    "title": "cleopatrick",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-13T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/56883326/cleopatrick-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/56883326/cleopatrick-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b209f050e7507652db52ce05cec34b24.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/56883326/cleopatrick-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-05-13-e8e7ce8ff6e5",
+    "title": "Keo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-13T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/279124-keo",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/279124-keo",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/KEO26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279124-keo",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-16-bcd0cf434cdc",
+    "title": "The Arcadian Wild - Make It Out Alive Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-16T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/68504589/the-arcadian-wild-make-it-out-alive-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/68504589/the-arcadian-wild-make-it-out-alive-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/638f49743417fcd2512cb52935e5d7c6.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/68504589/the-arcadian-wild-make-it-out-alive-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -34226,6 +41179,159 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-22-f02ac01832c8",
+    "title": "Al Stewart: Farewell Tour with special guests, The Empty Pockets",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/88121887/al-stewartfarewell-tour-with-special-gueststhe-empty-pockets-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/88121887/al-stewartfarewell-tour-with-special-gueststhe-empty-pockets-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/357c7efe4d1813f8b0ea2d81d277faed.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/88121887/al-stewartfarewell-tour-with-special-gueststhe-empty-pockets-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-23-5f5680a41a62",
+    "title": "The Aces: The Kiss Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-23T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/97525643/the-acesthe-kiss-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/97525643/the-acesthe-kiss-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d28ad1c00e6e3a79f9b6a3b7560f00b9.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/97525643/the-acesthe-kiss-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-05-27-15bd49af93d2",
+    "title": "John Splithoff 2027 Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-27T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/91810152/john-splithoff-2027-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-10-29",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/91810152/john-splithoff-2027-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-10-29",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/53f0731c22f20fac951f1168d5d60c88.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/91810152/john-splithoff-2027-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -34429,623 +41535,6 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "wonder-ballroom",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "outlook-aladdin-2026-10-29-protomartyr",
-    "title": "Protomartyr with Accessory",
-    "subtitle": "Live music · discovered through the scheduled outlook",
-    "category": "Music",
-    "tags": [
-      "Live music"
-    ],
-    "musicStyles": [],
-    "eventFormat": "live",
-    "startTimeKind": "show",
-    "startsAt": "2026-10-29T20:00:00-07:00",
-    "doorsAt": "2026-10-29T19:00:00-07:00",
-    "endsAt": null,
-    "venue": "Aladdin Theater",
-    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
-    "neighborhood": "Brooklyn",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "accessibility": null,
-    "description": "Protomartyr with Accessory. Official Aladdin listing publishes doors at 7 PM and show at 8 PM. Admission and age restriction were not verified.",
-    "source": "Aladdin Theater",
-    "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
-    "icon": "◇",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
-    "sources": [
-      {
-        "name": "Aladdin Theater",
-        "url": "https://www.aladdin-theater.com/",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      },
-      {
-        "name": "Aladdin Theater official tickets",
-        "url": "https://www.etix.com/ticket/p/32935754/protomartyr-portland-aladdin-theater",
-        "kind": "official-ticketing",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "addedIn": "2026-10-29-outlook-coverage",
-    "sourceCategories": []
-  },
-  {
-    "id": "outlook-aladdin-2026-11-02-king-buffalo",
-    "title": "King Buffalo with L.A. Witch",
-    "subtitle": "Live music · discovered through the scheduled outlook",
-    "category": "Music",
-    "tags": [
-      "Live music",
-      "Rock"
-    ],
-    "musicStyles": [
-      "Rock"
-    ],
-    "eventFormat": "live",
-    "startTimeKind": "show",
-    "startsAt": "2026-11-02T20:00:00-08:00",
-    "doorsAt": "2026-11-02T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "Aladdin Theater",
-    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
-    "neighborhood": "Brooklyn",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "accessibility": null,
-    "description": "King Buffalo with L.A. Witch. Official Aladdin calendar confirms November 2, 2026, doors at 7 PM and show at 8 PM. Check official tickets for admission and age restrictions.",
-    "source": "Aladdin Theater",
-    "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
-    "icon": "◇",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
-    "sources": [
-      {
-        "name": "Aladdin Theater",
-        "url": "https://www.aladdin-theater.com/",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      },
-      {
-        "name": "King Buffalo",
-        "url": "https://kingbuffalo.com/band",
-        "kind": "artist",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      },
-      {
-        "name": "Aladdin Theater official tickets",
-        "url": "https://www.etix.com/ticket/p/84319558/king-buffalo-portland-aladdin-theater",
-        "kind": "official-ticketing",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "musicStyleEvidence": {
-      "basis": "King Buffalo describes its music as heavy psychedelic rock on its official band page.",
-      "urls": [
-        "https://kingbuffalo.com/band"
-      ]
-    },
-    "addedIn": "2026-10-29-outlook-coverage",
-    "sourceCategories": []
-  },
-  {
-    "id": "outlook-mission-2026-11-06-gully-boys",
-    "title": "Gully Boys with Pollyanna and Nonbinary Girlfriend",
-    "subtitle": "Live music · discovered through the scheduled outlook",
-    "category": "Music",
-    "tags": [
-      "Live music",
-      "Punk",
-      "Rock"
-    ],
-    "musicStyles": [
-      "Punk",
-      "Rock"
-    ],
-    "eventFormat": "live",
-    "startTimeKind": "show",
-    "startsAt": "2026-11-06T20:00:00-08:00",
-    "doorsAt": "2026-11-06T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "Mission Theater",
-    "address": "1624 NW Glisan St, Portland, OR 97209",
-    "neighborhood": "Northwest District",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "All ages",
-    "accessibility": null,
-    "description": "Gully Boys, Pollyanna and Nonbinary Girlfriend. Official Mission Theater page confirms November 6, 2026, 7 PM doors and 8 PM show, all ages. Admission remains unverified. The venue’s West End Entertainment District promotion is not an additional performer.",
-    "source": "Mission Theater",
-    "url": "https://www.mcmenamins.com/events/277583-gully-boys",
-    "icon": "◇",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Manual review of official venue calendar; official event ticket link retained",
-    "sources": [
-      {
-        "name": "Mission Theater",
-        "url": "https://www.mcmenamins.com/events/277583-gully-boys",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "musicStyleEvidence": {
-      "basis": "Official event biography describes Pollyanna as a DIY band blending rock, pop and punk; these styles describe that supporting artist on a mixed bill.",
-      "urls": [
-        "https://www.mcmenamins.com/events/277583-gully-boys"
-      ]
-    },
-    "addedIn": "2026-10-29-outlook-coverage",
-    "sourceCategories": []
-  },
-  {
-    "id": "auto-the-off-beat-2026-10-29-edd211afceb2",
-    "title": "10/29 OsoSuckaK, TzoTopStar, Lul Dada, BagBoyMoe, AZ Gutter",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-10-29T19:30:00-07:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 29, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $31.00 Get Tickets 10/29 OsoSuckaK TzoTopStar Lul Dada BagBoyMoe AZ Gutter The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show All Ages • All Access • No Booze • No J",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/050/compressed/10_29.jpg?1791490773",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-29-ososuckak-tzotopstar-lul-dada-bagboymoe-az-gutter-october-29-2026-778050",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-10-30-b17eaf4348ca",
-    "title": "10/30 Kill Michael, Beautiful Freaks, Starly Kind, Hound",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-10-30T19:00:00-07:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 30, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 10/30 Kill Michael Beautiful Freaks Starly Kind Hound The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access • ",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/012/compressed/014F8134-B414-484D-95E3-2EFEDBC6D117.jpg?1791488158",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-30-kill-michael-beautiful-freaks-starly-kind-hound-october-30-2026-778012",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-10-31-5184b526eeec",
-    "title": "10/31 Masquerade of Madness",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-10-31T19:00:00-07:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When October 31, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $16.08 Get Tickets 10/31 Join us if you dare for the 3rd annual Masquerade of Madness Cover show at the Off Beat on Oct 31st. Featuring Sparks by Slightest Ure - Sparks Pa",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/612/compressed/IMG_0980.jpg?1792362687",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/10-31-masquerade-of-madness-october-31-2026-749612",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-11-05-6bd8874520d5",
-    "title": "11/5 Phalseprofit, Refugio, Zephyr, Zae Shiki",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-05T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 5, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $17.32 Get Tickets 11/5 Phaseprofit Refugio Zephyr Zae Shiki The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze • N",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/754/716/compressed/IMG_3488.jpg?1790110933",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-5-phalseprofit-refugio-zephyr-zae-shiki-november-05-2026-754716",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-11-06-0476b84b8559",
-    "title": "11/6 Doombia Album Release",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-06T19:30:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 6, 2026 · 7:30 pm - 11:30 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/6 Doombia DJ Lissex The Melts De La Flor The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $10 ADV /$12 DOS All Ages • All Access • No Booze •",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/761/725/compressed/Doombias_New_Logo2.jpg?1792104947",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-6-doombia-album-release-november-06-2026-761725",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-11-13-8446a006cf28",
-    "title": "11/13 High Glow, Die Right, Midnight Morning, Sertraline",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-13T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 13, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/13 High Glow Die Right Midnight Morning Sertraline The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ages • All Access •",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/749/616/compressed/OFFBEAT_NOV13_instagram.jpg?1790969417",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-13-high-glow-die-right-midnight-morning-sertraline-november-13-2026-749616",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-11-20-3929789d8876",
-    "title": "11/20 Heaven Skate, Rheumatoid Trapezoid, Steevee Von Schneedle, Dopamean",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-20T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When November 20, 2026 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $11.65 Get Tickets 11/20 Heaven Skate Rheumatoid Trapezoid Steevee Von Schneedle Dopamean The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $10 ADV /$13 DOS All Ag",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/775/412/compressed/oiboiboibcoibec.jpg?1791403620",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/11-20-heaven-skate-rheumatoid-trapezoid-steevee-von-schneedle-dopamean-november-20-2026-775412",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-12-03-7b91d87edaa0",
-    "title": "12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-12-03T19:30:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 3, 2026 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Price $22.99 Get Tickets 12/3 Mel Bryant & The Mercy Makers Everybody's Worried About Owen Trans Panic The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $20 ADV /$25 DOS ",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/756/887/compressed/_Q2A1329.jpg?1790294922",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-december-03-2026-756887",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-the-off-beat-2026-12-21-064fe0f81f04",
-    "title": "12/21 Rotting Carcass, Miss March, Crazy Ben",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Music",
-    "tags": [
-      "Source-listed Music",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "Source event type: MusicEvent",
-    "startTimeKind": "listed",
-    "startsAt": "2026-12-21T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "The Off Beat",
-    "address": "8440 N Interstate Ave, Portland, OR 97217",
-    "neighborhood": "Kenton",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When December 21, 2026 · 7:00 pm - 10:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $18.35 Get Tickets 12/21 Rotting Carcass Miss March Crazy Ben The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $15 ADV /$18 DOS All Ages • All Access • No Booze •",
-    "source": "The Off Beat / Friends of Noise",
-    "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-10-29",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Off Beat / Friends of Noise",
-        "url": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
-        "kind": "organizer",
-        "checkedAt": "2026-10-29",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/750/233/compressed/1000032481.jpg?1793048319",
-      "sourceUrl": "https://calendar.friendsofnoise.org/shows/12-21-rotting-carcass-miss-march-crazy-ben-december-21-2026-750233",
-      "origin": "official-event-page",
-      "credit": "Friends of Noise / The Off Beat — source-provided event image",
-      "usageApproved": null
-    },
-    "addedIn": "2026-10-29-offbeat-connection",
-    "discovery": {
-      "sourceId": "the-off-beat",
       "method": "primary-source-collection"
     }
   }
