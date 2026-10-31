@@ -24,5 +24,6 @@ const proposal=text.slice(index);
 assert(proposal.includes("if: steps.pending.outputs.skip != 'true'"),
  "Only pushing a competing editorial PR is blocked by a pending review");
 assert(text.includes('gh pr list --state open'),"Pending review still checked against Github");
-assert(text.includes("actions/upload-artifact@v4"),"Source reports remain available after a skipped proposal");
+// Accept a verified immutable Action pin instead of a mutable v4 tag.
+assert(/uses:\s*actions\/upload-artifact@[a-f0-9]{40}\b/.test(text),"Source reports remain available after a skipped proposal with a pinned artifact Action");
 console.log("PASS — daily collection and health reporting continue while duplicate editorial proposals remain blocked.");
