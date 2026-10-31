@@ -1,83 +1,57 @@
-# SHOWS — calendar-first prototype
+# SHOWS — Portland music and independent culture
 
-A small, browser-based working calendar for Portland, Oregon. **SHOWS is a provisional working name, not an adopted brand.**
+**Canonical source repository** for [SHOWS on julieowens.me](https://julieowens.me/projects/shows/). SHOWS is a working, static, music-first calendar with automated discovery and **human-reviewed publication**, not a live, unmoderated event feed. Its name and design can evolve.
 
-This is a manually maintained interaction prototype, not a live event aggregation service. The calendar contains 182 dated occurrences for October–December 2026 across 24 places, including 128 music dates. Event additions are reviewed through pull requests before publication. Event times and availability can change; the organizer remains the source of truth.
+The default experience is a chronological list starting on the current Portland date. Browse **By date**, **Places**, or **Month**; search events and venues; filter by neighborhood, music style, free admission or saved events; and open the original organizer listing. Individual and visible events can be added/exported to Google Calendar, Apple Calendar and other calendar applications. Saved events stay in the visitor's browser; there are no user accounts.
 
-## Try it locally
+The editorial focus is Portland-area punk, metal, hardcore, goth, darkwave and adjacent independent music, with a selective layer of art, DIY, zines and unusual markets. Generic city listings and routine farmers markets are not the priority. A source-listed event is not an endorsement; organizers' dates, times, access policies and prices can change.
 
-Download/clone this branch and open `index.html` in a modern browser. No dependencies, package manager, build, account or backend needed.
+## Where things live
 
-## Included
+- **This repository (`julegan/shows`)** is the canonical source for app code, approved event data, venue adapters, editorial rules and source research.
+- **[`julegan/portfolio`](https://github.com/julegan/portfolio)** deploys a reviewed copy at `dist/projects/shows/`, served at [julieowens.me/projects/shows](https://julieowens.me/projects/shows/). Do not create an independent SHOWS public deployment without a decision to do so.
+- `app.js`, `index.html`, `styles.css`, `preview.css`, and `theme.css` make up the current browser experience. **`preview.css` is still production CSS**, despite its historical filename; do not delete it as an old preview artifact.
+- `events.js` is the approved static event dataset. Do not assume a fixed count or an October–December-only horizon.
+- `discovery/venues.json`, `discovery/sources.json`, and `scripts/` describe and implement original source connections and importers.
+- `EDITORIAL.md`, `ARTWORK.md`, `discovery/README.md`, and the other source/review documents provide editorial standards, source evidence, holds and historical investigation records.
 
-- Responsive month-grid, agenda/list and venue/place views, including a useful compact mobile calendar
-- Previous/next month navigation, today's date, and drilldown on any calendar day
-- Search across title, location, organizer context, description and tags
-- Interest, music-style, neighborhood, free, today, weekend, next-seven-days and saved filters
-- Event detail dialog, original organizer link and maps/directions when an address is verified
-- Add individual events to Google Calendar using its native event template
-- Download an individual event or a multi-event series as an RFC 5545-compatible `.ics` file for Apple Calendar, Outlook or Google Calendar import
-- Export events in the current filtered view to `.ics`
-- Save events in this browser using localStorage; share stable event URLs with hash deep links
-- Consistent visual event thumbnails in list cards and details; source-verified artist/venue flyer art can be added after permission and attribution review
-- No ads, analytics, profiles, account creation or behavioral tracking
+## How updates reach the site
 
-**Doors-only times:** When only doors are published, the UI labels the time as Doors. Calendar export titles say `(doors)` and their descriptions disclose that the performance start is unconfirmed.
+1. The [daily discovery workflow](.github/workflows/discover.yml) checks supported venue, artist and promoter sources, collects source-specific artwork where possible, and records validation, source health and review outcomes.
+2. When accepted source changes exist, the workflow proposes a **SHOWS pull request**. Nothing is published automatically. Julie reviews and merges approved additions on `main`.
+3. The [portfolio's reviewed sync workflow](https://github.com/julegan/portfolio/blob/main/.github/workflows/sync-shows.yml) detects the approved dataset and proposes a **separate portfolio PR**. The portfolio changes only after that PR is reviewed and merged.
+4. Application code and CSS changes require coordinated review in both repositories; the automated sync does not transfer UI changes.
 
-**Unknown end times:** A one-hour editable placeholder is required by the calendar export interfaces and is clearly disclosed. It does not represent a verified end time.
+Source access can fail, and not every venue is covered. A missing listing is not proof of cancellation or that no event exists. Hold uncertain dates, conflicting details, ambiguous genres, inaccessible sources and unverified end times for review instead of inventing data. See [EDITORIAL.md](EDITORIAL.md), [AGENTS.md](AGENTS.md), and [discovery/README.md](discovery/README.md).
 
-**Series:** Series exports currently produce one `VEVENT` per date; this is correct for nonuniform multi-day events. True recurrence rules (`RRULE`) are a later enhancement once a recurring source data model exists.
+Artwork references come from original event or venue sources when available and carry provenance. A source image URL or attribution does **not** establish broad reuse rights; continue reviewing permissions and retain neutral treatments when suitable art is unavailable.
 
-## Accessibility and browser behavior
+## Running and testing
 
-Semantic headings and controls, explicit labels, keyboard-operated dialog, focus-visible styling, screen-reader status, a skip link and reduced-motion preference are included. Formal WCAG 2.2 AA auditing and real device testing remain to be done.
+SHOWS is static HTML, CSS and browser JavaScript; it has no production backend, mandatory account, or bundler. For a local preview:
 
-The event sample is separate in `events.js`; UI and calendar-export logic live in `app.js`. Dates are stored with explicit Pacific offsets so UTC calendar exports retain the right absolute time across daylight saving changes.
+```sh
+python3 -m http.server 8000
+```
 
-Apple Calendar: tap/download the `.ics` file and open/import it into your preferred calendar. Behavior differs by device and browser. Google Calendar single-event links open the Google Calendar event editor. For series/multiple events, import the downloaded `.ics` file through Google Calendar settings or another calendar application.
+Then open [http://localhost:8000](http://localhost:8000). A local HTTP server mirrors how the snapshot is served.
 
-## Editorial/source model
+Run focused checks before PRs:
 
-This pilot is **not** a scraper or a recommendation algorithm. The original 11-event sample was checked against publicly available organizer and community calendar pages on October 17, 2026. The earlier 69-occurrence expansion and this 39-date music expansion preserve their source checks; the pull request is the human editorial approval step. The music pass adds 37 live bills and two goth DJ nights from primary venue, promoter, ticket, or artist listings, with explicit source-availability notes. Source URLs are preserved on each event. We start with activities taking place in Portland city limits; any street address that cannot be verified is visibly labeled as unknown and directions are not offered.
+```sh
+node --check app.js
+node --check events.js
+node tests/validate.js
+node tests/music-filters.js
+node tests/discovery.js
+```
 
-[EDITORIAL.md](EDITORIAL.md) preserves the original underground music priority. [MUSIC-SOURCES.md](MUSIC-SOURCES.md) records the new music bills, style evidence, and source gaps; [EVENT-SOURCES.md](EVENT-SOURCES.md) preserves the earlier expansion, recurrence boundaries, and review notes. Each record preserves source references, check date, verification method, and source categories separately from SHOWS classifications. Unknown admission uses `free: null`, so it is excluded from the confirmed-free filter.
+[CI workflows](.github/workflows/check.yml) run more extensive source, event, browser and accessibility tests. Automated WCAG checks are not a substitute for keyboard, screen-reader and real-device QA.
 
-The latest independent-venue research is in [INDEPENDENT-VENUES.md](INDEPENDENT-VENUES.md): 27 new dated music bills at No Fun, Twilight and Kenton Club, plus verification gaps that should be checked before declaring the calendar complete. [ARTWORK.md](ARTWORK.md) explains thumbnails and licensing. The prior major-venue expansion is documented in [VENUE-COVERAGE.md](VENUE-COVERAGE.md), including major-venue additions and outstanding verification gaps. Core sources in the earlier music pass included Twilight, High Water Mark, No Fun, Star Theater, Coffin Club, Turn! Turn! Turn!, High Limit Room, Kenton Club, and Hierophant / SOS x 777 Booking. Black Water and other incomplete sources remain in the review log for follow-up.
+## Research, diagnostics and maintenance
 
-Source sites include:
-- https://www.danteslive.com/
-- https://hawthornetheatre.com/events/
-- https://www.portlandfarmersmarket.org/
-- https://www.portlandsaturdaymarket.com/
-- https://craftywonderland.com/
-- https://www.portlandzinesymposium.org/
-- https://www.outletpdx.com/events
-- https://artdesignxchange.com/events
-- https://pc-pdx.com/show-guide/?date=10%2F17%2F2026
+The source/review Markdown documents preserve historical findings; they are **not** all current coverage reports. Read current data and the latest approved run before quoting counts or source health. The many manually dispatched `probe-*.yml` workflows and `scripts/probe-*.js` files are read-only **source diagnostics**, not alternate public pages or event import pipelines. Keep them while they are needed for blocked providers or regression investigations, and remove them only after checking active importer dependencies.
 
-## Not built yet
+The previous SHOWS A/B UI comparison has been settled in favor of the mixed, date-first production calendar. Its `preview-a/` and `preview-b/` routes and legacy preview renderer were removed from the portfolio; do not republish them. Retain meaningful importer tests and the currently used `preview.css` stylesheet.
 
-Broad live source ingestion, richer editorial review queue, approved publication workflow, recurring calendar subscriptions, event change/cancellation monitoring, advanced accessibility metadata, transit routing, cross-location mapping, venue pages, actual event series recurrence rules, or a production CMS.
-
-**Do not enable GitHub Pages as a public launch without a deliberate publication decision and fresh source validation.** This prototype is a static UI with sample 2026 data and will age.
-
-## Release / testing
-
-Run `node --check app.js`, `node --check events.js`, and `node tests/validate.js` (Node 20+). The included GitHub Actions workflow runs these on pull requests.
-
-Design premise: the calendar is the product. Let people easily see what's happening, decide whether to go, and bring what interests them into their own calendars.
-
-
-## Data update workflow
-
-This static snapshot does not currently scrape, sync, or refresh shows on its own. The canonical `events.js` must be updated and validated, reviewed through a SHOWS PR, then explicitly synced to the portfolio snapshot through a second PR. A later importer should collect venue and promoter source links into an editorial queue, normalize the timestamps, detect duplicates and changed events, and require review before publication. The presence of a source link is not proof of cancellation monitoring.
-
-
-## Automatic discovery pilot (review-only)
-
-The pilot implementation and source registry are described in [discovery/README.md](discovery/README.md). A daily GitHub Actions workflow can discover No Fun listings and propose events through a **review PR**; no unreviewed events publish automatically. No Fun feed compatibility and GitHub permissions must be confirmed with a manual workflow run after this change is approved. Other independent sources are registered for adapters. The portfolio repository has a separate proposed data-sync workflow. This is **not a live event feed** and changes/cancellations are not monitored yet.
-
-
-## Priority source importers
-
-This release extends review-only ingestion beyond No Fun to [Twilight, Star Theater and Soundcontrol PDX](discovery/README.md), with date-only Soundcontrol / High Water Mark leads held for showtime verification. Sites that return HTTP 403 (Black Water and High Water Mark official websites) are not bypassed. A GitHub Actions live run read 42 Twilight, 46 Star, six Soundcontrol and 71 No Fun source entries, finding 46 new time-bearing review candidates. No event will reach the public portfolio until the canonical editorial PR and the separate portfolio sync PR are accepted.
+For implementation constraints and approval rules, start with [AGENTS.md](AGENTS.md).
