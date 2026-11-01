@@ -5,11 +5,12 @@
  * no extraction of private checkout data. This is not an event importer.
  */
 const URL="https://highlimitroompdx.com/shows/";
+const {URL: NativeURL}=require("node:url");
 const MAX_BYTES=1_800_000;
 function safeLink(raw) {
  try{
   if(!raw||raw.startsWith("//"))return null;
-  const u=new URL(raw,URL);
+  const u=new NativeURL(raw,URL);
   if(u.protocol!=="https:"||u.username||u.password||u.port)return null;
   // Ignore query/hash, which may include tracking or provider configuration.
   return u.origin+u.pathname;
@@ -21,7 +22,7 @@ function summarize(html) {
  const frames=[...new Set(attrs("iframe","src").map(safeLink).filter(Boolean))].slice(0,20);
  const scripts=[...new Set(attrs("script","src").map(safeLink).filter(Boolean))].filter(x=>!x.startsWith("https://highlimitroompdx.com/")).slice(0,20);
  const links=[...new Set(attrs("a","href").map(safeLink).filter(Boolean))];
- const ticketLinks=links.filter(x=>/(?:afton|tickets|ticketweb|etix|eventbrite|dice|venuepilot)/i.test(new URL(x).hostname)).slice(0,20);
+ const ticketLinks=links.filter(x=>/(?:afton|tickets|ticketweb|etix|eventbrite|dice|venuepilot)/i.test(new NativeURL(x).hostname)).slice(0,20);
  const ld=[...html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
  let eventSchemaBlocks=0;
  for(const [,json] of ld){
