@@ -356,6 +356,106 @@
       "neighborhood": "Northwest District",
       "reason": "One public venue-page request corroborates visible cards with year-bearing original event search data. Require event permalink, billing, venue and full date/weekday agreement; preserve published starting-time label and review unknown formats/styles. No per-event detail fanout or automatic publication.",
       "enabledReason": "Live read-only GitHub runner 40977016290 verified all 45 dated Mission records in one request: 44 new review candidates and one already-present Gully Boys event. All Locations promotion is excluded; malformed source promo entries held. Original event images retained with unknown permissions."
+    },
+    {
+      "id": "nova-pdx",
+      "venueRegistryId": "nova-pdx",
+      "name": "Nova PDX",
+      "venue": "Nova PDX",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": "https://www.novapdxevents.com/event-calendar",
+      "reason": "Official venue event calendar is online, but no authorized tested adapter exists. Prioritize calendar validation for approved review-only intake."
+    },
+    {
+      "id": "lolas-room",
+      "venueRegistryId": "lolas-room",
+      "name": "Lola's Room",
+      "venue": "Lola's Room",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": "https://www.mcmenamins.com/crystal-ballroom/lolas-room/music-events/",
+      "reason": "McMenamins Lola's Room is a distinct upstairs venue and must not be imported as Crystal Ballroom's main stage; verify original room-specific event links and notices."
+    },
+    {
+      "id": "showdown",
+      "venueRegistryId": "showdown",
+      "name": "The Showdown",
+      "venue": "The Showdown",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": "https://www.showdownpdx.com/",
+      "reason": "Official shows page is publicly dated; validate each event and explicitly labelled start/doors before implementing review-only collection."
+    },
+    {
+      "id": "45-east",
+      "venueRegistryId": "45-east",
+      "name": "45 East",
+      "venue": "45 East",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": "https://www.45eastpdx.com/",
+      "reason": "Official 45 East venue and AXS event listings exist. Check authoritative event permalinks and date/time/venue identity; no provider API assumed."
+    },
+    {
+      "id": "republic-cafe",
+      "venueRegistryId": "republic-cafe",
+      "name": "Republic Cafe / Ming Lounge",
+      "venue": "Republic Cafe / Ming Lounge",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": null,
+      "reason": "Official restaurant site confirms the venue, but does not establish a complete official event calendar; seek organizer-supplied dated listing before importer."
+    },
+    {
+      "id": "b-side",
+      "venueRegistryId": "b-side",
+      "name": "B-Side Tavern",
+      "venue": "B-Side Tavern",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": null,
+      "reason": "User-preferred venue or scene bar; no verified complete read-only source. Only stage original event-specific verified leads and request venue feed if necessary."
+    },
+    {
+      "id": "wyrd-hut",
+      "venueRegistryId": "wyrd-hut",
+      "name": "Wyrd Hut",
+      "venue": "Wyrd Hut",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": null,
+      "reason": "User-preferred venue or scene bar; no verified complete read-only source. Only stage original event-specific verified leads and request venue feed if necessary."
+    },
+    {
+      "id": "starthrow",
+      "venueRegistryId": "starthrow",
+      "name": "Star Bar",
+      "venue": "Star Bar",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": null,
+      "reason": "User-preferred venue or scene bar; no verified complete read-only source. Only stage original event-specific verified leads and request venue feed if necessary."
+    },
+    {
+      "id": "moda-center",
+      "venueRegistryId": "moda-center",
+      "name": "Moda Center",
+      "venue": "Moda Center",
+      "status": "adapter-needed",
+      "priority": "editorial-preferred",
+      "url": "https://www.rosequarter.com/calendar-events",
+      "reason": "Official Rose Quarter mixed calendar includes sports and unrelated programming; verify relevant music bill and correct performance room individually; avoid blanket publication."
+    },
+    {
+      "id": "doug-fir",
+      "venueRegistryId": "doug-fir",
+      "name": "Doug Fir Lounge",
+      "venue": "Doug Fir Lounge",
+      "status": "reopening-watch",
+      "priority": "editorial-preferred",
+      "url": "https://dougfirlounge.com/",
+      "reason": "Preferred future venue: new 301 SE Morrison location has NOT reopened. October 2026 reporting projects early 2027; no announced event feed and no assumed opening date. Monitor official announcements."
     }
   ],
   "editorialPriority": [
@@ -368,9 +468,28 @@
     "Roseland Theater",
     "Wonder Ballroom",
     "Hawthorne Theatre",
-    "High Limit Room"
+    "High Limit Room",
+    "Crystal Ballroom",
+    "Revolution Hall",
+    "Mississippi Studios",
+    "Holocene",
+    "Doug Fir Lounge",
+    "Nova PDX",
+    "Star Bar",
+    "Lola's Room",
+    "The Showdown",
+    "45 East",
+    "Republic Cafe / Ming Lounge",
+    "B-Side Tavern",
+    "Wyrd Hut",
+    "Moda Center",
+    "Kenton Club",
+    "Shanghai Tunnel",
+    "Turn! Turn! Turn!",
+    "Starday Tavern",
+    "The Off Beat"
   ],
-  "discoveryPriority": "Collect/review all future dated events from the owner's priority venues before expanding secondary sources. Source-adapter readiness does not equal editorial priority. No Fun is paused for daily discovery; previously approved listings remain. Soundcontrol is a cross-venue source, not a venue.",
+  "discoveryPriority": "Editorial preference in discovery/venues.json is the source of truth: preferred venues first, even if a feed is blocked/not yet built; importer readiness is a separate engineering status. This source array retains the 12 originally wired core adapters at the front for compatibility, NOT as the full list of owner-selected favorites. Secondary shows are never ingested to inflate counts.",
   "primaryVenuePriority": [
     "black-water",
     "high-water-mark",
@@ -384,5 +503,6 @@
     "high-limit-room",
     "crystal-ballroom",
     "revolution-hall"
-  ]
+  ],
+  "primaryVenuePriorityRole": "Legacy source-adapter coverage baseline (first twelve); not an exhaustive or ordered list of current user-preferred venues. Use venues.json editorialPreferenceGroups for scheduling research."
 }
