@@ -36,6 +36,8 @@ jobs:
       - name: Show baseline priority coverage
         run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
       - name: Discover source-listed upcoming events
+        env:
+          COFFIN_VENUEPILOT_APP_ID: ${{ secrets.COFFIN_VENUEPILOT_APP_ID }}
         run: node scripts/discover-events.js
       - name: Collect original underground-show leads (review-only)
         run: node scripts/doomtown-leads.js

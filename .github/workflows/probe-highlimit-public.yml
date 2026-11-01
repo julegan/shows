@@ -1,0 +1,20 @@
+name: Inspect official High Limit Room shows page (read-only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Validate read-only parser and fixtures
+        run: |
+          node --check scripts/probe-highlimit-public.js
+          node tests/highlimit-public.js
+      - name: Inspect official venue HTML only, without following ticketing widgets
+        run: node scripts/probe-highlimit-public.js
