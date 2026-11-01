@@ -1,29 +1,39 @@
 #!/usr/bin/env node
 "use strict";
-// A transparent source-readiness and calendar-coverage summary for each discovery run.
-// Existing event counts are NOT a claim of complete official venue coverage.
+// Editorial preference is independent of source readiness; events listed here
+// are a reviewed SHOWS subset, not proof of complete venue calendar coverage.
 const {audit}=require("./audit-venue-coverage");
+const venues=require("../discovery/venues.json");
 const sources=require("../discovery/sources.json");
-const bySource=new Map(sources.sources.filter(s=>s.venueRegistryId).map(s=>[s.venueRegistryId,s]));
 function reportPriorityCoverage(snapshot=audit()){
  const byVenue=new Map(snapshot.rows.map(v=>[v.id,v]));
+ const bySource=new Map(sources.sources.filter(s=>s.venueRegistryId).map(s=>[s.venueRegistryId,s]));
+ const status=source=>!source?"No registered importer"
+  :source.status==="pilot-enabled"?"Enabled"
+  :source.status==="source-blocked"?"Direct source blocked; review promoter leads"
+  :source.status==="adapter-needed"?"Adapter needed"
+  :source.status==="reopening-watch"?"Reopening watch; no published source"
+  :source.status==="paused-secondary"?"Paused (secondary)":source.status;
  const out=[
-  "# SHOWS priority venue coverage — "+snapshot.date,
+  "# SHOWS editorial-first venue coverage — "+snapshot.date,
   "",
-  "The owner-selected venues determine research and adapter investment. Counts below are future events **already in SHOWS**, not a count of all events on official calendars.",
+  "Owner preference determines **research priority**; importer availability is a separate engineering property. Groups are **not ranked internally**. Counts are only future events already approved in SHOWS—not all advertised shows.",
   "",
-  "| Priority | Venue | SHOWS events | Music | Automated discovery |",
-  "| ---: | --- | ---: | ---: | --- |"
+  "| Editorial group | Venue | SHOWS events | Music | Automated discovery |",
+  "| --- | --- | ---: | ---: | --- |"
  ];
- for(const [i,id] of sources.primaryVenuePriority.entries()){
-  const venue=byVenue.get(id),source=bySource.get(id);
-  if(!venue||!source)throw new Error("Missing venue/source for priority ID: "+id);
-  const state=source.status==="pilot-enabled"?"Enabled":source.status==="source-blocked"?"Direct source blocked; promoter leads only":source.status==="adapter-needed"?"Adapter needed":source.status;
-  out.push("| "+(i+1)+" | "+venue.name+" | "+venue.futureCount+" | "+venue.futureMusic+" | "+state+" |");
+ const groups=venues.editorialPreferenceGroups;
+ for(const [group,ids] of Object.entries(groups)){
+  for(const id of ids){
+   const venue=byVenue.get(id);
+   if(!venue)throw Error("Missing venue in registry: "+id);
+   out.push("| "+group+" | "+venue.name+" | "+venue.futureCount+" | "+venue.futureMusic+" | "+status(bySource.get(id))+" |");
+  }
  }
  const secondary=sources.sources.find(s=>s.id==="no-fun");
  out.push("","**No Fun:** "+secondary.status+" — existing approved events stay in the calendar; daily intake is not run.","",
-  "**Source backlog:** Build verified adapters for the high-priority venues marked *Adapter needed*. For High Water Mark, validate allowed promoter data rather than bypassing the site's access restrictions.","",
+  "**Research backlog:** Find first-party dated event lists at preferred venues marked *Adapter needed* or *No registered importer*, without reducing their editorial preference. Keep Doug Fir on reopening watch instead of generating shows.",
+  "**Source health:** A blocked or inaccessible venue site is not a claim that it has zero upcoming events.",
   "**Approval:** Imported events and original artwork require review PRs. No automatic publishing.","");
  return out.join("\n");
 }
