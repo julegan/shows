@@ -1,8 +1,18 @@
 # TreeTix access for High Water Mark and Soundcontrol
 
-Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **access request prepared, not sent; API access not granted; adapter not implemented**.
+Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **TreeTix has supplied an unauthenticated public event-listing endpoint; live schema is still unverified, and the adapter is not yet implemented or enabled**.
 
-## Verified source and current blocker
+## Provider response — November 1, 2026
+
+TreeTix provided the event-listing endpoint: https://www.treetix.com/api/events.json. According to the provider, it returns an `events` object covering upcoming events for all current TreeTix producers (including High Water Mark and Soundcontrol), with no required account or authentication token **at present**.
+
+Important limitations: cancellation notices are **not** included; rescheduled events are represented as new entries without a reschedule link. Missing events must never be automatically deleted or labeled canceled, and same-bill/new-date matches must be flagged for review. The provider asks consumers to **download original images instead of hotlinking** because hotlinking restrictions may be enforced later. Any local caching/public display must preserve image attribution and respect the repository's artwork rights-review policy.
+
+**Live environment finding:** On November 1, 2026, GitHub Actions [run 41332079909](https://github.com/julegan/shows/actions/runs/41332079909) successfully ran the fixture tests but received **HTTP 403** from the provided API URL. No JSON schema or event coverage was confirmed. This is a source-access block, not an empty event list. The diagnostic workflow has been limited to manual dispatch to avoid ongoing failing notifications. Contact the provider to ask for a supported server-to-server delivery path or allowlist requirements; do not attempt to circumvent the denial.
+
+At the time of this update, the data fields, event IDs, exact time representation, rate limits, venue strings, permission scope for archival artwork and refresh interval have **not** been validated. The read-only script `scripts/probe-treetix-api.js` reports bounded keys/field examples without writing any events or artwork. Its workflow is manual only; do not enable automatic ingestion until real records are confirmed.
+
+## Historical verified source and blocker
 
 On 2026-10-30 UTC, [TreeTix's official homepage](https://www.treetix.com/) returned HTTP 200 to a direct public request. Its Application Programming Interface section offers a REST API for event-listing services and names **support@treetix.com** as the access-request contact. This invitation does not supply API documentation or grant feed access.
 
@@ -26,7 +36,7 @@ The reachable roster includes visible weekday/month/day labels, original ticket 
 
 This creates a viable public-HTML investigation path alongside the API request. A future parser must cross-check all card dates/years/IDs, verify venue identity and source date on linked pages, retain unknown performance times for review, and inspect the public full-calendar link for completeness. Do not enable the source based on HTTP 200 or two sample cards alone. The API request is still useful for supported full inventory, clear timestamps and Soundcontrol's cross-venue coverage.
 
-## Ready-to-send request
+## Historical access request draft (superseded; do not send)
 
 To: support@treetix.com  
 Subject: Event-listing API access for SHOWS — High Water Mark and Soundcontrol
@@ -49,7 +59,7 @@ SHOWS uses editorial review before publishing additions. We don't need customer,
 Thanks,
 Julie Owens
 
-## After TreeTix responds
+## Remaining integration milestones
 
 1. Record the approved calendar scope, public documentation URL, required venue permissions, costs, rate limits and artwork terms. Do not put private correspondence or credentials into the public repository.
 2. Store any credential only in a GitHub Actions repository secret; choose its name once the documented authentication scheme is known. Never include credentials in logs, issues, PRs or browser code.
