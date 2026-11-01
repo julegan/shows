@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-10-31",
+  "sourceCheckedAt": "2026-11-01",
   "coverageThrough": "2027-06-11",
-  "totalOccurrences": 856,
-  "addedOccurrences": 5,
-  "batchId": "auto-discovery-2026-10-31-24",
+  "totalOccurrences": 860,
+  "addedOccurrences": 4,
+  "batchId": "auto-discovery-2026-11-01-26",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -84,11 +84,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-30-23",
       "addedOccurrences": 7
+    },
+    {
+      "batchId": "auto-discovery-2026-10-31-24",
+      "addedOccurrences": 5
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 283
+  "musicOccurrences": 285
 };
 window.SHOWS_EVENTS = [
   {
@@ -20338,6 +20342,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-15-98b230f41f51",
+    "title": "Stephen Day - The Self Titled Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Elysia Biro",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/84386206/stephen-day-the-self-titled-tour-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-01",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/84386206/stephen-day-the-self-titled-tour-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-01",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/80b65b60098cac0be0a4e69e3e0afe1c.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-01",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-11-15-49a11d19b786",
     "title": "Sueco",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21132,6 +21187,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-17-a4bace2ce9fc",
+    "title": "Jervis Campbell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Allie Paige",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/64154492/jervis-campbell-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-01",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/64154492/jervis-campbell-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-01",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/99117cce7a8168a4eafcbc2353d60ea7.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-01",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -25586,6 +25692,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-star-theater-2026-11-27-d46bd65ad37d",
+    "title": "Water & Power: a Night Carnival of climate apocalypse",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/water-power-a-night-carnival-of-climate-apocalypse/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-01",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/water-power-a-night-carnival-of-climate-apocalypse/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-01",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/12/55/34_Original.jpg?v=7",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/water-power-a-night-carnival-of-climate-apocalypse/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-01",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-11-27-6106ed2ae687",
     "title": "War Machine w/ Tecolote, Nomada",
     "subtitle": "Source-discovered venue event · details need review",
@@ -26359,6 +26516,62 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-11-28-d691bd5a4390",
+    "title": "SMASH disco~glam~metal~punk-hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T23:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-8/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-01",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-8/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-01",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/78/14/34_Original.jpg?v=12",
+      "sourceUrl": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-8/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-01",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
