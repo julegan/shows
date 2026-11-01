@@ -55,6 +55,8 @@ jobs:
           node --check scripts/probe-wonder.js
           node --check scripts/coffin-venuepilot.js
           node tests/coffin-venuepilot.js
+          node --check scripts/probe-highlimit-public.js
+          node tests/highlimit-public.js
           node --check scripts/revolution-importer.js
           node tests/revolution-importer.js
           node --check scripts/crystal-importer.js
