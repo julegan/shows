@@ -6,14 +6,18 @@ const sources=registry.sources;
 const targetIds=["black-water","high-water-mark","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room","crystal-ballroom","revolution-hall"];
 const sourceOrder=["black-water","high-water","soundcontrol-pdx","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit","crystal-ballroom","revolution-hall"];
 assert.deepEqual(registry.primaryVenuePriority,targetIds,"Owner-selected priority is stable and machine readable");
-assert.deepEqual(venues.venuePriority,targetIds,"Canonical venue registry must agree with discovery registry");
+assert(venues.editorialPreferenceGroups.preferred.length>targetIds.length,"Preferences must extend beyond legacy first twelve");
+assert(targetIds.every(id=>venues.editorialPreferenceGroups.preferred.includes(id)),"All original core venues remain preferred");
+assert.deepEqual(venues.venuePriority,venues.editorialPreferenceGroups.preferred,"Canonical preferred venue group must drive ordering");
+assert.deepEqual(registry.editorialPriority,venues.editorialPreferenceGroups.preferred.map(id=>venues.venues.find(v=>v.id===id).name),"Source research priorities must mirror canonical preferences");
+assert(registry.primaryVenuePriorityRole.includes("Legacy"),"Legacy source adapter order must not be mistaken for editorial order");
 assert.deepEqual(sources.slice(0,sourceOrder.length).map(s=>s.id),sourceOrder,"Core venue and High Water Mark promoter adapters are first");
 assert.equal(new Set(sources.map(s=>s.id)).size,sources.length,"Source IDs must be unique");
 const byId=Object.fromEntries(sources.map(s=>[s.id,s]));
 const byVenue=Object.fromEntries(venues.venues.map(v=>[v.id,v]));
-for(const [rank,id] of targetIds.entries()){
+for(const id of targetIds){
   assert.equal(byVenue[id]?.tier,"core",id+" must be a core coverage target");
-  assert.equal(byVenue[id].editorialRank,rank+1,id+" rank should be explicitly recorded");
+  assert.equal(byVenue[id].editorialPreference,"preferred",id+" must retain user preference");
   const source=sources.find(s=>s.venueRegistryId===id);
   assert(source,id+" must have a source record, even if the adapter is not yet ready");
   assert.equal(source.priority,"highest",id+" must have highest editorial priority");
@@ -58,3 +62,10 @@ assert.equal(byVenue["kenton-club"].ingestionStatus,"active-adapter");
 assert.equal(byId['turn-turn-turn'].adapter,'turnturnturn-opendate');
 assert.equal(byId['turn-turn-turn'].status,'pilot-enabled','Official venue and event details passed GitHub runner 40171261702');
 assert.equal(byVenue['turn-turn-turn'].ingestionStatus,'active-adapter');
+
+for(const id of ["nova-pdx","lolas-room","showdown","45-east","republic-cafe","b-side","wyrd-hut","starthrow","moda-center"]){
+ assert.equal(byId[id]?.status,"adapter-needed","No unverified new importer activated for "+id);
+ assert.equal(byVenue[id]?.editorialPreference,"preferred","Requested venue must be researched ahead of convenience");
+}
+assert.equal(byId["doug-fir"].status,"reopening-watch","Reopening venue is a research watch, not an active source");
+assert.equal(byVenue["the-fixin-to"].editorialPreference,"secondary","Former concert room not prioritized as active music venue");
