@@ -3,15 +3,15 @@
   "purpose": "Portland city music venue source-of-truth for comprehensive event collection. Venue inclusion is not a genre filter.",
   "scope": "Portland, Oregon city limits",
   "policy": {
-    "priority": "First focus on prioritized Black Water, High Water Mark, Twilight, Coffin Club, Star Theater, Dante's, Roseland, Wonder, Hawthorne Theatre, and High Limit Room, then the other underground venues; treat No Fun as secondary. At every supported venue, intake all published future dated events and classify afterward, without filtering out whole bills from a calendar.",
+    "priority": "Editorial selection first: use editorialPreferenceGroups (preferred > scene > secondary) independent of ingestionStatus. The preferred group is NOT ranked internally. Maintain all official verified dated events once a source is authorized; never pad the calendar with unrelated events to meet counts.",
     "publication": "Importers propose source-linked events and artwork for review; only approved GitHub PRs reach main; portfolio sync is separately reviewed.",
     "uncertainty": "Do not invent missing showtimes, admission, genre, ages, images, or venue status. Hold conflicting facts. No anti-bot bypass.",
     "image": "Capture source-provided event flyers/photos and attribution when available; validate event specificity, legal embedding rights and failures before displaying; do not generate graphics."
   },
   "tiers": {
-    "core": "Underground punk/metal/hardcore/goth/post-punk/noise/DIY discovery priority",
-    "expansion": "Other recurring venue calendars; include all events from supported source",
-    "watch": "Temporarily no calendar ingest; monitor opening/status"
+    "core": "Existing per-venue coverage scope for active/desired calendars; editorial preference is separately recorded in editorialPreferenceGroups.",
+    "expansion": "Broader coverage scope or secondary venue; preference independently specified.",
+    "watch": "Not yet open or suspended; preserve user preference while excluding invented date/event listings."
   },
   "venues": [
     {
@@ -25,7 +25,7 @@
         "Blackwater"
       ],
       "notes": "Official Black Water page embeds publicly accessible Google Calendar. Feed verified; future events are date-only and displayed as Time TBA.",
-      "editorialRank": 1
+      "editorialPreference": "preferred"
     },
     {
       "id": "high-water-mark",
@@ -37,7 +37,7 @@
         "High Water Mark"
       ],
       "notes": "Official site blocked in runner; Soundcontrol is supplementary promoter source",
-      "editorialRank": 2
+      "editorialPreference": "preferred"
     },
     {
       "id": "twilight",
@@ -50,7 +50,7 @@
         "Twilight Cafe & Bar"
       ],
       "notes": "Official event pages offer date and sometimes JSON-LD images",
-      "editorialRank": 3
+      "editorialPreference": "preferred"
     },
     {
       "id": "coffin-club",
@@ -63,7 +63,7 @@
         "The Coffin"
       ],
       "notes": "Official site embeds VenuePilot events (public account reference verified). Connector is written and tested against synthetic official API responses; awaits vendor-issued application ID for authorized live read and activation.",
-      "editorialRank": 4
+      "editorialPreference": "preferred"
     },
     {
       "id": "star-theater",
@@ -75,7 +75,7 @@
         "Starlight"
       ],
       "notes": "Current primary event listings",
-      "editorialRank": 5
+      "editorialPreference": "preferred"
     },
     {
       "id": "dantes",
@@ -85,7 +85,7 @@
       "calendarUrl": "https://www.danteslive.com/",
       "aliases": [],
       "notes": "Official primary Dante's event links and full dated showtime detail pages verified by GitHub Actions on 2026-10-21. Review-only daily discovery enabled; confirm event classification and original source link before publication.",
-      "editorialRank": 6
+      "editorialPreference": "preferred"
     },
     {
       "id": "roseland",
@@ -97,7 +97,7 @@
         "Roseland Theatre"
       ],
       "notes": "Official 2026 event pages and showtimes verified in GitHub-runner live probe; review-only daily discovery enabled.",
-      "editorialRank": 7
+      "editorialPreference": "preferred"
     },
     {
       "id": "wonder-ballroom",
@@ -107,7 +107,7 @@
       "calendarUrl": "https://wonderballroom.com/events/",
       "aliases": [],
       "notes": "Official first-party links and year-bearing event details verified by GitHub-runner probe; 10/12 sample details dated correctly, two held. Review-only importer accepts distinct early and late shows.",
-      "editorialRank": 8
+      "editorialPreference": "preferred"
     },
     {
       "id": "hawthorne-theatre",
@@ -119,7 +119,7 @@
         "Hawthorne Theater"
       ],
       "notes": "Official Hawthorne Theatre event details verified (Hawthorne Lounge and ticket add-ons excluded); review-only daily discovery enabled.",
-      "editorialRank": 9
+      "editorialPreference": "preferred"
     },
     {
       "id": "high-limit-room",
@@ -129,7 +129,7 @@
       "calendarUrl": "https://highlimitroompdx.com/",
       "aliases": [],
       "notes": "Official /shows page embeds Afton Tickets checkout widget. Event dates do not appear in the initial public HTML. Requires provider-authorized event data feed, export or a verified public source.",
-      "editorialRank": 10
+      "editorialPreference": "preferred"
     },
     {
       "id": "kenton-club",
@@ -138,7 +138,8 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.kentonclub.com/",
       "aliases": [],
-      "notes": "Enabled verified first-party date-only show roster import after live runner probe 40170404712. No showtime or event-specific permalinks; each date must match official weekday and a 120-day horizon. Requires editorial merge."
+      "notes": "Enabled verified first-party date-only show roster import after live runner probe 40170404712. No showtime or event-specific permalinks; each date must match official weekday and a 120-day horizon. Requires editorial merge.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "shanghai-tunnel",
@@ -149,7 +150,8 @@
       "aliases": [
         "Shanghai Tunnel Bar"
       ],
-      "notes": "Independent punk bills; official feed needs verification"
+      "notes": "Independent punk bills; official feed needs verification",
+      "editorialPreference": "preferred"
     },
     {
       "id": "turn-turn-turn",
@@ -158,18 +160,20 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://turnturnturnpdx.com/entertainment/",
       "aliases": [],
-      "notes": "First-party embedded OpenDate source passed live GitHub Actions end-to-end event-detail probe. Separate verified show/doors times, artist bill, original images. Unverified event format and style remain under editorial review."
+      "notes": "First-party embedded OpenDate source passed live GitHub Actions end-to-end event-detail probe. Separate verified show/doors times, artist bill, original images. Unverified event format and style remain under editorial review.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "the-fixin-to",
       "name": "The Fixin' To",
-      "tier": "core",
+      "tier": "expansion",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://www.thefixinto.com/",
       "aliases": [
         "Fixin' To"
       ],
-      "notes": "Wix event pages exist; validate 2026 dated listings before using"
+      "notes": "Converted its live music room into an arcade in 2025; official site currently describes a bar and arcade. Keep as secondary (DJ/karaoke/occasional verified special events), not a priority concert importer.",
+      "editorialPreference": "secondary"
     },
     {
       "id": "starday-tavern",
@@ -178,7 +182,8 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://stardaytavern.com/#calendar",
       "aliases": [],
-      "notes": "Original public Google event links/date/time with Pacific offsets verified by live GitHub runner. Start time may be doors; review-only."
+      "notes": "Original public Google event links/date/time with Pacific offsets verified by live GitHub runner. Start time may be doors; review-only.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "b-side",
@@ -189,7 +194,8 @@
       "aliases": [
         "B-Side"
       ],
-      "notes": "Verify official event sources and dated listings"
+      "notes": "User-preferred punk/metal gathering spot and DJ venue; regular original event feed not verified. Monitor official billed nights; don't invent live concerts based on bar reputation.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "wyrd-hut",
@@ -198,27 +204,30 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
-      "notes": "Verify active event source"
+      "notes": "User-preferred underground/DIY show space. Independent listings point to @wyrdhut on Instagram; venue street number conflicts between directories, so verify original venue address on each event and do not publish assumptions.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "alleyway",
       "name": "The Alleyway",
-      "tier": "core",
+      "tier": "expansion",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [
         "Alleyway Bar"
       ],
-      "notes": "Underground punk lead source available via Doomtown PDX"
+      "notes": "Underground punk lead source available via Doomtown PDX",
+      "editorialPreference": "scene"
     },
     {
       "id": "mississippi",
       "name": "Mississippi Studios",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://mississippistudios.com/calendar",
       "aliases": [],
-      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries."
+      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries. User-preferred independent room; continue existing working source without confusing Polaris Hall.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "polaris-hall",
@@ -227,16 +236,18 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://mississippistudios.com/calendar",
       "aliases": [],
-      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries."
+      "notes": "Shared primary Mississippi venue calendar: room IDs, ticket URLs, full dated showtime verified live. Both rooms retain independent venue identities; review-only discoveries.",
+      "editorialPreference": "scene"
     },
     {
       "id": "holocene",
       "name": "Holocene",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.holocene.org/events/",
       "aliases": [],
-      "notes": "Live schema verification 43 of 49 original pages, six uncertain locations held; event start may refer to doors, editorial review required."
+      "notes": "Live schema verification 43 of 49 original pages, six uncertain locations held; event start may refer to doors, editorial review required. User-preferred venue; continue existing working official calendar.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "revolution-hall",
@@ -246,7 +257,7 @@
       "calendarUrl": "https://www.revolutionhall.com/",
       "aliases": [],
       "notes": "Original venue room id 16897; exact main-stage Etix ticket links and 19 dated source cards live verified; editorial review-only importer enabled.",
-      "editorialRank": 12
+      "editorialPreference": "preferred"
     },
     {
       "id": "crystal-ballroom",
@@ -256,16 +267,17 @@
       "calendarUrl": "https://www.crystalballroompdx.com/events/",
       "aliases": [],
       "notes": "First-party original Crystal calendar verified in GitHub runner: 56 event details, 55 valid with one room/move hold; review-only intake, not a Lola's Room or Ringlers import.",
-      "editorialRank": 11
+      "editorialPreference": "preferred"
     },
     {
       "id": "moda-center",
       "name": "Moda Center",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://www.rosequarter.com/calendar-events",
       "aliases": [],
-      "notes": "Broader shows and events when relevant"
+      "notes": "User-preferred larger room; pursue relevant shows, not unrelated arena/sports programming. Official Rose Quarter calendar; individual show location and date must be verified.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "doug-fir",
@@ -274,18 +286,21 @@
       "ingestionStatus": "not-open",
       "calendarUrl": "https://dougfirlounge.com/",
       "aliases": [],
-      "notes": "Official site says upcoming events none; new location scheduled for 2027; do not invent 2026 bookings"
+      "notes": "USER-PREFERRED future venue; not currently reopened. New address 301 SE Morrison St; October 2026 reporting targets early 2027 (possibly February, subject to change), replacing older fall-2026 plans. Official site currently lists no events. Watch reopening announcements; do not mark live until confirmed.",
+      "editorialPreference": "preferred",
+      "reopeningStatus": "projected-early-2027-not-confirmed"
     },
     {
       "id": "azoth",
       "name": "AZØTH",
-      "tier": "core",
+      "tier": "expansion",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [
         "AZOTH"
       ],
-      "notes": "Venue/address not established in dataset; verify nature of space and geographic boundary"
+      "notes": "Venue/address not established in dataset; verify nature of space and geographic boundary",
+      "editorialPreference": "scene"
     },
     {
       "id": "hawthorne-lounge",
@@ -294,7 +309,8 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
-      "notes": "Distinct from Hawthorne Theatre"
+      "notes": "Distinct from Hawthorne Theatre",
+      "editorialPreference": "scene"
     },
     {
       "id": "word-virus",
@@ -303,7 +319,8 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
-      "notes": "Bookshop and DIY events"
+      "notes": "Bookshop and DIY events",
+      "editorialPreference": "scene"
     },
     {
       "id": "the-six",
@@ -315,7 +332,8 @@
         "The Six",
         "Midnight PDX Bar"
       ],
-      "notes": "Verify current program and address"
+      "notes": "Verify current program and address",
+      "editorialPreference": "scene"
     },
     {
       "id": "starthrow",
@@ -324,7 +342,8 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
-      "notes": "Verify source and not confuse with Star Theater"
+      "notes": "User-preferred Star Bar: rock/punk/DJ gathering spot at 639 SE Morrison; distinct from Star Theater. Recurring complete dated event feed not verified.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "no-fun",
@@ -333,7 +352,8 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.nofunportland.com/events",
       "aliases": [],
-      "notes": "Technically working Squarespace adapter, but daily automated intake is paused by editorial priority. Keep previously approved events; source can be re-enabled intentionally later."
+      "notes": "Technically working Squarespace adapter, but daily automated intake is paused by editorial priority. Keep previously approved events; source can be re-enabled intentionally later. Explicitly secondary for fresh discovery; editorial group and technical source pause are separate.",
+      "editorialPreference": "secondary"
     },
     {
       "id": "show-bar",
@@ -345,7 +365,8 @@
         "Show Bar",
         "Showbar"
       ],
-      "notes": "Separate stage with official room id 21322; 10 dated official cards live verified using original Show Bar Etix event links. Shared Revolution Hall source, editorial review-only."
+      "notes": "Separate stage with official room id 21322; 10 dated official cards live verified using original Show Bar Etix event links. Shared Revolution Hall source, editorial review-only.",
+      "editorialPreference": "scene"
     },
     {
       "id": "the-off-beat",
@@ -357,7 +378,8 @@
         "Friends of Noise / The Off Beat",
         "Friends Of Noise / The Off Beat"
       ],
-      "notes": "Venue-owned calendar linked from official event-calendar embed. Live runner 40973251804 verified nine source-specific dated event details and original images; Larry and His Flask March 26 time conflict held. Daily review-only adapter; no auto-publication."
+      "notes": "Venue-owned calendar linked from official event-calendar embed. Live runner 40973251804 verified nine source-specific dated event details and original images; Larry and His Flask March 26 time conflict held. Daily review-only adapter; no auto-publication.",
+      "editorialPreference": "preferred"
     },
     {
       "id": "aladdin-theater",
@@ -366,7 +388,8 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.aladdin-theater.com/",
       "aliases": [],
-      "notes": "Official complete feed verified in live probe 40974636056: 85 Aladdin-room date/time records of 97 source cards, nine offsite exclusions, three source holds. Exact venue label plus ticket/event ID, source UTC doors and local show-clock validation. Daily review-only intake; no claim all cards are music."
+      "notes": "Official complete feed verified in live probe 40974636056: 85 Aladdin-room date/time records of 97 source cards, nine offsite exclusions, three source holds. Exact venue label plus ticket/event ID, source UTC doors and local show-clock validation. Daily review-only intake; no claim all cards are music.",
+      "editorialPreference": "scene"
     },
     {
       "id": "mission-theater",
@@ -375,7 +398,71 @@
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.mcmenamins.com/mission-theater",
       "aliases": [],
-      "notes": "One-request original Mission venue calendar adapter cross-checks year-bearing search data with visible title/date/time/venue cards. Runner 40977016290 verified 45 dated Mission records, 44 new candidates and one existing Gully Boys URL. Formats and styles require review; non-Mission promotions excluded."
+      "notes": "One-request original Mission venue calendar adapter cross-checks year-bearing search data with visible title/date/time/venue cards. Runner 40977016290 verified 45 dated Mission records, 44 new candidates and one existing Gully Boys URL. Formats and styles require review; non-Mission promotions excluded.",
+      "editorialPreference": "scene"
+    },
+    {
+      "id": "nova-pdx",
+      "name": "Nova PDX",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.novapdxevents.com/event-calendar",
+      "aliases": [
+        "Nova Ballroom",
+        "Bossanova Ballroom"
+      ],
+      "notes": "Official active Nov–Dec 2026 calendar lists emo/pop-punk nights, DJs and queer nightlife; no automatic importer yet. Former Bossanova name is an alias only.",
+      "editorialPreference": "preferred"
+    },
+    {
+      "id": "lolas-room",
+      "name": "Lola's Room",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.mcmenamins.com/crystal-ballroom/lolas-room/music-events/",
+      "aliases": [
+        "Lolas Room"
+      ],
+      "notes": "Official McMenamins separate upstairs room at 1332 W Burnside; DO NOT infer every Crystal Ballroom main-stage event happens here, or conflate room identities.",
+      "editorialPreference": "preferred"
+    },
+    {
+      "id": "showdown",
+      "name": "The Showdown",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.showdownpdx.com/",
+      "aliases": [
+        "Showdown Saloon"
+      ],
+      "notes": "Official calendar publishes dated live country, honky-tonk and alternative events at 1195 SE Powell Blvd. User-preferred venue; actual event suitability is determined by lineup, not venue genre.",
+      "editorialPreference": "preferred"
+    },
+    {
+      "id": "45-east",
+      "name": "45 East",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://www.45eastpdx.com/",
+      "aliases": [
+        "45East"
+      ],
+      "notes": "Live electronic-music club at 315 SE 3rd Ave. Official venue site and AXS original event list exist; validate matching ticket source, doors/start clocks and each event before proposing.",
+      "editorialPreference": "preferred"
+    },
+    {
+      "id": "republic-cafe",
+      "name": "Republic Cafe / Ming Lounge",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": null,
+      "aliases": [
+        "Republic Cafe",
+        "Ming Lounge",
+        "Republic Cafe and Ming Lounge"
+      ],
+      "notes": "222 NW 4th Ave venue site https://republiccafeor.com/ confirms business, not a machine-readable event calendar; monitor organizer/artist-advertised original shows before scheduling discovery.",
+      "editorialPreference": "preferred"
     }
   ],
   "supplementaryDiscovery": [
@@ -406,6 +493,77 @@
     "hawthorne-theatre",
     "high-limit-room",
     "crystal-ballroom",
-    "revolution-hall"
-  ]
+    "revolution-hall",
+    "mississippi",
+    "holocene",
+    "doug-fir",
+    "nova-pdx",
+    "starthrow",
+    "lolas-room",
+    "showdown",
+    "45-east",
+    "republic-cafe",
+    "b-side",
+    "wyrd-hut",
+    "moda-center",
+    "kenton-club",
+    "shanghai-tunnel",
+    "turn-turn-turn",
+    "starday-tavern",
+    "the-off-beat"
+  ],
+  "editorialPreferenceGroups": {
+    "preferred": [
+      "black-water",
+      "high-water-mark",
+      "twilight",
+      "coffin-club",
+      "star-theater",
+      "dantes",
+      "roseland",
+      "wonder-ballroom",
+      "hawthorne-theatre",
+      "high-limit-room",
+      "crystal-ballroom",
+      "revolution-hall",
+      "mississippi",
+      "holocene",
+      "doug-fir",
+      "nova-pdx",
+      "starthrow",
+      "lolas-room",
+      "showdown",
+      "45-east",
+      "republic-cafe",
+      "b-side",
+      "wyrd-hut",
+      "moda-center",
+      "kenton-club",
+      "shanghai-tunnel",
+      "turn-turn-turn",
+      "starday-tavern",
+      "the-off-beat"
+    ],
+    "scene": [
+      "alleyway",
+      "polaris-hall",
+      "azoth",
+      "hawthorne-lounge",
+      "word-virus",
+      "the-six",
+      "show-bar",
+      "aladdin-theater",
+      "mission-theater"
+    ],
+    "secondary": [
+      "the-fixin-to",
+      "no-fun"
+    ]
+  },
+  "editorialPreferencePolicy": {
+    "preferred": "User-selected favorites and previously prioritized underground venues. Research these first regardless of importer availability or venue size; the list is an unordered priority group, not a 1-to-N personal ranking.",
+    "scene": "Other relevant rooms, one-off DIY spaces and independent culture; include confirmed fitting bills, but do not displace preferred venue research.",
+    "secondary": "Keep existing approved events; pursue new intake only for exceptionally relevant bills or on explicit request.",
+    "access": "Ingestion status is independent of preference. Blocked, absent, unopened or incomplete feeds must be reported as gaps, not penalized or counted as zero shows."
+  }
 }
