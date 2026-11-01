@@ -1,8 +1,5 @@
 name: Inspect official High Limit Room shows page (read-only)
 on:
-  push:
-    branches:
-      - discovery/coffin-highlimit-source-readiness-20261101
   workflow_dispatch:
 permissions:
   contents: read
