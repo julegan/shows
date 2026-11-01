@@ -3,14 +3,14 @@
   "purpose": "Portland city music venue source-of-truth for comprehensive event collection. Venue inclusion is not a genre filter.",
   "scope": "Portland, Oregon city limits",
   "policy": {
-    "priority": "Editorial selection first: use editorialPreferenceGroups (preferred > scene > secondary) independent of ingestionStatus. The preferred group is NOT ranked internally. Maintain all official verified dated events once a source is authorized; never pad the calendar with unrelated events to meet counts.",
+    "priority": "Full active music/DIY coverage encompasses BOTH preferred and additional relevant scene venues (editorialActiveVenueIds = preferred + scene). These groups have equal editorial research priority; only secondary coverage is deprioritized. Source ingestion readiness and remaining setup work are independent. Do not invent shows or pad unrelated programming to meet event counts.",
     "publication": "Importers propose source-linked events and artwork for review; only approved GitHub PRs reach main; portfolio sync is separately reviewed.",
     "uncertainty": "Do not invent missing showtimes, admission, genre, ages, images, or venue status. Hold conflicting facts. No anti-bot bypass.",
     "image": "Capture source-provided event flyers/photos and attribution when available; validate event specificity, legal embedding rights and failures before displaying; do not generate graphics."
   },
   "tiers": {
-    "core": "Existing per-venue coverage scope for active/desired calendars; editorial preference is separately recorded in editorialPreferenceGroups.",
-    "expansion": "Broader coverage scope or secondary venue; preference independently specified.",
+    "core": "Active music/DIY venue coverage for preferred AND additional scene venues. Venue source readiness is tracked independently.",
+    "expansion": "Secondary or broader coverage; events require scene relevance or a user request, not volume padding.",
     "watch": "Not yet open or suspended; preserve user preference while excluding invented date/event listings."
   },
   "venues": [
@@ -210,7 +210,7 @@
     {
       "id": "alleyway",
       "name": "The Alleyway",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [
@@ -232,7 +232,7 @@
     {
       "id": "polaris-hall",
       "name": "Polaris Hall",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://mississippistudios.com/calendar",
       "aliases": [],
@@ -293,7 +293,7 @@
     {
       "id": "azoth",
       "name": "AZØTH",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [
@@ -305,7 +305,7 @@
     {
       "id": "hawthorne-lounge",
       "name": "Hawthorne Lounge",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
@@ -315,7 +315,7 @@
     {
       "id": "word-virus",
       "name": "Word Virus Books",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
@@ -325,7 +325,7 @@
     {
       "id": "the-six",
       "name": "The Six (Midnight PDX Bar)",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [
@@ -358,7 +358,7 @@
     {
       "id": "show-bar",
       "name": "Show Bar at Revolution Hall",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.revolutionhall.com/show-bar/",
       "aliases": [
@@ -384,7 +384,7 @@
     {
       "id": "aladdin-theater",
       "name": "Aladdin Theater",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.aladdin-theater.com/",
       "aliases": [],
@@ -394,7 +394,7 @@
     {
       "id": "mission-theater",
       "name": "Mission Theater",
-      "tier": "expansion",
+      "tier": "core",
       "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.mcmenamins.com/mission-theater",
       "aliases": [],
@@ -510,7 +510,16 @@
     "shanghai-tunnel",
     "turn-turn-turn",
     "starday-tavern",
-    "the-off-beat"
+    "the-off-beat",
+    "alleyway",
+    "polaris-hall",
+    "azoth",
+    "hawthorne-lounge",
+    "word-virus",
+    "the-six",
+    "show-bar",
+    "aladdin-theater",
+    "mission-theater"
   ],
   "editorialPreferenceGroups": {
     "preferred": [
@@ -561,9 +570,49 @@
     ]
   },
   "editorialPreferencePolicy": {
-    "preferred": "User-selected favorites and previously prioritized underground venues. Research these first regardless of importer availability or venue size; the list is an unordered priority group, not a 1-to-N personal ranking.",
-    "scene": "Other relevant rooms, one-off DIY spaces and independent culture; include confirmed fitting bills, but do not displace preferred venue research.",
-    "secondary": "Keep existing approved events; pursue new intake only for exceptionally relevant bills or on explicit request.",
-    "access": "Ingestion status is independent of preference. Blocked, absent, unopened or incomplete feeds must be reported as gaps, not penalized or counted as zero shows."
-  }
+    "preferred": "Explicit user favorites and previously selected priority venues. Research and intake these at the same full-active priority as other relevant scene venues; do not treat this list as a strict rank.",
+    "scene": "Fully relevant additional venues: just as eligible for active coverage, source research, and adapter investment as preferred venues. This category distinguishes provenance of preference, NOT lower editorial priority.",
+    "secondary": "Keep approved events; do not prioritize fresh broad discovery at the changed-purpose Fixin' To or paused No Fun unless a bill merits special consideration or user requests it.",
+    "access": "An absent, blocked, unfinished, or unopenable feed is an engineering gap, never evidence of zero shows or a reason to lower editorial priority."
+  },
+  "editorialActiveVenueIds": [
+    "black-water",
+    "high-water-mark",
+    "twilight",
+    "coffin-club",
+    "star-theater",
+    "dantes",
+    "roseland",
+    "wonder-ballroom",
+    "hawthorne-theatre",
+    "high-limit-room",
+    "crystal-ballroom",
+    "revolution-hall",
+    "mississippi",
+    "holocene",
+    "doug-fir",
+    "nova-pdx",
+    "starthrow",
+    "lolas-room",
+    "showdown",
+    "45-east",
+    "republic-cafe",
+    "b-side",
+    "wyrd-hut",
+    "moda-center",
+    "kenton-club",
+    "shanghai-tunnel",
+    "turn-turn-turn",
+    "starday-tavern",
+    "the-off-beat",
+    "alleyway",
+    "polaris-hall",
+    "azoth",
+    "hawthorne-lounge",
+    "word-virus",
+    "the-six",
+    "show-bar",
+    "aladdin-theater",
+    "mission-theater"
+  ]
 }
