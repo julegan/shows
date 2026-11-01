@@ -230,7 +230,14 @@
       "name": "Shanghai Tunnel",
       "status": "adapter-needed",
       "priority": "underground-music",
-      "reason": "Confirm current venue calendar feed."
+      "reason": "Official Shanghai Tunnel website directs visitors to Instagram and shows no dated roster. A venue-named Eventbrite organizer lists original ticket pages, but live automated access has returned HTTP 429; treat as manual primary leads until a source probe establishes authorized repeatable access, date fields and venue-specific completeness. Do not infer zero upcoming shows from the venue webpage.",
+      "url": "https://www.eventbrite.com/o/shanghai-tunnel-underground-bar-venue-112736462551",
+      "baseUrl": "https://www.eventbrite.com",
+      "venue": "Shanghai Tunnel Bar",
+      "address": "211 SW Ankeny St, Portland, OR 97204",
+      "neighborhood": "Downtown",
+      "venueRegistryId": "shanghai-tunnel",
+      "candidateProvider": "Eventbrite organizer listing; not enabled"
     },
     {
       "id": "mississippi-polaris",

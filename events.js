@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-01",
   "coverageThrough": "2027-06-11",
-  "totalOccurrences": 860,
-  "addedOccurrences": 4,
-  "batchId": "auto-discovery-2026-11-01-26",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 861,
+  "addedOccurrences": 1,
+  "batchId": "2026-11-01-shanghai-tunnel-review",
+  "editorialReview": "New Shanghai Tunnel organizer-listed event requires user approval and ticket-page recheck",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -88,11 +88,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-10-31-24",
       "addedOccurrences": 5
+    },
+    {
+      "batchId": "auto-discovery-2026-11-01-26",
+      "addedOccurrences": 4
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 285
+  "musicOccurrences": 286
 };
 window.SHOWS_EVENTS = [
   {
@@ -19430,6 +19434,54 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-14T19:00:00-08:00"
+  },
+  {
+    "id": "shanghai-tunnel-tamarack-2026-11-14",
+    "title": "Tamarack! (Alaska) • Pauses • Burner Phone • Skrdycat",
+    "subtitle": "Original organizer-listed post-hardcore bill",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Post-hardcore",
+      "21+"
+    ],
+    "musicStyles": [
+      "Hardcore"
+    ],
+    "eventFormat": "live",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:30:00-08:00",
+    "doorsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Shanghai Tunnel Bar",
+    "address": "211 SW Ankeny St, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "21+",
+    "description": "Organizer-created Eventbrite listing identifies a November 14, 2026 live show, 8 PM doors and 8:30 PM start. Tamarack! is described as an Anchorage post-hardcore act; the listing names Pauses, Burner Phone and Skrdycat as additional performers. Check the original ticket page for any changes before attending.",
+    "source": "Shanghai Tunnel Underground Bar & Venue (Eventbrite)",
+    "url": "https://www.eventbrite.com/e/tamarack-alaska-pauses-burner-phone-skrdycat-at-shanghai-tunnel-bar-tickets-2003553411187",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-01",
+    "verificationMethod": "Original organizer-authored Eventbrite indexed listing; directly reopening provider returned HTTP 429 during this review, so final ticket-status check is required before merge",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Shanghai Tunnel Underground Bar & Venue on Eventbrite",
+        "url": "https://www.eventbrite.com/e/tamarack-alaska-pauses-burner-phone-skrdycat-at-shanghai-tunnel-bar-tickets-2003553411187",
+        "kind": "organizer",
+        "checkedAt": "2026-11-01",
+        "originalCategories": []
+      }
+    ],
+    "musicStyleEvidence": {
+      "basis": "Original organizer listing explicitly describes Tamarack! as a post-hardcore outfit; broad Hardcore browsing category only.",
+      "urls": [
+        "https://www.eventbrite.com/e/tamarack-alaska-pauses-burner-phone-skrdycat-at-shanghai-tunnel-bar-tickets-2003553411187"
+      ]
+    },
+    "addedIn": "2026-11-01-shanghai-tunnel-review"
   },
   {
     "id": "auto-star-theater-2026-11-14-729b45c3c421",
