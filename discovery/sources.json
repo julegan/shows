@@ -458,16 +458,6 @@
       "reason": "Preferred future venue: new 301 SE Morrison location has NOT reopened. October 2026 reporting projects early 2027; no announced event feed and no assumed opening date. Monitor official announcements."
     },
     {
-      "id": "mississippi",
-      "name": "Mississippi Studios",
-      "venue": "Mississippi Studios",
-      "venueRegistryId": "mississippi",
-      "status": "adapter-needed",
-      "priority": "editorial-active",
-      "url": "https://mississippistudios.com/calendar",
-      "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
-    },
-    {
       "id": "alleyway",
       "name": "The Alleyway",
       "venue": "The Alleyway",
@@ -475,16 +465,6 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
-    },
-    {
-      "id": "polaris-hall",
-      "name": "Polaris Hall",
-      "venue": "Polaris Hall",
-      "venueRegistryId": "polaris-hall",
-      "status": "adapter-needed",
-      "priority": "editorial-active",
-      "url": "https://mississippistudios.com/calendar",
       "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
     },
     {
@@ -525,16 +505,6 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
-    },
-    {
-      "id": "show-bar",
-      "name": "Show Bar at Revolution Hall",
-      "venue": "Show Bar at Revolution Hall",
-      "venueRegistryId": "show-bar",
-      "status": "adapter-needed",
-      "priority": "editorial-active",
-      "url": "https://www.revolutionhall.com/show-bar/",
       "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
     }
   ],
@@ -633,5 +603,10 @@
     "show-bar",
     "aladdin-theater",
     "mission-theater"
-  ]
+  ],
+  "sharedSourceCoverage": {
+    "mississippi": "mississippi-polaris",
+    "polaris-hall": "mississippi-polaris",
+    "show-bar": "revolution-hall"
+  }
 }
