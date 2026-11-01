@@ -33,3 +33,21 @@ Until then, keep looking at original artist/promoter event pages and venue ticke
 - Primary sources, source provenance, explicit Pacific date/offset and editorial review are required for each proposed event.
 - Respect access controls and venue/vendor usage permissions. No credential guessing, private endpoint probing or bypassing authentication.
 - Existing events remain untouched, and `No Fun` remains secondary and paused for daily intake.
+
+## November 1, 2026 — provider source verification
+
+### Coffin Club
+
+VenuePilot's [official API reference](https://docs.venuepilot.com/public/reference) and [schema documentation](https://docs.venuepilot.com/public/types) still support the already-coded read-only GraphQL integration (announced events, IDs, UTC start and door times, canceled status, images and pagination). The public VenuePilot widget account identifier 3434 is not an API credential. VenuePilot instructs partners to request a separately provisioned app ID through the venue's account manager.
+
+This branch wires the daily discovery workflow to the GitHub Actions secret `COFFIN_VENUEPILOT_APP_ID`. It does not create an app ID or activate the source. The `coffin-club` adapter remains `adapter-needed` until the credential has been authorized, stored as a secret, and confirmed by the [read-only Coffin probe](https://github.com/julegan/shows/actions/workflows/probe-coffin.yml). After that, inspect original events and duplicates before a separate activation PR.
+
+### High Limit Room — official HTML findings
+
+The [successful November 1 runner probe](https://github.com/julegan/shows/actions/runs/41347897664) fetched only the official `https://highlimitroompdx.com/shows/` page and reported **zero** static iframe references, original ticket links, JSON-LD Event blocks or dated time markers. The source HTML mentions **Afton**, and it loads two unrelated GoDaddy scripts. The page's initial HTML does not provide a reliable confirmed dated-event feed; this does **not** mean the venue has no upcoming shows. The probe did not access any Afton widget or private checkout API.
+
+High Limit Room's [official general contact](https://highlimitroompdx.com/contact/) is **highlimitroompdx@gmail.com**. Ask for a permissioned read-only machine-readable calendar (JSON, RSS or iCalendar) or published provider integration, event-specific links, time zone and doors/show distinctions, and image reproduction terms. Keep the source `adapter-needed` until a real dated feed is validated. Do not manufacture event counts or event starts from marketing text.
+
+### Review-only safeguards
+
+Neither source was activated; no approved events, images or portfolio snapshot changed. The High Limit HTML diagnostic is manual-only after this check, with fixtures in regular CI. Source unavailability must never imply cancellation or zero upcoming events.
