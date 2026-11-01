@@ -8,7 +8,9 @@ TreeTix provided the event-listing endpoint: https://www.treetix.com/api/events.
 
 Important limitations: cancellation notices are **not** included; rescheduled events are represented as new entries without a reschedule link. Missing events must never be automatically deleted or labeled canceled, and same-bill/new-date matches must be flagged for review. The provider asks consumers to **download original images instead of hotlinking** because hotlinking restrictions may be enforced later. Any local caching/public display must preserve image attribution and respect the repository's artwork rights-review policy.
 
-At the time of this update, the data fields, event IDs, exact time representation, rate limits, venue strings, permission scope for archival artwork and refresh interval have **not** been validated. The read-only script `scripts/probe-treetix-api.js` reports bounded keys/field examples without writing any events or artwork. Its workflow is manual and restricted to the one implementation branch for initial tests; do not enable automatic ingestion until real records are confirmed.
+**Live environment finding:** On November 1, 2026, GitHub Actions [run 41332079909](https://github.com/julegan/shows/actions/runs/41332079909) successfully ran the fixture tests but received **HTTP 403** from the provided API URL. No JSON schema or event coverage was confirmed. This is a source-access block, not an empty event list. The diagnostic workflow has been limited to manual dispatch to avoid ongoing failing notifications. Contact the provider to ask for a supported server-to-server delivery path or allowlist requirements; do not attempt to circumvent the denial.
+
+At the time of this update, the data fields, event IDs, exact time representation, rate limits, venue strings, permission scope for archival artwork and refresh interval have **not** been validated. The read-only script `scripts/probe-treetix-api.js` reports bounded keys/field examples without writing any events or artwork. Its workflow is manual only; do not enable automatic ingestion until real records are confirmed.
 
 ## Historical verified source and blocker
 
