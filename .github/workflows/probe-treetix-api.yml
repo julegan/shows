@@ -1,8 +1,5 @@
 name: Inspect TreeTix public events API (review only)
 on:
-  push:
-    branches:
-      - discovery/treetix-api-schema-20261101
   workflow_dispatch:
 permissions:
   contents: read
