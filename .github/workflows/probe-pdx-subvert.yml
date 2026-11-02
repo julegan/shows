@@ -18,3 +18,7 @@ jobs:
         run: |
           node --check scripts/probe-pdx-subvert-access.js
           node scripts/probe-pdx-subvert-access.js
+          node --check scripts/pdx-subvert-leads.js
+          node tests/pdx-subvert-leads.js
+          node scripts/pdx-subvert-leads.js
+          sed -n '1,24p' discovery/pdx-subvert-leads-review.md
