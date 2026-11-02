@@ -1,7 +1,5 @@
 name: Probe The Showdown first-party calendar
 on:
-  push:
-    branches: [discovery/showdown-official-calendar-20261101]
   workflow_dispatch:
 permissions:
   contents: read
