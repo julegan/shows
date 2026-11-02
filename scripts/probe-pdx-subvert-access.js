@@ -15,6 +15,22 @@ async function check(x){
   const raw=await response.text();out.bytes=raw.length;
   if(raw.length>850000)throw Error("Page larger than bounded probe");
   out.title=raw.match(/<title[^>]*>([^<]{1,200})<\/title>/i)?.[1]||null;
+  if(x.id==="revived-subvert"){
+    const nextPushes=[...raw.matchAll(/self\.__next_f\.push\(\[1,("(?:\\.|[^"\\])*")\]\)/g)];
+    out.nextFlightPushes=nextPushes.length;
+    let blocks=[];
+    for(const m of nextPushes){
+      try{
+        const parsed=JSON.parse(m[1]);
+        if(parsed.includes('"show":{'))blocks.push(parsed);
+      }catch(e){out.nextParseError=String(e.message)}
+    }
+    out.showBlocks=blocks.length;
+    out.showRecordTokens=blocks.reduce((n,s)=>n+(s.match(/"show":\{/g)||[]).length,0);
+    out.showFirstDecoded=blocks[0]?blocks[0].slice(Math.max(0,blocks[0].indexOf('"show":{')-100),blocks[0].indexOf('"show":{')+1850):null;
+    out.allPageScriptCount=(raw.match(/<script\b/gi)||[]).length;
+    out.nextRawSnippet=raw.slice(Math.max(0,raw.indexOf('__next_f.push')-40),raw.indexOf('__next_f.push')+550);
+  }
   out.items=tokens.map(t=>({token:t,count:raw.toLowerCase().split(t.toLowerCase()).length-1})).filter(x=>x.count);
   out.links=[...new Set([...raw.matchAll(/<a\b[^>]*href=["']([^"']{1,250})["']/gi)].map(m=>m[1]))]
     .filter(url=>/show|gig|event|calendar|archive|rss|feed|subvert|contact|wordpress/i.test(url)).slice(0,32);
