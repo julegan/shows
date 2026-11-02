@@ -19,3 +19,6 @@ jobs:
         run: |
           node --check scripts/probe-lolas-source.js
           node scripts/probe-lolas-source.js
+          node --check scripts/lolas-importer.js
+          node tests/lolas-importer.js
+          node scripts/probe-lolas-importer.js
