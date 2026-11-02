@@ -25,7 +25,13 @@ for(const venue of venues.venues){
  assert(venues.editorialPreferenceGroups[venue.editorialPreference]?.includes(venue.id),"Venue's preference group must match group index: "+venue.id);
  assert(!("editorialRank" in venue),"Preferences are groups, not an assumed personal rank");
 }
-assert.deepEqual(venues.venuePriority,venues.editorialPreferenceGroups.preferred,"Legacy venuePriority alias must match user-preferred group");
+assert.deepEqual(venues.editorialActiveVenueIds,[...venues.editorialPreferenceGroups.preferred,...venues.editorialPreferenceGroups.scene],"Both preferred and other relevant scene venues are fully active");
+assert.deepEqual(venues.venuePriority,venues.editorialActiveVenueIds,"Full venue priority includes all active venue groups");
+for(const id of venues.editorialActiveVenueIds){
+ const v=venues.venues.find(v=>v.id===id);
+ assert.equal(v.tier,id==="doug-fir"?"watch":"core","Fully relevant scene venue cannot be relegated to an expansion tier: "+id);
+}
+assert.deepEqual(venues.editorialPreferenceGroups.secondary,["the-fixin-to","no-fun"],"Only explicitly deprioritized venues are secondary");
 for(const id of ["mississippi","holocene","doug-fir","nova-pdx","starthrow","lolas-room","showdown","45-east","republic-cafe","b-side","wyrd-hut","moda-center"]){
  assert(venues.editorialPreferenceGroups.preferred.includes(id),"User-preferred venue retained: "+id);
 }
