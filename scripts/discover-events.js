@@ -22,6 +22,7 @@ const aladdin=require("./aladdin-importer");
 const mission=require("./mission-importer");
 const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
+const redcube=require("./45east-redcube-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -78,6 +79,7 @@ function urlOf(item,src){
   if(src.adapter==="mission-official-html")return mission.eventUrl(u.href);
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
+  if(src.adapter==="45east-redcube-original")return redcube.ticketUrl(u.href);
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="nova-official-schema")return nova.tixrUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
@@ -106,7 +108,7 @@ function extract(item,src,now){
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  // Every dated venue event is eligible; classify rather than discard unrelated categories.
  const stamp=item.startDate??item.startTime??item.start;
- const dateOnly=["black-water-ics","kenton-official-html","nova-official-schema"].includes(src.adapter)&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
+ const dateOnly=["black-water-ics","kenton-official-html","nova-official-schema","45east-redcube-original"].includes(src.adapter)&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
  if(stamp==null&&!dateOnly)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
  if(dateOnly){
@@ -189,6 +191,7 @@ async function fetchItems(source){
  if(source.adapter==="mission-official-html")return mission.fetchEvents(source);
  if(source.adapter==="lolas-mcmenamins-html")return lola.fetchEvents(source);
  if(source.adapter==="showdown-original-html")return showdown.fetchEvents(source);
+ if(source.adapter==="45east-redcube-original")return redcube.fetchEvents(source);
  if(source.adapter==="aladdin-official-html")return aladdin.fetchEvents(source);
  if(source.adapter==="offbeat-official-html")return offbeat.fetchEvents(source);
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
