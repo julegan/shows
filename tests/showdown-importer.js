@@ -29,7 +29,7 @@ assert.equal(a.eventUrl(first.replace("www.showdownpdx.com","bad.example")),null
 assert.equal(a.pageUrl("https://www.showdownpdx.com/page/9/"),null);
 assert.equal(a.pageUrl("http://www.showdownpdx.com/page/2/"),null);
 assert.equal(a.parsePage(body1+body1).entries.length,1,"Same page repeated cards must dedupe");
-assert.throws(()=>a.parsePage(body1.replace("Mon","Foo")),/No original/);
+assert.throws(()=>a.parsePage(body1.replace("Mon","Foo")),/No original Showdown event cards/);
 const detail1=google();
 const detail2=google({title:title2,mon:"12",day:"03",time:"200000"});
 assert.equal(a.calendarLink(detail1).year,2026);
