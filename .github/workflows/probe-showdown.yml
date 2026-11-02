@@ -19,3 +19,6 @@ jobs:
           node --check scripts/probe-showdown-source.js
           node scripts/probe-showdown-source.js
           node scripts/probe-showdown-detail.js
+          node --check scripts/showdown-importer.js
+          node tests/showdown-importer.js
+          node scripts/probe-showdown-importer.js
