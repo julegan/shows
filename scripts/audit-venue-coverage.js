@@ -28,17 +28,17 @@ function audit(today=pacificDay()){
 function report(a){
  const line=[
   "# Venue-first music coverage audit — "+a.date,"",
-  "Source of truth: \`discovery/venues.json\`. Counts are only **already-listed future SHOWS records**, not all dates on a venue calendar.",
+  "Source of truth: \`discovery/venues.json\` editorialPreferenceGroups. Both preferred and other scene venues are full-priority coverage. Preference and technical import readiness are independent. Counts are only **already-listed future SHOWS records**, not all dates on a venue calendar.",
   "A venue can have dozens of shows while SHOWS contains zero. Never substitute event totals for source completeness.","",
-  "## Core underground and DIY venues","",
+  "## Full-priority venue coverage (preferred plus additional relevant)","",
   "| Venue | Events listed | Music | Original images | Import source status | Official calendar |",
   "| --- | ---: | ---: | ---: | --- | --- |"
  ];
- for(const v of a.rows.filter(x=>x.tier==="core"))line.push("| "+v.name+" | "+v.futureCount+" | "+v.futureMusic+" | "+v.futureArtwork+" | "+v.ingestionStatus+" | "+(v.calendarUrl?"[Source]("+v.calendarUrl+")":"Needs verification")+" |");
- line.push("","## Expanded venue coverage","","| Venue | Events listed | Music | Import status |","| --- | ---: | ---: | --- |");
- for(const v of a.rows.filter(x=>x.tier!=="core"))line.push("| "+v.name+" | "+v.futureCount+" | "+v.futureMusic+" | "+v.ingestionStatus+" |");
+ for(const v of a.rows.filter(x=>x.editorialPreference!=="secondary"))line.push("| "+v.name+" | "+v.futureCount+" | "+v.futureMusic+" | "+v.futureArtwork+" | "+v.ingestionStatus+" | "+(v.calendarUrl?"[Source]("+v.calendarUrl+")":"Needs verification")+" |");
+ line.push("","## Secondary coverage (not active discovery priorities)","","| Venue | Events listed | Music | Import status |","| --- | ---: | ---: | --- |");
+ for(const v of a.rows.filter(x=>x.editorialPreference==="secondary"))line.push("| "+v.name+" | "+v.futureCount+" | "+v.futureMusic+" | "+v.ingestionStatus+" |");
  line.push("","## Events at unindexed venues","","These are not necessarily music-specific venues; review whether they belong in the permanent venue inventory.","",...a.notIndexed.map(x=>"- "+x));
- line.push("","## Collection order","","1. Repair core venue sources and authorized cross-venue promoter coverage before expanding unrelated categories.",
+ line.push("","## Collection order","","1. Research both preferred and other fully relevant scene venues at equal editorial priority, even when their source is blocked or no adapter exists. Record those gaps; a venue without an importer is NOT a lower priority.",
  "2. Discover every publicly announced future event at a supported venue; keep unknown genre and unverified times explicit.",
  "3. Extract source-provided event image + origin on the same pass; distinguish a generic logo from an event-specific flyer.",
  "4. Review source conflicts, duplicates, age/time/venue and image usage before merging; the portfolio sync remains a separate review.",

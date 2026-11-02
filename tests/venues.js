@@ -18,7 +18,26 @@ assert(count("black-water"),"Black Water must remain a core venue even without a
 assert.equal(count("black-water").futureCount,11,"Official source provides eleven dated Black Water listings");
 assert.equal(count("black-water").futureMusic,8,"Only source-evident music should be classified as Music");
 assert.equal(count("black-water").ingestionStatus,"active-adapter");
-assert.deepEqual(venues.venuePriority,["black-water","high-water-mark","twilight","coffin-club","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room","crystal-ballroom","revolution-hall"],"Owner-prioritized twelve venue targets");
+const allGroups=Object.values(venues.editorialPreferenceGroups).flat();
+assert.equal(new Set(allGroups).size,allGroups.length,"Preference groups must not duplicate venues");
+assert.equal(allGroups.length,venues.venues.length,"Every venue must belong to exactly one preference group");
+for(const venue of venues.venues){
+ assert(venues.editorialPreferenceGroups[venue.editorialPreference]?.includes(venue.id),"Venue's preference group must match group index: "+venue.id);
+ assert(!("editorialRank" in venue),"Preferences are groups, not an assumed personal rank");
+}
+assert.deepEqual(venues.editorialActiveVenueIds,[...venues.editorialPreferenceGroups.preferred,...venues.editorialPreferenceGroups.scene],"Both preferred and other relevant scene venues are fully active");
+assert.deepEqual(venues.venuePriority,venues.editorialActiveVenueIds,"Full venue priority includes all active venue groups");
+for(const id of venues.editorialActiveVenueIds){
+ const v=venues.venues.find(v=>v.id===id);
+ assert.equal(v.tier,id==="doug-fir"?"watch":"core","Fully relevant scene venue cannot be relegated to an expansion tier: "+id);
+}
+assert.deepEqual(venues.editorialPreferenceGroups.secondary,["the-fixin-to","no-fun"],"Only explicitly deprioritized venues are secondary");
+for(const id of ["mississippi","holocene","doug-fir","nova-pdx","starthrow","lolas-room","showdown","45-east","republic-cafe","b-side","wyrd-hut","moda-center"]){
+ assert(venues.editorialPreferenceGroups.preferred.includes(id),"User-preferred venue retained: "+id);
+}
+assert.equal(count("the-fixin-to").editorialPreference,"secondary","Arcade conversion removes live-show import priority");
+assert.equal(count("doug-fir").ingestionStatus,"not-open","Doug Fir not falsely marked open");
+assert.equal(count("doug-fir").editorialPreference,"preferred","Reopening watch must not lower personal priority");
 assert.equal(count("no-fun").tier,"expansion","No Fun stays listed but is no longer first-priority");
 for(const id of ["dantes","roseland","wonder-ballroom","hawthorne-theatre","high-limit-room","crystal-ballroom","revolution-hall"]){
  assert(count(id).tier==="core","Recently elevated priority venue: "+id);
