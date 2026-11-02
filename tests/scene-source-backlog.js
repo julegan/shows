@@ -3,12 +3,12 @@ const assert=require("node:assert/strict");
 const backlog=require("../discovery/scene-source-backlog.json");
 const canonical=require("../discovery/sources.json");
 assert.equal(backlog.schemaVersion,1);
-assert.equal(backlog.sources.length,13,"13 researched sources, not enabled importers");
+assert.equal(backlog.sources.length,14,"14 researched sources, not enabled importers");
 assert.equal(new Set(backlog.sources.map(x=>x.id)).size,backlog.sources.length,"Unique source IDs");
 const kinds=new Set(["promoter","record-label","scene-calendar"]);
 for(const s of backlog.sources){
  assert(kinds.has(s.kind),"Known source kind required");
- assert(["verified-label-research-lead","identity-verified-feed-unverified","operator-announced-site-access-unverified","existing-review-only-lead-collector","verified-promoter-research-lead"].includes(s.researchStatus),"Explicit research state required: "+s.id);
+ assert(["verified-label-research-lead","identity-verified-feed-unverified","operator-announced-site-access-unverified","existing-review-only-lead-collector","verified-promoter-research-lead","secondary-review-only-lead-collector"].includes(s.researchStatus),"Explicit research state required: "+s.id);
  assert(typeof s.evidenceUrl==="string"&&s.evidenceUrl.startsWith("https://"),"Evidence needed for "+s.id);
  assert(typeof s.nextStep==="string"&&s.nextStep.length>40,"Next action required for "+s.id);
  assert(!("enabled" in s)&&!("adapter" in s)&&!("status" in s),"Research list must not activate an importer: "+s.id);
@@ -24,5 +24,7 @@ assert.equal(backlog.sources.find(x=>x.id==="pdx-subvert").researchStatus,"opera
 const doomtown=canonical.sources.find(s=>s.id==="doomtown-pdx");
 assert(doomtown&&doomtown.leadMode==="review-only-not-event-adapter","Existing Doomtown lead source must not be duplicated or upgraded");
 assert.equal(backlog.sources.find(x=>x.id==="doomtown-pdx").researchStatus,"existing-review-only-lead-collector");
+assert.equal(backlog.sources.find(x=>x.id==="19hz-oregon").researchStatus,"secondary-review-only-lead-collector");
+assert(!canonical.sources.some(s=>s.id==="19hz-oregon"),"Secondary source cannot be activated as a direct source adapter");
 assert(!canonical.sources.some(s=>["777-booking","third-eye-booking","pdx-subvert"].includes(s.id)),"Unverified promoters and the revived site remain only research leads");
 console.log("PASS — owner-requested promoters, labels, existing Doomtown review and no unverified adapter activation");
