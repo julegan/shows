@@ -46,7 +46,14 @@ assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music
  "Conservative source-reviewed Music count must match actual, growing dataset");
 assert.equal(current.meta.totalOccurrences,objects.length,
  "Classification never adds or removes calendar events");
-assert.equal(registry.entries.length,5,"No broad or implicit artist auto-tagging");
+assert.equal(registry.entries.length,13,"Reviewed-event registry tracks only individually evidenced bills, without broad artist auto-tagging");
+// Keep the unrelated activities in the original High Water Mark calendar out of music.
+for(const title of ["Karaoke Night - Free!","Shady Pines Open Mic!","Kink Nite! Market and party!"]){
+ const classified=classifyEvent({title});
+ assert.notEqual(classified.category,"Music",title+" must not inherit a musical format from venue reputation");
+}
+assert(registry.entries.some(x=>x.url==="https://www.treetix.com/event/204920/highwatermark"&&x.evidenceUrl.includes("reddit.com/r/portlandmusic/")),
+  "Firsthand Nov 7 band-led evidence is pinned to exact provider event");
 for(const item of registry.entries){
  const got=reviewed.forEvent(item);
  assert(got&&got.category==="Music",item.title+" exact original evidence");
