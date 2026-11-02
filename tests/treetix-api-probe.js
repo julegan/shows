@@ -2,7 +2,7 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {analyze,shape,detail,ENDPOINT}=require("../scripts/probe-treetix-api");
-assert.equal(ENDPOINT,"https://www.treetix.com/api/events.json");
+assert.equal(ENDPOINT,"https://api.treetix.com/events.json");
 assert.equal(shape([]),"array(0)");
 assert.equal(shape(null),"null");
 assert.deepEqual(detail({id:42,title:"A Show",other:{private:"do not publish"}}).relevantValues,{id:42,title:"A Show"});
