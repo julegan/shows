@@ -9,7 +9,7 @@ const ROOT="https://www.showdownpdx.com";
 const HOME=ROOT+"/";
 const MONTHS={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
 const MAX_PAGES=8,MAX_DETAILS=90,MAX_BYTES=1200000;
-function textOf(x){return String(x||"").replace(/<[^>]*>/g," ").replace(/&(?:amp|#38);/gi,"&").replace(/&#(?:39|x27);|&apos;/gi,"'").replace(/&quot;/gi,'"').replace(/&nbsp;/gi," ").replace(/\s+/g," ").trim();}
+function textOf(x){return String(x||"").replace(/<[^>]*>/g," ").replace(/&(?:amp|#38);/gi,"&").replace(/&#0*39;|&#x0*27;|&#8217;|&(?:apos|rsquo);/gi,"'").replace(/&quot;/gi,'"').replace(/&nbsp;/gi," ").replace(/\s+/g," ").trim();}
 function normal(x){return textOf(x).toLowerCase().replace(/[^a-z0-9]/g,"");}
 function eventUrl(raw){
  try{
