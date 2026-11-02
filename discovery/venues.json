@@ -430,12 +430,12 @@
       "id": "showdown",
       "name": "The Showdown",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.showdownpdx.com/",
       "aliases": [
         "Showdown Saloon"
       ],
-      "notes": "Official calendar publishes dated live country, honky-tonk and alternative events at 1195 SE Powell Blvd. User-preferred venue; actual event suitability is determined by lineup, not venue genre.",
+      "notes": "Verified full-year original Showdown event detail calendar links and original venue show/door labels. Live GitHub Actions 41371602744 yielded 40 candidate listings and 11 held mismatches; remains full editorial priority, with all classification and event flyers subject to human approval.",
       "editorialPreference": "preferred"
     },
     {
