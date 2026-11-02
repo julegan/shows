@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Explicit original organizer event-specific ticket leads for Republic Cafe/Ming Lounge. Not a venue calendar, not an importer, and not permission to publish.",
+  "venueId": "republic-cafe",
+  "venueName": "Republic Cafe / Ming Lounge",
+  "expectedAddress": "222 NW 4th Ave, Portland, OR 97209",
+  "researchStatus": "one-original-organizer-event-accessible; no verified promoter-wide calendar",
+  "eventUrls": [
+    "https://www.eventbrite.com/e/bigbababygucci-in-portland-before-the-paint-dries-tour-tickets-2003364987607"
+  ],
+  "organizers": [
+    {
+      "name": "Heady Presents",
+      "kind": "organizer-original-ticket",
+      "url": "https://www.eventbrite.com/o/heady-presents-121506951205",
+      "eventUrl": "https://www.eventbrite.com/e/bigbababygucci-in-portland-before-the-paint-dries-tour-tickets-2003364987607",
+      "status": "specific-future-event-source-verified"
+    },
+    {
+      "name": "Headspace Circus",
+      "kind": "original-organizer-social",
+      "url": "https://www.instagram.com/headspace.circus/",
+      "status": "historical-weekly-programming-reported; no-public-dated-feed-verified"
+    },
+    {
+      "name": "Group Sound",
+      "kind": "ra-promoter-history",
+      "url": "https://ra.co/events/2405955",
+      "status": "2026-04-25 historical-event; GitHub runner HTTP403; no-recurring-assumption"
+    },
+    {
+      "name": "Be Yourself PDX",
+      "kind": "ra-promoter-history",
+      "url": "https://ra.co/events/2374481",
+      "status": "2026-03-13 historical-event; GitHub runner HTTP403; no-recurring-assumption"
+    },
+    {
+      "name": "Tarantella",
+      "kind": "ra-promoter-history",
+      "url": "https://ra.co/events/2223500",
+      "status": "2025-09-19 historical-event; do-not-republish"
+    }
+  ],
+  "rules": [
+    "Never discover new dates from an undated weekly description or historical listing; no assumed Tuesday Headspace Circus events.",
+    "Each URL must be the original organizer-published event-specific public ticket page. No browsing Eventbrite search or third-party ticket APIs.",
+    "Report holds for changed/missing date, start time, organizer, address, event status or HTML access; do not remove canonical events.",
+    "Don't publish automatically: canonical SHOWS events are curated via separate approval PR.",
+    "Artist/genre relevance and original image rights require editorial approval independently of venue relevance."
+  ]
+}
