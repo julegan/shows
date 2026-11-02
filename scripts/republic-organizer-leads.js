@@ -42,7 +42,8 @@ function parse(html,url,now=new Date()){
    !/republic\s*cafe.*ming\s*lounge|ming\s*lounge.*republic\s*cafe/i.test(String(ev.location?.name||"")))
   throw Error("Organizer venue address or identity differs from Republic/Ming");
  const name=clean(ev.name),org=clean(ev.organizer?.name),orgUrl=String(ev.organizer?.url||"");
- if(!name||org!=="Heady Presents"||orgUrl!=="https://www.eventbrite.com/o/heady-presents-121506951205")
+ const expected=conf.organizers.find(x=>x.kind==="organizer-original-ticket"&&x.eventUrl===url);
+ if(!name||!expected||org!==expected.name||orgUrl!==expected.url)
   throw Error("Original organizer or title mismatch");
  const local=localDay(ev.startDate),start=new Date(ev.startDate),end=new Date(ev.endDate);
  if(!local||!Number.isFinite(start.getTime())||start.getTime()<now.getTime()-86400000||
