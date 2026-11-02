@@ -18,3 +18,4 @@ jobs:
         run: |
           node --check scripts/probe-showdown-source.js
           node scripts/probe-showdown-source.js
+          node scripts/probe-showdown-detail.js
