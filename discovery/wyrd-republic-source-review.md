@@ -2,6 +2,16 @@
 
 **November 1, 2026.** Both venues remain **full editorial priority**. They do not yet offer a verified complete, authorized, machine-readable public event calendar. Their lack of importers must not be mistaken for a lack of shows.
 
+## November 1 follow-up — working secondary lead monitoring
+
+[Public NearHear Wyrd venue listings](https://nearhear.app/venues/4583) expose read-only `MusicEvent` JSON-LD, validated in a live GitHub Actions runner on **November 1, 2026**: **five future music leads**, all with UTC times and an address that matches **4704 SE 65th Ave, Portland**. The new `scripts/wyrd-secondary-leads.js` converts them to Pacific local day/time and writes `discovery/wyrd-secondary-leads-review.md` to the existing daily Actions review artifact. **This does not enable a Wyrd importer, send any requests to ticket sites, or alter approved event records.**
+
+Observed sample bills include House of Warmth / sertraline. / Speckle, Flying Whammy / Tensas & The Mourners / Kids on Fire / Sorry Holly, Fundamental, The Mistons / Trans Panic, and Throw / Billy Batts & the Made Men / NOR/ME. All are **secondary candidate leads**. Their listing clock could be show, doors or another event time, not verified by an original organizer page. Some NearHear JSON-LD `offers.url` links point only to [Sad Times Productions' general show archive](https://www.sadtimesproductions.com/shows), which currently displays 2026 historical events rather than the exact winter 2026–27 bills. **That archive does not corroborate an upcoming show.**
+
+The [original Wyrd Hut website](https://wyrdhut.com/) is a **Launching Soon** placeholder and does not provide a dated schedule. Automated requests to the original Bandcamp artist page yielded a restricted/challenge response and BandSlate returned HTTP 429. Neither was bypassed. Research and manual source checks can continue, but the daily collector only reads the openly served NearHear venue page with a bounded GET. If the source stops working, the report explicitly records the hold; it does not say the venue has zero shows or remove any existing event.
+
+The daily workflow now retains this review alongside the existing Doomtown and source/artwork reviews. **The lead-only report does not by itself create a new PR**; it remains accessible in that day's action artifact and summary. If approved canonical events change, the corresponding review PR can include the report.
+
 ## Wyrd Hut
 
 - Original venue social account: [@wyrdhut](https://www.instagram.com/wyrdhut/). **No authorized chronological importer** confirmed. Do not bypass authentication or use unrelated 'Wyrd Leatherworks & Meadery' (a different business).
