@@ -425,7 +425,7 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "Full-priority user-preferred Republic Cafe / Ming Lounge: original restaurant site confirms 222 NW 4th Ave, but not a complete dated event feed. Headspace Circus organizer's @headspace.circus provides relevant electronic/queer nightlife leads; July 2026 journalistic report of weekly events is NOT current dated event proof. Original organizer or original ticket confirmation required for each bill.",
+      "reason": "Full-priority Republic Cafe/Ming Lounge (222 NW 4th Ave). Original restaurant site has no complete music calendar. A public original Eventbrite organizer ticket for Dec 19 2026 Heady Presents BigBabyGucci is independently validated by the bounded one-page daily review watch (original full-year show timestamp, venue, address, organizer, status). Organizer research also identifies Headspace Circus, Group Sound, Be Yourself PDX and Tarantella; historical recurring events are NOT future dates. No complete source adapter: retain adapter-needed and separate daily review-only report; do not fabricate Tuesday recurrence or publish out-of-genre shows automatically.",
       "researchSources": [
         {
           "kind": "original-venue-website",
@@ -441,6 +441,16 @@
           "kind": "journalism-context",
           "url": "https://www.wweek.com/culture/2026/07/22/portlands-best-rave-in-a-chinese-restaurant/",
           "status": "historic-recurring-pattern-not-current-event-date"
+        },
+        {
+          "kind": "original-organizer-specific-ticket",
+          "url": "https://www.eventbrite.com/e/bigbababygucci-in-portland-before-the-paint-dries-tour-tickets-2003364987607",
+          "status": "2026-12-19-20:00-Pacific-original-event-verified-genre-review-required"
+        },
+        {
+          "kind": "historical-organizer-event",
+          "url": "https://ra.co/events/2405955",
+          "status": "Group-Sound-Bloom-IV-April-2026; runner-HTTP403; no-future-assumption"
         }
       ]
     },
