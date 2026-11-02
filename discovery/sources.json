@@ -377,10 +377,15 @@
       "venueRegistryId": "lolas-room",
       "name": "Lola's Room",
       "venue": "Lola's Room",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
       "url": "https://www.mcmenamins.com/crystal-ballroom/lolas-room/music-events/",
-      "reason": "McMenamins Lola's Room is a distinct upstairs venue and must not be imported as Crystal Ballroom's main stage; verify original room-specific event links and notices."
+      "reason": "Original Lola room roster explicitly labels each card 'at Lola's Room' and supplies original event URLs, printed weekday, doors/show event time, plus independent year-bearing first-party autocomplete index. One bounded official HTML request per refresh; never fan out to detail pages because separate detail checks triggered 429/timeouts. Holds cross-room / ambiguous time-range events, cancellations and source conflicts; every candidate needs a human review PR.",
+      "adapter": "lolas-mcmenamins-html",
+      "baseUrl": "https://www.mcmenamins.com",
+      "address": "1332 W Burnside St, Portland, OR 97209",
+      "neighborhood": "West End",
+      "enabledReason": "Read-only GitHub runner 41369494786 validated 13 Lola original event identities: 10 dated/timed candidates and 3 manual source holds (two multiroom and one time range). Fixture tests and normal CI preserve room/time distinctions."
     },
     {
       "id": "showdown",
