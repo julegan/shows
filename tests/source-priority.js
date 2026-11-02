@@ -8,8 +8,11 @@ const sourceOrder=["black-water","high-water","soundcontrol-pdx","twilight","cof
 assert.deepEqual(registry.primaryVenuePriority,targetIds,"Owner-selected priority is stable and machine readable");
 assert(venues.editorialPreferenceGroups.preferred.length>targetIds.length,"Preferences must extend beyond legacy first twelve");
 assert(targetIds.every(id=>venues.editorialPreferenceGroups.preferred.includes(id)),"All original core venues remain preferred");
-assert.deepEqual(venues.venuePriority,venues.editorialPreferenceGroups.preferred,"Canonical preferred venue group must drive ordering");
-assert.deepEqual(registry.editorialPriority,venues.editorialPreferenceGroups.preferred.map(id=>venues.venues.find(v=>v.id===id).name),"Source research priorities must mirror canonical preferences");
+assert.deepEqual(venues.editorialActiveVenueIds,[...venues.editorialPreferenceGroups.preferred,...venues.editorialPreferenceGroups.scene],"All relevant scene venues are full editorial priorities");
+assert.deepEqual(venues.venuePriority,venues.editorialActiveVenueIds,"Canonical active venue roster drives research priority");
+assert.deepEqual(registry.editorialPriority,venues.editorialActiveVenueIds.map(id=>venues.venues.find(v=>v.id===id).name),"Source research priorities must include preferred AND additional relevant venues");
+assert.deepEqual(registry.editorialActiveVenueIds,venues.editorialActiveVenueIds,"Source discovery references full canonical active venue list");
+for(const id of venues.editorialPreferenceGroups.scene)assert.equal(venues.venues.find(v=>v.id===id).tier,"core","Additional relevant scene venue has full scope: "+id);
 assert(registry.primaryVenuePriorityRole.includes("Legacy"),"Legacy source adapter order must not be mistaken for editorial order");
 assert.deepEqual(sources.slice(0,sourceOrder.length).map(s=>s.id),sourceOrder,"Core venue and High Water Mark promoter adapters are first");
 assert.equal(new Set(sources.map(s=>s.id)).size,sources.length,"Source IDs must be unique");
@@ -69,3 +72,12 @@ for(const id of ["nova-pdx","lolas-room","showdown","45-east","republic-cafe","b
 }
 assert.equal(byId["doug-fir"].status,"reopening-watch","Reopening venue is a research watch, not an active source");
 assert.equal(byVenue["the-fixin-to"].editorialPreference,"secondary","Former concert room not prioritized as active music venue");
+
+assert.equal(registry.sharedSourceCoverage["mississippi"],"mississippi-polaris","Do not duplicate Mississippi importer");
+assert.equal(registry.sharedSourceCoverage["polaris-hall"],"mississippi-polaris","Do not duplicate Polaris importer");
+assert.equal(registry.sharedSourceCoverage["show-bar"],"revolution-hall","Do not duplicate Show Bar importer");
+assert(!registry.sources.some(s=>["mississippi","polaris-hall","show-bar"].includes(s.id)),"Do not create fake blocked stubs for shared active venue feeds");
+for(const id of venues.editorialPreferenceGroups.scene){
+ if(registry.sharedSourceCoverage[id])continue;
+ assert(registry.sources.some(s=>s.venueRegistryId===id),"Each additional scene venue needs source tracking: "+id);
+}
