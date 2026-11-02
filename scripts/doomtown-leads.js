@@ -3,7 +3,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const API='https://doomtownpdx.com/wp-json/wp/v2/posts?per_page=40&_fields=id,date,link,title,content';
-const venues=['High Water Mark','Black Water','High Limit Room','Shanghai Tunnel','Twilight','The Coffin Club','The Alleyway','Star Theater','Kenton Club'];
+const venues=['High Water Mark','Black Water','High Limit Room','Shanghai Tunnel','Twilight','The Coffin Club','The Alleyway','Star Theater','Kenton Club','Wyrd Hut','Republic Cafe','Ming Lounge'];
 const plain=s=>String(s||'').replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,' ').replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
 const dateText=s=>s.match(/\b(?:Mon(?:day)?|Tues?(?:day)?|Wed(?:nesday)?|Thurs?(?:day)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?)?\.?\s*(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+20\d{2})?/i)?.[0]?.trim()||null;
 function parsePosts(posts){
