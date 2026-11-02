@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-02",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1025,
-  "addedOccurrences": 164,
-  "batchId": "auto-discovery-2026-11-02-1",
+  "totalOccurrences": 1032,
+  "addedOccurrences": 7,
+  "batchId": "auto-discovery-2026-11-02-28",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -96,6 +96,10 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-11-01-shanghai-tunnel-review",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "auto-discovery-2026-11-02-1",
+      "addedOccurrences": 164
     }
   ],
   "newLiveBills": 0,
@@ -17285,6 +17289,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-11-11-ec16dc422084",
+    "title": "BEGINNERS PINBALL NIGHT",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-11T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-11-e69636edca1b",
     "title": "Mayya Marie + Noah Powell",
     "subtitle": "Source-discovered venue event · details need review",
@@ -19899,6 +19947,50 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "auto-discovery-2026-10-18",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-11-14-877430c2c065",
+    "title": "BW ANNUAL RECORD FAIR + DJS 11A-5PM",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Markets",
+    "tags": [
+      "Source-listed Markets",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-14T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "black-water",
       "method": "primary-source-collection"
@@ -24768,6 +24860,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-11-20-33fdc36e3ac7",
+    "title": "FOGWEAVER",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-20T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-11-20-93262639ab11",
     "title": "SPACE 92",
     "subtitle": "Source-discovered venue event · details need review",
@@ -25770,6 +25906,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-11-21-573046253993",
+    "title": "FTC / JAB / YOUTH INDOCTRINATION",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-21T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -27098,6 +27278,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-11-23-0dfb9f6928df",
+    "title": "JALLANZO / DUB KHLAAT / BLIND PROPHET / MIKEY DUB",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-23T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-23-f11685f0e458",
     "title": "Open Mic with Lucas Benoit",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28204,6 +28428,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-11-26-9b2a11c63b00",
+    "title": "CLOSED",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-26T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -29840,6 +30108,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-01",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-11-29-4498c3a4b8e6",
+    "title": "SGC BENEFIT SHOW",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-29T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-02",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-02",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-02",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
