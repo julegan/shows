@@ -15,4 +15,17 @@ for(const p of registry.promoters){
  assert(!venues.venues.some(v=>v.id===p.id),"Promoter is not a venue");
 }
 assert(!registry.promoters.find(p=>p.id==="third-eye-booking-pdx").sourceCandidates.length,"Don't invent Third Eye official URL from unrelated agencies");
+const seven=registry.promoters.find(p=>p.id==="777-booking");
+assert.equal(seven.verifiedEventExamples.length,1,"Only one primary archived 777 co-promoted bill is proved");
+const [bill]=seven.verifiedEventExamples;
+assert.equal(bill.date,"2026-10-28");
+assert.equal(bill.venue,"High Limit Room");
+assert.match(bill.presenter,/SOS Booking.*777 Booking/);
+assert.equal(bill.timeKind,"doors","A published doors time cannot silently become a performance start");
+assert.match(bill.status,/historical/,"Past bill must never be proposed as an upcoming event");
+assert(seven.sourceCandidates.some(x=>x.url===bill.originalEventUrl&&/historical/i.test(x.status)),
+  "Store exact first-party original event link as provenance, not an active importer");
+assert(!registry.promoters.find(p=>p.id==="third-eye-booking-pdx").verifiedEventExamples,
+  "No event-specific Portland Third Eye primary links have been confirmed");
+
 console.log("PASS — 777 Booking and Third Eye Booking are independent, inactive, sourced promoter research leads");
