@@ -36,6 +36,19 @@ function analyze(payload) {
   const records = Array.isArray(container) ? container : Object.values(container);
   const objects=records.filter(x=>x && typeof x==="object");
   const target=objects.filter(x=>MATCH.test(JSON.stringify(x)));
+  const calendarOf=entry=>{
+    try{
+      const url=new URL(String(entry.event_url||""));
+      return url.protocol==="https:"&&url.hostname==="www.treetix.com"&&url.pathname==="/event"
+        ? (url.searchParams.get("cal")||"no-calendar") : "unknown";
+    }catch(_){return "unknown";}
+  };
+  const frequency=(list,key)=>Object.entries(list.reduce((out,row)=>{
+    const value=String(key(row)||"unspecified").slice(0,100);
+    out[value]=(out[value]||0)+1;return out;
+  },{})).sort((x,y)=>y[1]-x[1]).map(([label,count])=>({label,count}));
+  const sample=entry=>({event_id:entry.event_id,venue_name:preview(entry.venue_name),city:preview(entry.city),state_abbr:preview(entry.state_abbr),start_date:preview(entry.start_date),start_time:preview(entry.start_time),tz:preview(entry.tz),event_title:preview(entry.event_title),talent:preview(entry.talent),event_url:preview(entry.event_url),calendar:calendarOf(entry),image_url:preview(entry.image_url)});
+  const soundcontrol=objects.filter(row=>calendarOf(row)==="soundcontrol");
   return {
     checkedAt:new Date().toISOString(),
     endpoint:ENDPOINT,
@@ -46,7 +59,12 @@ function analyze(payload) {
     objectEntries:objects.length,
     firstEntry:records.length?detail(records[0]):null,
     targetMatches:target.length,
+    venueCounts:frequency(objects,x=>x.venue_name),
+    calendarCounts:frequency(objects,calendarOf),
     targetSamples:target.slice(0,3).map(detail),
+    soundcontrolCount:soundcontrol.length,
+    soundcontrolSamples:soundcontrol.slice(0,5).map(sample),
+    highWaterSamples:objects.filter(x=>/^high water mark lounge$/i.test(String(x.venue_name||""))).slice(0,4).map(sample),
     caveats:[
       "TreeTix says its public listing omits cancellations and treats reschedules as new events.",
       "A missing feed record must not remove or cancel a previously approved SHOWS event.",
