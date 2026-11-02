@@ -2,6 +2,7 @@
 const assert=require("node:assert/strict");
 const a=require("../scripts/showdown-importer");
 const {extract}=require("../scripts/discover-events");
+assert.equal(a.normal("Madam Cooper&#039;s Country Cabaret"),a.normal("Madam Cooper\'s Country Cabaret"));
 const first="https://www.showdownpdx.com/tm-event/square-dancing-with-old-time-highway-and-caller-amy-hofer/";
 const second="https://www.showdownpdx.com/tm-event/nug-how-strange-it-is-and-bonus-room/";
 const title1="Square Dancing with Old Time Highway and Caller Amy Hofer / KARAOKE @ 9:30";
