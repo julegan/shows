@@ -38,7 +38,7 @@ assert(lola.roster(page(rows,[card(),card({venue:"Crystal Ballroom"})])).some(x=
 assert(lola.roster(page(rows,[card({time:"1-7pm"})])).some(x=>x.hold));
 assert(lola.roster(page(rows,[card({date:"Friday, November 14"})])).some(x=>x.hold));
 assert(lola.roster(page(rows,[card(),card({time:"8pm show"})])).some(x=>x.hold));
-assert.throws(()=>lola.roster("no source"),/roster/);
+assert.throws(()=>lola.roster("no source"),/calendar cards absent/);
 assert.equal(lola.dateFromRecord(rows[0],"Saturday, November 14").fullDate,"2026-11-14");
 assert.equal(lola.dateFromRecord({...rows[0],date:"11/31/2026"},"Tuesday, November 31"),null);
 assert.equal(lola.dateFromRecord({...rows[0],date:"11/14"},"Saturday, November 14"),null);
