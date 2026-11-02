@@ -44,6 +44,9 @@ jobs:
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 
+      - name: Validate proposed promoter and label sources stay research-only
+        run: node tests/scene-source-backlog.js
+
       - name: Validate priority venue importers
         run: |
           node --check scripts/priority-importers.js

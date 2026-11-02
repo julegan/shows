@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-11-01",
+  "purpose": "Source-discovery research, NOT an active importer list. Keep requested promoters distinct from suggested record labels and venue/event feeds.",
+  "rules": [
+    "Never activate an importer from this file: canonical enabled adapters are controlled separately in discovery/sources.json and require live source validation and owner-reviewed PR.",
+    "Release date, artist catalog entry, label affiliation, tour announcement or social post is a lead, NOT independently an event in Portland.",
+    "Every event must be confirmed with an original date/year, venue, bill and clock (or accurately date-only); preserve provenance, flyer rights and room identity.",
+    "Avoid conflating labels/promoters with named venue records; source evidence for a show must carry its actual host venue.",
+    "Technical accessibility does not determine editorial worth; failures and lack of an official feed are research gaps.",
+    "Clearly separate 'owner requested' for 777 Booking/Third Eye Booking from assistant-suggested labels and calendars."
+  ],
+  "sources": [
+    {
+      "id": "777-booking",
+      "name": "777 Booking",
+      "kind": "promoter",
+      "requestedByOwner": true,
+      "editorialFit": "Portland DIY hardcore bookings; High Limit Room connection",
+      "researchStatus": "identity-verified-feed-unverified",
+      "officialSourceUrl": null,
+      "evidenceUrl": "https://www.wweek.com/culture/2025/07/22/high-limit-room-is-portlands-newest-home-for-all-ages-hardcore/",
+      "nextStep": "Verify original @777booking public profile or organizer-supplied dated show list. Record original flyer/bill and venue, including High Limit Room and offsite DIY dates."
+    },
+    {
+      "id": "third-eye-booking",
+      "name": "Third Eye Booking",
+      "kind": "promoter",
+      "requestedByOwner": true,
+      "editorialFit": "Portland hardcore shows, benefits and DIY bills",
+      "researchStatus": "identity-verified-feed-unverified",
+      "officialSourceUrl": null,
+      "evidenceUrl": "https://www.northwesthardcore.net/dani-dry-socket",
+      "nextStep": "Find and verify the promoter's OWN public show source/profile with original flyer/permalink. Do NOT mistake this Portland hardcore promoter for unrelated Third Eye Shut Booking (Los Angeles)."
+    },
+    {
+      "id": "black-water-records",
+      "name": "Black Water Records",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Local hardcore, punk, metal, post-punk and record-release shows",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://blackwaterpdx.com/store/",
+      "evidenceUrl": "https://blackwaterpdx.com/store/",
+      "nextStep": "Monitor date-bearing show or record-release notices and verify them with the event's official original venue/ticket page. Keep label distinct from Black Water Bar event source."
+    },
+    {
+      "id": "wyrd-war",
+      "name": "Wyrd War",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland experimental metal, dungeon synth, dark art and sometimes live music/film events",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://wyrdwar.bandcamp.com/",
+      "evidenceUrl": "https://hollywoodtheatre.org/series/wyrd-war-presents/",
+      "nextStep": "Inspect actual Wyrd War Presents dates at the host venue; preserve mixed film/music format and original bill details."
+    },
+    {
+      "id": "little-cloud-records",
+      "name": "Little Cloud Records",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland shoegaze, dark psych, experimental indie and post-punk-adjacent acts",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://littlecloudrecords.com/pages/about",
+      "evidenceUrl": "https://littlecloudrecords.com/pages/about",
+      "nextStep": "Use artist-tour/release notices as leads. Confirm Portland Metro date at venue/artist/ticket source before candidate publication."
+    },
+    {
+      "id": "jigsaw-records",
+      "name": "Jigsaw Records / My Vinyl Underground",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland indie/post-punk label and record store with explicitly advertised in-store shows",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://jigsaw-records.com/",
+      "evidenceUrl": "https://jigsaw-records.com/",
+      "nextStep": "Find shop's actual dated in-store shows and confirm whether original flyers/links allow review-only discovery."
+    },
+    {
+      "id": "beacon-sound",
+      "name": "Beacon Sound",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland experimental, adventurous, artist-centered music and intimate independent cultural programs",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://beaconsound.com/about",
+      "evidenceUrl": "https://beaconsound.com/about",
+      "nextStep": "Follow label and associated artist performances, not release-product entries. Validate original local event dates."
+    },
+    {
+      "id": "projekt-records",
+      "name": "Projekt Records",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland darkwave, goth, ethereal, dark ambient and electronic music",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://www.projekt.com/store/about/",
+      "evidenceUrl": "https://www.projekt.com/store/about/",
+      "nextStep": "Check local touring/label-show announcements; broad global catalog alone does not imply a Portland show."
+    },
+    {
+      "id": "wergild",
+      "name": "Wergild",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Underground black metal with independently evidenced Portland show connections",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://www.wergild.org/",
+      "evidenceUrl": "https://www.wergild.org/",
+      "nextStep": "Research original show notices associated with label acts, confirming first-party date, venue and artist bill."
+    },
+    {
+      "id": "puddletown-records",
+      "name": "Puddletown Records",
+      "kind": "record-label",
+      "requestedByOwner": false,
+      "editorialFit": "Portland experimental electronica, darkwave, metal and genre-bending music",
+      "researchStatus": "verified-label-research-lead",
+      "officialSourceUrl": "https://puddletownrecords.com/",
+      "evidenceUrl": "https://puddletownrecords.com/",
+      "nextStep": "Monitor label/artist release shows when dated, not album releases as SHOWS events."
+    },
+    {
+      "id": "pdx-subvert",
+      "name": "PDX//SUBVERT (revived)",
+      "kind": "scene-calendar",
+      "requestedByOwner": false,
+      "editorialFit": "Specialist Portland punk, hardcore and metal show guide announced revived October 2026",
+      "researchStatus": "operator-announced-site-access-unverified",
+      "officialSourceUrl": "https://subvert.blackwaterpdx.com/",
+      "evidenceUrl": "https://blackwaterpdx.com/store/",
+      "nextStep": "Inspect the revived actual site and terms/access; evaluate current date-bearing records as secondary leads with authoritative venue/promoter/ticket confirmation. Old 2017 Blogspot pages must not be imported as current events."
+    },
+    {
+      "id": "doomtown-pdx",
+      "name": "Doomtown PDX",
+      "kind": "scene-calendar",
+      "requestedByOwner": false,
+      "editorialFit": "Original Portland underground punk and hardcore show calendar with flyers and venue details",
+      "researchStatus": "existing-review-only-lead-collector",
+      "officialSourceUrl": "https://doomtownpdx.com/",
+      "evidenceUrl": "https://doomtownpdx.com/",
+      "nextStep": "Existing scripts/doomtown-leads.js already collects original WordPress posts into discovery/doomtown-leads-review.md; use those source-verified review leads, do NOT build a duplicate importer. Event year, time and venue require primary confirmation."
+    }
+  ]
+}
