@@ -64,7 +64,7 @@ function parse(html,now=new Date()){
   const vm=/@\s*(.+?)\s*\(Portland,\s*OR\)\s*$/i.exec(venueText),venue=vm?.[1]?.trim()||"";
   // Restrict to Portland city listings; do not imply a 25 mile geofence from
   // secondary venue text (no coordinates). Original link is required.
-  if(!venue||!title||!lead)continue;
+  if(!venue||/[()]/.test(venue)||/^(?:TBA|unknown|undisclosed|secret)(?:\b|\s)/i.test(venue)||!title||!lead)continue;
   const tags=clean(c[2]),promoter=clean(c[4]),preferred=venueMatch(venue);
   const matchGenre=TOKENS.test(tags+" "+title+" "+promoter);
   if(!preferred&&!matchGenre)continue;
