@@ -127,10 +127,10 @@
       "kind": "scene-calendar",
       "requestedByOwner": false,
       "editorialFit": "Specialist Portland punk, hardcore and metal show guide announced revived October 2026",
-      "researchStatus": "operator-announced-site-access-unverified",
+      "researchStatus": "original-public-review-only-lead-collector",
       "officialSourceUrl": "https://subvert.blackwaterpdx.com/",
       "evidenceUrl": "https://blackwaterpdx.com/store/",
-      "nextStep": "Inspect the revived actual site and terms/access; evaluate current date-bearing records as secondary leads with authoritative venue/promoter/ticket confirmation. Old 2017 Blogspot pages must not be imported as current events."
+      "nextStep": "Public original subvert.blackwaterpdx.com homepage reachable by GitHub runner, renders three dated show records with band, venue, flyer references (verified live Actions 41520203569). Existing scripts/pdx-subvert-leads.js collects the original records as review-only daily evidence (1 ordinary lead, 2 holds on Nov 2 2026). Source UTC-encoded timestamps are rendered as wall clocks, NOT verified Pacific time; unusual 2 AM listing and mixed record fair/DJ program are held. Human checks original artist/venue/event-specific bill before any event PR. Do NOT auto-import or reuse flyers without rights."
     },
     {
       "id": "doomtown-pdx",

@@ -34,12 +34,24 @@ A label's artist tours, record-release shows, compilations, benefit bills and co
 
 | Source | Relevance and evidence | Next action |
 | --- | --- | --- |
-| **[PDX//SUBVERT (revived)](https://subvert.blackwaterpdx.com/)** | Specialist Portland punk, hardcore and metal show guide announced revived October 2026. [Evidence](https://blackwaterpdx.com/store/) | Inspect the revived actual site and terms/access; evaluate current date-bearing records as secondary leads with authoritative venue/promoter/ticket confirmation. Old 2017 Blogspot pages must not be imported as current events. |
+| **[PDX//SUBVERT (revived)](https://subvert.blackwaterpdx.com/)** | Specialist Portland punk, hardcore and metal show guide announced revived October 2026. [Evidence](https://blackwaterpdx.com/store/) | Now reached and source-verified from GitHub Actions. Original public `scripts/pdx-subvert-leads.js` collects three dated source leads into daily review (1 ordinary, 2 held). Confirm all times on original flyer or venue; do not auto-publish. Older Blogspot archive is historical. |
 | **[Doomtown PDX](https://doomtownpdx.com/)** | Original Portland underground punk and hardcore show calendar with flyers and venue details. [Evidence](https://doomtownpdx.com/) | Already covered by the existing `scripts/doomtown-leads.js` → `discovery/doomtown-leads-review.md` review-only lead workflow. Reuse that work; don't create another importer. Original event date/year and venue must still be verified. |
 
 ## Notable current opportunity
 
-**Black Water Records announced in October 2026 that [PDX//SUBVERT](https://subvert.blackwaterpdx.com/) had been revived** after about a decade. The [label's own October 2026 update](https://blackwaterpdx.com/store/) is the primary evidence. The new subdomain has **not yet been successfully probed**, so it is a priority source-research lead, **not** an active importer. The [old Blogspot archive](https://pdxsubvert.blogspot.com/) ends in the 2010s and must not be treated as live.
+**Black Water Records announced in October 2026 that [PDX//SUBVERT](https://subvert.blackwaterpdx.com/) had been revived** after about a decade. The [label's own October 2026 update](https://blackwaterpdx.com/store/) is the primary evidence. The original subdomain is **accessible and live**, verified by [GitHub Actions #41520203569](https://github.com/julegan/shows/actions/runs/41520203569). It currently exposes three original show records with source dates, band lists, venue names and flyer references. A dedicated **research-only lead collector** now feeds the existing daily review artifacts—**it is still not an approved event importer**. The [old Blogspot archive](https://pdxsubvert.blogspot.com/) ends in the 2010s and must not be treated as live.
+
+### PDX//SUBVERT live first-party feed findings (November 2, 2026)
+
+The revived public site supplies structured `show` objects via the HTML's serialized Next.js Flight data: original 24-character IDs, bands, venue, date clock, age label, source flyer reference, and cancellation flag. This is a first-party *scene guide* operated by Black Water Records, but does **not** independently authorize every third-party venue's event time or an image-reuse license. The read-only original site [lists three future shows](https://subvert.blackwaterpdx.com/); [Actions #41520203569](https://github.com/julegan/shows/actions/runs/41520203569) validated all three via deterministic fixtures and a live bounded GET.
+
+- **November 7, 2026:** Habak / Frenzy / Malakili / Verdant Force and Laughter at Black Water, displayed 8 PM — ordinary editorial lead, cross-check with Black Water's own concert roster to avoid duplicates.
+- **November 14, 2026:** Huge Prick / Jab / Festering Estate / Zero Sanity at "Ask A Idiot", shown at **2 AM** — *hold* until promoter confirms the day, actual venue, intended show vs doors time and “assuming all ages” claim.
+- **November 14, 2026:** Record Fair + DJ sets at Black Water, shown 7 PM — *hold* for SHOWS' music-first format review; it is not necessarily a concert.
+
+**Source time caveat:** Next.js serializes `dateOfShow` using `$D...Z` and the rendered page uses the UTC clock components. This is not evidence that the site has correctly converted local Pacific timezone/UTC offsets. Do not publish event timestamps by applying a guessed conversion; verify the original event flyer/artist/venue. Missing or canceled events cannot be used to automatically remove existing SHOWS entries. No flyer is downloaded, copied or hotlinked, and `usageApproved` is never assumed. The reporter is a single bounded public GET that does not call unadvertised APIs or follow ticketing redirects.
+
+The live source results are written to `discovery/pdx-subvert-leads-review.md` on the **same existing daily refresh**, shown in action summaries and saved as research artifacts. Research leads alone do not generate a new editorial PR; original confirmation is required for actual event additions.
 
 **Doomtown is already integrated as a review-only lead source** via `scripts/doomtown-leads.js`; no additional discovery connector is needed. Its posts are corroborated with original organizer/venue sources before calendar inclusion.
 
