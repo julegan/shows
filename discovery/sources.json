@@ -392,10 +392,15 @@
       "venueRegistryId": "showdown",
       "name": "The Showdown",
       "venue": "The Showdown",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
       "url": "https://www.showdownpdx.com/",
-      "reason": "Official shows page is publicly dated; validate each event and explicitly labelled start/doors before implementing review-only collection."
+      "reason": "Original venue WordPress/TicketWeb calendar lists dated event cards with separate show/doors clocks and event permalinks. Year is NOT assumed from month/day: bounded first-party event detail supplies a Google Calendar action with full-year local time and official 1195 SE Powell address. All identities and times cross-checked; unmatched events held. Full live runner 41371602744 found 40 verified candidate listings and 11 holds across six original listing pages. No third-party ticketing calls, speculative dates, automatic publication, or presumed flyer permission.",
+      "adapter": "showdown-original-html",
+      "baseUrl": "https://www.showdownpdx.com",
+      "address": "1195 SE Powell Blvd, Portland, OR 97202",
+      "neighborhood": "Brooklyn",
+      "enabledReason": "GitHub Actions run 41371602744 validated all bounded original pages and date evidence (40 verified, 11 held). Disabled sources are not deprioritized editorially; this source proposes review-only candidates."
     },
     {
       "id": "45-east",
