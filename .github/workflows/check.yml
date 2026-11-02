@@ -93,7 +93,6 @@ jobs:
           node tests/doomtown-leads.js
           node --check scripts/wyrd-secondary-leads.js
           node tests/wyrd-secondary-leads.js
-          node scripts/wyrd-secondary-leads.js
           node tests/wyrd-republic-research.js
           node --check scripts/probe-holocene.js
           node --check scripts/probe-mississippi.js
