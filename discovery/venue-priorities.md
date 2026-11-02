@@ -1,10 +1,10 @@
 # SHOWS — editorial venue preferences
 
-**Reviewed November 1, 2026.** This page is a human-readable view of the canonical preference groupings in [`venues.json`](venues.json). The machine-readable registry is the source of truth. Groups are **not ranked within themselves**; missing or easy-to-import calendars must not change a venue's preference.
+**Reviewed November 1, 2026.** This page is a human-readable view of the canonical preference groupings in [`venues.json`](venues.json). The machine-readable registry is the source of truth. Both **preferred** and **additional fully relevant** groups are full-priority research and coverage targets, with no lower discovery status for the additional group. Groups are **not ranked internally**; importer ease must not change editorial priority.
 
 ## Preferred venues
 
-These are places explicitly requested or historically prioritized for SHOWS; their calendars deserve first research attention. **Preference is separate from ability to import.** An entry can be preferred and have an inaccessible calendar, or be closed awaiting reopening.
+These are places explicitly requested or historically prioritized for SHOWS. They have **equal active research priority with the additional fully relevant venues below**, and importer readiness is tracked independently. An entry can be preferred and have an inaccessible calendar, or be closed awaiting reopening.
 
 | Venue | Verified calendar / evidence | SHOWS import status |
 | --- | --- | --- |
@@ -38,9 +38,9 @@ These are places explicitly requested or historically prioritized for SHOWS; the
 | Starday Tavern | [Official calendar/venue](https://stardaytavern.com/#calendar) | active-adapter |
 | The Off Beat | [Official calendar/venue](https://calendar.friendsofnoise.org/) | active-adapter |
 
-## Other relevant scene venues
+## Additional fully relevant venues — equal priority
 
-Interesting music, independent culture and one-off spaces. Continue to include source-verified fitting shows; these shouldn't pull research time away from venues the owner has deliberately prioritized.
+All nine are **full, active SHOWS coverage additions**, not tentative possibilities or a lower discovery tier. They deserve the same source research, event intake, flyer coverage and editorial review as the explicitly preferred group. The separation simply distinguishes additional scene-relevant venues from places the owner has singled out individually.
 
 - The Alleyway — adapter-needed
 - Polaris Hall — active-adapter
@@ -60,7 +60,7 @@ Interesting music, independent culture and one-off spaces. Continue to include s
 ## Venue details that affect our next work
 
 - **Doug Fir:** Official site [dougfirlounge.com](https://dougfirlounge.com/) currently lists no shows and identifies the new **301 SE Morrison St** location. [Local October 2026 reporting](https://whatnow.com/portland/restaurants/doug-fir-lounge-reopening-set-for-early-2027/) moves the reopening estimate from fall 2026 to **early 2027, possibly February**. No claimed launch date or fictional events.
-- **Mississippi Studios / Polaris Hall:** Existing official [calendar](https://mississippistudios.com/calendar) and importer serve separate venue identities; Mississippi is preferred, Polaris stays scene-relevant unless explicitly promoted. Never mislabel room identity.
+- **Mississippi Studios / Polaris Hall:** Existing official [calendar](https://mississippistudios.com/calendar) and importer serve two separate venue identities. Both have full editorial coverage priority, though Mississippi was explicitly identified as a favorite. Never mislabel room identity.
 - **Holocene:** Official [calendar](https://www.holocene.org/calendar) and existing verified importer. User-preferred despite previous technical `expansion` tier.
 - **Nova:** [Original venue calendar](https://www.novapdxevents.com/event-calendar) lists dated music, emo and dance nights. Source validation and import adapter are next steps.
 - **Lola's Room:** [Original distinct McMenamins room calendar](https://www.mcmenamins.com/crystal-ballroom/lolas-room/music-events/). Do not merge with Crystal Ballroom events or treat all McMenamins listings as Lola's.
@@ -78,7 +78,7 @@ The Get Down, The Goodfoot, The Den, Process PDX, Kelly's Olympian, Alberta Stre
 
 ## Guardrails
 
-1. Editorial preferences govern research and source-engineering **work order**, not automatic publication. Existing authorized importers can continue collecting events for review.
+1. Both preferred and additional relevant venues are full active coverage; only secondary venues receive reduced research and source-engineering attention. Priority never implies automatic publication. Existing authorized importers can continue collecting events for review.
 2. Source/adaptor readiness is independently tracked in [`sources.json`](sources.json); a missing feed is a backlog item, not a reason to drop a preferred venue.
 3. Preserve original event URLs, event room, local time and flyer provenance. Dates, venue status, performer genre and image use must be source-verified.
 4. Keep the owner-approved workflow: canonical SHOWS candidate PR → human review/merge → separate Portfolio snapshot sync PR.
