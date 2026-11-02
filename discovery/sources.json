@@ -407,10 +407,15 @@
       "venueRegistryId": "45-east",
       "name": "45 East",
       "venue": "45 East",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
-      "url": "https://www.45eastpdx.com/",
-      "reason": "Official 45 East venue and AXS event listings exist. Check authoritative event permalinks and date/time/venue identity; no provider API assumed."
+      "url": "https://www.redcubepresents.com/events/",
+      "reason": "Original Red Cube Presents public calendar identifies exact '45 EAST - PORTLAND' room, full year-bearing event dates, on-page promo art and group-specific Tixr tickets. Strictly exclude Seattle and other venue cards. No published showtime on these cards: preserve date-only candidates for review, never infer club opening hours. Missing/alternate tickets are held. Source validated live in GitHub run 41372565243 (17 valid dated listing identities; 2 holds). Artwork usageApproved:null. Only manual reviewed SH0WS PRs may publish.",
+      "adapter": "45east-redcube-original",
+      "baseUrl": "https://www.redcubepresents.com",
+      "address": "315 SE 3rd Ave, Portland, OR 97214",
+      "neighborhood": "Central Eastside",
+      "enabledReason": "Red Cube source probe successfully fetched one public official HTML document; 17 dated 45 East-only original Tixr links accepted, 2 suspicious records held. Only existing review-only discovery workflow; no ticket provider API and no automatic publication."
     },
     {
       "id": "republic-cafe",
