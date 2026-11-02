@@ -19,31 +19,32 @@
     {
       "id": "high-water",
       "name": "High Water Mark",
-      "status": "source-blocked",
+      "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Second priority. Direct venue host returned HTTP 403 to GitHub; do not bypass access controls. Use the verified Soundcontrol primary-promoter feed when possible and stage uncertain times for review.",
-      "url": "https://www.highwatermarklounge.com/",
-      "baseUrl": "https://www.highwatermarklounge.com",
+      "reason": "Provider-supported public TreeTix JSON host passed live GitHub Actions schema verification 41532069711; 2026-11-02 observed 69 original highwatermark-calendar events. Intake is read-only, review-only, never direct publication; the original venue host remains blocked.",
+      "url": "https://api.treetix.com/events.json",
+      "baseUrl": "https://www.treetix.com",
       "venue": "High Water Mark Lounge",
       "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
       "neighborhood": "Woodlawn",
-      "adapter": "venue-list-html",
-      "venueRegistryId": "high-water-mark"
+      "adapter": "treetix-public-json",
+      "venueRegistryId": "high-water-mark",
+      "enabledReason": "Authorized provider alternate host; 2026-11-02 GitHub runner validated actual event IDs, full date, local clock, timezone, venue, ticket permalink and images."
     },
     {
       "id": "soundcontrol-pdx",
       "name": "Soundcontrol PDX",
       "status": "pilot-enabled",
       "priority": "highest",
-      "reason": "Primary multi-venue promoter supports High Water Mark and other preferred locations. Preserve original venue per bill; do not infer showtime from a date-only flyer.",
-      "url": "https://www.soundcontrolpdx.com/",
-      "baseUrl": "https://www.soundcontrolpdx.com",
+      "reason": "Provider-supported TreeTix JSON feed supplies original Soundcontrol calendar events at verified Portland venues. 2026-11-02 runner found three current original promoter entries; never assume a promoter is the actual venue.",
+      "url": "https://api.treetix.com/events.json",
+      "baseUrl": "https://www.treetix.com",
       "venue": null,
       "address": null,
       "neighborhood": null,
-      "adapter": "promoter-list-html",
+      "adapter": "treetix-public-json",
       "type": "promoter",
-      "enabledReason": "Primary event HTML structure verified by GitHub Actions live probes; review-only candidate PRs, not publication."
+      "enabledReason": "Original Soundcontrol calendar 3 dated events in provider API during November 2 2026 live GitHub Actions probe; validated per-event location and link; review-only."
     },
     {
       "id": "twilight",

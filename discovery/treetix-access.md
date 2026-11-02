@@ -2,6 +2,16 @@
 
 Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **TreeTix has supplied an unauthenticated public event-listing endpoint; live schema is still unverified, and the adapter is not yet implemented or enabled**.
 
+## Successful live provider feed / adapter proposal — November 2, 2026
+
+Three GitHub Actions read-only probes against the **new** `https://api.treetix.com/events.json` host returned valid JSON, including [successful initial probe #41532069711](https://github.com/julegan/shows/actions/runs/41532069711). The [third detailed verification #41532520170](https://github.com/julegan/shows/actions/runs/41532520170) established the actual canonical permalink shape `https://www.treetix.com/event/{event_id}/{calendar}`, date `YYYY-MM-DD`, 12-hour local `start_time`, `tz: US/Pacific`, event `talent` and/or `event_title`, and individual venue names.
+
+**102 total provider records** are **not** 102 SHOWS events. They consist of **69 highwatermark calendar entries**, **3 soundcontrol entries**, 15 WhatsSoFunnyNetwork, 13 Peacock and two other producers. The venue view includes **70 High Water Mark Lounge records**, accounting for one Soundcontrol-produced bill, and one Soundcontrol show each at Dante's and Wonder Ballroom. Other producers and locations remain excluded from the proposed adapter.
+
+The independent adapter in this review PR scopes strictly to those two source calendars; validates original event ID and event permalink, exact venue, Portland/OR, local full-year date/clock/time zone and DST conversion; and **holds** malformed/ambiguous records for manual review. TreeTix's listed clock is **not verified as show vs doors**. A single bounded read can be shared between both source adapters per run. Original poster URLs are retained as research evidence only, **not displayed or hotlinked**, until reuse rights and permitted local caching are confirmed. Feed failures and omitted entries **never** imply cancellations or deletions.
+
+The existing daily refresh can propose source events in an ordinary editorial PR after this implementation is merged; SHOWS's approval and separate Portfolio publication steps remain mandatory. Compare original promoter and official venue duplicates before approval. Keep issue #56 open through successful end-to-end review and publication confirmation.
+
 ## Provider-approved alternate host — November 2, 2026
 
 TreeTix support (Lionel) confirmed that the previous host was blocked by **Cloudflare Bot Fight Mode** and supplied a **new, non-proxied public listing URL** for SHOWS: [https://api.treetix.com/events.json](https://api.treetix.com/events.json).

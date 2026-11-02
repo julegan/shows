@@ -29,13 +29,13 @@ for(const id of targetIds){
 assert.equal(byId["soundcontrol-pdx"].type,"promoter");
 assert.equal(byId["soundcontrol-pdx"].venue,null,"Promoter is never treated as a venue");
 assert.equal(byId["black-water"].status,"pilot-enabled","Keep public Google Calendar intake on");
-assert.equal(byId["high-water"].status,"source-blocked","Do not bypass venue site access controls");
+assert.equal(byId["high-water"].status,"pilot-enabled","Provider-approved TreeTix feed is read-only; direct venue host is still blocked");
 assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"paused-secondary","No Fun must not dominate scheduled discovery");
 assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top core source");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown","45-east"]);
-assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html","45east-redcube-original"].includes(s.adapter)),"Never run unverified adapters");
+assert.deepEqual(enabled.map(s=>s.id),["black-water","high-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown","45-east"]);
+assert(enabled.every(s=>["black-water-ics","treetix-public-json","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html","45east-redcube-original"].includes(s.adapter)),"Never run unverified adapters");
 for(const id of ["coffin-club","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }

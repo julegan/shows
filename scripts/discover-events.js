@@ -23,6 +23,7 @@ const mission=require("./mission-importer");
 const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
+const treetix=require("./treetix-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -80,6 +81,10 @@ function urlOf(item,src){
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
   if(src.adapter==="45east-redcube-original")return redcube.ticketUrl(u.href);
+  if(src.adapter==="treetix-public-json"){
+    const identity=treetix.eventCalendar(u.href);
+    return identity&&identity.id===item.originalEventId&&identity.calendar===item.originalCalendar?identity.url:null;
+  }
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="nova-official-schema")return nova.tixrUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
@@ -125,7 +130,9 @@ function extract(item,src,now){
   const mapped={
    "high water mark lounge":{venue:"High Water Mark Lounge",address:"6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",neighborhood:"Woodlawn"},
    "twilight cafe and bar":{venue:"Twilight Cafe and Bar",address:"832 SE Grand Ave, Portland, OR 97214",neighborhood:"Central Eastside"},
-   "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"}
+   "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"},
+    "dante's":{venue:"Dante's",address:"350 W Burnside St, Portland, OR 97209",neighborhood:"Old Town"},
+    "wonder ballroom":{venue:"Wonder Ballroom",address:"128 NE Russell St, Portland, OR 97212",neighborhood:"Eliot"}
   }[String(item.venue||"").toLowerCase()];
   if(!mapped)return {hold:"Promoter venue location must be verified inside Portland",title,url,date:item.dateOnly,venue:item.venue};
   item={...item,...mapped};
@@ -152,6 +159,8 @@ function extract(item,src,now){
   source:src.name,url,icon:category==="Music"?"♫":"◇",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, event type and cancellation verification required",
   sourceCategories:cat,sources:[{name:src.name,url,kind:"organizer",checkedAt:asof,originalCategories:cat}],
   ...(item.artwork?{artwork:item.artwork}:{}),
+   ...(item.sourceArtworkUrl?{sourceArtworkUrl:item.sourceArtworkUrl}:{}),
+   ...(item.originalEventId?{sourceEventId:item.originalEventId,sourceCalendar:item.originalCalendar}:{}),
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
  }};
 }
@@ -185,6 +194,7 @@ function reconcile(existing,records){
  return {accepted,held,skipped};
 }
 async function fetchItems(source){
+ if(source.adapter==="treetix-public-json")return treetix.fetchEvents(source);
  if(source.adapter==="nova-official-schema")return nova.fetchNovaEvents();
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.

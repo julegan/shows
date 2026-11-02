@@ -49,6 +49,11 @@ jobs:
           node --check scripts/diagnose-treetix-cloudflare.js
           node tests/treetix-cloudflare-diagnostic.js
 
+      - name: Validate provider-approved TreeTix feed (offline fixtures)
+        run: |
+          node --check scripts/treetix-importer.js
+          node tests/treetix-importer.js
+
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 

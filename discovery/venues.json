@@ -31,12 +31,12 @@
       "id": "high-water-mark",
       "name": "High Water Mark Lounge",
       "tier": "core",
-      "ingestionStatus": "source-blocked",
-      "calendarUrl": "https://www.highwatermarklounge.com/",
+      "ingestionStatus": "active-adapter",
+      "calendarUrl": "https://api.treetix.com/events.json",
       "aliases": [
         "High Water Mark"
       ],
-      "notes": "Official site blocked in runner; Soundcontrol is supplementary promoter source",
+      "notes": "TreeTix provider-supported public events JSON validated November 2, 2026 via GitHub runner; highwatermark calendar provides review-only dated events. Original venue website still blocks direct access; source poster URLs are evidence only until licensed and locally cached.",
       "editorialPreference": "preferred"
     },
     {
