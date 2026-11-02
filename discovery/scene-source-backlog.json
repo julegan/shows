@@ -142,6 +142,17 @@
       "officialSourceUrl": "https://doomtownpdx.com/",
       "evidenceUrl": "https://doomtownpdx.com/",
       "nextStep": "Existing scripts/doomtown-leads.js already collects original WordPress posts into discovery/doomtown-leads-review.md; use those source-verified review leads, do NOT build a duplicate importer. Event year, time and venue require primary confirmation."
+    },
+    {
+      "id": "sad-times-productions",
+      "name": "Sad Times Productions",
+      "kind": "promoter",
+      "requestedByOwner": false,
+      "editorialFit": "Portland DIY punk/hardcore and underground show promotion, with first-party archived Wyrd Hut, Star Bar, High Water Mark, Twilight and other local bills",
+      "researchStatus": "verified-promoter-research-lead",
+      "officialSourceUrl": "https://www.sadtimesproductions.com/shows",
+      "evidenceUrl": "https://www.sadtimesproductions.com/shows",
+      "nextStep": "Check for current/future originally posted show flyers and original event-ticket links, especially Wyrd Hut and Star Bar. Visible first-party calendar is historical 2025–2026, so do NOT import it as upcoming or invent recurrence; validate actual future event dates and venue independently."
     }
   ]
 }

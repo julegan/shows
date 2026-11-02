@@ -204,7 +204,7 @@
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
       "aliases": [],
-      "notes": "User-preferred underground/DIY show space. Independent listings point to @wyrdhut on Instagram; venue street number conflicts between directories, so verify original venue address on each event and do not publish assumptions.",
+      "notes": "User-preferred underground all-ages punk, goth and experimental DIY show space. Current original organizer/event listings and Travel Portland identify 4704 SE 65th Ave, Portland OR 97206, while older Portland Show-Guide lists 64th Ave; verify on each original event. The @wyrdhut public social account has no verified calendar feed. Shadowhouse's original Bandcamp shows list confirms Jan 9 at Wyrd Hut; a separate 2027 listing corroborates the year, but its clock and full lineup are not confirmed.",
       "editorialPreference": "preferred"
     },
     {
@@ -461,7 +461,7 @@
         "Ming Lounge",
         "Republic Cafe and Ming Lounge"
       ],
-      "notes": "222 NW 4th Ave venue site https://republiccafeor.com/ confirms business, not a machine-readable event calendar; monitor organizer/artist-advertised original shows before scheduling discovery.",
+      "notes": "User-preferred Republic Cafe / Ming Lounge at 222 NW 4th Ave; official restaurant site verifies venue but has no public comprehensive events calendar. Headspace Circus organizer runs genre-relevant electronic/goth-adjacent parties there according to Willamette Week in July 2026; never assume a particular Tuesday is confirmed from a historical recurring description. A Dec 19 2026 concert is a third-party lead, needing original organizer confirmation.",
       "editorialPreference": "preferred"
     }
   ],

@@ -15,3 +15,11 @@ assert.match(s.report([], 'HTTP 403'),/Source unavailable/);
 assert.throws(()=>s.parsePosts(null),/WordPress JSON/);
 const mock=async()=>({ok:true,status:200,headers:{get:()=> 'application/json; charset=utf-8'},text:async()=>JSON.stringify(posts)});
 s.fetchLeads(mock).then(rows=>{assert.equal(rows.length,2);console.log('PASS — original Doomtown posts, image/venue provenance, no date inference, unavailability report');}).catch(e=>{console.error(e);process.exitCode=1;});
+
+const newlyPrioritized=s.parsePosts([
+ {id:97,link:'https://doomtownpdx.com/wyrd-hut-jan/',title:{rendered:'Shadowhouse at Wyrd Hut'},date:'2026-11-01T10:00:00',content:{rendered:'Jan 9 Wyrd Hut, Portland. See original artist and venue sources.'}},
+ {id:98,link:'https://doomtownpdx.com/republic-cafe-diy-night/',title:{rendered:'Republic Cafe and Ming Lounge show leads'},date:'2026-11-01T11:00:00',content:{rendered:'Nov 7 Headspace Circus at Republic Cafe and Ming Lounge; check dated promoter post.'}}
+]);
+assert.deepEqual(newlyPrioritized[0].venues,['Wyrd Hut'],"Wyrd Hut must be included in ongoing scene discovery leads");
+assert.deepEqual(newlyPrioritized[1].venues,['Republic Cafe','Ming Lounge'],"Republic and Ming aliases must not be lost");
+assert.equal(newlyPrioritized[0].dateText,'Jan 9',"A yearless post date must remain an unverified lead, not an inferred calendar date");
