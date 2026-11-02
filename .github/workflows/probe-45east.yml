@@ -19,3 +19,6 @@ jobs:
         run: |
           node --check scripts/probe-45east-redcube.js
           node scripts/probe-45east-redcube.js
+          node --check scripts/45east-redcube-importer.js
+          node tests/45east-redcube-importer.js
+          node scripts/probe-45east-importer.js
