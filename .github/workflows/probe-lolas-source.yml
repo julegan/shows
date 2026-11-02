@@ -1,8 +1,5 @@
 name: Inspect Lola's Room official event source (read-only)
 on:
-  push:
-    branches:
-      - discovery/lolas-room-importer-20261101
   workflow_dispatch:
 permissions:
   contents: read
