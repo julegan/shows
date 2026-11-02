@@ -418,12 +418,12 @@
       "id": "lolas-room",
       "name": "Lola's Room",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.mcmenamins.com/crystal-ballroom/lolas-room/music-events/",
       "aliases": [
         "Lolas Room"
       ],
-      "notes": "Official McMenamins separate upstairs room at 1332 W Burnside; DO NOT infer every Crystal Ballroom main-stage event happens here, or conflate room identities.",
+      "notes": "Official Lola-specific card + independent full-year McMenamins search index, one-request live verified in GitHub Actions run 41369494786: 10 review candidates, 3 holds including two shared Crystal-complex bills. No Crystal main-stage identity inference or automatic publishing.",
       "editorialPreference": "preferred"
     },
     {

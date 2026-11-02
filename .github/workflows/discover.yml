@@ -81,6 +81,7 @@ jobs:
           node tests/calendar-horizon.js
           node tests/source-priority.js
           node tests/nova-importer.js
+          node tests/lolas-importer.js
           node --check scripts/doomtown-leads.js
           node tests/doomtown-leads.js
           node tests/validate.js

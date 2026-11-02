@@ -20,6 +20,7 @@ const turn=require("./turnturnturn-opendate");
 const offbeat=require("./offbeat-importer");
 const aladdin=require("./aladdin-importer");
 const mission=require("./mission-importer");
+const lola=require("./lolas-importer");
 const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
@@ -74,6 +75,7 @@ function urlOf(item,src){
   if(src.adapter==="offbeat-official-html")return offbeat.eventUrl(u.href);
   if(src.adapter==="aladdin-official-html")return aladdin.ticketUrl(u.href);
   if(src.adapter==="mission-official-html")return mission.eventUrl(u.href);
+  if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="venuepilot-public-api")return coffin.primaryTicketUrl(u.href);
   if(src.adapter==="nova-official-schema")return nova.tixrUrl(u.href);
   if(src.adapter==="wonder-ballroom-html")return wonder.safeWonderUrl(u.href,src);
@@ -183,6 +185,7 @@ async function fetchItems(source){
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.
  if(source.adapter==="mission-official-html")return mission.fetchEvents(source);
+ if(source.adapter==="lolas-mcmenamins-html")return lola.fetchEvents(source);
  if(source.adapter==="aladdin-official-html")return aladdin.fetchEvents(source);
  if(source.adapter==="offbeat-official-html")return offbeat.fetchEvents(source);
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();

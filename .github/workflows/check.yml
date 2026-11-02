@@ -35,6 +35,8 @@ jobs:
           node tests/offbeat-importer.js
           node tests/aladdin-importer.js
           node tests/mission-importer.js
+          node --check scripts/lolas-importer.js
+          node tests/lolas-importer.js
           node tests/calendar-horizon.js
 
       - name: Validate original venue research priorities
