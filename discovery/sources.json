@@ -420,7 +420,24 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "Official restaurant site confirms the venue, but does not establish a complete official event calendar; seek organizer-supplied dated listing before importer."
+      "reason": "Full-priority user-preferred Republic Cafe / Ming Lounge: original restaurant site confirms 222 NW 4th Ave, but not a complete dated event feed. Headspace Circus organizer's @headspace.circus provides relevant electronic/queer nightlife leads; July 2026 journalistic report of weekly events is NOT current dated event proof. Original organizer or original ticket confirmation required for each bill.",
+      "researchSources": [
+        {
+          "kind": "original-venue-website",
+          "url": "https://republiccafeor.com/",
+          "status": "venue-info-only-no-event-calendar"
+        },
+        {
+          "kind": "original-organizer-account",
+          "url": "https://www.instagram.com/headspace.circus/",
+          "status": "no-authorized-public-automated-feed"
+        },
+        {
+          "kind": "journalism-context",
+          "url": "https://www.wweek.com/culture/2026/07/22/portlands-best-rave-in-a-chinese-restaurant/",
+          "status": "historic-recurring-pattern-not-current-event-date"
+        }
+      ]
     },
     {
       "id": "b-side",
@@ -440,7 +457,24 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "User-preferred venue or scene bar; no verified complete read-only source. Only stage original event-specific verified leads and request venue feed if necessary."
+      "reason": "Full-priority user-preferred Wyrd Hut DIY room; no verified first-party chronological public calendar or authorized adapter. Original venue account @wyrdhut, original artist Bandcamp Jan 9 show and organizer ticket examples can supply research leads. Verify room at 4704 SE 65th Ave per organizer/Travel Portland against one older 64th Ave directory; no invented time or lineup.",
+      "researchSources": [
+        {
+          "kind": "original-venue-account",
+          "url": "https://www.instagram.com/wyrdhut/",
+          "status": "not-an-authorized-automated-feed"
+        },
+        {
+          "kind": "original-artist-show-list",
+          "url": "https://shadowhouse.bandcamp.com/",
+          "status": "specific-Jan-9-date-lead-no-original-year-or-time"
+        },
+        {
+          "kind": "original-organizer-example",
+          "url": "https://www.eventbrite.com/e/sw0rdswall0wer-helen-joy-way-of-flowers-at-wyrd-hut-tickets-2001707994496",
+          "status": "historic-event-address-source-not-active-calendar"
+        }
+      ]
     },
     {
       "id": "starthrow",
