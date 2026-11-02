@@ -105,7 +105,8 @@ function detail(html,row){
   if(dt?.clock&&dt.clock!==row.rosterTime.match(/\d{1,2}(?::\d{2})?\s*[ap]m/gi)?.slice(-1).map(x=>require("./priority-importers").time24(x))?.[0])
    return {hold:"Official detail clock conflicts with Lola calendar",title:row.title,url:row.fullUrl};
  }
- const multiroom=/\b(?:both|and)\b.{0,75}\b(?:Crystal Ballroom|Lola['’]s Room)\b/i.test(after.slice(0,850))
+ const multiroom=/\bCrystal Ballroom\b.{0,140}\bAND\b.{0,140}\bLola['’]s Room\b/i.test(after.slice(0,850))
+   ||/\bLola['’]s Room\b.{0,140}\bAND\b.{0,140}\bCrystal Ballroom\b/i.test(after.slice(0,850))
    ||/\b(?:four floors|all floors|multiple rooms|whole building)\b/i.test(after.slice(0,850))
    ||/Crystal Ballroom.{0,100}\bAND\b.{0,100}Lola['’]s Room/i.test(after.slice(0,850));
  if(multiroom)return {hold:"Event advertised across multiple Crystal complex rooms; needs manual room/deduplication review",title:row.title,url:row.fullUrl};
