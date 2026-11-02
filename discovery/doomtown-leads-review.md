@@ -27,7 +27,7 @@ WordPress post publication dates are **not** event dates. These leads require in
 | [Sat Feb 28th at Black Water](https://doomtownpdx.com/sat-feb-28th-at-black-water/) | Not verified | Black Water | Image found; rights unverified |
 | [Friday February 27th at Black Water](https://doomtownpdx.com/friday-february-27th-at-black-water/) | Not verified | Black Water | Image found; rights unverified |
 | [February 26th at Atlas Pizza](https://doomtownpdx.com/february-26th-at-atlas-pizza/) | Not verified | Unconfirmed | Image found; rights unverified |
-| [Friday February 13th at Wyrd Hut](https://doomtownpdx.com/friday-february-13th-at-wyrd-hut/) | Not verified | Unconfirmed | Image found; rights unverified |
+| [Friday February 13th at Wyrd Hut](https://doomtownpdx.com/friday-february-13th-at-wyrd-hut/) | Not verified | Wyrd Hut | Image found; rights unverified |
 | [Sun Feb 8th at Star Theater](https://doomtownpdx.com/sun-feb-8th-at-star-theater/) | Not verified | Star Theater | Image found; rights unverified |
 | [Jan 31st at Black Water](https://doomtownpdx.com/jan-31st-at-black-water/) | Not verified | Black Water | Image found; rights unverified |
 | [Sun Jan 25th at High Limit Room](https://doomtownpdx.com/sun-jan-25th-at-high-limit-room/) | Not verified | High Limit Room | Image found; rights unverified |
