@@ -72,6 +72,15 @@ All nine are **full, active SHOWS coverage additions**, not tentative possibilit
 - **The Fixin' To:** [Original bar site](https://www.thefixinto.com/) describes the arcade; [Willamette Week (June 2025)](https://www.wweek.com/bars/2025/06/05/st-johns-music-venue-the-fixin-to-is-fixin-to-become-an-arcade/) documented conversion of the former concert space. Leave outside core concert research.
 - **Moda Center:** [Rose Quarter calendar](https://www.rosequarter.com/calendar-events) includes mixed event types. Track verified fitting music shows without promoting sports or unrelated events.
 
+## Promoter sources for later integration
+
+Promoters are **not venues**. Their first-party lineups may improve event coverage across **all 38 active SHOWS venues**, including blocked venue calendars, without shifting the editorial priority of the actual host venue. Research these as separate source integrations; do not assume their feeds are enabled.
+
+- **777 Booking (Portland):** High-priority hardcore, DIY and all-ages promoter associated with High Limit Room. Official announcement access and original dated links still need confirmation; not every High Limit event can be attributed to 777.
+- **Third Eye Booking (Portland):** Hardcore / punk and benefit-show bookings. Find and verify its actual Portland announcement account first; several unrelated similarly named agencies exist.
+
+The machine-readable [promoter source research backlog](promoter-backlog.json) records both at **full scene relevance**, with no enabled importer or invented source URLs. Other candidate promoter leads can be appended here without changing venue coverage groups.
+
 ## Potential additions for later editorial review
 
 The Get Down, The Goodfoot, The Den, Process PDX, Kelly's Olympian, Alberta Street Pub, The White Owl, Mississippi Pizza / Atlantis Lounge, Rontoms, and 13th Moon Gravity Well. **These are research suggestions, not approved preferred venues or verified importer feeds.** Confirm current address/operation and relevant original programming before adding to the canonical roster.
