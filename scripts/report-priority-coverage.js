@@ -8,6 +8,10 @@ const sources=require("../discovery/sources.json");
 function reportPriorityCoverage(snapshot=audit()){
  const byVenue=new Map(snapshot.rows.map(v=>[v.id,v]));
  const bySource=new Map(sources.sources.filter(s=>s.venueRegistryId).map(s=>[s.venueRegistryId,s]));
+ for(const [venueId,sourceId] of Object.entries(sources.sharedSourceCoverage||{})){
+  const shared=sources.sources.find(s=>s.id===sourceId);
+  if(shared)bySource.set(venueId,shared);
+ }
  const status=source=>!source?"No registered importer"
   :source.status==="pilot-enabled"?"Enabled"
   :source.status==="source-blocked"?"Direct source blocked; review promoter leads"
@@ -17,7 +21,7 @@ function reportPriorityCoverage(snapshot=audit()){
  const out=[
   "# SHOWS editorial-first venue coverage — "+snapshot.date,
   "",
-  "Owner preference determines **research priority**; importer availability is a separate engineering property. Groups are **not ranked internally**. Counts are only future events already approved in SHOWS—not all advertised shows.",
+  "Both **preferred** and **additional relevant scene** venues receive **equal active editorial research priority**. These groups distinguish expressed favorites from other fully relevant venues, NOT first- vs second-tier discovery. Importer availability is a separate engineering property. Counts are only future events approved in SHOWS—not all advertised shows.",
   "",
   "| Editorial group | Venue | SHOWS events | Music | Automated discovery |",
   "| --- | --- | ---: | ---: | --- |"
@@ -32,7 +36,7 @@ function reportPriorityCoverage(snapshot=audit()){
  }
  const secondary=sources.sources.find(s=>s.id==="no-fun");
  out.push("","**No Fun:** "+secondary.status+" — existing approved events stay in the calendar; daily intake is not run.","",
-  "**Research backlog:** Find first-party dated event lists at preferred venues marked *Adapter needed* or *No registered importer*, without reducing their editorial preference. Keep Doug Fir on reopening watch instead of generating shows.",
+  "**Research backlog:** Find first-party dated event lists at ALL active venues (preferred and scene) marked *Adapter needed* or *No registered importer*, with equal priority. Keep Doug Fir on reopening watch instead of generating shows.",
   "**Source health:** A blocked or inaccessible venue site is not a claim that it has zero upcoming events.",
   "**Approval:** Imported events and original artwork require review PRs. No automatic publishing.","");
  return out.join("\n");
