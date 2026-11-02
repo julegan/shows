@@ -1,7 +1,8 @@
 "use strict";
 /* McMenamins Lola's Room: independent original room calendar. Validate the
  * roster's year-bearing autocomplete search index against each labelled card,
- * then read original details to hold multiroom, moved or changed bookings.
+ * hold known multiroom, moved or changed bookings without a daily page-by-page
+ * fan-out. Optional manual event-detail check remains available.
  * Do not conflate with Crystal Ballroom main stage.
  */
 const mission=require("./mission-importer");
