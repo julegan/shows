@@ -26,6 +26,12 @@ Spend research and adapter effort on ALL active preferred and relevant venues, e
 
 Collect **event-specific images** directly from official venue/promoter event cards whenever available. Preserve the source page and link; do not claim rights to replicate, download, or mirror artwork without permission. Generic venue photos and sitewide default social images are not event flyers. When no suitable flyer is available, keep the neutral non-invented placeholder.
 
+## Source discovery beyond venues
+
+In addition to original venue calendars, evaluate **promoter, record label and community show-guide leads** in [the scene-source research backlog](discovery/scene-sources.md) and [machine-readable source list](discovery/scene-source-backlog.json). The owner explicitly requested **777 Booking** and **Third Eye Booking** as future promoter leads. Suggested record labels and scene guides are research candidates, **not new owner-approved venue preferences or connected importers**.
+
+These sources may reveal record-release concerts, benefit bills, DIY house shows and tours, but are **discovery leads only** until the exact bill, original year/date, actual Portland-area venue and show/doors time can be verified. Never treat a release announcement, global tour page or an artist's label membership as itself a Portland event. Avoid conflating similarly named organizers (notably Portland's Third Eye Booking with the unrelated Third Eye Shut Booking), or Black Water Records the label with the existing venue source. Source availability is a separate technical status from editorial relevance.
+
 ## Evidence and review
 
 - Begin with the core music sources. Discovery calendars can provide leads; use venue, promoter, artist, label, or official ticket pages to verify details wherever possible.
