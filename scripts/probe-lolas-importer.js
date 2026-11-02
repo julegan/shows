@@ -12,7 +12,7 @@ async function main(){
   holdReasons:held.slice(0,25).map(x=>({title:x.title,reason:x.hold}))},null,2));
  if(accepted.length<5)throw Error("Fewer than five verified Lola records; keep importer disabled");
  if(accepted.some(x=>!x.rosterDate||!x.startDate||x.venue!=="Lola's Room"))throw Error("Incomplete Lola room validation");
- console.log("PASS — Original Lola's Room calendar detail records verified; still subject to human review.");
+ console.log("PASS — Original Lola's Room venue roster independently confirms date, title, labelled clock and room; publication still requires human review.");
 }
 if(require.main===module)main().catch(e=>{console.error("LOLA VERIFY "+String(e.message||e));process.exitCode=1});
 module.exports={main};
