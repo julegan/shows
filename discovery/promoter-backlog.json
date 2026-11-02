@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "purpose": "Owner-requested promoter research backlog. Independent of venue preferences and discovery adapter readiness; adding here does not activate any source.",
+  "editorialRule": "Promoter candidates can cover multiple venues. Verify original bill, year, local start/doors, age and actual venue for each event. Do not attribute every bill to a promoter-associated venue. Do not bypass platform access controls or invent a promoter feed.",
+  "promoters": [
+    {
+      "id": "777-booking",
+      "name": "777 Booking",
+      "type": "promoter",
+      "region": "Portland, Oregon",
+      "status": "research-backlog",
+      "editorialPriority": "full-active-scene-coverage",
+      "focus": [
+        "hardcore",
+        "punk",
+        "DIY",
+        "all-ages"
+      ],
+      "sourceCandidates": [
+        {
+          "url": "https://www.instagram.com/777booking/",
+          "status": "community-linked account; official ownership/accessible dated posts still need direct validation"
+        },
+        {
+          "url": "https://sosbooking.squarespace.com/",
+          "status": "separate SOS Booking promoter publishes at least one co-presented 777 bill; use only specific original event page as corroboration"
+        }
+      ],
+      "venueRelationships": [
+        {
+          "venue": "High Limit Room",
+          "relationship": "closely associated with venue operation and hardcore bookings",
+          "assumption": "Not every High Limit Room event is necessarily a 777 Booking production"
+        }
+      ],
+      "evidence": [
+        "https://www.wweek.com/culture/2025/07/22/high-limit-room-is-portlands-newest-home-for-all-ages-hardcore/",
+        "https://sosbooking.squarespace.com/"
+      ],
+      "nextResearch": "Confirm official 777 announcement channel and permissions. Identify dated first-party event links, accessibility/age labels and all host venues; cross-match to High Limit Room and other venue listings before any import.",
+      "exclusions": "Not the unrelated 777 Agency UK industrial/techno roster."
+    },
+    {
+      "id": "third-eye-booking-pdx",
+      "name": "Third Eye Booking",
+      "type": "promoter",
+      "region": "Portland, Oregon",
+      "status": "research-backlog",
+      "editorialPriority": "full-active-scene-coverage",
+      "focus": [
+        "hardcore",
+        "punk",
+        "DIY",
+        "benefit shows"
+      ],
+      "sourceCandidates": [],
+      "venueRelationships": [],
+      "evidence": [
+        "https://www.northwesthardcore.net/dani-dry-socket",
+        "https://www.pdxafterdark.com/bands/sherane",
+        "https://www.noecho.net/band-spotlights/sacrament-metalcore-band-interview"
+      ],
+      "nextResearch": "Identify and verify official Portland Third Eye Booking Instagram/site or promoter-supplied event list. Confirm dated original events and actual venue per bill before building an adapter; do not substitute another 'Third Eye' agency.",
+      "exclusions": "Not Third Eye Shut Booking (Los Angeles), Third Eye Hospitality, or Third Eye Booking Company / 3rd Eye Booking Company in Mississippi."
+    }
+  ]
+}
