@@ -39,6 +39,9 @@ jobs:
           node tests/lolas-importer.js
           node --check scripts/showdown-importer.js
           node tests/showdown-importer.js
+          node --check scripts/45east-redcube-importer.js
+          node tests/45east-redcube-importer.js
+          node tests/promoter-backlog.js
           node tests/calendar-horizon.js
 
       - name: Validate original venue research priorities
