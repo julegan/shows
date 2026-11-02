@@ -2,6 +2,33 @@
 
 Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **TreeTix has supplied an unauthenticated public event-listing endpoint; live schema is still unverified, and the adapter is not yet implemented or enabled**.
 
+## Follow-up — November 2, 2026: TreeTix Cloudflare challenge confirmed
+
+TreeTix support responded that **Cloudflare is the likely blocker** and requested the latest **UTC timestamp, GitHub runner source IP and HTTP client/User-Agent** so they can find the request in their logs. We made **one new unauthenticated public GET** with the *same exact* explicit User-Agent and `Accept: application/json` header as the November 1 API attempt.
+
+[Diagnostic GitHub Actions run 41514481916](https://github.com/julegan/shows/actions/runs/41514481916), one on-demand request, no retries or bypass:
+
+| Log correlation field | Observed value |
+| --- | --- |
+| Endpoint | `https://www.treetix.com/api/events.json` |
+| Request start UTC | **2026-11-02T19:56:03.670Z** |
+| Request completed UTC | **2026-11-02T19:56:03.792Z** |
+| GitHub runner egress IP as seen by **both** api.ipify.org and AWS checkip | **52.234.44.120** |
+| HTTP client | **Node.js v22.23.4 built-in `fetch` (Undici 6.29.1)** |
+| Exact `User-Agent` | **`SHOWS-public-event-feed-probe/1.0`** |
+| `Accept` | `application/json` |
+| HTTP response | **403 Forbidden** |
+| `Server` | **`cloudflare`** |
+| `cf-mitigated` | **`challenge`** |
+| `cf-ray` | **`a545b34b8a39cf1b-SJC`** |
+| Response content type | `text/html; charset=UTF-8` |
+
+The **`cf-mitigated: challenge`** and `cf-ray` headers provide a specific Cloudflare log correlation. These response headers are evidence that Cloudflare issued a challenge, **not proof of which rule fired or that the TreeTix application refused the request**; only TreeTix can identify the exact rule/action from its Cloudflare logs.
+
+The IP above is a *single ephemeral GitHub-hosted runner's observed outbound address*, not a guaranteed stable address for future workflows. **Do not request a permanent allowlist for one ephemeral runner IP** as a durable solution. Ask TreeTix for a supported, narrowly scoped server-to-server access mechanism, a Cloudflare API/bot-management exception restricted to the public listing endpoint and documented client requirements, or an authorized cached/exported feed. Never attempt to bypass challenge or use credentials without their instruction.
+
+The diagnostic code is `scripts/diagnose-treetix-cloudflare.js` and the dedicated workflow `.github/workflows/diagnose-treetix-cloudflare.yml` is **manual-only** after the single live run. It logs timing, observed source IP and Cloudflare response metadata **without logging data or sending events to SHOWS**. The original API importer remains **disabled** until an authorized, successfully validated feed is established.
+
 ## Provider response — November 1, 2026
 
 TreeTix provided the event-listing endpoint: https://www.treetix.com/api/events.json. According to the provider, it returns an `events` object covering upcoming events for all current TreeTix producers (including High Water Mark and Soundcontrol), with no required account or authentication token **at present**.
