@@ -13,7 +13,7 @@ const good=[
  row({title:"No Exit at The Coffin Club"}), // should dedupe by normalizer? title normalization only strips "at ...", so yes
  row({d:"Fri: Nov 6",date:"2026/11/06",title:"Wild Avant",venue:"Not a Preferred Place",tags:"experimental, noise",url:"https://dice.fm/event/nov6"}),
  row({d:"Sat: Nov 7",date:"2026/11/07",title:"Top 40 Night",venue:"Republic Cafe and Ming Lounge",tags:"party",url:"https://ticketweb.com/event/republic7"}),
- row({d:"Sat: Nov 7",date:"2026/11/07",title:"Big Room EDM",venue:"Elsewhere",tags:"dubstep",url:"https://eventbrite.com/e/elsewhere7"}),
+ row({d:"Sat: Nov 7",date:"2026/11/07",title:"Big Room EDM",venue:"Elsewhere",tags:"dubstep",url:"https://eventbrite.com/e/elsewhere7",promoter:"Mainstream Party"}),
  row({d:"Sat: Nov 7",date:"2026/11/07",title:"Out of Area",venue:"The Coffin Club (Seattle, WA)",tags:"goth",url:"https://tickets.example.com/outside"}),
  row({d:"Fri: Nov 7",date:"2026/11/07",title:"Wrong weekday",tags:"industrial",url:"https://tickets.example.com/wrong"}),
  row({d:"Sat: Nov 7",date:"2026/11/07",title:"Wrong ticket",tags:"goth",url:"http://tickets.example.com/unsafe"}),
@@ -42,7 +42,7 @@ assert.match(result,/automatically generated and not reviewed for accuracy/);
 assert.match(result,/0 automatically approved/);
 assert.match(result,/Portland goth night/);
 assert.doesNotMatch(result,/Foreign city/);
-assert.doesNotMatch(result,/Top 40 Night\]\(https:\/\/ticketweb/,"test link should be present only in qualified venue");
+assert.match(result,/Top 40 Night/,"Preferred venue may surface genre-unclassified leads for editorial review");
 assert.match(s.report(null,"HTTP 429"),/unavailable\/changed/i);
 assert.throws(()=>s.parse(page(good).replace(/automatically generated and not reviewed for accuracy/,"verified source"),now),/unreviewed-source notice missing/);
 (async()=>{
