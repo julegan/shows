@@ -138,10 +138,10 @@
       "kind": "scene-calendar",
       "requestedByOwner": false,
       "editorialFit": "Original Portland underground punk and hardcore show calendar with flyers and venue details",
-      "researchStatus": "verified-guide-leads-only",
+      "researchStatus": "existing-review-only-lead-collector",
       "officialSourceUrl": "https://doomtownpdx.com/",
       "evidenceUrl": "https://doomtownpdx.com/",
-      "nextStep": "Check whether original event posts include verified dates and flyer provenance; use to find original host/artist confirmations, not automatically replace existing source records."
+      "nextStep": "Existing scripts/doomtown-leads.js already collects original WordPress posts into discovery/doomtown-leads-review.md; use those source-verified review leads, do NOT build a duplicate importer. Event year, time and venue require primary confirmation."
     }
   ]
 }
