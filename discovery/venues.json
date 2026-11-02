@@ -442,12 +442,12 @@
       "id": "45-east",
       "name": "45 East",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.45eastpdx.com/",
       "aliases": [
         "45East"
       ],
-      "notes": "Live electronic-music club at 315 SE 3rd Ave. Official venue site and AXS original event list exist; validate matching ticket source, doors/start clocks and each event before proposing.",
+      "notes": "Red Cube Presents organizer-owned calendar provides original '45 EAST - PORTLAND' event titles and full year/date, group-specific Tixr links, and source art. 17 date-only review candidates and 2 held due to missing approved source link; times require original independent confirmation. Editorial priority independent of source readiness.",
       "editorialPreference": "preferred"
     },
     {
