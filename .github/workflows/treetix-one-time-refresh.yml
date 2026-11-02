@@ -1,0 +1,160 @@
+name: One-time TreeTix combined SHOWS refresh (review only)
+on:
+  push:
+    branches: [diagnostics/treetix-first-combined-refresh-20261102]
+    paths: ['.github/workflows/treetix-one-time-refresh.yml']
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: shows-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Check pending editorial review PRs
+        id: pending
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/refresh-") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
+          if [ "$existing" -gt 0 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Canonical review PR is pending: collect and validate source/venue/artwork evidence as usual, but do not open a competing PR. Reports remain attached to this workflow run." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Show baseline priority coverage
+        run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Discover source-listed upcoming events
+        env:
+          COFFIN_VENUEPILOT_APP_ID: ${{ secrets.COFFIN_VENUEPILOT_APP_ID }}
+        run: node scripts/discover-events.js
+      - name: Collect original underground-show leads (review-only)
+        run: node scripts/doomtown-leads.js
+      - name: Collect PDX//SUBVERT original punk and metal show leads (research-only)
+        run: node scripts/pdx-subvert-leads.js
+      - name: Collect Wyrd secondary music leads (research-only)
+        run: node scripts/wyrd-secondary-leads.js
+      - name: Review Republic/Ming original organizer ticket leads
+        run: node scripts/republic-organizer-leads.js
+      - name: Review Portland underground electronic scene leads (secondary, no publishing)
+        run: node scripts/19hz-scene-leads.js
+      - name: Propose official art for existing and newly discovered music listings
+        env:
+          ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
+        run: node scripts/backfill-artwork.js
+      - name: Record source outcomes and monthly horizon
+        run: |
+          sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "Full discovery report is saved as the review artifact and committed to any proposal PR." >> "$GITHUB_STEP_SUMMARY"
+          cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,6p' discovery/doomtown-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,8p' discovery/pdx-subvert-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,8p' discovery/wyrd-secondary-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,8p' discovery/republic-organizer-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,8p' discovery/oregon-electronic-leads-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "Wyrd venue leads are secondary research only; original date and event identity need promoter/artist verification." >> "$GITHUB_STEP_SUMMARY"
+          echo "Full Doomtown original-promoter lead report is in the uploaded artifact. WordPress post dates are not event dates." >> "$GITHUB_STEP_SUMMARY"
+          node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain both review reports even on no-change days
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: shows-refresh-review-${{ github.run_number }}
+          path: |
+            discovery/latest-review.md
+            discovery/artwork-backfill-review.md
+            discovery/doomtown-leads-review.md
+            discovery/pdx-subvert-leads-review.md
+            discovery/wyrd-secondary-leads-review.md
+            discovery/republic-organizer-leads-review.md
+            discovery/oregon-electronic-leads-review.md
+          retention-days: 30
+          if-no-files-found: error
+      - name: Validate combined source, artwork and calendar data
+        run: |
+          node --check scripts/discover-events.js
+          node --check scripts/source-change-review.js
+          node --check scripts/turnturnturn-opendate.js
+          node tests/turnturnturn-opendate.js
+          node --check scripts/backfill-artwork.js
+          node --check scripts/report-calendar-horizon.js
+          node --check app.js
+          node --check events.js
+          node tests/source-health.js
+          node tests/source-change-review.js
+          node tests/discovery.js
+          node tests/artwork.js
+          node tests/calendar-horizon.js
+          node tests/source-priority.js
+          node --check scripts/treetix-importer.js
+          node tests/treetix-importer.js
+          node tests/nova-importer.js
+          node tests/lolas-importer.js
+          node --check scripts/showdown-importer.js
+          node tests/showdown-importer.js
+          node --check scripts/45east-redcube-importer.js
+          node tests/45east-redcube-importer.js
+          node tests/promoter-backlog.js
+          node --check scripts/doomtown-leads.js
+          node tests/doomtown-leads.js
+          node --check scripts/pdx-subvert-leads.js
+          node tests/pdx-subvert-leads.js
+          node --check scripts/wyrd-secondary-leads.js
+          node tests/wyrd-secondary-leads.js
+          node --check scripts/republic-organizer-leads.js
+          node tests/republic-organizer-leads.js
+          node --check scripts/19hz-scene-leads.js
+          node tests/19hz-scene-leads.js
+          node tests/validate.js
+      - name: Propose one combined editorial review PR
+        if: steps.pending.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- events.js; then
+            echo "No source-confirmed new events or artwork. Review reports remain in this run." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+          git config user.name "SHOWS refresh bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- events.js discovery/latest-review.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
+          git commit -m "Propose source-confirmed Portland shows and original flyers"
+          git push --set-upstream origin "$branch"
+          {
+            echo "# Combined SHOWS discovery + artwork review"
+            echo
+            echo "Official source discoveries and event-specific artwork are staged for editorial review. Confirm event identity, dates, venues, time types, and image rights before merging. Nothing publishes automatically."
+            echo
+            echo "## Discovery snapshot"
+            sed -n '1,/## New candidates:/p' discovery/latest-review.md
+            echo
+            echo "## Artwork snapshot"
+            sed -n '1,17p' discovery/artwork-backfill-review.md
+            echo
+            echo "## Full evidence"
+            echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
+            echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
+            echo "- [Doomtown primary-promoter leads (not confirmed event dates)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/doomtown-leads-review.md)"
+            echo "- [PDX//SUBVERT original punk/metal leads (review only; timestamps unverified)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/pdx-subvert-leads-review.md)"
+            echo "- [Wyrd secondary artist leads (not approved shows)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/wyrd-secondary-leads-review.md)"
+            echo "- [Republic organizer original-ticket leads (not approved shows)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/republic-organizer-leads-review.md)"
+            echo "- [19hz Portland electronic scene leads (automated, unreviewed secondary listings)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/oregon-electronic-leads-review.md)"
+            echo "- [Action run and month-by-month summary](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          } > /tmp/shows-refresh-review.md
+          # Keep the GitHub PR description small even when hundreds of events are found.
+          if [ "$(wc -c < /tmp/shows-refresh-review.md)" -gt 12000 ]; then
+            echo "Combined PR summary unexpectedly exceeded 12 KB; check report formatting." >&2
+            exit 1
+          fi
+          gh pr create --title "Review refreshed Portland shows and original flyers" --head "$branch" --base main --body-file /tmp/shows-refresh-review.md
+          echo "Review canonical PR first; the portfolio's approved-data sync will then propose its separate publication PR." >> "$GITHUB_STEP_SUMMARY"
