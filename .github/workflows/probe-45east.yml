@@ -1,8 +1,5 @@
 name: Inspect 45 East primary promoter source
 on:
-  push:
-    branches:
-      - discovery/45east-redcube-original-20261101
   workflow_dispatch:
 permissions:
   contents: read
