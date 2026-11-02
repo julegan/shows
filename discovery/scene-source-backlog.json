@@ -153,6 +153,17 @@
       "officialSourceUrl": "https://www.sadtimesproductions.com/shows",
       "evidenceUrl": "https://www.sadtimesproductions.com/shows",
       "nextStep": "Check for current/future originally posted show flyers and original event-ticket links, especially Wyrd Hut and Star Bar. Visible first-party calendar is historical 2025–2026, so do NOT import it as upcoming or invent recurrence; validate actual future event dates and venue independently."
+    },
+    {
+      "id": "19hz-oregon",
+      "name": "19hz — Portland/Oregon electronic scene listings",
+      "kind": "scene-calendar",
+      "requestedByOwner": false,
+      "editorialFit": "Second-party Portland underground electronic, industrial, darkwave, experimental and club bill leads; also cross-checks active preferred SHOWS venues",
+      "researchStatus": "secondary-review-only-lead-collector",
+      "officialSourceUrl": "https://19hz.info/eventlisting_ORE.php",
+      "evidenceUrl": "https://19hz.info/eventlisting_ORE.php",
+      "nextStep": "Existing scripts/19hz-scene-leads.js checks the public source daily as a review artifact only (live proof 56 relevant leads, 1 date hold on Nov 2 2026). Source explicitly says its listings are automatically generated and NOT reviewed for accuracy. Verify each dated bill on its original event ticket, venue or artist page; never auto-approve or imply source validity."
     }
   ]
 }
