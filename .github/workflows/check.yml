@@ -55,6 +55,10 @@ jobs:
           node --check scripts/probe-wonder.js
           node --check scripts/coffin-venuepilot.js
           node tests/coffin-venuepilot.js
+          node --check scripts/nova-importer.js
+          node tests/nova-importer.js
+          node --check scripts/probe-nova-lolas.js
+          node tests/nova-lolas-source-probe.js
           node --check scripts/probe-highlimit-public.js
           node tests/highlimit-public.js
           node --check scripts/revolution-importer.js

@@ -405,13 +405,13 @@
       "id": "nova-pdx",
       "name": "Nova PDX",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.novapdxevents.com/event-calendar",
       "aliases": [
         "Nova Ballroom",
         "Bossanova Ballroom"
       ],
-      "notes": "Official active Nov–Dec 2026 calendar lists emo/pop-punk nights, DJs and queer nightlife; no automatic importer yet. Former Bossanova name is an alias only.",
+      "notes": "Official first-party event JSON-LD plus same-date original homepage clock and Tixr ticket links, verified by live runner 41366325952 (12 records, zero source holds). Time labels still require doors/performance review. Original image use remains unapproved pending rights.",
       "editorialPreference": "preferred"
     },
     {
