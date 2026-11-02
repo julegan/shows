@@ -75,7 +75,7 @@ function report(rows,holds){
  "This report monitors explicit public event-specific organizer ticket pages. It is NOT a venue feed. It never imports events, downloads images, or invents weekly Headspace Circus dates.","",
  "**"+rows.length+" verified original organizer leads; "+holds.length+" holds; 0 automatically approved.**","","| Original organizer ticket | Local event time | Organizer / venue | Next review |","| --- | --- | --- | --- |"];
  for(const x of rows)
-  lines.push("| ["+clean(x.title)+"]("+x.originalUrl+") | "+clean(x.startsAt)+" | "+clean(x.organizer)+" / "+clean(x.room)+" | Validate genre relevance, doors (organizer ticket states 7:30 PM), event status, "+clean(x.lineup)+" and flyer permissions |");
+  lines.push("| ["+clean(x.title)+"]("+x.originalUrl+") | "+clean(x.startsAt)+" | "+clean(x.organizer)+" / "+clean(x.room)+" | Verify event-specific doors/show labels, genre relevance, event status, "+clean(x.lineup)+" and flyer permissions |");
  for(const x of holds)lines.push("","**Source hold:** "+clean(x.url)+" — "+clean(x.reason));
  lines.push("","Other promoter leads for research, not dated shows: Headspace Circus, Group Sound, Be Yourself PDX, Tarantella. Historical organizer pages are NOT evidence of ongoing dates.","",
  "Add future event-specific original ticket URLs only after independent verification. A changed or missing page cannot remove approved SHOWS events.","");
