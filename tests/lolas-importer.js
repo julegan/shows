@@ -11,16 +11,16 @@ function index(rows=[{title,url,date:"11/14/2026"}]){
 }
 function card({venue="Lola's Room",date="Saturday, November 14",time="9pm doors, 9pm show",titleName=title}={}){
  return '<div class="uk-panel uk-panel-box tm-panel-card event detailed">'+
- '<div style="background-image:url(\\'https://cdn.mcmenamins.com/system/uploads/MadborgAssets/danceflashback.jpg\\');">'+
+ '<div style="background-image:url(\'https://cdn.mcmenamins.com/system/uploads/MadborgAssets/danceflashback.jpg\');">'+
  '<a href="/events/278429-2000s-dance-flashback"><h3 class="uk-panel-title">'+titleName+'</h3></a></div>'+
  '<h3 class="uk-panel-title">'+date+'</h3><p class="uk-panel-time uk-text-truncate">'+time+'</p>'+
  '<h4>at <span>'+venue+'</span></h4></div>';
 }
 function page(rows, cards=[card(),card()]){return index(rows)+cards.join("");}
 function detail({date="Saturday, November 14, 2026",heading=title,description="An original Lola's Room music and dance night."}={}){
- return '<html><body><nav>Lola\\'s Room Music & Events</nav><section>'+date+
+ return '<html><body><nav>Lola\'s Room Music & Events</nav><section>'+date+
  '<h2>'+heading+'</h2>9pm doors, 9pm show 21 and over<p>'+description+'</p>'+
- '</section><h2>Upcoming Events at Lola\\'s Room</h2></body></html>';
+ '</section><h2>Upcoming Events at Lola\'s Room</h2></body></html>';
 }
 const rows=[{title,url,date:"11/14/2026"}];
 const found=lola.roster(page(rows));
