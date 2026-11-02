@@ -29,7 +29,7 @@ const event=(id,calendar,venue,other={})=>({
 const fixture={updated:"2026-11-02T20:00:00Z",events:[
  event(204941,"highwatermark","High Water Mark Lounge"),
  event(204929,"soundcontrol","High Water Mark Lounge",{start_date:"2026-12-20",talent:"Early Moods, H.O.G., Stainless"}),
- event(204952,"soundcontrol","Dante's",{start_date:"2027-01-15",talent:"Mustard Plug, The Planet Smashers, The Venomous Pinks"}),
+ event(204952,"soundcontrol","Dante's",{start_date:"2027-01-15",start_time:"09:00 PM",talent:"Mustard Plug, The Planet Smashers, The Venomous Pinks"}),
  event(204942,"soundcontrol","Wonder Ballroom",{start_date:"2027-02-09",talent:"Wolves in the Throne Room, Stygian Bough, Spirit Possession"}),
  event(300000,"peacock","Peacock Lounge"),
  event(400001,"highwatermark","Peacock Lounge"),
