@@ -96,6 +96,8 @@ jobs:
           node tests/holocene-importer.js
           node --check scripts/doomtown-leads.js
           node tests/doomtown-leads.js
+          node --check scripts/pdx-subvert-leads.js
+          node tests/pdx-subvert-leads.js
           node --check scripts/wyrd-secondary-leads.js
           node tests/wyrd-secondary-leads.js
           node --check scripts/republic-organizer-leads.js
