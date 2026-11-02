@@ -18,5 +18,5 @@ for(const id of ["wyrd-hut","republic-cafe"]){
  }
 }
 assert(venues.venues.find(v=>v.id==="wyrd-hut").notes.includes("65th Ave"),"Preserve primary organizer address with discrepancy");
-assert(venues.venues.find(v=>v.id==="republic-cafe").notes.includes("no public comprehensive"),"Do not falsely claim an official events feed");
+assert(/no (?:public )?(?:complete|comprehensive) .*calendar/i.test(venues.venues.find(v=>v.id==="republic-cafe").notes),"Do not falsely claim an official events feed");
 console.log("PASS — Wyrd and Republic stay full editorial priorities but unconnected, with original source evidence and no fabricated venue events");
