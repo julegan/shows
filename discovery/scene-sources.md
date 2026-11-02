@@ -51,6 +51,16 @@ A label's artist tours, record-release shows, compilations, benefit bills and co
 - **Wyrd War** also curates films and art; distinguish an actual live show from a movie screening or album release without an event.
 - **Record labels suggested here are not personally approved favorites.** They are research candidates; the user explicitly requested 777 Booking and Third Eye Booking for later.
 
+## 19hz Oregon electronic-music listings — secondary review source (November 2, 2026)
+
+The [19hz Portland/Oregon electronic listing](https://19hz.info/eventlisting_ORE.php) is an independent, publicly available aggregator for DJ nights, unusual club events and local electronic shows. **Its own page explicitly says the listings are automatically generated and not reviewed for accuracy.** It is useful for finding possible omissions in venue importers, **not a source to publish from directly**.
+
+A single bounded original HTML read in [GitHub Actions 41485612644](https://github.com/julegan/shows/actions/runs/41485612644) validated **137 date-bearing table rows**, producing **56 distinct scene-relevant review leads**: 49 at active preferred SHOWS venues, seven additional genre-relevant Portland entries, and **one date/weekday hold**. Source types and genre labels may be inaccurate; links to RA or other ticket sites are recorded as *unopened leads*, not proof of original bill availability. No flyer or image is copied, and no event is inserted.
+
+The [review-only 19hz parser](../scripts/19hz-scene-leads.js) retains the displayed full-year date and original external link after strict Portland location and date/weekday checks; it filters for preferred venues or dark/experimental/electronic genre tags, deduplicates obvious repeated venue/day/bill entries and excludes ambiguous TBA venues or wrong cities. It does not reinterpret a listed time as doors or show start. Daily output appears in `discovery/oregon-electronic-leads-review.md` as an Actions report/artifact, **never directly as canonical SHOWS events**. A lead-only day does not open an extra pull request.
+
+No November 2026 **Headspace Circus, Republic Cafe or Ming Lounge** entries were seen on the live 19hz page during this first check; that absence is **not** evidence no such events exist. Keep the original Headspace Circus account and verified Republic/Ming original ticket watcher in the promoter research backlog, and require dated original announcement or original event-specific ticket evidence before publishing.
+
 ## Integration acceptance
 
 1. Verify the operator's *original* public feed/site and any technical/rights restrictions; no provider-bypass or false source health claims.
