@@ -15,6 +15,8 @@ A label's artist tours, record-release shows, compilations, benefit bills and co
 | **777 Booking** | Portland DIY hardcore bookings; High Limit Room connection. [Evidence](https://www.wweek.com/culture/2025/07/22/high-limit-room-is-portlands-newest-home-for-all-ages-hardcore/) | Verify original @777booking public profile or organizer-supplied dated show list. Record original flyer/bill and venue, including High Limit Room and offsite DIY dates. |
 | **Third Eye Booking** | Portland hardcore shows, benefits and DIY bills. [Evidence](https://www.northwesthardcore.net/dani-dry-socket) | Find and verify the promoter's OWN public show source/profile with original flyer/permalink. Do NOT mistake this Portland hardcore promoter for unrelated Third Eye Shut Booking (Los Angeles). |
 
+| **[Sad Times Productions](https://www.sadtimesproductions.com/shows)** | First-party archive shows 2025–26 bookings at Wyrd Hut, Star Bar, High Water Mark, Twilight, Shanghai Tunnel and other suitable places. [Original archive](https://www.sadtimesproductions.com/shows) | Research future original promoter show notices and dated flyers; archived 2025–26 listings are *not* upcoming events. |
+
 ## Suggested record-label leads
 
 | Source | Relevance and evidence | Next action |
