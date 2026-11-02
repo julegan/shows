@@ -41,7 +41,7 @@ assert.match(a.parseDetail(google({title:"Another show"}),p1.entries[0]).hold,/t
 assert.match(a.parseDetail(google({location:"Seattle, WA"}),p1.entries[0]).hold,/location/);
 assert.match(a.parseDetail("",p1.entries[0]).hold,/full-year/);
 assert.equal(a.calendarLink(google()+google()),null);
-assert(a.parsePage(card({time:"Doors: 7:00 pm"})).entries[0].hold);
+assert.throws(()=>a.parsePage(card({time:"Doors: 7:00 pm"})),/No original Showdown event cards/);
 const parsed=a.parseDetail(detail1,p1.entries[0]);
 assert(!parsed.sourceVerifiedMusic,"Country/scene listings must be classified accurately");
 const source={id:"showdown",name:"The Showdown",venue:"The Showdown",adapter:"showdown-original-html",baseUrl:a.ROOT,address:"1195 SE Powell Blvd, Portland, OR 97202",neighborhood:"Brooklyn"};
