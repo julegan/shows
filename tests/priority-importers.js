@@ -4,6 +4,8 @@ const {parseStar,parseTwilightLinks,parseTwilightDetail,parseSoundcontrol,parseS
 const {extract,reconcile}=require("../scripts/discover-events");
 const reg=require("../discovery/sources.json");
 const get=id=>reg.sources.find(s=>s.id===id);
+// Keep regression coverage for the retired HTML promoter parser without treating it as the active source.
+const legacySound={...get("soundcontrol-pdx"),adapter:"promoter-list-html",url:"https://www.soundcontrolpdx.com/",baseUrl:"https://www.soundcontrolpdx.com"};
 const when=new Date("2026-10-17T23:00:00-07:00");
 const star=['<div class="tw-section"><div class="tw-name"><a href="https://www.startheaterportland.com/tm-event/black-metal-live/">Black Metal Live</a></div>',
  '<span class="tw-event-date">November 14, 2026</span><span class="tw-event-time">8:00 pm</span><span class="tw-event-door-time">7:00 pm</span></div>'].join("");
@@ -31,7 +33,7 @@ assert.match(parseTwilightDetail(moved,tw.fullUrl,get("twilight")).hold,/no long
 const poster=['<a class="append-refer" href="https://www.treetix.com/event?id=205000&cal=soundcontrol"><div><p class="event-date">Saturday November 14<br />at High Water Mark Lounge</p>',
 '<p class="event-header"><span class="event-headliner">Deathpunk Band</span><br />Supporting Group</p>',
 '<img src="https://www.treetix.com/templates/soundcontrol/images/events/mini/2026-11-14-205000-show.jpg"></div></a>'].join("");
-const snd=parseSoundcontrol(poster,get("soundcontrol-pdx"));
+const snd=parseSoundcontrol(poster,legacySound);
 assert.equal(snd.length,1);
 assert.equal(snd[0].dateOnly,"2026-11-14");
 assert.equal(snd[0].venue,"High Water Mark Lounge");
@@ -41,19 +43,19 @@ assert.equal(snd[0].artwork?.usageApproved,null);
 const ticket='<span class="event-date">Saturday, November 14, 2026</span><br>at High Water Mark Lounge (Portland) <div class="event-header">Deathpunk Band</div> Doors 7:00pm Show 8:30pm';
 const details=parseSoundcontrolDetail(ticket,snd[0]);
 assert.equal(details.startDate,"2026-11-15T04:30:00.000Z");
-assert.equal(extract(details,get("soundcontrol-pdx"),when).event.startsAt,"2026-11-14T20:30:00-08:00");
+assert.equal(extract(details,legacySound,when).event.startsAt,"2026-11-14T20:30:00-08:00");
 assert.equal(parseSoundcontrolDetail(ticket.replace("Show 8:30pm","Show 8:30"),snd[0]).startDate,undefined);
 assert.match(parseSoundcontrolDetail(ticket.replace("November 14","November 15"),snd[0]).detailHold,/date conflicts/);
 
-const item=extract(snd[0],get("soundcontrol-pdx"),when);
+const item=extract(snd[0],legacySound,when);
 assert.equal(item.event,undefined);
 assert.match(item.hold,/no performance start/);
 assert.equal(item.date,"2026-11-14");
-assert.equal(parseSoundcontrol(poster.replace("2026-11-14-205000","2026-11-15-205000"),get("soundcontrol-pdx"))[0].hold.startsWith("Poster filename date"),true);
+assert.equal(parseSoundcontrol(poster.replace("2026-11-14-205000","2026-11-15-205000"),legacySound)[0].hold.startsWith("Poster filename date"),true);
 assert.equal(reconcile([], [item]).held.length,1);
 const src=get("black-water");
 assert.equal(src.status,"pilot-enabled");
 assert.equal(src.adapter,"black-water-ics");
 for(const id of ["twilight","star-theater","soundcontrol-pdx"])assert.equal(get(id).status,"pilot-enabled");
-assert.equal(get("high-water").status,"source-blocked");
+assert.equal(get("high-water").status,"pilot-enabled");
 console.log("PASS — venue importers, official URLs, November PST, genre-neutral candidates, cancellation/move holds, and time-unknown promoter staging");
