@@ -36,6 +36,9 @@ assert.match(lola.detail(detail({description:"Ticket allows access to the Crysta
 assert.match(lola.detail(detail({description:"Four floors of the Crystal complex host this event."}),found[0]).hold,/multiple/);
 assert(lola.roster(page(rows,[card(),card({venue:"Crystal Ballroom"})])).some(x=>x.skip));
 assert(lola.roster(page(rows,[card({time:"1-7pm"})])).some(x=>x.hold));
+const crossroom=lola.roster(page([{title,url:"https://www.mcmenamins.com/events/278428-2010s-dance-flashback",date:"11/14/2026"}],
+ [card().replaceAll("278429-2000s-dance-flashback","278428-2010s-dance-flashback")]));
+assert(crossroom.some(x=>/Shared Crystal/.test(x.hold||"")),"Known two-room admission remains held");
 assert(lola.roster(page(rows,[card({date:"Friday, November 14"})])).some(x=>x.hold));
 assert(lola.roster(page(rows,[card(),card({time:"8pm show"})])).some(x=>x.hold));
 assert.throws(()=>lola.roster("no source"),/calendar cards absent/);
@@ -45,13 +48,16 @@ assert.equal(lola.dateFromRecord({...rows[0],date:"11/14"},"Saturday, November 1
 assert.equal(lola.dateFromRecord(rows[0],"Friday, November 14"),null);
 assert.equal(lola.detail(detail(),found[0]).timeEvidence.includes("full date"),true);
 (async()=>{
+ let calls=0;
  const request=async u=>{
+  calls++;
   assert(u===lola.CALENDAR_URL||u===url,"Only first-party allowlisted Lola pages");
   const html=u===lola.CALENDAR_URL?page(rows):detail();
   return {ok:true,status:200,headers:{get:()=> "text/html; charset=utf-8"},
    body:new ReadableStream({start(ctrl){ctrl.enqueue(new TextEncoder().encode(html));ctrl.close();}})};
  };
  const data=await lola.fetchEvents({...venue,baseUrl:lola.ROOT},{request});
+ assert.equal(calls,1,"Read the original Lola venue roster once; avoid 13 detail-page requests and provider rate limiting");
  assert.equal(data.length,1);
  assert.equal(data[0].fullUrl,url);
  const src={...venue,status:"pilot-enabled",adapter:"lolas-mcmenamins-html",baseUrl:lola.ROOT,address:"1332 W Burnside St, Portland, OR 97209",neighborhood:"West End"};
