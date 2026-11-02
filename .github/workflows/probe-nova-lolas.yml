@@ -1,8 +1,5 @@
 name: Inspect Nova and Lola official sources (read-only)
 on:
-  push:
-    branches:
-      - discovery/nova-lolas-source-probe-20261101
   workflow_dispatch:
 permissions:
   contents: read
