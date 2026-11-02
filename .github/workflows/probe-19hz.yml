@@ -18,3 +18,7 @@ jobs:
         run: |
           node --check scripts/probe-19hz-html.js
           node scripts/probe-19hz-html.js
+          node --check scripts/19hz-scene-leads.js
+          node tests/19hz-scene-leads.js
+          node scripts/19hz-scene-leads.js
+          sed -n '1,20p' discovery/oregon-electronic-leads-review.md
