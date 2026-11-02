@@ -34,8 +34,8 @@ assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"paused-secondary","No Fun must not dominate scheduled discovery");
 assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top core source");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown"]);
-assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html"].includes(s.adapter)),"Never run unverified adapters");
+assert.deepEqual(enabled.map(s=>s.id),["black-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown","45-east"]);
+assert(enabled.every(s=>["black-water-ics","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html","45east-redcube-original"].includes(s.adapter)),"Never run unverified adapters");
 for(const id of ["coffin-club","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
@@ -66,7 +66,7 @@ assert.equal(byId['turn-turn-turn'].adapter,'turnturnturn-opendate');
 assert.equal(byId['turn-turn-turn'].status,'pilot-enabled','Official venue and event details passed GitHub runner 40171261702');
 assert.equal(byVenue['turn-turn-turn'].ingestionStatus,'active-adapter');
 
-for(const id of ["45-east","republic-cafe","b-side","wyrd-hut","starthrow","moda-center"]){
+for(const id of ["republic-cafe","b-side","wyrd-hut","starthrow","moda-center"]){
  assert.equal(byId[id]?.status,"adapter-needed","No unverified new importer activated for "+id);
  assert.equal(byVenue[id]?.editorialPreference,"preferred","Requested venue must be researched ahead of convenience");
 }
@@ -94,3 +94,8 @@ assert.equal(byId["crystal-ballroom"].adapter,"crystal-official-html","Crystal B
 assert.equal(byId["showdown"].status,"pilot-enabled","Showdown enabled after GitHub Actions source proof");
 assert.equal(byId["showdown"].adapter,"showdown-original-html","Showdown uses primary venue calendar with detail-year corroboration");
 assert.equal(byVenue["showdown"].ingestionStatus,"active-adapter","Showdown room is now independently connected");
+
+assert.equal(byId["45-east"].status,"pilot-enabled","45 East Red Cube group-specific venue source enabled");
+assert.equal(byId["45-east"].adapter,"45east-redcube-original","45 East original venue promoter group feed is isolated");
+assert.equal(byVenue["45-east"].ingestionStatus,"active-adapter","45 East review-only discovery active");
+assert(!registry.sources.some(s=>["777-booking","third-eye-booking-pdx"].includes(s.id)),"Unverified promoter backlog cannot be enabled as a source");
