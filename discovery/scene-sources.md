@@ -33,13 +33,13 @@ A label's artist tours, record-release shows, compilations, benefit bills and co
 | Source | Relevance and evidence | Next action |
 | --- | --- | --- |
 | **[PDX//SUBVERT (revived)](https://subvert.blackwaterpdx.com/)** | Specialist Portland punk, hardcore and metal show guide announced revived October 2026. [Evidence](https://blackwaterpdx.com/store/) | Inspect the revived actual site and terms/access; evaluate current date-bearing records as secondary leads with authoritative venue/promoter/ticket confirmation. Old 2017 Blogspot pages must not be imported as current events. |
-| **[Doomtown PDX](https://doomtownpdx.com/)** | Original Portland underground punk and hardcore show calendar with flyers and venue details. [Evidence](https://doomtownpdx.com/) | Check whether original event posts include verified dates and flyer provenance; use to find original host/artist confirmations, not automatically replace existing source records. |
+| **[Doomtown PDX](https://doomtownpdx.com/)** | Original Portland underground punk and hardcore show calendar with flyers and venue details. [Evidence](https://doomtownpdx.com/) | Already covered by the existing `scripts/doomtown-leads.js` → `discovery/doomtown-leads-review.md` review-only lead workflow. Reuse that work; don't create another importer. Original event date/year and venue must still be verified. |
 
 ## Notable current opportunity
 
 **Black Water Records announced in October 2026 that [PDX//SUBVERT](https://subvert.blackwaterpdx.com/) had been revived** after about a decade. The [label's own October 2026 update](https://blackwaterpdx.com/store/) is the primary evidence. The new subdomain has **not yet been successfully probed**, so it is a priority source-research lead, **not** an active importer. The [old Blogspot archive](https://pdxsubvert.blogspot.com/) ends in the 2010s and must not be treated as live.
 
-Independent [Doomtown PDX](https://doomtownpdx.com/) also offers dated punk/hardcore flyers and show notices; consider it a source of leads to corroborate with the original organizer/venue or ticket page.
+**Doomtown is already integrated as a review-only lead source** via `scripts/doomtown-leads.js`; no additional discovery connector is needed. Its posts are corroborated with original organizer/venue sources before calendar inclusion.
 
 ## Distinctions that matter
 
