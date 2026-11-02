@@ -34,7 +34,7 @@ assert.match(lola.detail(detail({date:"Sunday, November 15, 2026"}),found[0]).ho
 assert.match(lola.detail(detail({heading:"Different show"}),found[0]).hold,/differs/);
 assert.match(lola.detail(detail({description:"Ticket allows access to the Crystal Ballroom AND the Lola's Room party."}),found[0]).hold,/multiple/);
 assert.match(lola.detail(detail({description:"Four floors of the Crystal complex host this event."}),found[0]).hold,/multiple/);
-assert(lola.roster(page(rows,[card({venue:"Crystal Ballroom"})])).some(x=>x.skip));
+assert(lola.roster(page(rows,[card(),card({venue:"Crystal Ballroom"})])).some(x=>x.skip));
 assert(lola.roster(page(rows,[card({time:"1-7pm"})])).some(x=>x.hold));
 assert(lola.roster(page(rows,[card({date:"Friday, November 14"})])).some(x=>x.hold));
 assert(lola.roster(page(rows,[card(),card({time:"8pm show"})])).some(x=>x.hold));
