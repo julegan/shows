@@ -15,6 +15,11 @@ async function main(){
  const cards=[...index.matchAll(/<div\b[^>]*class="[^"]*\bevent detailed\b[^"]*"[^>]*>/gi)];
  const searches=[...index.matchAll(/<div\b[^>]*id="(?:mobileEventAutoComplete|eventAutoComplete)"[^>]*>/gi)];
  const links=[...new Set([...index.matchAll(/<a\b[^>]*href=["'](https?:\/\/www\.mcmenamins\.com\/events\/\d+[a-z0-9-]*)["']/gi)].map(m=>m[1]))];
+ const {sourceIndex}=require("./mission-importer");
+ let indexed;
+ try{const m=sourceIndex(index); indexed={count:m.size,invalid:m.invalidRecords?.length,first:[...m.entries()].slice(0,5).map(([url,row])=>({url,title:row.title,date:row.date,keys:Object.keys(row)}))};}
+ catch(e){indexed={error:String(e.message||e)}}
+ console.log("SOURCE_INDEX "+JSON.stringify(indexed));
  console.log(JSON.stringify({kind:"index",bytes:index.length,cardCount:cards.length,searchCount:searches.length,
    searchSample:searches.slice(0,1).map(m=>m[0].slice(0,240)),eventLinks:links.slice(0,20),
    cardSample:cards.slice(0,2).map((m,i)=>({html:index.slice(m.index,m.index+700).slice(0,700),visible:tidy(index.slice(m.index,m.index+2200)).slice(0,400)}))},null,2));
