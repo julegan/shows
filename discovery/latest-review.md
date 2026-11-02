@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-01
+# SHOWS automated discovery review — 2026-11-02
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -9,43 +9,62 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Black Water | Checked | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| Soundcontrol PDX | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| High Water Mark | Checked | 69 | 69 | 2 | 21 | 0 | 0 | 0 |
+| Soundcontrol PDX | Checked | 3 | 1 | 0 | 1 | 0 | 2 | 0 |
 | Twilight Cafe and Bar | Checked | 21 | 0 | 0 | 0 | 0 | 11 | 10 |
 | Star Theater | Checked | 42 | 1 | 1 | 0 | 1 | 4 | 37 |
-| Dante's | Checked | 45 | 1 | 1 | 0 | 1 | 15 | 29 |
-| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 7 | 26 |
-| Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 9 | 24 |
+| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 14 | 29 |
+| Roseland Theater | Checked | 32 | 0 | 0 | 0 | 0 | 6 | 26 |
+| Wonder Ballroom | Checked | 34 | 1 | 0 | 1 | 1 | 9 | 24 |
 | Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 6 | 35 |
 | Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 5 | 49 |
-| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 7 | 22 |
-| Turn! Turn! Turn! | Checked | 17 | 0 | 0 | 0 | 0 | 1 | 16 |
-| Kenton Club | Checked | 15 | 0 | 0 | 0 | 0 | 1 | 14 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 1 | 0 | 1 | 1 | 2 | 27 |
-| Holocene | Checked | 45 | 0 | 0 | 0 | 0 | 36 | 9 |
+| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 6 | 23 |
+| Turn! Turn! Turn! | Checked | 20 | 3 | 3 | 0 | 3 | 1 | 16 |
+| Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 1 | 0 | 1 | 1 | 3 | 26 |
+| Holocene | Checked | 46 | 1 | 1 | 0 | 1 | 36 | 9 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 1095 | 493 |
 | The Off Beat / Friends of Noise | Checked | 8 | 0 | 0 | 0 | 0 | 2 | 6 |
-| Aladdin Theater | Checked | 94 | 0 | 0 | 0 | 0 | 3 | 91 |
-| Mission Theater | Checked | 41 | 0 | 0 | 0 | 0 | 0 | 41 |
+| Aladdin Theater | Checked | 93 | 0 | 0 | 0 | 0 | 3 | 90 |
+| Mission Theater | Checked | 49 | 10 | 1 | 9 | 10 | 0 | 39 |
+| Nova PDX | Checked | 12 | 12 | 1 | 11 | 12 | 0 | 0 |
+| Lola's Room | Checked | 13 | 10 | 0 | 9 | 10 | 3 | 0 |
+| The Showdown | Checked | 50 | 37 | 0 | 32 | 37 | 13 | 0 |
+| 45 East | Checked | 19 | 17 | 17 | 0 | 17 | 2 | 0 |
 
 ### Classification review
 
-New candidate categories: **Music** 2 · **Unclassified** 2.
-**2 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Markets** 1 · **Music** 26 · **Other** 51 · **Unclassified** 86.
+**86 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Revolution Hall: Jervis Campbell — https://www.etix.com/ticket/p/64154492/jervis-campbell-portland-revolution-hall
-- Polaris Hall: Stephen Day - The Self Titled Tour — https://www.etix.com/ticket/p/84386206/stephen-day-the-self-titled-tour-portland-polaris-hall
+- High Water Mark Lounge: Shifters, Jet Hag, The Shitfits — https://www.treetix.com/event/204946/highwatermark
+- High Water Mark Lounge: Uncanny Valley Girls, Mollyfy, The Eye See Yous, Dead Name Factory — https://www.treetix.com/event/204941/highwatermark
+- High Water Mark Lounge: Object Unto Earth, Shield Maiden, Has/Will — https://www.treetix.com/event/204920/highwatermark
+- High Water Mark Lounge: Hear You Loud & Queer! — https://www.treetix.com/event/204906/highwatermark
+- High Water Mark Lounge: Filthy Dyke! — https://www.treetix.com/event/204947/highwatermark
+- High Water Mark Lounge: Art Shitz! — https://www.treetix.com/event/204948/highwatermark
+- High Water Mark Lounge: Shady Pines Open Mic! — https://www.treetix.com/event/204949/highwatermark
+- High Water Mark Lounge: Ils, Spares, Goldwing — https://www.treetix.com/event/204943/highwatermark
+- High Water Mark Lounge: Disconap, Keeley Jo, Mother Dearest — https://www.treetix.com/event/204950/highwatermark
+- High Water Mark Lounge: Hear You Loud & Queer! — https://www.treetix.com/event/204907/highwatermark
+- Plus 76 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
-- High Water Mark: **source-blocked** (priority venue).
 - The Coffin Club: **adapter-needed** (priority venue).
 - High Limit Room: **adapter-needed** (priority venue).
 - Doomtown PDX: **adapter-needed**.
 - Shanghai Tunnel: **adapter-needed**.
-
-### Failed source checks
-
-- soundcontrol-pdx: HTTP 403
+- Republic Cafe / Ming Lounge: **adapter-needed**.
+- B-Side Tavern: **adapter-needed**.
+- Wyrd Hut: **adapter-needed**.
+- Star Bar: **adapter-needed**.
+- Moda Center: **adapter-needed**.
+- The Alleyway: **adapter-needed**.
+- AZØTH: **adapter-needed**.
+- Hawthorne Lounge: **adapter-needed**.
+- Word Virus Books: **adapter-needed**.
+- The Six (Midnight PDX Bar): **adapter-needed**.
 
 
 ## Changes to previously published events (review only)
@@ -59,22 +78,193 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 4
+## New candidates: 164
 
+- high-water: 69 proposals
+- soundcontrol-pdx: 1 proposals
 - star-theater: 1 proposals
-- dantes: 1 proposals
+- wonder-ballroom: 1 proposals
 - revolution-hall: 1 proposals
+- turn-turn-turn: 3 proposals
 - mississippi-polaris: 1 proposals
+- holocene: 1 proposals
+- mission-theater: 10 proposals
+- nova-pdx: 12 proposals
+- lolas-room: 10 proposals
+- showdown: 37 proposals
+- 45-east: 17 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-27 | Water & Power: a Night Carnival of climate apocalypse | Star Theater | 20:00 (doors/show unverified) | https://www.startheaterportland.com/tm-event/water-power-a-night-carnival-of-climate-apocalypse/ |
-| 2026-11-28 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-8/ |
-| 2026-11-17 | Jervis Campbell | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/64154492/jervis-campbell-portland-revolution-hall |
-| 2026-11-15 | Stephen Day - The Self Titled Tour | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/84386206/stephen-day-the-self-titled-tour-portland-polaris-hall |
+| 2026-11-03 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204720/highwatermark |
+| 2026-11-05 | Shifters, Jet Hag, The Shitfits | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204946/highwatermark |
+| 2026-11-06 | Uncanny Valley Girls, Mollyfy, The Eye See Yous, Dead Name Factory | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204941/highwatermark |
+| 2026-11-07 | Object Unto Earth, Shield Maiden, Has/Will | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204920/highwatermark |
+| 2026-11-10 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204721/highwatermark |
+| 2026-11-12 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204906/highwatermark |
+| 2026-11-13 | Filthy Dyke! | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204947/highwatermark |
+| 2026-11-14 | Temple, Lies We Were Told, Strzyga, DJ Wednesday | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204940/highwatermark |
+| 2026-11-15 | Art Shitz! | High Water Mark Lounge | 18:00 (doors/show unverified) | https://www.treetix.com/event/204948/highwatermark |
+| 2026-11-17 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204722/highwatermark |
+| 2026-11-18 | Shady Pines Open Mic! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204949/highwatermark |
+| 2026-11-20 | Grand Head, Bad Move, Sluzz, DJ Meow | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204919/highwatermark |
+| 2026-11-21 | Ils, Spares, Goldwing | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204943/highwatermark |
+| 2026-11-24 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204723/highwatermark |
+| 2026-11-27 | Kink Nite! Market and party! | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204951/highwatermark |
+| 2026-11-28 | Disconap, Keeley Jo, Mother Dearest | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204950/highwatermark |
+| 2026-12-01 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204724/highwatermark |
+| 2026-12-08 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204725/highwatermark |
+| 2026-12-10 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204907/highwatermark |
+| 2026-12-12 | Left Of The Dial, Hot Honey | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204953/highwatermark |
+| 2026-12-15 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204726/highwatermark |
+| 2026-12-19 | Kadabra, Moon Destroys, Death Parade | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204944/highwatermark |
+| 2026-12-22 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204727/highwatermark |
+| 2026-12-29 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204728/highwatermark |
+| 2027-01-05 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204729/highwatermark |
+| 2027-01-12 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204730/highwatermark |
+| 2027-01-14 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204908/highwatermark |
+| 2027-01-19 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204731/highwatermark |
+| 2027-01-26 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204732/highwatermark |
+| 2027-02-02 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204733/highwatermark |
+| 2027-02-09 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204734/highwatermark |
+| 2027-02-11 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204909/highwatermark |
+| 2027-02-16 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204735/highwatermark |
+| 2027-02-23 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204736/highwatermark |
+| 2027-03-02 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204737/highwatermark |
+| 2027-03-09 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204738/highwatermark |
+| 2027-03-11 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204910/highwatermark |
+| 2027-03-16 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204739/highwatermark |
+| 2027-03-23 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204740/highwatermark |
+| 2027-03-30 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204741/highwatermark |
+| 2027-04-06 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204742/highwatermark |
+| 2027-04-08 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204911/highwatermark |
+| 2027-04-13 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204743/highwatermark |
+| 2027-04-20 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204744/highwatermark |
+| 2027-04-27 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204745/highwatermark |
+| 2027-05-04 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204746/highwatermark |
+| 2027-05-11 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204887/highwatermark |
+| 2027-05-13 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204912/highwatermark |
+| 2027-05-18 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204888/highwatermark |
+| 2027-05-25 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204889/highwatermark |
+| 2027-06-01 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204890/highwatermark |
+| 2027-06-08 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204891/highwatermark |
+| 2027-06-10 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204913/highwatermark |
+| 2027-06-15 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204892/highwatermark |
+| 2027-06-22 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204893/highwatermark |
+| 2027-06-29 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204894/highwatermark |
+| 2027-07-06 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204895/highwatermark |
+| 2027-07-08 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204914/highwatermark |
+| 2027-07-13 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204896/highwatermark |
+| 2027-07-20 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204897/highwatermark |
+| 2027-07-27 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204898/highwatermark |
+| 2027-08-03 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204899/highwatermark |
+| 2027-08-10 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204900/highwatermark |
+| 2027-08-12 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204915/highwatermark |
+| 2027-08-17 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204901/highwatermark |
+| 2027-08-24 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204902/highwatermark |
+| 2027-08-31 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204903/highwatermark |
+| 2027-09-07 | Karaoke Night - Free! | High Water Mark Lounge | 21:00 (doors/show unverified) | https://www.treetix.com/event/204904/highwatermark |
+| 2027-09-09 | Hear You Loud & Queer! | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204916/highwatermark |
+| 2026-12-20 | Early Moods, H.O.G., Stainless | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204929/soundcontrol |
+| 2026-11-29 | CHURCH OF HIVE | Star Theater | 21:00 (doors/show unverified) | https://www.startheaterportland.com/tm-event/church-of-hive/ |
+| 2027-04-05 | Boy Throb | Wonder Ballroom | 20:00 (doors/show unverified) | https://wonderballroom.com/event/boy-throbs-real-tour/wonder-ballroom/portland-oregon/ |
+| 2026-11-18 | Mountainfilm on Tour | Revolution Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/30917468/mountainfilm-on-tour-portland-revolution-hall |
+| 2026-11-11 | Truck + Sax Machine (RI) + Clover | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/truck-sax-machine-ri-clover-november-11-2026-796353 |
+| 2026-11-12 | San Kazakgascar (Sac) + Water Shrews + Half Bird | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/san-kazakgascar-sac-water-shrews-half-bird-november-12-2026-796355 |
+| 2026-11-15 | Miranda S.P. (IN) + Nowhere Flowers + Leland's Lotto | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/miranda-s-p-in-nowhere-flowers-leland-s-lotto-november-15-2026-796358 |
+| 2026-11-14 | 80s+90s New Wave/Alt Video Dance Attack | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55289076/80s90s-new-wavealt-video-dance-attack-portland-polaris-hall |
+| 2026-11-25 | FLASH TRASH: An Electro Dance Party feat. guest DJ set by UFFIE | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-25-flash-trash-an-electro-dance-party-feat-guest-dj-set-by-uffie |
+| 2026-12-03 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279700-mission-theater-history-art-tour |
+| 2026-12-06 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279699-mission-theater-history-art-tour |
+| 2026-12-10 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279698-mission-theater-history-art-tour |
+| 2026-12-10 | That 1 Guy | Mission Theater | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279608-that-1-guy |
+| 2026-12-13 | RockStar Fall Concert | Mission Theater | 15:00 (doors/show unverified) | https://www.mcmenamins.com/events/279652-rockstar-fall-concert |
+| 2026-12-17 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279696-mission-theater-history-art-tour |
+| 2026-12-20 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279695-mission-theater-history-art-tour |
+| 2026-12-24 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279694-mission-theater-history-art-tour |
+| 2026-12-27 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279693-mission-theater-history-art-tour |
+| 2026-12-31 | Mission Theater History & Art Tour | Mission Theater | 13:00 (doors/show unverified) | https://www.mcmenamins.com/events/279697-mission-theater-history-art-tour |
+| 2026-11-04 | House Wednesday | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204316 |
+| 2026-11-06 | PDX Rated | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204560 |
+| 2026-11-07 | DYKE NITE | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204548 |
+| 2026-11-11 | House Wednesday | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204563 |
+| 2026-11-14 | Bearracuda | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204568 |
+| 2026-11-18 | House Wednesday | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204564 |
+| 2026-11-19 | Gateway Show | Nova PDX | 19:30 (doors/show unverified) | https://tixr.com/e/212203 |
+| 2026-11-21 | DEAR DIARY: AN EMO & POP PUNK NIGHT | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/208233 |
+| 2026-11-25 | House Wednesday | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204565 |
+| 2026-12-04 | PDX Rated | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204561 |
+| 2026-12-12 | Lumina | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/208562 |
+| 2026-12-31 | Bearracuda | Nova PDX | 21:00 (doors/show unverified) | https://tixr.com/e/204551 |
+| 2026-11-14 | 2000's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/278429-2000s-dance-flashback |
+| 2026-11-20 | Club Curfew - A Happy Hour Dance Party | Lola's Room | 17:00 (doors/show unverified) | https://www.mcmenamins.com/events/279497-club-curfew-a-happy-hour-dance-party |
+| 2026-12-12 | 2000's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/278649-2000s-dance-flashback |
+| 2026-12-17 | The PNW Stompeders - Line Dance Night | Lola's Room | 19:30 (doors/show unverified) | https://www.mcmenamins.com/events/279372-the-pnw-stompeders-line-dance-night |
+| 2026-12-18 | VDA Prince Tribute | Lola's Room | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/278679-vda-prince-tribute |
+| 2026-12-19 | 90's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/279241-90s-dance-flashback |
+| 2027-01-02 | 90's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/279254-90s-dance-flashback |
+| 2027-01-09 | 2000's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/279240-2000s-dance-flashback |
+| 2027-01-22 | 2010's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/279606-2010s-dance-flashback |
+| 2027-01-23 | 2000's Dance Flashback | Lola's Room | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/279239-2000s-dance-flashback |
+| 2026-11-02 | Square Dancing with Old Time Highway and Caller Amy Hofer / KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-with-old-time-highway-and-caller-amy-hofer/ |
+| 2026-11-03 | Two-Step Tuesday with Countryside Ride and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-countryside-ride-and-dance-lessons-with-robbie-2/ |
+| 2026-11-05 | The Suitcase Junket with Rattlesnake Mama | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/the-suitcase-junket/ |
+| 2026-11-06 | Cover the People: An Evening of Beck and Ween Covers | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/cover-the-people-an-evening-of-beck-and-ween-covers/ |
+| 2026-11-07 | Gram Jam VI: A Tribute to Gram Parsons to Benefit the Jeremy Wilson Foundation | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/gram-jam-vi-a-tribute-to-gram-parsons-to-benefit-the-jeremy-wilson-foundation/ |
+| 2026-11-08 | Tyler Hilton | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/tyler-hilton/ |
+| 2026-11-09 | Square Dancing with Caller Steph Noll / KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-13/ |
+| 2026-11-10 | Two-Step Tuesday with Shorty and the Mustangs and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-shorty-and-the-mustangs-and-dance-lessons-with-peggy/ |
+| 2026-11-11 | Intermediate Two-Step Lessons with Peggy and Dillon | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/intermediate-two-step-lessons-with-peggy-and-dillon-17/ |
+| 2026-11-12 | Clay Street Unit with Brad Parsons | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/clay-street-unit/ |
+| 2026-11-13 | Silverada with Emily Nenni | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/silverada-with-emily-nenni/ |
+| 2026-11-14 | Chris Acker with Lucas Benoit | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/chris-acker/ |
+| 2026-11-15 | Jeffrey Foucault with Taylor Kingman | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/jeffrey-foucault-with-taylor-kingman/ |
+| 2026-11-16 | Square Dancing with Caller Andy Grummon and Probably Polly String Band / KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-with-caller-andy-grummon-and-probably-polly-string-band/ |
+| 2026-11-17 | Two-Step Tuesday with Best Intentions and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-4/ |
+| 2026-11-18 | Intermediate Two-Step Lessons with Peggy and Dillon | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/intermediate-two-step-lessons-with-peggy-and-dillon-18/ |
+| 2026-11-19 | Jim Lauderdale and Never Come Down | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/jim-lauderdale-and-never-come-down/ |
+| 2026-11-20 | Tribute to Wilco, Neil Young, and Elliott Smith Featuring Wilclone, Mars FM, and Rose Parade | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/tribute-to-wilco-neil-young-and-elliott-smith-featuring-wilclone-mars-fm-and-rose-parade/ |
+| 2026-11-21 | Todd Day Wait with Mac Cornish | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/todd-day-wait-2/ |
+| 2026-11-22 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-5/ |
+| 2026-11-24 | Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-5/ |
+| 2026-11-25 | Intermediate Two-Step Lessons with Peggy and Dillon | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/intermediate-two-step-lessons-with-peggy-and-dillon-19/ |
+| 2026-11-28 | FRIENDS IN LOW PLACES ~ 90s Country Night | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/friends-in-low-places-90s-country-night-2/ |
+| 2026-11-29 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-6/ |
+| 2026-11-30 | Square Dancing / KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-14/ |
+| 2026-12-03 | Nug, How Strange It Is, and Bonus Room | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/nug-how-strange-it-is-and-bonus-room/ |
+| 2026-12-05 | Two Runner with Trinity Jane | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-runner-2/ |
+| 2026-12-06 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
+| 2026-12-07 | Square Dancing w/ Caller Steph Noll / KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-15/ |
+| 2026-12-12 | A Very Tradwife Christmas with Tradwife String Band and Special Guests | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/a-very-tradwife-christmas-with-tradwife-string-band-and-special-guests/ |
+| 2026-12-13 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-8/ |
+| 2026-12-18 | Pistil, Sam Gelband, and Withholden | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/pistil-sam-gelband-and-withholden/ |
+| 2026-12-19 | Honky Tonk Christmas with Pati Rojas Band, William Surly and the Barroom Gospel Band, Keston Brouillette and the Pickled Hearts, and Jake and the Hill People | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/honky-tonk-christmas-with-pati-rojas-band-william-surly-and-the-barroom-gospel-band-keston-brouillette-and-the-pickled-hearts-and-jake-and-the-hill-people/ |
+| 2026-12-20 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-9/ |
+| 2026-12-27 | Casual Eddie | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/casual-eddie-10/ |
+| 2027-01-09 | Shannon McNally | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/shannon-mcnally/ |
+| 2027-02-21 | REVEREND HORTON HEAT with Special Guest | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/reverend-horton-heat-with-special-guest/ |
+| 2026-11-06 | ELY OAKS | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/elyoaks1106 |
+| 2026-11-07 | GABRIEL & DRESDEN (OPEN X CLOSE) | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/gabrieldresden1107 |
+| 2026-11-13 | FREE BASS: WHALES | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/whales1113 |
+| 2026-11-14 | NIKITA, THE WICKED | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/nikitathewicked1114 |
+| 2026-11-20 | SPACE 92 | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/1120space92 |
+| 2026-11-21 | PANTEROS666 | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/1121panteros666 |
+| 2026-11-27 | ROGER SANCHEZ | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/rogersanchez1127 |
+| 2026-11-28 | GRABBITZ | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/grabbitz1128 |
+| 2026-12-04 | ANDREW BAYER | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/andrewbayer1204 |
+| 2026-12-05 | ALYSSA JOLEE | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/alyssajolee1205 |
+| 2026-12-11 | SETH DAVID + SCHMUX | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/sethdavid1211 |
+| 2026-12-12 | BRYCE ALAKAI | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/brycealakai1212 |
+| 2026-12-18 | GRAVEDGR | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/gravedgr1218 |
+| 2026-12-19 | GETTER | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/getter1219 |
+| 2026-12-31 | NYE 2027: DJ MANDY | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/djmandy1231 |
+| 2027-01-23 | ARTIFAKTS X PARKBREEZY | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/artifakts0123 |
+| 2027-02-12 | COSTA | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/costa0212 |
 
-## Held for review: 1204
+## Held for review: 1222
 
+- [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
+- [soundcontrol-pdx] Wolves in the Throne Room, Stygian Bough, Spirit Possession — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204942/soundcontrol
 - [twilight] Veredas w/ Mike Mannequin, Miss Honey — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467415/veredas-w-mike-mannequin-miss-honey
 - [twilight] 93feetofsmoke w/ Fats'e, Polearm & Guest — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/468053/93feetofsmoke-w-fatse-polearm-guest
 - [twilight] Landroid w/ Valkerie, Sylphide — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467169/landroid-w-valkerie-sylphide
@@ -90,7 +280,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-12/
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-13/
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
-- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-9/
 - [dantes] TRUE FEAR with Resist LA, When The Broken Burn, Crucible of Absolution, & Oddities — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/true-fear-with-resist-la-crucible-of-absolution-oddities/
 - [dantes] HOTWAX disco~glam~metal~punk~hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/
 - [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/
@@ -105,7 +294,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
 - [dantes] DISTANT with Heavy//Hitter, Torn Open, Katywentmissing, & Glasseater — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-14/
-- [roseland] Rival Sons – Domestic Bliss Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/rival-sons-domestic-bliss-tour/roseland-theater/portland-oregon/
 - [roseland] Periphery – A Pale White Dot US Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
 - [roseland] Alter Bridge – What Lies Within Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/
@@ -132,8 +320,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] Plini - An Unnameable Desire North American Tour — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/70921869/plini-an-unnameable-desire-north-american-tour-portland-revolution-hall
-- [revolution-hall] Slothrust: The Dystopian Theatre Tour — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/96157741/slothrustthe-dystopian-theatre-tour-portland-revolution-hall
+- [revolution-hall] Slothrust: The Dystopian Theatre Tour — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/96157741/slothrustthe-dystopian-theatre-tour-portland-revolution-hall
 - [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
@@ -143,6 +330,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [kenton-club] Untitled — Missing or implausibly long bill title 
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
+- [mississippi-polaris] Pedro the Lion (Night 1) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/47201881/pedro-the-lion-night-1-portland-polaris-hall
 - [holocene] Dylan Thom — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-04-dylan-thom-w-horse-laugh
 - [holocene] DOSS (DJ Set) + CFCF (DJ Set) — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-05-doss-dj-set-cfcf-dj-set
 - [holocene] Shanghai Qiutian — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-06-shanghai-qiutian-w-dabda-early-show
@@ -1279,10 +1467,27 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [aladdin-theater] RESCHEDULED TO 5/23/27: The Aces: The Kiss Tour — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/83493090/rescheduled-to-52327the-acesthe-kiss-tour-portland-aladdin-theater
 - [aladdin-theater] Aterciopelados: La Pipa De La Paz 30 Años Tour — Missing Aladdin title or matching original ticket room 
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
+- [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
+- [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
+- [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-68/
+- [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with The Spare Parts — Same venue/date; different existing bill; manual comparison https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-special-guests-6/
+- [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-6/
+- [showdown] Square Dancing with Caller Tighe Hauze and Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-caller-tighe-hauze-and-miss-pralines-whip-lodge-tenderstrokes/
+- [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with Brooklyn Del and the Revelators — Same venue/date; different existing bill; manual comparison https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-brooklyn-del-and-the-revelators/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-69/
+- [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 1 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary/
+- [showdown] Holiday Variety Show Featuring FC Community Choir & Chamber Orchestra, Max Marcos, Big Spender, Katy & the Null Sets, and more — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/holiday-variety-show-featuring-fc-community-choir-chamber-orchestra-max-marcos-big-spender-katy-the-null-sets-and-more/
+- [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 2 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary-2/
+- [showdown] Square Dancing with Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-miss-pralines-whip-lodge-tenderstrokes/
+- [showdown] JERRY JOSEPH & THE JACKMORMONS with Ezra Meredith — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/jerry-joseph-and-the-jackmormons-with-ezra-meredith-the-deer-lodge-all-stars/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-70/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-71/
+- [45-east] ANAMĒ — Original 45 East card missing verified title/year/date or group-specific ticket link 
+- [45-east] CASPA + THE WIDDLER — Original 45 East card missing verified title/year/date or group-specific ticket link 
 
-## Source errors: 1
+## Source errors: 0
 
-- soundcontrol-pdx: HTTP 403
 
 ## Required editorial checks
 

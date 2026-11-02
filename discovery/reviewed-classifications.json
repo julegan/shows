@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "policy": "Exact original event URL, event title, venue, and local date are required; external links are human-reviewed format/genre evidence, never blind genre inference. No arbitrary other events are labeled from venue or artist reputation.",
-  "reviewedAt": "2026-10-22",
+  "policy": "Exact original event URL, event title, venue, and local date are required; external links are human-reviewed format/genre evidence, never blind genre inference. No arbitrary other events are labeled from venue or artist reputation. Added eight exact 2026 High Water Mark original event IDs after independent concert-format verification; generic recurring activities are not reclassified.",
+  "reviewedAt": "2026-11-02",
   "entries": [
     {
       "title": "SOLD OUT: Lime Garden",
@@ -56,6 +56,89 @@
       ],
       "evidenceUrl": "https://www.ticketweb.com/event/havok-with-slackjaw-xoth-dantes-tickets/15036603?pl=dante",
       "note": "Organizer's original event-specific TicketWeb listing identifies Havok, Slackjaw, Xoth and Silver Talon as heavy/death/black metal artists at Dante's October 24."
+    },
+    {
+      "title": "Shifters, Jet Hag, The Shitfits",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-05",
+      "url": "https://www.treetix.com/event/204946/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.pdxafterdark.com/bands/jet-hag",
+      "note": "Event-specific November 5 band performance independently listed under Jet Hag's upcoming live shows; genre left unknown."
+    },
+    {
+      "title": "Uncanny Valley Girls, Mollyfy, The Eye See Yous, Dead Name Factory",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-06",
+      "url": "https://www.treetix.com/event/204941/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.pdxafterdark.com/bands/the-eye-see-yous",
+      "note": "The Eye See Yous band profile identifies the exact November 6 High Water Mark live performance; genre left unknown."
+    },
+    {
+      "title": "Object Unto Earth, Shield Maiden, Has/Will",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-07",
+      "url": "https://www.treetix.com/event/204920/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.reddit.com/r/portlandmusic/comments/1xac8c2/object_unto_earth_shield_maiden_and_haswill_at/",
+      "note": "October 19 firsthand post by Object Unto Earth's band member announcing and describing the November 7 live triple bill; music format directly attested by performer."
+    },
+    {
+      "title": "Temple, Lies We Were Told, Strzyga, DJ Wednesday",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-14",
+      "url": "https://www.treetix.com/event/204940/highwatermark",
+      "category": "Music",
+      "musicStyles": [
+        "Post-punk",
+        "Goth & darkwave"
+      ],
+      "evidenceUrl": "https://www.bandsintown.com/e/1040427733-lies-we-were-told-at-the-high-water-mark?came_from=74",
+      "note": "Artist's event-specific listing explicitly identifies the November 14 Portland bill as live post-punk and goth music with these named performers; no presumed doors/show time."
+    },
+    {
+      "title": "Ils, Spares, Goldwing",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-21",
+      "url": "https://www.treetix.com/event/204943/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.songkick.com/concerts/43461474-ils-at-high-water-mark-lounge",
+      "note": "Event-specific concert record lists all three artists on November 21 at High Water Mark; style remains unassigned."
+    },
+    {
+      "title": "Disconap, Keeley Jo, Mother Dearest",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-11-28",
+      "url": "https://www.treetix.com/event/204950/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://pdxshows.auto-flow.co/",
+      "note": "Independent Portland live-music index explicitly identifies the same November 28 High Water Mark bill as live; style remains unassigned."
+    },
+    {
+      "title": "Kadabra, Moon Destroys, Death Parade",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-12-19",
+      "url": "https://www.treetix.com/event/204944/highwatermark",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://kpcr.org/concerts/portland",
+      "note": "Independent concert listings record Moon Destroys, Kadabra and Death Parade performing December 19 at High Water Mark; genre not inferred from artist names."
+    },
+    {
+      "title": "Early Moods, H.O.G., Stainless",
+      "venue": "High Water Mark Lounge",
+      "date": "2026-12-20",
+      "url": "https://www.treetix.com/event/204929/soundcontrol",
+      "category": "Music",
+      "musicStyles": [],
+      "evidenceUrl": "https://www.bandslate.com/band/early-moods",
+      "note": "Artist concert profile lists full three-act High Water Mark performance on December 20; source is the Soundcontrol promoter calendar; no automatic genre inference."
     }
   ]
 }
