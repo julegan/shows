@@ -1,8 +1,5 @@
 name: TreeTix Cloudflare blocked-request support diagnostic
 on:
-  push:
-    branches:
-      - diagnostics/treetix-cloudflare-request-20261102
   workflow_dispatch:
 permissions:
   contents: read
