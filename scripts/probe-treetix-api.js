@@ -5,7 +5,7 @@
  * to SHOWS. No credentials, event writes, artwork downloads, or publication.
  * Do not infer a cancellation when an event is absent from this snapshot.
  */
-const ENDPOINT = "https://www.treetix.com/api/events.json";
+const ENDPOINT = "https://api.treetix.com/events.json";
 const MAX_BYTES = 25 * 1024 * 1024;
 const MATCH = /high\s*water\s*mark|highwatermark|sound\s*control|soundcontrol/i;
 const RELEVANT = /^(?:id|event_?id|title|name|start|starts|end|date|time|calendar|cal|producer|organizer|venue|location|address|city|url|link|image|photo|poster|flyer|thumbnail|doors|show|timezone|tz)(?:_|$)/i;

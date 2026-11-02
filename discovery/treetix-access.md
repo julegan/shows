@@ -2,6 +2,14 @@
 
 Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **TreeTix has supplied an unauthenticated public event-listing endpoint; live schema is still unverified, and the adapter is not yet implemented or enabled**.
 
+## Provider-approved alternate host — November 2, 2026
+
+TreeTix support (Lionel) confirmed that the previous host was blocked by **Cloudflare Bot Fight Mode** and supplied a **new, non-proxied public listing URL** for SHOWS: [https://api.treetix.com/events.json](https://api.treetix.com/events.json).
+
+The read-only schema probe (`scripts/probe-treetix-api.js`) now uses that exact provider-supplied URL. The existing manual-only GitHub Actions workflow (`Inspect TreeTix public events API (review only)`) should be run once from `main` after this PR is merged to verify GitHub-runner access, actual JSON shape and presence of original High Water Mark / Soundcontrol events. **Provider confirmation of the routing change is not yet a successful GitHub runner test**; do not treat a blocked, invalid or empty response as proof that either venue has no upcoming shows.
+
+**Next:** Inspect real source keys, timestamp/venue semantics, original event IDs/permalinks and artwork fields; then implement a separate tested review-only importer. Preserve explicit editorial approval, source attribution, no silent cancellation/deletion, and no hotlinked artwork. The prior `www.treetix.com/api/events.json` URL below is historical diagnostic evidence only.
+
 ## Follow-up — November 2, 2026: TreeTix Cloudflare challenge confirmed
 
 TreeTix support responded that **Cloudflare is the likely blocker** and requested the latest **UTC timestamp, GitHub runner source IP and HTTP client/User-Agent** so they can find the request in their logs. We made **one new unauthenticated public GET** with the *same exact* explicit User-Agent and `Accept: application/json` header as the November 1 API attempt.
