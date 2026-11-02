@@ -42,7 +42,7 @@ function analyze(payload) {
       if(url.protocol!=="https:"||url.hostname!=="www.treetix.com")return "unknown";
       if(url.pathname==="/event")return url.searchParams.get("cal")||"no-calendar";
       const segments=url.pathname.split("/").filter(Boolean);
-      return segments.length===3&&segments[0]==="event"&&/^\\d+$/.test(segments[1])?segments[2]:"unknown";
+      return segments.length===3&&segments[0]==="event"&&/^\d+$/.test(segments[1])?segments[2]:"unknown";
     }catch(_){return "unknown";}
   };
   const frequency=(list,key)=>Object.entries(list.reduce((out,row)=>{
