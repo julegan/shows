@@ -1,7 +1,5 @@
 name: Inspect underground Portland show listings (one-time)
 on:
-  push:
-    branches: [discovery/pdx-subvert-punk-source-20261102]
   workflow_dispatch:
 permissions:
   contents: read
