@@ -100,7 +100,7 @@ window.SHOWS_DATASET = {
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 312
+  "musicOccurrences": 319
 };
 window.SHOWS_EVENTS = [
   {
@@ -12536,15 +12536,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-11-05-be1c16c46d0e",
     "title": "Shifters, Jet Hag, The Shitfits",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-05T20:30:00-08:00",
     "endsAt": null,
@@ -12557,7 +12557,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204946/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -12577,7 +12577,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.pdxafterdark.com/bands/jet-hag"
   },
   {
     "id": "auto-holocene-2026-11-05-2aa7a67cc5aa",
@@ -13598,15 +13599,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-11-06-3563f1ae4225",
     "title": "Uncanny Valley Girls, Mollyfy, The Eye See Yous, Dead Name Factory",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-06T20:30:00-08:00",
     "endsAt": null,
@@ -13619,7 +13620,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204941/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -13639,7 +13640,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.pdxafterdark.com/bands/the-eye-see-yous"
   },
   {
     "id": "auto-nova-pdx-2026-11-06-c0d2f0b5ceca",
@@ -14948,15 +14950,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-11-07-ea9d0d6b65c8",
     "title": "Object Unto Earth, Shield Maiden, Has/Will",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-07T20:30:00-08:00",
     "endsAt": null,
@@ -14969,7 +14971,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204920/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -14989,7 +14991,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.reddit.com/r/portlandmusic/comments/1xac8c2/object_unto_earth_shield_maiden_and_haswill_at/"
   },
   {
     "id": "the-coffin-club-soft-vein-with-modele-chalice-sect-2026-11-07",
@@ -20997,11 +21000,16 @@ window.SHOWS_EVENTS = [
     "tags": [
       "Source-listed Music",
       "Time needs confirmation",
-      "Format needs confirmation"
+      "Format needs confirmation",
+      "Editorially verified Post-punk",
+      "Editorially verified Goth & darkwave"
     ],
-    "musicStyles": [],
+    "musicStyles": [
+      "Post-punk",
+      "Goth & darkwave"
+    ],
     "eventFormat": "unverified",
-    "classificationEvidence": "Event-specific source wording",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-14T20:30:00-08:00",
     "endsAt": null,
@@ -21034,7 +21042,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.bandsintown.com/e/1040427733-lies-we-were-told-at-the-high-water-mark?came_from=74"
   },
   {
     "id": "auto-lolas-room-2026-11-14-f161c32da278",
@@ -26375,15 +26384,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-11-21-5b9e3cc77dd6",
     "title": "Ils, Spares, Goldwing",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-21T20:30:00-08:00",
     "endsAt": null,
@@ -26396,7 +26405,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204943/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -26416,7 +26425,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.songkick.com/concerts/43461474-ils-at-high-water-mark-lounge"
   },
   {
     "id": "auto-nova-pdx-2026-11-21-52cc586ab22d",
@@ -29634,15 +29644,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-11-28-f557dabd8245",
     "title": "Disconap, Keeley Jo, Mother Dearest",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-11-28T20:30:00-08:00",
     "endsAt": null,
@@ -29655,7 +29665,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204950/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -29674,7 +29684,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://pdxshows.auto-flow.co/"
   },
   {
     "id": "auto-star-theater-2026-11-28-a6f81228bfae",
@@ -38204,15 +38215,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-high-water-2026-12-19-e692685d1807",
     "title": "Kadabra, Moon Destroys, Death Parade",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-12-19T20:30:00-08:00",
     "endsAt": null,
@@ -38225,7 +38236,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "High Water Mark",
     "url": "https://www.treetix.com/event/204944/highwatermark",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -38245,7 +38256,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://kpcr.org/concerts/portland"
   },
   {
     "id": "auto-lolas-room-2026-12-19-bfe5f15497bc",
@@ -38454,15 +38466,15 @@ window.SHOWS_EVENTS = [
     "id": "auto-soundcontrol-pdx-2026-12-20-7e9fe44c6451",
     "title": "Early Moods, H.O.G., Stainless",
     "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
+    "category": "Music",
     "tags": [
-      "Category needs review",
+      "Editorially verified Music",
       "Time needs confirmation",
       "Format needs confirmation"
     ],
     "musicStyles": [],
     "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
+    "classificationEvidence": "Manually reviewed event-specific performance evidence",
     "startTimeKind": "listed",
     "startsAt": "2026-12-20T20:30:00-08:00",
     "endsAt": null,
@@ -38475,7 +38487,7 @@ window.SHOWS_EVENTS = [
     "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
     "source": "Soundcontrol PDX",
     "url": "https://www.treetix.com/event/204929/soundcontrol",
-    "icon": "◇",
+    "icon": "♫",
     "sourceCheckedAt": "2026-11-02",
     "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
     "sourceCategories": [],
@@ -38495,7 +38507,8 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "soundcontrol-pdx",
       "method": "primary-source-collection"
-    }
+    },
+    "classificationSourceUrl": "https://www.bandslate.com/band/early-moods"
   },
   {
     "id": "auto-dantes-2026-12-20-2bfdee92d892",
