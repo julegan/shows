@@ -50,6 +50,11 @@ function roster(html){
   if(!parsed||!parsed.clock)hold="No unique show, dance, presentation or listed event clock";
   const stamp=date&&parsed&&!hold?wallToPacific(date.year,date.month,date.day,parsed.clock):null;
   if(!hold&&!stamp)hold="Invalid or ambiguous Pacific date/time";
+  // Source-confirmed November 21 2010s dance is a combined Crystal + Lola
+  // admission; New Year's Eve roster explicitly names 2010s in Lola and a
+  // shared Y2K Ball. Hold them rather than duplicate a complex-wide event.
+  if(url&&/(?:\/events\/278428-|\/events\/278503-)/.test(url))
+   hold="Shared Crystal Ballroom and Lola's Room event needs room-specific review";
   if(!hold&&parsed?.doors){
    const doors=wallToPacific(date.year,date.month,date.day,require("./priority-importers").time24(parsed.doors));
    if(!doors||Date.parse(doors)>Date.parse(stamp))hold="Doors cannot occur after published event time";
@@ -126,17 +131,12 @@ async function read(url,request=fetch){
 }
 async function fetchEvents(source,{request=fetch}={}){
  if(source.id!=="lolas-room"||source.url!==CALENDAR_URL||source.baseUrl!==ROOT)throw Error("Lola source config not authorized");
- const parsed=roster(await read(CALENDAR_URL,request)),out=[];
- // At most 4 first-party event details per batch; no third-party widget requests.
- for(let i=0;i<parsed.length;i+=4){
-  const batch=await Promise.all(parsed.slice(i,i+4).map(async row=>{
-   if(row.hold||row.skip)return row;
-   try{return detail(await read(row.fullUrl,request),row);}
-   catch(e){return {hold:"Original Lola event detail unavailable: "+String(e.message||e),title:row.title,url:row.fullUrl};}
-  }));
-  out.push(...batch);
- }
- if(!out.some(x=>x.startDate))throw Error("No independently confirmed Lola event detail; source unavailable");
- return out;
+ // The official venue-owned roster already supplies two independent date
+ // evidences (card weekday/month/day and autocomplete full year), Lola's Room
+ // venue identity, original event link and labelled time. Probing 13 details
+ // triggered HTTP 429/timeouts in a live runner, so do NOT fan out daily.
+ const rows=roster(await read(CALENDAR_URL,request));
+ if(!rows.some(x=>x.startDate))throw Error("No valid official Lola venue records; source unavailable, not zero shows");
+ return rows;
 }
 module.exports={ROOT,CALENDAR_URL,VENUE,dateFromRecord,roster,detail,read,fetchEvents};
