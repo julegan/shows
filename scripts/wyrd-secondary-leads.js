@@ -6,6 +6,7 @@
  */
 const fs=require("node:fs");
 const path=require("node:path");
+const {URL: NodeURL}=require("node:url");
 const URL="https://nearhear.app/venues/4583";
 const REPORT=path.join(__dirname,"../discovery/wyrd-secondary-leads-review.md");
 const MAX_BYTES=250000;
@@ -14,7 +15,7 @@ const MAX_DAYS=366;
 function safe(s){return String(s||"").replace(/[|\n\r\t]+/g," ").replace(/[<>]/g,"").trim().slice(0,220);}
 function sourceUrl(str){
  try{
-  const u=new URL(str);
+  const u=new NodeURL(str);
   if(u.protocol!=="https:"||u.username||u.password||u.port||u.href.length>1300)return null;
   const approved=new Set(["www.sadtimesproductions.com","sadtimesproductions.com","shadowhouse.bandcamp.com","www.eventbrite.com","eventbrite.com","www.instagram.com","instagram.com"]);
   if(!approved.has(u.hostname.toLowerCase()))return null;
