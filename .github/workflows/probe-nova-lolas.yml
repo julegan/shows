@@ -20,4 +20,6 @@ jobs:
           node --check scripts/probe-nova-lolas.js
           node tests/nova-lolas-source-probe.js
       - name: Inspect first-party pages without ticket checkout requests
-        run: node scripts/probe-nova-lolas.js
+        run: |
+          node scripts/probe-nova-lolas.js
+          node scripts/probe-nova-lola-detail.js
