@@ -2,7 +2,7 @@ name: Inspect TreeTix public events API (review only)
 on:
   push:
     branches: [diagnostics/treetix-alt-host-live-20261102]
-    paths: ['.github/workflows/probe-treetix-api.yml']
+    paths: ['.github/workflows/probe-treetix-api.yml', 'scripts/probe-treetix-api.js']
   workflow_dispatch:
 permissions:
   contents: read
