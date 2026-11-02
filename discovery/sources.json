@@ -462,7 +462,7 @@
       "status": "adapter-needed",
       "priority": "editorial-active",
       "url": null,
-      "reason": "Full-priority user-preferred Wyrd Hut DIY room; no verified first-party chronological public calendar or authorized adapter. Original venue account @wyrdhut, original artist Bandcamp Jan 9 show and organizer ticket examples can supply research leads. Verify room at 4704 SE 65th Ave per organizer/Travel Portland against one older 64th Ave directory; no invented time or lineup.",
+      "reason": "Full-priority preferred Wyrd Hut at 4704 SE 65th Ave; original site wyrdhut.com is still 'Launching Soon' (Nov 1 2026) and original social account has no verified public chronological feed. Existing original artist Bandcamp show list confirms Jan 9 date but GitHub runner receives a restricted page; BandSlate rate-limits with HTTP 429. NearHear public venue JSON-LD provides 5 future Wyrd music *research leads*, NOT primary event confirmations: its generic Sad Times archive link is not an event ticket/bill. Research is integrated through a separate review-only daily report, not an active importer. Never publish without an original dated organizer/artist listing and verified local start type.",
       "researchSources": [
         {
           "kind": "original-venue-account",
@@ -478,6 +478,16 @@
           "kind": "original-organizer-example",
           "url": "https://www.eventbrite.com/e/sw0rdswall0wer-helen-joy-way-of-flowers-at-wyrd-hut-tickets-2001707994496",
           "status": "historic-event-address-source-not-active-calendar"
+        },
+        {
+          "kind": "third-party-aggregator-lead-only",
+          "url": "https://nearhear.app/venues/4583",
+          "status": "read-only-5-future-music-leads-validated-2026-11-01-original-source-required"
+        },
+        {
+          "kind": "original-venue-website",
+          "url": "https://wyrdhut.com/",
+          "status": "launching-soon-no-dated-event-list"
         }
       ]
     },
