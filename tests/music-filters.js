@@ -35,7 +35,17 @@ const context={window:{},document,Date:FixedDate,Intl,URL:TestURL,Blob:class{con
  setTimeout(){},HTMLImageElement:class{}
 };
 vm.createContext(context);
-for(const file of ["events.js","app.js"])vm.runInContext(fs.readFileSync(path.join(__dirname,"..",file),"utf8"),context);
+// A venue's primary listing is not invisible just because its genre/format is unknown.
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","events.js"),"utf8"),context);
+const fixtureBase=context.window.SHOWS_EVENTS.find(e=>e.category==="Music");
+assert(fixtureBase,"Need a known music fixture to model a source-listed venue record");
+context.window.SHOWS_EVENTS.push(
+  {...fixtureBase,id:"fixture-unclassified-venue",title:"Unverified local bill",category:"Unclassified",
+    musicStyles:[],startsAt:"2026-10-18T13:00:00-07:00"},
+  {...fixtureBase,id:"fixture-venue-closed",title:"CLOSED",category:"Unclassified",
+    musicStyles:[],startsAt:"2026-10-18T13:30:00-07:00"}
+);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
 const eById=new Map(events.map(e=>[e.id,e]));
 const styles=[...new Set(events.flatMap(e=>e.musicStyles||[]))].sort();
@@ -47,6 +57,9 @@ assert.equal(el("monthControls").hidden,true,"Month is secondary");
 function renderedIds(){return [...el("results").innerHTML.matchAll(/data-event="([^"]+)"/g)].map(m=>m[1]).sort();}
 const past=new Set(events.filter(e=>e.startsAt.slice(0,10)<"2026-10-18").map(e=>e.id));
 assert(!renderedIds().some(id=>past.has(id)),"Past events excluded from default feed");
+assert(renderedIds().includes("fixture-unclassified-venue"),"Unclassified primary venue listing remains visible in the default mixed feed");
+assert(!renderedIds().includes("fixture-venue-closed"),"Operational closure notice is not shown as a show");
+assert(el("results").innerHTML.includes("Type unconfirmed"),"Venue listing is not misrepresented as verified music");
 assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")),"Routine farmers market listings excluded");
 el("fromDate").change("2026-11-01");
 for(const style of ["Metal","Punk","Hardcore"]){
