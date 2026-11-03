@@ -124,7 +124,15 @@ function extract(item,src,now){
     start=localTime(anchor); // Sorting anchor only. The event has no reported start time.
    }catch(_){return {hold:"Bad date-only event",title,url};}
  }else{
-   try{start=localTime(stamp);}catch(_){return {hold:"Bad event timestamp",title,url};}
+   try{start=localTime(stamp);}catch(_){
+    // Some historical venue archives contain thousands of valid pre-2026
+    // timestamps. They are out of scope, not broken future events.
+    const raw=typeof stamp==="number"&&stamp<100000000000?stamp*1000:stamp;
+    const parsed=new Date(raw);
+    if(Number.isFinite(parsed.valueOf())&&parsed.getUTCFullYear()>=2000&&parsed.getUTCFullYear()<2026&&parsed<now)
+      return {skip:"Historical event outside review period",title,url};
+    return {hold:"Bad event timestamp",title,url};
+   }
  }
  if(src.type==="promoter"){
   const mapped={
@@ -166,11 +174,22 @@ function extract(item,src,now){
 }
 function reconcile(existing,records){
  const accepted=[],held=[],skipped=[],seen=new Set();
- // Wonder can schedule separate early/late performances by the same artist.
- // Do not discard independent, first-party, explicitly timed listings;
- // all other same-venue/date conflicts remain held for editorial comparison.
+ // Most venue/date collisions are already-listed shows with edited titles or
+ // different ticket URLs. Keep those held. Holocene has *verified* early/late
+ // programming on the same date: allow clearly independent, time-separated
+ // first-party listings into the review PR, never directly to production.
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
+  if(a.venue==="Holocene"&&b.discovery?.sourceId==="holocene"){
+   const official=url=>/^https:\/\/www\.holocene\.org\/(?:events\/20\d\d-\d\d-\d\d-[^?#/]+|event\/[^?#]+\/holocene\/portland\/?)(?:[?#].*)?$/i.test(url||"");
+   const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
+   const terms=title=>new Set(String(title||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
+      .split(/[^a-z0-9]+/).filter(word=>word.length>=4&&!/^(?:with|show|night|early|late|ages|presented|sold|free|tour)$/.test(word)));
+   const aTerms=terms(a.title),bTerms=terms(b.title);
+   const shared=[...aTerms].filter(word=>bTerms.has(word)).length;
+   if(official(a.url)&&official(b.url)&&Number.isFinite(minutes)&&minutes>=150&&
+      aTerms.size>=1&&bTerms.size>=1&&shared/Math.min(aTerms.size,bTerms.size)<0.4)return true;
+  }
   const source=a.discovery?.sourceId;
   return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)
     &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
