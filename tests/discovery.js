@@ -25,6 +25,7 @@ assert(candidate.event);
 assert(extract({...item,startDate:Date.parse("2027-04-16T03:00:00Z")},source,now).event,"Future-year event within 400 days is eligible");
 assert.equal(extract({...item,startDate:Date.parse("2027-12-16T04:00:00Z")},source,now).skip,"Outside review period");
 assert.equal(extract({...item,startDate:"2025-10-16T20:00:00-07:00"},source,now).skip,
+  "Historical event outside review period",
   "Valid old venue calendar entries are skipped instead of inflating invalid future holds");
 assert.equal(extract({...item,startDate:"not-a-date"},source,now).hold,"Bad event timestamp");
 const e=candidate.event;
