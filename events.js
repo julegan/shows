@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1041,
-  "addedOccurrences": 9,
-  "batchId": "auto-discovery-2026-11-03-29",
+  "totalOccurrences": 1042,
+  "addedOccurrences": 1,
+  "batchId": "auto-discovery-2026-11-03-30",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -104,11 +104,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-02-28",
       "addedOccurrences": 7
+    },
+    {
+      "batchId": "auto-discovery-2026-11-03-29",
+      "addedOccurrences": 9
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 320
+  "musicOccurrences": 321
 };
 window.SHOWS_EVENTS = [
   {
@@ -43524,6 +43528,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-06-db1679513d32",
+    "title": "4th Annual Celebration of the Grateful Dead 1968 Concert featuring Garcia Birthday Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-grateful-dead-1968-concert-featuring-garcia-birthday-band/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-grateful-dead-1968-concert-featuring-garcia-birthday-band/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/12/GarciaBirthdayBand2024-637x432-sa4JNt.tmp_.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-grateful-dead-1968-concert-featuring-garcia-birthday-band/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
