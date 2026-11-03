@@ -24,6 +24,9 @@ const candidate=extract(item,source,now);
 assert(candidate.event);
 assert(extract({...item,startDate:Date.parse("2027-04-16T03:00:00Z")},source,now).event,"Future-year event within 400 days is eligible");
 assert.equal(extract({...item,startDate:Date.parse("2027-12-16T04:00:00Z")},source,now).skip,"Outside review period");
+assert.equal(extract({...item,startDate:"2025-10-16T20:00:00-07:00"},source,now).skip,
+  "Valid old venue calendar entries are skipped instead of inflating invalid future holds");
+assert.equal(extract({...item,startDate:"not-a-date"},source,now).hold,"Bad event timestamp");
 const e=candidate.event;
 assert.equal(e.startsAt,"2026-11-02T20:00:00-08:00");
 assert.equal(e.startTimeKind,"listed");
@@ -44,6 +47,27 @@ assert.equal(pair.skipped.length,1);
 const sameDay=reconcile([{...e,id:"existing",title:"Different show",url:"https://www.nofunportland.com/events/else"}],[candidate]);
 assert.equal(sameDay.accepted.length,0);
 assert.equal(sameDay.held.length,1);
+const holoceneEarly={...e,id:"holocene-early",title:"Shanghai Qiutian with Dabda",
+  venue:"Holocene",startsAt:"2026-11-06T18:00:00-08:00",
+  url:"https://www.holocene.org/event/shanghai-qiutian-with-dabda/holocene/portland/",
+  discovery:{sourceId:"holocene"}};
+const holoceneLate={...e,id:"holocene-late",title:"Emo Nite at Holocene",
+  venue:"Holocene",startsAt:"2026-11-06T21:00:00-08:00",
+  url:"https://www.holocene.org/events/2026-11-06-emo-nite-at-holocene",
+  discovery:{sourceId:"holocene"}};
+const separateHolocene=reconcile([holoceneEarly],[{event:holoceneLate}]);
+assert.equal(separateHolocene.accepted.length,1,
+  "Distinct official Holocene early/late bills must reach editorial review");
+assert.equal(separateHolocene.held.length,0);
+const alternateTitle={...holoceneLate,id:"holocene-alternate",title:"Shanghai Qiutian w Dabda"};
+assert.equal(reconcile([holoceneEarly],[{event:alternateTitle}]).held.length,1,
+  "A title variant of the same bill must not become a second show");
+const overlappingTime={...holoceneLate,startsAt:"2026-11-06T19:00:00-08:00"};
+assert.equal(reconcile([holoceneEarly],[{event:overlappingTime}]).held.length,1,
+  "Nearby start times could mean doors vs showtime and must remain held");
+const unsupportedUrl={...holoceneLate,url:"https://example.invalid/events/another-show"};
+assert.equal(reconcile([holoceneEarly],[{event:unsupportedUrl}]).held.length,1,
+  "Unverified event-specific domains cannot bypass the same-night hold");
 const moved=reconcile([{...e,id:"existing",startsAt:"2026-11-03T20:00:00-08:00"}],[candidate]);
 assert.equal(moved.held.length,1);
 (async()=>{
