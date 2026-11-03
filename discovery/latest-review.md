@@ -8,41 +8,35 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 13 | 2 | 1 | 0 | 0 | 1 | 10 |
+| Black Water | Checked | 13 | 0 | 0 | 0 | 0 | 1 | 12 |
 | High Water Mark | Checked | 69 | 0 | 0 | 0 | 0 | 0 | 69 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
-| Twilight Cafe and Bar | Checked | 22 | 1 | 0 | 0 | 1 | 11 | 10 |
+| Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 11 | 11 |
 | Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
 | Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 15 | 28 |
-| Roseland Theater | Checked | 33 | 1 | 0 | 1 | 1 | 6 | 26 |
+| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
 | Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 9 | 25 |
 | Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 6 | 35 |
-| Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 5 | 49 |
-| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 7 | 22 |
-| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
+| Crystal Ballroom | Checked | 55 | 1 | 1 | 0 | 1 | 5 | 49 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 7 | 23 |
+| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 1 | 18 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 3 | 25 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
 | Holocene | Checked | 46 | 0 | 0 | 0 | 0 | 36 | 10 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 1095 | 493 |
 | The Off Beat / Friends of Noise | Checked | 8 | 0 | 0 | 0 | 0 | 2 | 6 |
-| Aladdin Theater | Checked | 93 | 1 | 0 | 1 | 1 | 3 | 89 |
+| Aladdin Theater | Checked | 93 | 0 | 0 | 0 | 0 | 4 | 89 |
 | Mission Theater | Checked | 49 | 0 | 0 | 0 | 0 | 0 | 49 |
 | Nova PDX | Checked | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
-| Lola's Room | Checked | 14 | 1 | 0 | 1 | 1 | 3 | 10 |
+| Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
 | The Showdown | Checked | 49 | 0 | 0 | 0 | 0 | 13 | 36 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
 
 ### Classification review
 
-New candidate categories: **Arts & DIY** 1 · **Markets** 1 · **Music** 1 · **Unclassified** 6.
-**6 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 1.
+**0 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Roseland Theater: Elvin Bishop’s Raisin’ Hell Revue — https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/
-- Show Bar at Revolution Hall: Babehoven — https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall
-- Mississippi Studios: An Evening with Fred Eaglesmith — https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios
-- Polaris Hall: Pretty Sick — https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall
-- Aladdin Theater: Noah Gundersen: Rites of Spring Tour - Spring 2027 — https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater
-- Lola's Room: Decadent 80s Dance Party — https://www.mcmenamins.com/events/279436-decadent-80s-dance-party
 
 ### Connections requiring work
 
@@ -73,27 +67,13 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 9
+## New candidates: 1
 
-- black-water: 2 proposals
-- twilight: 1 proposals
-- roseland: 1 proposals
-- revolution-hall: 1 proposals
-- mississippi-polaris: 2 proposals
-- aladdin-theater: 1 proposals
-- lolas-room: 1 proposals
+- crystal-ballroom: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-05 | BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ FOAT & DJ SOUTH OF EVAN | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-19 | BW NITE MARKET | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-25 | Fire Cider Craft Night-Make Your Own Fire Cider! | Twilight Cafe and Bar | 19:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider |
-| 2027-01-16 | Elvin Bishop’s Raisin’ Hell Revue | Roseland Theater | 19:30 (doors/show unverified) | https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/ |
-| 2026-11-18 | Babehoven | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall |
-| 2026-11-16 | An Evening with Fred Eaglesmith | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios |
-| 2026-11-16 | Pretty Sick | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall |
-| 2027-03-09 | Noah Gundersen: Rites of Spring Tour - Spring 2027 | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater |
-| 2027-01-01 | Decadent 80s Dance Party | Lola's Room | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279436-decadent-80s-dance-party |
+| 2027-02-06 | 4th Annual Celebration of the Grateful Dead 1968 Concert featuring Garcia Birthday Band | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-grateful-dead-1968-concert-featuring-garcia-birthday-band/ |
 
 ## Held for review: 1226
 
@@ -163,7 +143,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
 - [revolution-hall] Ron Funches (Late Show) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall
-- [turn-turn-turn] Tagua Tagua (Brazil) + Orlas (NYC) + Brother vs Robot — Official event page unavailable: fetch failed https://app.opendate.io/e/tagua-tagua-brazil-orlas-nyc-brother-vs-robot-november-03-2026-754723
 - [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
 - [kenton-club] Untitled — Missing or implausibly long bill title 
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
@@ -1305,6 +1284,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [aladdin-theater] RESCHEDULED TO 5/23/27: The Aces: The Kiss Tour — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/83493090/rescheduled-to-52327the-acesthe-kiss-tour-portland-aladdin-theater
 - [aladdin-theater] Aterciopelados: La Pipa De La Paz 30 Años Tour — Missing Aladdin title or matching original ticket room 
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
+- [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
 - [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
