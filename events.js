@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-02",
+  "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1032,
-  "addedOccurrences": 7,
-  "batchId": "auto-discovery-2026-11-02-28",
+  "totalOccurrences": 1041,
+  "addedOccurrences": 9,
+  "batchId": "auto-discovery-2026-11-03-29",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -100,11 +100,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-02-1",
       "addedOccurrences": 164
+    },
+    {
+      "batchId": "auto-discovery-2026-11-02-28",
+      "addedOccurrences": 7
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 319
+  "musicOccurrences": 320
 };
 window.SHOWS_EVENTS = [
   {
@@ -11676,6 +11680,55 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-11-05-32f96f6abf72",
+    "title": "BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ FOAT & DJ SOUTH OF EVAN",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-05T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-11-05-64a8926d13e7",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22796,6 +22849,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-16-fadc511a2354",
+    "title": "An Evening with Fred Eaglesmith",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d62da56d95fc8b16568e9c9ca0028fae.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-16-8d74b2e190de",
+    "title": "Pretty Sick",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Computerwife",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/291c936a9ee9d48e845c9ac91e67d2fa.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "crystal-turnover-2026-11-16",
     "title": "Turnover",
     "subtitle": "Live show · Rock",
@@ -23794,6 +23949,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-revolution-hall-2026-11-18-b638b5a9f1e8",
+    "title": "Babehoven",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Pileup",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/9139e208aa0504c44fc98d4e138144e8.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-11-18-db0442c271ce",
     "title": "Dev Lemons",
     "subtitle": "Source-discovered venue event · details need review",
@@ -24137,6 +24343,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-11-19-7b9abf1df6fb",
+    "title": "BW NITE MARKET",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Markets",
+    "tags": [
+      "Source-listed Markets",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-19T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -28025,6 +28275,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-11-25-8e28221372c7",
+    "title": "Fire Cider Craft Night-Make Your Own Fire Cider!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Arts & DIY",
+    "tags": [
+      "Source-listed Arts & DIY",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/utxlgakokz1midc2kkg7.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },
@@ -40589,6 +40890,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-lolas-room-2027-01-01-2eb024a1fd68",
+    "title": "Decadent 80s Dance Party",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-01T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Lola's Room",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Lola's Room calendar date, year-bearing search record and event card agree; time labelled listed. Official Lola's Room event; confirm multiroom venue, format, time and artwork permission before publication.",
+    "source": "Lola's Room",
+    "url": "https://www.mcmenamins.com/events/279436-decadent-80s-dance-party",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Lola's Room",
+        "url": "https://www.mcmenamins.com/events/279436-decadent-80s-dance-party",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/Decadent80s-637x432-25.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/279436-decadent-80s-dance-party",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Lola's Room original event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-02-c556e909959f",
     "title": "2nd Annual Dry January Fest",
     "subtitle": "Source-discovered venue event · details need review",
@@ -41612,6 +41964,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-01-16-cc924c660bea",
+    "title": "Elvin Bishop’s Raisin’ Hell Revue",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-16T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/11/elvin-bishops-raisin-hell-review.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "roseland",
       "method": "primary-source-collection"
     }
   },
@@ -45681,6 +46083,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-03-09-03427cc2ca9c",
+    "title": "Noah Gundersen: Rites of Spring Tour - Spring 2027",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Nathan Evans Fox",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fcd41d7e5643df105e164e795ba93911.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },

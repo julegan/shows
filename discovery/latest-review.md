@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-02
+# SHOWS automated discovery review — 2026-11-03
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,41 +8,41 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 11 | 7 | 0 | 6 | 0 | 1 | 3 |
+| Black Water | Checked | 13 | 2 | 1 | 0 | 0 | 1 | 10 |
 | High Water Mark | Checked | 69 | 0 | 0 | 0 | 0 | 0 | 69 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
-| Twilight Cafe and Bar | Checked | 21 | 0 | 0 | 0 | 0 | 11 | 10 |
+| Twilight Cafe and Bar | Checked | 22 | 1 | 0 | 0 | 1 | 11 | 10 |
 | Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
-| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 14 | 29 |
-| Roseland Theater | Checked | 32 | 0 | 0 | 0 | 0 | 6 | 26 |
+| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 15 | 28 |
+| Roseland Theater | Checked | 33 | 1 | 0 | 1 | 1 | 6 | 26 |
 | Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 9 | 25 |
 | Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 6 | 35 |
 | Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 5 | 49 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 6 | 24 |
-| Turn! Turn! Turn! | Checked | 20 | 0 | 0 | 0 | 0 | 1 | 19 |
+| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 7 | 22 |
+| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 3 | 25 |
 | Holocene | Checked | 46 | 0 | 0 | 0 | 0 | 36 | 10 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 1095 | 493 |
 | The Off Beat / Friends of Noise | Checked | 8 | 0 | 0 | 0 | 0 | 2 | 6 |
-| Aladdin Theater | Checked | 93 | 0 | 0 | 0 | 0 | 3 | 90 |
+| Aladdin Theater | Checked | 93 | 1 | 0 | 1 | 1 | 3 | 89 |
 | Mission Theater | Checked | 49 | 0 | 0 | 0 | 0 | 0 | 49 |
 | Nova PDX | Checked | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
-| Lola's Room | Checked | 13 | 0 | 0 | 0 | 0 | 3 | 10 |
-| The Showdown | Checked | 50 | 0 | 0 | 0 | 0 | 13 | 37 |
+| Lola's Room | Checked | 14 | 1 | 0 | 1 | 1 | 3 | 10 |
+| The Showdown | Checked | 49 | 0 | 0 | 0 | 0 | 13 | 36 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
 
 ### Classification review
 
-New candidate categories: **Markets** 1 · **Unclassified** 6.
+New candidate categories: **Arts & DIY** 1 · **Markets** 1 · **Music** 1 · **Unclassified** 6.
 **6 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Black Water: CLOSED — https://bar.blackwaterpdx.com/
-- Black Water: FTC / JAB / YOUTH INDOCTRINATION — https://bar.blackwaterpdx.com/
-- Black Water: FOGWEAVER — https://bar.blackwaterpdx.com/
-- Black Water: SGC BENEFIT SHOW — https://bar.blackwaterpdx.com/
-- Black Water: BEGINNERS PINBALL NIGHT — https://bar.blackwaterpdx.com/
-- Black Water: JALLANZO / DUB KHLAAT / BLIND PROPHET / MIKEY DUB — https://bar.blackwaterpdx.com/
+- Roseland Theater: Elvin Bishop’s Raisin’ Hell Revue — https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/
+- Show Bar at Revolution Hall: Babehoven — https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall
+- Mississippi Studios: An Evening with Fred Eaglesmith — https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios
+- Polaris Hall: Pretty Sick — https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall
+- Aladdin Theater: Noah Gundersen: Rites of Spring Tour - Spring 2027 — https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater
+- Lola's Room: Decadent 80s Dance Party — https://www.mcmenamins.com/events/279436-decadent-80s-dance-party
 
 ### Connections requiring work
 
@@ -73,21 +73,29 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 7
+## New candidates: 9
 
-- black-water: 7 proposals
+- black-water: 2 proposals
+- twilight: 1 proposals
+- roseland: 1 proposals
+- revolution-hall: 1 proposals
+- mississippi-polaris: 2 proposals
+- aladdin-theater: 1 proposals
+- lolas-room: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-14 | BW ANNUAL RECORD FAIR + DJS 11A-5PM | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-26 | CLOSED | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-21 | FTC / JAB / YOUTH INDOCTRINATION | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-20 | FOGWEAVER | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-29 | SGC BENEFIT SHOW | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-11 | BEGINNERS PINBALL NIGHT | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
-| 2026-11-23 | JALLANZO / DUB KHLAAT / BLIND PROPHET / MIKEY DUB | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
+| 2026-11-05 | BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ FOAT & DJ SOUTH OF EVAN | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
+| 2026-11-19 | BW NITE MARKET | Black Water | 00:00 (doors/show unverified) | https://bar.blackwaterpdx.com/ |
+| 2026-11-25 | Fire Cider Craft Night-Make Your Own Fire Cider! | Twilight Cafe and Bar | 19:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider |
+| 2027-01-16 | Elvin Bishop’s Raisin’ Hell Revue | Roseland Theater | 19:30 (doors/show unverified) | https://roselandpdx.com/event/elvin-bishops-raisin-hell-review/roseland-theater/portland-oregon/ |
+| 2026-11-18 | Babehoven | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/69426163/babehoven-portland-show-bar-at-revolution-hall |
+| 2026-11-16 | An Evening with Fred Eaglesmith | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/49972274/an-evening-with-fred-eaglesmith-portland-mississippi-studios |
+| 2026-11-16 | Pretty Sick | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91855822/pretty-sick-portland-polaris-hall |
+| 2027-03-09 | Noah Gundersen: Rites of Spring Tour - Spring 2027 | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/50293620/noah-gundersenrites-of-spring-tour-spring-2027-portland-aladdin-theater |
+| 2027-01-01 | Decadent 80s Dance Party | Lola's Room | 20:00 (doors/show unverified) | https://www.mcmenamins.com/events/279436-decadent-80s-dance-party |
 
-## Held for review: 1223
+## Held for review: 1226
 
 - [black-water] BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ KEET BEAT & DJ SHANE DAMAGE — Recurring calendar rule needs dated individual instances; no inferred dates 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
@@ -120,6 +128,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
 - [dantes] DISTANT with Heavy//Hitter, Torn Open, Katywentmissing, & Glasseater — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
+- [dantes] HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-14/
 - [roseland] Periphery – A Pale White Dot US Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
@@ -147,12 +156,14 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] Slothrust: The Dystopian Theatre Tour — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/96157741/slothrustthe-dystopian-theatre-tour-portland-revolution-hall
+- [revolution-hall] AN EVENING WITH JOHN SCOFIELD’S “ELECTROSPECTIVE” — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/74951649/an-evening-with-john-scofields-electrospective-portland-revolution-hall
+- [revolution-hall] Cardinal Bloom - Burn the House Tour — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/64789133/cardinal-bloom-burn-the-house-tour-portland-show-bar-at-revolution-hall
 - [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
 - [revolution-hall] Ron Funches (Late Show) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall
+- [turn-turn-turn] Tagua Tagua (Brazil) + Orlas (NYC) + Brother vs Robot — Official event page unavailable: fetch failed https://app.opendate.io/e/tagua-tagua-brazil-orlas-nyc-brother-vs-robot-november-03-2026-754723
 - [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
 - [kenton-club] Untitled — Missing or implausibly long bill title 
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
@@ -180,7 +191,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [holocene] Chai & Roses: Disco Tea Dance Party for QTBIPOC & Allies — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-29-chai-roses-disco-tea-dance-party-for-qtbipoc-allies
 - [holocene] Tommy Fleece: Live. Loud. Ultrasonic. Tour — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-02-tommy-fleece-live-loud-ultrasonic-tour-w-reserv
 - [holocene] Una Noche De Bienestar ft. Barrio Mestizo — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-03-una-noche-de-bienestar-ft-barrio-mestizo
-- [holocene] Renee Christine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-04-renee-christine-early-show
+- [holocene] Renee Christine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-04-renee-christine-w-katy-and-the-null-sets-early-show
 - [holocene] Jeremiah Chiu — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-06-jeremiah-chiu-w-omari-jazz-dj-cuica
 - [holocene] Salo // Psychic Guilt // Mourning Service — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-09-salo-psychic-guilt-mourning-service
 - [holocene] daine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-10-daine-w-eilish-constance
