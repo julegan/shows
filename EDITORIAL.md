@@ -18,6 +18,8 @@ Independent art, zines, DIY, maker fairs, vintage/record/tattoo/occult pop-ups, 
 
 The homepage opens to a chronological list beginning on the current date in Portland. **By date** is the initial view on mobile and desktop; **Places** and **Month** remain available. Month should never be required to reach today's event listings. Promote source-provided flyers with attribution where allowed, and do not fabricate artwork.
 
+**Do not silently hide source-listed venue events whose format or music style is still unknown.** Display these records in the default mixed feed as **Type unconfirmed**, with no guessed genre labels. Known non-music activities remain outside the mixed feed unless they meet the separate independent art/DIY/market criteria; a closure notice is not a show. Explicit genre filters remain evidence-based and may exclude unclassified events while active.
+
 ## Venue-first coverage before genre-based presentation
 
 Maintain the canonical, machine-readable `discovery/venues.json` registry. **For a supported venue calendar, collect every published future event, not just those automatically recognized as underground music.** Primary genres, source categories, and user-selected interests are separate presentation/filter fields. Absence of a genre match must not silently drop a venue event.

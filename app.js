@@ -12,7 +12,12 @@
   const savedKey = "shows-saved-v1";
   let saved = new Set();
   try { saved = new Set(JSON.parse(localStorage.getItem(savedKey) || "[]")); } catch (_) {}
-  const eligible = events.filter(e => e.category === "Music" || isCulture(e));
+  // Keep source-listed venue events discoverable even when their music format/genre
+  // is not yet verified. Known non-music categories stay outside this music-first feed.
+  // An operational closure notice is not a public event.
+  const eligible = events.filter(e => e.category === "Music" ||
+    (e.category === "Unclassified" && !/^(?:closed|closure|venue closed|no events?)\b/i.test(String(e.title || "").trim())) ||
+    isCulture(e));
   const neighborhoods = [...new Set(eligible.map(e => e.neighborhood).filter(Boolean))].sort();
   const styles = [...new Set(events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || []))].sort();
   function ymdDate(date) {
@@ -22,6 +27,7 @@
   }
   function ymd(e) { return ymdDate(new Date(e.startsAt)); }
   function esc(value) { return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+  function displayCategory(e) { return e.category === "Unclassified" ? "Type unconfirmed" : e.category; }
   function isCulture(e) {
     if (e.category === "Arts & DIY") return true;
     if (e.category !== "Markets") return false;
@@ -82,7 +88,7 @@
   }
   function card(e) {
     return '<button type="button" class="preview-event" data-event="' + esc(e.id) + '">' + art(e, false) +
-      '<span class="preview-event-text"><span class="preview-eyebrow">' + esc(e.category) +
+      '<span class="preview-event-text"><span class="preview-eyebrow">' + esc(displayCategory(e)) +
       (e.musicStyles && e.musicStyles.length ? ' · ' + esc(e.musicStyles.slice(0, 2).join(" / ")) : "") +
       '</span><span class="preview-event-title">' + esc(e.title) + '</span><span class="preview-meta">' +
       esc(clock(e)) + ' · <span class="preview-venue">' + esc(e.venue) + '</span></span>' +
@@ -202,7 +208,7 @@
       '<p class="preview-info">Artwork attribution: <a target="_blank" rel="noopener noreferrer" href="'+esc(e.artwork.sourceUrl)+'">'+
       esc(e.artwork.credit||"original event source")+'</a></p>' : "";
     $("dialogContent").innerHTML =
-      '<div class="detail-wrap"><div class="dialog-top"><span class="detail-tag">'+esc(e.category)+' · '+esc(e.neighborhood||"Portland")+
+      '<div class="detail-wrap"><div class="dialog-top"><span class="detail-tag">'+esc(displayCategory(e))+' · '+esc(e.neighborhood||"Portland")+
       '</span><button type="button" class="dialog-close" data-close aria-label="Close event">×</button></div>'+
       art(e,true)+'<h2 id="dialogTitle">'+esc(e.title)+'</h2><p class="detail-sub">'+esc(e.subtitle || "")+
       '</p><div class="detail-info"><div><strong>When</strong><span>'+esc(dateLong.format(new Date(e.startsAt)))+'<br>'+esc(clock(e))+
