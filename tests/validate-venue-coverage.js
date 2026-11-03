@@ -25,3 +25,19 @@ for(const e of added){
  assert(e.endsAt===null);
 }
 console.log('PASS — 36 source-linked venue dates, previous records intact, source provenance, move/postpone exclusions and Pacific offsets.');
+
+const reviewedGap=all.filter(e=>e.addedIn==='2026-11-03-primary-venue-gap-review');
+assert.equal(reviewedGap.length,3,'Three individually verified, owner-priority venue leads are staged');
+assert.equal(reviewedGap.filter(e=>e.venue==='High Limit Room').length,2);
+assert.equal(reviewedGap.filter(e=>e.venue==='The Coffin Club').length,1);
+assert(reviewedGap.every(e=>e.category==='Music' && e.eventFormat==='live' && e.sources.some(s=>s.url===e.url)));
+assert(reviewedGap.every(e=>e.startsAt.endsWith('-08:00')),'November date/time offsets must be Pacific standard time');
+assert(reviewedGap.every(e=>!e.artwork),'No artwork without verified event rights and identity');
+const okGoodnight=reviewedGap.find(e=>e.id==='high-limit-room-ok-goodnight-snooze-eve-2026-11-14');
+assert.equal(okGoodnight.startTimeKind,'date-only');
+assert(/sorting anchor, not an event time/.test(okGoodnight.description));
+const ayria=reviewedGap.find(e=>e.id==='the-coffin-club-ayria-die-robot-2026-11-24');
+assert(ayria.sources.some(s=>s.kind==='official-ticketing'));
+assert(/discrepancy is unresolved/.test(ayria.description),'Source time disagreement must remain visible');
+assert(!reviewedGap.some(e=>/Sex Mex/i.test(e.title)),'Cancelled/contradictory events must not be imported');
+console.log('PASS — priority Coffin and High Limit source-backed show additions, time/genre caveats and accessibility.');
