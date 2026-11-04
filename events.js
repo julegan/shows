@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1045,
-  "addedOccurrences": 3,
-  "batchId": "2026-11-03-primary-venue-gap-review",
+  "totalOccurrences": 1051,
+  "addedOccurrences": 6,
+  "batchId": "auto-discovery-2026-11-03-33",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -112,11 +112,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-03-30",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "2026-11-03-primary-venue-gap-review",
+      "addedOccurrences": 3
     }
   ],
-  "newLiveBills": 3,
+  "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 324
+  "musicOccurrences": 330
 };
 window.SHOWS_EVENTS = [
   {
@@ -13709,6 +13713,57 @@ window.SHOWS_EVENTS = [
     "classificationSourceUrl": "https://www.pdxafterdark.com/bands/the-eye-see-yous"
   },
   {
+    "id": "auto-holocene-2026-11-06-959103ff1a10",
+    "title": "Emo Nite at Holocene presented by Emo Nite LA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-11-06-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-11-06-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ced2d40bf75a2a8a5076efe022ef6a42.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-11-06-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-nova-pdx-2026-11-06-c0d2f0b5ceca",
     "title": "PDX Rated",
     "subtitle": "Source-discovered venue event · details need review",
@@ -15222,6 +15277,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-07-07caaf952505",
+    "title": "REGGAETON Y 2000s (Perreo Classics + Y2K Bangers All Night!)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-11-07-reggaeton-y-2000s-perreo-classics-y2k-bangers-all-night",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-11-07-reggaeton-y-2000s-perreo-classics-y2k-bangers-all-night",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ac407522b580c8381edb959b9b77b574.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-11-07-reggaeton-y-2000s-perreo-classics-y2k-bangers-all-night",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -17540,6 +17646,59 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "high-limit-room-oso-oso-liquid-mike-bugsy-2026-11-11",
+    "title": "Oso Oso with Liquid Mike & Bugsy",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Original booking-agency listing",
+      "Time needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "See organizer for this event's age policy",
+    "description": "Oso Oso, Liquid Mike and Bugsy at High Limit Room. The booking agency lists Wednesday November 11 at 7:00 PM; it does not distinguish doors from performance start. Venue schedules and ticket status should be rechecked before attending.",
+    "source": "MN2S · Oso Oso booking agency",
+    "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "MN2S · Oso Oso booking agency",
+        "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist-associated concert listing",
+        "url": "https://www.bandsintown.com/e/1040006596-oso-oso-at-high-limit-room?came_from=900",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room venue info",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review",
+    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
+  },
+  {
     "id": "auto-dantes-2026-11-11-b24bd9bb8279",
     "title": "A STRANGE BIRD with Vega Black, Zane Thomas & Bikehouse",
     "subtitle": "Source-discovered venue event · details need review",
@@ -18239,6 +18398,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-11-12-509be6df0e5e",
+    "title": "Share Your Joy: Arts for Learning NW Celebration",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T16:30:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-11-12-share-your-joy-arts-for-learning-nw-celebration-early-event",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-11-12-share-your-joy-arts-for-learning-nw-celebration-early-event",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/aaa41416da5f131a0ea4b496789f1c62.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-11-12-share-your-joy-arts-for-learning-nw-celebration-early-event",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -20153,6 +20363,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "high-limit-room-ok-goodnight-snooze-eve-2026-11-14",
+    "title": "Ok Goodnight with Snooze & Eve",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Official artist tour",
+      "Start time unconfirmed"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-14T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "See organizer for this event's age policy",
+    "description": "Ok Goodnight's official 2026 North American tour lists November 14 in Portland at High Limit Room with Snooze and Eve. Date confirmed, but the artist's official tour page does not publish a start or doors time. The midnight value is a calendar date-only sorting anchor, not an event time.",
+    "source": "Ok Goodnight · official tour",
+    "url": "https://okgoodnight.squarespace.com/tour",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Ok Goodnight · official tour",
+        "url": "https://okgoodnight.squarespace.com/tour",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room venue info",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review",
+    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
+  },
+  {
     "id": "psu-farmers-2026-11-14",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -21197,6 +21454,57 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationSourceUrl": "https://www.bandsintown.com/e/1040427733-lies-we-were-told-at-the-high-water-mark?came_from=74"
+  },
+  {
+    "id": "auto-holocene-2026-11-14-192805e07d20",
+    "title": "[BOO’D UP] THA RNB NITE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-11-14-boo-d-up-tha-rnb-nite",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-11-14-boo-d-up-tha-rnb-nite",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/77c33e1836e2f6dca6ff4ee40d01ac5a.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-11-14-boo-d-up-tha-rnb-nite",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-lolas-room-2026-11-14-f161c32da278",
@@ -28113,6 +28421,75 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "holocene",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "the-coffin-club-ayria-die-robot-2026-11-24",
+    "title": "Ayria with Die Robot",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Industrial rock",
+      "Live music",
+      "21+",
+      "Time source discrepancy"
+    ],
+    "musicStyles": [
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Supporting artist Die Robot's own biography describes industrial rock and electronic music; this identifies the relevant mixed bill, not a verified genre for the headliner.",
+      "urls": [
+        "https://dierobot.net/bio"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-24T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "21+",
+    "description": "Official VenuePilot ticket page lists Ayria with Die Robot on November 24 at 8:30 PM (both doors and show fields display 8:30 PM). Die Robot's own performance listing gives 8:00 PM. The discrepancy is unresolved; confirm with the venue before travel.",
+    "source": "The Coffin Club · official VenuePilot ticket",
+    "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original VenuePilot ticket + direct supporting artist event listing; listed time conflicts with artist",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official VenuePilot ticket",
+        "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Die Robot · artist event",
+        "url": "https://dierobot.net/event/6702095/776456950/ayria-die-robot-at-the-coffin",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Die Robot · artist biography",
+        "url": "https://dierobot.net/bio",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review",
+    "artwork": {
+      "url": "https://s3.amazonaws.com/files.venuepilot.com/attachments/cover_small_5c24da1c36163ae6b3e2194760c937113c56a350abe68ed8e9a3e2887b27c420.jpg",
+      "sourceUrl": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
     }
   },
   {
@@ -38345,6 +38722,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-18-be1c61a7ee2a",
+    "title": "A Solstice + Stevie Nicks Celebration",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: With the words of a poet and a voice from a choir, EUPHORIA PRESENTS welcomes you to the WHITE WINGED DOVE SOLSTICE CELEBRATRION! Don your shawls and boots as we take you on a journey through winter in the style and whimsy of the enchanting Stevie ",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/a-solstice-stevie-nicks-celebration-december-18-2026-796890",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/a-solstice-stevie-nicks-celebration-december-18-2026-796890",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/796/890/compressed/Untitled_Design_%286%29.jpg?1793746676",
+      "sourceUrl": "https://app.opendate.io/e/a-solstice-stevie-nicks-celebration-december-18-2026-796890",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-18-9a56855876fd",
     "title": "Dr. Brady Smith",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40894,6 +41322,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2027-01-01-6c4a11cf3d06",
+    "title": "1/1 Verde Babii & MGM Flash + Friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-01T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When January 1, 2027 · 7:00 pm - 11:00 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $25.05 Get Tickets 1/1 Verde Babii MGM Flash & Friends The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $20 ADV /$25 DOS All Ages • All Access • No Booze • No Jerks",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/1-1-verde-babii-mgm-flash-friends-january-01-2027-796891",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/1-1-verde-babii-mgm-flash-friends-january-01-2027-796891",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/796/891/compressed/photo-output.jpg?1793746532",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/1-1-verde-babii-mgm-flash-friends-january-01-2027-796891",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "the-off-beat",
       "method": "primary-source-collection"
     }
   },
@@ -51345,167 +51824,5 @@ window.SHOWS_EVENTS = [
       "sourceId": "high-water",
       "method": "primary-source-collection"
     }
-  },
-  {
-    "id": "high-limit-room-oso-oso-liquid-mike-bugsy-2026-11-11",
-    "title": "Oso Oso with Liquid Mike & Bugsy",
-    "subtitle": "Original artist/venue listing · editorial review",
-    "category": "Music",
-    "tags": [
-      "Live music",
-      "Original booking-agency listing",
-      "Time needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "live",
-    "startsAt": "2026-11-11T19:00:00-08:00",
-    "endsAt": null,
-    "venue": "High Limit Room",
-    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
-    "neighborhood": "Central Eastside",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "See organizer for this event's age policy",
-    "description": "Oso Oso, Liquid Mike and Bugsy at High Limit Room. The booking agency lists Wednesday November 11 at 7:00 PM; it does not distinguish doors from performance start. Venue schedules and ticket status should be rechecked before attending.",
-    "source": "MN2S · Oso Oso booking agency",
-    "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-11-03",
-    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "MN2S · Oso Oso booking agency",
-        "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
-        "kind": "artist",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      },
-      {
-        "name": "Artist-associated concert listing",
-        "url": "https://www.bandsintown.com/e/1040006596-oso-oso-at-high-limit-room?came_from=900",
-        "kind": "supporting-reference",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      },
-      {
-        "name": "High Limit Room venue info",
-        "url": "https://highlimitroompdx.com/info/",
-        "kind": "organizer",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      }
-    ],
-    "addedIn": "2026-11-03-primary-venue-gap-review",
-    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
-  },
-  {
-    "id": "high-limit-room-ok-goodnight-snooze-eve-2026-11-14",
-    "title": "Ok Goodnight with Snooze & Eve",
-    "subtitle": "Original artist/venue listing · editorial review",
-    "category": "Music",
-    "tags": [
-      "Live music",
-      "Official artist tour",
-      "Start time unconfirmed"
-    ],
-    "musicStyles": [],
-    "eventFormat": "live",
-    "startTimeKind": "date-only",
-    "startsAt": "2026-11-14T00:00:00-08:00",
-    "endsAt": null,
-    "venue": "High Limit Room",
-    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
-    "neighborhood": "Central Eastside",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "See organizer for this event's age policy",
-    "description": "Ok Goodnight's official 2026 North American tour lists November 14 in Portland at High Limit Room with Snooze and Eve. Date confirmed, but the artist's official tour page does not publish a start or doors time. The midnight value is a calendar date-only sorting anchor, not an event time.",
-    "source": "Ok Goodnight · official tour",
-    "url": "https://okgoodnight.squarespace.com/tour",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-11-03",
-    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "Ok Goodnight · official tour",
-        "url": "https://okgoodnight.squarespace.com/tour",
-        "kind": "artist",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      },
-      {
-        "name": "High Limit Room venue info",
-        "url": "https://highlimitroompdx.com/info/",
-        "kind": "organizer",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      }
-    ],
-    "addedIn": "2026-11-03-primary-venue-gap-review",
-    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
-  },
-  {
-    "id": "the-coffin-club-ayria-die-robot-2026-11-24",
-    "title": "Ayria with Die Robot",
-    "subtitle": "Original artist/venue listing · editorial review",
-    "category": "Music",
-    "tags": [
-      "Live music",
-      "Industrial rock",
-      "Live music",
-      "21+",
-      "Time source discrepancy"
-    ],
-    "musicStyles": [
-      "Industrial & EBM"
-    ],
-    "musicStyleEvidence": {
-      "basis": "Supporting artist Die Robot's own biography describes industrial rock and electronic music; this identifies the relevant mixed bill, not a verified genre for the headliner.",
-      "urls": [
-        "https://dierobot.net/bio"
-      ]
-    },
-    "eventFormat": "live",
-    "startsAt": "2026-11-24T20:30:00-08:00",
-    "endsAt": null,
-    "venue": "The Coffin Club",
-    "address": "421 SE Grand Ave, Portland, OR 97214",
-    "neighborhood": "Central Eastside",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "21+",
-    "description": "Official VenuePilot ticket page lists Ayria with Die Robot on November 24 at 8:30 PM (both doors and show fields display 8:30 PM). Die Robot's own performance listing gives 8:00 PM. The discrepancy is unresolved; confirm with the venue before travel.",
-    "source": "The Coffin Club · official VenuePilot ticket",
-    "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
-    "icon": "♫",
-    "sourceCheckedAt": "2026-11-03",
-    "verificationMethod": "Original VenuePilot ticket + direct supporting artist event listing; listed time conflicts with artist",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "The Coffin Club · official VenuePilot ticket",
-        "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
-        "kind": "official-ticketing",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      },
-      {
-        "name": "Die Robot · artist event",
-        "url": "https://dierobot.net/event/6702095/776456950/ayria-die-robot-at-the-coffin",
-        "kind": "artist",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      },
-      {
-        "name": "Die Robot · artist biography",
-        "url": "https://dierobot.net/bio",
-        "kind": "supporting-reference",
-        "checkedAt": "2026-11-03",
-        "originalCategories": []
-      }
-    ],
-    "addedIn": "2026-11-03-primary-venue-gap-review"
   }
 ];
