@@ -308,8 +308,10 @@
       "tier": "core",
       "ingestionStatus": "adapter-needed",
       "calendarUrl": null,
-      "aliases": [],
-      "notes": "Distinct from Hawthorne Theatre",
+      "aliases": [
+        "Hawthorne Theatre Lounge"
+      ],
+      "notes": "Distinct from Hawthorne Theatre Original Mammoth promoter scoped four verified lounge events in Nov–Dec 2026; this is partial coverage, not a full venue schedule. Promoter's 'Hawthorne Theatre Lounge' name maps to canonical Hawthorne Lounge, not the main Hawthorne Theatre.",
       "editorialPreference": "scene"
     },
     {
