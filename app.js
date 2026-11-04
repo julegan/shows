@@ -12,12 +12,12 @@
   const savedKey = "shows-saved-v1";
   let saved = new Set();
   try { saved = new Set(JSON.parse(localStorage.getItem(savedKey) || "[]")); } catch (_) {}
-  // Keep source-listed venue events discoverable even when their music format/genre
-  // is not yet verified. Known non-music categories stay outside this music-first feed.
-  // An operational closure notice is not a public event.
-  const eligible = events.filter(e => e.category === "Music" ||
-    (e.category === "Unclassified" && !/^(?:closed|closure|venue closed|no events?)\b/i.test(String(e.title || "").trim())) ||
-    isCulture(e));
+  // All source-listed events are discoverable regardless of category or genre.
+  // Routine farmers markets are an explicit editorial exclusion, not a classification
+  // uncertainty. Venue-closure notices are not events, even if mistagged as Music.
+  const eligible = events.filter(e =>
+    !/^(?:closed|closure|venue closed|no events?)\b/i.test(String(e.title || "").trim()) &&
+    !isRoutineFarmersMarket(e));
   const neighborhoods = [...new Set(eligible.map(e => e.neighborhood).filter(Boolean))].sort();
   const styles = [...new Set(events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || []))].sort();
   function ymdDate(date) {
@@ -28,12 +28,10 @@
   function ymd(e) { return ymdDate(new Date(e.startsAt)); }
   function esc(value) { return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
   function displayCategory(e) { return e.category === "Unclassified" ? "Type unconfirmed" : e.category; }
-  function isCulture(e) {
-    if (e.category === "Arts & DIY") return true;
+  function isRoutineFarmersMarket(e) {
     if (e.category !== "Markets") return false;
     const sample = [e.title, e.subtitle, ...(e.tags || [])].join(" ").toLowerCase();
-    if (/farmers? markets?|produce market|farm stand/.test(sample)) return false;
-    return /zine|art|craft|maker|diy|odd|occult|witch|goth|punk|record|vinyl|vintage|tattoo|print|queer|independent|handmade|alternative/.test(sample);
+    return /farmers? markets?|produce market|farm stand/.test(sample);
   }
   function inSearch(e) {
     if (!state.search) return true;
