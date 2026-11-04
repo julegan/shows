@@ -151,6 +151,7 @@ async function run({request=fetch,now=new Date(),write=true,pendingFile=process.
  if(write){fs.writeFileSync(statePath,JSON.stringify({schemaVersion:1,leads:allLeads},null,2)+"\n");fs.writeFileSync(reportPath,report);}
  if(checked.every(x=>x.error))throw Error("Every curated scene-discovery source failed: report retained; do not infer there are no events");
  console.log("SCENE SCOUT "+JSON.stringify({checked:checked.length,failed:checked.filter(x=>x.error).length,new:newLeads.length,total:allLeads.length,bySource:Object.fromEntries(checked.map(x=>[x.id,x.count]))}));
+ for(const x of newLeads.slice(0,30))console.log("SCENE LEAD "+x.source+" | "+x.type+" | "+x.titleHint+" | "+x.url);
  return {checked,newLeads,allLeads,report};
 }
 if(require.main===module)run().catch(e=>{console.error("SCENE SOURCE SCOUT FAILED: "+e.message);process.exitCode=1});
