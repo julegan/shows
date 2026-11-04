@@ -42,8 +42,20 @@ assert(fixtureBase,"Need a known music fixture to model a source-listed venue re
 context.window.SHOWS_EVENTS.push(
   {...fixtureBase,id:"fixture-unclassified-venue",title:"Unverified local bill",category:"Unclassified",
     musicStyles:[],startsAt:"2026-10-18T13:00:00-07:00"},
+  {...fixtureBase,id:"fixture-other-night",title:"Venue dance night",category:"Other",
+    musicStyles:[],startsAt:"2026-10-18T13:05:00-07:00"},
+  {...fixtureBase,id:"fixture-performance",title:"Cabaret show",category:"Performance",
+    musicStyles:[],startsAt:"2026-10-18T13:10:00-07:00"},
+  {...fixtureBase,id:"fixture-workshop",title:"Risograph workshop",category:"Workshops",
+    musicStyles:[],startsAt:"2026-10-18T13:15:00-07:00"},
+  {...fixtureBase,id:"fixture-scene-market",title:"Independent record market",category:"Markets",
+    musicStyles:[],startsAt:"2026-10-18T13:20:00-07:00"},
+  {...fixtureBase,id:"fixture-farmers-market",title:"PSU Farmers Market",category:"Markets",
+    musicStyles:[],startsAt:"2026-10-18T13:25:00-07:00"},
   {...fixtureBase,id:"fixture-venue-closed",title:"CLOSED",category:"Unclassified",
-    musicStyles:[],startsAt:"2026-10-18T13:30:00-07:00"}
+    musicStyles:[],startsAt:"2026-10-18T13:30:00-07:00"},
+  {...fixtureBase,id:"fixture-closed-mistagged",title:"Closed Merry Christmas",category:"Music",
+    musicStyles:[],startsAt:"2026-10-18T13:35:00-07:00"}
 );
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
@@ -58,7 +70,11 @@ function renderedIds(){return [...el("results").innerHTML.matchAll(/data-event="
 const past=new Set(events.filter(e=>e.startsAt.slice(0,10)<"2026-10-18").map(e=>e.id));
 assert(!renderedIds().some(id=>past.has(id)),"Past events excluded from default feed");
 assert(renderedIds().includes("fixture-unclassified-venue"),"Unclassified primary venue listing remains visible in the default mixed feed");
+for(const id of ["fixture-other-night","fixture-performance","fixture-workshop","fixture-scene-market"])
+  assert(renderedIds().includes(id),id+" is visible without genre or category approval");
+assert(!renderedIds().includes("fixture-farmers-market"),"Routine farmers markets remain an explicit editorial exclusion");
 assert(!renderedIds().includes("fixture-venue-closed"),"Operational closure notice is not shown as a show");
+assert(!renderedIds().includes("fixture-closed-mistagged"),"Closure notice stays hidden even when incorrectly tagged Music");
 assert(el("results").innerHTML.includes("Type unconfirmed"),"Venue listing is not misrepresented as verified music");
 assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")),"Routine farmers market listings excluded");
 el("fromDate").change("2026-11-01");
