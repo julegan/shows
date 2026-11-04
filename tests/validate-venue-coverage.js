@@ -32,12 +32,37 @@ assert.equal(reviewedGap.filter(e=>e.venue==='High Limit Room').length,2);
 assert.equal(reviewedGap.filter(e=>e.venue==='The Coffin Club').length,1);
 assert(reviewedGap.every(e=>e.category==='Music' && e.eventFormat==='live' && e.sources.some(s=>s.url===e.url)));
 assert(reviewedGap.every(e=>e.startsAt.endsWith('-08:00')),'November date/time offsets must be Pacific standard time');
-assert(reviewedGap.every(e=>!e.artwork),'No artwork without verified event rights and identity');
+// The refresh workflow attaches original, event-specific image REFERENCES before
+// running this validation. A missing image is fine; a sourced review proposal is
+// also fine. Neither means we have permission to mirror or reuse the image.
+const {originalUrl}=require('../scripts/backfill-artwork');
+const reviewArtworkValid=e=>!e.artwork || (
+  /^https:\/\//.test(e.artwork.url||'') &&
+  e.artwork.sourceUrl===originalUrl(e) &&
+  e.artwork.origin==='official-event-page' &&
+  e.artwork.credit==='Official event page' &&
+  e.artwork.usageApproved===null
+);
+assert(reviewedGap.every(reviewArtworkValid),
+  'Artwork references must come from the matching official event page and remain unapproved');
 const okGoodnight=reviewedGap.find(e=>e.id==='high-limit-room-ok-goodnight-snooze-eve-2026-11-14');
 assert.equal(okGoodnight.startTimeKind,'date-only');
 assert(/sorting anchor, not an event time/.test(okGoodnight.description));
 const ayria=reviewedGap.find(e=>e.id==='the-coffin-club-ayria-die-robot-2026-11-24');
 assert(ayria.sources.some(s=>s.kind==='official-ticketing'));
 assert(/discrepancy is unresolved/.test(ayria.description),'Source time disagreement must remain visible');
+const exampleArt={
+  url:'https://example.org/artist-event-poster.jpg',
+  sourceUrl:originalUrl(ayria),
+  origin:'official-event-page',
+  credit:'Official event page',
+  usageApproved:null
+};
+assert(reviewArtworkValid({...ayria,artwork:exampleArt}),
+  'A first-party artwork reference added by refresh must not fail validation');
+assert(!reviewArtworkValid({...ayria,artwork:{...exampleArt,sourceUrl:'https://example.org/other-show'}}),
+  'Artwork from an unrelated event page must still fail validation');
+assert(!reviewArtworkValid({...ayria,artwork:{...exampleArt,usageApproved:true}}),
+  'Artwork review must not invent usage permission');
 assert(!reviewedGap.some(e=>/Sex Mex/i.test(e.title)),'Cancelled/contradictory events must not be imported');
 console.log('PASS — priority Coffin and High Limit source-backed show additions, time/genre caveats and accessibility.');
