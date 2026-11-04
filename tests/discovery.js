@@ -90,6 +90,9 @@ assert.equal(reconcile([revEarly],[{event:revLate}]).accepted.length,1,
 const sameTitleOtherTicket={...revLate,title:"Ron Funches"};
 assert.equal(reconcile([revEarly],[{event:sameTitleOtherTicket}]).accepted.length,1,
  "Separately timed Etix show IDs at the same verified room are not silently removed as title duplicates");
+const sameBatchSessions=reconcile([],[{event:revEarly},{event:sameTitleOtherTicket}]);
+assert.equal(sameBatchSessions.accepted.length,2,
+ "Independently ticketed same-headliner sessions from one discovery batch are not collapsed by title/date");
 const sameTitleNear={...sameTitleOtherTicket,startsAt:"2026-11-15T19:30:00-08:00"};
 const nearCollision=reconcile([revEarly],[{event:sameTitleNear}]);
 assert.equal(nearCollision.skipped.length,0,"Different official show IDs are not silently skipped on matching titles");
