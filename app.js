@@ -224,7 +224,8 @@
       '<button type="button" data-ics="'+esc(e.id)+'">↓ Apple / Outlook (.ics)</button>'+
       '<button type="button" data-save="'+esc(e.id)+'">'+(saved.has(e.id)?"★ Saved — remove":"☆ Save for later")+'</button>'+
       (e.seriesId?'<button type="button" data-series="'+esc(e.seriesId)+'">↓ Add series dates (.ics)</button>':"")+
-      '<button type="button" data-share="'+esc(e.id)+'">↗ Share event</button></div>'+
+      '<button type="button" data-share="'+esc(e.id)+'">↗ Share event</button>'+
+      (window.SHOWS_FEEDBACK_READY ? '<button type="button" data-report="'+esc(e.id)+'">Report listing issue</button>' : "")+'</div>'+
       (e.startTimeKind==="date-only" ? '<p class="detail-footnote">Date confirmed; start time not published. Calendar exports use a clearly labeled all-day placeholder.</p>' : !e.endsAt ? '<p class="detail-footnote">End time unconfirmed; exports use an editable one-hour placeholder.</p>' : "")+'</div>';
     if (!dlg.open) dlg.showModal();
     history.replaceState(null,"","#event="+encodeURIComponent(e.id));
@@ -273,6 +274,10 @@
     if(hit.dataset.ics){const e=events.find(x=>x.id===hit.dataset.ics);if(e)download([e],"shows-"+e.id);}
     if(hit.dataset.series){const list=events.filter(x=>x.seriesId===hit.dataset.series);download(list,"shows-series-"+hit.dataset.series);}
     if(hit.dataset.save){const id=hit.dataset.save;if(saved.has(id))saved.delete(id);else saved.add(id);try{localStorage.setItem(savedKey,JSON.stringify([...saved]));}catch(_){}hit.textContent=saved.has(id)?"★ Saved — remove":"☆ Save for later";if(state.onlySaved)render();}
+    if(hit.dataset.report && window.SHOWS_OPEN_FEEDBACK){const e=events.find(x=>x.id===hit.dataset.report);if(!e)return;
+      const link=location.origin+location.pathname+"#event="+encodeURIComponent(e.id);
+      closeDialog();window.SHOWS_OPEN_FEEDBACK({category:"correction",link});return;
+    }
     if(hit.dataset.share){const e=events.find(x=>x.id===hit.dataset.share);if(!e)return;
       const url=location.href.split("#")[0]+"#event="+encodeURIComponent(e.id);
       try{if(navigator.share)await navigator.share({title:e.title,url});else {await navigator.clipboard.writeText(url);hit.textContent="✓ Link copied";}}
