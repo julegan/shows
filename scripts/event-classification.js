@@ -15,11 +15,12 @@ const STYLES=[
 ];
 const NON_MUSIC=/\b(?:trivia|karaoke|open[\s-]?mic|comedy|stand[\s-]?up|bingo|quiz|brunch|screening|movie|film|happy hour|tournament|board games?|game night)\b/i;
 const EVENT_TYPES={
+ Karaoke:/\bkaraoke\b/i,
  Workshops:/\b(?:workshop|class|lesson|seminar|skillshare)\b/i,
  "Arts & DIY":/\b(?:craft night|mask making|zine making|gallery|exhibition|art opening|craft fair)\b/i,
  Markets:/\b(?:market|bazaar|swap meet|record fair|vintage fair|pop[\s-]?up shop)\b/i,
  Performance:/\b(?:comedy|burlesque|drag show|film screening|movie night|theater performance|improv night|stand[\s-]?up)\b/i,
- Other:/\b(?:trivia|karaoke|bingo|quiz|happy hour|tournament|game night|board game)\b/i
+ Other:/\b(?:trivia|bingo|quiz|happy hour|tournament|game night|board game)\b/i
 };
 const MUSIC_CLAIM=/\b(?:live music|live bands?|music show|concert|live bands?|bands?\s+performing|rock show|gig|record release|album release|DJ(?:\s+set)?|rave)\b/i;
 function clean(v){return String(v??"").replace(/<[^>]*>/g," ").replace(/&amp;/g,"&").replace(/\s+/g," ").trim();}
