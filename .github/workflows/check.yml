@@ -29,6 +29,8 @@ jobs:
         run: |
           node tests/validate.js
           node tests/workflow-review-queue.js
+          node tests/source-change-review.js
+          node tests/published-change-queue.js
           node tests/discovery.js
           node tests/kenton-importer.js
           node tests/turnturnturn-opendate.js
