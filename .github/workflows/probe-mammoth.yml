@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/probe-mammoth.yml'
       - 'scripts/probe-mammoth.js'
+      - 'scripts/mammoth-importer.js'
   workflow_dispatch:
 permissions:
   contents: read
