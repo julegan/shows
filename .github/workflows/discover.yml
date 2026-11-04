@@ -37,15 +37,32 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '22'
-      - name: Check pending editorial review PRs
+      - name: Find one existing rolling discovery review
         id: pending
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | test("^automation/refresh-[0-9]{8}-[0-9]+$") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
-          if [ "$existing" -gt 0 ]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "Canonical review PR is pending: collect and validate source/venue/artwork evidence as usual, but do not open a competing PR. Reports remain attached to this workflow run." >> "$GITHUB_STEP_SUMMARY"
+          set -euo pipefail
+          mapfile -t prs < <(gh pr list --state open --limit 100 --json headRefName,number \
+            --jq '.[] | select(.headRefName | test("^automation/refresh-[0-9]{8}-[0-9]+$")) | .number')
+          if [ "${#prs[@]}" -gt 1 ]; then
+            echo "::error::Multiple SHOWS refresh PRs are open. Reconcile before updating."
+            exit 1
+          fi
+          number="${prs[0]:-}"
+          if [ -n "$number" ]; then
+            author="$(gh pr view "$number" --json author --jq '.author.login')"
+            if [ "$author" != "app/github-actions" ] && [ "$author" != "github-actions[bot]" ]; then
+              echo "::error::Refusing to overwrite a non-bot-authored PR."
+              exit 1
+            fi
+            changes="$(gh pr view "$number" --json files --jq '.files[].path')"
+            if [ "$(printf '%s\n' "$changes" | grep -v -E '^(events\.js|discovery/(latest-review|priority-venue-gap-audit|artwork-backfill-review|doomtown-leads-review|pdx-subvert-leads-review|wyrd-secondary-leads-review|republic-organizer-leads-review|oregon-electronic-leads-review)\.md)$' || true)" ]; then
+              echo "::error::Pending review modifies unexpected files."
+              exit 1
+            fi
+            echo "number=$number" >> "$GITHUB_OUTPUT"
+            echo "Rolling SHOWS review PR #$number is open; any newly validated findings will refresh this same PR." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Show baseline priority coverage
         run: node scripts/report-priority-coverage.js >> "$GITHUB_STEP_SUMMARY"
@@ -136,8 +153,7 @@ jobs:
           node --check scripts/19hz-scene-leads.js
           node tests/19hz-scene-leads.js
           node tests/validate.js
-      - name: Propose one combined editorial review PR
-        if: steps.pending.outputs.skip != 'true'
+      - name: Create or refresh a single rolling SHOWS review PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -145,13 +161,30 @@ jobs:
             echo "No source-confirmed new events or artwork. Review reports remain in this run." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+          set -euo pipefail
+          number="${{ steps.pending.outputs.number }}"
           git config user.name "SHOWS refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$branch"
+          if [ -n "$number" ]; then
+            branch="$(gh pr view "$number" --json headRefName --jq '.headRefName')"
+            git fetch --no-tags origin "$branch"
+            old_sha="$(git rev-parse FETCH_HEAD)"
+            if git show "$old_sha:events.js" | cmp -s - events.js; then
+              echo "Existing review PR #$number already contains the current verified event proposal. Fresh reports are saved as workflow artifacts." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            git switch -C "$branch" main
+          else
+            branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+            git switch -c "$branch"
+          fi
           git add -- events.js discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
-          git commit -m "Propose source-confirmed Portland shows and original flyers"
-          git push --set-upstream origin "$branch"
+          git commit -m "Propose latest source-confirmed Portland shows and flyers"
+          if [ -n "$number" ]; then
+            git push --force-with-lease="refs/heads/$branch:$old_sha" origin "$branch"
+          else
+            git push --set-upstream origin "$branch"
+          fi
           {
             echo "# Combined SHOWS discovery + artwork review"
             echo
@@ -182,5 +215,11 @@ jobs:
             echo "Combined PR summary unexpectedly exceeded 12 KB; check report formatting." >&2
             exit 1
           fi
-          gh pr create --title "Review refreshed Portland shows and original flyers" --head "$branch" --base main --body-file /tmp/shows-refresh-review.md
-          echo "Review canonical PR first; the portfolio's approved-data sync will then propose its separate publication PR." >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file /tmp/shows-refresh-review.md
+            echo "Refreshed rolling canonical SHOWS PR #$number with current validated source proposals." >> "$GITHUB_STEP_SUMMARY"
+          else
+            gh pr create --title "Review refreshed Portland shows and original flyers" --head "$branch" --base main --body-file /tmp/shows-refresh-review.md
+            echo "Created one rolling canonical SHOWS review PR." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "After canonical approval, Portfolio polls approved main and opens or refreshes its publishing PR." >> "$GITHUB_STEP_SUMMARY"
