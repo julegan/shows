@@ -83,7 +83,25 @@ for(const style of ["Metal","Punk","Hardcore"]){
   const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
   assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
   views.find(v=>v.dataset.view==="places").click();
-  assert.deepEqual(renderedIds(),expected,"Places respects "+style+" filter");
+  // Places intentionally previews only the first 8 chronological shows per venue.
+  // More source discoveries must not break validation simply because a venue
+  // crosses that display limit. Still check both venue caps and style correctness.
+  const perVenue = new Map();
+  const expectedPlaceIds = events
+    .filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style))
+    .sort((a,b)=>Date.parse(a.startsAt)-Date.parse(b.startsAt))
+    .filter(e=>{
+      const count=perVenue.get(e.venue)||0;
+      perVenue.set(e.venue,count+1);
+      return count<8;
+    }).map(e=>e.id).sort();
+  assert.deepEqual(renderedIds(),expectedPlaceIds,"Places previews up to eight correctly filtered "+style+" shows per venue");
+  assert.equal(Number(el("summary").textContent.match(/^\\d+/)?.[0]),expected.length,
+    "Places summary counts all matching "+style+" shows, including overflow");
+  for (const [venue,count] of perVenue) {
+    if (count>8) assert(el("results").innerHTML.includes("And "+(count-8)+" more dates."),
+      "Places reports overflow instead of hiding venue counts for "+venue);
+  }
   views.find(v=>v.dataset.view==="dates").click();
   el("exportVisible").click();
   if(expected.length){
