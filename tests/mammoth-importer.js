@@ -32,7 +32,7 @@ const loungeBody=[
 ].join("\n");
 const highBody='<h1>Riley!</h1><p>Doors: 6 pm // Show: 7 pm</p><div>Sunday, February 7th, 2027 7:00PM High Limit Room</div>';
 const l=mammoth.detail(loungeBody,lounge);
-assert.equal(l.venue,"Hawthorne Theatre Lounge");
+assert.equal(l.venue,"Hawthorne Lounge");
 assert.equal(l.startDate,"2026-11-09T04:00:00.000Z","Pacific Standard Time offset matters");
 assert(l.artwork?.url.endsWith("/strawberry-fuzz.jfif"),"Event-specific original image only");
 const h=mammoth.detail(highBody,high);
