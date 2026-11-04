@@ -31,18 +31,13 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
 | The Showdown | Checked | 49 | 0 | 0 | 0 | 0 | 13 | 36 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
-| Mammoth Northwest | Checked | 6 | 5 | 0 | 5 | 5 | 0 | 1 |
+| Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
 
 ### Classification review
 
-New candidate categories: **Unclassified** 5.
-**5 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: none.
+**0 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Hawthorne Lounge: Strawberry Fuzz — https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/
-- Hawthorne Lounge: Cero Viejo — https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/
-- Hawthorne Lounge: Couch Dog — https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/
-- High Limit Room: Riley! — https://mammothnw.com/event/riley/high-limit-room/portland-oregon/
-- High Limit Room: Caskets — https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/
 
 ### Connections requiring work
 
@@ -73,17 +68,11 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 5
+## New candidates: 0
 
-- mammoth-nw: 5 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-08 | Strawberry Fuzz | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/ |
-| 2026-11-14 | Cero Viejo | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/ |
-| 2026-12-19 | Couch Dog | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/ |
-| 2027-02-07 | Riley! | High Limit Room | 19:00 (doors/show unverified) | https://mammothnw.com/event/riley/high-limit-room/portland-oregon/ |
-| 2027-02-27 | Caskets | High Limit Room | 19:30 (doors/show unverified) | https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/ |
 
 ## Held for review: 147
 

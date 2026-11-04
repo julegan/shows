@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-02 | 446 | 154 | 241 | 89 |
-| 56 | 2026-12-28 | 627 | 202 | 349 | 127 |
-| 90 | 2027-01-31 | 685 | 215 | 388 | 140 |
+| 30 | 2026-12-02 | 455 | 154 | 243 | 89 |
+| 56 | 2026-12-28 | 639 | 202 | 352 | 127 |
+| 90 | 2027-01-31 | 697 | 215 | 391 | 140 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -19,7 +19,7 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Black Water | checked (13 raw) | 12 | 3 | 6 | 2 | 12 | 12 | 0 | 0 |
 | preferred | High Water Mark Lounge | checked (69 raw) | 24 | 9 | 6 | 8 | 24 | 24 | 0 | 0 |
 | preferred | Twilight Cafe and Bar | checked (22 raw) | 22 | 18 | 0 | 9 | 21 | 10 | 0 | 11 |
-| preferred | The Coffin Club | adapter-needed | 3 | 3 | 0 | 0 | unknown | — | — | — |
+| preferred | The Coffin Club | adapter-needed | 4 | 3 | 0 | 0 | unknown | — | — | — |
 | preferred | Star Theater | checked (42 raw) | 22 | 22 | 0 | 16 | 24 | 21 | 0 | 3 |
 | preferred | Dante's | checked (43 raw) | 38 | 11 | 25 | 0 | 39 | 38 | 0 | 1 |
 | preferred | Roseland Theater | checked (33 raw) | 15 | 8 | 7 | 1 | 14 | 8 | 0 | 6 |
@@ -48,7 +48,7 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | scene | The Alleyway | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Polaris Hall | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 12 | 0 | 2 |
 | scene | AZØTH | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
-| scene | Hawthorne Lounge | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
+| scene | Hawthorne Lounge | adapter-needed | 4 | 1 | 3 | 0 | unknown | — | — | — |
 | scene | Word Virus Books | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 14 | 12 | 0 | 2 |
