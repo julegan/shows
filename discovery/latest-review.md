@@ -13,12 +13,12 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
 | Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 5 | 17 |
 | Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
-| Dante's | Checked | 43 | 8 | 4 | 4 | 8 | 1 | 34 |
+| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 1 | 42 |
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
 | Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 9 | 25 |
 | Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 3 | 38 |
 | Crystal Ballroom | Checked | 55 | 0 | 0 | 0 | 0 | 5 | 50 |
-| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 6 | 23 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
 | Turn! Turn! Turn! | Checked | 20 | 0 | 0 | 0 | 0 | 2 | 18 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
 | Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
@@ -31,17 +31,18 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
 | The Showdown | Checked | 49 | 0 | 0 | 0 | 0 | 13 | 36 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
+| Mammoth Northwest | Checked | 6 | 5 | 0 | 5 | 5 | 0 | 1 |
 
 ### Classification review
 
-New candidate categories: **Music** 4 · **Unclassified** 5.
+New candidate categories: **Unclassified** 5.
 **5 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-10/
-- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-11/
-- Dante's: HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger — https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/
-- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-14/
-- Revolution Hall: Ron Funches (Late Show) — https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall
+- Hawthorne Lounge: Strawberry Fuzz — https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/
+- Hawthorne Lounge: Cero Viejo — https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/
+- Hawthorne Lounge: Couch Dog — https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/
+- High Limit Room: Riley! — https://mammothnw.com/event/riley/high-limit-room/portland-oregon/
+- High Limit Room: Caskets — https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/
 
 ### Connections requiring work
 
@@ -72,24 +73,19 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 9
+## New candidates: 5
 
-- dantes: 8 proposals
-- revolution-hall: 1 proposals
+- mammoth-nw: 5 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-06 | HOTWAX disco~glam~metal~punk~hiphop | Dante's | 23:55 (doors/show unverified) | https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/ |
-| 2026-11-07 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/ |
-| 2026-11-08 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-10/ |
-| 2026-11-14 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/ |
-| 2026-11-15 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-11/ |
-| 2026-11-21 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/ |
-| 2026-11-28 | HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/ |
-| 2026-12-06 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-14/ |
-| 2026-11-15 | Ron Funches (Late Show) | Revolution Hall | 22:00 (doors/show unverified) | https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall |
+| 2026-11-08 | Strawberry Fuzz | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/ |
+| 2026-11-14 | Cero Viejo | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/ |
+| 2026-12-19 | Couch Dog | Hawthorne Lounge | 20:00 (doors/show unverified) | https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/ |
+| 2027-02-07 | Riley! | High Limit Room | 19:00 (doors/show unverified) | https://mammothnw.com/event/riley/high-limit-room/portland-oregon/ |
+| 2027-02-27 | Caskets | High Limit Room | 19:30 (doors/show unverified) | https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/ |
 
-## Held for review: 149
+## Held for review: 147
 
 - [black-water] BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ KEET BEAT & DJ SHANE DAMAGE — Recurring calendar rule needs dated individual instances; no inferred dates 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
@@ -127,8 +123,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] AN EVENING WITH JOHN SCOFIELD’S “ELECTROSPECTIVE” — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/74951649/an-evening-with-john-scofields-electrospective-portland-revolution-hall
-- [revolution-hall] Cardinal Bloom - Burn the House Tour — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/64789133/cardinal-bloom-burn-the-house-tour-portland-show-bar-at-revolution-hall
 - [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall

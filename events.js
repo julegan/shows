@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1061,
-  "addedOccurrences": 9,
-  "batchId": "auto-discovery-2026-11-03-37",
+  "totalOccurrences": 1066,
+  "addedOccurrences": 5,
+  "batchId": "auto-discovery-2026-11-03-39",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -124,6 +124,10 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-11-03-primary-high-limit-band-tour",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "auto-discovery-2026-11-03-37",
+      "addedOccurrences": 9
     }
   ],
   "newLiveBills": 0,
@@ -16115,6 +16119,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-mammoth-nw-2026-11-08-c735d9a1fccb",
+    "title": "Strawberry Fuzz",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Lounge",
+    "address": "1507 SE 39th Ave, Portland, OR 97214",
+    "neighborhood": "Sunnyside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for Hawthorne Lounge. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/10/strawberry-fuzz.jfif",
+      "sourceUrl": "https://mammothnw.com/event/strawberry-fuzz-2/hawthorne-theatre-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mammoth-nw",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2026-11-08-273f2d7dfe98",
     "title": "Syd: Beard Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21009,6 +21064,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mammoth-nw-2026-11-14-03b473f71a68",
+    "title": "Cero Viejo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Lounge",
+    "address": "1507 SE 39th Ave, Portland, OR 97214",
+    "neighborhood": "Sunnyside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for Hawthorne Lounge. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/10/cero-viejo.jfif",
+      "sourceUrl": "https://mammothnw.com/event/cero-viejo/hawthorne-theatre-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mammoth-nw",
       "method": "primary-source-collection"
     }
   },
@@ -39689,6 +39795,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mammoth-nw-2026-12-19-79431931f341",
+    "title": "Couch Dog",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Lounge",
+    "address": "1507 SE 39th Ave, Portland, OR 97214",
+    "neighborhood": "Sunnyside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for Hawthorne Lounge. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/09/couch-dog.jfif",
+      "sourceUrl": "https://mammothnw.com/event/couch-dog-2/hawthorne-theatre-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mammoth-nw",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-19-ba7e85799018",
     "title": "The Last Argonauts + TBD + TBD",
     "subtitle": "Source-discovered venue event · details need review",
@@ -44642,6 +44799,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mammoth-nw-2027-02-07-e2337ac2d084",
+    "title": "Riley!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-07T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for High Limit Room. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/riley/high-limit-room/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/riley/high-limit-room/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/11/Riley-HLR-PDX-2027-scaled.jpg",
+      "sourceUrl": "https://mammothnw.com/event/riley/high-limit-room/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mammoth-nw",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-02-07-68578c2aa916",
     "title": "Watch What Crappens: In The Mix Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -46241,6 +46449,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mammoth-nw-2027-02-27-cbe37fe9b45b",
+    "title": "Caskets",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for High Limit Room. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/11/Raleigh-Promos-4-of-6.jpg",
+      "sourceUrl": "https://mammothnw.com/event/caskets/high-limit-room/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-03",
+    "discovery": {
+      "sourceId": "mammoth-nw",
       "method": "primary-source-collection"
     }
   },
