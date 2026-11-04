@@ -45,7 +45,7 @@
       const turnstile = await loadVerification();
       if (!dialog.open) return;
       if (widgetId === null) {
-        widgetId = turnstile.render(verification, { sitekey, theme: "dark" });
+        widgetId = turnstile.render(verification, { sitekey, action: "shows_feedback", theme: "dark" });
       } else {
         turnstile.reset(widgetId);
       }
