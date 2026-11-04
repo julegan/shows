@@ -2,6 +2,7 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
+const {spawnSync}=require("node:child_process");
 const text=fs.readFileSync(path.resolve(__dirname,"../.github/workflows/discover.yml"),"utf8");
 const required=[
  "Find one existing rolling discovery review",
@@ -30,4 +31,10 @@ assert(text.includes('test("^automation/refresh-[0-9]{8}-[0-9]+$")'),"Only gener
 assert(text.includes('Refusing to overwrite a non-bot-authored PR.'),"Human-owned PRs are protected");
 assert(text.includes('Pending review modifies unexpected files.'),"Non-dataset edits are protected");
 assert(/uses:\s*actions\/upload-artifact@[a-f0-9]{40}\b/.test(text),"Source reports remain available even on unchanged review days");
+const offset=proposal.indexOf("        run: |\n");
+assert(offset>=0,"Rolling discovery step must contain a shell script");
+const script=proposal.slice(offset+"        run: |\n".length).split("\n")
+  .map(line=>line.startsWith("          ")?line.slice(10):line).join("\n");
+const syntax=spawnSync("bash",["-n"],{input:script,encoding:"utf8"});
+assert.equal(syntax.status,0,syntax.stderr||"Rolling discovery shell syntax invalid");
 console.log("PASS — continued collection and one bot-owned rolling review PR with approval and lease guards.");
