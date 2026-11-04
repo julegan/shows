@@ -169,7 +169,8 @@ jobs:
             branch="$(gh pr view "$number" --json headRefName --jq '.headRefName')"
             git fetch --no-tags origin "$branch"
             old_sha="$(git rev-parse FETCH_HEAD)"
-            if git show "$old_sha:events.js" | cmp -s - events.js; then
+            git show "$old_sha:events.js" > /tmp/shows-pending-events.js
+            if cmp -s /tmp/shows-pending-events.js events.js; then
               echo "Existing review PR #$number already contains the current verified event proposal. Fresh reports are saved as workflow artifacts." >> "$GITHUB_STEP_SUMMARY"
               exit 0
             fi
