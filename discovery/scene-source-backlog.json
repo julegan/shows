@@ -171,10 +171,10 @@
       "kind": "promoter",
       "requestedByOwner": true,
       "editorialFit": "Original cross-venue Pacific Northwest booking calendar with Portland metal, punk, hardcore, rock and goth shows; also Hawthorne Theatre Lounge and High Limit Room gaps. Many titles overlap Roseland/Hawthorne source feeds.",
-      "researchStatus": "verified-promoter-research-lead",
+      "researchStatus": "active-room-scoped-original-promoter-adapter",
       "officialSourceUrl": "https://mammothnw.com/events/",
       "evidenceUrl": "https://mammothnw.com/events/",
-      "nextStep": "Verify the official Mammoth Northwest /events/ roster and each /event/<bill>/<room>/<city>/ original detail using a live GitHub runner. Scope to confirmed Portland venues/city (exclude Washington/Eugene/other cities), match venue room and explicit full-year Show vs Doors time, use original event-specific HTTPS detail links, and cross-deduplicate existing Roseland/Hawthorne and room-specific listings by bill/date/link before considering an enabled read-only review-only importer. Preserve artwork attribution, permission review, and source status; do not treat the multi-venue promoter as a physical venue."
+      "nextStep": "Pilot is now enabled via canonical discovery/sources.json for exactly the Hawthorne Theatre Lounge and High Limit Room original dated event pages after live 6/6 verification in GitHub runner 41767633123. Continue tracking changing source HTML, explicit room/date/time identities, original art, deduplication and potentially other missing Portland venue rooms; keep Hawthorne main, Roseland and all non-Portland events out of the promoter importer."
     }
   ]
 }
