@@ -2,6 +2,20 @@ name: Refresh SHOWS listings and original artwork (review-only)
 on:
   schedule:
     - cron: '17 16 * * *'
+  # Re-run the combined review collector when its ingestion logic or source
+  # configuration changes on main. Data-only review merges (events.js) do not
+  # trigger another scan, so bot proposals cannot create a refresh loop.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover.yml'
+      - 'scripts/discover-events.js'
+      - 'scripts/event-classification.js'
+      - 'scripts/*-importer.js'
+      - 'scripts/backfill-artwork.js'
+      - 'scripts/*-leads.js'
+      - 'discovery/sources.json'
+      - 'discovery/venues.json'
   workflow_dispatch:
     inputs:
       artwork_batch:
