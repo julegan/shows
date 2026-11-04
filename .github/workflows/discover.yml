@@ -142,6 +142,8 @@ jobs:
           node tests/source-priority.js
           node --check scripts/treetix-importer.js
           node tests/treetix-importer.js
+          node --check scripts/mammoth-importer.js
+          node tests/mammoth-importer.js
           node tests/nova-importer.js
           node tests/lolas-importer.js
           node --check scripts/showdown-importer.js

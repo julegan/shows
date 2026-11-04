@@ -24,6 +24,7 @@ const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
 const treetix=require("./treetix-importer");
+const mammoth=require("./mammoth-importer");
 const {classifyEvent}=require("./event-classification");
 const {reclassifyKaraoke}=require("./karaoke-format-review");
 const reviewed=require("./reviewed-classifications");
@@ -83,6 +84,7 @@ function urlOf(item,src){
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
   if(src.adapter==="45east-redcube-original")return redcube.ticketUrl(u.href);
+  if(src.adapter==="mammoth-original-promoter")return mammoth.safeUrl(u.href);
   if(src.adapter==="treetix-public-json"){
     const identity=treetix.eventCalendar(u.href);
     return identity&&identity.id===item.originalEventId&&identity.calendar===item.originalCalendar?identity.url:null;
@@ -142,7 +144,10 @@ function extract(item,src,now){
    "twilight cafe and bar":{venue:"Twilight Cafe and Bar",address:"832 SE Grand Ave, Portland, OR 97214",neighborhood:"Central Eastside"},
    "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"},
     "dante's":{venue:"Dante's",address:"350 W Burnside St, Portland, OR 97209",neighborhood:"Old Town"},
-    "wonder ballroom":{venue:"Wonder Ballroom",address:"128 NE Russell St, Portland, OR 97212",neighborhood:"Eliot"}
+    "wonder ballroom":{venue:"Wonder Ballroom",address:"128 NE Russell St, Portland, OR 97212",neighborhood:"Eliot"},
+    "hawthorne theatre lounge":{venue:"Hawthorne Lounge",address:"1507 SE 39th Ave, Portland, OR 97214",neighborhood:"Sunnyside"},
+    "hawthorne lounge":{venue:"Hawthorne Lounge",address:"1507 SE 39th Ave, Portland, OR 97214",neighborhood:"Sunnyside"},
+    "high limit room":{venue:"High Limit Room",address:"720 SE Hawthorne Blvd, Portland, OR 97214",neighborhood:"Buckman"}
   }[String(item.venue||"").toLowerCase()];
   if(!mapped)return {hold:"Promoter venue location must be verified inside Portland",title,url,date:item.dateOnly,venue:item.venue};
   item={...item,...mapped};
@@ -262,6 +267,7 @@ function reconcile(existing,records){
 }
 async function fetchItems(source){
  if(source.adapter==="treetix-public-json")return treetix.fetchEvents(source);
+ if(source.adapter==="mammoth-original-promoter")return mammoth.fetchEvents();
  if(source.adapter==="nova-official-schema")return nova.fetchNovaEvents();
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.

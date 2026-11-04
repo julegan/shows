@@ -1,3 +1,15 @@
+## Mammoth Northwest — original promoter subset for missing Portland rooms (November 2026)
+
+The owner-requested [Mammoth NW events](https://mammothnw.com/events/) page is a **regional promoter calendar**, not a physical venue and not a source of complete bookings for any single room. A bounded [live GitHub runner probe](https://github.com/julegan/shows/actions/runs/41767348790) observed 83 original event detail links, including 66 `/portland-oregon/` event links (39 Hawthorne Theatre main, 20 Roseland, 4 Hawthorne Theatre Lounge, 2 High Limit Room, 1 Wonder). The main-stage feeds are already connected; collecting them twice from Mammoth adds little and risks reworded duplicate listings.
+
+A second [read-only live adapter verification](https://github.com/julegan/shows/actions/runs/41767633123) validated **all six exact-room original detail pages** for **Hawthorne Theatre Lounge (four) and High Limit Room (two)**: year, weekday, showtime label, independently printed full date/time, room name, original permalink and local Pacific offset. This is why the narrowly scoped `mammoth-original-promoter` adapter is enabled in `discovery/sources.json`.
+
+The importer checks each matching original detail page and stages source-backed candidates through the canonical **review-only** refresh. It never uses the Doors clock as the show start, guesses missing years/styles, mistakes Hawthorne Lounge for the Theatre, imports Seattle/Eugene or adds Roseland/main-Hawthorne duplicates. It holds visibly contradictory or canceled/rescheduled pages. Original images remain source-attributed with `usageApproved:null`. Only reviewed canonical data may reach the separately reviewed Portfolio sync.
+
+**Coverage caveat:** Two verified High Limit Room promoter events do not replace its missing complete Afton/venue feed. Four Hawthorne Lounge promoter shows do not guarantee that all lounge dates have been found. These venue-level source gaps remain tracked separately and must not be marked fully covered based on promoter observations.
+
+Use **Actions → Probe original Mammoth Northwest calendar (read-only)** for on-demand source health testing if the promoter changes its HTML, and inspect its daily refresh source-hold report for regressions.
+
 ## Turn! Turn! Turn! — official OpenDate calendar research
 
 The [official venue entertainment page](https://turnturnturnpdx.com/entertainment/) embeds its original [OpenDate show roster](https://app.opendate.io/v/turn-turn-turn-3116?layout=iframe). Read-only GitHub runner probe [40170844776](https://github.com/julegan/shows/actions/runs/40170844776) confirmed HTTPS access to the official venue and provider, event-specific ticketing URLs, separately labeled **doors** and **show** times, original per-event images, and source event schema. This provider is referenced from the actual venue site, not an unverified listing aggregator.
