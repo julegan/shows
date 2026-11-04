@@ -26,6 +26,10 @@ Source access can fail, and not every venue is covered. A missing listing is not
 
 Artwork references come from original event or venue sources when available and carry provenance. A source image URL or attribution does **not** establish broad reuse rights; continue reviewing permissions and retain neutral treatments when suitable art is unavailable.
 
+## Account-free feedback (deployed portfolio only)
+
+The calendar includes an optional **Send feedback** form for errors, missing events, bugs and ideas. It is hidden until the portfolio's Cloudflare Worker receiver is configured. Reports become **public GitHub issues**, not automatically approved events, and the form warns contributors not to enter personal information. The backend, anti-spam checks and one-time setup are documented in the [portfolio's SHOWS-FEEDBACK.md](https://github.com/julegan/portfolio/blob/main/SHOWS-FEEDBACK.md).
+
 ## Running and testing
 
 SHOWS is static HTML, CSS and browser JavaScript; it has no production backend, mandatory account, or bundler. For a local preview:
