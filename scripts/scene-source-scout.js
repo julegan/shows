@@ -24,7 +24,8 @@ function canon(raw,base){
   const u=new URL(String(raw||"").replace(/&amp;/g,"&"),base);
   if(u.protocol!=="https:"||u.username||u.password||u.port||u.href.length>1000||
      FALSE_URL.test(u.pathname)||/^(?:localhost|127\.|0\.0\.0\.0|10\.|192\.168\.|169\.254\.)/i.test(u.hostname))return null;
-  for(const key of [...u.searchParams.keys()])if(TRACKING.test(key))u.searchParams.delete(key);
+  if(/(?:^|\.)instagram\.com$/i.test(u.hostname))u.search=""; // Social permalink, not tracking or private API state.
+  else for(const key of [...u.searchParams.keys()])if(TRACKING.test(key))u.searchParams.delete(key);
   u.hash="";
   if(/^\/(?:tag|tags|category|categories|author|login|wp-admin|cart|checkout|privacy|terms|about|contact|subscribe|search)\b/i.test(u.pathname))return null;
   return u.href;
@@ -50,6 +51,9 @@ function inspect(seed,html,knownUrls=new Set()){
  for(const a of anchors(html)){
   const url=canon(a.rawUrl,seed.url);
   if(!url||url===seedUrl||knownUrls.has(url))continue;
+  // Marketing, rental and application forms are not event announcements.
+  if(/\b(?:apply to|vendor application|vendor sign.?up|host your event|rent (?:our|a) space|venue rental|photo (?:credit|courtesy)|courtesy |recap)\b/i.test(a.label))continue;
+  if(/(?:hello\.dubsado\.com|forms\.gle|typeform\.com|form\.jotform\.com|google\.com\/forms|\/producers\/|\/pam-venues\/|\/event-recap\/)/i.test(url))continue;
   const parsed=new URL(url),origin=new URL(seed.url),external=parsed.hostname!==origin.hostname;
   const title=a.label||new URL(url).pathname.split("/").filter(Boolean).pop()?.replace(/[-_]/g," ")||"";
   const hint=(title+" "+parsed.pathname.replace(/[-_/]/g," ")).slice(0,500);
