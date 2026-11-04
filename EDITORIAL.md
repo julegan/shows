@@ -20,6 +20,12 @@ The homepage opens to a chronological list beginning on the current date in Port
 
 **The default feed is an inclusive inventory of approved, source-listed events—not a genre-qualification shortlist.** Display future events from connected venue, booking and scene sources even when they have no confirmed music style, or are classified as Other, Performance, Workshops or Markets. Keep genuine unknowns labeled **Type unconfirmed**; genre/style filters only narrow results when the visitor explicitly chooses them. Do not hide valid events simply because source metadata is sparse. The owner's explicit exception is routine farmers markets, which are intentionally outside SHOWS, along with operational venue-closure notices. These exclusions are editorial decisions, not evidence that other non-music events lack value.
 
+### Karaoke as a distinct format
+
+A source-listed karaoke event has the separate **Karaoke** category rather than being silently grouped into Other or presented as a verified live-music concert, even when its title mentions metal, punk, or DJ programming. Preserve its original title, host venue, date, event-specific link and any combined activity (e.g. square dancing followed by karaoke). This format classification doesn't by itself elevate unrelated routine nightlife above the primary underground show discovery priorities or exclude already-approved entries from the mixed feed.
+
+Mammoth Northwest is an owner-requested **multi-venue original promoter lead** (see `discovery/scene-source-backlog.json`), not a new venue and not yet an enabled importer. Its calendar includes overlapping Roseland/Hawthorne shows and other Portland rooms but also out-of-city events. Cross-check event-specific full-year times, correct city/room and existing SHOWS bills before activating automated proposals.
+
 ## Venue-first coverage before genre-based presentation
 
 Maintain the canonical, machine-readable `discovery/venues.json` registry. **For a supported venue calendar, collect every published future event, not just those automatically recognized as underground music.** Primary genres, source categories, and user-selected interests are separate presentation/filter fields. Absence of a genre match must not silently drop a venue event.
