@@ -29,3 +29,4 @@ require('./validate-venue-coverage.js');
 
 require('./validate-independent.js');
 require('./venue-gap-audit.js');
+require('./curated-alt-markets.js');
