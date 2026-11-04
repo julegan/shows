@@ -16,6 +16,9 @@ on:
       - 'scripts/*-leads.js'
       - 'discovery/sources.json'
       - 'discovery/venues.json'
+      # Regression fixes must restart the collector after a blocked refresh.
+      - 'tests/music-filters.js'
+      - 'tests/validate.js'
   workflow_dispatch:
     inputs:
       artwork_batch:
