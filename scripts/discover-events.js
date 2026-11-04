@@ -145,7 +145,8 @@ function extract(item,src,now){
    "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"},
     "dante's":{venue:"Dante's",address:"350 W Burnside St, Portland, OR 97209",neighborhood:"Old Town"},
     "wonder ballroom":{venue:"Wonder Ballroom",address:"128 NE Russell St, Portland, OR 97212",neighborhood:"Eliot"},
-    "hawthorne theatre lounge":{venue:"Hawthorne Theatre Lounge",address:"1507 SE 39th Ave, Portland, OR 97214",neighborhood:"Sunnyside"},
+    "hawthorne theatre lounge":{venue:"Hawthorne Lounge",address:"1507 SE 39th Ave, Portland, OR 97214",neighborhood:"Sunnyside"},
+    "hawthorne lounge":{venue:"Hawthorne Lounge",address:"1507 SE 39th Ave, Portland, OR 97214",neighborhood:"Sunnyside"},
     "high limit room":{venue:"High Limit Room",address:"720 SE Hawthorne Blvd, Portland, OR 97214",neighborhood:"Buckman"}
   }[String(item.venue||"").toLowerCase()];
   if(!mapped)return {hold:"Promoter venue location must be verified inside Portland",title,url,date:item.dateOnly,venue:item.venue};
