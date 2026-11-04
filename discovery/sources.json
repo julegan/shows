@@ -581,6 +581,25 @@
       "priority": "editorial-active",
       "url": null,
       "reason": "Fully relevant additional venue, at full editorial research priority. No verified independent source connector yet. Inspect original source calendar/artist/organizer records; don't infer missing events or bypass access controls."
+    },
+    {
+      "id": "mammoth-nw",
+      "name": "Mammoth Northwest",
+      "status": "pilot-enabled",
+      "priority": "editorial-active",
+      "reason": "Original promoter's multi-venue calendar has 66 Portland-specific links but SHOWS enables only the 4 Hawthorne Theatre Lounge and 2 High Limit Room records verified in GitHub runner 41767633123; direct Roseland/Hawthorne Theatre importers already cover those main rooms. Dates, weekday, showtime, location and event URL are checked from each first-party detail. Read-only and review-only.",
+      "url": "https://mammothnw.com/events/",
+      "baseUrl": "https://mammothnw.com",
+      "venue": null,
+      "address": null,
+      "neighborhood": null,
+      "type": "promoter",
+      "adapter": "mammoth-original-promoter",
+      "coverageTargetIds": [
+        "hawthorne-lounge",
+        "high-limit-room"
+      ],
+      "enabledReason": "Verified 2026-11-03 Pacific by live read-only GitHub Actions 41767633123: 6/6 valid dated, room-specific original Mammoth listings, 0 holds. Scope strictly two currently missing venue feeds; 39 Hawthorne main and 20 Roseland event pages intentionally not imported."
     }
   ],
   "editorialPriority": [
