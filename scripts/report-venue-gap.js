@@ -97,7 +97,10 @@ function report(a){
   "Both groups have equal editorial priority. **Approved** counts all categories, not just music. **Parsed** means valid future records returned by the enabled source in this run, not every booking. **Review** = not conservatively matched to approved SHOWS; includes pending proposals and possible same-night conflicts, **not confirmed missing shows**. A non-enabled source has an unknown source inventory, not zero real events.","",
   "| Group | Venue | Import / this run | Approved | Music | Unclassified | Missing music styles | Parsed source | Matched | Proposed | Review |",
   "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |");
- for(const r of a.rows)lines.push("| "+r.group+" | "+safe(r.name)+" | "+safe(r.source)+(r.sourceItemsChecked===null?"":" ("+r.sourceItemsChecked+" raw)")+" | "+r.approved+" | "+r.music+" | "+r.unclassified+" | "+r.musicWithoutStyles+" | "+(r.sourceId&&r.source!=="adapter-needed"&&r.source!=="reopening-watch"?r.parsedOfficial:"unknown")+" | "+r.represented+" | "+r.proposed+" | "+r.unresolved+" |");
+ for(const r of a.rows){
+  const measured=r.source==="checked"||r.source==="empty";
+  lines.push("| "+r.group+" | "+safe(r.name)+" | "+safe(r.source)+(r.sourceItemsChecked===null?"":" ("+r.sourceItemsChecked+" raw)")+" | "+r.approved+" | "+r.music+" | "+r.unclassified+" | "+r.musicWithoutStyles+" | "+(measured?r.parsedOfficial:"unknown")+" | "+(measured?r.represented:"—")+" | "+(measured?r.proposed:"—")+" | "+(measured?r.unresolved:"—")+" |");
+ }
  lines.push("","## Source records needing individual verification","",
   "These items were parsable from a connected first-party source and were **not** matched by an identical official URL or exact title/date/venue. They might be real gaps, reschedules, multiple times, or duplicates. Verify original identity and room before approval.","");
  const needing=a.rows.filter(r=>r.unresolvedExamples.length).sort((a,b)=>b.unresolved-a.unresolved);
