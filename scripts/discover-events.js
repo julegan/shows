@@ -175,39 +175,85 @@ function extract(item,src,now){
 }
 function reconcile(existing,records){
  const accepted=[],held=[],skipped=[],seen=new Set();
- // Most venue/date collisions are already-listed shows with edited titles or
- // different ticket URLs. Keep those held. Holocene has *verified* early/late
- // programming on the same date: allow clearly independent, time-separated
- // first-party listings into the review PR, never directly to production.
+ const sameDay=(a,b)=>a.venue.toLowerCase()===b.venue.toLowerCase()&&a.startsAt.slice(0,10)===b.startsAt.slice(0,10);
+ // Only a uniquely identifiable original event link counts as a bill ID.
+ // Shared venue calendars, generic homepages and offsite links do not qualify.
+ const eventIdentity=(event,sourceId)=>{
+  try{
+   const u=new URL(event.url||"");
+   if(u.protocol!=="https:"||u.username||u.password||u.port||u.search||u.hash)return null;
+   const host=u.hostname.replace(/^www\./,"").toLowerCase(),p=u.pathname;
+   let valid=false;
+   if(sourceId==="twilight")valid=host==="twilightcafeandbar.com"&&/^\/event\/\d{4,}(?:\/[^/]+)?\/?$/i.test(p);
+   if(sourceId==="star-theater")valid=host==="startheaterportland.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]*\/?$/i.test(p);
+   if(sourceId==="dantes")valid=host==="danteslive.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]*\/?$/i.test(p);
+   if(sourceId==="showdown")valid=host==="showdownpdx.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]*\/?$/i.test(p);
+   if(sourceId==="roseland")valid=host==="roselandpdx.com"&&/^\/event\/[^/]+\/roseland-theater\/portland-oregon\/?$/i.test(p)&&event.venue==="Roseland Theater";
+   if(sourceId==="hawthorne-theatre")valid=host==="hawthornetheatre.com"&&/^\/event\/[^/]+\/hawthorne-theatre\/portland-oregon\/?$/i.test(p)&&event.venue==="Hawthorne Theatre";
+   if(sourceId==="revolution-hall"){
+    const room=event.venue==="Revolution Hall"?"revolution-hall":event.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
+    valid=!!room&&host==="etix.com"&&new RegExp("^/ticket/p/\\d{5,12}/[a-z0-9-]+-portland-"+room+"/?$","i").test(p);
+   }
+   return valid?host+p.toLowerCase().replace(/\/$/,""):null;
+  }catch(_){return null;}
+ };
+ const terms=title=>new Set(String(title||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
+  .split(/[^a-z0-9]+/).filter(word=>word.length>=4&&!/^(?:with|show|night|early|late|ages|presented|sold|free|tour|guests|special|only|doors)$/.test(word)));
+ const distinctTitles=(a,b)=>{
+  const aa=terms(a),bb=terms(b);
+  if(!aa.size||!bb.size)return false;
+  return [...aa].filter(word=>bb.has(word)).length/Math.min(aa.size,bb.size)<0.4;
+ };
+ const separateShowSession=(a,b)=>/\b(?:early|late|matinee|second)\s+(?:show|set|performance)\b/i.test(a+" "+b);
  const distinctTimedVenueShows=(a,b)=>{
   if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
   if(a.venue==="Holocene"&&b.discovery?.sourceId==="holocene"){
    const official=url=>/^https:\/\/www\.holocene\.org\/(?:events\/20\d\d-\d\d-\d\d-[^?#/]+|event\/[^?#]+\/holocene\/portland\/?)(?:[?#].*)?$/i.test(url||"");
    const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
-   const terms=title=>new Set(String(title||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
-      .split(/[^a-z0-9]+/).filter(word=>word.length>=4&&!/^(?:with|show|night|early|late|ages|presented|sold|free|tour)$/.test(word)));
-   const aTerms=terms(a.title),bTerms=terms(b.title);
-   const shared=[...aTerms].filter(word=>bTerms.has(word)).length;
-   if(official(a.url)&&official(b.url)&&Number.isFinite(minutes)&&minutes>=150&&
-      aTerms.size>=1&&bTerms.size>=1&&shared/Math.min(aTerms.size,bTerms.size)<0.4)return true;
+   if(official(a.url)&&official(b.url)&&Number.isFinite(minutes)&&minutes>=150&&distinctTitles(a.title,b.title))return true;
   }
-  const source=a.discovery?.sourceId;
-  return source===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)
-    &&(source!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
-    &&(source!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
+  // Two distinct first-party ticket/event IDs with separately reported times
+  // and distinguishable sessions can reach the owner-review PR. No direct publish.
+  const source=b.discovery?.sourceId;
+  const idA=eventIdentity(a,source),idB=eventIdentity(b,source);
+  const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
+  if(idA&&idB&&idA!==idB&&Number.isFinite(minutes)&&minutes>=90&&
+     (distinctTitles(a.title,b.title)||separateShowSession(a.title,b.title)||
+      (source==="revolution-hall"&&minutes>=120&&norm(a.title)===norm(b.title))))return true;
+  // Retain previous independent-show exceptions for already verified venue IDs.
+  const legacySource=a.discovery?.sourceId;
+  return legacySource===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(legacySource)
+    &&(legacySource!=="mississippi-polaris"||[a.url,b.url].every(url=>/^https:\/\/www\.etix\.com\/ticket\/p\/\d{5,12}\//.test(url)))
+    &&(legacySource!=="starday-tavern"||[a.url,b.url].every(url=>/^https:\/\/www\.google\.com\/calendar\/event\?eid=/.test(url)));
  };
  for(const x of records){
   if(!x.event){(x.hold?held:skipped).push(x);continue;}
-  const e=x.event,day=e.startsAt.slice(0,10);
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(e.discovery?.sourceId)?e.startsAt.slice(11,16):"");
-  if(seen.has(key)||existing.some(v=>(((e.discovery?.sourceId==="aladdin-theater"&&aladdin.ticketUrl(e.url))||(e.discovery?.sourceId==="mission-theater"&&mission.eventUrl(e.url)))&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
-   skipped.push({sourceId:e.discovery?.sourceId,skip:"Already present",title:e.title,url:e.url});continue;
+  const e=x.event,day=e.startsAt.slice(0,10),source=e.discovery?.sourceId;
+  const identity=eventIdentity(e,source);
+  // A reworded lineup at the SAME original event URL is an existing bill,
+  // rather than a mystery duplicate that stalls review on every refresh.
+  if(identity&&[...existing,...accepted].some(v=>sameDay(v,e)&&eventIdentity(v,source)===identity)){
+   skipped.push({sourceId:source,skip:"Already present (same original event permalink)",title:e.title,url:e.url});continue;
+  }
+  // Per-event original identity takes precedence over same-title/date batching;
+  // two independent sessions with the same headliner must reach comparison.
+  const key=identity?e.venue.toLowerCase()+"|"+day+"|"+identity:
+    e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)?e.startsAt.slice(11,16):"");
+  if(seen.has(key)||existing.some(v=>(((source==="aladdin-theater"&&aladdin.ticketUrl(e.url))||(source==="mission-theater"&&mission.eventUrl(e.url)))&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(sameDay(v,e)&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)&&
+    !(identity&&eventIdentity(v,source)&&identity!==eventIdentity(v,source))))){
+   skipped.push({sourceId:source,skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
-   held.push({sourceId:e.discovery?.sourceId,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
+   held.push({sourceId:source,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
-  if([...existing,...accepted].some(v=>v.venue.toLowerCase()===e.venue.toLowerCase()&&v.startsAt.slice(0,10)===day && !(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
-   held.push({sourceId:e.discovery?.sourceId,hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
+  const others=[...existing,...accepted].filter(v=>sameDay(v,e));
+  // Preserve prior date-only handling: distinct official untimed venue entries
+  // are separately reviewed, never manufactured into a fake shared clock.
+  if(others.some(v=>!(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
+   held.push({sourceId:source,hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
+  }
+  if(others.length){
+   e.tags=[...new Set([...(e.tags||[]),"Separate same-day source listing; review bill and room"])];
   }
   accepted.push(e);seen.add(key);
  }
