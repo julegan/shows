@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1066,
-  "addedOccurrences": 5,
-  "batchId": "auto-discovery-2026-11-03-39",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1075,
+  "addedOccurrences": 9,
+  "batchId": "2026-11-03-curated-alt-markets",
+  "editorialReview": "Source-backed curated alternative market candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -128,6 +128,10 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-03-37",
       "addedOccurrences": 9
+    },
+    {
+      "batchId": "auto-discovery-2026-11-03-39",
+      "addedOccurrences": 5
     }
   ],
   "newLiveBills": 0,
@@ -14242,6 +14246,66 @@ window.SHOWS_EVENTS = [
     "seriesId": "saturday-market-2026"
   },
   {
+    "id": "oddities-expo-2026-11-07",
+    "seriesId": "oddities-expo-portland-2026",
+    "title": "Oddities & Curiosities Expo",
+    "subtitle": "Saturday · Taxidermy, strange art, horror and curiosities",
+    "category": "Markets",
+    "tags": [
+      "Oddities",
+      "Horror",
+      "Independent makers",
+      "Ticketed"
+    ],
+    "startsAt": "2026-11-07T10:00:00-08:00",
+    "endsAt": "2026-11-07T17:00:00-08:00",
+    "venue": "Oregon Convention Center",
+    "address": "777 NE Martin Luther King Jr Blvd, Portland, OR 97232",
+    "neighborhood": "Lloyd District",
+    "price": "Ticketed — see organizer",
+    "free": false,
+    "age": "See organizer",
+    "description": "Saturday at the Portland stop of the touring Oddities & Curiosities Expo, featuring unusual art, handmade goods, antiques, odd jewelry and curated curiosities. The event venue confirms November 7–8, and the organizer's general FAQ lists show hours of 10 AM–5 PM each day.",
+    "source": "Oregon Convention Center",
+    "url": "https://www.oregoncc.org/attend/events/2026/11/oddities-curiosities-expo-2026",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "Oregon Convention Center",
+        "url": "https://www.oregoncc.org/attend/events/2026/11/oddities-curiosities-expo-2026",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Oddities & Curiosities Expo schedule",
+        "url": "https://odditiesandcuriositiesexpo.com/pages/schedule-tickets",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Organizer's posted show hours",
+        "url": "https://odditiesandcuriositiesexpo.com/pages/faq",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-07-2f3630166587",
     "title": "Shamanic Sound Healing: a Portal Experience",
     "subtitle": "Source-discovered venue event · details need review",
@@ -15569,6 +15633,66 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "lents-farmers-2026"
+  },
+  {
+    "id": "oddities-expo-2026-11-08",
+    "seriesId": "oddities-expo-portland-2026",
+    "title": "Oddities & Curiosities Expo",
+    "subtitle": "Sunday · Odd art, skulls, curiosities and independent vendors",
+    "category": "Markets",
+    "tags": [
+      "Oddities",
+      "Horror",
+      "Independent makers",
+      "Ticketed"
+    ],
+    "startsAt": "2026-11-08T10:00:00-08:00",
+    "endsAt": "2026-11-08T17:00:00-08:00",
+    "venue": "Oregon Convention Center",
+    "address": "777 NE Martin Luther King Jr Blvd, Portland, OR 97232",
+    "neighborhood": "Lloyd District",
+    "price": "Ticketed — see organizer",
+    "free": false,
+    "age": "See organizer",
+    "description": "Sunday at the Portland stop of the touring Oddities & Curiosities Expo. The original venue listing confirms November 7–8, and the expo's organizer lists 10 AM–5 PM show hours on both days.",
+    "source": "Oregon Convention Center",
+    "url": "https://www.oregoncc.org/attend/events/2026/11/oddities-curiosities-expo-2026",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "Oregon Convention Center",
+        "url": "https://www.oregoncc.org/attend/events/2026/11/oddities-curiosities-expo-2026",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Oddities & Curiosities Expo schedule",
+        "url": "https://odditiesandcuriositiesexpo.com/pages/schedule-tickets",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Organizer's posted show hours",
+        "url": "https://odditiesandcuriositiesexpo.com/pages/faq",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
   },
   {
     "id": "auto-mission-theater-2026-11-08-1b90ecbee627",
@@ -22054,6 +22178,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "umbrae-dark-market-2026-11-15",
+    "title": "Umbrae Noctis Dark Market",
+    "subtitle": "Sunday · Dark vendors and alternative art; opening time TBA",
+    "category": "Markets",
+    "tags": [
+      "Goth",
+      "Oddities",
+      "Independent makers",
+      "Time needs confirmation"
+    ],
+    "startsAt": "2026-11-15T00:00:00-08:00",
+    "endsAt": null,
+    "startTimeKind": "date-only",
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "Admission not confirmed — check organizer",
+    "free": null,
+    "age": "See organizer",
+    "description": "Umbrae Noctis Festival confirms a Sunday, November 15 Dark Market at The Coffin Club, with otherworldly alternative goods. The organizer's FAQ does not publish market hours, so the midnight timestamp is a date-only sorting placeholder and is NOT an opening time.",
+    "source": "Umbrae Noctis Festival",
+    "url": "https://www.umbraenoctisfestival.com/faq",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "Umbrae Noctis Festival",
+        "url": "https://www.umbraenoctisfestival.com/faq",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "2026 festival overview",
+        "url": "https://www.umbraenoctisfestival.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
     "id": "king-farmers-2026-11-15",
     "title": "King Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -27224,6 +27399,100 @@ window.SHOWS_EVENTS = [
     "seriesId": "outlet-riso-basics-2026"
   },
   {
+    "id": "nopo-arts-market-2026-11-21",
+    "seriesId": "nopo-arts-market-november-2026",
+    "title": "NoPo Creatives Arts Market",
+    "subtitle": "Saturday · Small makers, local art and live music",
+    "category": "Markets",
+    "tags": [
+      "Independent makers",
+      "Art & DIY",
+      "Local music",
+      "Free"
+    ],
+    "startsAt": "2026-11-21T10:00:00-08:00",
+    "endsAt": "2026-11-21T18:00:00-08:00",
+    "venue": "Peninsula Odd Fellows Lodge",
+    "address": "4834 N Lombard St, Portland, OR 97203",
+    "neighborhood": "St. Johns",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "See organizer",
+    "description": "First day of NoPo Creatives' intentionally small, community-centered Arts Market at Peninsula Odd Fellows, featuring local makers, handmade goods, live music and food. The organizer's vendor information explicitly lists Saturday show hours of 10 AM–6 PM.",
+    "accessibility": "Organizer says the market is in an upstairs second-floor lodge room with no elevator.",
+    "source": "NoPo Creatives",
+    "url": "https://nopocreatives.com/vendor-information/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "NoPo Creatives",
+        "url": "https://nopocreatives.com/vendor-information/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "NoPo Creatives market overview",
+        "url": "https://nopocreatives.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
+    "id": "plus-plus-bizarre-2026-11-21",
+    "title": "Plus Plus Bizarre Bazaar",
+    "subtitle": "Indie comics, zines, physical media, art and games",
+    "category": "Markets",
+    "tags": [
+      "Zines",
+      "Comics",
+      "Independent publishing",
+      "DIY art",
+      "Free"
+    ],
+    "startsAt": "2026-11-21T12:00:00-08:00",
+    "endsAt": "2026-11-21T17:00:00-08:00",
+    "venue": "Portland Art Museum · Fred & Suzanne Fields Ballroom",
+    "address": "1219 SW Park Ave, Portland, OR 97205",
+    "neighborhood": "Downtown",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "Open to the public",
+    "description": "Free market featuring indie publishers, comics and zines, physical media, game designers, film distributors and artist-made goods, hosted by PAM CUT in the museum's Fields Ballroom.",
+    "source": "Portland Art Museum",
+    "url": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "Portland Art Museum",
+        "url": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
     "id": "auto-turn-turn-turn-2026-11-21-198fe422488c",
     "title": "Joel P West + Jennie Wayne",
     "subtitle": "Source-discovered venue event · details need review",
@@ -27906,6 +28175,109 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "lents-farmers-2026"
+  },
+  {
+    "id": "nopo-arts-market-2026-11-22",
+    "seriesId": "nopo-arts-market-november-2026",
+    "title": "NoPo Creatives Arts Market",
+    "subtitle": "Sunday · Independent makers and community art",
+    "category": "Markets",
+    "tags": [
+      "Independent makers",
+      "Art & DIY",
+      "Local music",
+      "Free"
+    ],
+    "startsAt": "2026-11-22T10:00:00-08:00",
+    "endsAt": "2026-11-22T17:00:00-08:00",
+    "venue": "Peninsula Odd Fellows Lodge",
+    "address": "4834 N Lombard St, Portland, OR 97203",
+    "neighborhood": "St. Johns",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "See organizer",
+    "description": "Second day of the NoPo Creatives Arts Market at the Peninsula Odd Fellows upstairs lodge room, featuring independent makers, local art and community-oriented creative work. The organizer confirms Sunday market hours of 10 AM–5 PM.",
+    "accessibility": "Organizer says the market is in an upstairs second-floor lodge room with no elevator.",
+    "source": "NoPo Creatives",
+    "url": "https://nopocreatives.com/vendor-information/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "NoPo Creatives",
+        "url": "https://nopocreatives.com/vendor-information/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "NoPo Creatives market overview",
+        "url": "https://nopocreatives.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
+    "id": "moon-market-2026-11-22",
+    "seriesId": "moon-market-holiday-2026",
+    "title": "PDX Moon Market",
+    "subtitle": "Independent local art, makers, music and unusual gifts · November",
+    "category": "Markets",
+    "tags": [
+      "Independent makers",
+      "Local art",
+      "Holiday pop-up",
+      "Free"
+    ],
+    "startsAt": "2026-11-22T11:00:00-08:00",
+    "endsAt": "2026-11-22T16:00:00-08:00",
+    "venue": "Everett West",
+    "address": "914 NW Everett St, Portland, OR 97209",
+    "neighborhood": "Pearl District",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "All ages",
+    "description": "Organizer-advertised 2026 Moon Market date at Everett West, featuring independent Portland makers, local art, music, gifts and refreshments. The organizer lists 11 AM–4 PM for November 22 and December 19–20; the 2026 year is confirmed on its vendor application page.",
+    "source": "PDX Moon Market",
+    "url": "https://www.pdxmoonmarket.com/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "PDX Moon Market",
+        "url": "https://www.pdxmoonmarket.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Original 2026 vendor date evidence",
+        "url": "https://www.pdxmoonmarket.com/participate/become-a-vendor-portland-oregon-1",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
   },
   {
     "id": "auto-starday-tavern-2026-11-22-47e12b9d1ff5",
@@ -39752,6 +40124,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "moon-market-2026-12-19",
+    "seriesId": "moon-market-holiday-2026",
+    "title": "PDX Moon Market",
+    "subtitle": "Independent local art, makers, music and unusual gifts · December Saturday",
+    "category": "Markets",
+    "tags": [
+      "Independent makers",
+      "Local art",
+      "Holiday pop-up",
+      "Free"
+    ],
+    "startsAt": "2026-12-19T11:00:00-08:00",
+    "endsAt": "2026-12-19T16:00:00-08:00",
+    "venue": "Everett West",
+    "address": "914 NW Everett St, Portland, OR 97209",
+    "neighborhood": "Pearl District",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "All ages",
+    "description": "Organizer-advertised 2026 Moon Market date at Everett West, featuring independent Portland makers, local art, music, gifts and refreshments. The organizer lists 11 AM–4 PM for November 22 and December 19–20; the 2026 year is confirmed on its vendor application page.",
+    "source": "PDX Moon Market",
+    "url": "https://www.pdxmoonmarket.com/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "PDX Moon Market",
+        "url": "https://www.pdxmoonmarket.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Original 2026 vendor date evidence",
+        "url": "https://www.pdxmoonmarket.com/participate/become-a-vendor-portland-oregon-1",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
+  },
+  {
     "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
     "title": "You, The Audience • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -40139,6 +40562,57 @@ window.SHOWS_EVENTS = [
       "sourceId": "dantes",
       "method": "primary-source-collection"
     }
+  },
+  {
+    "id": "moon-market-2026-12-20",
+    "seriesId": "moon-market-holiday-2026",
+    "title": "PDX Moon Market",
+    "subtitle": "Independent local art, makers, music and unusual gifts · December Sunday",
+    "category": "Markets",
+    "tags": [
+      "Independent makers",
+      "Local art",
+      "Holiday pop-up",
+      "Free"
+    ],
+    "startsAt": "2026-12-20T11:00:00-08:00",
+    "endsAt": "2026-12-20T16:00:00-08:00",
+    "venue": "Everett West",
+    "address": "914 NW Everett St, Portland, OR 97209",
+    "neighborhood": "Pearl District",
+    "price": "Free admission · purchases extra",
+    "free": true,
+    "age": "All ages",
+    "description": "Organizer-advertised 2026 Moon Market date at Everett West, featuring independent Portland makers, local art, music, gifts and refreshments. The organizer lists 11 AM–4 PM for November 22 and December 19–20; the 2026 year is confirmed on its vendor application page.",
+    "source": "PDX Moon Market",
+    "url": "https://www.pdxmoonmarket.com/",
+    "icon": "▦",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original organizer / host published event details; proposed for human review before publication",
+    "sourceCategories": [
+      "Markets"
+    ],
+    "sources": [
+      {
+        "name": "PDX Moon Market",
+        "url": "https://www.pdxmoonmarket.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      },
+      {
+        "name": "Original 2026 vendor date evidence",
+        "url": "https://www.pdxmoonmarket.com/participate/become-a-vendor-portland-oregon-1",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": [
+          "Markets"
+        ]
+      }
+    ],
+    "addedIn": "2026-11-03-curated-alt-markets"
   },
   {
     "id": "auto-mission-theater-2026-12-20-fda1e35e4624",
