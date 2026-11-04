@@ -9,7 +9,7 @@ const BASE="https://mammothnw.com";
 const CALENDAR=BASE+"/events/";
 const ROOMS={
  "hawthorne-theatre-lounge":{
-  venue:"Hawthorne Theatre Lounge",
+  venue:"Hawthorne Lounge",
   label:/\bHawthorne (?:Theatre )?Lounge\b/i,
   address:"1507 SE 39th Ave, Portland, OR 97214",
   neighborhood:"Sunnyside"
