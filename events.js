@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1051,
-  "addedOccurrences": 6,
-  "batchId": "auto-discovery-2026-11-03-33",
+  "totalOccurrences": 1052,
+  "addedOccurrences": 1,
+  "batchId": "2026-11-03-primary-high-limit-band-tour",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -116,11 +116,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "2026-11-03-primary-venue-gap-review",
       "addedOccurrences": 3
+    },
+    {
+      "batchId": "auto-discovery-2026-11-03-33",
+      "addedOccurrences": 6
     }
   ],
-  "newLiveBills": 0,
+  "newLiveBills": 1,
   "newDjNights": 0,
-  "musicOccurrences": 330
+  "musicOccurrences": 331
 };
 window.SHOWS_EVENTS = [
   {
@@ -51824,5 +51828,71 @@ window.SHOWS_EVENTS = [
       "sourceId": "high-water",
       "method": "primary-source-collection"
     }
+  },
+  {
+    "id": "high-limit-room-guilt-trip-gates-to-hell-mauled-2026-12-06",
+    "title": "Guilt Trip with Gates to Hell & Mauled",
+    "subtitle": "Metal, hardcore · original artist tour listing",
+    "category": "Music",
+    "tags": [
+      "Hardcore",
+      "Metal",
+      "Live music",
+      "Time needs confirmation"
+    ],
+    "musicStyles": [
+      "Hardcore",
+      "Metal"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Guilt Trip's artist-associated concert profile explicitly identifies metal and hardcore punk; Roadrunner Records lists the band as a current heavy-music artist. These describe the headliner, not an unsupported claim about every supporting band.",
+      "urls": [
+        "https://www.bandsintown.com/e/1040132341-guilt-trip-at-high-limit-room?came_from=900",
+        "https://www.roadrunnerrecords.com/"
+      ]
+    },
+    "eventFormat": "live",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for admission",
+    "free": null,
+    "age": "Confirm event-specific age policy with venue",
+    "description": "Guilt Trip's own official 2026 tour schedule confirms a December 6 Portland appearance at High Limit Room with Gates to Hell and Mauled. It lists 6:00 PM, but does not establish whether this is doors or performance time. Check the original artist or venue for current tickets, lineup and start-time details.",
+    "source": "Guilt Trip · official artist tour",
+    "url": "https://www.guilttripmhc.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original band tour date + lineup and listed clock; separate artist-associated concert confirmation of 2026 date and venue",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Guilt Trip · official artist tour",
+        "url": "https://www.guilttripmhc.com/",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist concert entry",
+        "url": "https://www.bandsintown.com/e/1040132341-guilt-trip-at-high-limit-room?came_from=900",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room · visitor and accessibility details",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-high-limit-band-tour",
+    "sourceNote": "6:00 PM from Guilt Trip official tour routing. It has not been verified whether this is doors or the show. Do not call it a performance start.",
+    "accessibility": "The venue reports an upstairs room without a wheelchair lift; contact the venue in advance about accessibility."
   }
 ];
