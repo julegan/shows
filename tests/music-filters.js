@@ -57,6 +57,14 @@ context.window.SHOWS_EVENTS.push(
   {...fixtureBase,id:"fixture-closed-mistagged",title:"Closed Merry Christmas",category:"Music",
     musicStyles:[],startsAt:"2026-10-18T13:35:00-07:00"}
 );
+// Ensure the Places preview cap is exercised even when the live venue roster changes.
+for (let n=0;n<9;n++) {
+  context.window.SHOWS_EVENTS.push({...fixtureBase,
+    id:"fixture-nine-punk-shows-"+n,title:"Venue test punk bill "+n,
+    venue:"Fixture Venue",category:"Music",musicStyles:["Punk"],
+    startsAt:"2026-11-02T14:"+String(n).padStart(2,"0")+":00-08:00"
+  });
+}
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
 const eById=new Map(events.map(e=>[e.id,e]));
@@ -98,6 +106,8 @@ for(const style of ["Metal","Punk","Hardcore"]){
   assert.deepEqual(renderedIds(),expectedPlaceIds,"Places previews up to eight correctly filtered "+style+" shows per venue");
   assert.equal(parseInt(el("summary").textContent,10),expected.length,
     "Places summary counts all matching "+style+" shows, including overflow");
+  if (style==="Punk") assert.equal(perVenue.get("Fixture Venue"),9,
+    "Deterministic fixture verifies a venue with more than eight matching shows");
   for (const [venue,count] of perVenue) {
     if (count>8) assert(el("results").innerHTML.includes("And "+(count-8)+" more dates."),
       "Places reports overflow instead of hiding venue counts for "+venue);
