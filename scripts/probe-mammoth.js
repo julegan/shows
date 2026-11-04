@@ -26,6 +26,19 @@ async function main(){
   paths:eventUrls.slice(0,10).map(u=>new URL(u).pathname),
   scriptTypes:[...new Set([...html.matchAll(/<script\b[^>]*type=["']([^"']+)/gi)].map(m=>m[1]))].slice(0,10)
  }));
+ const portland=eventUrls.filter(u=>new URL(u).pathname.endsWith("/portland-oregon/"));
+ const rooms={};for(const u of portland){const room=new URL(u).pathname.split("/")[3];rooms[room]=(rooms[room]||0)+1;}
+ console.log("PORTLAND ROOMS "+JSON.stringify({count:portland.length,rooms}));
+ for(const room of ["hawthorne-theatre-lounge","peters-room-roseland-theatre","high-limit-room","roseland-theater"]){
+  const sample=portland.find(u=>new URL(u).pathname.split("/")[3]===room);
+  if(!sample)continue;
+  try{
+   const detail=await load(sample);
+   const plain=detail.replace(/<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>/gi," ").replace(/<[^>]+>/g," ").replace(/&nbsp;/gi," ").replace(/&#8217;/gi,"'").replace(/\s+/g," ");
+   const hit=plain.search(/\b(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:st|nd|rd|th)?,?\s+20\d\d/);
+   console.log("ROOM DETAIL "+JSON.stringify({room,path:new URL(sample).pathname,heading:(detail.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||"").replace(/<[^>]+>/g," ").trim().slice(0,140),date:hit>=0?plain.slice(hit,hit+180):null,containsDoor:/Doors:\s*\d/.test(plain),containsShow:/Show:\s*\d/.test(plain)}));
+  }catch(e){console.log("ROOM DETAIL ERROR "+room+" "+e.message);}
+ }
  const first=html.search(/\/event\/[^"'\s<>]+\/[^"'\s<>]+\/portland-oregon\//i);
  if(first>=0)console.log("CALENDAR LINK CONTEXT "+html.slice(Math.max(0,first-900),first+900).replace(/\s+/g," ").slice(0,1800));
  const detail=eventUrls.find(u=>u.endsWith("/portland-oregon/"));
