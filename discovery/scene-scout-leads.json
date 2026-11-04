@@ -1,4 +1,163 @@
 {
   "schemaVersion": 1,
-  "leads": []
+  "leads": [
+    {
+      "url": "https://floatingworldcomics.com/",
+      "titleHint": "Floating World Comics",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "\"> Comics / Illustration Periodicals & Nonprofits Buckman Journal (publisher of artists and illustrators) Floating World Comics (comics shop with strong focus o",
+      "rank": 5,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://nopocreatives.com/",
+      "titleHint": "NoPo Creatives Arts Market",
+      "source": "nopo-creatives",
+      "from": "https://nopocreatives.com/",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Small North Portland community arts market, queer/inclusive makers, live music; original Nov 21–22 announcement",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://nopocreatives.com/vendor-information/",
+      "titleHint": "Vendor Information",
+      "source": "nopo-creatives",
+      "from": "https://nopocreatives.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "> the Arts Market &#8211; March 2026 Event Recap Vendor Information <div class=\"et_mobile_n",
+      "rank": 4,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://odditiesandcuriositiesexpo.com/",
+      "titleHint": "The Oddities and Curiosities Expo",
+      "source": "woodland-shrine-vendor-tour",
+      "from": "https://www.woodlandshrine.com/2026-events-and-where-you-can-find-our-work",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "fit=clip\" alt=\"\" width=\"533\" height=\"422\" />We will be vending in person on: Oct 24-25 at The Oddities and Curiosities Expo in Seattle, WA November 7-8 at The O",
+      "rank": 6,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "titleHint": "PAM CUT: Plus Plus Bizarre Bazaar",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "original-event-page",
+      "confidence": "research-only",
+      "why": "Indie zines, media art, comics, games and independent physical-media sellers; original Nov 21, 2026 event page",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.hipchicksdowine.com/new-events",
+      "titleHint": "Hip Chicks Words & Wine Holiday Book Pop-Up",
+      "source": "portland-monthly-holiday-guide",
+      "from": "https://www.pdxmonthly.com/style-and-shopping/gift-guides/portland-holiday-markets-pop-up-shops/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": ">Xena , Buffy , Star Trek , Battlestar Galactica , Serenity , Douglas Adams, and J. R. R. Tolkien, so plan accordingly. Hip Chicks Words & Wine Holiday Book Pop",
+      "rank": 6,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.instagram.com/midslumbermedia/",
+      "titleHint": "Midslumber Media",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "Video.Store.Age (grassroots indie film distributor of highly curated, hard-to-access titles on patent pending encrypted USB drives) Midslumber Media (queer/woma",
+      "rank": 5,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.instagram.com/p/DeSX4r7sYC7/",
+      "titleHint": "Merry & Bright Vintage Christmas Market",
+      "source": "pdx-events-holiday-index",
+      "from": "https://www.pdx-events.com/holiday-markets/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "\"Open in Google Maps\">📍(map) Free 11:00 AM Merry & Bright Vintage Christmas Market · Flux Events Center, Portland, OR <a href=\"https://www.google.com/maps/sear",
+      "rank": 6,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.instagram.com/peculiar_objects_pdx/",
+      "titleHint": "Peculiar Objects",
+      "source": "woodland-shrine-vendor-tour",
+      "from": "https://www.woodlandshrine.com/2026-events-and-where-you-can-find-our-work",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "dditiesandcuriositiesexpo.com/\">Oddities and Curiosities Expo in Seattle, WA November 7-8 at The Oddities and Curiosities Expo in Portland, OR November 14th at",
+      "rank": 6,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.pdxflea.com/",
+      "titleHint": "Portland Flea",
+      "source": "portland-flea",
+      "from": "https://www.pdxflea.com/",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Curated vintage, records, art and November holiday flea; venue/date must be verified",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.pdxmoonmarket.com/",
+      "titleHint": "PDX Moon Market",
+      "source": "pdx-moon-market",
+      "from": "https://www.pdxmoonmarket.com/",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Independent PDX makers and arts; November and December seasonal market notices; verify year",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.portlandbazaar.com/portlandbazaars",
+      "titleHint": "Portland Bazaar local maker event calendar",
+      "source": "portland-bazaar",
+      "from": "https://www.portlandbazaar.com/portlandbazaars",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Holiday makers and indie vendors; lower individual-event priority than unusual niche markets",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.portlandindie.com/2026",
+      "titleHint": "Portland Indie Book & Art Fair vendor directory",
+      "source": "portland-indie-art-book-fair",
+      "from": "https://www.portlandindie.com/2026",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Small press, queer and underground zines and indie publishing vendor/organizer cross-links; directory is historical until future date confirmed",
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.storyboardbooksandart.com/",
+      "titleHint": "Storyboard Books + Art Supplies",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "AGa6OQkZHsBQH1J3LJteA\"> Broccoli (publisher of unusual delights known for making captivating works in print, an array of collectible niche magazines, art books,",
+      "rank": 5,
+      "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.woodlandshrine.com/2026-events-and-where-you-can-find-our-work",
+      "titleHint": "Woodland Shrine maker event appearances",
+      "source": "woodland-shrine-vendor-tour",
+      "from": "https://www.woodlandshrine.com/2026-events-and-where-you-can-find-our-work",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Oddities and DIY gothic maker's original venue/market itinerary; includes Seattle and Portland so geography must be checked",
+      "firstSeenOn": "2026-11-03"
+    }
+  ]
 }
