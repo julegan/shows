@@ -11,20 +11,20 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Black Water | Checked | 13 | 0 | 0 | 0 | 0 | 1 | 12 |
 | High Water Mark | Checked | 69 | 0 | 0 | 0 | 0 | 0 | 69 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
-| Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 11 | 11 |
+| Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 5 | 17 |
 | Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
-| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 15 | 28 |
+| Dante's | Checked | 43 | 8 | 4 | 4 | 8 | 1 | 34 |
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
 | Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 9 | 25 |
-| Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 6 | 35 |
+| Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 3 | 38 |
 | Crystal Ballroom | Checked | 55 | 0 | 0 | 0 | 0 | 5 | 50 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 7 | 23 |
-| Turn! Turn! Turn! | Checked | 20 | 1 | 1 | 0 | 1 | 2 | 17 |
+| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 6 | 23 |
+| Turn! Turn! Turn! | Checked | 20 | 0 | 0 | 0 | 0 | 2 | 18 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
 | Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
-| Holocene | Checked | 47 | 4 | 4 | 0 | 4 | 33 | 10 |
+| Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 33 | 14 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 42 | 1546 |
-| The Off Beat / Friends of Noise | Checked | 9 | 1 | 1 | 0 | 1 | 2 | 6 |
+| The Off Beat / Friends of Noise | Checked | 10 | 0 | 0 | 0 | 0 | 3 | 7 |
 | Aladdin Theater | Checked | 93 | 0 | 0 | 0 | 0 | 4 | 89 |
 | Mission Theater | Checked | 49 | 0 | 0 | 0 | 0 | 0 | 49 |
 | Nova PDX | Checked | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
@@ -34,9 +34,14 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 ### Classification review
 
-New candidate categories: **Music** 6.
-**0 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 4 · **Unclassified** 5.
+**5 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
+- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-10/
+- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-11/
+- Dante's: HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger — https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/
+- Dante's: SINFERNO CABARET — https://www.danteslive.com/tm-event/sinferno-cabaret-14/
+- Revolution Hall: Ron Funches (Late Show) — https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall
 
 ### Connections requiring work
 
@@ -67,22 +72,24 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 6
+## New candidates: 9
 
-- turn-turn-turn: 1 proposals
-- holocene: 4 proposals
-- the-off-beat: 1 proposals
+- dantes: 8 proposals
+- revolution-hall: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-18 | A Solstice + Stevie Nicks Celebration | Turn! Turn! Turn! | 19:00 (doors/show unverified) | https://app.opendate.io/e/a-solstice-stevie-nicks-celebration-december-18-2026-796890 |
-| 2026-11-06 | Emo Nite at Holocene presented by Emo Nite LA | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-06-emo-nite-at-holocene-presented-by-emo-nite-la-21-event |
-| 2026-11-07 | REGGAETON Y 2000s (Perreo Classics + Y2K Bangers All Night!) | Holocene | 22:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-07-reggaeton-y-2000s-perreo-classics-y2k-bangers-all-night |
-| 2026-11-12 | Share Your Joy: Arts for Learning NW Celebration | Holocene | 16:30 (doors/show unverified) | https://www.holocene.org/events/2026-11-12-share-your-joy-arts-for-learning-nw-celebration-early-event |
-| 2026-11-14 | [BOO’D UP] THA RNB NITE | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-14-boo-d-up-tha-rnb-nite |
-| 2027-01-01 | 1/1 Verde Babii & MGM Flash + Friends | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/1-1-verde-babii-mgm-flash-friends-january-01-2027-796891 |
+| 2026-11-06 | HOTWAX disco~glam~metal~punk~hiphop | Dante's | 23:55 (doors/show unverified) | https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/ |
+| 2026-11-07 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/ |
+| 2026-11-08 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-10/ |
+| 2026-11-14 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/ |
+| 2026-11-15 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-11/ |
+| 2026-11-21 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/ |
+| 2026-11-28 | HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/ |
+| 2026-12-06 | SINFERNO CABARET | Dante's | 22:00 (doors/show unverified) | https://www.danteslive.com/tm-event/sinferno-cabaret-14/ |
+| 2026-11-15 | Ron Funches (Late Show) | Revolution Hall | 22:00 (doors/show unverified) | https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall |
 
-## Held for review: 172
+## Held for review: 149
 
 - [black-water] BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ KEET BEAT & DJ SHANE DAMAGE — Recurring calendar rule needs dated individual instances; no inferred dates 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
@@ -90,33 +97,13 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [twilight] Veredas w/ Mike Mannequin, Miss Honey — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467415/veredas-w-mike-mannequin-miss-honey
 - [twilight] 93feetofsmoke w/ Fats'e, Polearm & Guest — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/468053/93feetofsmoke-w-fatse-polearm-guest
 - [twilight] Landroid w/ Valkerie, Sylphide — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467169/landroid-w-valkerie-sylphide
-- [twilight] Shoot the Moon Fest-Night 1-w/ 1876 w/ Last Thread, Altar Girl, Kids on Fire — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467137/shoot-the-moon-fest-night-1-w-1876-w-last-thread-altar-girl-kids-on-fire
-- [twilight] Shoot the Moon Fest-Night 2-w/ Nox Novacula, Berzerk, Arcana, Dj Crash — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/466439/shoot-the-moon-fest-night-2-w-nox-novacula-berzerk-arcana-dj-crash
-- [twilight] Shoot the Moon Fest-Night 3-w/ Goddamn Gallows, King Sickabilly, Beggars Canyon, John Dough Boys — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/466598/shoot-the-moon-fest-night-3-w-goddamn-gallows-king-sickabilly-beggars-canyon-john-dough-boys
-- [twilight] Shoot the Moon Fest-Night 4-w/ Los Mal Hablados, Chencha, Undisputed World Champion, Bill Skasby, Del Sol — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467353/shoot-the-moon-fest-night-4-w-los-mal-hablados-chencha-undisputed-world-champion-bill-skasby-del-sol
-- [twilight] Downstem (Album Release Show) w/ Impermanence, Wastelander, Witch Finger — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/466781/downstem-album-release-show-w-impermanence-wastelander-witch-finger
 - [twilight] Drag The River w/ Dewey Nielsen Band — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-dewey-nielsen-band
 - [twilight] Abraham Racquetball (Album Release) w/ Lucia Luna, Latinum — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/466900/abraham-racquetball-album-release-w-lucia-luna-latinum
-- [twilight] Ignite w/ Year of the Cobra & Guest — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467469/ignite-w-year-of-the-cobra-guest
-- [star-theater] IRON CHIC with The Dumpies & Amusement — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/iron-chic-with-special-guests/
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-12/
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-13/
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
-- [dantes] TRUE FEAR with Resist LA, When The Broken Burn, Crucible of Absolution, & Oddities — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/true-fear-with-resist-la-crucible-of-absolution-oddities/
-- [dantes] HOTWAX disco~glam~metal~punk~hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-24/
-- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-5/
-- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-10/
-- [dantes] JON SPENCER with Genre Is Death — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/jon-spencer-with-guest/
-- [dantes] DEATHTAPE with Salt+ & Guests — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/deathtape-with-salt-guests/
-- [dantes] METAL CHURCH / ARMORED SAINT with Livekill — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/metal-church-armored-saint-with-livekill/
-- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/
-- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-11/
-- [dantes] COMEBACK KID with The Warriors, Dead Heat, & Barrio Slam — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/
-- [dantes] SMASH disco~glam~metal~punk-hiphop — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/
+- [star-theater] JOS&Eacute; JAMES SINGS SINATRA — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra-2/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
-- [dantes] DISTANT with Heavy//Hitter, Torn Open, Katywentmissing, & Glasseater — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
-- [dantes] HIDEOUS MONSTER 10 YEAR ANNIVERSARY with Sunset The Machine & High Five Danger — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/
-- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-14/
 - [roseland] Periphery – A Pale White Dot US Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
 - [roseland] Alter Bridge – What Lies Within Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/
@@ -132,11 +119,8 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [wonder-ballroom] strongboi — Event body date does not match the official title date https://wonderballroom.com/event/strongboi-headline-tour-2027/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] *Postponed* SiM - HOOMAN WORLD TOUR | Wonder Ballroom — Moved, postponed or canceled show; not at Wonder Ballroom https://wonderballroom.com/event/postponed-sim-hooman-world-tour/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] Hazlett — Event body date does not match the official title date https://wonderballroom.com/event/hazlett/wonder-ballroom/portland-oregon/
-- [hawthorne-theatre] Fear Factory – Cybernetic Domination Tour 2026 — Same venue/date; different existing bill; manual comparison https://hawthornetheatre.com/event/fear-factory-cybernetic-domination-tour-2026/hawthorne-theatre/portland-oregon/
 - [hawthorne-theatre] 1 Umbrella – VIP Upgrade (ENTRY TICKET NOT INCLUDED) — Ticket add-on, not an independent event https://hawthornetheatre.com/event/1-umbrella-vip-upgrade-entry-ticket-not-included/hawthorne-theatre/portland-oregon/
 - [hawthorne-theatre] DJ RAPHI — Same venue/date; different existing bill; manual comparison https://hawthornetheatre.com/event/dj-raphi/hawthorne-theatre/portland-oregon/
-- [hawthorne-theatre] Bodysnatcher: Hell Is Here, Hell Is Home Tour — Same venue/date; different existing bill; manual comparison https://hawthornetheatre.com/event/bodysnatcher-hell-is-here-hell-is-home-tour/hawthorne-theatre/portland-oregon/
-- [hawthorne-theatre] Suicide Silence: REMINDERS OF HELL TOUR — Same venue/date; different existing bill; manual comparison https://hawthornetheatre.com/event/suicide-silence-reminders-of-hell-tour/hawthorne-theatre/portland-oregon/
 - [hawthorne-theatre] Taylor Fest *RESCHEDULED DATE* — Venue reports show moved, canceled or postponed https://hawthornetheatre.com/event/taylor-fest-rescheduled-date/hawthorne-theatre/portland-oregon/
 - [crystal-ballroom] The Black Angels — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276344-the-black-angels/
 - [crystal-ballroom] Silverstein — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/278093-silverstein/
@@ -149,7 +133,6 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
-- [revolution-hall] Ron Funches (Late Show) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall
 - [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
 - [turn-turn-turn] Miranda S.P. (IN) + Nowhere Flower + Leland's Lotto — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/miranda-s-p-in-nowhere-flower-leland-s-lotto-november-15-2026-796358
 - [kenton-club] Untitled — Missing or implausibly long bill title 
@@ -190,49 +173,50 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [holocene] Helena Deland — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2027-03-20-helena-deland-early-show
 - [holocene] Jack & Jack — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2027-04-11-jack-jack
 - [holocene] Terrian: Mad Big World Tour — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2027-05-04-terrian-mad-big-world-tour
-- [starday-tavern] Volume Bomb — Event lacks independently verified timed Portland start 
-- [starday-tavern] 22RE + Martian Church + Labrat + Bottom Blade + Odor Eater — Event lacks independently verified timed Portland start 
-- [starday-tavern] Long Kife + Vueltas + Andy Place and the Coolheads + Deathcharge — Event lacks independently verified timed Portland start 
-- [starday-tavern] Renegade Leathers — Event lacks independently verified timed Portland start 
-- [starday-tavern] Foster Neighborhood Summer Soiree — Event lacks independently verified timed Portland start 
-- [starday-tavern] All Out/Dead Friends (Jeff Walter 56th Bday Bash) — Event lacks independently verified timed Portland start 
-- [starday-tavern] DJ DOUBLE A — Event lacks independently verified timed Portland start 
-- [starday-tavern] Friendsgiving Fest — Event lacks independently verified timed Portland start 
-- [starday-tavern] DJ DOUBLE A — Event lacks independently verified timed Portland start 
+- [starday-tavern] Volume Bomb — Event lacks independently verified Portland source timezone 
+- [starday-tavern] 22RE + Martian Church + Labrat + Bottom Blade + Odor Eater — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Long Kife + Vueltas + Andy Place and the Coolheads + Deathcharge — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Renegade Leathers — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Foster Neighborhood Summer Soiree — Event lacks independently verified Portland source timezone 
+- [starday-tavern] All Out/Dead Friends (Jeff Walter 56th Bday Bash) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] DJ DOUBLE A — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Friendsgiving Fest — Event lacks independently verified Portland source timezone 
+- [starday-tavern] DJ DOUBLE A — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Bar Is Closed — Source lists closure or schedule change 
-- [starday-tavern] Antwan's Magic Party — Event lacks independently verified timed Portland start 
-- [starday-tavern] Marks birthday bash — Event lacks independently verified timed Portland start 
-- [starday-tavern] Sarah Parsons — Event lacks independently verified timed Portland start 
-- [starday-tavern] Volume Bomb Valentine's Day Bangover! — Event lacks independently verified timed Portland start 
+- [starday-tavern] Antwan's Magic Party — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Marks birthday bash — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Sarah Parsons — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Volume Bomb Valentine's Day Bangover! — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Closed For Holiday — Source lists closure or schedule change 
-- [starday-tavern] Costas Big Ass Birthday Bash — Event lacks independently verified timed Portland start 
-- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified timed Portland start 
-- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified timed Portland start 
-- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified timed Portland start 
-- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified timed Portland start 
-- [starday-tavern] Creature Party video shoot! 🤘 — Event lacks independently verified timed Portland start 
-- [starday-tavern] Starday 10 year Anniversary Party! — Event lacks independently verified timed Portland start 
-- [starday-tavern] Costas Pride Party — Event lacks independently verified timed Portland start 
-- [starday-tavern] Noah powell fundraiser — Event lacks independently verified timed Portland start 
-- [starday-tavern] Decliners 20th Anniversary! — Event lacks independently verified timed Portland start 
-- [starday-tavern] Beelzebabes/Renegade Leathers/Ninjas with Syringes — Event lacks independently verified timed Portland start 
-- [starday-tavern] Jenny Sizzler — Event lacks independently verified timed Portland start 
-- [starday-tavern] Starday 10 Year Anniversary Party! 💥 Simon Howlett/Jolby (B2B) Michael Manahan/Rob Noble (B2B) — Event lacks independently verified timed Portland start 
-- [starday-tavern] Comedy Roast of Justin — Event lacks independently verified timed Portland start 
-- [starday-tavern] Elvis + LaPRedature + Witness the End + Lab Rat + Latter Day Skanks — Event lacks independently verified timed Portland start 
-- [starday-tavern] Portland Elvis' Birthday Bash! — Event lacks independently verified timed Portland start 
-- [starday-tavern] Scary Movie Sip and Scream — Event lacks independently verified timed Portland start 
+- [starday-tavern] Costas Big Ass Birthday Bash — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Far Out West (FOWbruary Series) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Creature Party video shoot! 🤘 — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Starday 10 year Anniversary Party! — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Costas Pride Party — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Noah powell fundraiser — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Decliners 20th Anniversary! — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Beelzebabes/Renegade Leathers/Ninjas with Syringes — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Jenny Sizzler — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Starday 10 Year Anniversary Party! 💥 Simon Howlett/Jolby (B2B) Michael Manahan/Rob Noble (B2B) — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Comedy Roast of Justin — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Elvis + LaPRedature + Witness the End + Lab Rat + Latter Day Skanks — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Portland Elvis' Birthday Bash! — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Scary Movie Sip and Scream — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Closed for Staff Party — Source lists closure or schedule change 
 - [starday-tavern] Closed for staff party — Source lists closure or schedule change 
-- [starday-tavern] Elvis Christmas Eve — Event lacks independently verified timed Portland start 
-- [starday-tavern] Punk Rock Pride — Event lacks independently verified timed Portland start 
-- [starday-tavern] Alex bday party — Event lacks independently verified timed Portland start 
-- [starday-tavern] Beezlebabes/Baby Graves/Velvet Merkin — Event lacks independently verified timed Portland start 
+- [starday-tavern] Elvis Christmas Eve — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Punk Rock Pride — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Alex bday party — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Beezlebabes/Baby Graves/Velvet Merkin — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Closed For Holiday — Source lists closure or schedule change 
-- [starday-tavern] DYE DYE FUN RAISER — Event lacks independently verified timed Portland start 
-- [starday-tavern] Fuck by fuck off 2026 — Event lacks independently verified timed Portland start 
-- [starday-tavern] Happy HoliGays! 2 Day Fest — Event lacks independently verified timed Portland start 
+- [starday-tavern] DYE DYE FUN RAISER — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Fuck by fuck off 2026 — Event lacks independently verified Portland source timezone 
+- [starday-tavern] Happy HoliGays! 2 Day Fest — Event lacks independently verified Portland source timezone 
 - [the-off-beat] 11/14 Weathering The Storm (2nd annual) — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-14-weathering-the-storm-2nd-annual-november-14-2026-795974
+- [the-off-beat] 11/15 Open Mic Night — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-15-open-mic-night-november-15-2026-796992
 - [the-off-beat] 3/26 Larry and His Flask, 1876 — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/3-26-larry-and-his-flask-1876-march-26-2027-778664
 - [aladdin-theater] RESCHEDULED TO 5/23/27: The Aces: The Kiss Tour — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/83493090/rescheduled-to-52327the-acesthe-kiss-tour-portland-aladdin-theater
 - [aladdin-theater] Aterciopelados: La Pipa De La Paz 30 Años Tour — Missing Aladdin title or matching original ticket room 
