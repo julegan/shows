@@ -16,12 +16,16 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check app.js
+          node --check feedback.js
           node --check events.js
           node --check scripts/discover-events.js
           node --check scripts/kenton-importer.js
           node --check scripts/turnturnturn-opendate.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
+      - name: Verify optional in-app feedback controls
+        run: node tests/feedback-ui.js
+
       - name: Verify date-first music and culture browsing
         run: node tests/music-filters.js
 
