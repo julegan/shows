@@ -1,0 +1,141 @@
+name: Scout new Portland DIY organizers and unusual markets (review only)
+on:
+  schedule:
+    - cron: '43 17 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, 'feature/scene-source-scout']
+    paths:
+      - '.github/workflows/scout-scene-sources.yml'
+      - 'scripts/scene-source-scout.js'
+      - 'discovery/scene-scout-seeds.json'
+      - 'tests/scene-source-scout.js'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: shows-scene-source-scout
+  cancel-in-progress: false
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Find one bot-owned rolling source-research review
+        if: github.ref == 'refs/heads/main'
+        id: pending
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mapfile -t prs < <(gh pr list --state open --limit 100 --json headRefName,number \
+            --jq '.[] | select(.headRefName | test("^automation/source-scout-[0-9]{8}-[0-9]+$")) | .number')
+          if [ "${#prs[@]}" -gt 1 ]; then
+            echo "::error::Multiple generated source-scout PRs exist. Review before proceeding."
+            exit 1
+          fi
+          number="${prs[0]:-}"
+          if [ -n "$number" ]; then
+            author="$(gh pr view "$number" --json author --jq '.author.login')"
+            if [ "$author" != "app/github-actions" ] && [ "$author" != "github-actions[bot]" ]; then
+              echo "::error::Refusing to change a human-authored source research PR."
+              exit 1
+            fi
+            changed="$(gh pr view "$number" --json files --jq '.files[].path')"
+            if [ "$(printf '%s\n' "$changed" | grep -v -E '^discovery/scene-scout-(leads\.json|review\.md)$' || true)" ]; then
+              echo "::error::Source scout PR changes files outside the approved research-only queue."
+              exit 1
+            fi
+            branch="$(gh pr view "$number" --json headRefName --jq '.headRefName')"
+            git fetch --no-tags origin "$branch"
+            git show "FETCH_HEAD:discovery/scene-scout-leads.json" > /tmp/shows-scene-source-pending.json
+            echo "number=$number" >> "$GITHUB_OUTPUT"
+            echo "branch=$branch" >> "$GITHUB_OUTPUT"
+            echo "Unmerged source leads in PR #$number are preserved during today's scan." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Discover unknown Portland underground and holiday-market sources
+        env:
+          SCOUT_PENDING_FILE: /tmp/shows-scene-source-pending.json
+        run: node scripts/scene-source-scout.js
+      - name: Validate niche source-scout boundaries
+        run: |
+          node --check scripts/scene-source-scout.js
+          node tests/scene-source-scout.js
+      - name: Summarize source health and newly discovered research leads
+        if: always()
+        run: |
+          if [ -f discovery/scene-scout-review.md ]; then
+            sed -n '1,92p' discovery/scene-scout-review.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "Source leads are not event confirmations and never publish directly." >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain daily source-scout health and review
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: scene-source-scout-${{ github.run_number }}
+          path: |
+            discovery/scene-scout-review.md
+            discovery/scene-scout-leads.json
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Open or refresh a single review of newly discovered source leads
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          number="${{ steps.pending.outputs.number }}"
+          if git diff --quiet -- discovery/scene-scout-leads.json; then
+            echo "No new sources beyond the approved research backlog." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ -n "$number" ] && cmp -s /tmp/shows-scene-source-pending.json discovery/scene-scout-leads.json; then
+            echo "Existing research PR #$number already includes all new source links." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "SHOWS research bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$number" ]; then
+            branch="${{ steps.pending.outputs.branch }}"
+            old_sha="$(git rev-parse FETCH_HEAD)"
+            git switch -C "$branch" main
+          else
+            branch="automation/source-scout-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
+            git switch -c "$branch"
+          fi
+          git add -- discovery/scene-scout-leads.json discovery/scene-scout-review.md
+          git commit -m "Propose newly discovered DIY and alternative-market sources for review"
+          if [ -n "$number" ]; then
+            git push --force-with-lease="refs/heads/$branch:$old_sha" origin "$branch"
+          else
+            git push --set-upstream origin "$branch"
+          fi
+          {
+            echo "# Newly discovered independent-event and organizer sources"
+            echo
+            echo "Read-only source research from original Portland scene organizers, vendor cross-links and a few local indexes. These URLs are **unverified leads, not calendar events**."
+            echo
+            echo "No source importer is enabled by this PR. No dates, market recurrences, genre, public calendar events, or artwork licenses are inferred. Original organizer/venue evidence and Portland-specific venue/year/time must be checked separately."
+            echo
+            echo "## Latest source scout"
+            sed -n '1,85p' discovery/scene-scout-review.md
+            echo
+            echo "[Complete research queue](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/scene-scout-leads.json)"
+            echo
+            echo "[Source health and discovery run](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          } > /tmp/shows-scene-scout-pr.md
+          if [ "$(wc -c < /tmp/shows-scene-scout-pr.md)" -gt 17000 ]; then
+            echo "::error::Source scout PR summary too large."
+            exit 1
+          fi
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file /tmp/shows-scene-scout-pr.md
+            echo "Refreshed rolling source research PR #$number." >> "$GITHUB_STEP_SUMMARY"
+          else
+            gh pr create --title "Review newly discovered Portland DIY and alternative market sources" --head "$branch" --base main --body-file /tmp/shows-scene-scout-pr.md
+            echo "Created source research PR, separate from canonical SHOWS publishing." >> "$GITHUB_STEP_SUMMARY"
+          fi
