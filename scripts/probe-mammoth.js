@@ -49,7 +49,13 @@ async function main(){
  console.log("DETAIL SHAPE "+JSON.stringify({path:new URL(detail).pathname,bytes:body.length,h1At:h,dateAt:date,
    h1Snippet:h>=0?body.slice(h,h+500).replace(/\s+/g," "):null,
    dateSnippet:date>=0?body.slice(Math.max(0,date-190),date+420).replace(/\s+/g," "):null}));
- console.log("PASS — Mammoth live HTML accessible from GitHub runner, original Portland event permalink present");
+ const mammoth=require("./mammoth-importer");
+ const parsed=await mammoth.fetchEvents();
+ console.log("MAMMOTH ADAPTER "+JSON.stringify({total:parsed.length,verified:parsed.filter(x=>x.startDate).length,held:parsed.filter(x=>x.hold).length,
+  verifiedItems:parsed.filter(x=>x.startDate).map(x=>({title:x.title,venue:x.venue,date:x.startDate,url:x.fullUrl})),
+  holds:parsed.filter(x=>x.hold).map(x=>({url:x.url,reason:x.hold}))}));
+ if(parsed.filter(x=>x.startDate).length<3)throw Error("Not enough original room-specific event records verified to enable importer");
+ console.log("PASS — Mammoth original room events have validated full-year show dates and exact Portland venue identity");
 }
 if(require.main===module)main().catch(e=>{console.error("MAMMOTH PROBE FAILED: "+e.message);process.exitCode=1;});
 module.exports={main};
