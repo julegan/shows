@@ -43,9 +43,10 @@ function inspect(seed,html,knownUrls=new Set()){
  const results=new Map(),seedUrl=canon(seed.url,seed.url);
  // An independently documented first-party event page is a research lead itself.
  // The scouting PR merely records its original URL; year/time still need review.
- if(seed.kind==="original-event"&&seedUrl&&!knownUrls.has(seedUrl))
+ if(seed.kind.startsWith("original-")&&seedUrl&&!knownUrls.has(seedUrl))
   results.set(seedUrl,{url:seedUrl,titleHint:seed.label,source:seed.id,from:seed.url,
-   type:"original-event-page",confidence:"research-only",why:short(seed.focus)});
+   type:seed.kind==="original-event"?"original-event-page":"original-organizer-or-vendor-source",
+   confidence:"research-only",why:short(seed.focus)});
  for(const a of anchors(html)){
   const url=canon(a.rawUrl,seed.url);
   if(!url||url===seedUrl||knownUrls.has(url))continue;
@@ -148,6 +149,7 @@ async function run({request=fetch,now=new Date(),write=true,pendingFile=process.
  if(allLeads.length>700)throw Error("Research queue cap exceeded; consolidate reviewed or stale leads");
  const report=render({checked,failures:checked.filter(x=>x.error),newLeads,allLeads,day});
  if(write){fs.writeFileSync(statePath,JSON.stringify({schemaVersion:1,leads:allLeads},null,2)+"\n");fs.writeFileSync(reportPath,report);}
+ if(checked.every(x=>x.error))throw Error("Every curated scene-discovery source failed: report retained; do not infer there are no events");
  console.log("SCENE SCOUT "+JSON.stringify({checked:checked.length,failed:checked.filter(x=>x.error).length,new:newLeads.length,total:allLeads.length,bySource:Object.fromEntries(checked.map(x=>[x.id,x.count]))}));
  return {checked,newLeads,allLeads,report};
 }
