@@ -65,7 +65,7 @@ function inspect(seed,html,knownUrls=new Set()){
   if(curated&&!(e&&(scene||near)||external&&scene))continue;
   if(!(directory||vendor||curated))continue;
   if(/^(?:home|about|shop|contact|privacy|terms|menu|instagram|facebook|tiktok|subscribe|sign up|learn more)$/i.test(a.label)&&!scene&&!vendor)continue;
-  const rank=(scene?3:0)+(e?2:0)+(near?1:0)+(curated?1:0)+(vendor&&external?1:0);
+  const rank=(scene?3:0)+(e?2:0)+(near?1:0)+(curated?1:0)+(vendor&&external&&near?2:0);
   if(rank<3)continue;
   const type=e?"possible-event-or-market-link":"possible-organizer-source";
   const row={url,titleHint:short(title),source:seed.id,from:seed.url,
