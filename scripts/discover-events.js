@@ -232,10 +232,13 @@ function reconcile(existing,records){
   const identity=eventIdentity(e,source);
   // A reworded lineup at the SAME original event URL is an existing bill,
   // rather than a mystery duplicate that stalls review on every refresh.
-  if(identity&&existing.some(v=>sameDay(v,e)&&eventIdentity(v,source)===identity)){
+  if(identity&&[...existing,...accepted].some(v=>sameDay(v,e)&&eventIdentity(v,source)===identity)){
    skipped.push({sourceId:source,skip:"Already present (same original event permalink)",title:e.title,url:e.url});continue;
   }
-  const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)?e.startsAt.slice(11,16):"");
+  // Per-event original identity takes precedence over same-title/date batching;
+  // two independent sessions with the same headliner must reach comparison.
+  const key=identity?e.venue.toLowerCase()+"|"+day+"|"+identity:
+    e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)?e.startsAt.slice(11,16):"");
   if(seen.has(key)||existing.some(v=>(((source==="aladdin-theater"&&aladdin.ticketUrl(e.url))||(source==="mission-theater"&&mission.eventUrl(e.url)))&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(sameDay(v,e)&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)&&
     !(identity&&eventIdentity(v,source)&&identity!==eventIdentity(v,source))))){
    skipped.push({sourceId:source,skip:"Already present",title:e.title,url:e.url});continue;
