@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-01",
+  "updatedOn": "2026-11-03",
   "purpose": "Source-discovery research, NOT an active importer list. Keep requested promoters distinct from suggested record labels and venue/event feeds.",
   "rules": [
     "Never activate an importer from this file: canonical enabled adapters are controlled separately in discovery/sources.json and require live source validation and owner-reviewed PR.",
@@ -164,6 +164,17 @@
       "officialSourceUrl": "https://19hz.info/eventlisting_ORE.php",
       "evidenceUrl": "https://19hz.info/eventlisting_ORE.php",
       "nextStep": "Existing scripts/19hz-scene-leads.js checks the public source daily as a review artifact only (live proof 56 relevant leads, 1 date hold on Nov 2 2026). Source explicitly says its listings are automatically generated and NOT reviewed for accuracy. Verify each dated bill on its original event ticket, venue or artist page; never auto-approve or imply source validity."
+    },
+    {
+      "id": "mammoth-northwest",
+      "name": "Mammoth Northwest",
+      "kind": "promoter",
+      "requestedByOwner": true,
+      "editorialFit": "Original cross-venue Pacific Northwest booking calendar with Portland metal, punk, hardcore, rock and goth shows; also Hawthorne Theatre Lounge and High Limit Room gaps. Many titles overlap Roseland/Hawthorne source feeds.",
+      "researchStatus": "verified-promoter-research-lead",
+      "officialSourceUrl": "https://mammothnw.com/events/",
+      "evidenceUrl": "https://mammothnw.com/events/",
+      "nextStep": "Verify the official Mammoth Northwest /events/ roster and each /event/<bill>/<room>/<city>/ original detail using a live GitHub runner. Scope to confirmed Portland venues/city (exclude Washington/Eugene/other cities), match venue room and explicit full-year Show vs Doors time, use original event-specific HTTPS detail links, and cross-deduplicate existing Roseland/Hawthorne and room-specific listings by bill/date/link before considering an enabled read-only review-only importer. Preserve artwork attribution, permission review, and source status; do not treat the multi-venue promoter as a physical venue."
     }
   ]
 }
