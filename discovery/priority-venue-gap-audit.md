@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-02 | 438 | 150 | 237 | 89 |
-| 56 | 2026-12-28 | 618 | 198 | 344 | 127 |
-| 90 | 2027-01-31 | 676 | 211 | 383 | 140 |
+| 30 | 2026-12-02 | 446 | 154 | 241 | 89 |
+| 56 | 2026-12-28 | 627 | 202 | 349 | 127 |
+| 90 | 2027-01-31 | 685 | 215 | 388 | 140 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -21,13 +21,13 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Twilight Cafe and Bar | checked (22 raw) | 22 | 18 | 0 | 9 | 21 | 10 | 0 | 11 |
 | preferred | The Coffin Club | adapter-needed | 3 | 3 | 0 | 0 | unknown | — | — | — |
 | preferred | Star Theater | checked (42 raw) | 22 | 22 | 0 | 16 | 24 | 21 | 0 | 3 |
-| preferred | Dante's | checked (43 raw) | 30 | 7 | 21 | 0 | 39 | 30 | 8 | 1 |
+| preferred | Dante's | checked (43 raw) | 38 | 11 | 25 | 0 | 39 | 38 | 0 | 1 |
 | preferred | Roseland Theater | checked (33 raw) | 15 | 8 | 7 | 1 | 14 | 8 | 0 | 6 |
 | preferred | Wonder Ballroom | checked (34 raw) | 16 | 4 | 12 | 0 | 15 | 13 | 0 | 2 |
 | preferred | Hawthorne Theatre | checked (41 raw) | 27 | 9 | 18 | 2 | 28 | 27 | 0 | 1 |
 | preferred | High Limit Room | adapter-needed | 4 | 4 | 0 | 2 | unknown | — | — | — |
 | preferred | Crystal Ballroom | checked (55 raw) | 27 | 8 | 18 | 0 | 27 | 23 | 0 | 4 |
-| preferred | Revolution Hall | checked (30 raw) | 16 | 3 | 13 | 0 | 15 | 12 | 1 | 2 |
+| preferred | Revolution Hall | checked (30 raw) | 17 | 3 | 14 | 0 | 16 | 14 | 0 | 2 |
 | preferred | Mississippi Studios | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 14 | 0 | 0 |
 | preferred | Holocene | checked (47 raw) | 35 | 15 | 20 | 15 | 35 | 11 | 0 | 24 |
 | preferred | Doug Fir Lounge | reopening-watch | 0 | 0 | 0 | 0 | unknown | — | — | — |
@@ -51,7 +51,7 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | scene | Hawthorne Lounge | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
 | scene | Word Virus Books | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 13 | 11 | 0 | 2 |
+| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 14 | 12 | 0 | 2 |
 | scene | Aladdin Theater | checked (93 raw) | 35 | 0 | 35 | 0 | 35 | 35 | 0 | 0 |
 | scene | Mission Theater | checked (49 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
 
@@ -112,7 +112,6 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Hawthorne Theatre**: checked; 2 held records without a parseable date.
 - **High Limit Room**: adapter-needed; original published events remain unmeasured.
 - **Crystal Ballroom**: checked; 1 held records without a parseable date.
-- **Revolution Hall**: checked; 2 held records without a parseable date.
 - **Mississippi Studios**: checked; 2 held records without a parseable date.
 - **Holocene**: checked; 1 held records without a parseable date.
 - **Doug Fir Lounge**: reopening-watch.
@@ -134,7 +133,6 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Hawthorne Lounge**: adapter-needed; original published events remain unmeasured.
 - **Word Virus Books**: adapter-needed; original published events remain unmeasured.
 - **The Six (Midnight PDX Bar)**: adapter-needed; original published events remain unmeasured.
-- **Show Bar at Revolution Hall**: checked; 2 held records without a parseable date.
 - **Aladdin Theater**: checked; 3 held records without a parseable date.
 
 ### Editorial rules
