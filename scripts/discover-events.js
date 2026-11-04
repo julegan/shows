@@ -244,7 +244,9 @@ function reconcile(existing,records){
    held.push({sourceId:source,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
   const others=[...existing,...accepted].filter(v=>sameDay(v,e));
-  if(others.some(v=>!distinctTimedVenueShows(v,e))){
+  // Preserve prior date-only handling: distinct official untimed venue entries
+  // are separately reviewed, never manufactured into a fake shared clock.
+  if(others.some(v=>!(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
    held.push({sourceId:source,hold:"Same venue/date; different existing bill; manual comparison",title:e.title,url:e.url});continue;
   }
   if(others.length){
