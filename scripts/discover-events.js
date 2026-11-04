@@ -28,6 +28,7 @@ const {classifyEvent}=require("./event-classification");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
 const {detectPublishedChanges,renderChangeReview}=require("./source-change-review");
+const {analyze:analyzeVenueGap,report:reportVenueGap}=require("./report-venue-gap");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
 const fmt=new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
@@ -474,6 +475,14 @@ async function run(opts={}){
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
  const changes=detectPublishedChanges(parsed.events,found,{today:localDay(now)});
  const result=reconcile(parsed.events,found);
+ // Compare the source's valid future candidates to the *approved* dataset;
+ // never count newly proposed bills as published coverage.
+ const venues=JSON.parse(fs.readFileSync(path.join(root,"discovery/venues.json"),"utf8"));
+ const venueGap=analyzeVenueGap({events:parsed.events,sourceRegistry:registry,venueRegistry:venues,
+  found,reconciled:result,sourceRuns,today:localDay(now)});
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/priority-venue-gap-audit.md"),reportVenueGap(venueGap));
+ console.log("VENUE GAP 56-DAY: "+JSON.stringify({through:venueGap.end,priorityVenues:venueGap.rows.length,
+  parsedFirstParty:venueGap.sourceCandidateCount,notYetMatched:venueGap.totalUnrepresented}));
  console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
