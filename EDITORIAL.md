@@ -14,6 +14,10 @@ Queer-friendly and inclusive spaces matter. Queer identity is not a substitute f
 
 Independent art, zines, DIY, maker fairs, vintage/record/tattoo/occult pop-ups, and unusual markets **fit the mixed feed** when genuinely relevant to the underground creative community. Routine farmers markets, generic neighborhood/community activities, recurring general-interest listings, and unrelated animal-welfare or workshop entries are **not default-feed content**. Previously approved historical records remain intact; this is a discovery and source-priority change, not a data deletion or a decision to make a comprehensive city calendar. Stop expanding routine farmers markets simply to grow event totals.
 
+## Find new scene sources, not only events from familiar venues
+
+Keep a modest read-only **source-scouting network** alongside the existing venue and promoter importers. Original vendor appearance lists, small organizer pages, independent zine/book-fair publisher directories and selective local roundups may reveal otherwise unknown shows, maker collectives and unusual seasonal/holiday markets. New organizer URLs should enter `discovery/scene-scout-leads.json` through a **separate research PR**, never be treated as approved event data or automatically enabled as importers. Prioritize independent underground and weird culture over generic holiday/bazaar volume; check actual Portland location, event-specific original date/year and time, venue/organizer identity and canceled status before event proposals. Social-only accounts remain an authorization/access research gap; no scraping around access restrictions. New sources strengthen a source registry after review, not a fabricated recurrence in SHOWS.
+
 ## Default experience and coverage priorities
 
 The homepage opens to a chronological list beginning on the current date in Portland. **By date** is the initial view on mobile and desktop; **Places** and **Month** remain available. Month should never be required to reach today's event listings. Promote source-provided flyers with attribution where allowed, and do not fabricate artwork.
