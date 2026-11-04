@@ -67,12 +67,15 @@ jobs:
           echo "Wyrd venue leads are secondary research only; original date and event identity need promoter/artist verification." >> "$GITHUB_STEP_SUMMARY"
           echo "Full Doomtown original-promoter lead report is in the uploaded artifact. WordPress post dates are not event dates." >> "$GITHUB_STEP_SUMMARY"
           node scripts/report-calendar-horizon.js >> "$GITHUB_STEP_SUMMARY"
+          echo "## Priority venue source-to-approved coverage (56 days)" >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,/## Source records needing individual verification/p' discovery/priority-venue-gap-audit.md >> "$GITHUB_STEP_SUMMARY"
       - name: Retain both review reports even on no-change days
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: shows-refresh-review-${{ github.run_number }}
           path: |
             discovery/latest-review.md
+            discovery/priority-venue-gap-audit.md
             discovery/artwork-backfill-review.md
             discovery/doomtown-leads-review.md
             discovery/pdx-subvert-leads-review.md
@@ -89,6 +92,8 @@ jobs:
           node tests/turnturnturn-opendate.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
+          node --check scripts/report-venue-gap.js
+          node tests/venue-gap-audit.js
           node --check app.js
           node --check events.js
           node tests/source-health.js
@@ -130,7 +135,7 @@ jobs:
           git config user.name "SHOWS refresh bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add -- events.js discovery/latest-review.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
+          git add -- events.js discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
           git commit -m "Propose source-confirmed Portland shows and original flyers"
           git push --set-upstream origin "$branch"
           {
@@ -141,11 +146,15 @@ jobs:
             echo "## Discovery snapshot"
             sed -n '1,/## New candidates:/p' discovery/latest-review.md
             echo
+            echo "## Coverage gap snapshot"
+            sed -n '1,14p' discovery/priority-venue-gap-audit.md
+            echo
             echo "## Artwork snapshot"
             sed -n '1,17p' discovery/artwork-backfill-review.md
             echo
             echo "## Full evidence"
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
+            echo "- [56-day first-party venue coverage and unresolved gaps](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/priority-venue-gap-audit.md)"
             echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
             echo "- [Doomtown primary-promoter leads (not confirmed event dates)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/doomtown-leads-review.md)"
             echo "- [PDX//SUBVERT original punk/metal leads (review only; timestamps unverified)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/pdx-subvert-leads-review.md)"
