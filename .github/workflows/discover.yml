@@ -132,6 +132,10 @@ jobs:
           node --check events.js
           node tests/source-health.js
           node tests/source-change-review.js
+          node --check scripts/karaoke-format-review.js
+          node tests/karaoke-format-review.js
+          node tests/event-classification.js
+          node tests/scene-source-backlog.js
           node tests/discovery.js
           node tests/artwork.js
           node tests/calendar-horizon.js

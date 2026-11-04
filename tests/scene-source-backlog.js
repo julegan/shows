@@ -3,7 +3,7 @@ const assert=require("node:assert/strict");
 const backlog=require("../discovery/scene-source-backlog.json");
 const canonical=require("../discovery/sources.json");
 assert.equal(backlog.schemaVersion,1);
-assert.equal(backlog.sources.length,14,"14 researched sources, not enabled importers");
+assert.equal(backlog.sources.length,15,"15 researched sources, not enabled importers");
 assert.equal(new Set(backlog.sources.map(x=>x.id)).size,backlog.sources.length,"Unique source IDs");
 const kinds=new Set(["promoter","record-label","scene-calendar"]);
 for(const s of backlog.sources){
@@ -14,9 +14,14 @@ for(const s of backlog.sources){
  assert(!("enabled" in s)&&!("adapter" in s)&&!("status" in s),"Research list must not activate an importer: "+s.id);
 }
 const promoters=backlog.sources.filter(x=>x.kind==="promoter");
-assert.deepEqual(promoters.map(x=>x.id),["777-booking","third-eye-booking","sad-times-productions"]);
-assert.deepEqual(promoters.filter(x=>x.requestedByOwner).map(x=>x.id),["777-booking","third-eye-booking"],"Only 777 and Third Eye promoters were explicitly requested");
-assert(promoters.filter(x=>x.requestedByOwner).every(x=>x.officialSourceUrl===null),"Don't invent unverified original profiles");
+assert.deepEqual(promoters.map(x=>x.id),["777-booking","third-eye-booking","sad-times-productions","mammoth-northwest"]);
+assert.deepEqual(promoters.filter(x=>x.requestedByOwner).map(x=>x.id),["777-booking","third-eye-booking","mammoth-northwest"],"The three user-requested promoter research leads are explicit");
+assert(promoters.filter(x=>["777-booking","third-eye-booking"].includes(x.id)).every(x=>x.officialSourceUrl===null),"Don't invent unverified original profiles");
+const mammoth=promoters.find(x=>x.id==="mammoth-northwest");
+assert.equal(mammoth.officialSourceUrl,"https://mammothnw.com/events/","Owner's original promoter listing");
+assert.match(mammoth.nextStep,/exclude Washington\/Eugene/,"Mammoth must filter its wider Pacific Northwest roster to Portland");
+assert.match(mammoth.nextStep,/cross-deduplicate/,"Already-connected venues must not be duplicated");
+assert(!canonical.sources.some(s=>s.id==="mammoth-northwest"),"Research-only source is not active until a live parser probe is validated");
 assert.equal(promoters.find(x=>x.id==="sad-times-productions").officialSourceUrl,"https://www.sadtimesproductions.com/shows","Document original archived promoter bill list, not a live calendar");
 assert.equal(backlog.sources.filter(x=>x.kind==="record-label").length,8);
 assert(backlog.sources.filter(x=>x.kind==="record-label").every(x=>x.requestedByOwner===false),"Label shortlist needs user review");
