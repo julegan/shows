@@ -57,6 +57,14 @@ context.window.SHOWS_EVENTS.push(
   {...fixtureBase,id:"fixture-closed-mistagged",title:"Closed Merry Christmas",category:"Music",
     musicStyles:[],startsAt:"2026-10-18T13:35:00-07:00"}
 );
+// Ensure the Places preview cap is exercised even when the live venue roster changes.
+for (let n=0;n<9;n++) {
+  context.window.SHOWS_EVENTS.push({...fixtureBase,
+    id:"fixture-nine-punk-shows-"+n,title:"Venue test punk bill "+n,
+    venue:"Fixture Venue",category:"Music",musicStyles:["Punk"],
+    startsAt:"2026-11-02T14:"+String(n).padStart(2,"0")+":00-08:00"
+  });
+}
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
 const eById=new Map(events.map(e=>[e.id,e]));
@@ -83,7 +91,27 @@ for(const style of ["Metal","Punk","Hardcore"]){
   const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
   assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
   views.find(v=>v.dataset.view==="places").click();
-  assert.deepEqual(renderedIds(),expected,"Places respects "+style+" filter");
+  // Places intentionally previews only the first 8 chronological shows per venue.
+  // More source discoveries must not break validation simply because a venue
+  // crosses that display limit. Still check both venue caps and style correctness.
+  const perVenue = new Map();
+  const expectedPlaceIds = Array.from(events
+    .filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style))
+    .sort((a,b)=>Date.parse(a.startsAt)-Date.parse(b.startsAt))
+    .filter(e=>{
+      const count=perVenue.get(e.venue)||0;
+      perVenue.set(e.venue,count+1);
+      return count<8;
+    }), e=>e.id).sort();
+  assert.deepEqual(renderedIds(),expectedPlaceIds,"Places previews up to eight correctly filtered "+style+" shows per venue");
+  assert.equal(parseInt(el("summary").textContent,10),expected.length,
+    "Places summary counts all matching "+style+" shows, including overflow");
+  if (style==="Punk") assert.equal(perVenue.get("Fixture Venue"),9,
+    "Deterministic fixture verifies a venue with more than eight matching shows");
+  for (const [venue,count] of perVenue) {
+    if (count>8) assert(el("results").innerHTML.includes("And "+(count-8)+" more dates."),
+      "Places reports overflow instead of hiding venue counts for "+venue);
+  }
   views.find(v=>v.dataset.view==="dates").click();
   el("exportVisible").click();
   if(expected.length){
