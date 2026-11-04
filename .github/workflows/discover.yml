@@ -136,6 +136,7 @@ jobs:
           node --check events.js
           node tests/source-health.js
           node tests/source-change-review.js
+          node tests/published-change-queue.js
           node --check scripts/karaoke-format-review.js
           node tests/karaoke-format-review.js
           node tests/event-classification.js
