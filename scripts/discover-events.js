@@ -218,7 +218,8 @@ function reconcile(existing,records){
   const idA=eventIdentity(a,source),idB=eventIdentity(b,source);
   const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
   if(idA&&idB&&idA!==idB&&Number.isFinite(minutes)&&minutes>=90&&
-     (distinctTitles(a.title,b.title)||separateShowSession(a.title,b.title)))return true;
+     (distinctTitles(a.title,b.title)||separateShowSession(a.title,b.title)||
+      (source==="revolution-hall"&&minutes>=120&&norm(a.title)===norm(b.title))))return true;
   // Retain previous independent-show exceptions for already verified venue IDs.
   const legacySource=a.discovery?.sourceId;
   return legacySource===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(legacySource)
@@ -235,7 +236,8 @@ function reconcile(existing,records){
    skipped.push({sourceId:source,skip:"Already present (same original event permalink)",title:e.title,url:e.url});continue;
   }
   const key=e.venue.toLowerCase()+"|"+day+"|"+norm(e.title)+"|"+(["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(source)?e.startsAt.slice(11,16):"");
-  if(seen.has(key)||existing.some(v=>(((source==="aladdin-theater"&&aladdin.ticketUrl(e.url))||(source==="mission-theater"&&mission.eventUrl(e.url)))&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(sameDay(v,e)&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)))){
+  if(seen.has(key)||existing.some(v=>(((source==="aladdin-theater"&&aladdin.ticketUrl(e.url))||(source==="mission-theater"&&mission.eventUrl(e.url)))&&v.url===e.url&&v.venue===e.venue&&Date.parse(v.startsAt)===Date.parse(e.startsAt))||v.id===e.id||(sameDay(v,e)&&norm(v.title)===norm(e.title)&&!distinctTimedVenueShows(v,e)&&
+    !(identity&&eventIdentity(v,source)&&identity!==eventIdentity(v,source))))){
    skipped.push({sourceId:source,skip:"Already present",title:e.title,url:e.url});continue;
   }
   if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
