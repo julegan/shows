@@ -45,7 +45,7 @@
       const turnstile = await loadVerification();
       if (!dialog.open) return;
       if (widgetId === null) {
-        widgetId = turnstile.render(verification, { sitekey, theme: "dark" });
+        widgetId = turnstile.render(verification, { sitekey, action: "shows_feedback", theme: "dark" });
       } else {
         turnstile.reset(widgetId);
       }
@@ -95,8 +95,9 @@
       done.focus();
     } catch (_) {
       message("Couldn't send feedback. Please try again.");
-      window.turnstile?.reset(widgetId);
     } finally {
+      // Siteverify tokens are single-use. Reset after every AJAX submission.
+      window.turnstile?.reset(widgetId);
       submit.disabled = false;
     }
   });
