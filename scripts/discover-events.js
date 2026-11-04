@@ -114,7 +114,7 @@ function extract(item,src,now){
  if(!title||!url)return {hold:"Missing title or primary event permalink",title};
  // Every dated venue event is eligible; classify rather than discard unrelated categories.
  const stamp=item.startDate??item.startTime??item.start;
- const dateOnly=["black-water-ics","kenton-official-html","nova-official-schema","45east-redcube-original"].includes(src.adapter)&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
+ const dateOnly=["black-water-ics","kenton-official-html","nova-official-schema","45east-redcube-original","starday-google-html"].includes(src.adapter)&&item.sourceDateOnly===true&&/^\d{4}-\d{2}-\d{2}$/.test(item.dateOnly||"");
  if(stamp==null&&!dateOnly)return {hold:item.dateOnly?"Verified date "+item.dateOnly+" but no performance start or doors time"+(item.detailHold?"; "+item.detailHold:""):"Event time missing",title,url,date:item.dateOnly,venue:item.venue||src.venue};
  let start;
  if(dateOnly){
