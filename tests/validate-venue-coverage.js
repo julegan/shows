@@ -66,3 +66,18 @@ assert(!reviewArtworkValid({...ayria,artwork:{...exampleArt,usageApproved:true}}
   'Artwork review must not invent usage permission');
 assert(!reviewedGap.some(e=>/Sex Mex/i.test(e.title)),'Cancelled/contradictory events must not be imported');
 console.log('PASS — priority Coffin and High Limit source-backed show additions, time/genre caveats and accessibility.');
+
+const newHighLimit=all.filter(e=>e.addedIn==='2026-11-03-primary-high-limit-band-tour');
+assert.equal(newHighLimit.length,1,'One original-band-confirmed High Limit show proposed');
+const guiltTrip=newHighLimit[0];
+assert.equal(guiltTrip.title,'Guilt Trip with Gates to Hell & Mauled');
+assert.equal(guiltTrip.venue,'High Limit Room');
+assert.equal(guiltTrip.startsAt,'2026-12-06T18:00:00-08:00');
+assert.equal(guiltTrip.startTimeKind,'listed','Band tour clock is not a verified performance time');
+assert.deepEqual(Array.from(guiltTrip.musicStyles).sort(),['Hardcore','Metal']);
+assert(guiltTrip.sources.some(x=>x.kind==='artist'&&x.url===guiltTrip.url));
+assert(guiltTrip.sources.some(x=>x.kind==='organizer'&&x.url.startsWith('https://highlimitroompdx.com/')));
+assert(/does not establish whether this is doors or performance time/.test(guiltTrip.description));
+assert(!guiltTrip.artwork,'No unrelated promotional image or unverified rights');
+assert.equal(all.filter(e=>e.venue==='High Limit Room'&&e.startsAt.slice(0,10)==='2026-12-06').length,1);
+console.log('PASS — Guilt Trip/Gates to Hell/Mauled, original tour source, exact December date, Pacific offset, and unverified time semantics.');
