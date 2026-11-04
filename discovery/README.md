@@ -14,13 +14,15 @@ The source generally omits confirmed showtimes, explicit years and event-specifi
 
 If the source removes its official heading, changes its roster layout or blocks the runner, collection must hold or fail visibly rather than guessing.
 
-## Continue source collection while reviews are pending
+## Keep the single discovery review current
 
-The daily Actions workflow **always** checks configured venue/promoter sources, reviews artwork, validates the proposed local dataset and saves its health, coverage and discrepancy reports—even when an earlier editorial refresh PR is still open. A pending canonical refresh/discovery/artwork PR blocks **only the final step that would push another branch and open a competing PR**.
+The combined SHOWS action runs daily and after discovery importer/source/workflow changes merge to `main`. It collects source records, images, venue coverage, discrepancies and research leads every time. Reports are uploaded as artifacts even if there are no new proposals.
 
-This avoids a blind spot in source-health reporting without bypassing human approval: unmerged discoveries are discarded from the runner's local worktree at the end of the job, and no new event data becomes public until a reviewer merges a canonical PR and the separate portfolio snapshot PR. Once a pending review is resolved, the next regular run can propose any still-relevant changes. The latest run's report artifact is retained for 30 days.
+A source-confirmed change to `events.js` creates **one rolling canonical editorial PR**. While that PR is open, a subsequent refresh updates the same bot-owned review branch with the **latest findings** rather than silently discarding new candidates or opening a competing PR. If the event dataset is unchanged since the prior proposal, the open PR is left alone and the latest health reports remain available in the action artifacts.
 
-The collector does **not** automatically update an existing open PR or accumulate a persistent staging database. That remains future work if a daily review backlog becomes common.
+The bot only updates a branch matching its generated review-branch naming convention and only when that branch is bot-authored and changes expected data/report files. It uses a force-with-lease guard to reject concurrent branch changes. It never writes directly to `main`, automatically merges, alters existing approved events without editorial review, or publishes to Portfolio.
+
+Once the canonical proposal is merged, Portfolio checks the approved `main` snapshot every two hours and opens or refreshes **one rolling publication PR**. A human still merges that publishing PR to deploy via Cloudflare. GitHub schedules are best-effort rather than instantaneous cross-repository triggers.
 
 ## Changes to already-published event listings
 
