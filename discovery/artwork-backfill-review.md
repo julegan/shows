@@ -1,6 +1,6 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-04T04:24:57.792Z; Portland date: 2026-11-03. This workflow does not publish images.
+Generated 2026-11-04T04:59:12.960Z; Portland date: 2026-11-03. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
@@ -10,7 +10,7 @@ Image URLs must be reviewed for event identity, attribution, suitability and usa
 - Missing artwork: **80**
 - Missing listings with supported individual source pages: **25**
 - Missing listings needing another source or individual permalink: **55**
-- Batch: **39** of **0** (zero-indexed; 35 lookups maximum)
+- Batch: **40** of **0** (zero-indexed; 35 lookups maximum)
 - Attempted: **0**; proposed: **0**; no proposal: **0**
 
 ## Why pages did not produce artwork
