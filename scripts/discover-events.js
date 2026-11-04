@@ -25,6 +25,7 @@ const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
 const treetix=require("./treetix-importer");
 const {classifyEvent}=require("./event-classification");
+const {reclassifyKaraoke}=require("./karaoke-format-review");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
 const {detectPublishedChanges,renderChangeReview}=require("./source-change-review");
@@ -500,6 +501,10 @@ function report(r,errors,now,sourceRuns=[],sourceRegistry=[],changeReview=null){
 async function run(opts={}){
  const registry=JSON.parse(fs.readFileSync(path.join(root,"discovery/sources.json"),"utf8"));
  const parsed=parseFile(fs.readFileSync(path.join(root,"events.js"),"utf8"));
+ // Apply only source-title-confirmed karaoke category corrections to the local
+ // reviewed proposal; the published main dataset is unchanged until PR merge.
+ const karaoke=reclassifyKaraoke(parsed.events);
+ parsed.events=karaoke.events;
  const sources=registry.sources.filter(s=>s.status==="pilot-enabled");
  if(!sources.length)throw Error("No active sources");
  const now=opts.now||new Date(),found=[],errors=[],sourceRuns=[];
@@ -527,13 +532,14 @@ async function run(opts={}){
  const venueGap=analyzeVenueGap({events:parsed.events,sourceRegistry:registry,venueRegistry:venues,
   found,reconciled:result,sourceRuns,today:localDay(now)});
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/priority-venue-gap-audit.md"),reportVenueGap(venueGap));
+ console.log("KARAOKE FORMAT REVIEW: "+karaoke.changed.length+" existing source-confirmed listings recategorized; canonical main unchanged until review PR merge.");
  console.log("VENUE GAP 56-DAY: "+JSON.stringify({through:venueGap.end,priorityVenues:venueGap.rows.length,
   parsedFirstParty:venueGap.sourceCandidateCount,notYetMatched:venueGap.totalUnrepresented}));
  console.log(JSON.stringify({proposed:result.accepted.length,bySource:Object.fromEntries(sources.map(s=>[s.id,result.accepted.filter(e=>e.discovery?.sourceId===s.id).length])),held:result.held.length,skipped:result.skipped.length,errors}));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources,changes));
- if(!result.accepted.length)return {...result,errors,sourceRuns,changes};
+ if(!result.accepted.length&&!karaoke.changed.length)return {...result,errors,sourceRuns,changes};
  const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
@@ -545,7 +551,7 @@ async function run(opts={}){
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
  }
- return {...result,errors,sourceRuns,changes,output};
+ return {...result,errors,sourceRuns,changes,karaokeReclassified:karaoke.changed,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
 module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};
