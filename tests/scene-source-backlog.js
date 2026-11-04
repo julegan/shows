@@ -19,8 +19,8 @@ assert.deepEqual(promoters.filter(x=>x.requestedByOwner).map(x=>x.id),["777-book
 assert(promoters.filter(x=>["777-booking","third-eye-booking"].includes(x.id)).every(x=>x.officialSourceUrl===null),"Don't invent unverified original profiles");
 const mammoth=promoters.find(x=>x.id==="mammoth-northwest");
 assert.equal(mammoth.officialSourceUrl,"https://mammothnw.com/events/","Owner's original promoter listing");
-assert.match(mammoth.nextStep,/exclude Washington\/Eugene/,"Mammoth must filter its wider Pacific Northwest roster to Portland");
-assert.match(mammoth.nextStep,/cross-deduplicate/,"Already-connected venues must not be duplicated");
+assert.match(mammoth.nextStep,/non-Portland events/,"Mammoth importer must reject all outside-of-Portland tour stops");
+assert.match(mammoth.nextStep,/keep Hawthorne main, Roseland/,"Existing first-party venue feeds must remain un-duplicated");
 const mammothAdapter=canonical.sources.find(s=>s.id==="mammoth-nw");
 assert(mammothAdapter?.status==="pilot-enabled"&&mammothAdapter.adapter==="mammoth-original-promoter",
   "Mammoth importer is activated only after original live room/date verification");
