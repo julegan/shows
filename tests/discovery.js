@@ -48,6 +48,55 @@ assert.equal(pair.skipped.length,1);
 const sameDay=reconcile([{...e,id:"existing",title:"Different show",url:"https://www.nofunportland.com/events/else"}],[candidate]);
 assert.equal(sameDay.accepted.length,0);
 assert.equal(sameDay.held.length,1);
+// Different original first-party permalinks can establish separate same-day
+// events without requiring any genre classification.
+const officialEarly={...e,id:"dantes-official-early",title:"Iron Forest with guests",
+ venue:"Dante's",startsAt:"2026-11-07T18:00:00-08:00",startTimeKind:"listed",
+ url:"https://www.danteslive.com/tm-event/iron-forest-with-guests/",
+ discovery:{sourceId:"dantes"}};
+const officialLate={...officialEarly,id:"dantes-official-late",title:"Static Press Noise Night",
+ startsAt:"2026-11-07T21:00:00-08:00",
+ url:"https://www.danteslive.com/tm-event/static-press-noise-night/"};
+const separateDantes=reconcile([officialEarly],[{event:officialLate}]);
+assert.equal(separateDantes.accepted.length,1,"Two distinct source-linked bills at different times reach editorial review");
+assert.equal(separateDantes.held.length,0);
+assert(separateDantes.accepted[0].tags.includes("Separate same-day source listing; review bill and room"));
+const renamed={...officialLate,id:"dantes-renamed",title:"Iron Forest, special guests",
+ url:officialEarly.url};
+const originalIdentity=reconcile([officialEarly],[{event:renamed}]);
+assert.equal(originalIdentity.skipped.length,1,"Reworded original event URL is already represented");
+assert.match(originalIdentity.skipped[0].skip,/same original event permalink/);
+assert.equal(originalIdentity.held.length,0);
+const similarHeadliner={...officialLate,id:"dantes-similar-headliner",title:"Iron Forest w Special Guest"};
+assert.equal(reconcile([officialEarly],[{event:similarHeadliner}]).held.length,1,
+ "Different original URL but substantially same bill without a separate session stays in review");
+const nearTime={...officialLate,id:"dantes-near",startsAt:"2026-11-07T18:45:00-08:00"};
+assert.equal(reconcile([officialEarly],[{event:nearTime}]).held.length,1,
+ "Near times might be doors/show or competing room listings");
+const unsafeLink={...officialLate,id:"dantes-unsafe",url:"https://example.invalid/tm-event/fake-show/"};
+assert.equal(reconcile([officialEarly],[{event:unsafeLink}]).held.length,1,
+ "Arbitrary domains do not establish independently ticketed shows");
+const sharedCalendar={...officialEarly,url:"https://www.danteslive.com/"};
+assert.equal(reconcile([sharedCalendar],[{event:officialLate}]).held.length,1,
+ "Generic venue homepage does not provide a unique competing event ID");
+const revEarly={...officialEarly,id:"revolution-early",title:"Ron Funches",
+ venue:"Revolution Hall",startsAt:"2026-11-15T19:00:00-08:00",url:"https://www.etix.com/ticket/p/46185869/ron-funches-portland-revolution-hall",
+ discovery:{sourceId:"revolution-hall"}};
+const revLate={...revEarly,id:"revolution-late",title:"Ron Funches (Late Show)",
+ startsAt:"2026-11-15T22:00:00-08:00",
+ url:"https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-revolution-hall"};
+assert.equal(reconcile([revEarly],[{event:revLate}]).accepted.length,1,
+ "Distinct original Etix event IDs and an explicitly late performance deserve review");
+const sameTitleOtherTicket={...revLate,title:"Ron Funches"};
+assert.equal(reconcile([revEarly],[{event:sameTitleOtherTicket}]).accepted.length,1,
+ "Separately timed Etix show IDs at the same verified room are not silently removed as title duplicates");
+const sameTitleNear={...sameTitleOtherTicket,startsAt:"2026-11-15T19:30:00-08:00"};
+const nearCollision=reconcile([revEarly],[{event:sameTitleNear}]);
+assert.equal(nearCollision.skipped.length,0,"Different official show IDs are not silently skipped on matching titles");
+assert.equal(nearCollision.held.length,1,"Near-time same-headliner shows still require manual comparison");
+const wrongRoomTicket={...revLate,url:"https://www.etix.com/ticket/p/95442431/ron-funches-late-show-portland-show-bar-at-revolution-hall"};
+assert.equal(reconcile([revEarly],[{event:wrongRoomTicket}]).held.length,1,
+ "Distinct Show Bar tickets cannot be silently attributed to the main hall");
 const holoceneEarly={...e,id:"holocene-early",title:"Shanghai Qiutian with Dabda",
   venue:"Holocene",startsAt:"2026-11-06T18:00:00-08:00",
   url:"https://www.holocene.org/event/shanghai-qiutian-with-dabda/holocene/portland/",
