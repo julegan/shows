@@ -58,14 +58,44 @@
     <p class="preview-summary" id="summary" role="status" aria-live="polite"></p>
     <section id="results" aria-label="Event listings"></section>
     <button type="button" id="showMore" class="preview-more" hidden>Show more events ↓</button>
+    <section class="shows-feedback-invite" id="feedbackInvite" aria-labelledby="feedbackInviteTitle" hidden>
+      <div><h2 id="feedbackInviteTitle">Help make SHOWS better.</h2><p>Spot an incorrect listing, missing show or bug? Have an idea? Let me know.</p></div>
+      <button type="button" data-feedback-launch>Send feedback ↗</button>
+    </section>
     <section id="about" class="preview-note" aria-label="About SHOWS">
       <p><strong>SHOWS is a music-first calendar for Portland's independent scenes.</strong> The default list includes all approved upcoming events from our covered venues and sources, even when an event isn't music or its style is unknown. Categories help with browsing, not admission. Routine farmers markets and venue-closure notices are excluded; this is not a comprehensive city events feed. Coverage is evolving, and inclusion is not endorsement.</p>
       <p>Dates and times reflect published organizer details and can change. Open the source listing to confirm before attending. Times use Portland's Pacific Time zone; unknown start or end times are identified in calendar exports. There are no accounts or behavioral tracking. Saved events stay in this browser.</p>
     </section>
   </main>
   <footer class="footer"><div class="frame footer-inner"><span>SHOWS / PORTLAND</span><span>Curated discovery. Original organizers first.</span><a href="https://github.com/julegan/shows" target="_blank" rel="noopener noreferrer">Source code ↗</a></div></footer>
+  <dialog id="feedbackDialog" class="shows-feedback-dialog" aria-labelledby="feedbackTitle">
+    <div class="shows-feedback-dialog-head">
+      <h2 id="feedbackTitle">Send SHOWS feedback</h2>
+      <button id="feedbackClose" type="button" aria-label="Close feedback form">×</button>
+    </div>
+    <p class="shows-feedback-intro">Found a mistake or have an idea? I'd love to hear it.</p>
+    <form id="feedbackForm">
+      <label for="feedbackCategory">What's this about?</label>
+      <select id="feedbackCategory" name="category" required>
+        <option value="idea">An idea or suggestion</option>
+        <option value="correction">An incorrect or changed listing</option>
+        <option value="missing-event">A missing show or event</option>
+        <option value="bug">Something isn't working</option>
+      </select>
+      <label for="feedbackDetails">Tell me more</label>
+      <textarea id="feedbackDetails" name="details" rows="5" minlength="10" maxlength="2000" required placeholder="What happened? What would you like to see?"></textarea>
+      <label for="feedbackLink">Related event or source link (optional)</label>
+      <input type="url" id="feedbackLink" name="link" maxlength="500" placeholder="https://">
+      <p class="shows-feedback-privacy">No account needed. Feedback creates a <strong>public GitHub issue</strong> for review, so please don't include personal information. Suggestions do not automatically change listings.</p>
+      <div id="feedbackVerification" aria-label="Spam protection"></div>
+      <button id="feedbackSubmit" type="submit">Send feedback</button>
+    </form>
+    <p id="feedbackStatus" role="status" aria-live="polite"></p>
+    <button id="feedbackDone" type="button" hidden>Done</button>
+  </dialog>
   <dialog id="eventDialog" class="preview-dialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
   <script src="./events.js"></script>
   <script src="./app.js"></script>
+  <script src="./feedback.js"></script>
 </body>
 </html>
