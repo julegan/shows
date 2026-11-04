@@ -96,7 +96,7 @@ for(const style of ["Metal","Punk","Hardcore"]){
       return count<8;
     }).map(e=>e.id).sort();
   assert.deepEqual(renderedIds(),expectedPlaceIds,"Places previews up to eight correctly filtered "+style+" shows per venue");
-  assert.equal(Number(el("summary").textContent.match(/^\\d+/)?.[0]),expected.length,
+  assert.equal(parseInt(el("summary").textContent,10),expected.length,
     "Places summary counts all matching "+style+" shows, including overflow");
   for (const [venue,count] of perVenue) {
     if (count>8) assert(el("results").innerHTML.includes("And "+(count-8)+" more dates."),
