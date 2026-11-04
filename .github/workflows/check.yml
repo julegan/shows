@@ -53,6 +53,9 @@ jobs:
         run: |
           node --check scripts/treetix-importer.js
           node tests/treetix-importer.js
+          node --check scripts/mammoth-importer.js
+          node tests/mammoth-importer.js
+          node --check scripts/probe-mammoth.js
 
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
