@@ -38,15 +38,36 @@ function records(html){
  if(!Array.isArray(value)||value.length<1||value.length>6000)throw Error("Unexpected original calendar event count: "+value.length);
  return value;
 }
+function verifiedCalendarDay(value){
+ const raw=String(value||"");
+ const date=/^20\d\d-\d\d-\d\d$/.test(raw)?raw:
+   (startISO(raw)?raw.slice(0,10):null);
+ if(!date)return null;
+ const d=new Date(date+"T12:00:00Z");
+ return Number.isFinite(d.valueOf())&&d.toISOString().slice(0,10)===date?date:null;
+}
 function parseItem(x){
  if(!x||typeof x!=="object")return {hold:"Invalid source event"};
  const title=htmlDecode(x.title).replace(/<[^>]*>/g," ").slice(0,280);
  if(!title)return {hold:"Missing source event title"};
  if(/\b(?:CLOSED|postponed|cancelled|canceled|rescheduled|moved to)\b/i.test(title))return {hold:"Source lists closure or schedule change",title};
- if(x.start_timezone!=="America/Los_Angeles"||x.allDay===true||x.allDay==="true"||x.allDay==="on")return {hold:"Event lacks independently verified timed Portland start",title};
- const startDate=startISO(x.start);
+ if(x.start_timezone!=="America/Los_Angeles")return {hold:"Event lacks independently verified Portland source timezone",title};
  const url=sourceUrl(x.url,x.google_event_id);
- if(!startDate||!url)return {hold:"Invalid source timezone, date or public Google Calendar permalink",title};
+ if(!url)return {hold:"Invalid original public Google Calendar permalink",title};
+ const allDay=x.allDay===true||x.allDay==="true"||x.allDay==="on";
+ if(allDay){
+  // The original calendar supplies a verified calendar DATE, but not a showtime.
+  // Stage a source-attributed date-only candidate rather than hiding an event.
+  // Midnight is only a sorting anchor downstream, never a published showtime.
+  const day=verifiedCalendarDay(x.start),end=x.end?verifiedCalendarDay(x.end):null;
+  if(!day||(x.end&&(!end||end<day)))return {hold:"Invalid all-day source date or end date",title,url};
+  return {title,fullUrl:url,google_event_id:x.google_event_id,dateOnly:day,sourceDateOnly:true,
+   venue:"Starday Tavern",sourceVerifiedMusic:false,
+   timeEvidence:"Original Starday Google Calendar confirms the event date only; doors and performance time unconfirmed",
+   description:"Original venue all-day calendar entry; midnight is a sorting anchor, not a showtime. Verify event identity, venue, cancellation status and other details before approval."};
+ }
+ const startDate=startISO(x.start);
+ if(!startDate)return {hold:"Invalid source timezone or start date",title,url};
  if(x.end&&(!startISO(x.end)||Date.parse(x.end)<Date.parse(startDate)))return {hold:"Invalid source event end time",title,url};
  return {title,fullUrl:url,google_event_id:x.google_event_id,startDate,venue:"Starday Tavern",
   sourceVerifiedMusic:false,
