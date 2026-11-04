@@ -95,14 +95,14 @@ for(const style of ["Metal","Punk","Hardcore"]){
   // More source discoveries must not break validation simply because a venue
   // crosses that display limit. Still check both venue caps and style correctness.
   const perVenue = new Map();
-  const expectedPlaceIds = events
+  const expectedPlaceIds = Array.from(events
     .filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style))
     .sort((a,b)=>Date.parse(a.startsAt)-Date.parse(b.startsAt))
     .filter(e=>{
       const count=perVenue.get(e.venue)||0;
       perVenue.set(e.venue,count+1);
       return count<8;
-    }).map(e=>e.id).sort();
+    }), e=>e.id).sort();
   assert.deepEqual(renderedIds(),expectedPlaceIds,"Places previews up to eight correctly filtered "+style+" shows per venue");
   assert.equal(parseInt(el("summary").textContent,10),expected.length,
     "Places summary counts all matching "+style+" shows, including overflow");
