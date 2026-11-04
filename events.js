@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-03",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1042,
-  "addedOccurrences": 1,
-  "batchId": "auto-discovery-2026-11-03-30",
+  "totalOccurrences": 1045,
+  "addedOccurrences": 3,
+  "batchId": "2026-11-03-primary-venue-gap-review",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -108,11 +108,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-03-29",
       "addedOccurrences": 9
+    },
+    {
+      "batchId": "auto-discovery-2026-11-03-30",
+      "addedOccurrences": 1
     }
   ],
-  "newLiveBills": 0,
+  "newLiveBills": 3,
   "newDjNights": 0,
-  "musicOccurrences": 321
+  "musicOccurrences": 324
 };
 window.SHOWS_EVENTS = [
   {
@@ -51341,5 +51345,167 @@ window.SHOWS_EVENTS = [
       "sourceId": "high-water",
       "method": "primary-source-collection"
     }
+  },
+  {
+    "id": "high-limit-room-oso-oso-liquid-mike-bugsy-2026-11-11",
+    "title": "Oso Oso with Liquid Mike & Bugsy",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Original booking-agency listing",
+      "Time needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startsAt": "2026-11-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "See organizer for this event's age policy",
+    "description": "Oso Oso, Liquid Mike and Bugsy at High Limit Room. The booking agency lists Wednesday November 11 at 7:00 PM; it does not distinguish doors from performance start. Venue schedules and ticket status should be rechecked before attending.",
+    "source": "MN2S · Oso Oso booking agency",
+    "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "MN2S · Oso Oso booking agency",
+        "url": "https://mn2s.com/booking-agency/live-roster/?pg=2",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Artist-associated concert listing",
+        "url": "https://www.bandsintown.com/e/1040006596-oso-oso-at-high-limit-room?came_from=900",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room venue info",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review",
+    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
+  },
+  {
+    "id": "high-limit-room-ok-goodnight-snooze-eve-2026-11-14",
+    "title": "Ok Goodnight with Snooze & Eve",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Official artist tour",
+      "Start time unconfirmed"
+    ],
+    "musicStyles": [],
+    "eventFormat": "live",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-11-14T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "See organizer for this event's age policy",
+    "description": "Ok Goodnight's official 2026 North American tour lists November 14 in Portland at High Limit Room with Snooze and Eve. Date confirmed, but the artist's official tour page does not publish a start or doors time. The midnight value is a calendar date-only sorting anchor, not an event time.",
+    "source": "Ok Goodnight · official tour",
+    "url": "https://okgoodnight.squarespace.com/tour",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original first-party show date/venue listing; time semantics labeled and source linked",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Ok Goodnight · official tour",
+        "url": "https://okgoodnight.squarespace.com/tour",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "High Limit Room venue info",
+        "url": "https://highlimitroompdx.com/info/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review",
+    "accessibility": "The official venue states the event space is upstairs without a lift. Contact the venue for accommodation needs."
+  },
+  {
+    "id": "the-coffin-club-ayria-die-robot-2026-11-24",
+    "title": "Ayria with Die Robot",
+    "subtitle": "Original artist/venue listing · editorial review",
+    "category": "Music",
+    "tags": [
+      "Live music",
+      "Industrial rock",
+      "Live music",
+      "21+",
+      "Time source discrepancy"
+    ],
+    "musicStyles": [
+      "Industrial & EBM"
+    ],
+    "musicStyleEvidence": {
+      "basis": "Supporting artist Die Robot's own biography describes industrial rock and electronic music; this identifies the relevant mixed bill, not a verified genre for the headliner.",
+      "urls": [
+        "https://dierobot.net/bio"
+      ]
+    },
+    "eventFormat": "live",
+    "startsAt": "2026-11-24T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Coffin Club",
+    "address": "421 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "21+",
+    "description": "Official VenuePilot ticket page lists Ayria with Die Robot on November 24 at 8:30 PM (both doors and show fields display 8:30 PM). Die Robot's own performance listing gives 8:00 PM. The discrepancy is unresolved; confirm with the venue before travel.",
+    "source": "The Coffin Club · official VenuePilot ticket",
+    "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-03",
+    "verificationMethod": "Original VenuePilot ticket + direct supporting artist event listing; listed time conflicts with artist",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Coffin Club · official VenuePilot ticket",
+        "url": "https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70",
+        "kind": "official-ticketing",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Die Robot · artist event",
+        "url": "https://dierobot.net/event/6702095/776456950/ayria-die-robot-at-the-coffin",
+        "kind": "artist",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      },
+      {
+        "name": "Die Robot · artist biography",
+        "url": "https://dierobot.net/bio",
+        "kind": "supporting-reference",
+        "checkedAt": "2026-11-03",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "2026-11-03-primary-venue-gap-review"
   }
 ];
