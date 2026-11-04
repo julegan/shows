@@ -10,6 +10,15 @@ The importer checks each matching original detail page and stages source-backed 
 
 Use **Actions → Probe original Mammoth Northwest calendar (read-only)** for on-demand source health testing if the promoter changes its HTML, and inspect its daily refresh source-hold report for regressions.
 
+## Source-backed changes to already approved shows
+
+The existing collector compares future approved listings with **uniquely matching, event-specific original URLs** fetched from the venue/promoter again. If the original page now explicitly indicates cancellation, rescheduling, a changed date, a changed venue or a different **listed** show time, the action now writes a dedicated `discovery/published-change-review.md` evidence report and proposes or refreshes the **one rolling SHOWS review PR**, **even when no new events or flyer art were discovered**.
+
+This is a targeted editorial alert, *not* permission to delete, move or republish an event. The report links back to the official event source for a reviewer to check and then correct an existing record separately. A missing record in a short venue feed is **never** automatically treated as a cancellation. Reused/shared URLs, duplicate source identities and inconsistent time semantics remain ambiguous; time values marked Doors are not silently compared to show clocks.
+
+Every successful daily source scan also saves the status report in its downloadable review artifact and includes a short status snapshot in the Actions run summary. If there are no actionable original-source changes and no event data changes, it does not create needless status-only PRs. A source failure remains visible as a source-health failure, never proof of canceled events.
+
+
 ## Turn! Turn! Turn! — official OpenDate calendar research
 
 The [official venue entertainment page](https://turnturnturnpdx.com/entertainment/) embeds its original [OpenDate show roster](https://app.opendate.io/v/turn-turn-turn-3116?layout=iframe). Read-only GitHub runner probe [40170844776](https://github.com/julegan/shows/actions/runs/40170844776) confirmed HTTPS access to the official venue and provider, event-specific ticketing URLs, separately labeled **doors** and **show** times, original per-event images, and source event schema. This provider is referenced from the actual venue site, not an unverified listing aggregator.
