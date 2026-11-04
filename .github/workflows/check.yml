@@ -31,6 +31,8 @@ jobs:
           node tests/workflow-review-queue.js
           node --check scripts/scene-source-scout.js
           node tests/scene-source-scout.js
+          node tests/source-change-review.js
+          node tests/published-change-queue.js
           node tests/discovery.js
           node tests/kenton-importer.js
           node tests/turnturnturn-opendate.js

@@ -531,6 +531,11 @@ async function run(opts={}){
  }
  if(errors.length===sources.length)throw Error("Every source failed; no silent success");
  const changes=detectPublishedChanges(parsed.events,found,{today:localDay(now)});
+ // An already-published bill can change even when there are no *new* bills.
+ // Give changes their own review document so a routine no-new-events run
+ // can still produce an editorial PR rather than silently discarding evidence.
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/published-change-review.md"),renderChangeReview(changes));
+ console.log("PUBLISHED EVENT CHANGE WATCH: "+changes.changes.length+" unique source-backed changes; "+changes.ambiguous.length+" ambiguous event URL identities; no published data updated automatically.");
  const result=reconcile(parsed.events,found);
  // Compare the source's valid future candidates to the *approved* dataset;
  // never count newly proposed bills as published coverage.
