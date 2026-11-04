@@ -42,7 +42,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | startswith("automation/refresh-") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
+          existing="$(gh pr list --state open --json headRefName --jq '[.[] | select(.headRefName | test("^automation/refresh-[0-9]{8}-[0-9]+$") or startswith("automation/discovery-") or startswith("automation/artwork-"))] | length')"
           if [ "$existing" -gt 0 ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "Canonical review PR is pending: collect and validate source/venue/artwork evidence as usual, but do not open a competing PR. Reports remain attached to this workflow run." >> "$GITHUB_STEP_SUMMARY"
