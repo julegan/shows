@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Curated entry points for discovering NEW small organizers and events, not enabled event importers. These are research-only pages. A returned link is not confirmation of an event, location, schedule, or image rights.",
+  "updatedOn": "2026-11-03",
+  "rules": [
+    "Prefer original independent organizers, artist/vendor touring pages and community-run marketplaces, with a few explicitly secondary local indexes for discovering unknown organizers.",
+    "Never infer an event year from the date a webpage was posted, or assume a seasonal market recurrence. Vendor listings are leads, not independently verified event calendars.",
+    "Inspect actual geographic venue/location for every proposed event; out-of-region oddities and goth markets are common search false positives.",
+    "Don't automatically fetch found outbound links or private/blocked social profiles, mirror flyers, or auto-publish event data.",
+    "Focus on punk, hardcore, metal, goth, weird/occult/oddities markets, queer/DIY makers, zines, record fairs, vintage pop-ups and independent arts; do not crawl all routine holiday bazaars."
+  ],
+  "seeds": [
+    {
+      "id": "plus-plus-bizarre-bazaar",
+      "label": "PAM CUT: Plus Plus Bizarre Bazaar",
+      "url": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "kind": "original-event",
+      "focus": "Indie zines, media art, comics, games and independent physical-media sellers; original Nov 21, 2026 event page",
+      "relevance": "high"
+    },
+    {
+      "id": "nopo-creatives",
+      "label": "NoPo Creatives Arts Market",
+      "url": "https://nopocreatives.com/",
+      "kind": "original-organizer",
+      "focus": "Small North Portland community arts market, queer/inclusive makers, live music; original Nov 21–22 announcement",
+      "relevance": "high"
+    },
+    {
+      "id": "pdx-moon-market",
+      "label": "PDX Moon Market",
+      "url": "https://www.pdxmoonmarket.com/",
+      "kind": "original-organizer",
+      "focus": "Independent PDX makers and arts; November and December seasonal market notices; verify year",
+      "relevance": "high"
+    },
+    {
+      "id": "portland-flea",
+      "label": "Portland Flea",
+      "url": "https://www.pdxflea.com/",
+      "kind": "original-organizer",
+      "focus": "Curated vintage, records, art and November holiday flea; venue/date must be verified",
+      "relevance": "high"
+    },
+    {
+      "id": "portland-indie-art-book-fair",
+      "label": "Portland Indie Book & Art Fair vendor directory",
+      "url": "https://www.portlandindie.com/2026",
+      "kind": "original-vendor-directory",
+      "focus": "Small press, queer and underground zines and indie publishing vendor/organizer cross-links; directory is historical until future date confirmed",
+      "relevance": "high"
+    },
+    {
+      "id": "woodland-shrine-vendor-tour",
+      "label": "Woodland Shrine maker event appearances",
+      "url": "https://www.woodlandshrine.com/2026-events-and-where-you-can-find-our-work",
+      "kind": "original-vendor",
+      "focus": "Oddities and DIY gothic maker's original venue/market itinerary; includes Seattle and Portland so geography must be checked",
+      "relevance": "high"
+    },
+    {
+      "id": "pdx-events-holiday-index",
+      "label": "Portland holiday markets index",
+      "url": "https://www.pdx-events.com/holiday-markets/",
+      "kind": "secondary-discovery",
+      "focus": "Seasonal event index for finding organizer-owned niche market links; not original event evidence",
+      "relevance": "selective"
+    },
+    {
+      "id": "portland-monthly-holiday-guide",
+      "label": "Portland Monthly's holiday market guide",
+      "url": "https://www.pdxmonthly.com/style-and-shopping/gift-guides/portland-holiday-markets-pop-up-shops/",
+      "kind": "secondary-discovery",
+      "focus": "Reported small, nerdy, vintage and alternative markets; follow to original source",
+      "relevance": "selective"
+    },
+    {
+      "id": "portland-bazaar",
+      "label": "Portland Bazaar local maker event calendar",
+      "url": "https://www.portlandbazaar.com/portlandbazaars",
+      "kind": "original-organizer",
+      "focus": "Holiday makers and indie vendors; lower individual-event priority than unusual niche markets",
+      "relevance": "selective"
+    }
+  ]
+}
