@@ -41,7 +41,7 @@ assert.equal(s.status(show(id1,{imageUrl:"https://evil.example/flyer.png"}),now)
 assert.match(s.report(found,null),/0 automatically approved/);
 assert.match(s.report(found,null),/reuse rights unverified/i);
 assert.match(s.report(found,null),/Original source flyer for manual review/);
-assert.match(s.report(found,null),/res\\.cloudinary\\.com/);
+assert.match(s.report(found,null),/res\.cloudinary\.com/);
 const linked=s.matchBlackWaterFlyers(found.records,[
  {id:"fixture-blackwater-show",title:"Habak / Malakili / Frenzy",venue:"Black Water",startsAt:"2026-11-07T00:00:00-08:00"},
  {id:"wrong-venue",title:"Habak / Malakili",venue:"Twilight Cafe and Bar",startsAt:"2026-11-07T20:00:00-08:00"}
