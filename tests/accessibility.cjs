@@ -125,7 +125,7 @@ async function showsViews(browser,viewport){
   }
   await page.locator("#nextMonth").click();
   assert.match(await page.locator("#monthPeriod").innerText(),/November|December|January|February|March|April|May|June|July|August|September|October/);
-  const day=page.locator(".shows-month-date").first();
+  const day=page.locator(".shows-month-day").first();
   const selected=await day.getAttribute("data-day");
   await day.click();
   assert.equal(await page.locator("#fromDate").inputValue(),selected,"Selecting month day opens the date-first list");
