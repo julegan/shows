@@ -55,8 +55,8 @@ function record(x){
 function parse(payload){
  if(!payload||typeof payload!=="object"||!Array.isArray(payload.upcoming)||!payload.upcoming.length||payload.upcoming.length>200)
   throw Error("Original Alberta Street Pub upcoming venue calendar unavailable");
- if(payload.collection?.fullUrl!=="/music"||payload.collection?.title!=="Live Events")
-  throw Error("Unexpected Alberta Street Pub collection identity");
+ if(payload.collection?.fullUrl!=="/music"||payload.collection?.urlId!=="music")
+  throw Error("Unexpected Alberta Street Pub collection identity "+JSON.stringify({fullUrl:payload.collection?.fullUrl,urlId:payload.collection?.urlId,title:payload.collection?.title}));
  const seen=new Set(),records=[];
  for(const item of payload.upcoming){
   const parsed=record(item);
