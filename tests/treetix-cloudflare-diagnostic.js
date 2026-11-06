@@ -4,7 +4,6 @@ const fs=require("node:fs");
 const {ENDPOINT,UA}=require("../scripts/diagnose-treetix-cloudflare");
 const original=fs.readFileSync("scripts/probe-treetix-api.js","utf8");
 const script=fs.readFileSync("scripts/diagnose-treetix-cloudflare.js","utf8");
-const workflow=fs.readFileSync(".github/workflows/diagnose-treetix-cloudflare.yml","utf8");
 assert.equal(ENDPOINT,"https://www.treetix.com/api/events.json");
 assert.equal(UA,"SHOWS-public-event-feed-probe/1.0");
 assert(original.includes("SHOWS-public-event-feed-probe/1.0"),"Must match the exact original HTTP User-Agent");
@@ -13,6 +12,4 @@ assert(script.includes("api.ipify.org")&&script.includes("checkip.amazonaws.com"
 assert(script.includes('res.headers.get("cf-ray")')&&script.includes('res.headers.get("cf-mitigated")'),"Record exact challenge/request id");
 assert(!script.includes("res.json()"),"Do not parse or store sensitive event feed data");
 assert(!/\b(?:retry|proxy|bypass|token|cookie)\s*\(/i.test(script),"No retry, private access or challenge bypass");
-assert(workflow.includes("workflow_dispatch:"),"Support can rerun diagnostics with approval");
-assert(!/^\s+push:/m.test(workflow),"Manual-only after the initial proof");
-console.log("PASS — TreeTix challenge diagnostic remains public GET, original UA, two IP observers, manual-only and nonpublishing");
+console.log("PASS — TreeTix challenge diagnostic remains public GET, original UA, two IP observers, nonpublishing helper without a redundant manual workflow");
