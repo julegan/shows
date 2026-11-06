@@ -52,7 +52,7 @@ jobs:
           node tests/promoter-backlog.js
           node tests/calendar-horizon.js
 
-      - name: Verify manual-only TreeTix support diagnostics match blocked request
+      - name: Validate retained TreeTix request diagnostic helper
         run: |
           node --check scripts/diagnose-treetix-cloudflare.js
           node tests/treetix-cloudflare-diagnostic.js
