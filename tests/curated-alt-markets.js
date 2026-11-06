@@ -11,8 +11,11 @@ assert.equal(expected.length,9);
 assert.equal(new Set(expected).size,expected.length);
 assert.equal(e.filter(x=>x.addedIn===proposed.batchId).length,9);
 assert.equal(m.totalOccurrences,e.length);
-assert.equal(m.batchId,proposed.batchId);
-assert.equal(m.addedOccurrences,9);
+// An automated refresh replaces the latest batch metadata as it grows the feed.
+// The curated batch must remain in the audit history, not necessarily be latest.
+const batches=[...(m.previousBatches||[]),{batchId:m.batchId,addedOccurrences:m.addedOccurrences}];
+assert(batches.some(x=>x.batchId===proposed.batchId&&x.addedOccurrences===9),
+ "Curated batch and its nine approved occurrences must survive later discovery runs");
 assert(m.previousBatches.some(x=>x.batchId==="auto-discovery-2026-11-03-39"&&x.addedOccurrences===5),"Previously approved Mammoth event batch must be retained");
 const dated=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
 for(const id of expected){
