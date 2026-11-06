@@ -11,7 +11,20 @@ const STYLES=[
  {label:"Metal",rx:/\b(?:metal|metalcore|deathcore|doom metal|black metal|thrash metal)\b/i},
  {label:"Punk",rx:/\bpunk\b/i},
  {label:"Noise & experimental",rx:/\b(?:noise\s+(?:rock|music|show)|experimental\s+(?:music|sound|rock))\b/i},
- {label:"Rock",rx:/\b(?:rock\s+(?:music|show|concert|band|night)|rock[ -]?(?:n[ -]?)?roll)\b/i}
+ {label:"Rock",rx:/\b(?:rock\s+(?:music|show|concert|band|night)|rock[ -]?(?:n[ -]?)?roll)\b/i},
+ {label:"Jazz",rx:/\b(?:jazz|bebop|hard bop|free jazz|jazz fusion|swing music)\b/i},
+ {label:"Blues",rx:/\b(?:blues(?:\s+(?:music|band|show))?|delta blues)\b/i},
+ {label:"Hip-hop & rap",rx:/\b(?:hip[\s-]?hop|rap(?:\s+(?:music|show|concert|artist|night))?|emcee)\b/i},
+ {label:"R&B & soul",rx:/\b(?:r\s*&\s*b|rhythm\s+(?:and|&)\s+blues|neo[\s-]?soul|soul(?:\s+(?:music|night|band|show|revu[e]e))?)\b/i},
+ {label:"Funk & disco",rx:/\b(?:funk|funky|disco|boogie)\b/i},
+ {label:"Folk & bluegrass",rx:/\b(?:folk(?:\s+music)?|bluegrass|old[\s-]?time\s+music|acoustic\s+(?:music|show|duo))\b/i},
+ {label:"Country & Americana",rx:/\b(?:country\s+(?:music|show|band)|americana|alt[\s-]?country|honky[\s-]?tonk)\b/i},
+ {label:"Electronic & dance",rx:/\b(?:electronica|electronic\s+(?:music|show|set)|techno|trance|drum\s*(?:and|&)\s*bass|dnb|jungle\s+music|house\s+(?:music|DJ|night)|breakbeat|ambient\s+music)\b/i},
+ {label:"Reggae & ska",rx:/\b(?:reggae|ska|dub\s+music|dancehall)\b/i},
+ {label:"Global & traditional",rx:/\b(?:afrobeat|afro[\s-]?cuban|cumbia|salsa\s+(?:music|band)|balkan\s+music|traditional\s+(?:music|folk)|world\s+music)\b/i},
+ {label:"Classical & chamber",rx:/\b(?:classical\s+music|chamber\s+music|string\s+quartet|symphony|symphonic)\b/i},
+ {label:"Indie & alternative",rx:/\b(?:indie\s+(?:music|rock|pop|band)|alternative\s+(?:music|rock)|shoegaze|dream\s+pop|art\s+pop)\b/i},
+ {label:"Pop",rx:/\b(?:pop\s+(?:music|show|concert)|synth[\s-]?pop|hyperpop|indie\s+pop|art\s+pop|dream\s+pop)\b/i}
 ];
 const NON_MUSIC=/\b(?:trivia|karaoke|open[\s-]?mic|comedy|stand[\s-]?up|bingo|quiz|brunch|screening|movie|film|happy hour|tournament|board games?|game night)\b/i;
 const EVENT_TYPES={

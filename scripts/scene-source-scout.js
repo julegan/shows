@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 "use strict";
-/* Portland underground/DIY scene source SCOUT, not an event importer.
+/* Portland independent MUSIC and DIY scene source SCOUT, not an event importer.
  * Only curated HTTPS seed pages are fetched. Discovered links are NOT fetched,
  * claimed to be events, or used to copy images or infer event dates.
  */
 const fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,"..");
 const seeds=require("../discovery/scene-scout-seeds.json");
-const EVENT_RX=/\b(?:event|market|bazaar|fair|festival|fest|show|pop[\s-]?up|holiday|calendar|vendors?|exhibition|makers?)\b/i;
+const EVENT_RX=/\b(?:event|market|bazaar|fair|festival|fest|show|concert|gig|tickets?|live[\s-]?music|pop[\s-]?up|holiday|calendar|vendors?|exhibition|makers?)\b/i;
 const SCENE_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|makers?|arts?|comics?|nerdy?|geeks?|book(?:s)?|media)\b/i;
 const STRONG_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|comics?|nerdy?|geeks?|book(?:s)?|media)\b/i;
+const MUSIC_RX=/\b(?:jazz|blues|hip[\s-]?hop|r&b|soul|neo[\s-]?soul|funk|disco|afrobeat|folk|acoustic|bluegrass|americana|country|reggae|ska|world[\s-]?music|electronic|techno|ambient|house[\s-]?music|pop|rock|concert|gig|live[\s-]?music|band|artist|tickets?)\b/i;
 const FALSE_URL=/\.(?:jpg|jpeg|png|webp|gif|svg|pdf|woff|css|js|mp3|mp4|ics)(?:$|[?#])/i;
 const TRACKING=/^(?:utm_.+|fbclid|gclid|mc_cid|mc_eid)$/i;
 const LIMIT=2_600_000,MAX_ANCHORS=1800,MAX_PER_SEED=20,MAX_NEW=100;
@@ -46,7 +47,7 @@ function inspect(seed,html,knownUrls=new Set()){
  // The scouting PR merely records its original URL; year/time still need review.
  if(seed.kind.startsWith("original-")&&seedUrl&&!knownUrls.has(seedUrl))
   results.set(seedUrl,{url:seedUrl,titleHint:seed.label,source:seed.id,from:seed.url,
-   type:seed.kind==="original-event"?"original-event-page":"original-organizer-or-vendor-source",
+   type:seed.kind==="original-event"?"original-event-page":seed.kind==="original-venue"?"original-venue-calendar":"original-organizer-or-vendor-source",
    confidence:"research-only",why:short(seed.focus)});
  for(const a of anchors(html)){
   const url=canon(a.rawUrl,seed.url);
@@ -59,19 +60,22 @@ function inspect(seed,html,knownUrls=new Set()){
   const hint=(title+" "+parsed.pathname.replace(/[-_/]/g," ")).slice(0,500);
   const e=EVENT_RX.test(hint),scene=STRONG_RX.test(hint);
   const near=SCENE_RX.test(a.context);
+  const music=MUSIC_RX.test(hint),nearMusic=MUSIC_RX.test(a.context);
   const vendor=seed.kind==="original-vendor-directory"||seed.kind==="original-vendor";
   const curated=seed.kind==="original-organizer"||seed.kind==="original-event";
+  const venue=seed.kind==="original-venue";
   const directory=seed.kind==="secondary-discovery";
   // Secondary indexes contain ordinary shopping/holiday advertisements:
   // restrict them to independently scene-signaling anchor/URL text.
   if(directory&&!(e&&scene))continue;
   if(vendor&&!(external&&near&&(scene||/\b(?:website|organizer|publisher|press|artist)\b/i.test(a.label))))continue;
-  if(curated&&!(e&&(scene||near)||external&&scene))continue;
-  if(!(directory||vendor||curated))continue;
+  if(curated&&!(e&&(scene||near||music||nearMusic)||external&&(scene||music)))continue;
+  if(venue&&!(e||music||(external&&nearMusic)))continue;
+  if(!(directory||vendor||curated||venue))continue;
   if(/^(?:home|about|shop|contact|privacy|terms|menu|instagram|facebook|tiktok|subscribe|sign up|learn more)$/i.test(a.label)&&!scene&&!vendor)continue;
-  const rank=(scene?3:0)+(e?2:0)+(near?1:0)+(curated?1:0)+(vendor&&external&&near?2:0);
+  const rank=(scene?3:0)+(e?2:0)+(near?1:0)+(curated?1:0)+(vendor&&external&&near?2:0)+(music?3:0)+(venue&&nearMusic?2:0);
   if(rank<3)continue;
-  const type=e?"possible-event-or-market-link":"possible-organizer-source";
+  const type=e?"possible-event-or-market-link":venue?"possible-music-ticket-or-organizer-source":"possible-organizer-source";
   const row={url,titleHint:short(title),source:seed.id,from:seed.url,
    type,confidence:"research-only",why:short(a.context),rank};
   if(!results.has(url)||rank>results.get(url).rank)results.set(url,row);
@@ -112,14 +116,14 @@ async function retrieve(seed,request=fetch){
  return text;
 }
 function render({checked,failures,newLeads,allLeads,day}){
- const out=["# Portland DIY & alternative-market source scout — "+day,"",
+ const out=["# Portland music & independent culture source scout — "+day,"",
   "**Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.","",
-  "This scout reads a bounded, editorially selected mix of original organizer, original vendor and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.","",
+  "This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.","",
   "**"+checked.length+" source pages attempted; "+failures.length+" inaccessible/changed; "+newLeads.length+" newly discovered links; "+allLeads.length+" total recorded research leads.**","",
   "## Source health","",
   "| Page | Result | Candidate links |","| --- | --- | ---: |"];
  for(const s of checked)out.push("| "+short(s.label)+" | "+(s.error?"Error — "+short(s.error):"Read-only check succeeded")+" | "+s.count+" |");
- out.push("","## Newly surfaced unverified leads","",
+ out.push("","## Newly surfaced unverified music and culture leads","",
   "| Found at | Page or possible organizer | Type | Context |","| --- | --- | --- | --- |");
  if(!newLeads.length)out.push("| — | No new unverified URLs beyond previously recorded sources | — | — |");
  for(const x of newLeads.slice(0,65))
@@ -131,7 +135,7 @@ function render({checked,failures,newLeads,allLeads,day}){
  "- Distinguish one-time announcements and repeating market series; do not turn a posted date or a vendor application deadline into an event date.",
  "- Deduplicate against canonical SHOWS by exact event permalink, venue/date and identity. Keep multiple independent events when genuinely separate.",
  "- Don't scrape private Instagram, bypass blocks, mirror flyers without rights, or automatically enable new event source adapters.",
- "- Prioritize zines, independent music, DIY creators, oddities, gothic/queer markets and unusual holiday pop-ups; generic farmers markets and routine bazaars are not the goal.",
+ "- Prioritize actual concerts across genres, independent venues and organizers, music-specific posters, zines and unusual DIY markets. Generic farmers markets and routine bazaars are not the goal.",
  "");
  return out.join("\n")+"\n";
 }

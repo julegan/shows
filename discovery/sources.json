@@ -600,6 +600,66 @@
         "high-limit-room"
       ],
       "enabledReason": "Verified 2026-11-03 Pacific by live read-only GitHub Actions 41767633123: 6/6 valid dated, room-specific original Mammoth listings, 0 holds. Scope strictly two currently missing venue feeds; 39 Hawthorne main and 20 Roseland event pages intentionally not imported."
+    },
+    {
+      "id": "the-1905",
+      "name": "The 1905",
+      "venue": "The 1905",
+      "venueRegistryId": "the-1905",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://the1905.turntabletickets.com/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. First-party jazz ticket calendar linked by the venue. Separate early and late sets require distinct event identity and time; importer not yet validated."
+    },
+    {
+      "id": "jack-london-revue",
+      "name": "Jack London Revue",
+      "venue": "Jack London Revue",
+      "venueRegistryId": "jack-london-revue",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://www.jacklondonrevue.com/calendar/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. First-party calendar lists jazz, blues, soul and other shows with separately labeled doors/show times. Do not assume every calendar item is music."
+    },
+    {
+      "id": "the-goodfoot",
+      "name": "The Goodfoot",
+      "venue": "The Goodfoot",
+      "venueRegistryId": "the-goodfoot",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://thegoodfoot.com/music/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original music calendar includes funk, soul, jazz, DJs, global and other live music; also lists trivia and comedy. Keep format distinctions and individual original show links."
+    },
+    {
+      "id": "alberta-street-pub",
+      "name": "Alberta Street Pub",
+      "venue": "Alberta Street Pub",
+      "venueRegistryId": "alberta-street-pub",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://www.albertastreetpub.com/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original live-events calendar covers hip-hop showcases, jazz, independent artists and local concerts. The Thesis is a promoter/showcase, not a separate physical venue."
+    },
+    {
+      "id": "alberta-rose-theatre",
+      "name": "Alberta Rose Theatre",
+      "venue": "Alberta Rose Theatre",
+      "venueRegistryId": "alberta-rose-theatre",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://albertarosetheatre.com/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original calendar covers folk, Americana, blues, global and other performances; distinguish concert, comedy and screenings."
+    },
+    {
+      "id": "keys-lounge",
+      "name": "Keys Lounge",
+      "venue": "Keys Lounge",
+      "venueRegistryId": "keys-lounge",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://www.keyspdx.com/",
+      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original venue documents jazz nights and DJ programming, but weekly descriptions are not proof of particular future dates; individual dates require independent confirmation."
     }
   ],
   "editorialPriority": [
@@ -640,7 +700,13 @@
     "The Six (Midnight PDX Bar)",
     "Show Bar at Revolution Hall",
     "Aladdin Theater",
-    "Mission Theater"
+    "Mission Theater",
+    "The 1905",
+    "Jack London Revue",
+    "The Goodfoot",
+    "Alberta Street Pub",
+    "Alberta Rose Theatre",
+    "Keys Lounge"
   ],
   "discoveryPriority": "Full source-research priority includes BOTH canonical preferred venues and additional relevant scene venues, equally. These are editorially active even if their importer is blocked, not yet built, or a provider feed is missing. `sources` order and legacy twelve adapter baseline are only technical. New event publication requires human review.",
   "primaryVenuePriority": [
@@ -696,7 +762,13 @@
     "the-six",
     "show-bar",
     "aladdin-theater",
-    "mission-theater"
+    "mission-theater",
+    "the-1905",
+    "jack-london-revue",
+    "the-goodfoot",
+    "alberta-street-pub",
+    "alberta-rose-theatre",
+    "keys-lounge"
   ],
   "sharedSourceCoverage": {
     "mississippi": "mississippi-polaris",

@@ -68,8 +68,9 @@ for (let n=0;n<9;n++) {
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
 const eById=new Map(events.map(e=>[e.id,e]));
-const styles=[...new Set(events.flatMap(e=>e.musicStyles||[]))].sort();
+const styles=[...new Set([...["Jazz","Blues","Hip-hop & rap","R&B & soul","Funk & disco","Folk & bluegrass","Country & Americana","Electronic & dance","Reggae & ska","Global & traditional","Classical & chamber","Indie & alternative","Pop"],...events.flatMap(e=>e.musicStyles||[])])].sort();
 assert(styles.includes("Punk")&&styles.includes("Metal")&&styles.includes("Hardcore"),"Core underground styles retained");
+assert(styles.includes("Jazz")&&styles.includes("Hip-hop & rap")&&styles.includes("R&B & soul"),"Broad music styles available in filter even before imports");
 assert.deepEqual(el("style").children.map(e=>e.value),styles,"Style options reflect dataset");
 assert.equal(el("fromDate").value,"2026-10-18","Starts today in Portland");
 assert.equal(views.find(v=>v.dataset.view==="dates").attrs["aria-pressed"],"true","Chronological view is default");

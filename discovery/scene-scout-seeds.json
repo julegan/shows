@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "purpose": "Curated entry points for discovering NEW small organizers and events, not enabled event importers. These are research-only pages. A returned link is not confirmation of an event, location, schedule, or image rights.",
-  "updatedOn": "2026-11-03",
+  "purpose": "Curated original music venues, independent organizers, and unusual culture sources for discovering NEW candidate event/source links. Research only; not enabled importers.",
+  "updatedOn": "2026-11-06",
   "rules": [
-    "Prefer original independent organizers, artist/vendor touring pages and community-run marketplaces, with a few explicitly secondary local indexes for discovering unknown organizers.",
+    "Prioritize original venue/ticket calendars and independent organizers across music genres, plus artist/vendor touring pages and selective underground or local indexes.",
     "Never infer an event year from the date a webpage was posted, or assume a seasonal market recurrence. Vendor listings are leads, not independently verified event calendars.",
     "Inspect actual geographic venue/location for every proposed event; out-of-region oddities and goth markets are common search false positives.",
     "Don't automatically fetch found outbound links or private/blocked social profiles, mirror flyers, or auto-publish event data.",
-    "Focus on punk, hardcore, metal, goth, weird/occult/oddities markets, queer/DIY makers, zines, record fairs, vintage pop-ups and independent arts; do not crawl all routine holiday bazaars."
+    "Research all music styles including jazz, blues, soul, hip-hop, R&B, funk, folk, global, electronic and underground rock/punk/metal, plus relevant independent zines, record fairs, markets and art. Do not crawl generic nonmusic calendars just to inflate volume."
   ],
   "seeds": [
     {
@@ -81,6 +81,62 @@
       "kind": "original-organizer",
       "focus": "Holiday makers and indie vendors; lower individual-event priority than unusual niche markets",
       "relevance": "selective"
+    },
+    {
+      "id": "music-the-1905",
+      "label": "The 1905 official jazz tickets",
+      "url": "https://the1905.turntabletickets.com/",
+      "kind": "original-venue",
+      "focus": "Jazz, modern improvised music and distinct early/late performances; original ticket calendar",
+      "relevance": "high"
+    },
+    {
+      "id": "music-jack-london",
+      "label": "Jack London Revue calendar",
+      "url": "https://www.jacklondonrevue.com/calendar/",
+      "kind": "original-venue",
+      "focus": "Jazz, blues, R&B, soul and adventurous music, separate doors/show times; original venue calendar",
+      "relevance": "high"
+    },
+    {
+      "id": "music-goodfoot",
+      "label": "The Goodfoot live music",
+      "url": "https://thegoodfoot.com/music/",
+      "kind": "original-venue",
+      "focus": "Funk, disco, soul, jazz, Afrobeat, live bands and DJ events; separate music from trivia/comedy",
+      "relevance": "high"
+    },
+    {
+      "id": "music-alberta-street",
+      "label": "Alberta Street Pub concerts",
+      "url": "https://www.albertastreetpub.com/",
+      "kind": "original-venue",
+      "focus": "Independent hip-hop, jazz, soul, local music and original promoter-led event cards",
+      "relevance": "high"
+    },
+    {
+      "id": "music-alberta-rose",
+      "label": "Alberta Rose Theatre calendar",
+      "url": "https://albertarosetheatre.com/",
+      "kind": "original-venue",
+      "focus": "Folk, Americana, blues, global roots, acoustic and other concerts",
+      "relevance": "high"
+    },
+    {
+      "id": "music-keys",
+      "label": "Keys Lounge original schedule",
+      "url": "https://www.keyspdx.com/",
+      "kind": "original-venue",
+      "focus": "Jazz/DJ residencies; require dated individual evidence rather than inventing repeats",
+      "relevance": "high"
+    },
+    {
+      "id": "music-the-thesis",
+      "label": "The Thesis PDX independent hip-hop showcase",
+      "url": "https://thethesispdx.com/",
+      "kind": "original-organizer",
+      "focus": "Original independent hip-hop, R&B and soul concert announcements at Alberta Street Pub; never infer dates from monthly recurrence",
+      "relevance": "high"
     }
   ]
 }
