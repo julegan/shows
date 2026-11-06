@@ -1,4 +1,4 @@
-name: Refresh SHOWS listings and original artwork (review-only)
+name: 01 · Refresh SHOWS listings and flyers (review-only)
 on:
   schedule:
     - cron: '17 16 * * *'

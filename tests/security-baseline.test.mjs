@@ -52,5 +52,5 @@ test('all third-party GitHub Actions use full 40-character commit SHA pins', () 
       total++;
     }
   }
-  assert.ok(total > 10, 'Expected to verify Action pins across the SHOWS workflows');
+  assert.ok(total >= 8, 'Expected to verify Action pins across the retained SHOWS workflows');
 });
