@@ -2,6 +2,50 @@
   "schemaVersion": 1,
   "leads": [
     {
+      "url": "https://11099a.blackbaudhosting.com/11099a/tickets?tab=2&",
+      "titleHint": "Get Tickets",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "/svg> FREE Get Tickets <svg xmlns=\"http://www.w3.",
+      "rank": 6,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/",
+      "titleHint": "Red Light Romeos&#8217; Yachtsgiving &#8211; A Yacht Rock Extravaganza",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "Red Light Romeos&#8217; Yachtsgiving &#8211; A Yacht Rock Extravaganza <h4 id=\"evSub",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://albertarosetheatre.com/tickets/",
+      "titleHint": "TICKETS",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "ost_type menu-item-object-page menu-item-13568\"> PHOTO GALLERY TICKETS <a href=\"https://albertarosetheatre.com/venue-sp",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://feverup.com/m/188755",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
       "url": "https://floatingworldcomics.com/",
       "titleHint": "Floating World Comics",
       "source": "plus-plus-bizarre-bazaar",
@@ -11,6 +55,50 @@
       "why": "\"> Comics / Illustration Periodicals & Nonprofits Buckman Journal (publisher of artists and illustrators) Floating World Comics (comics shop with strong focus o",
       "rank": 5,
       "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://livewireradio.merctickets.com/events/185023039/live-wire-with-luke-burbank?ref=web",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://music.apple.com/us/artist/mat-randol/685281347",
+      "titleHint": "685281347",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "5.7z\"/>",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://music.apple.com/us/artist/rachel-wong/403804552",
+      "titleHint": "403804552",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "5.7z\"/>",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://music.apple.com/us/artist/waynegrey/1565571349",
+      "titleHint": "1565571349",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "5.7z\"/>",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
     },
     {
       "url": "https://nopocreatives.com/",
@@ -45,6 +133,39 @@
       "firstSeenOn": "2026-11-03"
     },
     {
+      "url": "https://open.spotify.com/artist/1lD6YEOY9nEseYhC2VhWjD",
+      "titleHint": "1lD6YEOY9nEseYhC2VhWjD",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "Stream On",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://open.spotify.com/artist/1xBrRl6iChIO1BY9oH0YlE",
+      "titleHint": "1xBrRl6iChIO1BY9oH0YlE",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "Stream On",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://open.spotify.com/artist/7DH9hQ9Zsv75yyo9ymqFdx",
+      "titleHint": "7DH9hQ9Zsv75yyo9ymqFdx",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "possible-organizer-source",
+      "confidence": "research-only",
+      "why": "Stream On",
+      "rank": 4,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
       "url": "https://portlandartmuseum.org/event/plus-plus-media-market/",
       "titleHint": "PAM CUT: Plus Plus Bizarre Bazaar",
       "source": "plus-plus-bizarre-bazaar",
@@ -53,6 +174,247 @@
       "confidence": "research-only",
       "why": "Indie zines, media art, comics, games and independent physical-media sellers; original Nov 21, 2026 event page",
       "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://portlandartmuseum.org/tickets",
+      "titleHint": "Get tickets",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "class=\"main-menu-item-button\" aria-expanded=\"false\" aria-controls=\"sub-menu\" aria-haspopup=\"true\">Visit us Get tickets <a href=\"https://portlandartm",
+      "rank": 6,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://portlandartmuseum.org/tickets/",
+      "titleHint": "Tickets",
+      "source": "plus-plus-bizarre-bazaar",
+      "from": "https://portlandartmuseum.org/event/plus-plus-media-market/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "menu__search__text\"> Search Tickets <div class=\"",
+      "rank": 6,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://thethesispdx.com/",
+      "titleHint": "The Thesis PDX independent hip-hop showcase",
+      "source": "music-the-thesis",
+      "from": "https://thethesispdx.com/",
+      "type": "original-organizer-or-vendor-source",
+      "confidence": "research-only",
+      "why": "Original independent hip-hop, R&B and soul concert announcements at Alberta Street Pub; never infer dates from monthly recurrence",
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.albertastreetpub.com/music/2025/12/6/lunch-amp-soul-with-the-mel-brown-organ-trio",
+      "titleHint": "Lunch & Soul with the Mel Brown Organ Trio",
+      "source": "music-alberta-street",
+      "from": "https://www.albertastreetpub.com/",
+      "type": "possible-music-ticket-or-organizer-source",
+      "confidence": "research-only",
+      "why": "mber 14, 2026 Lunch & Soul with the Mel Brown Organ Trio",
+      "rank": 5,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.albertastreetpub.com/music/2026/11/10/tezeta-band",
+      "titleHint": "Tezeta Band",
+      "source": "music-alberta-street",
+      "from": "https://www.albertastreetpub.com/",
+      "type": "possible-music-ticket-or-organizer-source",
+      "confidence": "research-only",
+      "why": "mber 10, 2026 Tezeta Band",
+      "rank": 5,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.albertastreetpub.com/music/2026/11/13/the-flip-marshall-law-band",
+      "titleHint": "The Flip // Marshall Law Band",
+      "source": "music-alberta-street",
+      "from": "https://www.albertastreetpub.com/",
+      "type": "possible-music-ticket-or-organizer-source",
+      "confidence": "research-only",
+      "why": "mber 13, 2026 The Flip // Marshall Law Band",
+      "rank": 5,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/30238423/john-mccutcheon-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/31011747/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/34012124/henry-diltz-behind-the-lens-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/40753141/red-light-romeosyachtsgiving-a-yacht-rock-extravaganza-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/43131087/chris-smither-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/43845222/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/49162979/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/49387821/leapinlouiethe-upside-down-ocean-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/69849350/the-aero-space-presentsmtv-pole-jams-a-pole-tribute-to-the-music-video-era-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/70006460/psychedelics-and-the-reimagining-of-aging-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-06"
     },
     {
       "url": "https://www.hipchicksdowine.com/new-events",
@@ -107,6 +469,17 @@
       "confidence": "research-only",
       "why": "Curated vintage, records, art and November holiday flea; venue/date must be verified",
       "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.pdxmonthly.com/arts-and-culture/portland-book-festival-2026/",
+      "titleHint": "The Biggest Day of the Portland Book Festival",
+      "source": "portland-monthly-holiday-guide",
+      "from": "https://www.pdxmonthly.com/style-and-shopping/gift-guides/portland-holiday-markets-pop-up-shops/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "s=\"td-module-meta-info\"> Arts & Culture The Biggest Day of the Portland Book Festival",
+      "rank": 6,
+      "firstSeenOn": "2026-11-06"
     },
     {
       "url": "https://www.pdxmoonmarket.com/",
