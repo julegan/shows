@@ -121,6 +121,28 @@ assert.equal(reconcile([holoceneEarly],[{event:overlappingTime}]).held.length,1,
 const unsupportedUrl={...holoceneLate,url:"https://example.invalid/events/another-show"};
 assert.equal(reconcile([holoceneEarly],[{event:unsupportedUrl}]).held.length,1,
   "Unverified event-specific domains cannot bypass the same-night hold");
+const jazzEarly={...e,id:"jazz-early",title:"Nicole McCabe — 6:30 PM show",venue:"The 1905",
+ startsAt:"2026-11-07T18:30:00-08:00",startTimeKind:"listed",
+ url:"https://the1905.turntabletickets.com/shows/13202/2026-11-07",
+ sourcePerformanceId:"48287",discovery:{sourceId:"the-1905"}};
+const jazzLate={...jazzEarly,id:"jazz-late",title:"Nicole McCabe — 8:30 PM show",
+ startsAt:"2026-11-07T20:30:00-08:00",sourcePerformanceId:"48289"};
+assert.equal(reconcile([jazzEarly],[{event:jazzLate}]).accepted.length,1,"Separate ticketed jazz sets can share a show URL");
+assert.equal(reconcile([],[{event:jazzEarly},{event:jazzLate}]).accepted.length,2,"Both original ticket IDs survive one discovery batch");
+assert.equal(reconcile([jazzEarly],[{event:jazzEarly}]).skipped.length,1,"Repeated performance ID is deduplicated");
+assert.equal(reconcile([jazzEarly],[{event:{...jazzLate,sourcePerformanceId:"48287"}}]).skipped.length,1,"Duplicate source ID never creates a show");
+assert.equal(reconcile([jazzEarly],[{event:{...jazzLate,sourcePerformanceId:null}}]).held.length,1,"Missing source performance ID must not bypass protections");
+assert.equal(reconcile([jazzEarly],[{event:{...jazzLate,startsAt:"2026-11-07T19:00:00-08:00"}}]).held.length,1,"Ambiguous early/late clocks stay held");
+const originalJazzSrc=JSON.parse(fs.readFileSync(path.join(root,"discovery/sources.json"),"utf8")).sources.find(s=>s.id==="the-1905");
+assert.equal(urlOf({fullUrl:jazzEarly.url},originalJazzSrc),jazzEarly.url);
+assert.equal(urlOf({fullUrl:"https://attacker.invalid/shows/13202/2026-11-07"},originalJazzSrc),null);
+const jazzFound=extract({title:"Nicole McCabe — 6:30 PM show",fullUrl:jazzEarly.url,
+ startDate:"2026-11-07T18:30:00-08:00",sourcePerformanceId:"48287",sourceShowId:"13202",
+ categories:["Jazz"],sourceVerifiedMusic:true},originalJazzSrc,now);
+assert.equal(jazzFound.event?.sourcePerformanceId,"48287");
+assert.equal(jazzFound.event?.category,"Music");
+assert.deepEqual(jazzFound.event?.musicStyles,["Jazz"]);
+
 const moved=reconcile([{...e,id:"existing",startsAt:"2026-11-03T20:00:00-08:00"}],[candidate]);
 assert.equal(moved.held.length,1);
 (async()=>{

@@ -26,6 +26,7 @@ const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
 const treetix=require("./treetix-importer");
 const mammoth=require("./mammoth-importer");
+const the1905=require("./the-1905-importer");
 const {classifyEvent}=require("./event-classification");
 const {reclassifyKaraoke}=require("./karaoke-format-review");
 const reviewed=require("./reviewed-classifications");
@@ -87,6 +88,7 @@ function urlOf(item,src){
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
   if(src.adapter==="45east-redcube-original")return redcube.ticketUrl(u.href);
   if(src.adapter==="mammoth-original-promoter")return mammoth.safeUrl(u.href);
+  if(src.adapter==="turntable-1905-ssr")return the1905.showUrl(u.href);
   if(src.adapter==="treetix-public-json"){
     const identity=treetix.eventCalendar(u.href);
     return identity&&identity.id===item.originalEventId&&identity.calendar===item.originalCalendar?identity.url:null;
@@ -161,7 +163,7 @@ function extract(item,src,now){
  const sourceMatch=reviewed.forEvent({url,title,venue:item.venue||src.venue,date});
  const classification=sourceMatch||classifyEvent(item),category=classification.category;
  const asof=localDay(now);
- const identity=src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:src.adapter==="kenton-official-html"?url+"|"+norm(title):url;
+ const identity=src.adapter==="turntable-1905-ssr"?url+"|performance:"+String(item.sourcePerformanceId||""):src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:src.adapter==="kenton-official-html"?url+"|"+norm(title):url;
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);
  const cat=Array.isArray(item.categories)?item.categories.filter(x=>typeof x==="string").slice(0,8):[];
  return {event:{
@@ -178,6 +180,7 @@ function extract(item,src,now){
   ...(item.artwork?{artwork:item.artwork}:{}),
    ...(item.sourceArtworkUrl?{sourceArtworkUrl:item.sourceArtworkUrl}:{}),
    ...(item.originalEventId?{sourceEventId:item.originalEventId,sourceCalendar:item.originalCalendar}:{}),
+   ...(src.adapter==="turntable-1905-ssr"?{sourcePerformanceId:item.sourcePerformanceId,sourceShowId:item.sourceShowId}:{}),
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
  }};
 }
@@ -198,12 +201,13 @@ function reconcile(existing,records){
    if(sourceId==="showdown")valid=host==="showdownpdx.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]*\/?$/i.test(p);
    if(sourceId==="roseland")valid=host==="roselandpdx.com"&&/^\/event\/[^/]+\/roseland-theater\/portland-oregon\/?$/i.test(p)&&event.venue==="Roseland Theater";
    if(sourceId==="hawthorne-theatre")valid=host==="hawthornetheatre.com"&&/^\/event\/[^/]+\/hawthorne-theatre\/portland-oregon\/?$/i.test(p)&&event.venue==="Hawthorne Theatre";
+   if(sourceId==="the-1905")valid=host==="the1905.turntabletickets.com"&&/^\/shows\/[1-9]\d{2,8}\/20\d\d-\d\d-\d\d$/.test(p)&&event.venue==="The 1905"&&/^\d+$/.test(String(event.sourcePerformanceId||""));
    if(sourceId==="alberta-street-pub")valid=host==="albertastreetpub.com"&&/^\/music\/20\d\d\/(?:[1-9]|1[0-2])\/(?:[1-9]|[12]\d|3[01])\/[a-z0-9][a-z0-9-]{1,220}\/?$/i.test(p)&&event.venue==="Alberta Street Pub";
    if(sourceId==="revolution-hall"){
     const room=event.venue==="Revolution Hall"?"revolution-hall":event.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
     valid=!!room&&host==="etix.com"&&new RegExp("^/ticket/p/\\d{5,12}/[a-z0-9-]+-portland-"+room+"/?$","i").test(p);
    }
-   return valid?host+p.toLowerCase().replace(/\/$/,""):null;
+   return valid?host+p.toLowerCase().replace(/\/$/,"")+(sourceId==="the-1905"?"|performance:"+String(event.sourcePerformanceId):""):null;
   }catch(_){return null;}
  };
  const terms=title=>new Set(String(title||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g,"")
@@ -215,7 +219,10 @@ function reconcile(existing,records){
  };
  const separateShowSession=(a,b)=>/\b(?:early|late|matinee|second)\s+(?:show|set|performance)\b/i.test(a+" "+b);
  const distinctTimedVenueShows=(a,b)=>{
-  if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||a.url===b.url)return false;
+  const is1905Session=b.discovery?.sourceId==="the-1905"&&a.venue==="The 1905"&&b.venue==="The 1905"&&
+   /^\d+$/.test(String(a.sourcePerformanceId||""))&&/^\d+$/.test(String(b.sourcePerformanceId||""))&&
+   String(a.sourcePerformanceId)!==String(b.sourcePerformanceId);
+  if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||(a.url===b.url&&!is1905Session))return false;
   if(a.venue==="Holocene"&&b.discovery?.sourceId==="holocene"){
    const official=url=>/^https:\/\/www\.holocene\.org\/(?:events\/20\d\d-\d\d-\d\d-[^?#/]+|event\/[^?#]+\/holocene\/portland\/?)(?:[?#].*)?$/i.test(url||"");
    const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
@@ -228,7 +235,8 @@ function reconcile(existing,records){
   const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
   if(idA&&idB&&idA!==idB&&Number.isFinite(minutes)&&minutes>=90&&
      (distinctTitles(a.title,b.title)||separateShowSession(a.title,b.title)||
-      (source==="revolution-hall"&&minutes>=120&&norm(a.title)===norm(b.title))))return true;
+      (source==="revolution-hall"&&minutes>=120&&norm(a.title)===norm(b.title))||
+      (source==="the-1905"&&is1905Session)))return true;
   // Retain previous independent-show exceptions for already verified venue IDs.
   const legacySource=a.discovery?.sourceId;
   return legacySource===b.discovery?.sourceId&&["wonder-ballroom","mississippi-polaris","starday-tavern","turn-turn-turn","the-off-beat","aladdin-theater","mission-theater"].includes(legacySource)
@@ -271,6 +279,7 @@ function reconcile(existing,records){
 async function fetchItems(source){
  if(source.adapter==="treetix-public-json")return treetix.fetchEvents(source);
  if(source.adapter==="mammoth-original-promoter")return mammoth.fetchEvents();
+ if(source.adapter==="turntable-1905-ssr")return the1905.fetchEvents(source);
  if(source.adapter==="nova-official-schema")return nova.fetchNovaEvents();
  // Official read-only GraphQL connection requires a separate, provisioned app id.
  // This adapter is intentionally disabled until an authorized integration exists.
