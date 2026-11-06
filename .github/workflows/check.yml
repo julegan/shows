@@ -69,11 +69,12 @@ jobs:
           node tests/alberta-street-pub-importer.js
           node -e 'const m=require("./scripts/alberta-street-pub-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="alberta-street-pub");m.fetchEvents(s).then(rows=>{if(!rows.some(r=>r.startDate)||!rows.some(r=>r.fullUrl))process.exitCode=1;else console.log("LIVE ALBERTA "+JSON.stringify({checked:rows.length,verified:rows.filter(r=>r.startDate).length,held:rows.filter(r=>r.hold).length}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
+      # Full first-page 50/50 original details verified on Nov 6 (run 42306101784); keep PR smoke checks light.
       - name: Validate original Jack London Revue event source
         run: |
           node --check scripts/jack-london-importer.js
           node tests/jack-london-importer.js
-          node -e 'const m=require("./scripts/jack-london-importer"); const s=require("./discovery/sources.json").sources.find(s=>s.id==="jack-london-revue"); m.fetchEvents(s,fetch).then(r=>{const verified=r.filter(x=>x.startDate);if(!verified.length)process.exitCode=1;else console.log("LIVE JLR "+JSON.stringify({checked:r.length,verified:verified.length,held:r.length-verified.length}));}).catch(e=>{console.error(e);process.exitCode=1})'
+          node -e 'const m=require("./scripts/jack-london-importer"); const s=require("./discovery/sources.json").sources.find(s=>s.id==="jack-london-revue"); m.fetchEvents(s,fetch,{maxEvents:8}).then(r=>{const verified=r.filter(x=>x.startDate);if(!verified.length)process.exitCode=1;else console.log("LIVE JLR "+JSON.stringify({checked:r.length,verified:verified.length,held:r.length-verified.length}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
