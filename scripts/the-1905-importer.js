@@ -78,7 +78,7 @@ function parse(html){
   seen.add(item?.id);
   records.push(row(item,links));
  }
- if(!records.some(r=>r.startDate))throw Error("The 1905 public SSR batch lacks validated ticketed shows");
+ if(!records.some(r=>r.startDate))throw Error("The 1905 public SSR batch lacks validated ticketed shows. Holds: "+JSON.stringify(records.map(r=>r.hold||"untimed").slice(0,12)));
  return {records,partial:hasMore};
 }
 async function fetchEvents(src,request=fetch){
