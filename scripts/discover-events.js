@@ -20,6 +20,7 @@ const turn=require("./turnturnturn-opendate");
 const offbeat=require("./offbeat-importer");
 const aladdin=require("./aladdin-importer");
 const alberta=require("./alberta-street-pub-importer");
+const jlr=require("./jack-london-importer");
 const mission=require("./mission-importer");
 const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
@@ -83,6 +84,7 @@ function urlOf(item,src){
   if(src.adapter==="offbeat-official-html")return offbeat.eventUrl(u.href);
   if(src.adapter==="aladdin-official-html")return aladdin.ticketUrl(u.href);
   if(src.adapter==="alberta-squarespace-json")return alberta.eventUrl(u.href);
+  if(src.adapter==="jack-london-original-html")return jlr.eventUrl(u.href);
   if(src.adapter==="mission-official-html")return mission.eventUrl(u.href);
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
@@ -202,6 +204,7 @@ function reconcile(existing,records){
    if(sourceId==="roseland")valid=host==="roselandpdx.com"&&/^\/event\/[^/]+\/roseland-theater\/portland-oregon\/?$/i.test(p)&&event.venue==="Roseland Theater";
    if(sourceId==="hawthorne-theatre")valid=host==="hawthornetheatre.com"&&/^\/event\/[^/]+\/hawthorne-theatre\/portland-oregon\/?$/i.test(p)&&event.venue==="Hawthorne Theatre";
    if(sourceId==="the-1905")valid=host==="the1905.turntabletickets.com"&&/^\/shows\/[1-9]\d{2,8}\/20\d\d-\d\d-\d\d$/.test(p)&&event.venue==="The 1905"&&/^\d+$/.test(String(event.sourcePerformanceId||""));
+   if(sourceId==="jack-london-revue")valid=host==="jacklondonrevue.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]{1,180}\/?$/i.test(p)&&event.venue==="Jack London Revue";
    if(sourceId==="alberta-street-pub")valid=host==="albertastreetpub.com"&&/^\/music\/20\d\d\/(?:[1-9]|1[0-2])\/(?:[1-9]|[12]\d|3[01])\/[a-z0-9][a-z0-9-]{1,220}\/?$/i.test(p)&&event.venue==="Alberta Street Pub";
    if(sourceId==="revolution-hall"){
     const room=event.venue==="Revolution Hall"?"revolution-hall":event.venue==="Show Bar at Revolution Hall"?"show-bar-at-revolution-hall":null;
@@ -289,6 +292,7 @@ async function fetchItems(source){
  if(source.adapter==="45east-redcube-original")return redcube.fetchEvents(source);
  if(source.adapter==="aladdin-official-html")return aladdin.fetchEvents(source);
  if(source.adapter==="alberta-squarespace-json")return alberta.fetchEvents(source);
+ if(source.adapter==="jack-london-original-html")return jlr.fetchEvents(source);
  if(source.adapter==="offbeat-official-html")return offbeat.fetchEvents(source);
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
  if(source.adapter==="starday-google-html")return starday.fetchOfficialStarday(source);

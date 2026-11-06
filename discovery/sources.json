@@ -620,10 +620,14 @@
       "name": "Jack London Revue",
       "venue": "Jack London Revue",
       "venueRegistryId": "jack-london-revue",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
-      "url": "https://www.jacklondonrevue.com/calendar/",
-      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. First-party calendar lists jazz, blues, soul and other shows with separately labeled doors/show times. Do not assume every calendar item is music."
+      "url": "https://www.jacklondonrevue.com/",
+      "reason": "The original TicketWeb-backed homepage publishes bounded event cards with original venue links. Its individually linked /tm-event/ detail pages independently verify full year/date/weekday, Jack London Revue venue, showtime versus doors, and official artwork candidates. Live GitHub runner HTTP 200, Nov 6 2026. Read-only editorial review. Homepage list may be paginated and must not be treated as exhaustive coverage.",
+      "adapter": "jack-london-original-html",
+      "baseUrl": "https://www.jacklondonrevue.com",
+      "address": "529 SW 4th Ave, Portland, OR 97204",
+      "neighborhood": "Downtown"
     },
     {
       "id": "the-goodfoot",
