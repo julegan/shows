@@ -78,21 +78,21 @@
       const label = dateLong.format(new Date(day+'T12:00:00Z'));
       const count = list.length;
       html += '<div class="shows-month-date'+(day===today?' shows-month-today':'')+'">'+
-        '<button type="button" class="shows-month-day" data-day="'+day+'" aria-label="'+esc(label)+
-        ': '+count+' '+(count===1?'event':'events')+'. Open full day">'+
+        '<button type="button" class="shows-month-day" data-day="'+day+'">'+
         '<span class="shows-date-number">'+n+'</span>'+
         (count?'<span class="shows-date-count">'+count+' <span class="sr-only">events</span></span>':'')+
-        '</button>';
+        '<span class="sr-only"> · '+esc(label)+'. Open full day.</span></button>';
       if (count) {
         html += '<div class="shows-month-previews">';
         for (const e of list.slice(0,3)) {
           const time = e.startTimeKind==="date-only"?"Time TBA":
             (e.startTimeKind==="doors"?"Doors ":"")+timeFormat.format(new Date(e.startsAt));
           html += '<button type="button" class="shows-month-event" data-event="'+esc(e.id)+
-            '" aria-label="'+esc(e.title+' at '+e.venue+'; '+clock(e)+'. Open event')+'">'+
+            '">'+
             '<span class="shows-month-event-time">'+esc(time)+'</span>'+
             '<span class="shows-month-event-title">'+esc(e.title)+'</span>'+
-            '<span class="shows-month-event-venue">'+esc(e.venue)+'</span></button>';
+            '<span class="shows-month-event-venue">'+esc(e.venue)+'</span>'+
+            '<span class="sr-only">. Open event details.</span></button>';
         }
         html += '</div>';
         if(count>3) html += '<span class="shows-month-more">+'+(count-3)+' more · open day</span>';
