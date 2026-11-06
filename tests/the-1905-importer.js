@@ -24,7 +24,7 @@ assert.equal(m.image("https://assets-prod.turntabletickets.com/media/other/show-
 const got=m.parse(fixture());
 assert.equal(got.partial,true,"When source says there are more pages, do not report full coverage");
 assert.deepEqual(got.records.map(x=>x.sourcePerformanceId),["48287","48289"],"Independent ticket IDs retained");
-assert.deepEqual(got.records.map(x=>x.startDate),["2026-11-07T18:30:00-08:00","2026-11-07T20:30:00-08:00"]);
+assert.deepEqual(got.records.map(x=>x.startDate),["2026-11-08T02:30:00.000Z","2026-11-08T04:30:00.000Z"]);
 assert.deepEqual(got.records.map(x=>x.title),["Nicole McCabe — 6:30 PM show","Nicole McCabe — 8:30 PM show"]);
 assert.deepEqual(got.records[0].categories,["Jazz"]);
 assert.equal(got.records[0].artwork.usageApproved,null);
