@@ -63,6 +63,12 @@ jobs:
           node tests/the-1905-importer.js
           node -e 'const m=require("./scripts/the-1905-importer"); const src=require("./discovery/sources.json").sources.find(s=>s.id==="the-1905"); m.fetchEvents(src).then(rows=>{if(!rows.some(r=>r.startDate&&r.sourcePerformanceId))process.exitCode=1; else console.log("LIVE 1905 "+JSON.stringify({checked:rows.length,verified:rows.filter(r=>r.startDate).length,distinctSets:new Set(rows.map(r=>r.sourcePerformanceId)).size}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
+      - name: Validate Alberta Street Pub source original calendar
+        run: |
+          node --check scripts/alberta-street-pub-importer.js
+          node tests/alberta-street-pub-importer.js
+          node -e 'const m=require("./scripts/alberta-street-pub-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="alberta-street-pub");m.fetchEvents(s).then(rows=>{if(!rows.some(r=>r.startDate)||!rows.some(r=>r.fullUrl))process.exitCode=1;else console.log("LIVE ALBERTA "+JSON.stringify({checked:rows.length,verified:rows.filter(r=>r.startDate).length,held:rows.filter(r=>r.hold).length}));}).catch(e=>{console.error(e);process.exitCode=1})'
+
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
           node --check scripts/treetix-importer.js

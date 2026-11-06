@@ -506,12 +506,12 @@
       "id": "alberta-street-pub",
       "name": "Alberta Street Pub",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.albertastreetpub.com/",
       "aliases": [
         "Alberta Street Public House"
       ],
-      "notes": "Original live-events calendar covers hip-hop showcases, jazz, independent artists and local concerts. The Thesis is a promoter/showcase, not a separate physical venue.",
+      "notes": "Official Squarespace /music JSON original events verified Nov 6 2026. Recurring event URLs may retain historical dates; source occurrence timestamp controls. Source may paginate; no completeness guarantee. Editor-reviewed PRs only.",
       "editorialPreference": "scene"
     },
     {
