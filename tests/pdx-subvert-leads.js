@@ -40,6 +40,17 @@ assert.match(s.status(show(id1,{dateOfShow:"$D2026-11-07T06:00:00.000Z"}),now).h
 assert.equal(s.status(show(id1,{imageUrl:"https://evil.example/flyer.png"}),now).flyerReference,null);
 assert.match(s.report(found,null),/0 automatically approved/);
 assert.match(s.report(found,null),/reuse rights unverified/i);
+assert.match(s.report(found,null),/Original source flyer for manual review/);
+assert.match(s.report(found,null),/res\\.cloudinary\\.com/);
+const linked=s.matchBlackWaterFlyers(found.records,[
+ {id:"fixture-blackwater-show",title:"Habak / Malakili / Frenzy",venue:"Black Water",startsAt:"2026-11-07T00:00:00-08:00"},
+ {id:"wrong-venue",title:"Habak / Malakili",venue:"Twilight Cafe and Bar",startsAt:"2026-11-07T20:00:00-08:00"}
+]);
+assert.deepEqual(linked.map(x=>x.event.id),["fixture-blackwater-show"],"Original source flyer matches a uniquely identified Black Water bill, not merely a date or scene");
+assert.match(s.report(found,null,linked),/fixture-blackwater-show/);
+assert.deepEqual(s.matchBlackWaterFlyers(found.records,[...linked.map(x=>x.event),{id:"conflict",title:"Habak / Malakili",venue:"Black Water",startsAt:"2026-11-07T00:00:00-08:00"}]),[],"Ambiguous same-day matches cannot propose art");
+assert.deepEqual(s.matchBlackWaterFlyers(found.records,[{...linked[0].event,artwork:{url:"https://example.org/existing.png"}}]),[],"Never overwrite existing art");
+
 assert.match(s.report(null,"HTTP 403"),/Source hold/);
 assert.throws(()=>s.parse("broken source",now),/HTML missing/);
 assert.throws(()=>s.parse("<html>"+(" ".repeat(1500))+"</html>",now),/Next.js/);
