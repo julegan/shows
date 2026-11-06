@@ -66,8 +66,10 @@ const objects=JSON.parse(text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\
 assert.equal(backfill(current.output).changed.length,0,"Backfill is idempotent after a proposed classification update");
 assert(current.changed.every(x=>x.after==="Music"&&["Music","Unclassified"].includes(x.before)),
  "New taxonomy may only propose source-backed music styles or upgrade unclassified source listings");
-assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music").length,
- "Conservative source-reviewed Music count must match actual, growing dataset");
+const approvedMusic=objects.filter(e=>e.category==="Music").length;
+const newlyRecognized=current.changed.filter(e=>e.before==="Unclassified"&&e.after==="Music").length;
+assert.equal(current.meta.musicOccurrences,approvedMusic+newlyRecognized,
+ "Dry-run proposed Music count equals approved Music plus only newly source-recognized listings; never silently publish");
 assert.equal(current.meta.totalOccurrences,objects.length,
  "Classification never adds or removes calendar events");
 assert.equal(registry.entries.length,13,"Reviewed-event registry tracks only individually evidenced bills, without broad artist auto-tagging");
