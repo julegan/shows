@@ -636,10 +636,14 @@
       "name": "Alberta Street Pub",
       "venue": "Alberta Street Pub",
       "venueRegistryId": "alberta-street-pub",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
-      "url": "https://www.albertastreetpub.com/",
-      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original live-events calendar covers hip-hop showcases, jazz, independent artists and local concerts. The Thesis is a promoter/showcase, not a separate physical venue."
+      "url": "https://www.albertastreetpub.com/music?format=json",
+      "reason": "Original Alberta Street Pub /music Squarespace JSON verified live from GitHub Actions runner Nov 6, 2026 (HTTP 200, 33 upcoming records). Strict venue-location and source-event URL evidence, startDate/endDate from original records, recurring legacy URL slugs kept without invented occurrence dates. Squarespace pagination indicates possible additional archived pages; do not treat first upcoming batch as complete. Read-only source, review-only publishing.",
+      "adapter": "alberta-squarespace-json",
+      "baseUrl": "https://www.albertastreetpub.com",
+      "address": "1036 NE Alberta Street, Portland, OR 97211",
+      "neighborhood": "Alberta Arts District"
     },
     {
       "id": "alberta-rose-theatre",
