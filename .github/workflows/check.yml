@@ -57,6 +57,9 @@ jobs:
           node --check scripts/diagnose-treetix-cloudflare.js
           node tests/treetix-cloudflare-diagnostic.js
 
+      - name: Probe Alberta Street Pub original event calendar (temporary read-only)
+        run: node scripts/probe-alberta-source.js
+
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
           node --check scripts/treetix-importer.js
