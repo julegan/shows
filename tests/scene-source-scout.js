@@ -11,6 +11,8 @@ assert(seeds.seeds.length>=7,"Independent market research must span multiple org
 assert(seeds.seeds.some(s=>s.kind==="original-vendor-directory"),"Artist/vendor cross-links reveal otherwise unknown organizers");
 assert(seeds.seeds.some(s=>s.kind==="secondary-discovery"),"New unknown sources can emerge from independently curated indexes");
 assert(seeds.seeds.some(s=>s.id==="nopo-creatives"),"Small local DIY maker organizers deserve coverage");
+for(const id of ["music-the-1905","music-jack-london","music-goodfoot","music-alberta-street","music-alberta-rose","music-keys","music-the-thesis"])
+ assert(seeds.seeds.some(s=>s.id===id),"Original music discovery seed: "+id);
 assert(seeds.seeds.every(s=>s.url.startsWith("https://")&&s.url===scout.canon(s.url,s.url)),"Only explicitly canonical HTTPS seed pages");
 assert.equal(scout.canon("javascript:alert(1)","https://example.com/"),null);
 assert.equal(scout.canon("https://localhost/admin","https://example.com/"),null);
@@ -40,6 +42,14 @@ results=scout.inspect(primary,'<a href="/events/goth-record-market">Goth Record 
  '<a href="/events/goth-record-market?utm_campaign=test">duplicate</a>');
 assert(results.some(x=>x.url==="https://makers.example.org/events/goth-record-market"));
 assert(!results.some(x=>x.url.includes("/contact")),"Do not treat informational navigation as event discovery");
+const musicVenue={id:"jazz-original",label:"Jazz original tickets",url:"https://jazz.example.org/calendar/",
+ kind:"original-venue",focus:"Jazz and improvised music"};
+results=scout.inspect(musicVenue,'<a href="/events/2026-11-15-jazz-trio">Original Jazz Trio Tickets</a>'+
+ '<a href="/contact">Contact</a><a href="/events/2026-11-16-blues-quintet">Live Blues Quintet</a>');
+assert(results.some(x=>x.url==="https://jazz.example.org/events/2026-11-15-jazz-trio"),
+ "Original music venue event-specific links are now scouted without requiring punk or market language");
+assert(!results.some(x=>x.url==="https://jazz.example.org/contact"),"Routine venue navigation is not a show lead");
+assert(results.some(x=>x.type==="original-venue-calendar"),"Original music calendar itself is retained for review");
 const vendor={id:"vendor",label:"Oddities vendor",url:"https://vendor.example.org/2026-tour",
  kind:"original-vendor",focus:"Oddities and zine events"};
 results=scout.inspect(vendor,"<p>Independent zine press and oddities market organizers</p>"+

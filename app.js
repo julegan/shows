@@ -19,7 +19,12 @@
     !/^(?:closed|closure|venue closed|no events?)\b/i.test(String(e.title || "").trim()) &&
     !isRoutineFarmersMarket(e));
   const neighborhoods = [...new Set(eligible.map(e => e.neighborhood).filter(Boolean))].sort();
-  const styles = [...new Set(events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || []))].sort();
+  // Stable music taxonomy: styles remain selectable before a newly researched
+  // scene has approved listings. Unknown styles do not filter out the default feed.
+  const supportedStyles = ["Jazz","Blues","Hip-hop & rap","R&B & soul","Funk & disco",
+    "Folk & bluegrass","Country & Americana","Electronic & dance","Reggae & ska",
+    "Global & traditional","Classical & chamber","Indie & alternative","Pop"];
+  const styles = [...new Set([...supportedStyles,...events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || [])])].sort();
   function ymdDate(date) {
     const parts = new Intl.DateTimeFormat("en-US", {timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit"}).formatToParts(date);
     const part = t => parts.find(p => p.type === t).value;

@@ -11,6 +11,20 @@ test("CRIMEWAVE: A GOTH, POST-PUNK, & DARKWAVE PARTY – 21+", "Music",["Post-pu
 test("Industrial EBM DJ set", "Music",["Industrial & EBM"]);
 test("Experimental noise music with bands", "Music",["Noise & experimental"]);
 test("Live Rock Show", "Music",["Rock"]);
+test("Free jazz quartet live music", "Music",["Jazz"]);
+test("Blues live music", "Music",["Blues"]);
+test("Portland independent hip-hop concert", "Music",["Hip-hop & rap"]);
+test("Neo soul live music show", "Music",["R&B & soul"]);
+test("Funk and disco DJ set", "Music",["Funk & disco"]);
+test("Bluegrass live music show", "Music",["Folk & bluegrass"]);
+test("Alt-country and Americana concert", "Music",["Country & Americana"]);
+test("Techno live music", "Music",["Electronic & dance"]);
+test("Reggae and ska concert", "Music",["Reggae & ska"]);
+test("Afrobeat live band", "Music",["Global & traditional"]);
+test("String quartet concert", "Music",["Classical & chamber"]);
+test("Shoegaze live show", "Music",["Indie & alternative"]);
+test("Hyperpop live concert", "Music",["Pop"]);
+test("Jazz trivia", "Other");
 test("Punk rock record fair","Markets");
 test("Punk zine making workshop","Workshops");
 test("School of Rock Halloween Fright Fest","Unclassified");
@@ -46,9 +60,16 @@ const registry=require("../discovery/reviewed-classifications.json");
 const text=fs.readFileSync(path.resolve(__dirname,"../events.js"),"utf8");
 const current=backfill(text);
 const objects=JSON.parse(text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/)[1]);
-assert.equal(current.changed.length,0,"Classification backfill must be idempotent after reviewed events are updated");
-assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music").length,
- "Conservative source-reviewed Music count must match actual, growing dataset");
+// Extending the taxonomy legitimately proposes new source-worded labels for
+// already published shows. The dry run must not alter approved events, and
+// applying the proposal once must be idempotent.
+assert.equal(backfill(current.output).changed.length,0,"Backfill is idempotent after a proposed classification update");
+assert(current.changed.every(x=>x.after==="Music"&&["Music","Unclassified"].includes(x.before)),
+ "New taxonomy may only propose source-backed music styles or upgrade unclassified source listings");
+const approvedMusic=objects.filter(e=>e.category==="Music").length;
+const newlyRecognized=current.changed.filter(e=>e.before==="Unclassified"&&e.after==="Music").length;
+assert.equal(current.meta.musicOccurrences,approvedMusic+newlyRecognized,
+ "Dry-run proposed Music count equals approved Music plus only newly source-recognized listings; never silently publish");
 assert.equal(current.meta.totalOccurrences,objects.length,
  "Classification never adds or removes calendar events");
 assert.equal(registry.entries.length,13,"Reviewed-event registry tracks only individually evidenced bills, without broad artist auto-tagging");
