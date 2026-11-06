@@ -148,7 +148,7 @@ async function main(){
  if(result){
   try{
    const text=fs.readFileSync(path.join(__dirname,"../events.js"),"utf8");
-   const eventsMatch=text.match(/window\\.SHOWS_EVENTS\\s*=\\s*(\\[[\\s\\S]*?\\]);\\s*$/);
+   const eventsMatch=text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/);
    if(eventsMatch)matches=matchBlackWaterFlyers(result.records,JSON.parse(eventsMatch[1]));
   }catch(e){console.warn("Black Water flyer match review unavailable: "+String(e.message||e));}
  }
