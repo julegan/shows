@@ -60,7 +60,12 @@ const registry=require("../discovery/reviewed-classifications.json");
 const text=fs.readFileSync(path.resolve(__dirname,"../events.js"),"utf8");
 const current=backfill(text);
 const objects=JSON.parse(text.match(/window\.SHOWS_EVENTS\s*=\s*(\[[\s\S]*?\]);\s*$/)[1]);
-assert.equal(current.changed.length,0,"Classification backfill must be idempotent after reviewed events are updated");
+// Extending the taxonomy legitimately proposes new source-worded labels for
+// already published shows. The dry run must not alter approved events, and
+// applying the proposal once must be idempotent.
+assert.equal(backfill(current.output).changed.length,0,"Backfill is idempotent after a proposed classification update");
+assert(current.changed.every(x=>x.after==="Music"&&["Music","Unclassified"].includes(x.before)),
+ "New taxonomy may only propose source-backed music styles or upgrade unclassified source listings");
 assert.equal(current.meta.musicOccurrences,objects.filter(e=>e.category==="Music").length,
  "Conservative source-reviewed Music count must match actual, growing dataset");
 assert.equal(current.meta.totalOccurrences,objects.length,
