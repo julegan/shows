@@ -73,6 +73,7 @@ assert(styles.includes("Punk")&&styles.includes("Metal")&&styles.includes("Hardc
 assert(styles.includes("Jazz")&&styles.includes("Hip-hop & rap")&&styles.includes("R&B & soul"),"Broad music styles available in filter even before imports");
 assert.deepEqual(el("style").children.map(e=>e.value),styles,"Style options reflect dataset");
 assert.equal(el("fromDate").value,"2026-10-18","Starts today in Portland");
+assert(!fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8").includes("fromDateDisplay"),"The real date input must not be obscured by a fake display");
 assert.equal(views.find(v=>v.dataset.view==="dates").attrs["aria-pressed"],"true","Chronological view is default");
 assert.equal(el("monthControls").hidden,true,"Month is secondary");
 function renderedIds(){return [...el("results").innerHTML.matchAll(/data-event="([^"]+)"/g)].map(m=>m[1]).sort();}
@@ -132,6 +133,10 @@ el("clearFilters").click();
 views.find(v=>v.dataset.view==="month").click();
 assert.equal(el("monthControls").hidden,false,"Month controls appear only on request");
 assert(el("results").innerHTML.includes('class="shows-month-grid"'),"Optional month grid is rendered");
+assert(el("results").innerHTML.includes('class="shows-month-event"'),"Month view previews actual event listings, not only day counts");
+assert(el("results").innerHTML.includes('class="shows-month-day"'),"Full-day navigation remains available");
+assert(el("results").innerHTML.includes('class="shows-month-event-title"'),"Month preview exposes meaningful event names");
+assert(!el("results").innerHTML.includes('<button type="button" class="shows-month-date'),"Day and event controls are not nested buttons");
 el("nextMonth").click();
 assert(el("monthPeriod").textContent.includes("November 2026"),"Month navigation works");
 el("jumpToday").click();

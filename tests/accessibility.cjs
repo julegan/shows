@@ -50,6 +50,11 @@ async function showsViews(browser,viewport){
   };
   const start=ymd();
   assert.equal(await page.locator("#fromDate").inputValue(),start,"Homepage defaults to today's Portland-local date");
+  const pickerVisible = await page.locator("#fromDate").evaluate(input => {
+    const style=getComputedStyle(input),box=input.getBoundingClientRect();
+    return style.opacity==="1"&&style.visibility==="visible"&&style.pointerEvents!=="none"&&box.width>=120&&box.height>=40;
+  });
+  assert(pickerVisible,"Visible full-size native date input remains operable on desktop and mobile");
   assert.equal(await page.locator('[data-view="dates"]').getAttribute("aria-pressed"),"true","Chronological list is default");
   assert.equal(await page.locator("#monthControls").isVisible(),false,"Month controls should not dominate the landing page");
   assert.equal(await page.locator(".shows-month-grid").count(),0,"Month overview should not load by default");
@@ -101,10 +106,22 @@ async function showsViews(browser,viewport){
   assert.equal(await page.locator('[data-view="month"]').getAttribute("aria-pressed"),"true");
   assert(await page.locator("#monthControls").isVisible(),"Month navigation visible in month mode");
   assert(await page.locator(".shows-month-date").count()>=28,"Month overview has navigable dates");
+  if(viewport.width>=1024){
+    const previews=page.locator(".shows-month-event");
+    assert(await previews.count()>0,"Desktop month displays real event previews");
+    assert(await previews.first().isVisible(),"Desktop event previews are actually visible");
+    assert(await page.locator(".shows-month-event-title").first().innerText(),"Desktop month includes an event title");
+    const id=await previews.first().getAttribute("data-event");
+    await previews.first().click();
+    assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Clicking a month event opens that event's detail directly");
+    assert(id,"Every preview has a stable event id");
+    await page.locator("#eventDialog [data-close]").click();
+  }
   errors.push(...await audit(page,"SHOWS optional month "+viewport.width));
   if(viewport.width<=680){
     const gridFits=await page.locator(".shows-month-grid").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
     assert(gridFits,"Mobile month grid must not scroll horizontally");
+    assert(!await page.locator(".shows-month-event").first().isVisible(),"Mobile month retains compact date cells");
   }
   await page.locator("#nextMonth").click();
   assert.match(await page.locator("#monthPeriod").innerText(),/November|December|January|February|March|April|May|June|July|August|September|October/);

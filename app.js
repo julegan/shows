@@ -5,7 +5,6 @@
   const $ = (id) => document.getElementById(id);
   const dateLong = new Intl.DateTimeFormat("en-US", {timeZone: zone, weekday: "long", month: "long", day: "numeric"});
   const dateShort = new Intl.DateTimeFormat("en-US", {timeZone: zone, month: "short", day: "numeric"});
-  const dateDisplayFormat = new Intl.DateTimeFormat("en-US", {timeZone: "UTC", month: "short", day: "numeric", year: "numeric"});
   const timeFormat = new Intl.DateTimeFormat("en-US", {timeZone: zone, hour: "numeric", minute: "2-digit"});
   const state = {view: "dates", start: ymdDate(new Date()), month: ymdDate(new Date()).slice(0,7), search: "", neighborhood: "", style: "", onlyFree: false, onlySaved: false, limit: 60};
   const today = state.start;
@@ -61,19 +60,44 @@
     const first = new Date(Date.UTC(year,month-1,1));
     const offset = first.getUTCDay();
     const days = new Date(Date.UTC(year,month,0)).getUTCDate();
-    const counts = new Map();
-    items.forEach(e => counts.set(ymd(e), (counts.get(ymd(e)) || 0) + 1));
-    let html = '<p class="shows-month-help">Select a date to open its events in the list.</p><div class="shows-month-grid">';
+    const grouped = new Map();
+    for (const e of items) {
+      const day = ymd(e);
+      if (!grouped.has(day)) grouped.set(day, []);
+      grouped.get(day).push(e);
+    }
+    // Calendar shows a few actual event names on roomy desktops; smaller
+    // screens retain the existing compact dates/counts without horizontal scroll.
+    // Each preview is a separate button (no nested interactive controls).
+    let html = '<p class="shows-month-help">Select a date for its full list, or choose an event preview to see details.</p><div class="shows-month-grid">';
     for (const name of ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]) html += '<span class="shows-weekday">'+name+'</span>';
-    for (let i=0; i<offset; i++) html += '<span class="shows-month-blank" aria-hidden="true"></span>';
-    for (let n=1; n<=days; n++) {
+    for (let i=0;i<offset;i++) html += '<span class="shows-month-blank" aria-hidden="true"></span>';
+    for (let n=1;n<=days;n++) {
       const day = state.month+'-'+String(n).padStart(2,"0");
-      const count = counts.get(day) || 0;
+      const list = grouped.get(day)||[];
       const label = dateLong.format(new Date(day+'T12:00:00Z'));
-      html += '<button type="button" class="shows-month-date'+(day===today?' shows-month-today':'')+'" data-day="'+day+
-        '"><span class="shows-date-number">'+n+
-        '</span>'+(count?'<span class="shows-date-count">'+count+' <span class="sr-only">events</span></span>':'')+
-        '<span class="sr-only"> '+esc(label)+': open day in list.</span></button>';
+      const count = list.length;
+      html += '<div class="shows-month-date'+(day===today?' shows-month-today':'')+'">'+
+        '<button type="button" class="shows-month-day" data-day="'+day+'" aria-label="'+esc(label)+
+        ': '+count+' '+(count===1?'event':'events')+'. Open full day">'+
+        '<span class="shows-date-number">'+n+'</span>'+
+        (count?'<span class="shows-date-count">'+count+' <span class="sr-only">events</span></span>':'')+
+        '</button>';
+      if (count) {
+        html += '<div class="shows-month-previews">';
+        for (const e of list.slice(0,3)) {
+          const time = e.startTimeKind==="date-only"?"Time TBA":
+            (e.startTimeKind==="doors"?"Doors ":"")+timeFormat.format(new Date(e.startsAt));
+          html += '<button type="button" class="shows-month-event" data-event="'+esc(e.id)+
+            '" aria-label="'+esc(e.title+' at '+e.venue+'; '+clock(e)+'. Open event')+'">'+
+            '<span class="shows-month-event-time">'+esc(time)+'</span>'+
+            '<span class="shows-month-event-title">'+esc(e.title)+'</span>'+
+            '<span class="shows-month-event-venue">'+esc(e.venue)+'</span></button>';
+        }
+        html += '</div>';
+        if(count>3) html += '<span class="shows-month-more">+'+(count-3)+' more · open day</span>';
+      }
+      html += '</div>';
     }
     return html+'</div>';
   }
@@ -137,7 +161,6 @@
   function render() {
     // Synchronize the visible date with the native picker every time the view changes.
     $("fromDate").value = state.start;
-    $("fromDateDisplay").textContent = dateDisplayFormat.format(new Date(state.start + "T12:00:00Z"));
     const items = filtered();
     const monthLabel = new Intl.DateTimeFormat("en-US",{timeZone:"UTC",month:"long",year:"numeric"}).format(new Date(state.month+"-01T12:00:00Z"));
     $("summary").textContent = items.length + " matching event listing" + (items.length === 1 ? "" : "s") +

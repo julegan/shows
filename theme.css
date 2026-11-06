@@ -53,15 +53,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   border-color: var(--selected);
 }
 .preview-filters label { color: var(--sub); }
-.preview-filters input, .preview-filters select,
-.preview-filters .preview-date-field {
+.preview-filters input, .preview-filters select {
   background: var(--paper);
   color: var(--ink);
   border-color: var(--control-border);
 }
 .preview-filters input::placeholder { color: #aaa8a6; opacity: 1; }
-.preview-filters .preview-date-field:focus-within { outline-color: var(--focus); }
-.preview-filters .preview-date-field input[type=date] { background: transparent; }
 .preview-filters select option { background: var(--paper); color: var(--ink); }
 .preview-summary, .preview-info, .shows-month-help { color: var(--sub); }
 
@@ -107,6 +104,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   color: var(--selected-ink);
 }
 .shows-date-count { background: #39393d; color: var(--ink); }
+.shows-month-day { color: var(--ink); }
+.shows-month-day:hover { background: #38383c; }
+.shows-month-event { background: #27272a; border-color: #555559; color: var(--ink); }
+.shows-month-event:hover { background: #36363b; border-color: #b4b2af; }
+.shows-month-event-time, .shows-month-event-venue, .shows-month-more { color: var(--sub); }
+.shows-month-day:focus-visible, .shows-month-event:focus-visible { outline-color: var(--focus); }
+
 
 /* Event details, keyboard focus and native pickers share the dark palette. */
 dialog { background: var(--paper); color: var(--ink); border: 1px solid var(--hair); }
