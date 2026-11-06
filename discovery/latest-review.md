@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-03
+# SHOWS automated discovery review — 2026-11-06
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,36 +8,47 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 13 | 0 | 0 | 0 | 0 | 1 | 12 |
-| High Water Mark | Checked | 69 | 0 | 0 | 0 | 0 | 0 | 69 |
+| Black Water | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
+| High Water Mark | Checked | 67 | 0 | 0 | 0 | 0 | 0 | 67 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
-| Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 5 | 17 |
-| Star Theater | Checked | 42 | 0 | 0 | 0 | 0 | 4 | 38 |
-| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 1 | 42 |
-| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
-| Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 9 | 25 |
-| Hawthorne Theatre | Checked | 41 | 0 | 0 | 0 | 0 | 3 | 38 |
-| Crystal Ballroom | Checked | 55 | 0 | 0 | 0 | 0 | 5 | 50 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
-| Turn! Turn! Turn! | Checked | 20 | 0 | 0 | 0 | 0 | 2 | 18 |
+| Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 4 | 18 |
+| Star Theater | Checked | 40 | 1 | 1 | 0 | 1 | 4 | 35 |
+| Dante's | Checked | 44 | 2 | 1 | 1 | 2 | 3 | 39 |
+| Roseland Theater | Checked | 33 | 2 | 0 | 2 | 2 | 5 | 26 |
+| Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 8 | 25 |
+| Hawthorne Theatre | Checked | 39 | 0 | 0 | 0 | 0 | 3 | 36 |
+| Crystal Ballroom | Checked | 55 | 2 | 0 | 2 | 2 | 6 | 47 |
+| Revolution Hall | Checked | 30 | 3 | 0 | 3 | 3 | 9 | 18 |
+| Turn! Turn! Turn! | Checked | 19 | 2 | 1 | 0 | 2 | 2 | 15 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
-| Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 33 | 14 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 6 | 0 | 6 | 6 | 3 | 21 |
+| Holocene | Checked | 47 | 3 | 3 | 0 | 3 | 30 | 14 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 42 | 1546 |
-| The Off Beat / Friends of Noise | Checked | 10 | 0 | 0 | 0 | 0 | 3 | 7 |
-| Aladdin Theater | Checked | 93 | 0 | 0 | 0 | 0 | 4 | 89 |
-| Mission Theater | Checked | 49 | 0 | 0 | 0 | 0 | 0 | 49 |
-| Nova PDX | Checked | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
+| The Off Beat / Friends of Noise | Checked | 11 | 1 | 1 | 0 | 1 | 5 | 5 |
+| Aladdin Theater | Checked | 91 | 1 | 0 | 1 | 1 | 4 | 86 |
+| Mission Theater | Checked | 47 | 1 | 0 | 1 | 1 | 0 | 46 |
+| Nova PDX | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
 | Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
-| The Showdown | Checked | 49 | 0 | 0 | 0 | 0 | 13 | 36 |
-| 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
+| The Showdown | Checked | 53 | 7 | 0 | 6 | 7 | 12 | 34 |
+| 45 East | Checked | 19 | 2 | 2 | 0 | 2 | 0 | 17 |
 | Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
 
 ### Classification review
 
-New candidate categories: none.
-**0 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Karaoke** 2 · **Music** 9 · **Unclassified** 22.
+**22 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
+- Dante's: POPSMEAR — https://www.danteslive.com/tm-event/popsmear/
+- Roseland Theater: Akira Yamaoka — https://roselandpdx.com/event/akira-yamaoka/roseland-theater/portland-oregon/
+- Roseland Theater: The Chats US TOUR — https://roselandpdx.com/event/the-chats-us-tour/roseland-theater/portland-oregon/
+- Crystal Ballroom: 2000s Cupid’s Ball — https://www.crystalballroompdx.com/events/279805-2000s-cupids-ball/
+- Crystal Ballroom: Ricky Montgomery: The Monty Tour — https://www.crystalballroompdx.com/events/279373-ricky-montgomery-the-monty-tour/
+- Revolution Hall: Phoebe Robinson: Feral & Fired Up! — https://www.etix.com/ticket/p/91940693/phoebe-robinsonferal-fired-up-portland-revolution-hall
+- Show Bar at Revolution Hall: Video Dance Attack Presents: Studio 54 — https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall
+- Show Bar at Revolution Hall: ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell — https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall
+- Mississippi Studios: Bayonne - The ‘Filters’ Tour — https://www.etix.com/ticket/p/80960269/bayonne-the-filterstour-portland-mississippi-studios
+- Polaris Hall: Olivia O’Brien Presents: The PIXIE Tour — https://www.etix.com/ticket/p/55541535/olivia-obrien-presentsthe-pixie-tour-portland-polaris-hall
+- Plus 12 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
@@ -55,6 +66,12 @@ New candidate categories: none.
 - Hawthorne Lounge: **adapter-needed**.
 - Word Virus Books: **adapter-needed**.
 - The Six (Midnight PDX Bar): **adapter-needed**.
+- The 1905: **adapter-needed**.
+- Jack London Revue: **adapter-needed**.
+- The Goodfoot: **adapter-needed**.
+- Alberta Street Pub: **adapter-needed**.
+- Alberta Rose Theatre: **adapter-needed**.
+- Keys Lounge: **adapter-needed**.
 
 
 ## Changes to previously published events (review only)
@@ -68,18 +85,62 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 0
+## New candidates: 33
 
+- star-theater: 1 proposals
+- dantes: 2 proposals
+- roseland: 2 proposals
+- crystal-ballroom: 2 proposals
+- revolution-hall: 3 proposals
+- turn-turn-turn: 2 proposals
+- mississippi-polaris: 6 proposals
+- holocene: 3 proposals
+- the-off-beat: 1 proposals
+- aladdin-theater: 1 proposals
+- mission-theater: 1 proposals
+- showdown: 7 proposals
+- 45-east: 2 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
+| 2026-12-13 | Rahzel, Ras Kass, DJ K-Salaam | Star Theater | 19:30 (doors/show unverified) | https://www.startheaterportland.com/tm-event/rahzel-ras-kass-dj-k-salaam/ |
+| 2027-01-13 | POPSMEAR | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/popsmear/ |
+| 2027-01-23 | WESTERN STANDARD TIME (Ska Orchestra) with The Cascadians & Weekend Kids | Dante's | 20:30 (doors/show unverified) | https://www.danteslive.com/tm-event/western-standard-time-ska-orchestra-with-the-cascadians-weekend-kids/ |
+| 2027-03-19 | Akira Yamaoka | Roseland Theater | 20:30 (doors/show unverified) | https://roselandpdx.com/event/akira-yamaoka/roseland-theater/portland-oregon/ |
+| 2027-04-09 | The Chats US TOUR | Roseland Theater | 20:00 (doors/show unverified) | https://roselandpdx.com/event/the-chats-us-tour/roseland-theater/portland-oregon/ |
+| 2027-02-13 | 2000s Cupid’s Ball | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/279805-2000s-cupids-ball/ |
+| 2027-05-03 | Ricky Montgomery: The Monty Tour | Crystal Ballroom | 20:30 (doors/show unverified) | https://www.crystalballroompdx.com/events/279373-ricky-montgomery-the-monty-tour/ |
+| 2026-11-21 | Phoebe Robinson: Feral & Fired Up! | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91940693/phoebe-robinsonferal-fired-up-portland-revolution-hall |
+| 2026-11-21 | Video Dance Attack Presents: Studio 54 | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall |
+| 2026-11-22 | ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell | Show Bar at Revolution Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall |
+| 2026-11-13 | Port Velvet + My Body | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/port-velvet-my-body-november-13-2026-797592 |
+| 2026-11-14 | Karaoke w/ KJ Stargazer | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/karaoke-w-kj-stargazer-november-14-2026-797689 |
+| 2026-11-17 | Bayonne - The ‘Filters’ Tour | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/80960269/bayonne-the-filterstour-portland-mississippi-studios |
+| 2026-11-17 | Olivia O’Brien Presents: The PIXIE Tour | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55541535/olivia-obrien-presentsthe-pixie-tour-portland-polaris-hall |
+| 2026-11-18 | Natural Child | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/75106036/natural-child-portland-mississippi-studios |
+| 2026-11-18 | WHITMER THOMAS | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/41356454/whitmer-thomas-portland-polaris-hall |
+| 2026-11-19 | The Cactus Blossoms | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/40638516/the-cactus-blossoms-portland-mississippi-studios |
+| 2026-11-19 | Mattress 20 - 20 Years Of Mattress | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91263217/mattress-20-20-years-of-mattress-portland-polaris-hall |
+| 2026-12-20 | Gothmas: Constant Debauchery (Depeche Mode), Kiss Me Kiss Me Kiss Me (The Cure), Precious Machinery (Siouxsie and the Banshees) | Holocene | 19:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-20-gothmas-constant-debauchery-depeche-mode-kiss-me-kiss-me-kiss-me-the-cure-precio |
+| 2027-02-13 | Spend The Night Presents: Jacques Greene | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2027-02-13-spend-the-night-presents-jacques-greene-jg-album-tour |
+| 2027-02-21 | Sylvie | Holocene | 20:00 (doors/show unverified) | https://www.holocene.org/events/2027-02-21-sylvie |
+| 2027-01-12 | 1/12 Perennial | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/1-12-perennial-january-12-2027-758117 |
+| 2027-07-29 | Steam Powered Giraffe | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/44288175/steam-powered-giraffe-portland-aladdin-theater |
+| 2026-12-19 | Holiday Cabaret: Featuring James Rossi & The Christmas Island Band | Mission Theater | 19:30 (doors/show unverified) | https://www.mcmenamins.com/events/279231-holiday-cabaret-featuring-james-rossi-the-christmas-island-band |
+| 2026-12-01 | Two-Step Tuesday with Countryside Ride and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-countryside-ride-and-dance-lessons-with-robbie-3/ |
+| 2026-12-08 | Two-Step Tuesday with Shorty and the Mustangs and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-shorty-and-the-mustangs-and-dance-lessons-with-peggy-2/ |
+| 2026-12-14 | Square Dancing with Caller Amy Hofer and Forty Drop Few with Alexander Jones/ KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-with-miss-pralines-whip-lodge-tenderstrokes/ |
+| 2026-12-15 | Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-robbie/ |
+| 2026-12-22 | Two-Step Tuesday with Best Intentions and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-peggy-2/ |
+| 2026-12-29 | Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-robbie-2/ |
+| 2027-01-12 | Two-Step Tuesday with Shorty and the Mustangs and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-shorty-and-the-mustangs-and-dance-lessons-with-peggy-3/ |
+| 2027-01-16 | ANAMĒ | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/aname0116 |
+| 2027-01-29 | ROMAIN GARCIA | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/romaingarcia0129 |
 
-## Held for review: 147
+## Held for review: 146
 
-- [black-water] BURIED ALIVE : PUNK + METAL THURSDAYS W/ DJ KEET BEAT & DJ SHANE DAMAGE — Recurring calendar rule needs dated individual instances; no inferred dates 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Wolves in the Throne Room, Stygian Bough, Spirit Possession — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204942/soundcontrol
-- [twilight] Veredas w/ Mike Mannequin, Miss Honey — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467415/veredas-w-mike-mannequin-miss-honey
 - [twilight] 93feetofsmoke w/ Fats'e, Polearm & Guest — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/468053/93feetofsmoke-w-fatse-polearm-guest
 - [twilight] Landroid w/ Valkerie, Sylphide — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/467169/landroid-w-valkerie-sylphide
 - [twilight] Drag The River w/ Dewey Nielsen Band — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-dewey-nielsen-band
@@ -88,14 +149,14 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-13/
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
 - [star-theater] JOS&Eacute; JAMES SINGS SINATRA — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra-2/
+- [dantes] THE WAILS followed by Sinferno Cabaret — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/the-wails-followed-by-sinferno-cabaret/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
-- [roseland] Periphery – A Pale White Dot US Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/periphery-a-pale-white-dot-us-tour/roseland-theater/portland-oregon/
+- [dantes] RHEA C. ARACHNE followed by Sinferno Cabaret — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/rhea-c-arachne-followed-by-sinferno-cabaret/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
 - [roseland] Alter Bridge – What Lies Within Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/
 - [roseland] Saosin: 20 Years of Self-Titled — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/saosin-20-years-of-self-titled/roseland-theater/portland-oregon/
 - [roseland] The Amity Affliction: HOUSE OF CARDS 2026 — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/the-amity-affliction-house-of-cards-2026/roseland-theater/portland-oregon/
 - [roseland] Frankie and the Witch Fingers + Gibby Haynes: Butthole Surfer Mania — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/frankie-and-the-witch-fingers-gibby-haynes-butthole-surfer-mania/roseland-theater/portland-oregon/
-- [wonder-ballroom] Buzzcocks — Same venue/date; different existing bill; manual comparison https://wonderballroom.com/event/celebrating-50-years-of-buzzcocks/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] DAX - The Anger Management Tour | Wonder Ballroom — Primary event title does not publish a full dated year https://wonderballroom.com/event/dax-the-anger-management-tour/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] *CANCELLED* The Residents - Eskimo Live! Tour | Wonder Ballroom — Moved, postponed or canceled show; not at Wonder Ballroom https://wonderballroom.com/event/cancelled-the-residents-eskimo-live-tour/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] J-Fell Nite Wave — Same venue/date; different existing bill; manual comparison https://wonderballroom.com/event/j-fell-nite-wave-present-the-cure-depeche-mode-new-order-tribute-night/wonder-ballroom/portland-oregon/
@@ -112,20 +173,22 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
-- [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
+- [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
+- [revolution-hall] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/46865010/jimmie-herrodblack-belt-eagle-scout-nick-jaina-accompanied-by-45th-parallel-string-quartetsight-reading-musical-dialects-portland-revolution-hall
+- [revolution-hall] Railroad Earth — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
+- [revolution-hall] Marci — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/59643924/marci-portland-show-bar-at-revolution-hall
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
+- [revolution-hall] SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
+- [revolution-hall] RESCHEDULED TO 4/27/17: WAAX — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/72288527/rescheduled-to-42717waax-portland-show-bar-at-revolution-hall
+- [revolution-hall] SOLD OUT: Gary Numan North American Fall Tour 2026 — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall
 - [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
 - [turn-turn-turn] Miranda S.P. (IN) + Nowhere Flower + Leland's Lotto — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/miranda-s-p-in-nowhere-flower-leland-s-lotto-november-15-2026-796358
 - [kenton-club] Untitled — Missing or implausibly long bill title 
-- [mississippi-polaris] SOLD OUT: Jeffrey Martin — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/99319489/sold-outjeffrey-martin-portland-polaris-hall
 - [mississippi-polaris] Jimmie Herrod, Black Belt Eagle Scout & Nick Jaina Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
 - [mississippi-polaris] Pedro the Lion (Night 1) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/47201881/pedro-the-lion-night-1-portland-polaris-hall
-- [holocene] Dylan Thom — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-04-dylan-thom-w-horse-laugh
-- [holocene] DOSS (DJ Set) + CFCF (DJ Set) — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-05-doss-dj-set-cfcf-dj-set
-- [holocene] Shanghai Qiutian — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-06-shanghai-qiutian-w-dabda-early-show
 - [holocene] RHYTHM IS A DANCER: An early evening 90s Dance Party hosted by SNAP! — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-07-rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap
 - [holocene] AZ CHIKE — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-08-sold-out-az-chike-w-dj-scout
 - [holocene] Jake Minch — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-09-jake-minch-getting-big-tour-w-alix-page
@@ -145,7 +208,7 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [holocene] Renee Christine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-04-renee-christine-w-katy-and-the-null-sets-early-show
 - [holocene] Jeremiah Chiu — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-06-jeremiah-chiu-w-omari-jazz-dj-cuica
 - [holocene] Salo // Psychic Guilt // Mourning Service — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-09-salo-psychic-guilt-mourning-service
-- [holocene] daine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-10-daine-w-eilish-constance
+- [holocene] daine — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-10-sold-out-daine-w-eilish-constance
 - [holocene] Candi Pop Christmas Party: A Girly Pop Dance Party — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-11-candi-pop-christmas-party-a-girly-pop-dance-party
 - [holocene] The Moth StorySLAM: ANYTHING GOES — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-14-the-moth-storyslam-anything-goes
 - [holocene] The Hugs // Brites // Tradie — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2027-01-03-the-hugs-brites-tradie
@@ -200,15 +263,16 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [starday-tavern] Happy HoliGays! 2 Day Fest — Event lacks independently verified Portland source timezone 
 - [the-off-beat] 11/14 Weathering The Storm (2nd annual) — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-14-weathering-the-storm-2nd-annual-november-14-2026-795974
 - [the-off-beat] 11/15 Open Mic Night — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-15-open-mic-night-november-15-2026-796992
+- [the-off-beat] 12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic, You Loom Angelic — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-you-loom-angelic-december-03-2026-756887
+- [the-off-beat] 1/26 Fifteen, All Girl Summer Fun Band, Corner Office (Benefit Show) — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/1-26-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876
 - [the-off-beat] 3/26 Larry and His Flask, 1876 — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/3-26-larry-and-his-flask-1876-march-26-2027-778664
-- [aladdin-theater] RESCHEDULED TO 5/23/27: The Aces: The Kiss Tour — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/83493090/rescheduled-to-52327the-acesthe-kiss-tour-portland-aladdin-theater
 - [aladdin-theater] Aterciopelados: La Pipa De La Paz 30 Años Tour — Missing Aladdin title or matching original ticket room 
+- [aladdin-theater] SOLD OUT: Todd Rundgren: DAMNED IF I DO TOUR — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/33295250/sold-outtodd-rundgrendamned-if-i-do-tour-portland-aladdin-theater
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
 - [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
 - [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
-- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-68/
 - [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with The Spare Parts — Same venue/date; different existing bill; manual comparison https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-special-guests-6/
 - [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-6/
 - [showdown] Square Dancing with Caller Tighe Hauze and Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-caller-tighe-hauze-and-miss-pralines-whip-lodge-tenderstrokes/
@@ -217,12 +281,10 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 1 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary/
 - [showdown] Holiday Variety Show Featuring FC Community Choir & Chamber Orchestra, Max Marcos, Big Spender, Katy & the Null Sets, and more — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/holiday-variety-show-featuring-fc-community-choir-chamber-orchestra-max-marcos-big-spender-katy-the-null-sets-and-more/
 - [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 2 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary-2/
-- [showdown] Square Dancing with Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-miss-pralines-whip-lodge-tenderstrokes/
 - [showdown] JERRY JOSEPH & THE JACKMORMONS with Ezra Meredith — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/jerry-joseph-and-the-jackmormons-with-ezra-meredith-the-deer-lodge-all-stars/
+- [showdown] Two-Step Tuesday with Patsy's Decline and Two Step Lessons with Robbie — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/two-step-tuesday-with-patsys-decline-and-two-step-lessons-with-robbie/
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-70/
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-71/
-- [45-east] ANAMĒ — Original 45 East card missing verified title/year/date or group-specific ticket link 
-- [45-east] CASPA + THE WIDDLER — Original 45 East card missing verified title/year/date or group-specific ticket link 
 
 ## Source errors: 0
 
