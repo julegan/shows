@@ -34,8 +34,8 @@ assert.equal(byId["no-fun"].priority,"secondary");
 assert.equal(byId["no-fun"].status,"paused-secondary","No Fun must not dominate scheduled discovery");
 assert.equal(byVenue["no-fun"].tier,"expansion","No Fun is secondary, not a top core source");
 const enabled=sources.filter(s=>s.status==="pilot-enabled");
-assert.deepEqual(enabled.map(s=>s.id),["black-water","high-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown","45-east","mammoth-nw","the-1905","alberta-street-pub"]);
-assert(enabled.every(s=>["black-water-ics","treetix-public-json","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html","45east-redcube-original","mammoth-original-promoter","turntable-1905-ssr","alberta-squarespace-json"].includes(s.adapter)),"Never run unverified adapters");
+assert.deepEqual(enabled.map(s=>s.id),["black-water","high-water","soundcontrol-pdx","twilight","star-theater","dantes","roseland","wonder-ballroom","hawthorne-theatre","crystal-ballroom","revolution-hall","turn-turn-turn","kenton-club","mississippi-polaris","holocene","starday-tavern","the-off-beat","aladdin-theater","mission-theater","nova-pdx","lolas-room","showdown","45-east","mammoth-nw","the-1905","jack-london-revue","alberta-street-pub"]);
+assert(enabled.every(s=>["black-water-ics","treetix-public-json","promoter-list-html","twilight-html","star-theater-html","hosted-venue-html","dantes-live-html","wonder-ballroom-html","revolution-events-html","crystal-official-html","mississippi-polaris-html","holocene-event-html","starday-google-html","kenton-official-html","turnturnturn-opendate","offbeat-official-html","aladdin-official-html","mission-official-html","nova-official-schema","lolas-mcmenamins-html","showdown-original-html","45east-redcube-original","mammoth-original-promoter","turntable-1905-ssr","alberta-squarespace-json","jack-london-original-html"].includes(s.adapter)),"Never run unverified adapters");
 for(const id of ["coffin-club","high-limit"]){
   assert.equal(byId[id].status,"adapter-needed",id+" is research/implementation work, not a working importer");
 }
@@ -115,3 +115,7 @@ assert.match(byId["the-1905"].reason,/partial, not comprehensive/);
 assert.equal(byId["alberta-street-pub"].status,"pilot-enabled");
 assert.equal(byId["alberta-street-pub"].adapter,"alberta-squarespace-json");
 assert.equal(byVenue["alberta-street-pub"].ingestionStatus,"active-adapter");
+
+assert.equal(byId["jack-london-revue"].status,"pilot-enabled");
+assert.equal(byId["jack-london-revue"].adapter,"jack-london-original-html");
+assert.equal(byVenue["jack-london-revue"].ingestionStatus,"active-adapter");

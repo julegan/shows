@@ -482,12 +482,12 @@
       "id": "jack-london-revue",
       "name": "Jack London Revue",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://www.jacklondonrevue.com/calendar/",
       "aliases": [
         "JLR"
       ],
-      "notes": "First-party calendar lists jazz, blues, soul and other shows with separately labeled doors/show times. Do not assume every calendar item is music.",
+      "notes": "Original Jack London Revue homepage roster and per-event pages verify year, local date, venue and independently labeled doors versus show. Bounded original feed may paginate; proposed events require editorial review.",
       "editorialPreference": "scene"
     },
     {
