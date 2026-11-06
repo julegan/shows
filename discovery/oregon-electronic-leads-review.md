@@ -2,15 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**137 public table rows checked; 56 distinct relevant research leads (49 preferred-venue, 7 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**129 public table rows checked; 53 distinct relevant research leads (48 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-03 | [Soul'd Out Presents: John Scofield's Electrospective](https://www.etix.com/ticket/p/74951649/an-evening-with-john-scofields-electrospective-portland-revolution-hall) | Revolution Hall | Not categorized / Soul'd Out Productions | Preferred SHOWS venue |
-| 2026-11-03 | [Mr. Congressman Video Release Party](https://ra.co/events/2566364) | Shanghai Tunnel Bar | tech house, deep house / Not listed | Preferred SHOWS venue |
-| 2026-11-05 | [Slow Techno](https://ra.co/events/2571127) | Process Pdx | Not categorized / Not listed | Relevant electronic / dark music tag |
-| 2026-11-05 | [Cut Copy (DJ Set)](https://wl.eventim.us/event/cut-copy-dj-set/702834) | Realm | synthpop, indie dance / Realm Nightclub | Relevant electronic / dark music tag |
-| 2026-11-05 | [Doss](https://dice.fm/event/532nxd-minty-boi-presents-doss-cfcf-dj-sets-5th-nov-holocene-portland-tickets) | Holocene | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-06 | [Ely Oaks at 45 East](https://45east.tixr.com/elyoaks1106) | 45 East | eurodance, trance, EDM / Not listed | Preferred SHOWS venue |
 | 2026-11-06 | [Process Club Night - Re:Ni, Hodge, Succubass](https://ra.co/events/2567115) | Process Pdx | uk bass, techno, garage, dubstep, breaks / Not listed | Relevant electronic / dark music tag |
 | 2026-11-07 | [Rhythm Is A Dancer: Early Evening 90s Party](https://www.etix.com/ticket/p/51248619/rhythm-is-a-danceran-early-evening-90s-dance-party-hosted-by-snap21-portland-holocene) | Holocene | Not categorized / Snap! 90'S Dance Party | Preferred SHOWS venue |
@@ -21,6 +16,7 @@
 | 2026-11-11 | [Bieber & A Be](https://www.etix.com/ticket/p/54508584/bieber-and-a-beata-justin-bieber-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2026-11-13 | [Free Bass: Whales](https://www.tixr.com/groups/45east/events/free-bass-whales-195631) | 45 East | dubstep / Not listed | Preferred SHOWS venue |
 | 2026-11-14 | [Desert Dwellers w/ Entangled Mind,aMah Ze Tar](https://www.ticketweb.com/event/id/14229204) | Star Theater | glitch-hop, dubstep, psydub / Not listed | Preferred SHOWS venue |
+| 2026-11-14 | [Tropitaal! Desi Latine Soundclash w/ DJ Anjali and The Incredible Kid](https://ra.co/events/2564213) | The Goodfoot | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-14 | [Nikita, The Wicked at 45 East](https://45east.tixr.com/nikitathewicked1114) | 45 East | dubstep, uk garage / Not listed | Preferred SHOWS venue |
 | 2026-11-15 | [Fleetmac Wood Presents Chiffon Frenzy](https://ra.co/events/2540025) | Holocene | disco, funk, remixes / Not listed | Preferred SHOWS venue |
 | 2026-11-15 | [Bonobo](https://www.axs.com/events/1480571) | Roseland Theater | house, downtempo, uk garage / Not listed | Preferred SHOWS venue |
@@ -47,6 +43,7 @@
 | 2026-12-31 | [DJ Mandy](https://www.tixr.com/groups/45east/events/new-year-s-eve-2027-w-dj-mandy-210926) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-01-01 | [The Disco Biscuits](https://www.etix.com/ticket/p/55578509) | Revolution Hall | livetronica, jam band / Not listed | Preferred SHOWS venue |
 | 2027-01-02 | [The Disco Biscuits](https://www.etix.com/ticket/p/30191515) | Revolution Hall | livetronica, jam band / Not listed | Preferred SHOWS venue |
+| 2027-01-02 | [Brett's House Party & DJ Wicked - Disco Biscuits After Party](https://ra.co/events/2570158) | The Goodfoot | livetronica, jam band / Not listed | Preferred SHOWS venue |
 | 2027-01-05 | [Ninajirachi w/ Ikeda](https://www.axs.com/events/1616996) | McMenamins Crystal Ballroom | EDM, house, dubstep, drum and bass / Showbox | Relevant electronic / dark music tag |
 | 2027-01-14 | [Club Slayyy](https://www.etix.com/ticket/p/53208442/club-slayyyslayyyter-hyperpop-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2027-01-23 | [Artifakts X Parkbreezy](https://www.tixr.com/groups/45east/events/artifakts-x-parkbreezy-209456) | 45 East | downtempo, hip-hop, bass music / Not listed | Preferred SHOWS venue |

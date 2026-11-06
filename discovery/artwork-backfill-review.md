@@ -1,16 +1,16 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-04T04:59:12.960Z; Portland date: 2026-11-03. This workflow does not publish images.
+Generated 2026-11-06T19:52:05.357Z; Portland date: 2026-11-06. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **239**
-- Already have image references: **159**
-- Missing artwork: **80**
-- Missing listings with supported individual source pages: **25**
-- Missing listings needing another source or individual permalink: **55**
-- Batch: **40** of **0** (zero-indexed; 35 lookups maximum)
+- Upcoming music listings: **230**
+- Already have image references: **155**
+- Missing artwork: **75**
+- Missing listings with supported individual source pages: **23**
+- Missing listings needing another source or individual permalink: **52**
+- Batch: **46** of **0** (zero-indexed; 35 lookups maximum)
 - Attempted: **0**; proposed: **0**; no proposal: **0**
 
 ## Why pages did not produce artwork
@@ -21,15 +21,15 @@ Image URLs must be reviewed for event identity, attribution, suitability and usa
 
 | Venue | Missing | Eligible individual pages |
 | --- | ---: | ---: |
-| No Fun | 24 | 21 |
+| No Fun | 22 | 19 |
 | Kenton Club | 16 | 0 |
-| High Water Mark Lounge | 9 | 0 |
+| High Water Mark Lounge | 8 | 0 |
 | Crystal Ballroom | 5 | 2 |
-| Twilight Cafe and Bar | 5 | 0 |
 | High Limit Room | 4 | 1 |
-| Black Water | 3 | 0 |
+| Twilight Cafe and Bar | 4 | 0 |
 | Revolution Hall | 3 | 0 |
 | Wonder Ballroom | 3 | 0 |
+| Black Water | 2 | 0 |
 | AZØTH | 1 | 0 |
 | Mission Theater | 1 | 0 |
 | Moda Center | 1 | 0 |
