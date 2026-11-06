@@ -470,12 +470,12 @@
       "id": "the-1905",
       "name": "The 1905",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://the1905.turntabletickets.com/",
       "aliases": [
         "The 1905 Jazz Club"
       ],
-      "notes": "First-party jazz ticket calendar linked by the venue. Separate early and late sets require distinct event identity and time; importer not yet validated.",
+      "notes": "Primary ticket data validated from the original 1905 page; SSR first batch only, possibly partial. Individually timed ticket performances have distinct IDs. Read-only staging and editor-reviewed PR required.",
       "editorialPreference": "scene"
     },
     {
