@@ -57,8 +57,11 @@ jobs:
           node --check scripts/diagnose-treetix-cloudflare.js
           node tests/treetix-cloudflare-diagnostic.js
 
-      - name: Probe Alberta Street Pub original event calendar (temporary read-only)
-        run: node scripts/probe-alberta-source.js
+      - name: Validate Alberta Street Pub source original calendar
+        run: |
+          node --check scripts/alberta-street-pub-importer.js
+          node tests/alberta-street-pub-importer.js
+          node -e 'const m=require("./scripts/alberta-street-pub-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="alberta-street-pub");m.fetchEvents(s).then(rows=>{if(!rows.some(r=>r.startDate)||!rows.some(r=>r.fullUrl))process.exitCode=1;else console.log("LIVE ALBERTA "+JSON.stringify({checked:rows.length,verified:rows.filter(r=>r.startDate).length,held:rows.filter(r=>r.hold).length}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
