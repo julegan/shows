@@ -12,6 +12,7 @@ const urls=["https://www.albertastreetpub.com/music?format=json",
   if(body.length>3000000)throw Error("Too large for bounded research");
   if(body.trim().startsWith("{")){
    const data=JSON.parse(body);
+   console.log("ALBERTA DETAIL",JSON.stringify({pagination:data.pagination,calendarView:data.calendarView,collectionItemCount:data.collection?.itemCount,upcomingCount:data.upcoming?.length,examples:(data.upcoming||[]).slice(0,7).map(e=>({title:e.title,location:e.location,customContent:e.customContent,startDate:e.startDate,endDate:e.endDate,sourceUrl:e.sourceUrl,assetUrl:e.assetUrl,fullUrl:e.fullUrl,categories:e.categories,tags:e.tags,excerpt:e.excerpt?.slice(0,150)}))}).slice(0,11500));
    console.log("ALBERTA JSON",JSON.stringify({keys:Object.keys(data),upcomingKeys:Object.keys(data.upcoming||{}),upcomingSample:(data.upcoming||[]).slice(0,2).map(x=>({keys:Object.keys(x),title:x.title,startDate:x.startDate,startTime:x.startTime,fullUrl:x.fullUrl,assetUrl:x.assetUrl,urlId:x.urlId,body:x.body?.slice(0,300)})),collection:Object.keys(data.collection||{}),items:(data.items||[]).slice(0,3).map(x=>({keys:Object.keys(x),title:x.title,startDate:x.startDate,fullUrl:x.fullUrl,urlId:x.urlId,assetUrl:x.assetUrl,body:x.body?.slice(0,300)}))}).slice(0,12000));
   }else if(r.ok){
    for(const key of ["eventlist-event","eventlist-datetag","eventlist-title","eventlist-meta","eventlist-time","data-start-date","data-end-date","sqs-block-calendar","application/ld+json","/music/2026"]){
