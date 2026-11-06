@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-05 | 450 | 150 | 241 | 89 |
-| 56 | 2026-12-31 | 605 | 186 | 335 | 118 |
-| 90 | 2027-02-03 | 654 | 197 | 368 | 129 |
+| 30 | 2026-12-05 | 462 | 151 | 251 | 90 |
+| 56 | 2026-12-31 | 625 | 189 | 350 | 121 |
+| 90 | 2027-02-03 | 680 | 204 | 385 | 135 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -20,21 +20,21 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | High Water Mark Lounge | checked (67 raw) | 23 | 8 | 6 | 7 | 23 | 23 | 0 | 0 |
 | preferred | Twilight Cafe and Bar | checked (22 raw) | 20 | 16 | 0 | 8 | 19 | 9 | 0 | 10 |
 | preferred | The Coffin Club | adapter-needed | 4 | 3 | 0 | 0 | unknown | — | — | — |
-| preferred | Star Theater | checked (40 raw) | 19 | 19 | 0 | 13 | 22 | 18 | 1 | 3 |
+| preferred | Star Theater | checked (40 raw) | 20 | 20 | 0 | 14 | 22 | 19 | 0 | 3 |
 | preferred | Dante's | checked (44 raw) | 38 | 10 | 26 | 0 | 39 | 36 | 0 | 3 |
 | preferred | Roseland Theater | checked (33 raw) | 15 | 6 | 9 | 1 | 14 | 9 | 0 | 5 |
 | preferred | Wonder Ballroom | checked (33 raw) | 15 | 3 | 12 | 0 | 14 | 12 | 0 | 2 |
 | preferred | Hawthorne Theatre | checked (39 raw) | 25 | 9 | 16 | 2 | 26 | 25 | 0 | 1 |
 | preferred | High Limit Room | adapter-needed | 4 | 4 | 0 | 2 | unknown | — | — | — |
 | preferred | Crystal Ballroom | checked (55 raw) | 26 | 8 | 17 | 0 | 26 | 22 | 0 | 4 |
-| preferred | Revolution Hall | checked (30 raw) | 14 | 3 | 11 | 0 | 13 | 9 | 1 | 3 |
-| preferred | Mississippi Studios | checked (30 raw) | 11 | 0 | 11 | 0 | 14 | 11 | 3 | 0 |
-| preferred | Holocene | checked (47 raw) | 33 | 14 | 19 | 14 | 33 | 11 | 1 | 21 |
+| preferred | Revolution Hall | checked (30 raw) | 15 | 3 | 12 | 0 | 13 | 10 | 0 | 3 |
+| preferred | Mississippi Studios | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 14 | 0 | 0 |
+| preferred | Holocene | checked (48 raw) | 34 | 15 | 19 | 15 | 34 | 12 | 1 | 21 |
 | preferred | Doug Fir Lounge | reopening-watch | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | Nova PDX | checked (11 raw) | 11 | 1 | 10 | 0 | 11 | 11 | 0 | 0 |
 | preferred | Star Bar | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | Lola's Room | checked (14 raw) | 6 | 0 | 5 | 0 | 6 | 6 | 0 | 0 |
-| preferred | The Showdown | checked (53 raw) | 32 | 0 | 28 | 0 | 40 | 32 | 6 | 2 |
+| preferred | The Showdown | checked (53 raw) | 38 | 0 | 33 | 0 | 40 | 38 | 0 | 2 |
 | preferred | 45 East | checked (19 raw) | 15 | 15 | 0 | 15 | 15 | 15 | 0 | 0 |
 | preferred | Republic Cafe / Ming Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | B-Side Tavern | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
@@ -42,22 +42,22 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Moda Center | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
 | preferred | Kenton Club | checked (14 raw) | 16 | 16 | 0 | 16 | 13 | 13 | 0 | 0 |
 | preferred | Shanghai Tunnel | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
-| preferred | Turn! Turn! Turn! | checked (19 raw) | 16 | 13 | 3 | 11 | 19 | 15 | 2 | 2 |
+| preferred | Turn! Turn! Turn! | checked (19 raw) | 18 | 14 | 3 | 12 | 19 | 17 | 0 | 2 |
 | preferred | Starday Tavern | checked (1588 raw) | 65 | 1 | 60 | 1 | 65 | 65 | 0 | 0 |
-| preferred | The Off Beat | checked (11 raw) | 5 | 5 | 0 | 5 | 5 | 4 | 0 | 1 |
+| preferred | The Off Beat | checked (14 raw) | 5 | 5 | 0 | 5 | 8 | 4 | 3 | 1 |
 | scene | The Alleyway | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Polaris Hall | checked (30 raw) | 11 | 0 | 11 | 0 | 14 | 10 | 3 | 1 |
+| scene | Polaris Hall | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 13 | 0 | 1 |
 | scene | AZØTH | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
 | scene | Hawthorne Lounge | adapter-needed | 4 | 1 | 3 | 0 | unknown | — | — | — |
 | scene | Word Virus Books | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Show Bar at Revolution Hall | checked (30 raw) | 11 | 1 | 10 | 0 | 13 | 9 | 2 | 2 |
+| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 13 | 11 | 0 | 2 |
 | scene | Aladdin Theater | checked (91 raw) | 34 | 0 | 34 | 0 | 34 | 33 | 0 | 1 |
-| scene | Mission Theater | checked (47 raw) | 38 | 3 | 33 | 2 | 39 | 38 | 1 | 0 |
-| scene | The 1905 | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Jack London Revue | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
+| scene | Mission Theater | checked (47 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
+| scene | The 1905 | checked (8 raw) | 0 | 0 | 0 | 0 | 6 | 0 | 6 | 0 |
+| scene | Jack London Revue | checked (50 raw) | 0 | 0 | 0 | 0 | 33 | 0 | 33 | 0 |
 | scene | The Goodfoot | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Alberta Street Pub | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
+| scene | Alberta Street Pub | checked (33 raw) | 0 | 0 | 0 | 0 | 32 | 0 | 30 | 2 |
 | scene | Alberta Rose Theatre | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Keys Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 
@@ -105,6 +105,9 @@ These items were parsable from a connected first-party source and were **not** m
 ### Show Bar at Revolution Hall (2 review)
 - 2026-11-08 — [Sparta](https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall) — held for reconciliation
 - 2026-11-14 — [Heathens Homecoming West 2026 Night 3 Happy Hour (Free)](https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall) — held for reconciliation
+### Alberta Street Pub (2 review)
+- 2026-11-10 — [Tezeta Band](https://www.albertastreetpub.com/music/2026/11/10/tezeta-band) — held for reconciliation
+- 2026-11-17 — [THMPR](https://www.albertastreetpub.com/music/2026/11/17/thmpr) — held for reconciliation
 ### Hawthorne Theatre (1 review)
 - 2026-11-27 — [DJ RAPHI](https://hawthornetheatre.com/event/dj-raphi/hawthorne-theatre/portland-oregon/) — held for reconciliation
 ### The Off Beat (1 review)
@@ -146,10 +149,9 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **The Six (Midnight PDX Bar)**: adapter-needed; original published events remain unmeasured.
 - **Show Bar at Revolution Hall**: checked; 4 held records without a parseable date.
 - **Aladdin Theater**: checked; 2 held records without a parseable date.
-- **The 1905**: adapter-needed; original published events remain unmeasured.
-- **Jack London Revue**: adapter-needed; original published events remain unmeasured.
+- **The 1905**: checked; 2 held records without a parseable date.
 - **The Goodfoot**: adapter-needed; original published events remain unmeasured.
-- **Alberta Street Pub**: adapter-needed; original published events remain unmeasured.
+- **Alberta Street Pub**: checked; 1 held records without a parseable date.
 - **Alberta Rose Theatre**: adapter-needed; original published events remain unmeasured.
 - **Keys Lounge**: adapter-needed; original published events remain unmeasured.
 

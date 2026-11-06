@@ -12,43 +12,46 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | High Water Mark | Checked | 67 | 0 | 0 | 0 | 0 | 0 | 67 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
 | Twilight Cafe and Bar | Checked | 22 | 0 | 0 | 0 | 0 | 4 | 18 |
-| Star Theater | Checked | 40 | 1 | 1 | 0 | 1 | 4 | 35 |
-| Dante's | Checked | 44 | 2 | 1 | 1 | 2 | 3 | 39 |
-| Roseland Theater | Checked | 33 | 2 | 0 | 2 | 2 | 5 | 26 |
+| Star Theater | Checked | 40 | 0 | 0 | 0 | 0 | 4 | 36 |
+| Dante's | Checked | 44 | 0 | 0 | 0 | 0 | 3 | 41 |
+| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 5 | 28 |
 | Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 8 | 25 |
 | Hawthorne Theatre | Checked | 39 | 0 | 0 | 0 | 0 | 3 | 36 |
-| Crystal Ballroom | Checked | 55 | 2 | 0 | 2 | 2 | 6 | 47 |
-| Revolution Hall | Checked | 30 | 3 | 0 | 3 | 3 | 9 | 18 |
-| Turn! Turn! Turn! | Checked | 19 | 2 | 1 | 0 | 2 | 2 | 15 |
+| Crystal Ballroom | Checked | 55 | 0 | 0 | 0 | 0 | 6 | 49 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 9 | 21 |
+| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 6 | 0 | 6 | 6 | 3 | 21 |
-| Holocene | Checked | 47 | 3 | 3 | 0 | 3 | 30 | 14 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
+| Holocene | Checked | 48 | 1 | 1 | 0 | 1 | 30 | 17 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 42 | 1546 |
-| The Off Beat / Friends of Noise | Checked | 11 | 1 | 1 | 0 | 1 | 5 | 5 |
-| Aladdin Theater | Checked | 91 | 1 | 0 | 1 | 1 | 4 | 86 |
-| Mission Theater | Checked | 47 | 1 | 0 | 1 | 1 | 0 | 46 |
+| The Off Beat / Friends of Noise | Checked | 14 | 3 | 3 | 0 | 3 | 5 | 6 |
+| Aladdin Theater | Checked | 91 | 0 | 0 | 0 | 0 | 4 | 87 |
+| Mission Theater | Checked | 47 | 0 | 0 | 0 | 0 | 0 | 47 |
 | Nova PDX | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
 | Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
-| The Showdown | Checked | 53 | 7 | 0 | 6 | 7 | 12 | 34 |
-| 45 East | Checked | 19 | 2 | 2 | 0 | 2 | 0 | 17 |
+| The Showdown | Checked | 53 | 0 | 0 | 0 | 0 | 12 | 41 |
+| 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 0 | 19 |
 | Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
+| The 1905 | Checked | 8 | 6 | 6 | 0 | 6 | 2 | 0 |
+| Jack London Revue | Checked | 50 | 50 | 9 | 41 | 50 | 0 | 0 |
+| Alberta Street Pub | Checked | 33 | 30 | 5 | 21 | 30 | 3 | 0 |
 
 ### Classification review
 
-New candidate categories: **Karaoke** 2 · **Music** 9 · **Unclassified** 22.
-**22 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 24 · **Other** 2 · **Performance** 2 · **Unclassified** 62.
+**62 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Dante's: POPSMEAR — https://www.danteslive.com/tm-event/popsmear/
-- Roseland Theater: Akira Yamaoka — https://roselandpdx.com/event/akira-yamaoka/roseland-theater/portland-oregon/
-- Roseland Theater: The Chats US TOUR — https://roselandpdx.com/event/the-chats-us-tour/roseland-theater/portland-oregon/
-- Crystal Ballroom: 2000s Cupid’s Ball — https://www.crystalballroompdx.com/events/279805-2000s-cupids-ball/
-- Crystal Ballroom: Ricky Montgomery: The Monty Tour — https://www.crystalballroompdx.com/events/279373-ricky-montgomery-the-monty-tour/
-- Revolution Hall: Phoebe Robinson: Feral & Fired Up! — https://www.etix.com/ticket/p/91940693/phoebe-robinsonferal-fired-up-portland-revolution-hall
-- Show Bar at Revolution Hall: Video Dance Attack Presents: Studio 54 — https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall
-- Show Bar at Revolution Hall: ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell — https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall
-- Mississippi Studios: Bayonne - The ‘Filters’ Tour — https://www.etix.com/ticket/p/80960269/bayonne-the-filterstour-portland-mississippi-studios
-- Polaris Hall: Olivia O’Brien Presents: The PIXIE Tour — https://www.etix.com/ticket/p/55541535/olivia-obrien-presentsthe-pixie-tour-portland-polaris-hall
-- Plus 12 other unclassified candidates in the full event table below.
+- Jack London Revue: LILA FORDE AND ZAN FISKUM — https://www.jacklondonrevue.com/tm-event/lila-forde/
+- Jack London Revue: BURLY-Q REVUE — https://www.jacklondonrevue.com/tm-event/burly-q-revue-18/
+- Jack London Revue: SHELLY RUDOLPH — https://www.jacklondonrevue.com/tm-event/shelly-rudolph/
+- Jack London Revue: Down in the Delta with Ms Vee and Yella P — https://www.jacklondonrevue.com/tm-event/down-in-the-delta-with-ms-vee-and-yella-p/
+- Jack London Revue: BURLY-Q REVUE — https://www.jacklondonrevue.com/tm-event/burly-q-revue-6/
+- Jack London Revue: OZ NOY TRIO w/ Brian Charette & Dave Weckl - Second Night Added! — https://www.jacklondonrevue.com/tm-event/oz-noy-trio-w-brian-charette-dave-weckl-second-night-added/
+- Jack London Revue: OZ NOY TRIO w/ Brian Charette & Dave Weckl — https://www.jacklondonrevue.com/tm-event/oz-noy-trio-w-brian-charette-dave-weckl/
+- Jack London Revue: BOMBARGO — https://www.jacklondonrevue.com/tm-event/bombargo/
+- Jack London Revue: FOX WALKER, EARL GRACIOUS BAND, LIQUID SUN — https://www.jacklondonrevue.com/tm-event/fox-walker-earl-gracious-band-liquid-sun/
+- Jack London Revue: BURLY-Q REVUE — https://www.jacklondonrevue.com/tm-event/burly-q-revue-7/
+- Plus 52 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
@@ -66,10 +69,7 @@ New candidate categories: **Karaoke** 2 · **Music** 9 · **Unclassified** 22.
 - Hawthorne Lounge: **adapter-needed**.
 - Word Virus Books: **adapter-needed**.
 - The Six (Midnight PDX Bar): **adapter-needed**.
-- The 1905: **adapter-needed**.
-- Jack London Revue: **adapter-needed**.
 - The Goodfoot: **adapter-needed**.
-- Alberta Street Pub: **adapter-needed**.
 - Alberta Rose Theatre: **adapter-needed**.
 - Keys Lounge: **adapter-needed**.
 
@@ -85,59 +85,108 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
 | Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
 
-## New candidates: 33
+## New candidates: 90
 
-- star-theater: 1 proposals
-- dantes: 2 proposals
-- roseland: 2 proposals
-- crystal-ballroom: 2 proposals
-- revolution-hall: 3 proposals
-- turn-turn-turn: 2 proposals
-- mississippi-polaris: 6 proposals
-- holocene: 3 proposals
-- the-off-beat: 1 proposals
-- aladdin-theater: 1 proposals
-- mission-theater: 1 proposals
-- showdown: 7 proposals
-- 45-east: 2 proposals
+- holocene: 1 proposals
+- the-off-beat: 3 proposals
+- the-1905: 6 proposals
+- jack-london-revue: 50 proposals
+- alberta-street-pub: 30 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-13 | Rahzel, Ras Kass, DJ K-Salaam | Star Theater | 19:30 (doors/show unverified) | https://www.startheaterportland.com/tm-event/rahzel-ras-kass-dj-k-salaam/ |
-| 2027-01-13 | POPSMEAR | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/popsmear/ |
-| 2027-01-23 | WESTERN STANDARD TIME (Ska Orchestra) with The Cascadians & Weekend Kids | Dante's | 20:30 (doors/show unverified) | https://www.danteslive.com/tm-event/western-standard-time-ska-orchestra-with-the-cascadians-weekend-kids/ |
-| 2027-03-19 | Akira Yamaoka | Roseland Theater | 20:30 (doors/show unverified) | https://roselandpdx.com/event/akira-yamaoka/roseland-theater/portland-oregon/ |
-| 2027-04-09 | The Chats US TOUR | Roseland Theater | 20:00 (doors/show unverified) | https://roselandpdx.com/event/the-chats-us-tour/roseland-theater/portland-oregon/ |
-| 2027-02-13 | 2000s Cupid’s Ball | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/279805-2000s-cupids-ball/ |
-| 2027-05-03 | Ricky Montgomery: The Monty Tour | Crystal Ballroom | 20:30 (doors/show unverified) | https://www.crystalballroompdx.com/events/279373-ricky-montgomery-the-monty-tour/ |
-| 2026-11-21 | Phoebe Robinson: Feral & Fired Up! | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91940693/phoebe-robinsonferal-fired-up-portland-revolution-hall |
-| 2026-11-21 | Video Dance Attack Presents: Studio 54 | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall |
-| 2026-11-22 | ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell | Show Bar at Revolution Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall |
-| 2026-11-13 | Port Velvet + My Body | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/port-velvet-my-body-november-13-2026-797592 |
-| 2026-11-14 | Karaoke w/ KJ Stargazer | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/karaoke-w-kj-stargazer-november-14-2026-797689 |
-| 2026-11-17 | Bayonne - The ‘Filters’ Tour | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/80960269/bayonne-the-filterstour-portland-mississippi-studios |
-| 2026-11-17 | Olivia O’Brien Presents: The PIXIE Tour | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55541535/olivia-obrien-presentsthe-pixie-tour-portland-polaris-hall |
-| 2026-11-18 | Natural Child | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/75106036/natural-child-portland-mississippi-studios |
-| 2026-11-18 | WHITMER THOMAS | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/41356454/whitmer-thomas-portland-polaris-hall |
-| 2026-11-19 | The Cactus Blossoms | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/40638516/the-cactus-blossoms-portland-mississippi-studios |
-| 2026-11-19 | Mattress 20 - 20 Years Of Mattress | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/91263217/mattress-20-20-years-of-mattress-portland-polaris-hall |
-| 2026-12-20 | Gothmas: Constant Debauchery (Depeche Mode), Kiss Me Kiss Me Kiss Me (The Cure), Precious Machinery (Siouxsie and the Banshees) | Holocene | 19:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-20-gothmas-constant-debauchery-depeche-mode-kiss-me-kiss-me-kiss-me-the-cure-precio |
-| 2027-02-13 | Spend The Night Presents: Jacques Greene | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2027-02-13-spend-the-night-presents-jacques-greene-jg-album-tour |
-| 2027-02-21 | Sylvie | Holocene | 20:00 (doors/show unverified) | https://www.holocene.org/events/2027-02-21-sylvie |
-| 2027-01-12 | 1/12 Perennial | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/1-12-perennial-january-12-2027-758117 |
-| 2027-07-29 | Steam Powered Giraffe | Aladdin Theater | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/44288175/steam-powered-giraffe-portland-aladdin-theater |
-| 2026-12-19 | Holiday Cabaret: Featuring James Rossi & The Christmas Island Band | Mission Theater | 19:30 (doors/show unverified) | https://www.mcmenamins.com/events/279231-holiday-cabaret-featuring-james-rossi-the-christmas-island-band |
-| 2026-12-01 | Two-Step Tuesday with Countryside Ride and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-countryside-ride-and-dance-lessons-with-robbie-3/ |
-| 2026-12-08 | Two-Step Tuesday with Shorty and the Mustangs and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-shorty-and-the-mustangs-and-dance-lessons-with-peggy-2/ |
-| 2026-12-14 | Square Dancing with Caller Amy Hofer and Forty Drop Few with Alexander Jones/ KARAOKE @ 9:30 | The Showdown | 19:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/square-dancing-with-miss-pralines-whip-lodge-tenderstrokes/ |
-| 2026-12-15 | Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-robbie/ |
-| 2026-12-22 | Two-Step Tuesday with Best Intentions and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-peggy-2/ |
-| 2026-12-29 | Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-best-intentions-and-dance-lessons-with-robbie-2/ |
-| 2027-01-12 | Two-Step Tuesday with Shorty and the Mustangs and Dance Lessons with Peggy | The Showdown | 19:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/two-step-tuesday-with-shorty-and-the-mustangs-and-dance-lessons-with-peggy-3/ |
-| 2027-01-16 | ANAMĒ | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/aname0116 |
-| 2027-01-29 | ROMAIN GARCIA | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/romaingarcia0129 |
+| 2026-11-27 | SNAP! '90s Dance Party!: '90s Thanksgiving Edition | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-11-27-snap-90s-dance-party-90s-thanksgiving-edition |
+| 2026-11-27 | 11/27 Let's Meet at The Off Beat | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/11-27-let-s-meet-at-the-off-beat-november-27-2026-749620 |
+| 2026-12-12 | 12/12 Bleakfest | The Off Beat | 18:30 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/12-12-bleakfest-december-12-2026-756862 |
+| 2026-12-23 | 12/23 Ant Kash, King E.D.O, Drew Dru, BBN Bosko, Burbya, Tai$hoku, Cask3tt Ashden Rain, Bxbymarr | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/12-23-ant-kash-king-e-d-o-drew-dru-bbn-bosko-burbya-tai-hoku-cask3tt-ashden-rain-bxbymarr-december-23-2026-798630 |
+| 2026-11-06 | Dmitri Matheny Group — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13197/2026-11-06 |
+| 2026-11-06 | Dmitri Matheny Group — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13197/2026-11-06 |
+| 2026-11-07 | Nicole McCabe — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13202/2026-11-07 |
+| 2026-11-07 | Nicole McCabe — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13202/2026-11-07 |
+| 2026-11-07 | Late Show with Noah Mortola — 10:15 PM show | The 1905 | 22:15 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13204/2026-11-07 |
+| 2026-11-08 | Dave Tull — 5:30 PM show | The 1905 | 17:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13205/2026-11-08 |
+| 2026-11-07 | LILA FORDE AND ZAN FISKUM | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/lila-forde/ |
+| 2026-11-07 | BURLY-Q REVUE | Jack London Revue | 22:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/burly-q-revue-18/ |
+| 2026-11-12 | MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-8/ |
+| 2026-11-13 | SHELLY RUDOLPH | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/shelly-rudolph/ |
+| 2026-11-14 | Down in the Delta with Ms Vee and Yella P | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/down-in-the-delta-with-ms-vee-and-yella-p/ |
+| 2026-11-14 | BURLY-Q REVUE | Jack London Revue | 22:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/burly-q-revue-6/ |
+| 2026-11-16 | OZ NOY TRIO w/ Brian Charette & Dave Weckl - Second Night Added! | Jack London Revue | 19:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/oz-noy-trio-w-brian-charette-dave-weckl-second-night-added/ |
+| 2026-11-17 | OZ NOY TRIO w/ Brian Charette & Dave Weckl | Jack London Revue | 19:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/oz-noy-trio-w-brian-charette-dave-weckl/ |
+| 2026-11-18 | BOMBARGO | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/bombargo/ |
+| 2026-11-19 | CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-2/ |
+| 2026-11-20 | ERIC JOHN KAISER - ALBUM RELEASE | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/eric-john-kaiser-album-release/ |
+| 2026-11-21 | FOX WALKER, EARL GRACIOUS BAND, LIQUID SUN | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/fox-walker-earl-gracious-band-liquid-sun/ |
+| 2026-11-21 | BURLY-Q REVUE | Jack London Revue | 22:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/burly-q-revue-7/ |
+| 2026-11-25 | INFINITY | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/infinity/ |
+| 2026-11-27 | Black Friday Neo Soul Supper Club | Jack London Revue | 20:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/black-friday-neo-soul-supper-club/ |
+| 2026-11-28 | ONE WAY OUT - ALLMAN BROTHERS BAND TRIBUTE | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/one-way-out-allman-brothers-band-tribute/ |
+| 2026-11-28 | BURLY-Q REVUE | Jack London Revue | 22:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/burly-q-revue-8/ |
+| 2026-12-02 | STEVE OLIVER | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/steve-oliver/ |
+| 2026-12-03 | MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays/ |
+| 2026-12-04 | L'Rain | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/lrain/ |
+| 2026-12-05 | LAU NOAH x ADAM NEELY | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/lau-noah-x-adam-neely/ |
+| 2026-12-05 | BURLY-Q REVUE | Jack London Revue | 22:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/burly-q-revue-9/ |
+| 2026-12-06 | JUNE MCDOOM | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/june-mcdoom/ |
+| 2026-12-10 | MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-11/ |
+| 2026-12-11 | MARK GUILIANA | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mark-guiliana/ |
+| 2026-12-12 | THE ROYAL WE | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/the-royal-we/ |
+| 2026-12-13 | MARIA MAZZOTTA | Jack London Revue | 19:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/maria-mazzotta/ |
+| 2026-12-17 | MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-10/ |
+| 2026-12-18 | Cyrus Nabipoor's Crescent City Christmas Card | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/cyrus-nabipoors-crescent-city-christmas-card/ |
+| 2026-12-19 | LILLA'S SOULFUL CHRISTMAS | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/lillas-soulful-christmas/ |
+| 2026-12-23 | THE THREE DS | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/the-three-ds/ |
+| 2026-12-29 | The Sean Holmes Band | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/the-sean-holmes-band/ |
+| 2026-12-30 | JERRY JOSEPH & THE JACKMORMONS | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/jerry-joseph/ |
+| 2027-01-06 | The Mike Dillon Band Feat Brad Haas & Otto Schrang | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/the-mike-dillon-band-feat-brad-haas/ |
+| 2027-01-18 | KIMAYA DIGGS | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/kimaya-diggs/ |
+| 2027-01-23 | LUIS J GOMEZ | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/luis-j-gomez/ |
+| 2027-01-30 | Early Show-Black Tie/White Noise: Low with The Christopher Brown Quartet | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/early-show-black-tie-white-noise-low-with-the-christopher-brown-quartet/ |
+| 2027-01-30 | Late Show-Black Tie/White Noise: Low with The Christopher Brown Quartet | Jack London Revue | 21:45 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/late-show-black-tie-white-noise-low-with-the-christopher-brown-quartet/ |
+| 2027-02-05 | ROSE TINTED: A TRIBUTE TO J DILLA | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/rose-tinted-a-tribute-to-j-dilla/ |
+| 2027-02-06 | IRON PROPHECY - BOB MARLEY B-DAY BASH | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/iron-prophecy-bob-marley-b-day-bash/ |
+| 2027-02-07 | Kahil El'Zabar - Ethnic Heritage Ensemble - Black History Month Tour - EARLY SHOW | Jack London Revue | 17:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/kahil-elzabar-ethnic-heritage-ensemble-black-history-month-tour-early-show/ |
+| 2027-02-07 | Kahil El'Zabar - Ethnic Heritage Ensemble - Black History Month Tour - LATE SHOW | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/kahil-elzabar-ethnic-heritage-ensemble-black-history-month-tour-late-show/ |
+| 2027-02-13 | Mouse Powell | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mouse-powell/ |
+| 2027-02-18 | REVEREND HORTON HEAT with Special Guest | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/reverend-horton-heat-with-special-guest/ |
+| 2027-02-19 | An Evening With Trio Subtonic | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/an-evening-with-trio-subtonic/ |
+| 2027-03-01 | Hot 8 Brass Band | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/hot-8-brass-band/ |
+| 2027-03-04 | CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-3/ |
+| 2027-03-05 | Kneebody - Early Show | Jack London Revue | 19:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/kneebody-early-show/ |
+| 2027-03-05 | Kneebody - Late Show | Jack London Revue | 22:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/kneebody-late-show/ |
+| 2027-03-06 | GATA GALACTICA w/ DJ PAPI | Jack London Revue | 21:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/gata-galactica-w-dj-papi/ |
+| 2026-11-06 | Kalida with Opener Paper Plane | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/6/kalida-with-opener-paper-plane |
+| 2026-11-06 | Novamajiq Presents: The Second Breath Show - Sounds by Makaveli | Alberta Street Pub | 21:30 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/6/novamajiq-presents-the-second-breath-show-sounds-by-makaveli |
+| 2026-11-07 | Ramblin Rose | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2025/1/31/ramblin-rose-wcxkb-m9ybz-e4ryw-cbrxx-8ntrx-l94xs |
+| 2026-11-08 | Smut City Jellyroll Society | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/8/smut-city-jellyroll-society |
+| 2026-11-08 | SOULFUL SUNDAYS feat. Alea Loren & Co | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/3/5/soulful-sundays-p3a5l-3wl64-twxnj-wkacn-lc8tr-gphsj-x73af-5meh3-6cspz-9z8kp-wtz8c-47fe8-ekh63-lxhbe-7z8f3 |
+| 2026-11-09 | Comedy & Monday Night Football with Hazel Dell Hottie | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie |
+| 2026-11-10 | Bridgetown Trivia on the Heated Patio! | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/3/13/bridgetown-trivia-on-the-heated-patio-6cwzx-dg47h-78jwb-2lt32-azz6n-gd4lz-rd6wg-6ghnc-653hl-dnb5c-42dcy-r6ztl-37cda-7ljxc-fwzrf |
+| 2026-11-11 | Wednesday Night Social - Cigars, Dominos & Music | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/10/18/wednesday-night-social-fkf88-mke97-4227c-l64xx-gss68-cjzan-8lsw3-nbgjn-yr6pm-6kblr-ff6b5-lsmb9-hkw2h-f5mft-hfbdc-nddag-sg2pm-ylbtn-7mp5t-b64gk-lwx2r-tbbpe-gkh64 |
+| 2026-11-12 | Crystal Beach / Emily and the Squeamish / Talks To Plants | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/12/crystal-beach-emily-and-the-squeamish-talks-to-plants |
+| 2026-11-13 | TITS UP | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2024/2/9/tits-up-3y8x8-z9wpc-wa6yf-6sspp-serrr-xgchh-yckjg-xal9h-ch8p7-ks3km |
+| 2026-11-13 | The Flip // Marshall Law Band | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/13/the-flip-marshall-law-band |
+| 2026-11-14 | Lunch & Soul with the Mel Brown Organ Trio | Alberta Street Pub | 13:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2025/12/6/lunch-amp-soul-with-the-mel-brown-organ-trio |
+| 2026-11-14 | These Foolish Things / The Get Tight! | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/14/these-foolish-things-the-get-tight |
+| 2026-11-14 | Birdwar: Record Release - The Frequence // Jaycob Van Auken | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/14/birdwar-record-release-the-frequence-jaycob-van-auken |
+| 2026-11-15 | Cosmic Gnarly | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/15/cosmic-gnarly |
+| 2026-11-16 | Comedy & Monday Night Football with Hazel Dell Hottie | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/10/5/comedy-amp-monday-night-football-with-hazel-dell-hottie |
+| 2026-11-16 | Ben Rice & The PDX Hustle | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/1/19/ben-rice-amp-the-pdx-hustle |
+| 2026-11-17 | Bridgetown Trivia on the Heated Patio! | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/3/13/bridgetown-trivia-on-the-heated-patio-6cwzx-dg47h-78jwb-2lt32-azz6n-gd4lz-rd6wg-6ghnc-653hl-dnb5c-42dcy-r6ztl-37cda-7ljxc-xm5zz |
+| 2026-11-18 | Wednesday Night Social - Cigars, Dominos & Music | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/10/18/wednesday-night-social-fkf88-mke97-4227c-l64xx-gss68-cjzan-8lsw3-nbgjn-yr6pm-6kblr-ff6b5-lsmb9-hkw2h-f5mft-hfbdc-nddag-sg2pm-ylbtn-7mp5t-b64gk-lwx2r |
+| 2026-11-19 | MPEG-2 - Mike Prigodich Elektric Group | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/19/mpeg-2-mike-prigodich-elektric-group |
+| 2026-11-20 | Lordymama | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/20/lordymama |
+| 2026-11-20 | Mandela & Friends | Alberta Street Pub | 21:30 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/20/mandela-amp-friends |
+| 2026-11-21 | Drag Brunch Hosted by Nicoleonoscopi! | Alberta Street Pub | 12:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/5/2/drag-brunch-hosted-by-nicoleonoscopi |
+| 2026-11-21 | Goth Video Dance Night | Alberta Street Pub | 20:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/3/21/video-goth-night |
+| 2026-11-27 | Kitschmas Crackers Black Friday | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/27/kitschmas-crackers-black-friday |
+| 2026-11-29 | Soda Jinx // Jay and Hex // Gregory James Mckillop | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/29/soda-jinx-jay-and-hex-gregory-james-mckillop |
+| 2026-11-29 | SOULFUL SUNDAYS featuring Santiago & Friends | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/3/5/soulful-sundays-p3a5l-3wl64-twxnj-wkacn-lc8tr-gphsj-x73af-5meh3-6cspz-9z8kp-wtz8c-47fe8-ekh63-lxhbe-7z8f3-e3gab-abftn |
+| 2026-12-01 | Boomerang Sky / Onion / Rei Deora | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/1/boomerang-sky-onion-rei-deora |
+| 2026-12-05 | Lucky As Us / The Sirens / Nervous State | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/5/lucky-as-us-the-sirens-nervous-state |
+| 2026-12-18 | CLASSY BRASSY with Clodewerks / Waffle Taco / Couch Brass | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/18/classy-brassy-with-clodewerks-waffle-taco-couch-brass |
 
-## Held for review: 146
+## Held for review: 151
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Wolves in the Throne Room, Stygian Bough, Spirit Possession — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204942/soundcontrol
@@ -285,6 +334,11 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 - [showdown] Two-Step Tuesday with Patsy's Decline and Two Step Lessons with Robbie — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/two-step-tuesday-with-patsys-decline-and-two-step-lessons-with-robbie/
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-70/
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-71/
+- [the-1905] The Ben Wolfe Trio with Nicole Glover and Ron Steen — Original ticket performance lacks a linked event-specific page 
+- [the-1905] The Ben Wolfe Trio with Nicole Glover and Ron Steen — Original ticket performance lacks a linked event-specific page 
+- [alberta-street-pub] Tezeta Band — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/11/10/tezeta-band
+- [alberta-street-pub] Soulful Sundays featuring Charlie Brown III - Tribute to Herbie Hancock — No event-specific title or public venue URL 
+- [alberta-street-pub] THMPR — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/11/17/thmpr
 
 ## Source errors: 0
 
