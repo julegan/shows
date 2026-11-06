@@ -13,7 +13,7 @@ function sample(overrides={}){
   location:{addressTitle:"Alberta Street Pub",addressLine1:"1036 NE Alberta Street"},
   body:"<p>$12 Cover at the Door</p>",tags:[],categories:[],...overrides};
 }
-const page={collection:{title:"Live Events",fullUrl:"/music"},pagination:{nextPage:true},upcoming:[sample(),sample({id:"other",title:"Jazz Night",fullUrl:"/music/2026/11/7/jazz-night",startDate:Date.parse("2026-11-08T05:00:00Z"),endDate:Date.parse("2026-11-08T07:00:00Z")})]};
+const page={collection:{title:"Live Events",urlId:"music",fullUrl:"/music"},pagination:{nextPage:true},upcoming:[sample(),sample({id:"other",title:"Jazz Night",fullUrl:"/music/2026/11/7/jazz-night",startDate:Date.parse("2026-11-08T05:00:00Z"),endDate:Date.parse("2026-11-08T07:00:00Z")})]};
 assert.equal(m.eventUrl(liveSourceUrl),liveSourceUrl);
 for(const bad of ["https://other.example/music/2026/11/6/bad","https://www.albertastreetpub.com/music/2026/11/6/bad?utm=1","https://www.albertastreetpub.com/music?format=json","https://www.albertastreetpub.com/music/../admin"]){
  assert.equal(m.eventUrl(bad),null,"No non-event or untrusted URLs");
@@ -40,7 +40,7 @@ assert.equal(m.record(sample({fullUrl:"https://attacker.invalid/music/2026/11/6/
 assert.equal(m.record(sample({assetUrl:"https://bad.example/image.png"})).artwork,undefined);
 assert.equal(m.parse({...page,upcoming:[sample(),sample()]}).records.length,1,"Same URL + source timestamp dedupes identical recurring record");
 assert.throws(()=>m.parse({...page,upcoming:[]}),/upcoming venue calendar/);
-assert.throws(()=>m.parse({...page,collection:{title:"Different",fullUrl:"/music"}}),/collection identity/);
+assert.throws(()=>m.parse({...page,collection:{title:"Different",urlId:"unexpected",fullUrl:"/music"}}),/collection identity/);
 const fixture=m.record(sample({fullUrl:"/music/2023/3/5/ramblin-rose-older-url",title:"Ramblin Rose",
  startDate:Date.parse("2026-11-07T01:00:00Z"),endDate:Date.parse("2026-11-07T03:00:00Z")}));
 const e=extract(fixture,src,new Date("2026-11-06T09:00:00-08:00")).event;
