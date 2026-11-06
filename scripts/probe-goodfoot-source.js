@@ -1,30 +1,14 @@
 #!/usr/bin/env node
 "use strict";
-const targets=[
- "https://the1905.turntabletickets.com/",
- "https://the1905.turntabletickets.com/calendar",
- "https://the1905.turntabletickets.com/shows/13202/2026-11-07",
- "https://www.jacklondonrevue.com/calendar/"
-];
-const needles={
- "https://the1905.turntabletickets.com/":["/shows/13202","Dmitri Matheny","__NUXT_DATA__","data-page","data-react","showlist","data-v-"],
- "https://the1905.turntabletickets.com/calendar":["showlist","events","calendar","date","show_id","showId","__NUXT_DATA__","showtimes"],
- "https://the1905.turntabletickets.com/shows/13202/2026-11-07":["Nicole","6:30","06:30","08:30","showtime","__NUXT_DATA__","data-page","tickets"],
- "https://www.jacklondonrevue.com/calendar/":["CHUCK ISRAELS","MEL BROWN","tw-events","tw_event","ticketweb","event-date","date_time","event_date","2026-11-12","eventid","tw-plugin-calendar-list","tw-cal-event"]
-};
 (async()=>{
-for(const url of targets){
- try{
- const r=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-original-source-review/0.1"},signal:AbortSignal.timeout(16000),redirect:"error"});
- const html=await r.text();if(html.length>3000000)throw Error("oversize");
- console.log("SOURCE DEEP",JSON.stringify({url,status:r.status,len:html.length,bodyEnding:html.slice(-700).replace(/\s+/g," ")}));
- if(!r.ok)continue;
- for(const needle of needles[url]){
-   let i=html.indexOf(needle);
-   console.log("SOURCE TEXT",needle,i,i<0?"":html.slice(Math.max(0,i-480),Math.min(html.length,i+950)).replace(/\s+/g," ").slice(0,1350));
- }
- const scripts=[...html.matchAll(/<script\b([^>]*)>/gi)].map(x=>x[1]).filter(x=>/src=|type=|id=/.test(x)).slice(-16);
- console.log("SOURCE SCRIPTS",JSON.stringify(scripts).slice(0,2800));
- }catch(e){console.log("SOURCE DEEP ERR "+url+" "+String(e.message||e));}
-}
+  const url="https://the1905.turntabletickets.com/";
+  const r=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},redirect:"error",signal:AbortSignal.timeout(15000)});
+  if(!r.ok)throw Error("The 1905 public page status "+r.status);
+  const html=await r.text(),m=html.match(/window\.__pinia\s*=\s*(\{[\s\S]*?\});\s*<\/script>/);
+  console.log("1905 SSR",JSON.stringify({length:html.length,matched:!!m,scriptPosition:html.indexOf("window.__pinia"),numShows:(html.match(/\/shows\/\d+\/20\d\d-\d\d-\d\d/g)||[]).length}));
+  if(!m)return;
+  const state=JSON.parse(m[1]);
+  const pp=state.performancePaginate||{},ps=pp.performances||[];
+  console.log("1905 STATE",JSON.stringify({stateKeys:Object.keys(state),pagination:Object.keys(pp),hasMore:pp.hasMore,records:ps.length,firstItems:ps.slice(0,3).map(e=>({keys:Object.keys(e),id:e.id,performance_id:e.performance_id,show_id:e.show_id,date:e.date,time:e.time,show:e.show?{keys:Object.keys(e.show),id:e.show.id,name:e.show.name,title:e.show.title,description:e.show.description?.slice(0,240),image:e.show.image,show_url:e.show.url}:null}))}).slice(0,12000));
+  console.log("1905 COMPLETE FIRST",JSON.stringify(ps[0]).slice(0,6200));
 })();
