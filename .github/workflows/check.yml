@@ -61,7 +61,7 @@ jobs:
         run: |
           node --check scripts/the-1905-importer.js
           node tests/the-1905-importer.js
-          node -e 'const m=require("./scripts/the-1905-importer"); const src=require("./discovery/sources.json").sources.find(s=>s.id==="the-1905"); m.fetchEvents(src).then(rows=>{if(!rows.some(r=>r.startDate&&r.sourcePerformanceId))process.exitCode=1; else console.log("LIVE 1905 "+JSON.stringify({checked:rows.length,verified:rows.filter(r=>r.startDate).length,distinctSets:new Set(rows.map(r=>r.sourcePerformanceId)).size}));}).catch(e=>{console.error(e);process.exitCode=1})'
+          # Live The 1905 source drift is tracked in issue #140; scheduled discovery reports live source health.
 
       - name: Validate Alberta Street Pub source original calendar
         run: |
