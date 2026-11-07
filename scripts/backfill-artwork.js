@@ -73,7 +73,15 @@ function planLookups(events,options={}){
  // Recheck every eligible event in the next 48 calendar hours, even those
  // already illustrated; artwork and category do not prove status freshness.
  const urgent=nearTermTotal.filter(e=>originalUrl(e));
- const selected=urgent.slice(0,max),remaining=max-selected.length;
+ const todayEvents=urgent.filter(e=>e.startsAt.slice(0,10)===today);
+ const tomorrowEvents=urgent.filter(e=>e.startsAt.slice(0,10)===tomorrow);
+ const dayPage=(rows,limit)=>limit?rows.slice(cycleNumber%Math.ceil(rows.length/limit)*limit,
+  (cycleNumber%Math.ceil(rows.length/limit)+1)*limit):[];
+ const todaySlots=Math.min(max,todayEvents.length);
+ const selected=dayPage(todayEvents,todaySlots);
+ const tomorrowSlots=Math.max(0,max-selected.length);
+ selected.push(...dayPage(tomorrowEvents,tomorrowSlots));
+ const remaining=max-selected.length;
  const pending=pendingForArtwork(events,{today});
  const weekQueue=pending.filter(e=>e.startsAt.slice(0,10)>tomorrow&&e.startsAt.slice(0,10)<=week);
  const laterQueue=pending.filter(e=>e.startsAt.slice(0,10)>week);
@@ -87,8 +95,10 @@ function planLookups(events,options={}){
   if(selected.length>=max)break;
   if(!seen.has(e.id)){selected.push(e);seen.add(e.id);}
  }
- const batchCount=Math.max(count(weekQueue,weekSlots),count(laterQueue,laterSlots));
- return {selected,urgent,nearTermTotal,nearTermOverflow:Math.max(0,urgent.length-max),
+ const batchCount=Math.max(count(todayEvents,todaySlots),count(tomorrowEvents,tomorrowSlots),
+  count(weekQueue,weekSlots),count(laterQueue,laterSlots));
+ return {selected,urgent,nearTermTotal,nearTermOverflow:Math.max(0,urgent.length-
+  selected.filter(e=>e.startsAt.slice(0,10)<=tomorrow).length),
   weekQueue:weekQueue.length,laterQueue:laterQueue.length,requestedBatch:cycleNumber,
   batch:cycleNumber%batchCount,batchCount};
 }
