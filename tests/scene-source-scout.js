@@ -103,4 +103,21 @@ assert(workflow.includes("'discovery/sources.json'")&&workflow.includes("'discov
  "A registry update triggers the research scout without manually editing venue seed lists");
 assert(workflow.includes("SCOUT_PENDING_FILE"),"Keep unmerged new leads when the next scout runs");
 assert(workflow.includes("actions/upload-artifact@"),"Retain a source-health report even when there are no new leads");
+(async()=>{
+ const attempted=[];
+ const result=await scout.run({now:new Date("2026-11-06T12:00:00-08:00"),write:false,
+  request:async url=>{
+   attempted.push(url);
+   return {ok:true,status:200,headers:{get:()=> "text/html; charset=UTF-8"},
+    text:async()=>"<html><body>"+("Original event and venue news page. ".repeat(20))+"</body></html>"};
+  }});
+ assert.equal(result.checked.length,seeds.seeds.length+registryWatch.seeds.length,
+  "The normal daily scout loops over curated AND automatically registered missing source URLs");
+ assert.equal(attempted.length,result.checked.length,"Only registry and curated HTTPS seeds are fetched, not discovered outbound URLs");
+ assert(result.registry.withoutUrl.some(x=>x.id==="b-side"),
+  "Run result retains missing official-source URLs for independent research");
+ assert(!fs.readFileSync(path.join(__dirname,"../discovery/scene-scout-review.md"),"utf8").includes("2026-11-06T12:00:00-08:00"),
+  "Read-only test must not write an actual research report");
+ console.log("PASS — end-to-end registry-backed daily source scout retains approval boundaries");
+})().catch(e=>{console.error(e);process.exitCode=1});
 console.log("PASS — seeded source scouting, niche filtering, vendor graph discovery, HTTPS safety, no event publication");
