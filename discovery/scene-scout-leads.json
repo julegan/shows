@@ -384,6 +384,17 @@
       "firstSeenOn": "2026-11-06"
     },
     {
+      "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-07"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
@@ -426,6 +437,17 @@
       "why": "-sm-3--> Buy Tickets",
       "rank": 7,
       "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-07"
     },
     {
       "url": "https://www.eventbrite.com/b/ga--atlanta/music/pop/",
