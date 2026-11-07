@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-06",
+  "sourceCheckedAt": "2026-11-07",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1262,
-  "addedOccurrences": 62,
-  "batchId": "auto-discovery-2026-11-06-55",
+  "totalOccurrences": 1267,
+  "addedOccurrences": 5,
+  "batchId": "auto-discovery-2026-11-07-57",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -148,11 +148,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-06-52",
       "addedOccurrences": 2
+    },
+    {
+      "batchId": "auto-discovery-2026-11-06-55",
+      "addedOccurrences": 62
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 377
+  "musicOccurrences": 378
 };
 window.SHOWS_EVENTS = [
   {
@@ -14981,6 +14985,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-07-8e99dd5da94b",
+    "title": "SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-07T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Proposed original-source correction: uniquely matched ticket, room, date and explicitly labeled SHOW time",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    },
+    "sourceCorrection": {
+      "status": "source-confirmed",
+      "sourceId": "mississippi-polaris",
+      "sourceUrl": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
+      "previousStartsAt": "2026-11-07T20:00:00-08:00",
+      "observedStartsAt": "2026-11-07T19:30:00-08:00",
+      "checkedAt": "2026-11-07",
+      "evidence": "Original event ticket and venue calendar confirm a separately labeled SHOW time"
+    }
+  },
+  {
     "id": "star-theater-exhumed-with-jarhead-fertilizer-savage-master-molder-2026-11-07",
     "title": "Exhumed with Jarhead Fertilizer, Savage Master & Molder",
     "subtitle": "Metal, Death metal, Deathgrind · live bill",
@@ -15551,57 +15615,6 @@ window.SHOWS_EVENTS = [
       "usageApproved": null
     },
     "addedIn": "auto-discovery-2026-10-25",
-    "discovery": {
-      "sourceId": "mississippi-polaris",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-mississippi-polaris-2026-11-07-8e99dd5da94b",
-    "title": "SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1)",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
-    "tags": [
-      "Category needs review",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-07T20:00:00-08:00",
-    "endsAt": null,
-    "venue": "Mississippi Studios",
-    "address": "3939 N Mississippi Ave, Portland, OR 97227",
-    "neighborhood": "Boise",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
-    "source": "Mississippi Studios / Polaris Hall",
-    "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
-    "icon": "◇",
-    "sourceCheckedAt": "2026-10-24",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "Mississippi Studios / Polaris Hall",
-        "url": "https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios",
-        "kind": "organizer",
-        "checkedAt": "2026-10-24",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
-      "sourceUrl": "https://mississippistudios.com/calendar",
-      "origin": "official-venue-calendar",
-      "credit": "Venue-provided event flyer",
-      "usageApproved": null
-    },
-    "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
@@ -16887,6 +16900,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-08-2c49c3bdf06c",
+    "title": "Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2026-11-08T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Proposed original-source correction: uniquely matched ticket, room, date and explicitly labeled SHOW time",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-10-25",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-10-25",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection"
+    },
+    "sourceCorrection": {
+      "status": "source-confirmed",
+      "sourceId": "mississippi-polaris",
+      "sourceUrl": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
+      "previousStartsAt": "2026-11-08T20:00:00-08:00",
+      "observedStartsAt": "2026-11-08T19:30:00-08:00",
+      "checkedAt": "2026-11-07",
+      "evidence": "Original event ticket and venue calendar confirm a separately labeled SHOW time"
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-08-811c1c2061fb",
     "title": "Tyler Hilton",
     "subtitle": "Source-discovered venue event · details need review",
@@ -16983,57 +17056,6 @@ window.SHOWS_EVENTS = [
       "usageApproved": null
     },
     "addedIn": "auto-discovery-2026-10-29",
-    "discovery": {
-      "sourceId": "mississippi-polaris",
-      "method": "primary-source-collection"
-    }
-  },
-  {
-    "id": "auto-mississippi-polaris-2026-11-08-2c49c3bdf06c",
-    "title": "Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2)",
-    "subtitle": "Source-discovered venue event · details need review",
-    "category": "Unclassified",
-    "tags": [
-      "Category needs review",
-      "Time needs confirmation",
-      "Format needs confirmation"
-    ],
-    "musicStyles": [],
-    "eventFormat": "unverified",
-    "classificationEvidence": "No verified event type or genre",
-    "startTimeKind": "listed",
-    "startsAt": "2026-11-08T20:00:00-08:00",
-    "endsAt": null,
-    "venue": "Mississippi Studios",
-    "address": "3939 N Mississippi Ave, Portland, OR 97227",
-    "neighborhood": "Boise",
-    "price": "See organizer for current admission",
-    "free": null,
-    "age": "Not published",
-    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Buffalo Jones, Stephen Ashbrook",
-    "source": "Mississippi Studios / Polaris Hall",
-    "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
-    "icon": "◇",
-    "sourceCheckedAt": "2026-10-25",
-    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
-    "sourceCategories": [],
-    "sources": [
-      {
-        "name": "Mississippi Studios / Polaris Hall",
-        "url": "https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios",
-        "kind": "organizer",
-        "checkedAt": "2026-10-25",
-        "originalCategories": []
-      }
-    ],
-    "artwork": {
-      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/970901dc48d789a4742550ccfb2726e5.jpg",
-      "sourceUrl": "https://mississippistudios.com/calendar",
-      "origin": "official-venue-calendar",
-      "credit": "Venue-provided event flyer",
-      "usageApproved": null
-    },
-    "addedIn": "auto-discovery-2026-10-25",
     "discovery": {
       "sourceId": "mississippi-polaris",
       "method": "primary-source-collection"
@@ -19100,6 +19122,66 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-11-69c48323eb22",
+    "title": "Wil Blades fea. Andy Coe and Cory Limuaco — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48295 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. $35 TICKETS | ALL AGES Wil Blades - organ Andy Coe - guitar Cory Limuaco - drums No less a jazz organ authority than the legendary Dr. Lonnie Smith has called Wil Blades “the future,” anointing him the heir apparent to “carry on the legend and the l",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13206/Wil_Blades.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48295",
+    "sourceShowId": "13206",
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "the-1905",
       "method": "primary-source-collection"
     }
   },
@@ -29543,6 +29625,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-20-41ac72437aef",
+    "title": "The Teacher Show: Comedy from the Classroom (Night 1)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/73273847/the-teacher-showcomedy-from-the-classroom-night-1-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/73273847/the-teacher-showcomedy-from-the-classroom-night-1-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/bd07241848889769d6b8c5536948175d.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-20-3ee31e0fe03f",
     "title": "2nd Base",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30255,6 +30389,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-20-193f1cd5853b",
+    "title": "Sallie Ford & the Sound Outside",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: MAITA",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/54677666/sallie-ford-the-sound-outside-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/54677666/sallie-ford-the-sound-outside-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7df058e401498fa00bdabb248008847c.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -31000,6 +31186,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-21-df3a4de9a705",
+    "title": "The Teacher Show: Comedy from the Classroom (Night 2)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/65038002/the-teacher-showcomedy-from-the-classroom-night-2-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/65038002/the-teacher-showcomedy-from-the-classroom-night-2-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/bd07241848889769d6b8c5536948175d.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -33580,6 +33818,57 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationEvidence": "Event-specific source wording"
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-25-28d809924442",
+    "title": "Scott Bradlee’s Postmodern Jukebox – The Future Is Vintage World Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/33093850/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/33093850/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/292567e65a2bab494ea128a507ccb166.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-aladdin-theater-2026-11-25-6d67fa98a9f7",

@@ -1,16 +1,16 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-07T04:10:35.817Z; Portland date: 2026-11-06. This workflow does not publish images.
+Generated 2026-11-07T18:42:19.197Z; Portland date: 2026-11-07. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **263**
-- Already have image references: **188**
-- Missing artwork: **75**
-- Missing listings with supported individual source pages: **23**
-- Missing listings needing another source or individual permalink: **52**
-- Batch: **56** of **0** (zero-indexed; 35 lookups maximum)
+- Upcoming music listings: **251**
+- Already have image references: **181**
+- Missing artwork: **70**
+- Missing listings with supported individual source pages: **22**
+- Missing listings needing another source or individual permalink: **48**
+- Batch: **57** of **0** (zero-indexed; 35 lookups maximum)
 - Attempted: **0**; proposed: **0**; no proposal: **0**
 
 ## Why pages did not produce artwork
@@ -21,17 +21,16 @@ Image URLs must be reviewed for event identity, attribution, suitability and usa
 
 | Venue | Missing | Eligible individual pages |
 | --- | ---: | ---: |
-| No Fun | 22 | 19 |
-| Kenton Club | 16 | 0 |
-| High Water Mark Lounge | 8 | 0 |
+| No Fun | 21 | 18 |
+| Kenton Club | 15 | 0 |
+| High Water Mark Lounge | 7 | 0 |
 | Crystal Ballroom | 5 | 2 |
 | High Limit Room | 4 | 1 |
-| Twilight Cafe and Bar | 4 | 0 |
 | Revolution Hall | 3 | 0 |
+| Twilight Cafe and Bar | 3 | 0 |
 | Wonder Ballroom | 3 | 0 |
 | Black Water | 2 | 0 |
 | AZØTH | 1 | 0 |
-| Mission Theater | 1 | 0 |
 | Moda Center | 1 | 0 |
 | Roseland Theater | 1 | 0 |
 | Shanghai Tunnel Bar | 1 | 0 |
