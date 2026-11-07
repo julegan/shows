@@ -9,6 +9,7 @@ const {wallToPacific,time24}=require("./priority-importers");
 const CALENDAR="https://albertarosetheatre.com/calendar/";
 const BASE="https://albertarosetheatre.com";
 const MONTHS={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+const SHORT_MONTHS=Object.fromEntries(Object.entries(MONTHS).map(([name,month])=>[name.slice(0,3),month]));
 function clean(raw,max=260){
  let s=String(raw||"");
  for(let i=0;i<2;i++)s=s.replace(/&#(?:x([0-9a-f]+)|(\d+));/gi,(_,h,d)=>{
@@ -79,7 +80,7 @@ function single(block,group){
  const date=clean(block.match(/<div\b[^>]*id\s*=\s*["']eventDate["'][^>]*>([\s\S]*?)<\/div>/i)?.[1],70);
  const dm=date.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat),?\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})$/i);
  const time=clockText(block.match(/<span\b[^>]*class=["'][^"']*\brhp-event__time-text--list\b[^"']*["'][^>]*>([\s\S]*?)<\/span>/i)?.[1]);
- if(!dm||!group||group.month!==MONTHS[dm[2].toLowerCase()]||!time.show||time.conflicting)
+ if(!dm||!group||group.month!==SHORT_MONTHS[dm[2].toLowerCase()]||!time.show||time.conflicting)
   return {hold:"Original event missing calendar year/date or explicit SHOW clock",title,url};
  const startDate=dateFor(group.month,group.year,dm[3],dm[1],time.show,time.doors);
  if(!startDate)return {hold:"Original month/year, weekday or doors/show conflict",title,url};
@@ -106,7 +107,7 @@ function series(block,group){
   if(!dm||!ticket)return {hold:"Original series performance date or independent ticket ID missing",title,url:seriesUrl};
   // Do not assign January 2027 from a November 2026 series header alone.
   // A differing month requires its own explicit month+year source.
-  if(MONTHS[dm[2].toLowerCase()]!==group.month)return {hold:"Cross-month series performance lacks its own year header",title,url:ticket.url};
+  if(SHORT_MONTHS[dm[2].toLowerCase()]!==group.month)return {hold:"Cross-month series performance lacks its own year header",title,url:ticket.url};
   const time=clockText(html.match(/<div\b[^>]*class=["'][^"']*\brhp-event-series-time\b[^"']*["'][^>]*>([\s\S]*?)<\/div>/i)?.[1]);
   if(!time.show||time.conflicting)return {hold:"Series performance has no verified SHOW clock",title,url:ticket.url};
   const startDate=dateFor(group.month,group.year,dm[3],dm[1],time.show,time.doors);
