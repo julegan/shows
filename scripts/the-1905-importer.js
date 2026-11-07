@@ -37,7 +37,12 @@ function stateOf(html){
   throw Error("The 1905 public event batch unavailable or unexpected");
  return {performances:pp.performances,hasMore:pp.hasMore};
 }
-function row(p,permittedLinks){
+function pacificDay(now){
+ const parts=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",
+  year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(now).map(x=>[x.type,x.value]));
+ return parts.year+"-"+parts.month+"-"+parts.day;
+}
+function row(p,permittedLinks,today){
  const show=p?.show;
  if(!p||!show||typeof show!=="object"||!Number.isSafeInteger(p.id)||p.id<1||
      !Number.isSafeInteger(p.show_id)||p.show_id<1||show.id!==p.show_id)
@@ -46,7 +51,14 @@ function row(p,permittedLinks){
  if(!title||!/^20\d\d-\d\d-\d\d$/.test(date)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(time))
   return {hold:"Original ticket show is missing a title, date or clock"};
  const url=showUrl("/shows/"+p.show_id+"/"+date);
- if(!url||!permittedLinks.has(new URL(url).pathname))return {hold:"Original ticket performance lacks a linked event-specific page",title};
+ if(!url||!permittedLinks.has(new URL(url).pathname)){
+  // The SSR batch sometimes includes earlier performances no longer linked
+  // from the public upcoming list. Those are historical, not broken future
+  // listings. Never apply this exception to a current or future performance.
+  if(today&&date<today)return {skip:"Historical performance no longer linked in the upcoming calendar",
+   title,url,sourcePerformanceId:String(p.id)};
+  return {hold:"Original ticket performance lacks a linked event-specific page",title,url};
+ }
  const [y,m,d]=date.split("-").map(Number);
  const instant=wallToPacific(y,m,d,time);
  if(!instant||!p.datetime||!Number.isFinite(Date.parse(p.datetime))||Date.parse(instant)!==Date.parse(p.datetime))
@@ -68,27 +80,34 @@ function row(p,permittedLinks){
   ...(art?{artwork:art}:{})
  };
 }
-function parse(html){
+function parse(html,opts={}){
  const {performances,hasMore}=stateOf(html);
  const links=new Set([...html.matchAll(/<a\b[^>]*href=["'](\/shows\/[1-9]\d{2,8}\/20\d\d-\d\d-\d\d)["'][^>]*>/gi)].map(x=>x[1]));
  if(!links.size)throw Error("Original venue show permalinks not found");
- const records=[],seen=new Set();
+ const records=[],seen=new Set(),today=pacificDay(opts.now||new Date());
  for(const item of performances){
   if(seen.has(item?.id))continue;
   seen.add(item?.id);
-  records.push(row(item,links));
+  records.push(row(item,links,today));
  }
- if(!records.some(r=>r.startDate))throw Error("The 1905 public SSR batch lacks validated ticketed shows. Holds: "+JSON.stringify(records.map(r=>r.hold||"untimed").slice(0,12)));
+ if(!records.some(r=>r.startDate))
+  // Preserve all observed holds and skips in the editorial review report.
+  // A temporarily inconsistent first SSR batch must not erase its evidence
+  // by throwing away the whole venue result.
+  console.warn("THE 1905 original source has zero verified performances this batch: "+
+   JSON.stringify({checked:records.length,held:records.filter(x=>x.hold).length,
+    historical:records.filter(x=>x.skip).length,reasons:records.filter(x=>x.hold).map(x=>x.hold).slice(0,8)}));
+
  return {records,partial:hasMore};
 }
-async function fetchEvents(src,request=fetch){
+async function fetchEvents(src,request=fetch,opts={}){
  if(src?.id!=="the-1905"||src.adapter!=="turntable-1905-ssr"||src.baseUrl!==BASE||src.url!==BASE+"/")
   throw Error("Unexpected The 1905 source configuration");
  const res=await request(src.url,{headers:{Accept:"text/html","User-Agent":"SHOWS-event-review/0.1"},
   redirect:"error",signal:AbortSignal.timeout(17000)});
  if(!res.ok||!res.headers.get("content-type")?.includes("text/html"))throw Error("Original The 1905 ticket source returned HTTP "+res.status);
- const html=await res.text(),out=parse(html);
+ const html=await res.text(),out=parse(html,opts);
  if(out.partial)console.warn("THE 1905 source is paginated: only verified first SSR batch checked; NOT complete calendar coverage");
  return out.records;
 }
-module.exports={BASE,clean,showUrl,image,stateOf,row,parse,fetchEvents};
+module.exports={BASE,clean,showUrl,image,stateOf,row,pacificDay,parse,fetchEvents};
