@@ -56,6 +56,12 @@ These sources may reveal record-release concerts, benefit bills, DIY house shows
 - **Review remains mandatory** for every other venue/source, new adapters, any uncertain or conflicting room/time/date, independent multi-performance ticket series, cancellations, reschedules, stale/duplicate listings, changes or removals to already-approved events, prices/age/accessibility assumptions, pending-rights imagery and any batch exceeding the trust threshold.
 - Every automation run reports what was trusted, held and proposed. An invalid policy, failing test, branch-protection rejection or competing update fails closed into the existing rolling editorial PR. New **code and source trust assignments** still require owner-reviewed PRs; only qualifying append-only event data is eligible for routine bot publication.
 
+## Evidence-backed corrections rather than owner fact-checking
+
+SHOWS must not treat approval as a substitute for factual verification. Routine importers and deterministic tests are responsible for original event identities, year/date, venue, time semantics and source links. For existing events, the pipeline may **propose a concrete correction** only when a known original venue adapter independently verifies the very same event URL, title, address, room and date, with an explicitly labeled SHOW time and small same-day clock difference. The proposal preserves the existing event ID and all unrelated content. No unverified schedule change or cancellation may be silently corrected or published, and no new event should be invented from a missing source record. Human review is for editorial choices and exceptional risk, not checking line-by-line against every venue.
+
+Report-only drift stays in the workflow summary and retained artifact, not a new pull request that the owner can merge without fixing anything. Failed source checks and unresolved event changes remain investigation work; future automation should investigate and make a source-backed proposal before requesting any manual approval.
+
 ## Coverage reporting
 
 Report newly added music bills, relevant styles, and covered core venues. Count recurring market dates separately. A large total is not evidence that the core scenes have been covered. Document unreadable sources and held-back listings so the next pass can address the gaps without repeating completed work.
