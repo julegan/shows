@@ -171,7 +171,7 @@ async function fetchEvents(src,request=fetch){
  if(!r.ok||!r.headers.get("content-type")?.includes("text/html"))throw Error("Alberta Rose original calendar returned HTTP "+r.status);
  const html=await r.text();
  const result=parse(html);
- console.log("ALBERTA ROSE ORIGINAL "+JSON.stringify(result.meta));
+ console.log("ALBERTA ROSE ORIGINAL "+JSON.stringify({...result.meta,holdsByReason:Object.fromEntries([...new Set(result.records.filter(x=>x.hold).map(x=>x.hold))].map(reason=>[reason,result.records.filter(x=>x.hold===reason).length]))}));
  return result.records;
 }
 module.exports={CALENDAR,BASE,clean,eventUrl,ticketUrl,artwork,clockText,dateFor,single,series,parse,fetchEvents};
