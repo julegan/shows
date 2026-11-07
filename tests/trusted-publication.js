@@ -40,8 +40,9 @@ const result=plan({baseline:dataset([old]),proposed:dataset([old,first,second]),
 assert.equal(result.trusted.length,2,"Two original single-show events get verified and partitioned");
 const approved=parseFile(result.current),pending=parseFile(result.pending);
 assert.equal(approved.events.length,3);
-assert.equal(pending.events.length,1);
-assert.deepEqual(pending.events[0],old,"Successful trusted publication never adds an old, unaffected source record to review");
+assert.equal(pending.events.length,3,"Review snapshot includes inherited newly approved trusted records");
+assert.deepEqual(pending.events.find(x=>x.id===old.id),old,"Previously approved event remains intact");
+assert.equal(result.pending,result.current,"Trust-only additions do not generate an unnecessary metadata-only review PR");
 for(const event of result.trusted){
  assert.equal(event.startTimeKind,"show","Explicit independently verified SHOW time is presented as show, not doors");
  assert.equal(event.trustPublication.policyVersion,1);
@@ -51,6 +52,22 @@ for(const event of result.trusted){
  assert(event.tags.includes("Format needs confirmation"),
   "A showtime verification must never imply an unverified music/performance category");
 }
+for(const e of result.trusted){
+ assert.deepEqual(pending.events.find(x=>x.id===e.id),approved.events.find(x=>x.id===e.id),
+  "An inherited trusted event is exactly identical to canonical main, including removed artwork");
+}
+const otherSource={...first,id:"auto-other-2026-11-19-aabbccddeeff",title:"Source still needs review",
+  startsAt:"2026-11-19T20:00:00-08:00",
+  discovery:{sourceId:"untrusted",method:"primary-source-collection"}};
+const mixed=plan({baseline:dataset([old]),proposed:dataset([old,first,otherSource]),now});
+assert.equal(mixed.trusted.length,1);
+const mixedPending=parseFile(mixed.pending).events;
+assert.equal(mixedPending.length,3);
+assert(mixedPending.some(x=>x.id===first.id&&x.artwork===undefined&&x.trustPublication?.mode==="trusted-original-addition"),
+ "Reviewable branch retains exactly the approved trusted rendition, not its unapproved flyer");
+assert(mixedPending.some(x=>x.id===otherSource.id),"Untrusted new event remains for approval");
+assert(!parseFile(mixed.current).events.some(x=>x.id===otherSource.id),
+ "Trusted main cannot accidentally carry the untrusted candidate");
 const changedOld={...old,title:"Hacked earlier approved description"};
 const changes=plan({baseline:dataset([old]),proposed:dataset([changedOld,first]),now});
 assert.deepEqual(parseFile(changes.current).events.find(x=>x.id===old.id),old,
