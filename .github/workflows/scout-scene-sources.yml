@@ -1,4 +1,4 @@
-name: Scout new Portland DIY organizers and unusual markets (review only)
+name: 02 · Scout original Portland music and DIY sources (review-only)
 on:
   schedule:
     - cron: '43 17 * * *'
