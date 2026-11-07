@@ -658,10 +658,14 @@
       "name": "Alberta Rose Theatre",
       "venue": "Alberta Rose Theatre",
       "venueRegistryId": "alberta-rose-theatre",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
-      "url": "https://albertarosetheatre.com/",
-      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original calendar covers folk, Americana, blues, global and other performances; distinguish concert, comedy and screenings."
+      "url": "https://albertarosetheatre.com/calendar/",
+      "reason": "Original Alberta Rose Theatre public RHP event calendar is accessible to GitHub runner (HTTP 200 Nov 6, 2026). Its month/year sections, original event-specific pages, individually ticketed series showtimes and labeled show/doors clocks are source evidence. Review-only intake; cross-month series dates without their own year remain held, no fabricated occurrences, and original artwork requires editorial rights review.",
+      "adapter": "alberta-rose-original-html",
+      "baseUrl": "https://albertarosetheatre.com",
+      "address": "3000 NE Alberta Street, Portland, OR 97211",
+      "neighborhood": "Concordia"
     },
     {
       "id": "keys-lounge",
