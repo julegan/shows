@@ -36,6 +36,19 @@ assert(publishing.includes("cp /tmp/shows-all-proposed-events.js events.js"),
 assert(publishing.includes("git reset --mixed HEAD~1"),
  "Rejected branch-protected or competing updates roll back the local candidate commit");
 assert(text.includes("node scripts/trusted-publication.js"),"Source records are filtered by the independently approved trust policy");
+for(const name of ["Partition verified original additions from editorial review",
+ "Publish only independently verified original additions"]){
+ const start=text.indexOf("      - name: "+name);
+ const next=text.indexOf("      - name: ",start+1);
+ const step=text.slice(start,next<0?undefined:next);
+ const pos=step.indexOf("        run: |\n");
+ assert(pos>=0,"Trusted step is a shell block: "+name);
+ const shell=step.slice(pos+"        run: |\n".length).split("\n")
+   .map(line=>line.startsWith("          ")?line.slice(10):line).join("\n");
+ const status=spawnSync("bash",["-n"],{input:shell,encoding:"utf8"});
+ assert.equal(status.status,0,status.stderr||"Trusted step shell syntax invalid: "+name);
+}
+
 const proposal=text.slice(text.indexOf("      - name: Create or refresh a single rolling SHOWS review PR"));
 assert(proposal.includes('gh pr edit "$number" --body-file'),"Rolling PR body must be updated with current source evidence");
 assert(proposal.includes('git push --force-with-lease='),"Pending bot branch cannot be force-updated without a lease");
