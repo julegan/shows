@@ -1,7 +1,7 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {eventArtworkFromHtml,artworkCandidate,parseTwilightDetail}=require("../scripts/priority-importers");
-const {originalUrl,pendingForArtwork,titleMatches,summarize}=require("../scripts/backfill-artwork");
+const {originalUrl,pendingForArtwork,planLookups,addDays,titleMatches,summarize}=require("../scripts/backfill-artwork");
 const source=require("../discovery/sources.json").sources.find(x=>x.id==="twilight");
 const url="https://www.twilightcafeandbar.com/event/1234/sample-show";
 assert.equal(artworkCandidate("javascript:alert(1)",url),null);
@@ -59,4 +59,85 @@ assert.equal(stats.withArt,1);
 assert.equal(stats.missing,4);
 assert.equal(stats.eligible,3);
 assert.equal(stats.unsupported,1);
+
+// Priority is the date someone needs the information, not a venue ranking.
+assert.equal(addDays("2026-12-31",1),"2027-01-01");
+assert.equal(addDays("2026-11-07",1),"2026-11-08");
+assert.throws(()=>addDays("2026-02-30",1),/Invalid Pacific date/);
+const highLimitTonight={
+ id:"roman-candle-today",category:"Music",title:"Roman Candle + Postdrome + Asthelifeleavesyoureyes + XcaliberX",
+ venue:"High Limit Room",url:"https://aftontickets.com/event/buyticket/57jml3v89v",
+ startsAt:"2026-11-07T19:00:00-08:00",sourceCheckedAt:"2026-10-17"
+};
+const nextDayUnknown={
+ id:"tomorrow-unknown",category:"Unclassified",title:"Type not yet confirmed",
+ venue:"No Fun",url:"https://www.nofunportland.com/events/unknown",
+ startsAt:"2026-11-08T19:00:00-08:00"
+};
+const illustratedTonight={
+ id:"already-illustrated",category:"Music",title:"Flyer already present",
+ venue:"No Fun",url:"https://www.nofunportland.com/events/with-flyer",
+ startsAt:"2026-11-07T20:00:00-08:00",artwork:{url:"https://www.nofunportland.com/flyer.jpg"}
+};
+const laterPriorityRoom={
+ id:"later-priority-venue",category:"Music",title:"Future event",
+ venue:"The Coffin Club",url:"https://tickets.venuepilot.com/e/soft-vein-2026-11-07-the-coffin-portland-7e7bbb",
+ startsAt:"2026-11-15T20:00:00-08:00"
+};
+const thisWeek={
+ id:"this-week",category:"Music",title:"Next week",
+ venue:"No Fun",url:"https://www.nofunportland.com/events/this-week",
+ startsAt:"2026-11-10T20:00:00-08:00"
+};
+const oldEnded={
+ id:"expired",category:"Music",title:"Already ended",
+ venue:"No Fun",url:"https://www.nofunportland.com/events/past",
+ startsAt:"2026-11-06T20:00:00-08:00"
+};
+const all=[laterPriorityRoom,nextDayUnknown,thisWeek,highLimitTonight,oldEnded,illustratedTonight];
+const near=planLookups(all,{today:"2026-11-07",max:5,batch:57});
+assert.equal(near.selected[0].id,highLimitTonight.id,"Tonight's High Limit Room show beats later preferred-venue shows");
+assert.equal(near.selected[1].id,illustratedTonight.id,"Recheck an already-illustrated tonight event for original-source title/status");
+assert.equal(near.selected[2].id,nextDayUnknown.id,"Unclassified tomorrow listings get the same source-verification priority");
+assert(near.selected.some(x=>x.id==="this-week"),"Upcoming week follows near-term rechecks");
+assert(near.selected.some(x=>x.id==="later-priority-venue"),"Longer-term art is still collected when capacity permits");
+assert(!near.selected.some(x=>x.id==="expired"),"Past events never waste artwork lookups");
+assert.equal(near.nearTermTotal.length,3);
+assert.equal(near.urgent.length,3);
+assert.equal(near.selected.length,5,"Out-of-range workflow run number must not yield an empty artwork batch");
+const tiny=planLookups(all,{today:"2026-11-07",max:2,batch:57});
+assert.deepEqual(tiny.selected.map(x=>x.id),["roman-candle-today","already-illustrated"],
+ "A full near-term queue takes precedence over all older event searches");
+assert.equal(tiny.nearTermOverflow,1,"Excess tomorrow sources are visible for follow-up");
+assert(pendingForArtwork(all,{today:"2026-11-07"}).some(x=>x.id==="tomorrow-unknown"),
+ "All near-term default-feed event categories receive art coverage");
+assert(!pendingForArtwork(all,{today:"2026-11-07"}).some(x=>x.id==="already-illustrated"),
+ "Already-illustrated event is source-rechecked, but not a new artwork candidate");
+// A weekly rotating queue must not starve tomorrow's show even with a far
+// larger future-venue inventory and an arbitrary GitHub run number.
+const future=Array.from({length:25},(_,i)=>({
+ ...thisWeek,id:"future-"+i,url:"https://www.nofunportland.com/events/future-"+i,
+ startsAt:"2026-11-"+String(10+i%20).padStart(2,"0")+"T20:00:00-08:00"
+}));
+for(const batch of [0,1,17,57,1000]){
+ const result=planLookups([highLimitTonight,...future],{today:"2026-11-07",max:5,batch});
+ assert.equal(result.selected.length,5);
+ assert.equal(result.selected[0].id,highLimitTonight.id);
+}
+const crowded=Array.from({length:7},(_,i)=>({...highLimitTonight,
+ id:"urgent-"+i,
+ url:"https://aftontickets.com/event/buyticket/57jml3v8"+String(i),
+ startsAt:"2026-11-07T"+String(10+i).padStart(2,"0")+":00:00-08:00"}));
+const covered=new Set();
+for(let batch=0;batch<4;batch++){
+ const pass=planLookups(crowded,{today:"2026-11-07",max:2,batch});
+ for(const e of pass.selected)covered.add(e.id);
+ assert(pass.selected.length>0,"Overflow rotation must never skip the day's queue");
+}
+assert.equal(covered.size,7,"Busy near-term day is covered across bounded runs instead of starving its later bills");
+const workflow=require("node:fs").readFileSync(require("node:path").join(__dirname,"../.github/workflows/discover.yml"),"utf8");
+assert(workflow.includes("github.event_name == 'workflow_dispatch' && 'manual' || 'rotate'"),
+ "Push and scheduled scans must both use rotating mode, not out-of-range manual batch numbers");
+console.log("PASS — today/tomorrow source rechecks precede future flyer collection and no run-number batch can be empty");
+
 console.log("PASS — verified event photos, official venue match, missing-image coverage and review-only music priority");

@@ -52,10 +52,55 @@ function pacificDay(now=new Date()) {
  const get=t=>p.find(x=>x.type===t).value;
  return get("year")+"-"+get("month")+"-"+get("day");
 }
-function pendingForArtwork(input,options={}) {
- const today=options.today||pacificDay();
- return input.filter(e=>e.category==="Music"&&!e.artwork&&e.startsAt.slice(0,10)>=today&&originalUrl(e))
-  .sort((a,b)=>priority(a.venue)-priority(b.venue)||a.startsAt.localeCompare(b.startsAt)||a.id.localeCompare(b.id));
+function addDays(day,offset){
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Number.isInteger(offset))throw Error("Invalid Pacific day");
+ const [y,m,d]=day.split("-").map(Number),date=new Date(Date.UTC(y,m-1,d));
+ if(date.toISOString().slice(0,10)!==day)throw Error("Invalid Pacific date");
+ date.setUTCDate(date.getUTCDate()+offset);
+ return date.toISOString().slice(0,10);
+}
+const byStart=(a,b)=>a.startsAt.localeCompare(b.startsAt)||priority(a.venue)-priority(b.venue)||a.id.localeCompare(b.id);
+function pendingForArtwork(input,options={}){
+ const today=options.today||pacificDay(),tomorrow=addDays(today,1);
+ return input.filter(e=>e.startsAt?.slice(0,10)>=today&&!e.artwork&&originalUrl(e)&&
+  (e.category==="Music"||e.startsAt.slice(0,10)<=tomorrow)).sort(byStart);
+}
+function planLookups(events,options={}){
+ const today=options.today||pacificDay(),tomorrow=addDays(today,1),week=addDays(today,7);
+ const max=Math.max(1,Math.min(35,Number(options.max)||35));
+ const cycleNumber=Number.isFinite(Number(options.batch))?Math.max(0,Math.floor(Number(options.batch))):0;
+ const nearTermTotal=events.filter(e=>e.startsAt?.slice(0,10)>=today&&e.startsAt.slice(0,10)<=tomorrow).sort(byStart);
+ // Recheck every eligible event in the next 48 calendar hours, even those
+ // already illustrated; artwork and category do not prove status freshness.
+ const urgent=nearTermTotal.filter(e=>originalUrl(e));
+ const todayEvents=urgent.filter(e=>e.startsAt.slice(0,10)===today);
+ const tomorrowEvents=urgent.filter(e=>e.startsAt.slice(0,10)===tomorrow);
+ const dayPage=(rows,limit)=>!limit||!rows.length?[]:rows.slice(cycleNumber%Math.ceil(rows.length/limit)*limit,
+  (cycleNumber%Math.ceil(rows.length/limit)+1)*limit);
+ const todaySlots=Math.min(max,todayEvents.length);
+ const selected=dayPage(todayEvents,todaySlots);
+ const tomorrowSlots=Math.max(0,max-selected.length);
+ selected.push(...dayPage(tomorrowEvents,tomorrowSlots));
+ const remaining=max-selected.length;
+ const pending=pendingForArtwork(events,{today});
+ const weekQueue=pending.filter(e=>e.startsAt.slice(0,10)>tomorrow&&e.startsAt.slice(0,10)<=week);
+ const laterQueue=pending.filter(e=>e.startsAt.slice(0,10)>week);
+ const weekSlots=weekQueue.length?Math.min(remaining,laterQueue.length?Math.max(1,Math.ceil(remaining*0.8)):remaining):0;
+ const laterSlots=weekQueue.length?Math.min(laterQueue.length,remaining-Math.min(weekSlots,weekQueue.length)):remaining;
+ const count=(xs,slots)=>slots&&xs.length?Math.ceil(xs.length/slots):1;
+ const rotated=(xs,slots)=>slots?xs.slice(cycleNumber%count(xs,slots)*slots,
+  (cycleNumber%count(xs,slots)+1)*slots):[];
+ const seen=new Set(selected.map(e=>e.id));
+ for(const e of [...rotated(weekQueue,weekSlots),...rotated(laterQueue,laterSlots),...weekQueue,...laterQueue]){
+  if(selected.length>=max)break;
+  if(!seen.has(e.id)){selected.push(e);seen.add(e.id);}
+ }
+ const batchCount=Math.max(count(todayEvents,todaySlots),count(tomorrowEvents,tomorrowSlots),
+  count(weekQueue,weekSlots),count(laterQueue,laterSlots));
+ return {selected,urgent,nearTermTotal,nearTermOverflow:Math.max(0,urgent.length-
+  selected.filter(e=>e.startsAt.slice(0,10)<=tomorrow).length),
+  weekQueue:weekQueue.length,laterQueue:laterQueue.length,requestedBatch:cycleNumber,
+  batch:cycleNumber%batchCount,batchCount};
 }
 function clean(s) {
  return String(s||"").replace(/<[^>]*>/g," ").replace(/&(?:amp|nbsp|quot|apos);/gi," ")
@@ -122,10 +167,9 @@ async function main(){
  const baseline=summarize(events,today,pending);
  const max=Math.max(1,Math.min(35,Number(process.env.MAX_ARTWORK_LOOKUPS)||35));
  const requestedBatch=Math.max(0,Math.floor(Number(process.env.ARTWORK_BATCH)||0));
- const batchCount=Math.max(1,Math.ceil(pending.length/max));
- const batch=process.env.ARTWORK_BATCH_MODE==="rotate"?requestedBatch%batchCount:requestedBatch;
- const batchEvents=pending.slice(batch*max,(batch+1)*max);
- const failures=[],successes=[];
+ const plan=planLookups(events,{today,max,batch:requestedBatch});
+ const {batch,batchCount}=plan,batchEvents=plan.selected;
+ const failures=[],successes=[],nearTermChecks=[];
  const count=new Map();
  const cache=new Map();
  const tally=(key)=>count.set(key,(count.get(key)||0)+1);
@@ -145,14 +189,18 @@ async function main(){
     }
     const html=cache.get(url);
     if(!titleMatches(html,e))outcome="TITLE_NOT_VERIFIED";
+    else if(titleEvidence(html).some(t=>/\b(?:cancelled|canceled|postponed|rescheduled|moved)\b/i.test(t)))
+      outcome="SOURCE_STATUS_REVIEW";
+    else if(e.artwork)outcome="SOURCE_TITLE_TOKEN_MATCH";
     else {
      artwork=eventArtworkFromHtml(html,url,e.title);
      outcome=artwork?"PROPOSED":"NO_EVENT_IMAGE";
     }
    }catch(error){outcome=reason(error);}
    tally(outcome);
-   if(artwork){e.artwork=artwork;successes.push({event:e,artwork});}
-   else failures.push({event:e,reason:outcome});
+   if(e.startsAt.slice(0,10)<=addDays(today,1))nearTermChecks.push({event:e,reason:outcome});
+   if(artwork&&!e.artwork){e.artwork=artwork;successes.push({event:e,artwork});}
+   else if(outcome!=="SOURCE_TITLE_TOKEN_MATCH")failures.push({event:e,reason:outcome});
   }));
  }
  if(successes.length){
@@ -169,9 +217,24 @@ async function main(){
   "- Missing artwork: **"+baseline.missing+"**",
   "- Missing listings with supported individual source pages: **"+baseline.eligible+"**",
   "- Missing listings needing another source or individual permalink: **"+baseline.unsupported+"**",
-  "- Batch: **"+batch+"** of **"+(batchCount-1)+"** (zero-indexed; "+max+" lookups maximum)",
-  "- Attempted: **"+batchEvents.length+"**; proposed: **"+successes.length+"**; no proposal: **"+failures.length+"**","",
-  "## Why pages did not produce artwork","",
+  "- Highest priority: **"+today+" and "+addDays(today,1)+"** (all event types, including unknown)",
+  "- Near-term events: **"+plan.nearTermTotal.length+"**; eligible source pages: **"+plan.urgent.length+"**",
+  "- Near-term source rechecks this run: **"+nearTermChecks.length+"**; over lookup cap: **"+plan.nearTermOverflow+"**",
+  "- Missing music artwork beyond tomorrow: **"+plan.weekQueue+"** in coming week, **"+plan.laterQueue+"** beyond",
+  "- Rotating older-art batch: **"+batch+"** of **"+(batchCount-1)+"** (requested "+requestedBatch+"; "+max+" requests max)",
+  "- Total original event-page requests attempted: **"+batchEvents.length+"**; artwork proposed: **"+successes.length+"**; other responses: **"+failures.length+"**","",
+  "## Today and tomorrow — original-source freshness checks","",
+  "A source title match confirms the linked page still mentions this bill; it does NOT independently reverify every date, clock, room, admission or cancellation. Keep prior sourceCheckedAt dates unless those details have been individually corroborated.","",
+  "| Event and venue | Previously checked | Current source-page result | Original URL |",
+  "| --- | --- | --- | --- |",
+  ...nearTermChecks.sort((a,b)=>byStart(a.event,b.event)).map(x=>"| "+
+   markdownRow(x.event.title)+" ("+markdownRow(x.event.venue)+") | "+
+   (x.event.sourceCheckedAt||"Unknown")+" | "+x.reason+" | "+x.event.url+" |"),
+  ...plan.nearTermTotal.filter(e=>!originalUrl(e)).slice(0,35).map(e=>"| "+
+   markdownRow(e.title)+" ("+markdownRow(e.venue)+") | "+
+   (e.sourceCheckedAt||"Unknown")+" | Source URL not eligible for original-page recheck | "+e.url+" |"),
+  "",
+  "## Event-specific original-page check outcomes","",
   ...(count.size?[...count].sort((a,b)=>b[1]-a[1]).map(([key,n])=>"- "+key+": "+n):["- No eligible pages in this batch. Try a different batch, or extend approved event-specific sources."]),
   "",
   "## Missing music artwork by venue","",
@@ -187,17 +250,20 @@ async function main(){
   ...failures.map(x=>"- "+markdownRow(x.event.title)+" ("+x.event.venue+") — "+x.reason+" — "+x.event.url),
   "",
   "## Next steps","",
-  "1. If no PR is produced, open this run's attached \`shows-artwork-report\` artifact or summary to inspect the reasons.",
-  "2. Manually dispatch another zero-indexed batch (0 through "+(batchCount-1)+") to inspect other pages.",
-  "3. Add verified event-specific URLs for venues marked ineligible; do not substitute generic venue photography.",
-  "4. Merge a review PR only after confirming the event images and source attribution.",
-  "5. Following canonical approval, merge the corresponding reviewed portfolio snapshot PR."
+  "1. Every run checks today and tomorrow first, including events that already have artwork. These checks never assume that a missing event was canceled.",
+  "2. Source-backed poster proposals are sent to review, not automatically published. Do not replace an event flyer with a generic venue photo.",
+  "3. Older missing-art events are scanned by date tier with bounded rotating batches, even on push-triggered runs.",
+  "4. Missing original event URLs and unmatched page titles remain explicit gaps, not invented show details.",
+  "5. Once the event day passes, its expired poster is not prioritized for new artwork."
+
  ];
  fs.mkdirSync(path.dirname(reportFile),{recursive:true});
  fs.writeFileSync(reportFile,report.join("\n")+"\n");
  console.log(JSON.stringify({today,batch,batchCount,attempted:batchEvents.length,proposed:successes.length,
   missing:baseline.missing,eligible:baseline.eligible,unsupported:baseline.unsupported,
+  nearTerm:plan.nearTermTotal.length,nearTermEligible:plan.urgent.length,
+  nearTermChecked:nearTermChecks.length,nearTermOverflow:plan.nearTermOverflow,
   reasons:Object.fromEntries(count)},null,2));
 }
 if(require.main===module)main().catch(error=>{console.error(error);process.exitCode=1;});
-module.exports={originalUrl,pendingForArtwork,pacificDay,titleEvidence,titleMatches,summarize};
+module.exports={originalUrl,pendingForArtwork,planLookups,addDays,pacificDay,titleEvidence,titleMatches,summarize};
