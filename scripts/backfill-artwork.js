@@ -234,7 +234,7 @@ async function main(){
    markdownRow(e.title)+" ("+markdownRow(e.venue)+") | "+
    (e.sourceCheckedAt||"Unknown")+" | Source URL not eligible for original-page recheck | "+e.url+" |"),
   "",
-  "## Why pages did not produce artwork","",
+  "## Event-specific original-page check outcomes","",
   ...(count.size?[...count].sort((a,b)=>b[1]-a[1]).map(([key,n])=>"- "+key+": "+n):["- No eligible pages in this batch. Try a different batch, or extend approved event-specific sources."]),
   "",
   "## Missing music artwork by venue","",
