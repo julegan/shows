@@ -13,12 +13,12 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
 | Twilight Cafe and Bar | Checked | 24 | 0 | 0 | 0 | 0 | 4 | 20 |
 | Star Theater | Checked | 40 | 0 | 0 | 0 | 0 | 4 | 36 |
-| Dante's | Checked | 44 | 0 | 0 | 0 | 0 | 12 | 32 |
+| Dante's | Checked | 44 | 0 | 0 | 0 | 0 | 3 | 41 |
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 5 | 28 |
 | Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 8 | 25 |
 | Hawthorne Theatre | Checked | 39 | 0 | 0 | 0 | 0 | 3 | 36 |
 | Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 6 | 48 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 8 | 22 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 7 | 23 |
 | Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 2 | 17 |
 | Kenton Club | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
 | Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
@@ -32,27 +32,16 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | The Showdown | Checked | 53 | 0 | 0 | 0 | 0 | 12 | 41 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 0 | 19 |
 | Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
-| The 1905 | Checked | 8 | 1 | 1 | 0 | 1 | 0 | 7 |
+| The 1905 | Checked | 8 | 0 | 0 | 0 | 0 | 0 | 8 |
 | Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | Alberta Street Pub | Checked | 33 | 0 | 0 | 0 | 0 | 3 | 30 |
-| Alberta Rose Theatre | Checked | 67 | 61 | 6 | 53 | 61 | 6 | 0 |
+| Alberta Rose Theatre | Checked | 67 | 0 | 0 | 0 | 0 | 6 | 61 |
 
 ### Classification review
 
-New candidate categories: **Music** 7 · **Performance** 2 · **Unclassified** 53.
-**53 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: none.
+**0 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Alberta Rose Theatre: Chris Smither — https://albertarosetheatre.com/event/chris-smither-2/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Live Wire with Luke Burbank — https://albertarosetheatre.com/event/live-wire-with-luke-burbank-37/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: SOUVENIRS – Celebrating the Songs of John Prine — https://albertarosetheatre.com/event/souvenirs-celebrating-the-songs-of-john-prine-4/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Psychedelics and the Reimagining of Aging — https://albertarosetheatre.com/event/psychedelics-and-the-reimagining-of-aging/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Henry Diltz – Behind The Lens — https://albertarosetheatre.com/event/henry-diltz-behind-the-lens/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: John McCutcheon — https://albertarosetheatre.com/event/john-mccutcheon-4/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Leapin’ Louie: The Upside Down Ocean — https://albertarosetheatre.com/event/leapin-louie-the-upside-down-ocean/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Mortified — 5:00 PM show — https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre
-- Alberta Rose Theatre: Mortified — 8:00 PM show — https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre
-- Alberta Rose Theatre: The AERO Space Presents: MTV Pole Jams – A Pole Tribute to the Music Video Era — https://albertarosetheatre.com/event/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era/alberta-rose-theatre/portland-oregon/
-- Plus 43 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
@@ -87,77 +76,13 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 
 The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 62
+## New candidates: 0
 
-- the-1905: 1 proposals
-- alberta-rose-theatre: 61 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-08 | Dave Tull — 7:30 PM show | The 1905 | 19:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13205/2026-11-08 |
-| 2026-11-06 | Chris Smither | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/chris-smither-2/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-07 | Live Wire with Luke Burbank | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/live-wire-with-luke-burbank-37/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-08 | SOUVENIRS – Celebrating the Songs of John Prine | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/souvenirs-celebrating-the-songs-of-john-prine-4/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-09 | Psychedelics and the Reimagining of Aging | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/psychedelics-and-the-reimagining-of-aging/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-10 | Henry Diltz – Behind The Lens | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/henry-diltz-behind-the-lens/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-11 | John McCutcheon | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/john-mccutcheon-4/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-13 | The Big Trans Comedy Show | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/the-big-trans-comedy-show/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-14 | Leapin’ Louie: The Upside Down Ocean | Alberta Rose Theatre | 13:00 (doors/show unverified) | https://albertarosetheatre.com/event/leapin-louie-the-upside-down-ocean/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-14 | Mortified — 5:00 PM show | Alberta Rose Theatre | 17:00 (doors/show unverified) | https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre |
-| 2026-11-14 | Mortified — 8:00 PM show | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre |
-| 2026-11-15 | The AERO Space Presents: MTV Pole Jams – A Pole Tribute to the Music Video Era | Alberta Rose Theatre | 18:00 (doors/show unverified) | https://albertarosetheatre.com/event/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-16 | Jenny Tian | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/jenny-tian/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-17 | SUNDOWN 3 – A Salute to Gordon Lightfoot – A Benefit for The Jeremy Wilson Foundation | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-18 | Science On Tap – Save the Planet: Recycle! …or Not? | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-save-the-planet-recycle-or-not/alberta-rose-theatre/portland-oregon/ |
-| 2026-11-20 | The Next Waltz - 50th Anniversary Celebration — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre |
-| 2026-11-21 | The Next Waltz - 50th Anniversary Celebration — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre |
-| 2026-11-28 | The Next Waltz - 50th Anniversary Celebration — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/31011747/the-next-waltz-portland-alberta-rose-theatre |
-| 2026-11-29 | The Next Waltz - 50th Anniversary Celebration — 5:00 PM show | Alberta Rose Theatre | 17:00 (doors/show unverified) | https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre |
-| 2026-11-27 | Red Light Romeos’ Yachtsgiving – A Yacht Rock Extravaganza | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/ |
-| 2026-12-02 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/49162979/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-03 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/43845222/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-04 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-05 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-06 | White Album Xmas — 4:00 PM show | Alberta Rose Theatre | 16:00 (doors/show unverified) | https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre |
-| 2026-12-09 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/93260618/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-10 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/93577056/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-11 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/56163757/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-12 | White Album Xmas — 7:30 PM show | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/82960769/white-album-xmas-portland-alberta-rose-theatre |
-| 2026-12-13 | White Album Xmas — 4:00 PM show | Alberta Rose Theatre | 16:00 (doors/show unverified) | https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre |
-| 2026-12-15 | Rizo & Making Movies | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/rizo-making-movies/alberta-rose-theatre/portland-oregon/ |
-| 2026-12-16 | Peter Rowan Sam Grisman Duo: A Special Evening of Songs & Stories | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/peter-rowan-sam-grisman-duo-a-special-evening-of-songs-stories/alberta-rose-theatre/portland-oregon/ |
-| 2026-12-18 | Booklover’s Burlesque – HOLIDAY EDITION | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/booklovers-burlesque-holiday-edition/alberta-rose-theatre/portland-oregon/ |
-| 2026-12-19 | A Very George Michael Christmas with Holcombe Waller and Special Guests — 5:00 PM show | Alberta Rose Theatre | 17:00 (doors/show unverified) | https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre |
-| 2026-12-19 | A Very George Michael Christmas with Holcombe Waller and Special Guests — 8:00 PM show | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/32660764/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-8-pm-show-portland-alberta-rose-theatre |
-| 2026-12-20 | Stumptown Soul Holiday Spectacular — 3:00 PM show | Alberta Rose Theatre | 15:00 (doors/show unverified) | https://www.etix.com/ticket/p/41664852/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre |
-| 2026-12-20 | Stumptown Soul Holiday Spectacular — 7:00 PM show | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/44031612/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre |
-| 2026-12-29 | Kat Edmonson | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/kat-edmonson/alberta-rose-theatre/portland-oregon/ |
-| 2026-12-31 | Glitterfox with special guests Camp Crush – New Year’s Eve | Alberta Rose Theatre | 21:00 (doors/show unverified) | https://albertarosetheatre.com/event/glitterfox-with-special-guests-camp-crush-new-years-eve/alberta-rose-theatre/portland-oregon/ |
-| 2027-01-09 | Fernando Viciconte – The Lucky House Album Release with special guest Sarabeth Tucek | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/fernando-viciconte-the-lucky-house-album-release-with-special-guest-sarabeth-tucek/alberta-rose-theatre/portland-oregon/ |
-| 2027-01-15 | Dark Side - A Piece for Assorted Lunatics — 8:00 PM show | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/56048997/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre |
-| 2027-01-16 | Dark Side - A Piece for Assorted Lunatics — 8:00 PM show | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/41650042/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre |
-| 2027-01-18 | AJ McLean Presents Alexander James : The Better Man Tour | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/aj-mclean-presents-alexander-james-the-better-man-tour/alberta-rose-theatre/portland-oregon/ |
-| 2027-01-23 | Dare and Derriere: NIGHTFALL | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/dare-and-derriere-nightfall/alberta-rose-theatre/portland-oregon/ |
-| 2027-01-25 | Miko Marks: Hell or High Water Tour | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/miko-marks-hell-or-high-water-tour/alberta-rose-theatre/portland-oregon/ |
-| 2027-01-27 | Science on Tap – A Journey Through the Large Hadron Collider | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-a-journey-through-the-large-hadron-collider/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-16 | Consider This with Rukaiyah Adams | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/consider-this-with-rukaiyah-adams/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-17 | The Smithereens with special guests Star Collector | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/the-smithereens-with-special-guests-star-collector/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-20 | 38th Annual WINTERFOLK – A Benefit for Transition Projects | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/38th-annual-winterfolk-a-benefit-for-transition-projects/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-23 | Mardi Gras Mambo – featuring the Dirty Dozen Brass Band and Nathan & the Zydeco Cha Chas | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/mardi-gras-mambo-featuring-the-dirty-dozen-brass-band-and-nathan-the-zydeco-cha-chas/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-25 | Gunhild Carling | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/gunhild-carling-2/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-26 | Holly Near with Tammy Hall, Jan Martinelli, and Emma’s Revolution. | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/holly-near-with-tammy-hall-jan-martinelli-and-emmas-revolution/alberta-rose-theatre/portland-oregon/ |
-| 2027-02-27 | BOYeurism Anniversary Spectacular | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/boyeurism-anniversary-spectacular/alberta-rose-theatre/portland-oregon/ |
-| 2027-03-04 | Biamp Portland Jazz Festival Presented by PDX Jazz Jazzmeia Horn | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-jazzmeia-horn/alberta-rose-theatre/portland-oregon/ |
-| 2027-03-10 | Biamp Portland Jazz Festival: Particle Kid / Daniel Lanois | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/biamp-portland-jazz-festival-particle-kid-daniel-lanois/alberta-rose-theatre/portland-oregon/ |
-| 2027-03-11 | Biamp Portland Jazz Festival Presented by PDX Jazz Gretchen Parlato | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-gretchen-parlato/alberta-rose-theatre/portland-oregon/ |
-| 2027-03-23 | Kaki King | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/kaki-king/alberta-rose-theatre/portland-oregon/ |
-| 2027-03-24 | Science On Tap: Meet the Bees in Your Garden | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-meet-the-bees-in-your-garden/alberta-rose-theatre/portland-oregon/ |
-| 2027-04-06 | Consider This with Christian Wiman | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/consider-this-with-christian-wiman/alberta-rose-theatre/portland-oregon/ |
-| 2027-04-07 | Karla Bonoff | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/karla-bonoff-3/alberta-rose-theatre/portland-oregon/ |
-| 2027-04-28 | Science On Tap – The Relationship Anarchist: Deepening Connections with Friends, Lovers, and Others | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-the-relationship-anarchist-deepening-connections-with-friends-lovers-and-others/alberta-rose-theatre/portland-oregon/ |
-| 2027-04-30 | LEATHER AND LACE: A Tribute to all things Fleetwood and Stevie | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/leather-and-lace-a-tribute-to-all-things-fleetwood-and-stevie-11/alberta-rose-theatre/portland-oregon/ |
 
-## Held for review: 165
+## Held for review: 155
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Wolves in the Throne Room, Stygian Bough, Spirit Possession — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204942/soundcontrol
@@ -170,16 +95,7 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
 - [star-theater] JOS&Eacute; JAMES SINGS SINATRA — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra-2/
 - [dantes] THE WAILS followed by Sinferno Cabaret — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/the-wails-followed-by-sinferno-cabaret/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-12/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/hideous-monster-10-year-anniversary-with-sunset-the-machine-high-five-danger/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-8/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-13/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/silent-civilian-ft-jonny-santos-of-spineshank-rebirth-of-the-temple-20th-anniversary/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/smells-like-nirvana-tribute-to-nirvana-with-dead-original/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/battery-inc-with-finn/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/sinferno-cabaret-14/
-- [dantes] Untitled — Dante's detail unavailable: The operation was aborted due to timeout https://www.danteslive.com/tm-event/temper-city-94-7fm-december-2-remember/
+- [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
 - [dantes] RHEA C. ARACHNE followed by Sinferno Cabaret — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/rhea-c-arachne-followed-by-sinferno-cabaret/
 - [roseland] State Champs — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/
 - [roseland] Alter Bridge – What Lies Within Tour — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/
@@ -203,8 +119,7 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Railroad Earth — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
-- [revolution-hall] Marci — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/59643924/marci-portland-show-bar-at-revolution-hall
+- [revolution-hall] Railroad Earth — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall
 - [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall

@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-05 | 523 | 171 | 288 | 98 |
-| 56 | 2026-12-31 | 700 | 213 | 397 | 131 |
-| 90 | 2027-02-03 | 760 | 228 | 437 | 145 |
+| 30 | 2026-12-05 | 547 | 172 | 310 | 98 |
+| 56 | 2026-12-31 | 739 | 216 | 431 | 131 |
+| 90 | 2027-02-03 | 806 | 232 | 477 | 146 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -21,13 +21,13 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Twilight Cafe and Bar | checked (24 raw) | 22 | 18 | 0 | 9 | 21 | 11 | 0 | 10 |
 | preferred | The Coffin Club | adapter-needed | 4 | 3 | 0 | 0 | unknown | — | — | — |
 | preferred | Star Theater | checked (40 raw) | 20 | 20 | 0 | 14 | 22 | 19 | 0 | 3 |
-| preferred | Dante's | checked (44 raw) | 38 | 10 | 26 | 0 | 29 | 27 | 0 | 2 |
+| preferred | Dante's | checked (44 raw) | 38 | 10 | 26 | 0 | 39 | 36 | 0 | 3 |
 | preferred | Roseland Theater | checked (33 raw) | 15 | 6 | 9 | 1 | 14 | 9 | 0 | 5 |
 | preferred | Wonder Ballroom | checked (33 raw) | 15 | 3 | 12 | 0 | 14 | 12 | 0 | 2 |
 | preferred | Hawthorne Theatre | checked (39 raw) | 25 | 9 | 16 | 2 | 26 | 25 | 0 | 1 |
 | preferred | High Limit Room | adapter-needed | 4 | 4 | 0 | 2 | unknown | — | — | — |
 | preferred | Crystal Ballroom | checked (54 raw) | 26 | 8 | 17 | 0 | 25 | 21 | 0 | 4 |
-| preferred | Revolution Hall | checked (30 raw) | 15 | 3 | 12 | 0 | 14 | 11 | 0 | 3 |
+| preferred | Revolution Hall | checked (30 raw) | 15 | 3 | 12 | 0 | 15 | 11 | 0 | 4 |
 | preferred | Mississippi Studios | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 14 | 0 | 0 |
 | preferred | Holocene | checked (48 raw) | 35 | 16 | 19 | 16 | 34 | 13 | 0 | 21 |
 | preferred | Doug Fir Lounge | reopening-watch | 0 | 0 | 0 | 0 | unknown | — | — | — |
@@ -51,14 +51,14 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | scene | Hawthorne Lounge | adapter-needed | 4 | 1 | 3 | 0 | unknown | — | — | — |
 | scene | Word Virus Books | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 13 | 11 | 0 | 2 |
+| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 14 | 12 | 0 | 2 |
 | scene | Aladdin Theater | checked (91 raw) | 34 | 0 | 34 | 0 | 34 | 33 | 0 | 1 |
 | scene | Mission Theater | checked (49 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
-| scene | The 1905 | checked (8 raw) | 6 | 6 | 0 | 1 | 7 | 7 | 0 | 0 |
+| scene | The 1905 | checked (8 raw) | 7 | 7 | 0 | 1 | 7 | 7 | 0 | 0 |
 | scene | Jack London Revue | checked (50 raw) | 33 | 7 | 26 | 1 | 33 | 33 | 0 | 0 |
 | scene | The Goodfoot | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Alberta Street Pub | checked (33 raw) | 30 | 5 | 21 | 3 | 32 | 30 | 0 | 2 |
-| scene | Alberta Rose Theatre | checked (67 raw) | 0 | 0 | 0 | 0 | 38 | 0 | 38 | 0 |
+| scene | Alberta Rose Theatre | checked (67 raw) | 38 | 2 | 34 | 0 | 38 | 38 | 0 | 0 |
 | scene | Keys Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 ## Automated next coverage actions
 
@@ -94,10 +94,10 @@ No cases identified in this run.
 | Venue | Source state | Specific next step |
 | --- | --- | --- |
 | Aladdin Theater | review needed | 1 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
-| Alberta Rose Theatre | review needed | 38 source records not conservatively matched to approved events; 6 held original records (0 dated, 6 undated). Veri |
+| Alberta Rose Theatre | review needed | 0 source records not conservatively matched to approved events; 6 held original records (0 dated, 6 undated). Verif |
 | Alberta Street Pub | review needed | 2 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Crystal Ballroom | review needed | 4 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
-| Dante's | review needed | 2 source records not conservatively matched to approved events; 10 held original records (0 dated, 10 undated). Ver |
+| Dante's | review needed | 3 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Hawthorne Theatre | review needed | 1 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
 | Holocene | review needed | 21 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Veri |
 | Kenton Club | review needed | 0 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
@@ -105,9 +105,9 @@ No cases identified in this run.
 | Mission Theater | review needed | 0 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Mississippi Studios | review needed | 0 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
 | Polaris Hall | review needed | 1 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
-| Revolution Hall | review needed | 3 source records not conservatively matched to approved events; 3 held original records (0 dated, 3 undated). Verif |
+| Revolution Hall | review needed | 4 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Roseland Theater | review needed | 5 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
-| Show Bar at Revolution Hall | review needed | 2 source records not conservatively matched to approved events; 3 held original records (0 dated, 3 undated). Verif |
+| Show Bar at Revolution Hall | review needed | 2 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Star Theater | review needed | 3 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Starday Tavern | review needed | 0 source records not conservatively matched to approved events; 42 held original records (0 dated, 42 undated). Ver |
 | The Off Beat | review needed | 2 source records not conservatively matched to approved events; 4 held original records (0 dated, 4 undated). Verif |
@@ -159,16 +159,17 @@ These items were parsable from a connected first-party source and were **not** m
 - 2026-11-10 — [The Black Angels](https://www.crystalballroompdx.com/events/276344-the-black-angels/) — held for reconciliation
 - 2026-11-18 — [Silverstein](https://www.crystalballroompdx.com/events/278093-silverstein/) — held for reconciliation
 - 2026-12-10 — [Angine De Poitrine](https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/) — held for reconciliation
+### Revolution Hall (4 review)
+- 2026-11-06 — [Railroad Earth](https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall) — held for reconciliation
+- 2026-11-07 — [Quadeca](https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall) — held for reconciliation
+- 2026-11-13 — [SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2)](https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall) — held for reconciliation
 ### Star Theater (3 review)
 - 2026-11-15 — [CHURCH OF HIVE](https://www.startheaterportland.com/tm-event/church-of-hive-12/) — held for reconciliation
 - 2026-11-22 — [CHURCH OF HIVE](https://www.startheaterportland.com/tm-event/church-of-hive-13/) — held for reconciliation
 - 2026-12-10 — [MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung](https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/) — held for reconciliation
-### Revolution Hall (3 review)
-- 2026-11-07 — [Quadeca](https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall) — held for reconciliation
-- 2026-11-13 — [SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2)](https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall) — held for reconciliation
-- 2026-11-20 — [SOLD OUT: Gary Numan North American Fall Tour 2026](https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall) — held for reconciliation
-### Dante's (2 review)
+### Dante's (3 review)
 - 2026-11-08 — [THE WAILS followed by Sinferno Cabaret](https://www.danteslive.com/tm-event/the-wails-followed-by-sinferno-cabaret/) — held for reconciliation
+- 2026-11-22 — [SINFERNO CABARET](https://www.danteslive.com/tm-event/sinferno-cabaret-12/) — held for reconciliation
 - 2026-12-13 — [RHEA C. ARACHNE followed by Sinferno Cabaret](https://www.danteslive.com/tm-event/rhea-c-arachne-followed-by-sinferno-cabaret/) — held for reconciliation
 ### Wonder Ballroom (2 review)
 - 2026-11-28 — [J-Fell Nite Wave](https://wonderballroom.com/event/j-fell-nite-wave-present-the-cure-depeche-mode-new-order-tribute-night/wonder-ballroom/portland-oregon/) — held for reconciliation
@@ -200,12 +201,11 @@ These items were parsable from a connected first-party source and were **not** m
 Connected parsers can miss listings, dates, and some rooms. Investigate these gaps instead of using event-count growth as a proxy for completeness.
 
 - **The Coffin Club**: adapter-needed; original published events remain unmeasured.
-- **Dante's**: checked; 10 held records without a parseable date.
 - **Wonder Ballroom**: checked; 6 held records without a parseable date.
 - **Hawthorne Theatre**: checked; 2 held records without a parseable date.
 - **High Limit Room**: adapter-needed; original published events remain unmeasured.
 - **Crystal Ballroom**: checked; 1 held records without a parseable date.
-- **Revolution Hall**: checked; 3 held records without a parseable date.
+- **Revolution Hall**: checked; 1 held records without a parseable date.
 - **Mississippi Studios**: checked; 2 held records without a parseable date.
 - **Holocene**: checked; 1 held records without a parseable date.
 - **Doug Fir Lounge**: reopening-watch.
@@ -226,7 +226,7 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Hawthorne Lounge**: adapter-needed; original published events remain unmeasured.
 - **Word Virus Books**: adapter-needed; original published events remain unmeasured.
 - **The Six (Midnight PDX Bar)**: adapter-needed; original published events remain unmeasured.
-- **Show Bar at Revolution Hall**: checked; 3 held records without a parseable date.
+- **Show Bar at Revolution Hall**: checked; 1 held records without a parseable date.
 - **Aladdin Theater**: checked; 2 held records without a parseable date.
 - **Mission Theater**: checked; 1 held records without a parseable date.
 - **The Goodfoot**: adapter-needed; original published events remain unmeasured.
