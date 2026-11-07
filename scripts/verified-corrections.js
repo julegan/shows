@@ -45,7 +45,7 @@ function proposeCorrections(approved,observations,{today,sources=registry}={}){
   const corrected={...previous,startsAt:incoming.startsAt,startTimeKind:"show",
    sourceCheckedAt:incoming.sourceCheckedAt,
    verificationMethod:"Proposed original-source correction: uniquely matched ticket, room, date and explicitly labeled SHOW time",
-   sourceCorrection:{status:"proposed",sourceId:oldSource.id,sourceUrl:url,
+   sourceCorrection:{status:"source-confirmed",sourceId:oldSource.id,sourceUrl:url,
     previousStartsAt:previous.startsAt,observedStartsAt:incoming.startsAt,
     checkedAt:incoming.sourceCheckedAt,
     evidence:"Original event ticket and venue calendar confirm a separately labeled SHOW time"}};
