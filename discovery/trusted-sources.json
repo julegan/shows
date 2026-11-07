@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "maxAdditionsPerRun": 12,
+  "minLeadHours": 36,
+  "maxAheadDays": 120,
+  "policy": "Trust only verified new original-event identities with source-corroborated year, venue and SHOW clock. Never auto-change or delete approved events, guess recurring shows, or publish pending-rights artwork.",
+  "sources": [
+    {
+      "id": "jack-london-revue",
+      "adapter": "jack-london-original-html",
+      "venue": "Jack London Revue",
+      "sourceUrl": "https://www.jacklondonrevue.com/",
+      "reason": "Independent original calendar and detail verify the same title, date/year, venue and SHOW time."
+    },
+    {
+      "id": "alberta-rose-theatre",
+      "adapter": "alberta-rose-original-html",
+      "venue": "Alberta Rose Theatre",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/",
+      "reason": "Original month/year calendar, weekday, room and explicit SHOW time; series tickets still require editorial review."
+    }
+  ]
+}

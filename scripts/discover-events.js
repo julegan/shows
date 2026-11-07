@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 "use strict";
-/* Automated source discovery proposes PRs only. Never publish unreviewed listings. */
+/* Discovery stages all candidates; only the separately guarded, owner-approved trusted-original policy can automatically publish additive verified events. */
 const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
@@ -186,7 +186,9 @@ function extract(item,src,now){
    ...(item.originalEventId?{sourceEventId:item.originalEventId,sourceCalendar:item.originalCalendar}:{}),
    ...(src.adapter==="turntable-1905-ssr"?{sourcePerformanceId:item.sourcePerformanceId,sourceShowId:item.sourceShowId}:{}),
    ...(src.adapter==="alberta-rose-original-html"&&item.sourceTicketId?{sourceTicketId:item.sourceTicketId}:{}) ,
-  addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection"}
+  addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection",
+    ...(["jack-london-original-html","alberta-rose-original-html"].includes(src.adapter)&&item.verifiedOriginalShowTime===true?
+       {verifiedOriginalShowTime:true}:{})}
  }};
 }
 function reconcile(existing,records){

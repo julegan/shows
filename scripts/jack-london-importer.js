@@ -84,7 +84,7 @@ function detail(html,item){
  const description=clean(body.match(/<div class="tw-description">([\s\S]*?)<\/div>/i)?.[1],450);
  const originalMusic=!/\b(?:cabaret|burly[\s-]?q|burlesque|comedy|trivia|karaoke|bingo)\b/i.test(title)&&
   /\b(?:live music|live band|jazz orchestra|live jazz|music concert)\b/i.test(description);
- return {title,fullUrl:url,venue:"Jack London Revue",startDate:when,sourceVerifiedMusic:originalMusic,
+ return {title,fullUrl:url,venue:"Jack London Revue",startDate:when,sourceVerifiedMusic:originalMusic,verifiedOriginalShowTime:true,
   timeEvidence:"Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster.",
   description:"Original venue event: "+description,
   ...(artwork?{artwork}:{})};
