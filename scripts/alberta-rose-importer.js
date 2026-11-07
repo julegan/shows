@@ -158,7 +158,7 @@ function parse(html){
    records.push(r);
   }
  }
- if(!records.some(x=>x.startDate))throw Error("Original Alberta Rose calendar lacks any individually verifiable shows");
+ if(!records.some(x=>x.startDate))throw Error("Original Alberta Rose calendar lacks any individually verifiable shows: "+JSON.stringify(records.slice(0,9).map(x=>({hold:x.hold,title:x.title,url:x.url}))));
  return {records,meta:{monthGroups:monthCount,calendarCards:cardCount,verified:records.filter(x=>x.startDate).length,
   held:records.filter(x=>x.hold).length}};
 }
