@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-06",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1200,
-  "addedOccurrences": 2,
-  "batchId": "auto-discovery-2026-11-06-52",
+  "totalOccurrences": 1262,
+  "addedOccurrences": 62,
+  "batchId": "auto-discovery-2026-11-06-55",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -144,11 +144,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-06-51",
       "addedOccurrences": 90
+    },
+    {
+      "batchId": "auto-discovery-2026-11-06-52",
+      "addedOccurrences": 2
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 370
+  "musicOccurrences": 377
 };
 window.SHOWS_EVENTS = [
   {
@@ -13465,6 +13469,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-06T19:30:00-08:00"
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-06-83868a0e500a",
+    "title": "Chris Smither",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/chris-smither-2/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/chris-smither-2/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/04/chris-smither-1.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/chris-smither-2/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "outlook-mission-2026-11-06-gully-boys",
     "title": "Gully Boys with Pollyanna and Nonbinary Girlfriend",
     "subtitle": "Live music · discovered through the scheduled outlook",
@@ -14871,6 +14926,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-07-def264537803",
+    "title": "Live Wire with Luke Burbank",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-07T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/live-wire-with-luke-burbank-37/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/live-wire-with-luke-burbank-37/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2024/03/11.7.26-Rose-Asset.png",
+      "sourceUrl": "https://albertarosetheatre.com/event/live-wire-with-luke-burbank-37/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -16568,6 +16674,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-08-2ca444646747",
+    "title": "SOUVENIRS – Celebrating the Songs of John Prine",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/souvenirs-celebrating-the-songs-of-john-prine-4/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/souvenirs-celebrating-the-songs-of-john-prine-4/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/06/souvenirs-celebrating-the-songs-of-john-prine.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/souvenirs-celebrating-the-songs-of-john-prine-4/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-08-a08ca56ffa5b",
     "title": "THE HOLLOW: WINTER BURN",
     "subtitle": "Source-discovered venue event · details need review",
@@ -16665,6 +16822,67 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-08-a9cf86d29a2b",
+    "title": "Dave Tull — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48294 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. $25 MAINFLOOR / $20 BAR (21+) TICKETS | ALL AGES Dave Tull - drums, vocals Joe Bagg - piano Bill Athens - bass Singing from the drums, Dave brings to the stage a rare combination of joyous songwriting, world-class jazz singing and drumming. Think “F",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13205/2026-11-08",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13205/2026-11-08",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13205/d261d55c-e299-471c-9c1f-434a4eb43236-IMG_4642.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13205/2026-11-08",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48294",
+    "sourceShowId": "13205",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "the-1905",
       "method": "primary-source-collection"
     }
   },
@@ -17507,6 +17725,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-09-32c01f73dc02",
+    "title": "Psychedelics and the Reimagining of Aging",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/psychedelics-and-the-reimagining-of-aging/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/psychedelics-and-the-reimagining-of-aging/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/psychedelics-and-the-reimagining-of-aging.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/psychedelics-and-the-reimagining-of-aging/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-09-c784b70927ca",
     "title": "Square Dancing with Caller Steph Noll / KARAOKE @ 9:30",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17960,6 +18229,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-10-c079eb3ee1db",
+    "title": "Henry Diltz – Behind The Lens",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/henry-diltz-behind-the-lens/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/henry-diltz-behind-the-lens/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/05/henry-diltz-behind-the-lens.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/henry-diltz-behind-the-lens/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -18831,6 +19151,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-11-ac4b4312a7bf",
+    "title": "John McCutcheon",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/john-mccutcheon-4/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/john-mccutcheon-4/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2024/12/etix-John_2447411735530597.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/john-mccutcheon-4/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -21387,6 +21758,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-13-c165a868623c",
+    "title": "The Big Trans Comedy Show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/the-big-trans-comedy-show/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/the-big-trans-comedy-show/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/the-big-trans-comedy-show.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/the-big-trans-comedy-show/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-11-13-6758ec6792de",
     "title": "Tik Tok: 2010s Recession Pop Dance Night Featuring DJ Dance Dance",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22083,6 +22505,57 @@ window.SHOWS_EVENTS = [
     "seriesId": "outlet-riso-basics-2026"
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-14-91e1a216785e",
+    "title": "Leapin’ Louie: The Upside Down Ocean",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/leapin-louie-the-upside-down-ocean/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/leapin-louie-the-upside-down-ocean/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/leapin-louie-the-upside-down-ocean.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/leapin-louie-the-upside-down-ocean/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-street-pub-2026-11-14-09c24db6e6e7",
     "title": "Lunch & Soul with the Mel Brown Organ Trio",
     "subtitle": "Source-discovered venue event · details need review",
@@ -22184,6 +22657,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-14-acf1480d6a0f",
+    "title": "Mortified — 5:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Mortified. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/01/etix-Mortified_2980331736959096.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/mortified/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "36870809",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -22733,6 +23259,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-14-ac3eb3b6a3fd",
+    "title": "Mortified — 8:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Mortified. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/01/etix-Mortified_2980331736959096.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/mortified/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "42566250",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -24054,6 +24633,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-15-0e85bbb1237f",
+    "title": "The AERO Space Presents: MTV Pole Jams – A Pole Tribute to the Music Video Era",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/the-aero-space-presents-mtv-pole-jams-a-pole-tribute-to-the-music-video-era/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "hawthorne-kingdom-of-giants-2026-11-15",
     "title": "Kingdom of Giants",
     "subtitle": "Metalcore / post-hardcore · With Deadlands, Holy Wars, Night Rider",
@@ -25204,6 +25834,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-16-94f8c3cf5951",
+    "title": "Jenny Tian",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/jenny-tian/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/jenny-tian/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/05/jenny-tian-1.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/jenny-tian/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-16-8bc694aa9a26",
     "title": "PDX Songwriters Open Mic (FREE)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -25939,6 +26620,57 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Roseland Theater official event listing",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-17-9d4532236f96",
+    "title": "SUNDOWN 3 – A Salute to Gordon Lightfoot – A Benefit for The Jeremy Wilson Foundation",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/07/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -26753,6 +27485,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-18-5d63e19fcf6f",
+    "title": "Science On Tap – Save the Planet: Recycle! …or Not?",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-save-the-planet-recycle-or-not/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-save-the-planet-recycle-or-not/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/05/science-on-tap-save-the-planet-recycle-or-not.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-save-the-planet-recycle-or-not/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -28708,6 +29491,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-20-83967e9ce26a",
+    "title": "The Next Waltz - 50th Anniversary Celebration — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: The Next Waltz - 50th Anniversary Celebration. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/the-next-waltz.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/the-next-waltz-50th-anniversary-celebration/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "71026782",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-20-3ee31e0fe03f",
     "title": "2nd Base",
     "subtitle": "Source-discovered venue event · details need review",
@@ -30112,6 +30947,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-21-b4490d97f2ee",
+    "title": "The Next Waltz - 50th Anniversary Celebration — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: The Next Waltz - 50th Anniversary Celebration. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/the-next-waltz.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/the-next-waltz-50th-anniversary-celebration/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "48896518",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -33544,6 +34431,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-27-d55c698d1ac4",
+    "title": "Red Light Romeos’ Yachtsgiving – A Yacht Rock Extravaganza",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2026-11-27-3c5b3ce111c6",
     "title": "The Storm Large Holiday Ordeal (Night 1)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -34377,6 +35315,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-11-28-ed831b20fef2",
+    "title": "The Next Waltz - 50th Anniversary Celebration — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: The Next Waltz - 50th Anniversary Celebration. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/31011747/the-next-waltz-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/31011747/the-next-waltz-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/the-next-waltz.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/the-next-waltz-50th-anniversary-celebration/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "31011747",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-28-6bec3e9d49be",
     "title": "FRIENDS IN LOW PLACES ~ 90s Country Night",
     "subtitle": "Source-discovered venue event · details need review",
@@ -35178,6 +36168,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-11-29-83d04977f9a8",
+    "title": "The Next Waltz - 50th Anniversary Celebration — 5:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: The Next Waltz - 50th Anniversary Celebration. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/the-next-waltz.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/the-next-waltz-50th-anniversary-celebration/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "47724670",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -36271,6 +37313,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-02-2c5e9e2efcaa",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/49162979/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/49162979/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "49162979",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-02-224a9a098523",
     "title": "NO FUN KARAOKE",
     "subtitle": "Source-discovered venue event · details need review",
@@ -36756,6 +37850,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-29-offbeat-connection",
     "discovery": {
       "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-03-15725117537c",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/43845222/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/43845222/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "43845222",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -37429,6 +38575,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-04-ed11a51585bc",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "68841618",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -38225,6 +39423,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-10-17-venue-coverage"
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-05-0ab6ae636aca",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "53711277",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-tw-abraham-racquetball-album-release-lucia-luna-latinum-2026-12-05",
     "title": "Abraham Racquetball (album release) • Lucia Luna • Latinum",
     "subtitle": "Independent live show · style to be confirmed",
@@ -38851,6 +40101,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-06-5297eec29a3a",
+    "title": "White Album Xmas — 4:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "63815578",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -40368,6 +41670,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-09-a2e0b1cf2197",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/93260618/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/93260618/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "93260618",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-09-831fadcf5451",
     "title": "Apes of the State Pigeon Pit",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40813,6 +42167,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-10-3630c71ea489",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/93577056/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/93577056/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "93577056",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -41455,6 +42861,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-11-9544944e472d",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/56163757/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/56163757/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "56163757",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -42254,6 +43712,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-12-b3a60b0e7c26",
+    "title": "White Album Xmas — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/82960769/white-album-xmas-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/82960769/white-album-xmas-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "82960769",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-12-12-ad2222fdc14e",
     "title": "A Very Tradwife Christmas with Tradwife String Band and Special Guests",
     "subtitle": "Source-discovered venue event · details need review",
@@ -42727,6 +44237,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-13-edd12e0d35f0",
+    "title": "White Album Xmas — 4:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: White Album Xmas. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/07/etix-White_4482081752076130.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/white-album-xmas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "62225030",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -43476,6 +45038,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-15-0db2b79c374d",
+    "title": "Rizo & Making Movies",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/rizo-making-movies/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/rizo-making-movies/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/rizo-making-movies.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/rizo-making-movies/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-12-15-4d1cdfcd848e",
     "title": "Tracey Nelson + friends",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43614,6 +45227,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-16-348bbce9ed90",
+    "title": "Peter Rowan Sam Grisman Duo: A Special Evening of Songs & Stories",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/peter-rowan-sam-grisman-duo-a-special-evening-of-songs-stories/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/peter-rowan-sam-grisman-duo-a-special-evening-of-songs-stories/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/09/a-special-evening-of-songs-and-stories-with-the-peter-rowan-and-sam-grisman-duo.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/peter-rowan-sam-grisman-duo-a-special-evening-of-songs-stories/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -44265,6 +45929,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-18-a439e7ea2cb2",
+    "title": "Booklover’s Burlesque – HOLIDAY EDITION",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/booklovers-burlesque-holiday-edition/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/booklovers-burlesque-holiday-edition/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/booklovers-burlesque-holiday-edition.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/booklovers-burlesque-holiday-edition/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-18-9a56855876fd",
     "title": "Dr. Brady Smith",
     "subtitle": "Source-discovered venue event · details need review",
@@ -44666,6 +46381,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "2026-11-03-curated-alt-markets"
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-19-f14f93536ecb",
+    "title": "A Very George Michael Christmas with Holcombe Waller and Special Guests — 5:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: A Very George Michael Christmas with Holcombe Waller and Special Guests. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "32253900",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
     "title": "You, The Audience • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -44756,6 +46523,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-19-8bfb6bae9099",
+    "title": "A Very George Michael Christmas with Holcombe Waller and Special Guests — 8:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: A Very George Michael Christmas with Holcombe Waller and Special Guests. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/32660764/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-8-pm-show-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/32660764/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-8-pm-show-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "32660764",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -45259,6 +47079,61 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-20-880d7509c49f",
+    "title": "Stumptown Soul Holiday Spectacular — 3:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned R&B & soul",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "R&B & soul"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-20T15:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Stumptown Soul Holiday Spectacular. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/41664852/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/41664852/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/stumptown-soul-holiday-spectacular.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/stumptown-soul-holiday-spectacular/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "41664852",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-12-20-c93e88590fa5",
     "title": "Gothmas: Constant Debauchery (Depeche Mode), Kiss Me Kiss Me Kiss Me (The Cure), Precious Machinery (Siouxsie and the Banshees)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -45306,6 +47181,62 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-20-524c313ad127",
+    "title": "Stumptown Soul Holiday Spectacular — 7:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned R&B & soul",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "R&B & soul"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-20T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Stumptown Soul Holiday Spectacular. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/44031612/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/44031612/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/stumptown-soul-holiday-spectacular.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/stumptown-soul-holiday-spectacular/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "44031612",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -46734,6 +48665,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2026-12-29-50d4b9489412",
+    "title": "Kat Edmonson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-29T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/kat-edmonson/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/kat-edmonson/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/08/kat-edmonson.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/kat-edmonson/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-12-29-2fe4073010a9",
     "title": "Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -47379,6 +49361,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-31-30b300d0acc3",
+    "title": "Glitterfox with special guests Camp Crush – New Year’s Eve",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/glitterfox-with-special-guests-camp-crush-new-years-eve/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/glitterfox-with-special-guests-camp-crush-new-years-eve/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/glitterfox-new-years-eve.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/glitterfox-with-special-guests-camp-crush-new-years-eve/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -48078,6 +50111,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-01-09-51e6ba0274f6",
+    "title": "Fernando Viciconte – The Lucky House Album Release with special guest Sarabeth Tucek",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/fernando-viciconte-the-lucky-house-album-release-with-special-guest-sarabeth-tucek/alberta-rose-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/fernando-viciconte-the-lucky-house-album-release-with-special-guest-sarabeth-tucek/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/fernando-viciconte-the-lucky-house-album-release-with-special-guest-sarabeth-tucek.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/fernando-viciconte-the-lucky-house-album-release-with-special-guest-sarabeth-tucek/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2027-01-09-36afc2a3d92f",
     "title": "Shannon McNally",
     "subtitle": "Source-discovered venue event · details need review",
@@ -48621,6 +50705,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-01-15-2a2413f2a1bf",
+    "title": "Dark Side - A Piece for Assorted Lunatics — 8:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-15T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Dark Side - A Piece for Assorted Lunatics. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/56048997/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/56048997/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/dark-side-a-piece-for-assorted-lunatics.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/dark-side-a-piece-for-assorted-lunatics/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "56048997",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-15-ba19a6e420e9",
     "title": "DJ Meredith Marks",
     "subtitle": "Source-discovered venue event · details need review",
@@ -48917,6 +51053,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-01-16-534b10f980f2",
+    "title": "Dark Side - A Piece for Assorted Lunatics — 8:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID. Original multi-performance series: Dark Side - A Piece for Assorted Lunatics. Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://www.etix.com/ticket/p/41650042/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://www.etix.com/ticket/p/41650042/dark-side-a-piece-for-assorted-lunatics-portland-alberta-rose-theatre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/dark-side-a-piece-for-assorted-lunatics.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/calendar/category/series/dark-side-a-piece-for-assorted-lunatics/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "sourceTicketId": "41650042",
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-01-17-0ecdb5f159ed",
     "title": "Midwinter Indulgence",
     "subtitle": "Source-discovered venue event · details need review",
@@ -49015,6 +51203,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-01-18-415d942d9d17",
+    "title": "AJ McLean Presents Alexander James : The Better Man Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-18T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/aj-mclean-presents-alexander-james-the-better-man-tour/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/aj-mclean-presents-alexander-james-the-better-man-tour/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/aj-mclean-presents-alexander-james-the-better-man-tour.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/aj-mclean-presents-alexander-james-the-better-man-tour/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -49572,6 +51811,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-01-23-14ac63b6bc21",
+    "title": "Dare and Derriere: NIGHTFALL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/dare-and-derriere-nightfall/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/dare-and-derriere-nightfall/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/dare-and-derriere-nightfall.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/dare-and-derriere-nightfall/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2027-01-23-75655edf36e8",
     "title": "LUIS J GOMEZ",
     "subtitle": "Source-discovered venue event · details need review",
@@ -49728,6 +52018,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-01-25-ed5b5f5be5e2",
+    "title": "Miko Marks: Hell or High Water Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/miko-marks-hell-or-high-water-tour/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/miko-marks-hell-or-high-water-tour/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/08/miko-marks.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/miko-marks-hell-or-high-water-tour/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-01-26-b6554e94fbdd",
     "title": "TesseracT",
     "subtitle": "Source-discovered venue event · details need review",
@@ -49821,6 +52162,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-01-27-1eb3bac4b331",
+    "title": "Science on Tap – A Journey Through the Large Hadron Collider",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-27T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-a-journey-through-the-large-hadron-collider/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-a-journey-through-the-large-hadron-collider/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/science-on-tap-a-journey-through-the-large-hadron-collider.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-a-journey-through-the-large-hadron-collider/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -51748,6 +54140,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-02-16-4a352342e3f0",
+    "title": "Consider This with Rukaiyah Adams",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/consider-this-with-rukaiyah-adams/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/consider-this-with-rukaiyah-adams/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/09/consider-this-with-rukaiyah-adams.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/consider-this-with-rukaiyah-adams/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-02-16-9f9963c6c9cb",
     "title": "La Roux",
     "subtitle": "Source-discovered venue event · details need review",
@@ -51944,6 +54387,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-02-17-29102269fbcd",
+    "title": "The Smithereens with special guests Star Collector",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/the-smithereens-with-special-guests-star-collector/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/the-smithereens-with-special-guests-star-collector/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/the-smithereens-with-special-guests-star-collector.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/the-smithereens-with-special-guests-star-collector/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -52354,6 +54848,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-02-20-3801920ddca9",
+    "title": "38th Annual WINTERFOLK – A Benefit for Transition Projects",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/38th-annual-winterfolk-a-benefit-for-transition-projects/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/38th-annual-winterfolk-a-benefit-for-transition-projects/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/38th-annual-winterfolk-a-benefit-for-transition-projects.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/38th-annual-winterfolk-a-benefit-for-transition-projects/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2027-02-20-f80ce1e422b9",
     "title": "Alt Bloom",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52711,6 +55256,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-02-23-f2e22b9f1915",
+    "title": "Mardi Gras Mambo – featuring the Dirty Dozen Brass Band and Nathan & the Zydeco Cha Chas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/mardi-gras-mambo-featuring-the-dirty-dozen-brass-band-and-nathan-the-zydeco-cha-chas/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/mardi-gras-mambo-featuring-the-dirty-dozen-brass-band-and-nathan-the-zydeco-cha-chas/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/09/mardi-gras-mambo-featuring-the-dirty-dozen-brass-band-and-nathan-the-zydeco-cha-chas.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/mardi-gras-mambo-featuring-the-dirty-dozen-brass-band-and-nathan-the-zydeco-cha-chas/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-02-23-571380f59ec8",
     "title": "Sylvan Esso",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52902,6 +55498,108 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-02-25-860dc6c2f142",
+    "title": "Gunhild Carling",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/gunhild-carling-2/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/gunhild-carling-2/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2025/01/etix-Gunhild_2970791737052771.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/gunhild-carling-2/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-02-26-813df2a3cbf0",
+    "title": "Holly Near with Tammy Hall, Jan Martinelli, and Emma’s Revolution.",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-26T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/holly-near-with-tammy-hall-jan-martinelli-and-emmas-revolution/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/holly-near-with-tammy-hall-jan-martinelli-and-emmas-revolution/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/holly-near-with-tammy-hall-jan-martinelli-and-emmas-revolution-1.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/holly-near-with-tammy-hall-jan-martinelli-and-emmas-revolution/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-02-26-44c559ec2685",
     "title": "Marian Hill ACT TWO: THE TOUR",
     "subtitle": "Source-discovered venue event · details need review",
@@ -53050,6 +55748,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-02-27-4402bc410327",
+    "title": "BOYeurism Anniversary Spectacular",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/boyeurism-anniversary-spectacular/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/boyeurism-anniversary-spectacular/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/boyeurism-anniversary-spectacular.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/boyeurism-anniversary-spectacular/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -53656,6 +56405,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-03-04-db0952717a93",
+    "title": "Biamp Portland Jazz Festival Presented by PDX Jazz Jazzmeia Horn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-jazzmeia-horn/alberta-rose-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-jazzmeia-horn/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/biamp-portland-jazz-festival-presented-by-pdx-jazz-jazzmeia-horn.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-jazzmeia-horn/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -54417,6 +57220,60 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-03-10-c94f07efdaa3",
+    "title": "Biamp Portland Jazz Festival: Particle Kid / Daniel Lanois",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-particle-kid-daniel-lanois/alberta-rose-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-particle-kid-daniel-lanois/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/biamp-portland-jazz-festival-particle-kid-daniel-lanois.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-particle-kid-daniel-lanois/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-03-10-49c34798e7b2",
     "title": "Braxton Keith",
     "subtitle": "Source-discovered venue event · details need review",
@@ -54561,6 +57418,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-03-11-9f02b145acc3",
+    "title": "Biamp Portland Jazz Festival Presented by PDX Jazz Gretchen Parlato",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-gretchen-parlato/alberta-rose-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-gretchen-parlato/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/biamp-portland-jazz-festival-presented-by-pdx-jazz-gretchen-parlato.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/biamp-portland-jazz-festival-presented-by-pdx-jazz-gretchen-parlato/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -55525,6 +58436,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-03-23-42b15c4d5119",
+    "title": "Kaki King",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-23T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/kaki-king/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/kaki-king/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/08/kaki-king.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/kaki-king/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-high-water-2027-03-23-ceea31353119",
     "title": "Karaoke Night - Free!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -55568,6 +58530,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-03-24-117877ab6b92",
+    "title": "Science On Tap: Meet the Bees in Your Garden",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-24T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-meet-the-bees-in-your-garden/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-meet-the-bees-in-your-garden/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/10/science-on-tap-meet-the-bees-in-your-garden-1.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-meet-the-bees-in-your-garden/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -56534,6 +59547,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-04-06-51dd0fb7c290",
+    "title": "Consider This with Christian Wiman",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-06T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/consider-this-with-christian-wiman/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/consider-this-with-christian-wiman/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/09/consider-this-with-christian-wiman.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/consider-this-with-christian-wiman/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2027-04-06-e1ae72cbb1ae",
     "title": "Sleaford Mods",
     "subtitle": "Source-discovered venue event · details need review",
@@ -56627,6 +59691,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-04-07-9a68b2376956",
+    "title": "Karla Bonoff",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-07T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/karla-bonoff-3/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/karla-bonoff-3/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2024/12/etix-Karla_1169301735530618.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/karla-bonoff-3/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -57473,6 +60588,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-04-28-f678b2fbe712",
+    "title": "Science On Tap – The Relationship Anarchist: Deepening Connections with Friends, Lovers, and Others",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-28T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-the-relationship-anarchist-deepening-connections-with-friends-lovers-and-others/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-the-relationship-anarchist-deepening-connections-with-friends-lovers-and-others/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/08/science-on-tap-the-relationship-anarchist-deepening-connections-with-friends-lovers-and-others.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-the-relationship-anarchist-deepening-connections-with-friends-lovers-and-others/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-04-30-32920e4d85cc",
+    "title": "LEATHER AND LACE: A Tribute to all things Fleetwood and Stevie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/leather-and-lace-a-tribute-to-all-things-fleetwood-and-stevie-11/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/leather-and-lace-a-tribute-to-all-things-fleetwood-and-stevie-11/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/leather-and-lace-a-tribute-to-all-things-fleetwood-and-stevie.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/leather-and-lace-a-tribute-to-all-things-fleetwood-and-stevie-11/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
     }
   },
