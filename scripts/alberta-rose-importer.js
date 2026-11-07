@@ -79,7 +79,7 @@ function single(block,group){
   return {hold:"Original event status changed or event is an add-on",title,url};
  const date=clean(block.match(/<div\b[^>]*id\s*=\s*["']eventDate["'][^>]*>([\s\S]*?)<\/div>/i)?.[1],70);
  const dm=date.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat),?\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})$/i);
- const time=clockText(block.match(/<span\b[^>]*class=["'][^"']*\brhp-event__time-text--list\b[^"']*["'][^>]*>([\s\S]*?)<\/span>/i)?.[1]);
+ const time=clockText(block.match(/<span\b[^>]*class\s*=\s*["'][^"']*\brhp-event__time-text--list\b[^"']*["'][^>]*>([\s\S]*?)<\/span>/i)?.[1]);
  if(!dm||!group||group.month!==SHORT_MONTHS[dm[2].toLowerCase()]||!time.show||time.conflicting)
   return {hold:"Original event missing calendar year/date or explicit SHOW clock",title,url};
  const startDate=dateFor(group.month,group.year,dm[3],dm[1],time.show,time.doors);
