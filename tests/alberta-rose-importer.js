@@ -12,8 +12,8 @@ function single(opts={}){
  '<img src="https://albertarosetheatre.com/wp-content/uploads/2026/04/chris-smither-1.jfif" class="eventListImage">'+
  '<a id = "eventTitle" class="url" href="'+(opts.url||eventUrl)+'">'+
  '<h2 class="rhp-event__title--list">'+(opts.title||"Chris Smither")+'</h2></a>'+
- '<div id="eventDate">'+(opts.day||"Fri, Nov 06")+'</div>'+
- '<span class="rhp-event__time-text--list">'+(opts.time||"Doors: 7 pm Show: 8 pm")+'</span>'+
+ '<div id="eventDate" class = "eventMonth singleEventDate">'+(opts.day||"Fri, Nov 06")+'</div>'+
+ '<span class = "font0by75 fontWeight500 lineHeight15 rhp-event__time-text--list">'+(opts.time||"Doors: 7 pm Show: 8 pm")+'</span>'+
  '<div class="eventsVenueDiv" id="'+(opts.venue||"eventVenueId-12630")+'"></div></div>';
 }
 function performance(day,time,ticket){
