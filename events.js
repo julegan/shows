@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-06",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1198,
-  "addedOccurrences": 90,
-  "batchId": "auto-discovery-2026-11-06-51",
+  "totalOccurrences": 1200,
+  "addedOccurrences": 2,
+  "batchId": "auto-discovery-2026-11-06-52",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -140,11 +140,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-06-46",
       "addedOccurrences": 33
+    },
+    {
+      "batchId": "auto-discovery-2026-11-06-51",
+      "addedOccurrences": 90
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 368
+  "musicOccurrences": 370
 };
 window.SHOWS_EVENTS = [
   {
@@ -30625,6 +30629,62 @@ window.SHOWS_EVENTS = [
     "classificationSourceUrl": "https://www.songkick.com/concerts/43461474-ils-at-high-water-mark-lounge"
   },
   {
+    "id": "auto-twilight-2026-11-21-f0610feba1d7",
+    "title": "Alterlatino Night! Ska-Rock-Rock en Espanol-Punk-Y2K Vibras-Y Mas!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Source-mentioned Reggae & ska",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk",
+      "Reggae & ska"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468839/-alterlatino-night-ska-rock-rock-en-espanol-punk-y2k-vibras-y-mas",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468839/-alterlatino-night-ska-rock-rock-en-espanol-punk-y2k-vibras-y-mas",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/w9mf0waee3ua9jogqz0b.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468839/-alterlatino-night-ska-rock-rock-en-espanol-punk-y2k-vibras-y-mas",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-nova-pdx-2026-11-21-52cc586ab22d",
     "title": "DEAR DIARY: AN EMO & POP PUNK NIGHT",
     "subtitle": "Source-discovered venue event · details need review",
@@ -37027,6 +37087,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-22",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-12-03-50f1faa9ca9a",
+    "title": "Witch, Please! Queer Krampus Dance Party! w/ Dj Blanche Deverheaux",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468840/witch-please-queer-krampus-dance-party-w-dj-blanche-deverheaux",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-06",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468840/witch-please-queer-krampus-dance-party-w-dj-blanche-deverheaux",
+        "kind": "organizer",
+        "checkedAt": "2026-11-06",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/brpxtcn6qm0io9rr6auw.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468840/witch-please-queer-krampus-dance-party-w-dj-blanche-deverheaux",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-06",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },
