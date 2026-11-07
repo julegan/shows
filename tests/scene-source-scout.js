@@ -5,6 +5,8 @@ const path=require("node:path");
 const scout=require("../scripts/scene-source-scout");
 const seeds=require("../discovery/scene-scout-seeds.json");
 const state=require("../discovery/scene-scout-leads.json");
+const sourceRegistry=require("../discovery/sources.json");
+const venueRegistry=require("../discovery/venues.json");
 assert.equal(seeds.schemaVersion,1);
 assert.equal(state.schemaVersion,1);
 assert(seeds.seeds.length>=7,"Independent market research must span multiple organizers and discovery surfaces");
@@ -20,6 +22,28 @@ assert.equal(scout.canon("https://example.com/poster.png","https://example.com/"
 assert.equal(scout.canon("https://example.com/market/?utm_source=ig#photos","https://example.com/"),"https://example.com/market/");
 assert.equal(scout.canon("https://example.com/?event_id=0123","https://example.com/"),"https://example.com/?event_id=0123",
   "Event identity query parameters must not be dropped");
+const registryWatch=scout.registryVenueSeeds(sourceRegistry,venueRegistry,seeds.seeds);
+assert(registryWatch.seeds.some(x=>x.id==="registry-coffin-club"),"Coffin's existing official URL should be auto-checked");
+assert(registryWatch.seeds.some(x=>x.id==="registry-high-limit-room"),"High Limit's official show URL should be auto-checked");
+assert(registryWatch.seeds.some(x=>x.id==="registry-moda-center"),"Preferred arena is not excluded from venue watch");
+assert(registryWatch.seeds.some(x=>x.id==="registry-doug-fir"),"Reopening-watch URL is monitored without assuming reopening");
+assert(!registryWatch.seeds.some(x=>x.id==="registry-the-goodfoot"),"Curated seed covers the Goodfoot; don't duplicate network requests");
+assert(!registryWatch.seeds.some(x=>x.id==="registry-the-fixin-to"),"Secondary venue is not automatically elevated");
+assert(registryWatch.withoutUrl.some(x=>x.id==="b-side"),"Missing B-Side source URL becomes an actionable research gap");
+assert(registryWatch.withoutUrl.some(x=>x.id==="wyrd-hut"),"Missing Wyrd source is not silently counted as a working importer");
+assert(registryWatch.seeds.every(x=>x.url===scout.canon(x.url,x.url)&&x.kind==="original-venue"),
+ "Registry watches use exact canonical original HTTPS pages only");
+const syntheticSources={sources:[
+ {id:"a",venueRegistryId:"a",status:"adapter-needed",url:"https://safe.example.org/events"},
+ {id:"b",venueRegistryId:"b",status:"pilot-enabled",url:"https://working.example.org/"},
+ {id:"c",venueRegistryId:"c",status:"adapter-needed",url:"http://insecure.example/"}]};
+const syntheticVenues={editorialPreferenceGroups:{preferred:["a","b","c"],scene:[]},
+ venues:[{id:"a",name:"Unconnected",ingestionStatus:"adapter-needed"},
+ {id:"b",name:"Connected",ingestionStatus:"active-adapter"},
+ {id:"c",name:"Insecure",ingestionStatus:"adapter-needed"}]};
+const synthetic=scout.registryVenueSeeds(syntheticSources,syntheticVenues,[]);
+assert.deepEqual(synthetic.seeds.map(x=>x.id),["registry-a"]);
+assert(synthetic.withoutUrl.some(x=>x.id==="c"),"Reject HTTP and malformed source URLs rather than fetching them");
 const original={id:"tiny-diy",label:"Portland Tiny DIY Market",url:"https://tiny.example.org/event/2026/november",kind:"original-event",
  focus:"Independent queer DIY zine market",relevance:"high"};
 let results=scout.inspect(original,"<html><body>"+"x".repeat(400)+"</body></html>");
@@ -61,6 +85,11 @@ assert(!scout.inspect(secondary,html,known).some(x=>known.has(x.url)),"Previousl
 const report=scout.render({checked:[{label:"Dot's Cafe",error:"HTTP 403",count:0}],
  failures:[{error:"HTTP 403"}],newLeads:results,allLeads:results,day:"2026-11-03"});
 assert.match(report,/Research leads only/);
+const coverageReport=scout.render({checked:[],failures:[],newLeads:[],allLeads:[],day:"2026-11-06",registry:registryWatch});
+assert.match(coverageReport,/First-party venue connection watches/);
+assert.match(coverageReport,/B-Side Tavern/);
+assert.match(coverageReport,/lack an original URL/);
+assert(!coverageReport.includes("0 future shows"),"A missing first-party URL must not imply a venue has no shows");
 assert.match(report,/inaccessible\/changed/);
 assert.match(report,/NOT approved SHOWS events/);
 assert.match(report,/don't|Don.t automatically|Don't scrape/i);
@@ -70,6 +99,8 @@ assert(workflow.includes("gh pr create"),"New source discoveries prepare an edit
 assert(workflow.includes("gh pr edit"),"One rolling review is maintained");
 assert(workflow.includes("--force-with-lease"),"Bot only updates the current branch with a lease");
 assert(!workflow.includes("gh pr merge")&&!workflow.includes("git push origin main"),"Source research cannot publish directly");
+assert(workflow.includes("'discovery/sources.json'")&&workflow.includes("'discovery/venues.json'"),
+ "A registry update triggers the research scout without manually editing venue seed lists");
 assert(workflow.includes("SCOUT_PENDING_FILE"),"Keep unmerged new leads when the next scout runs");
 assert(workflow.includes("actions/upload-artifact@"),"Retain a source-health report even when there are no new leads");
 console.log("PASS — seeded source scouting, niche filtering, vendor graph discovery, HTTPS safety, no event publication");
