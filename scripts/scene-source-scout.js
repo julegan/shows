@@ -7,6 +7,9 @@
 const fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,"..");
 const seeds=require("../discovery/scene-scout-seeds.json");
+const sourceRegistry=require("../discovery/sources.json");
+const venueRegistry=require("../discovery/venues.json");
+const MAX_REGISTRY_PAGES=20;
 const EVENT_RX=/\b(?:event|market|bazaar|fair|festival|fest|show|concert|gig|tickets?|live[\s-]?music|pop[\s-]?up|holiday|calendar|vendors?|exhibition|makers?)\b/i;
 const SCENE_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|makers?|arts?|comics?|nerdy?|geeks?|book(?:s)?|media)\b/i;
 const STRONG_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|comics?|nerdy?|geeks?|book(?:s)?|media)\b/i;
@@ -82,6 +85,36 @@ function inspect(seed,html,knownUrls=new Set()){
  }
  return [...results.values()].sort((a,b)=>(b.rank||0)-(a.rank||0)||a.url.localeCompare(b.url)).slice(0,MAX_PER_SEED);
 }
+// The canonical registry, not ad-hoc URL guesses, drives extra original venue
+// watches. Newly discovered links remain unverified leads and are never fetched
+// in this phase, enabled as importers, or directly published.
+function registryVenueSeeds(sources=sourceRegistry,venues=venueRegistry,curated=seeds.seeds){
+ const statuses=new Set(["adapter-needed","source-blocked","source-empty","reopening-watch"]);
+ const groups=venues.editorialPreferenceGroups||{};
+ const ids=[...new Set([...(groups.preferred||[]),...(groups.scene||[])])];
+ const byVenue=new Map((venues.venues||[]).map(v=>[v.id,v]));
+ const bySource=new Map((sources.sources||[]).filter(x=>x.venueRegistryId).map(x=>[x.venueRegistryId,x]));
+ const existing=new Set(curated.map(x=>canon(x.url,x.url)).filter(Boolean));
+ const visited=new Set(),next=[],withoutUrl=[];
+ for(const id of ids){
+  const v=byVenue.get(id);if(!v)throw Error("Unknown editorial venue "+id);
+  const src=bySource.get(id);
+  if(src?.status==="pilot-enabled")continue;
+  if(!statuses.has(src?.status||v.ingestionStatus))continue;
+  const url=src?.url||v.calendarUrl,verified=canon(url,url);
+  if(!verified||verified!==url){
+   withoutUrl.push({id,name:v.name,status:src?.status||v.ingestionStatus});
+   continue;
+  }
+  if(existing.has(verified)||visited.has(verified))continue;
+  visited.add(verified);
+  next.push({id:"registry-"+id,label:v.name+" — official source watch",url:verified,
+   kind:"original-venue",focus:"Editorially registered original venue source. Date/year, show clock, venue, promoter and room require independent event-specific review. "+
+   (src?.status==="reopening-watch"?"Reopening unconfirmed.":"No complete active original importer.")});
+ }
+ if(next.length>MAX_REGISTRY_PAGES)throw Error("Too many registered original venue watches; review source scope before increasing bound");
+ return {seeds:next,withoutUrl};
+}
 function localDay(now=new Date()){
  const p=Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(now).map(x=>[x.type,x.value]));
  return p.year+"-"+p.month+"-"+p.day;
@@ -115,7 +148,7 @@ async function retrieve(seed,request=fetch){
  if(text.length<300)throw Error("Seed source is empty/incomplete");
  return text;
 }
-function render({checked,failures,newLeads,allLeads,day}){
+function render({checked,failures,newLeads,allLeads,day,registry={seeds:[],withoutUrl:[]}}){
  const out=["# Portland music & independent culture source scout — "+day,"",
   "**Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.","",
   "This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.","",
@@ -129,6 +162,13 @@ function render({checked,failures,newLeads,allLeads,day}){
  for(const x of newLeads.slice(0,65))
   out.push("| "+short(x.source)+" | ["+short(x.titleHint||"Open source")+"]("+x.url+") | "+short(x.type)+" | "+short(x.why)+" |");
  if(newLeads.length>65)out.push("","**"+(newLeads.length-65)+" additional links omitted from brief view; consult the JSON research queue.**");
+ out.push("","## First-party venue connection watches","",
+  "**"+registry.seeds.length+"** additional official pages for unconnected preferred or scene venues were inspected; some are already included in the curated scout seeds. "+
+  "**"+registry.withoutUrl.length+"** active venues still lack an original URL in the registry. Neither count proves there are any or no future shows.","");
+ if(registry.withoutUrl.length){
+  out.push("| Venue | Registry status | Next step |","| --- | --- | --- |");
+  for(const v of registry.withoutUrl)out.push("| "+short(v.name)+" | "+short(v.status)+" | Find and independently verify a first-party source; do not infer dates |");
+ }
  out.push("","## Research requirements","",
  "- Determine if the linked page is the original organizer/venue announcement or a secondary directory/vendor mention.",
  "- Confirm Portland city/room, future local date with **explicit year**, actual event time semantics, event category and cancellation status. Inaccessible sources do not imply zero upcoming events.",
@@ -142,8 +182,9 @@ function render({checked,failures,newLeads,allLeads,day}){
 async function run({request=fetch,now=new Date(),write=true,pendingFile=process.env.SCOUT_PENDING_FILE}={}){
  const approved=baselineKnown(),existing=readState(statePath),pending=readState(pendingFile);
  const known=new Map([...existing.leads,...pending.leads].map(x=>[x.url,x]));
+ const registry=registryVenueSeeds();
  const checked=[],found=new Map();
- for(const seed of seeds.seeds){
+ for(const seed of [...seeds.seeds,...registry.seeds]){
   try{
    const html=await retrieve(seed,request);
    const leads=inspect(seed,html,approved);
@@ -155,12 +196,12 @@ async function run({request=fetch,now=new Date(),write=true,pendingFile=process.
  if(found.size>MAX_NEW)throw Error("Unexpectedly many source-scout leads; review changing source HTML before storing");
  const allLeads=[...known.values(),...newLeads].sort((a,b)=>a.url.localeCompare(b.url));
  if(allLeads.length>700)throw Error("Research queue cap exceeded; consolidate reviewed or stale leads");
- const report=render({checked,failures:checked.filter(x=>x.error),newLeads,allLeads,day});
+ const report=render({checked,failures:checked.filter(x=>x.error),newLeads,allLeads,day,registry});
  if(write){fs.writeFileSync(statePath,JSON.stringify({schemaVersion:1,leads:allLeads},null,2)+"\n");fs.writeFileSync(reportPath,report);}
  if(checked.every(x=>x.error))throw Error("Every curated scene-discovery source failed: report retained; do not infer there are no events");
  console.log("SCENE SCOUT "+JSON.stringify({checked:checked.length,failed:checked.filter(x=>x.error).length,new:newLeads.length,total:allLeads.length,bySource:Object.fromEntries(checked.map(x=>[x.id,x.count]))}));
  for(const x of newLeads.slice(0,30))console.log("SCENE LEAD "+x.source+" | "+x.type+" | "+x.titleHint+" | "+x.url);
- return {checked,newLeads,allLeads,report};
+ return {checked,newLeads,allLeads,report,registry};
 }
 if(require.main===module)run().catch(e=>{console.error("SCENE SOURCE SCOUT FAILED: "+e.message);process.exitCode=1});
-module.exports={canon,anchors,inspect,localDay,readState,baselineKnown,retrieve,render,run};
+module.exports={canon,anchors,inspect,registryVenueSeeds,localDay,readState,baselineKnown,retrieve,render,run};

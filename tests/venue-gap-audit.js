@@ -1,6 +1,6 @@
 "use strict";
 const assert=require("node:assert/strict");
-const {addDays,analyze,report}=require("../scripts/report-venue-gap");
+const {addDays,analyze,report,nextCoverageActions}=require("../scripts/report-venue-gap");
 assert.equal(addDays("2026-11-03",29),"2026-12-02");
 assert.equal(addDays("2026-11-03",55),"2026-12-28");
 assert.equal(addDays("2026-11-03",89),"2027-01-31");
@@ -67,7 +67,23 @@ const azoth=analysis.rows.find(r=>r.venueId==="azoth");
 assert.equal(azoth.source,"failed");
 assert.equal(azoth.approved,1);
 assert.equal(azoth.musicWithoutStyles,1);
+const actions=nextCoverageActions(analysis);
+assert(actions.connect.some(x=>x.venue==="The Coffin Club"&&x.status==="adapter-needed"),
+ "Unconnected preferred venue becomes an original importer task, never a zero-event inference");
+assert(actions.recover.some(x=>x.venue==="AZØTH"&&x.status==="failed"),
+ "Failed enabled source becomes an actionable original-source recovery task");
+assert(actions.verify.some(x=>x.venue==="Black Water"&&/source records/.test(x.details)),
+ "Unmatched and held original bills are reported for verification");
+assert(actions.classify.some(x=>x.venue==="AZØTH"&&/genre evidence/.test(x.details)),
+ "Approved unclassified-genre music is a research task, not an auto-label");
+assert(!actions.connect.some(x=>x.venue==="AZØTH"),
+ "An enabled but failing source is not confused with a missing integration");
+assert.deepEqual(nextCoverageActions(analysis),actions,"Worklist must be stable across runs");
 const output=report(analysis);
+assert.match(output,/Automated next coverage actions/);
+assert.match(output,/Build or verify missing original source integrations/);
+assert.match(output,/Recover failed or empty sources/);
+assert.match(output,/Research event-specific genre evidence/);
 assert.match(output,/The Coffin Club\s+\| adapter-needed/);
 assert.match(output,/unknown \|/);
 assert.match(output,/2026-11-15/);

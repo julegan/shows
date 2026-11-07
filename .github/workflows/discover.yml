@@ -11,6 +11,8 @@ on:
       - '.github/workflows/discover.yml'
       - 'scripts/discover-events.js'
       - 'scripts/source-change-review.js'
+      - 'scripts/report-venue-gap.js'
+      - 'tests/venue-gap-audit.js'
       - 'scripts/event-classification.js'
       - 'scripts/*-importer.js'
       - 'scripts/backfill-artwork.js'
