@@ -60,5 +60,5 @@ const collision=Array.from({length:9},(_,i)=>({
 const mass=collision.map(e=>({event:{...e,startsAt:e.startsAt.replace("20:00:00","19:30:00")}}));
 assert.equal(proposeCorrections(collision,mass,{today:now}).heldBatch,9);
 assert.equal(proposeCorrections(collision,mass,{today:now}).proposals.length,0,"Bulk source drift held rather than rewriting all records");
-assert.throws(()=>proposeCorrections([],[],{}),/explicit/);
+assert.throws(()=>proposeCorrections([],[],{}),/current Pacific date/);
 console.log("PASS — evidence-backed official showtime correction proposals hold ambiguity, dates, cancellations, identity mismatches, bulk drift and unsupported metadata");
