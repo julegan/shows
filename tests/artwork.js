@@ -124,6 +124,20 @@ for(const batch of [0,1,17,57,1000]){
  assert.equal(result.selected.length,5);
  assert.equal(result.selected[0].id,highLimitTonight.id);
 }
+const crowded=Array.from({length:7},(_,i)=>({...highLimitTonight,
+ id:"urgent-"+i,
+ url:"https://aftontickets.com/event/buyticket/57jml3v8"+String(i),
+ startsAt:"2026-11-07T"+String(10+i).padStart(2,"0")+":00:00-08:00"}));
+const covered=new Set();
+for(let batch=0;batch<4;batch++){
+ const pass=planLookups(crowded,{today:"2026-11-07",max:2,batch});
+ for(const e of pass.selected)covered.add(e.id);
+ assert(pass.selected.length>0,"Overflow rotation must never skip the day's queue");
+}
+assert.equal(covered.size,7,"Busy near-term day is covered across bounded runs instead of starving its later bills");
+const workflow=require("node:fs").readFileSync(require("node:path").join(__dirname,"../.github/workflows/discover.yml"),"utf8");
+assert(workflow.includes("github.event_name == 'workflow_dispatch' && 'manual' || 'rotate'"),
+ "Push and scheduled scans must both use rotating mode, not out-of-range manual batch numbers");
 console.log("PASS — today/tomorrow source rechecks precede future flyer collection and no run-number batch can be empty");
 
 console.log("PASS — verified event photos, official venue match, missing-image coverage and review-only music priority");
