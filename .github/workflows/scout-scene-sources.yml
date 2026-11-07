@@ -9,6 +9,8 @@ on:
       - '.github/workflows/scout-scene-sources.yml'
       - 'scripts/scene-source-scout.js'
       - 'discovery/scene-scout-seeds.json'
+      - 'discovery/sources.json'
+      - 'discovery/venues.json'
       - 'tests/scene-source-scout.js'
 permissions:
   contents: write
@@ -57,7 +59,7 @@ jobs:
             echo "branch=$branch" >> "$GITHUB_OUTPUT"
             echo "Unmerged source leads in PR #$number are preserved during today's scan." >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Discover unknown Portland underground and holiday-market sources
+      - name: Scout unconnected registered venues, music organizers and distinctive makers
         env:
           SCOUT_PENDING_FILE: /tmp/shows-scene-source-pending.json
         run: node scripts/scene-source-scout.js
@@ -117,7 +119,7 @@ jobs:
           {
             echo "# Newly discovered independent-event and organizer sources"
             echo
-            echo "Read-only source research from original Portland scene organizers, vendor cross-links and a few local indexes. These URLs are **unverified leads, not calendar events**."
+            echo "Read-only source research from unconnected registered Portland venues, independent organizers, vendor cross-links and a few local indexes. These URLs are **unverified leads, not calendar events**."
             echo
             echo "No source importer is enabled by this PR. No dates, market recurrences, genre, public calendar events, or artwork licenses are inferred. Original organizer/venue evidence and Portland-specific venue/year/time must be checked separately."
             echo
