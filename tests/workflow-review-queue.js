@@ -20,6 +20,22 @@ for(const name of required){
  const section=text.slice(entry,next<0?undefined:next);
  assert(!section.includes("if: steps.pending.outputs.skip != 'true'"),name+" must not be skipped because a review is open");
 }
+const partition=text.indexOf("      - name: Partition verified original additions from editorial review");
+const publisher=text.indexOf("      - name: Publish only independently verified original additions");
+const reviewStep=text.indexOf("      - name: Create or refresh a single rolling SHOWS review PR");
+assert(partition>0&&publisher>partition&&reviewStep>publisher,
+ "Trusted originals must be independently partitioned, validated and processed before the usual review PR");
+const publishing=text.slice(publisher,reviewStep);
+assert(publishing.includes("node tests/validate.js"),"Trusted snapshot is independently revalidated");
+assert(publishing.includes("git add -- events.js"),"Trusted publisher may stage only the event dataset");
+assert(publishing.includes("git push origin HEAD:refs/heads/main"),"Automated original additions reach canonical main through an optimistic push only");
+assert(!publishing.includes("--force")&&!publishing.includes("gh pr merge"),
+ "Trusted publication must never bypass branch rules or merge arbitrary PRs");
+assert(publishing.includes("cp /tmp/shows-all-proposed-events.js events.js"),
+ "Failed trusted publication returns every candidate to manual review");
+assert(publishing.includes("git reset --mixed HEAD~1"),
+ "Rejected branch-protected or competing updates roll back the local candidate commit");
+assert(text.includes("node scripts/trusted-publication.js"),"Source records are filtered by the independently approved trust policy");
 const proposal=text.slice(text.indexOf("      - name: Create or refresh a single rolling SHOWS review PR"));
 assert(proposal.includes('gh pr edit "$number" --body-file'),"Rolling PR body must be updated with current source evidence");
 assert(proposal.includes('git push --force-with-lease='),"Pending bot branch cannot be force-updated without a lease");

@@ -1,6 +1,6 @@
 # Working on SHOWS
 
-Julie Owens directs and approves this project. Submit changes through pull requests; do not commit to main or merge a PR on her behalf. New event additions require her review before publication.
+Julie Owens directs and approves this project. Submit changes through pull requests; do not commit to main or merge a PR on her behalf. New event additions require her review except for independently verified, append-only original-source records explicitly admitted by the owner-reviewed trusted publication policy. This exception applies only to the scheduled data bot, not to assistant-initiated direct commits or code/source-configuration changes. Never merge a PR for her.
 
 ## Preserve the editorial priority
 
@@ -19,3 +19,7 @@ The homepage is date-first from Portland's current day; Month and Places are sec
 ## Venue-first discovery and original flyers
 
 The canonical source list is `discovery/venues.json`; source adapters live in `discovery/sources.json` and `scripts/`. Intake every upcoming dated event from each supported venue, then classify; do not drop bills because genre detection is uncertain. Prioritize closing missing-data gaps for core underground venues and report counts by venue, not just event totals. Use `node scripts/audit-venue-coverage.js` to inspect gaps. Save original event poster URLs only with linked evidence, creator/source attribution and rights review; use no invented graphic placeholders. Automated importers should open PRs, not publish.
+
+## Trusted event-source automation
+
+After the owner merges the trusted publication policy PR, scheduled SHOWS collection may publish only proven *new* source records admitted by `discovery/trusted-sources.json` and validated by `scripts/trusted-publication.js`. Existing event edits, removals, artwork rights, same-night conflicts and newly connected sources remain review-only. A bot push to `main` is never forced; if branch protection or a concurrent update blocks it, the original proposals must remain in the rolling review PR. UI/source-code changes continue to use human-reviewed PRs.

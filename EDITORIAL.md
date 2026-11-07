@@ -52,7 +52,9 @@ These sources may reveal record-release concerts, benefit bills, DIY house shows
 - Do not assign genres from a band name, venue reputation, clothing, or an unsupported assumption. A fitting supporting artist may establish a mixed bill's style; record that basis.
 - Keep unknown admission, ages, accessibility, and end times unknown. Conflicting sources stay in the review log until resolved.
 - Retain useful earlier events and stable IDs. Deduplicate bills by venue, date, and lineup; do not create a second listing just to add genre metadata.
-- Julie reviews additions through PRs before they are published. Source verification alone does not replace her editorial decision.
+- **Trusted-original exception (owner-authorized November 6, 2026):** New event records may be added automatically *only* through the reviewed, append-only `discovery/trusted-sources.json` policy and `scripts/trusted-publication.js`. Initially restricted to individually corroborated Jack London Revue show detail pages and standalone Alberta Rose Theatre dated calendar events with an explicitly labeled SHOW clock, original permalink and exact venue. Automatic additions must be future-dated within the bounded policy window, have no same-venue/date collision, and exclude artwork pending rights approval. Unsupported event format and genres remain unverified.
+- **Review remains mandatory** for every other venue/source, new adapters, any uncertain or conflicting room/time/date, independent multi-performance ticket series, cancellations, reschedules, stale/duplicate listings, changes or removals to already-approved events, prices/age/accessibility assumptions, pending-rights imagery and any batch exceeding the trust threshold.
+- Every automation run reports what was trusted, held and proposed. An invalid policy, failing test, branch-protection rejection or competing update fails closed into the existing rolling editorial PR. New **code and source trust assignments** still require owner-reviewed PRs; only qualifying append-only event data is eligible for routine bot publication.
 
 ## Coverage reporting
 
