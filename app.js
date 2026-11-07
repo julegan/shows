@@ -18,10 +18,12 @@
     !/^(?:closed|closure|venue closed|no events?)\b/i.test(String(e.title || "").trim()) &&
     !isRoutineFarmersMarket(e));
   const neighborhoods = [...new Set(eligible.map(e => e.neighborhood).filter(Boolean))].sort();
-  // Stable music taxonomy: styles remain selectable before a newly researched
-  // scene has approved listings. Unknown styles do not filter out the default feed.
+  // Stable genre taxonomy: user-facing genre choices remain selectable before
+  // a source has approved listings; unclassified events stay in the default feed.
+  // Keep legacy mixed labels when approved events still use them, without
+  // projecting Country onto Americana-only or vice versa.
   const supportedStyles = ["Jazz","Blues","Hip-hop & rap","R&B & soul","Funk & disco",
-    "Folk & bluegrass","Country & Americana","Electronic & dance","Reggae & ska",
+    "Folk & bluegrass","Country","Americana","Electronic & dance","Reggae & ska",
     "Global & traditional","Classical & chamber","Indie & alternative","Pop"];
   const styles = [...new Set([...supportedStyles,...events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || [])])].sort();
   function ymdDate(date) {

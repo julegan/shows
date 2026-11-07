@@ -55,7 +55,13 @@ context.window.SHOWS_EVENTS.push(
   {...fixtureBase,id:"fixture-venue-closed",title:"CLOSED",category:"Unclassified",
     musicStyles:[],startsAt:"2026-10-18T13:30:00-07:00"},
   {...fixtureBase,id:"fixture-closed-mistagged",title:"Closed Merry Christmas",category:"Music",
-    musicStyles:[],startsAt:"2026-10-18T13:35:00-07:00"}
+    musicStyles:[],startsAt:"2026-10-18T13:35:00-07:00"},
+  {...fixtureBase,id:"fixture-country-concert",title:"Country concert",category:"Music",
+    musicStyles:["Country"],startsAt:"2026-11-04T19:00:00-08:00"},
+  {...fixtureBase,id:"fixture-americana-concert",title:"Americana concert",category:"Music",
+    musicStyles:["Americana"],startsAt:"2026-11-04T20:00:00-08:00"},
+  {...fixtureBase,id:"fixture-legacy-country-americana",title:"Older combined genre",category:"Music",
+    musicStyles:["Country & Americana"],startsAt:"2026-11-05T20:00:00-08:00"}
 );
 // Ensure the Places preview cap is exercised even when the live venue roster changes.
 for (let n=0;n<9;n++) {
@@ -68,9 +74,15 @@ for (let n=0;n<9;n++) {
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
 const events=context.window.SHOWS_EVENTS;
 const eById=new Map(events.map(e=>[e.id,e]));
-const styles=[...new Set([...["Jazz","Blues","Hip-hop & rap","R&B & soul","Funk & disco","Folk & bluegrass","Country & Americana","Electronic & dance","Reggae & ska","Global & traditional","Classical & chamber","Indie & alternative","Pop"],...events.flatMap(e=>e.musicStyles||[])])].sort();
+const styles=[...new Set([...["Jazz","Blues","Hip-hop & rap","R&B & soul","Funk & disco","Folk & bluegrass","Country","Americana","Electronic & dance","Reggae & ska","Global & traditional","Classical & chamber","Indie & alternative","Pop"],...events.flatMap(e=>e.musicStyles||[])])].sort();
 assert(styles.includes("Punk")&&styles.includes("Metal")&&styles.includes("Hardcore"),"Core underground styles retained");
-assert(styles.includes("Jazz")&&styles.includes("Hip-hop & rap")&&styles.includes("R&B & soul"),"Broad music styles available in filter even before imports");
+assert(styles.includes("Jazz")&&styles.includes("Hip-hop & rap")&&styles.includes("R&B & soul"),"Broad music genres available in filter even before imports");
+assert(styles.includes("Country")&&styles.includes("Americana"),"Country and Americana are independently selectable genres");
+assert(styles.includes("Country & Americana"),"Previously approved combined taxonomy remains visible while present in the dataset");
+const markup=fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8");
+assert.match(markup,/<label id="styleLabel" for="style">Genre\s*<select id="style"><option value="">All genres<\/option>/,
+ "Accessible genre filter label and option are user-facing and linked to the same control");
+assert.match(markup,/placeholder="Band, venue, genre, artist…"/,"Search hint uses genre terminology");
 assert.deepEqual(el("style").children.map(e=>e.value),styles,"Style options reflect dataset");
 assert.equal(el("fromDate").value,"2026-10-18","Starts today in Portland");
 assert(!fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8").includes("fromDateDisplay"),"The real date input must not be obscured by a fake display");
@@ -88,7 +100,7 @@ assert(!renderedIds().includes("fixture-closed-mistagged"),"Closure notice stays
 assert(el("results").innerHTML.includes("Type unconfirmed"),"Venue listing is not misrepresented as verified music");
 assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")),"Routine farmers market listings excluded");
 el("fromDate").change("2026-11-01");
-for(const style of ["Metal","Punk","Hardcore"]){
+for(const style of ["Metal","Punk","Hardcore","Country","Americana","Country & Americana"]){
   el("style").change(style);
   const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
   assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
@@ -123,6 +135,15 @@ for(const style of ["Metal","Punk","Hardcore"]){
 }
 el("clearFilters").click();
 assert.equal(el("style").value,"","Clear restores genre");
+el("style").change("Country");
+assert(renderedIds().includes("fixture-country-concert"),"Country finds country listings");
+assert(!renderedIds().includes("fixture-americana-concert"),"Country filter does not imply Americana");
+assert(!renderedIds().includes("fixture-legacy-country-americana"),
+ "Do not silently assume the legacy combined label definitively means Country");
+el("style").change("Americana");
+assert(renderedIds().includes("fixture-americana-concert"),"Americana finds its own listings");
+assert(!renderedIds().includes("fixture-country-concert"),"Americana filter does not imply Country");
+el("clearFilters").click();
 el("freeOnly").click();
 assert.equal(el("freeOnly").attrs["aria-pressed"],"true");
 assert(renderedIds().every(id=>eById.get(id).free===true),"Free filter excludes priced events");
