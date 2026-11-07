@@ -76,6 +76,9 @@ jobs:
           node tests/jack-london-importer.js
           node -e 'const m=require("./scripts/jack-london-importer"); const s=require("./discovery/sources.json").sources.find(s=>s.id==="jack-london-revue"); m.fetchEvents(s,fetch,{maxEvents:8}).then(r=>{const verified=r.filter(x=>x.startDate);if(!verified.length)process.exitCode=1;else console.log("LIVE JLR "+JSON.stringify({checked:r.length,verified:verified.length,held:r.length-verified.length}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
+      - name: Inspect Alberta Rose and Keys original venue calendar (temporary)
+        run: node scripts/probe-alberta-rose.js
+
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
           node --check scripts/treetix-importer.js
