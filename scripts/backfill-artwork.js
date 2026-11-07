@@ -75,8 +75,8 @@ function planLookups(events,options={}){
  const urgent=nearTermTotal.filter(e=>originalUrl(e));
  const todayEvents=urgent.filter(e=>e.startsAt.slice(0,10)===today);
  const tomorrowEvents=urgent.filter(e=>e.startsAt.slice(0,10)===tomorrow);
- const dayPage=(rows,limit)=>limit?rows.slice(cycleNumber%Math.ceil(rows.length/limit)*limit,
-  (cycleNumber%Math.ceil(rows.length/limit)+1)*limit):[];
+ const dayPage=(rows,limit)=>!limit||!rows.length?[]:rows.slice(cycleNumber%Math.ceil(rows.length/limit)*limit,
+  (cycleNumber%Math.ceil(rows.length/limit)+1)*limit);
  const todaySlots=Math.min(max,todayEvents.length);
  const selected=dayPage(todayEvents,todaySlots);
  const tomorrowSlots=Math.max(0,max-selected.length);
