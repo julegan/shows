@@ -31,7 +31,7 @@ function ticketUrl(raw){
   const u=new URL(clean(raw,600));
   if(u.protocol!=="https:"||u.hostname!=="www.etix.com"||u.username||u.password||u.port||u.hash)return null;
   const m=u.pathname.match(/^\/ticket\/p\/(\d{5,12})\/([a-z0-9-]+)-portland-alberta-rose-theatre\/?$/i);
-  if(!m||[...u.searchParams.keys()].some(x=>x!=="partner_id")||u.searchParams.get("partner_id")!== "100")return null;
+  if(!m||[...u.searchParams.keys()].some(x=>x!=="partner_id")||(u.search&&u.searchParams.get("partner_id")!=="100"))return null;
   return {url:u.origin+u.pathname,eventId:m[1]};
  }catch(_){return null}
 }
