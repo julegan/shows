@@ -1,16 +1,16 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-07T00:50:04.499Z; Portland date: 2026-11-06. This workflow does not publish images.
+Generated 2026-11-07T03:46:50.549Z; Portland date: 2026-11-06. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **256**
-- Already have image references: **181**
+- Upcoming music listings: **263**
+- Already have image references: **188**
 - Missing artwork: **75**
 - Missing listings with supported individual source pages: **23**
 - Missing listings needing another source or individual permalink: **52**
-- Batch: **52** of **0** (zero-indexed; 35 lookups maximum)
+- Batch: **55** of **0** (zero-indexed; 35 lookups maximum)
 - Attempted: **0**; proposed: **0**; no proposal: **0**
 
 ## Why pages did not produce artwork
