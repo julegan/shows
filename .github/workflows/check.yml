@@ -57,9 +57,6 @@ jobs:
           node --check scripts/diagnose-treetix-cloudflare.js
           node tests/treetix-cloudflare-diagnostic.js
 
-      - name: Diagnose The 1905 original-source date drift (temporary)
-        run: node scripts/probe-1905-live.js
-
       - name: Validate The 1905 ticket performance importer
         run: |
           node --check scripts/the-1905-importer.js
