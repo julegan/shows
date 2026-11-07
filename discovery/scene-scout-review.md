@@ -4,7 +4,7 @@
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**16 source pages attempted; 1 inaccessible/changed; 34 newly discovered links; 49 total recorded research leads.**
+**21 source pages attempted; 2 inaccessible/changed; 15 newly discovered links; 64 total recorded research leads.**
 
 ## Source health
 
@@ -20,51 +20,53 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | Portland Monthly's holiday market guide | Read-only check succeeded | 2 |
 | Portland Bazaar local maker event calendar | Read-only check succeeded | 1 |
 | The 1905 official jazz tickets | Read-only check succeeded | 0 |
-| Jack London Revue calendar | Read-only check succeeded | 0 |
+| Jack London Revue calendar | Read-only check succeeded | 1 |
 | The Goodfoot live music | Error — Seed source returned non-HTML or HTTP 403 | 0 |
-| Alberta Street Pub concerts | Read-only check succeeded | 3 |
+| Alberta Street Pub concerts | Read-only check succeeded | 1 |
 | Alberta Rose Theatre calendar | Read-only check succeeded | 20 |
 | Keys Lounge original schedule | Read-only check succeeded | 0 |
 | The Thesis PDX independent hip-hop showcase | Read-only check succeeded | 7 |
+| The Coffin Club — official source watch | Read-only check succeeded | 0 |
+| High Limit Room — official source watch | Read-only check succeeded | 0 |
+| Doug Fir Lounge — official source watch | Read-only check succeeded | 0 |
+| Moda Center — official source watch | Error — Seed source returned non-HTML or HTTP 404 | 0 |
+| Shanghai Tunnel — official source watch | Read-only check succeeded | 13 |
 
 ## Newly surfaced unverified music and culture leads
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| plus-plus-bizarre-bazaar | [Get Tickets](https://11099a.blackbaudhosting.com/11099a/tickets?tab=2&) | possible-event-or-market-link | /svg> FREE Get Tickets <svg xmlns="http://www.w3. |
-| plus-plus-bizarre-bazaar | [Get tickets](https://portlandartmuseum.org/tickets) | possible-event-or-market-link | class="main-menu-item-button" aria-expanded="false" aria-controls="sub-menu" aria-haspopup="true">Visit us Get tickets <a href="https://portlandartm |
-| plus-plus-bizarre-bazaar | [Tickets](https://portlandartmuseum.org/tickets/) | possible-event-or-market-link | menu__search__text"> Search Tickets <div class=" |
-| portland-monthly-holiday-guide | [The Biggest Day of the Portland Book Festival](https://www.pdxmonthly.com/arts-and-culture/portland-book-festival-2026/) | possible-event-or-market-link | s="td-module-meta-info"> Arts & Culture The Biggest Day of the Portland Book Festival |
-| music-alberta-street | [Lunch & Soul with the Mel Brown Organ Trio](https://www.albertastreetpub.com/music/2025/12/6/lunch-amp-soul-with-the-mel-brown-organ-trio) | possible-music-ticket-or-organizer-source | mber 14, 2026 Lunch & Soul with the Mel Brown Organ Trio |
-| music-alberta-street | [Tezeta Band](https://www.albertastreetpub.com/music/2026/11/10/tezeta-band) | possible-music-ticket-or-organizer-source | mber 10, 2026 Tezeta Band |
-| music-alberta-street | [The Flip // Marshall Law Band](https://www.albertastreetpub.com/music/2026/11/13/the-flip-marshall-law-band) | possible-music-ticket-or-organizer-source | mber 13, 2026 The Flip // Marshall Law Band |
-| music-alberta-rose | [Red Light Romeos&#8217; Yachtsgiving &#8211; A Yacht Rock Extravaganza](https://albertarosetheatre.com/event/red-light-romeos-yachtsgiving-a-yacht-rock-extravaganza/alberta-rose-theatre/portland-oregon/) | possible-event-or-market-link | Red Light Romeos&#8217; Yachtsgiving &#8211; A Yacht Rock Extravaganza <h4 id="evSub |
-| music-alberta-rose | [TICKETS](https://albertarosetheatre.com/tickets/) | possible-event-or-market-link | ost_type menu-item-object-page menu-item-13568"> PHOTO GALLERY TICKETS <a href="https://albertarosetheatre.com/venue-sp |
-| music-alberta-rose | [Buy Tickets](https://feverup.com/m/188755) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://livewireradio.merctickets.com/events/185023039/live-wire-with-luke-burbank?ref=web) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/30238423/john-mccutcheon-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/31011747/the-next-waltz-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/34012124/henry-diltz-behind-the-lens-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/36870809/mortified-5-pm-show-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/40753141/red-light-romeosyachtsgiving-a-yacht-rock-extravaganza-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/42566250/mortified-8-pm-show-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/43131087/chris-smither-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/43845222/white-album-xmas-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/49162979/white-album-xmas-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/49387821/leapinlouiethe-upside-down-ocean-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/68841618/white-album-xmas-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/69849350/the-aero-space-presentsmtv-pole-jams-a-pole-tribute-to-the-music-video-era-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/70006460/psychedelics-and-the-reimagining-of-aging-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-the-thesis | [685281347](https://music.apple.com/us/artist/mat-randol/685281347) | possible-organizer-source | 5.7z"/> |
-| music-the-thesis | [403804552](https://music.apple.com/us/artist/rachel-wong/403804552) | possible-organizer-source | 5.7z"/> |
-| music-the-thesis | [1565571349](https://music.apple.com/us/artist/waynegrey/1565571349) | possible-organizer-source | 5.7z"/> |
-| music-the-thesis | [1lD6YEOY9nEseYhC2VhWjD](https://open.spotify.com/artist/1lD6YEOY9nEseYhC2VhWjD) | possible-organizer-source | Stream On |
-| music-the-thesis | [1xBrRl6iChIO1BY9oH0YlE](https://open.spotify.com/artist/1xBrRl6iChIO1BY9oH0YlE) | possible-organizer-source | Stream On |
-| music-the-thesis | [7DH9hQ9Zsv75yyo9ymqFdx](https://open.spotify.com/artist/7DH9hQ9Zsv75yyo9ymqFdx) | possible-organizer-source | Stream On |
-| music-the-thesis | [The Thesis PDX independent hip-hop showcase](https://thethesispdx.com/) | original-organizer-or-vendor-source | Original independent hip-hop, R&B and soul concert announcements at Alberta Street Pub; never infer dates from monthly recurrence |
+| music-jack-london | [Jack London Revue calendar](https://www.jacklondonrevue.com/calendar/) | original-venue-calendar | Jazz, blues, R&B, soul and adventurous music, separate doors/show times; original venue calendar |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/70303679/souvenirs-celebrating-the-songs-of-john-prine-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| registry-shanghai-tunnel | [Sell Concert Tickets Online](https://www.eventbrite.com/organizer/event-type/music-venues/) | possible-event-or-market-link | s-module__8O0CJW__link">Sell Tickets Online Performing Arts Ticketing Software Sell Concert Tickets Online Ev |
+| registry-shanghai-tunnel | [Sell Tickets Online](https://www.eventbrite.com/organizer/features/sell-tickets/) | possible-event-or-market-link | Plan Events Sell Tickets Online <a href="https://www.eventbrite.com/organizer/event-industry/performing-arts/" class="MarketingSection-module-scss-module__8O0CJ |
+| registry-shanghai-tunnel | [Find your tickets](https://www.eventbrite.com/help/en-us/articles/319355/where-are-my-tickets/) | possible-event-or-market-link | -us/" data-testid="navLink" aria-label="Help Center" data-heap-id="seo-global-nav-link-help-center-click"> Help Center Find your tickets <a class="NavLink-modul |
+| registry-shanghai-tunnel | [Eventbrite Mobile Ticket App](https://www.eventbrite.com/l/eventbrite-app/) | possible-event-or-market-link | gSection-module-scss-module__8O0CJW__link">Pricing Event Marketing Platform Eventbrite Mobile Ticket App <a href="https://www.eventbrite.com/organizer/features/ |
+| registry-shanghai-tunnel | [Find my tickets](https://www.eventbrite.com/signin/signup?referrer=%2Fmytickets) | possible-event-or-market-link | 20l1.5-1.5zM10 14a4 4 0 1 0 0-8 4 4 0 0 0 0 8" clip-rule="evenodd"> Find my tickets <a class="NavLink-module-scss-module__DVJAgq__main GlobalNav-module |
+| registry-shanghai-tunnel | [Atlanta Pop Music Events](https://www.eventbrite.com/b/ga--atlanta/music/pop/) | possible-music-ticket-or-organizer-source | " class="MarketingSection-module-scss-module__8O0CJW__link">Tulum Music Events Denver Hobby Events Atlanta Pop Music Events New York Even |
+| registry-shanghai-tunnel | [symmetry w dj lampshade shanghai tunnel bar tickets 1999131582378](https://www.eventbrite.com/e/symmetry-w-dj-lampshade-shanghai-tunnel-bar-tickets-1999131582378?aff=ebdsoporgprofile) | possible-event-or-market-link | 08);--ContainerElevationHover:0px 2px 8px rgba(30, 10, 60, 0.06), 0px 4px 12px rgba(30, 10, 60, 0.08)"> <section style="--EventCardDetailsPadding:8px 8px 16px 1 |
+| registry-shanghai-tunnel | [tamarack alaska pauses burner phone skrdycat at shanghai tunnel bar tickets 2003553411187](https://www.eventbrite.com/e/tamarack-alaska-pauses-burner-phone-skrdycat-at-shanghai-tunnel-bar-tickets-2003553411187?aff=ebdsoporgprofile) | possible-event-or-market-link | 08);--ContainerElevationHover:0px 2px 8px rgba(30, 10, 60, 0.06), 0px 4px 12px rgba(30, 10, 60, 0.08)"> <section style="--EventCardDetailsPadding:8px 8px 16px 1 |
+| registry-shanghai-tunnel | [Event Ticketing](https://www.eventbrite.com/l/sell-tickets/) | possible-event-or-market-link | on--chevron-left-chunky_base" fill-rule="evenodd" clip-rule="evenodd" d="M13.8 7l-5 5 5 5 1.4-1.4-3.6-3.6 3.6-3.6z"> Solutions Event Ticketing <a class="NavLink |
+| registry-shanghai-tunnel | [Performing Arts Ticketing Software](https://www.eventbrite.com/organizer/event-industry/performing-arts/) | possible-event-or-market-link | Events Sell Tickets Online Performing Arts Ticketing Software S |
+| registry-shanghai-tunnel | [Event Payment System](https://www.eventbrite.com/organizer/features/event-payment/) | possible-event-or-market-link | -module__8O0CJW__link">Performing Arts Ticketing Software Sell Concert Tickets Online Event Payment System <a href="https://www.eventbrite.com/organizer/event-i |
+| registry-shanghai-tunnel | [Contact your event organizer](https://www.eventbrite.com/help/en-us/articles/647151/how-to-contact-the-event-organizer/) | possible-event-or-market-link | nk" aria-label="Find your tickets" data-heap-id="seo-global-nav-link-find-your-tickets-click"> Find your tickets Contact your event organizer <a class="NavLink- |
+| registry-shanghai-tunnel | [Solutions for Professional Services](https://www.eventbrite.com/organizer/event-industry/professional-services/) | possible-event-or-market-link | ion-module-scss-module__8O0CJW__link">Sell Concert Tickets Online Event Payment System Solutions for Professional Services <a href="https://www.eventbrite.com/o |
+
+## First-party venue connection watches
+
+**5** additional official pages for unconnected preferred or scene venues were inspected; some are already included in the curated scout seeds. **9** active venues still lack an original URL in the registry. Neither count proves there are any or no future shows.
+
+| Venue | Registry status | Next step |
+| --- | --- | --- |
+| Star Bar | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| Republic Cafe / Ming Lounge | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| B-Side Tavern | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| Wyrd Hut | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| The Alleyway | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| AZØTH | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| Hawthorne Lounge | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| Word Virus Books | adapter-needed | Find and independently verify a first-party source; do not infer dates |
+| The Six (Midnight PDX Bar) | adapter-needed | Find and independently verify a first-party source; do not infer dates |
 
 ## Research requirements
 
