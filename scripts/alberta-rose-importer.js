@@ -85,7 +85,7 @@ function single(block,group){
  const startDate=dateFor(group.month,group.year,dm[3],dm[1],time.show,time.doors);
  if(!startDate)return {hold:"Original month/year, weekday or doors/show conflict",title,url};
  const art=artIn(block,url);
- return {title,fullUrl:url,venue:"Alberta Rose Theatre",startDate,sourceVerifiedMusic:false,
+ return {title,fullUrl:url,venue:"Alberta Rose Theatre",startDate,sourceVerifiedMusic:false,verifiedOriginalShowTime:true,
   timeEvidence:"Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted.",
   description:"Original theatre calendar; music style and format require event-specific editorial assessment.",
   ...(art?{artwork:art}:{})};
@@ -114,7 +114,7 @@ function series(block,group){
   if(!startDate)return {hold:"Series date and source time conflict",title,url:ticket.url};
   const eventTitle=title+" — "+formatClock(time.show)+" show";
   return {title:eventTitle,fullUrl:ticket.url,venue:"Alberta Rose Theatre",startDate,
-   sourceVerifiedMusic:false,sourceTicketId:ticket.eventId,
+   sourceVerifiedMusic:false,verifiedOriginalShowTime:true,sourceTicketId:ticket.eventId,
    timeEvidence:"Original Alberta Rose month/year heading plus individually scheduled series date, SHOW clock and room-scoped Etix performance ID.",
    description:"Original multi-performance series: "+title+". Event-specific ticket URL uniquely identifies this session; classify its format from verified source evidence.",
    ...(art?{artwork:{...art,sourceUrl:seriesUrl}}:{})};

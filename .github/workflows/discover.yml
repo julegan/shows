@@ -14,6 +14,8 @@ on:
       - 'scripts/report-venue-gap.js'
       - 'tests/venue-gap-audit.js'
       - 'scripts/event-classification.js'
+      - 'scripts/trusted-publication.js'
+      - 'discovery/trusted-sources.json'
       - 'scripts/*-importer.js'
       - 'scripts/backfill-artwork.js'
       - 'scripts/*-leads.js'
@@ -134,6 +136,8 @@ jobs:
           node --check scripts/report-calendar-horizon.js
           node --check scripts/report-venue-gap.js
           node tests/venue-gap-audit.js
+          node --check scripts/trusted-publication.js
+          node tests/trusted-publication.js
           node --check app.js
           node --check events.js
           node tests/source-health.js
@@ -169,6 +173,61 @@ jobs:
           node --check scripts/19hz-scene-leads.js
           node tests/19hz-scene-leads.js
           node tests/validate.js
+      - name: Partition verified original additions from editorial review
+        run: |
+          set -euo pipefail
+          # Only the existing canonical file is a safe publication baseline.
+          git show HEAD:events.js > /tmp/shows-approved-events.js
+          cp events.js /tmp/shows-all-proposed-events.js
+          cp /tmp/shows-all-proposed-events.js /tmp/shows-remaining-events.js
+          echo '{"trusted":0,"remaining":0,"rejected":[]}' > /tmp/shows-trust-summary.json
+          if node scripts/trusted-publication.js \
+              --baseline /tmp/shows-approved-events.js \
+              --proposed /tmp/shows-all-proposed-events.js \
+              --trusted /tmp/shows-trusted-events.js \
+              --pending /tmp/shows-remaining-events.js \
+              --summary /tmp/shows-trust-summary.json; then
+            echo "Original source partition succeeded." >> "$GITHUB_STEP_SUMMARY"
+          else
+            cp /tmp/shows-all-proposed-events.js /tmp/shows-remaining-events.js
+            echo '{"trusted":0,"remaining":"all","rejected":["Partition failed closed"]}' > /tmp/shows-trust-summary.json
+            echo "::warning::Source trust evaluation failed; all proposals remain review-only."
+          fi
+          cat /tmp/shows-trust-summary.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish only independently verified original additions
+        run: |
+          set -euo pipefail
+          trusted="$(node -p 'require("/tmp/shows-trust-summary.json").trusted || 0')"
+          if [ "$trusted" -eq 0 ]; then
+            cp /tmp/shows-all-proposed-events.js events.js
+            echo "No safe new original bill qualified; review proposal remains unchanged." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # Commit ONLY canonical events.js; do not include reports or pending
+          # artwork changes. Push is optimistic and never force-updates main.
+          cp /tmp/shows-trusted-events.js events.js
+          if ! node tests/validate.js; then
+            cp /tmp/shows-all-proposed-events.js events.js
+            echo "::warning::Trusted snapshot failed validation; all proposals returned to review."
+            exit 0
+          fi
+          git config user.name "SHOWS verified-source bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- events.js
+          git commit -m "Publish $trusted independently verified source listings"
+          if git push origin HEAD:refs/heads/main; then
+            # Sync local ref even if actions/checkout produced a detached HEAD.
+            git branch -f main "$(git rev-parse HEAD)" 2>/dev/null || true
+            cp /tmp/shows-remaining-events.js events.js
+            echo "Autopublished $trusted append-only verified-original event(s)." >> "$GITHUB_STEP_SUMMARY"
+            echo "## Automatically published trusted originals" >> discovery/latest-review.md
+            echo "" >> discovery/latest-review.md
+            echo "$trusted verified first-party new bill(s) published without pending-rights artwork. All other source proposals, conflicts and historical changes remain under review." >> discovery/latest-review.md
+          else
+            git reset --mixed HEAD~1
+            cp /tmp/shows-all-proposed-events.js events.js
+            echo "::warning::Trusted data push was rejected by branch rules or a newer main; all proposals returned to editorial review."
+          fi
       - name: Create or refresh a single rolling SHOWS review PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -211,7 +270,10 @@ jobs:
           {
             echo "# Combined SHOWS discovery + artwork review"
             echo
-            echo "Source discoveries, changes to already-approved events, and event-specific artwork are staged for editorial review. Confirm event identity, date, venue, time type, status and image rights. **No published events are automatically modified or removed.**"
+            echo "Outside the trusted-original lane, all discoveries and published-event changes remain staged for editorial review. Confirm event identity, year/date, venue, show vs doors and artwork rights. **No published events are automatically modified or removed.**"
+            echo
+            echo "## Trusted-original publication outcome"
+            cat /tmp/shows-trust-summary.json
             echo
             echo "## Discovery snapshot"
             sed -n '1,/## New candidates:/p' discovery/latest-review.md
