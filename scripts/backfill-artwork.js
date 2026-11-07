@@ -191,7 +191,7 @@ async function main(){
     if(!titleMatches(html,e))outcome="TITLE_NOT_VERIFIED";
     else if(titleEvidence(html).some(t=>/\b(?:cancelled|canceled|postponed|rescheduled|moved)\b/i.test(t)))
       outcome="SOURCE_STATUS_REVIEW";
-    else if(e.artwork)outcome="SOURCE_TITLE_CONFIRMED";
+    else if(e.artwork)outcome="SOURCE_TITLE_TOKEN_MATCH";
     else {
      artwork=eventArtworkFromHtml(html,url,e.title);
      outcome=artwork?"PROPOSED":"NO_EVENT_IMAGE";
@@ -200,7 +200,7 @@ async function main(){
    tally(outcome);
    if(e.startsAt.slice(0,10)<=addDays(today,1))nearTermChecks.push({event:e,reason:outcome});
    if(artwork&&!e.artwork){e.artwork=artwork;successes.push({event:e,artwork});}
-   else if(outcome!=="SOURCE_TITLE_CONFIRMED")failures.push({event:e,reason:outcome});
+   else if(outcome!=="SOURCE_TITLE_TOKEN_MATCH")failures.push({event:e,reason:outcome});
   }));
  }
  if(successes.length){
