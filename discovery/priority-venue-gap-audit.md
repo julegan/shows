@@ -1,4 +1,4 @@
-# SHOWS — priority venue source coverage audit (2026-11-06 to 2026-12-31)
+# SHOWS — priority venue source coverage audit (2026-11-07 to 2027-01-01)
 
 **What this measures:** approved SHOWS listings and events independently parsed from currently connected first-party source feeds. The parsed subset is **not an exhaustive inventory** of a venue; an empty/failed feed is not evidence that a venue has no shows. Proposed and held rows have not been approved. Comparisons by original link or exact venue/date/title are conservative and may undercount representation when different first-party links describe the same bill.
 
@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-05 | 547 | 172 | 310 | 98 |
-| 56 | 2026-12-31 | 739 | 216 | 431 | 131 |
-| 90 | 2027-02-03 | 806 | 232 | 477 | 146 |
+| 30 | 2026-12-06 | 532 | 163 | 304 | 92 |
+| 56 | 2027-01-01 | 711 | 204 | 415 | 123 |
+| 90 | 2027-02-04 | 779 | 219 | 463 | 137 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -17,48 +17,48 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | Group | Venue | Import / this run | Approved | Music | Unclassified | Missing music styles | Parsed source | Matched | Proposed | Review |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | preferred | Black Water | checked (11 raw) | 11 | 2 | 6 | 2 | 11 | 11 | 0 | 0 |
-| preferred | High Water Mark Lounge | checked (67 raw) | 23 | 8 | 6 | 7 | 23 | 23 | 0 | 0 |
-| preferred | Twilight Cafe and Bar | checked (24 raw) | 22 | 18 | 0 | 9 | 21 | 11 | 0 | 10 |
+| preferred | High Water Mark Lounge | checked (68 raw) | 22 | 7 | 6 | 6 | 24 | 22 | 2 | 0 |
+| preferred | Twilight Cafe and Bar | checked (24 raw) | 21 | 17 | 0 | 8 | 20 | 11 | 0 | 9 |
 | preferred | The Coffin Club | adapter-needed | 4 | 3 | 0 | 0 | unknown | — | — | — |
-| preferred | Star Theater | checked (40 raw) | 20 | 20 | 0 | 14 | 22 | 19 | 0 | 3 |
-| preferred | Dante's | checked (44 raw) | 38 | 10 | 26 | 0 | 39 | 36 | 0 | 3 |
+| preferred | Star Theater | checked (39 raw) | 19 | 19 | 0 | 13 | 21 | 18 | 0 | 3 |
+| preferred | Dante's | checked (42 raw) | 36 | 9 | 25 | 0 | 37 | 34 | 0 | 3 |
 | preferred | Roseland Theater | checked (33 raw) | 15 | 6 | 9 | 1 | 14 | 9 | 0 | 5 |
-| preferred | Wonder Ballroom | checked (33 raw) | 15 | 3 | 12 | 0 | 14 | 12 | 0 | 2 |
-| preferred | Hawthorne Theatre | checked (39 raw) | 25 | 9 | 16 | 2 | 26 | 25 | 0 | 1 |
+| preferred | Wonder Ballroom | checked (32 raw) | 14 | 3 | 11 | 0 | 13 | 11 | 0 | 2 |
+| preferred | Hawthorne Theatre | checked (38 raw) | 24 | 9 | 15 | 2 | 25 | 24 | 0 | 1 |
 | preferred | High Limit Room | adapter-needed | 4 | 4 | 0 | 2 | unknown | — | — | — |
-| preferred | Crystal Ballroom | checked (54 raw) | 26 | 8 | 17 | 0 | 25 | 21 | 0 | 4 |
-| preferred | Revolution Hall | checked (30 raw) | 15 | 3 | 12 | 0 | 15 | 11 | 0 | 4 |
-| preferred | Mississippi Studios | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 14 | 0 | 0 |
-| preferred | Holocene | checked (48 raw) | 35 | 16 | 19 | 16 | 34 | 13 | 0 | 21 |
+| preferred | Crystal Ballroom | checked (54 raw) | 25 | 8 | 16 | 0 | 25 | 21 | 0 | 4 |
+| preferred | Revolution Hall | checked (30 raw) | 14 | 3 | 11 | 0 | 14 | 9 | 1 | 4 |
+| preferred | Mississippi Studios | checked (30 raw) | 13 | 0 | 13 | 0 | 14 | 13 | 1 | 0 |
+| preferred | Holocene | checked (47 raw) | 33 | 15 | 18 | 15 | 33 | 12 | 0 | 21 |
 | preferred | Doug Fir Lounge | reopening-watch | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| preferred | Nova PDX | checked (11 raw) | 11 | 1 | 10 | 0 | 11 | 11 | 0 | 0 |
+| preferred | Nova PDX | checked (10 raw) | 10 | 1 | 9 | 0 | 10 | 10 | 0 | 0 |
 | preferred | Star Bar | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| preferred | Lola's Room | checked (16 raw) | 6 | 0 | 5 | 0 | 6 | 6 | 0 | 0 |
-| preferred | The Showdown | checked (53 raw) | 38 | 0 | 33 | 0 | 40 | 38 | 0 | 2 |
-| preferred | 45 East | checked (19 raw) | 15 | 15 | 0 | 15 | 15 | 15 | 0 | 0 |
+| preferred | Lola's Room | checked (14 raw) | 7 | 0 | 6 | 0 | 7 | 7 | 0 | 0 |
+| preferred | The Showdown | checked (52 raw) | 37 | 0 | 32 | 0 | 39 | 37 | 0 | 2 |
+| preferred | 45 East | checked (19 raw) | 14 | 14 | 0 | 14 | 14 | 14 | 0 | 0 |
 | preferred | Republic Cafe / Ming Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | B-Side Tavern | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | Wyrd Hut | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | Moda Center | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
-| preferred | Kenton Club | checked (14 raw) | 16 | 16 | 0 | 16 | 13 | 13 | 0 | 0 |
+| preferred | Kenton Club | checked (13 raw) | 15 | 15 | 0 | 15 | 12 | 12 | 0 | 0 |
 | preferred | Shanghai Tunnel | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
-| preferred | Turn! Turn! Turn! | checked (19 raw) | 18 | 14 | 3 | 12 | 19 | 17 | 0 | 2 |
-| preferred | Starday Tavern | checked (1588 raw) | 65 | 1 | 60 | 1 | 65 | 65 | 0 | 0 |
-| preferred | The Off Beat | checked (14 raw) | 8 | 8 | 0 | 8 | 8 | 6 | 0 | 2 |
+| preferred | Turn! Turn! Turn! | checked (18 raw) | 17 | 13 | 3 | 11 | 18 | 16 | 0 | 2 |
+| preferred | Starday Tavern | checked (1588 raw) | 63 | 1 | 58 | 1 | 63 | 63 | 0 | 0 |
+| preferred | The Off Beat | checked (13 raw) | 8 | 8 | 0 | 8 | 8 | 6 | 0 | 2 |
 | scene | The Alleyway | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Polaris Hall | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 13 | 0 | 1 |
+| scene | Polaris Hall | checked (30 raw) | 13 | 0 | 13 | 0 | 15 | 12 | 2 | 1 |
 | scene | AZØTH | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
 | scene | Hawthorne Lounge | adapter-needed | 4 | 1 | 3 | 0 | unknown | — | — | — |
 | scene | Word Virus Books | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 14 | 12 | 0 | 2 |
-| scene | Aladdin Theater | checked (91 raw) | 34 | 0 | 34 | 0 | 34 | 33 | 0 | 1 |
-| scene | Mission Theater | checked (49 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
-| scene | The 1905 | checked (8 raw) | 7 | 7 | 0 | 1 | 7 | 7 | 0 | 0 |
+| scene | Show Bar at Revolution Hall | checked (30 raw) | 12 | 1 | 11 | 0 | 13 | 11 | 0 | 2 |
+| scene | Aladdin Theater | checked (90 raw) | 33 | 0 | 33 | 0 | 33 | 32 | 0 | 1 |
+| scene | Mission Theater | checked (46 raw) | 38 | 2 | 34 | 2 | 38 | 38 | 0 | 0 |
+| scene | The 1905 | checked (8 raw) | 5 | 5 | 0 | 1 | 6 | 5 | 1 | 0 |
 | scene | Jack London Revue | checked (50 raw) | 33 | 7 | 26 | 1 | 33 | 33 | 0 | 0 |
 | scene | The Goodfoot | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Alberta Street Pub | checked (33 raw) | 30 | 5 | 21 | 3 | 32 | 30 | 0 | 2 |
-| scene | Alberta Rose Theatre | checked (67 raw) | 38 | 2 | 34 | 0 | 38 | 38 | 0 | 0 |
+| scene | Alberta Street Pub | checked (31 raw) | 28 | 5 | 19 | 3 | 30 | 28 | 0 | 2 |
+| scene | Alberta Rose Theatre | checked (66 raw) | 37 | 2 | 33 | 0 | 37 | 37 | 0 | 0 |
 | scene | Keys Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 ## Automated next coverage actions
 
@@ -99,44 +99,45 @@ No cases identified in this run.
 | Crystal Ballroom | review needed | 4 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Dante's | review needed | 3 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Hawthorne Theatre | review needed | 1 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
+| High Water Mark Lounge | review needed | 2 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Holocene | review needed | 21 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Veri |
 | Kenton Club | review needed | 0 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
 | Lola's Room | review needed | 0 source records not conservatively matched to approved events; 3 held original records (0 dated, 3 undated). Verif |
-| Mission Theater | review needed | 0 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
-| Mississippi Studios | review needed | 0 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
-| Polaris Hall | review needed | 1 source records not conservatively matched to approved events; 2 held original records (0 dated, 2 undated). Verif |
-| Revolution Hall | review needed | 4 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
+| Mississippi Studios | review needed | 1 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
+| Polaris Hall | review needed | 3 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
+| Revolution Hall | review needed | 5 source records not conservatively matched to approved events; 3 held original records (0 dated, 3 undated). Verif |
 | Roseland Theater | review needed | 5 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
-| Show Bar at Revolution Hall | review needed | 2 source records not conservatively matched to approved events; 1 held original records (0 dated, 1 undated). Verif |
+| Show Bar at Revolution Hall | review needed | 2 source records not conservatively matched to approved events; 3 held original records (0 dated, 3 undated). Verif |
 | Star Theater | review needed | 3 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Starday Tavern | review needed | 0 source records not conservatively matched to approved events; 42 held original records (0 dated, 42 undated). Ver |
+| The 1905 | review needed | 1 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | The Off Beat | review needed | 2 source records not conservatively matched to approved events; 4 held original records (0 dated, 4 undated). Verif |
 | The Showdown | review needed | 2 source records not conservatively matched to approved events; 10 held original records (0 dated, 10 undated). Ver |
 | Turn! Turn! Turn! | review needed | 2 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
-| Twilight Cafe and Bar | review needed | 10 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Veri |
+| Twilight Cafe and Bar | review needed | 9 source records not conservatively matched to approved events; 0 held original records (0 dated, 0 undated). Verif |
 | Wonder Ballroom | review needed | 2 source records not conservatively matched to approved events; 6 held original records (0 dated, 6 undated). Verif |
 
 ### Research event-specific genre evidence (not automatic tagging)
 
 | Venue | Source state | Specific next step |
 | --- | --- | --- |
-| 45 East | genre unverified | 15 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| 45 East | genre unverified | 14 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Alberta Street Pub | genre unverified | 3 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Black Water | genre unverified | 2 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Hawthorne Theatre | genre unverified | 2 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | High Limit Room | genre unverified | 2 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| High Water Mark Lounge | genre unverified | 7 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| Holocene | genre unverified | 16 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| High Water Mark Lounge | genre unverified | 6 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| Holocene | genre unverified | 15 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Jack London Revue | genre unverified | 1 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| Kenton Club | genre unverified | 16 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| Kenton Club | genre unverified | 15 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Mission Theater | genre unverified | 2 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Roseland Theater | genre unverified | 1 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| Star Theater | genre unverified | 14 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| Star Theater | genre unverified | 13 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | Starday Tavern | genre unverified | 1 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | The 1905 | genre unverified | 1 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 | The Off Beat | genre unverified | 8 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| Turn! Turn! Turn! | genre unverified | 12 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
-| Twilight Cafe and Bar | genre unverified | 9 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| Turn! Turn! Turn! | genre unverified | 11 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
+| Twilight Cafe and Bar | genre unverified | 8 approved Music records lack event-specific genre evidence; leave unclassified until confirmed |
 
 
 ## Source records needing individual verification
@@ -147,10 +148,10 @@ These items were parsable from a connected first-party source and were **not** m
 - 2026-11-07 — [RHYTHM IS A DANCER: An early evening 90s Dance Party hosted by SNAP!](https://www.holocene.org/events/2026-11-07-rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap) — held for reconciliation
 - 2026-11-08 — [AZ CHIKE](https://www.holocene.org/events/2026-11-08-sold-out-az-chike-w-dj-scout) — held for reconciliation
 - 2026-11-09 — [Jake Minch](https://www.holocene.org/events/2026-11-09-jake-minch-getting-big-tour-w-alix-page) — held for reconciliation
-### Twilight Cafe and Bar (10 review)
-- 2026-11-06 — [93feetofsmoke w/ Fats'e, Polearm & Guest](https://www.twilightcafeandbar.com/event/468053/93feetofsmoke-w-fatse-polearm-guest) — held for reconciliation
+### Twilight Cafe and Bar (9 review)
 - 2026-11-10 — [Landroid w/ Valkerie, Sylphide](https://www.twilightcafeandbar.com/event/467169/landroid-w-valkerie-sylphide) — held for reconciliation
 - 2026-11-12 — [Shoot the Moon Fest-Night 1-w/ 1876 w/ Last Thread, Altar Girl, Kids on Fire](https://www.twilightcafeandbar.com/event/467137/shoot-the-moon-fest-night-1-w-1876-w-last-thread-altar-girl-kids-on-fire) — needs comparison
+- 2026-11-13 — [Shoot the Moon Fest-Night 2-w/ Nox Novacula, Berzerk, Arcana, Dj Crash](https://www.twilightcafeandbar.com/event/466439/shoot-the-moon-fest-night-2-w-nox-novacula-berzerk-arcana-dj-crash) — needs comparison
 ### Roseland Theater (5 review)
 - 2026-11-17 — [State Champs](https://roselandpdx.com/event/state-champs/roseland-theater/portland-oregon/) — held for reconciliation
 - 2026-11-24 — [Alter Bridge – What Lies Within Tour](https://roselandpdx.com/event/alter-bridge-what-lies-within-tour/roseland-theater/portland-oregon/) — held for reconciliation
@@ -160,9 +161,9 @@ These items were parsable from a connected first-party source and were **not** m
 - 2026-11-18 — [Silverstein](https://www.crystalballroompdx.com/events/278093-silverstein/) — held for reconciliation
 - 2026-12-10 — [Angine De Poitrine](https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/) — held for reconciliation
 ### Revolution Hall (4 review)
-- 2026-11-06 — [Railroad Earth](https://www.etix.com/ticket/p/95014697/railroad-earth-portland-revolution-hall) — held for reconciliation
-- 2026-11-07 — [Quadeca](https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall) — held for reconciliation
 - 2026-11-13 — [SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2)](https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall) — held for reconciliation
+- 2026-11-20 — [SOLD OUT: Gary Numan North American Fall Tour 2026](https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall) — held for reconciliation
+- 2026-11-27 — [Neurosis](https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall) — held for reconciliation
 ### Star Theater (3 review)
 - 2026-11-15 — [CHURCH OF HIVE](https://www.startheaterportland.com/tm-event/church-of-hive-12/) — held for reconciliation
 - 2026-11-22 — [CHURCH OF HIVE](https://www.startheaterportland.com/tm-event/church-of-hive-13/) — held for reconciliation
@@ -205,8 +206,8 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Hawthorne Theatre**: checked; 2 held records without a parseable date.
 - **High Limit Room**: adapter-needed; original published events remain unmeasured.
 - **Crystal Ballroom**: checked; 1 held records without a parseable date.
-- **Revolution Hall**: checked; 1 held records without a parseable date.
-- **Mississippi Studios**: checked; 2 held records without a parseable date.
+- **Revolution Hall**: checked; 3 held records without a parseable date.
+- **Mississippi Studios**: checked; 1 held records without a parseable date.
 - **Holocene**: checked; 1 held records without a parseable date.
 - **Doug Fir Lounge**: reopening-watch.
 - **Star Bar**: adapter-needed; original published events remain unmeasured.
@@ -221,14 +222,13 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Starday Tavern**: checked; 42 held records without a parseable date.
 - **The Off Beat**: checked; 4 held records without a parseable date.
 - **The Alleyway**: adapter-needed; original published events remain unmeasured.
-- **Polaris Hall**: checked; 2 held records without a parseable date.
+- **Polaris Hall**: checked; 1 held records without a parseable date.
 - **AZØTH**: adapter-needed; original published events remain unmeasured.
 - **Hawthorne Lounge**: adapter-needed; original published events remain unmeasured.
 - **Word Virus Books**: adapter-needed; original published events remain unmeasured.
 - **The Six (Midnight PDX Bar)**: adapter-needed; original published events remain unmeasured.
-- **Show Bar at Revolution Hall**: checked; 1 held records without a parseable date.
+- **Show Bar at Revolution Hall**: checked; 3 held records without a parseable date.
 - **Aladdin Theater**: checked; 2 held records without a parseable date.
-- **Mission Theater**: checked; 1 held records without a parseable date.
 - **The Goodfoot**: adapter-needed; original published events remain unmeasured.
 - **Alberta Street Pub**: checked; 1 held records without a parseable date.
 - **Alberta Rose Theatre**: checked; 6 held records without a parseable date.
