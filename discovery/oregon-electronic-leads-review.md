@@ -2,12 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**154 public table rows checked; 63 distinct relevant research leads (57 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**144 public table rows checked; 61 distinct relevant research leads (56 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-06 | [Ely Oaks at 45 East](https://45east.tixr.com/elyoaks1106) | 45 East | eurodance, trance, EDM / Not listed | Preferred SHOWS venue |
-| 2026-11-06 | [Process Club Night - Re:Ni, Hodge, Succubass](https://ra.co/events/2567115) | Process Pdx | uk bass, techno, garage, dubstep, breaks / Not listed | Relevant electronic / dark music tag |
 | 2026-11-07 | [Rhythm Is A Dancer: Early Evening 90s Party](https://www.etix.com/ticket/p/51248619/rhythm-is-a-danceran-early-evening-90s-dance-party-hosted-by-snap21-portland-holocene) | Holocene | Not categorized / Snap! 90'S Dance Party | Preferred SHOWS venue |
 | 2026-11-07 | [Gabriel & Dresden (Oxc) at 45 East](https://45east.tixr.com/gabrieldresden1107) | 45 East | trance, progressive house / Not listed | Preferred SHOWS venue |
 | 2026-11-07 | [Christian Loffler, Paris](https://wl.eventim.us/event/christian-loffler/694257) | The Den | deep house, techno / Not listed | Relevant electronic / dark music tag |
