@@ -93,7 +93,7 @@ jobs:
       - name: Propose official art for existing and newly discovered music listings
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
-          ARTWORK_BATCH_MODE: ${{ github.event_name == 'schedule' && 'rotate' || 'manual' }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'workflow_dispatch' && 'manual' || 'rotate' }}
         run: node scripts/backfill-artwork.js
       - name: Record source outcomes and monthly horizon
         run: |
@@ -283,7 +283,7 @@ jobs:
             cat /tmp/shows-trust-summary.json
             echo
             echo "## Discovery snapshot"
-            sed -n '1,/## New candidates:/p' discovery/latest-review.md
+            sed -n '1,20p' discovery/latest-review.md
             echo
             echo "## Actionable verified corrections (included as event edits)"
             sed -n '1,13p' discovery/verified-corrections-review.md
@@ -295,7 +295,7 @@ jobs:
             sed -n '1,14p' discovery/priority-venue-gap-audit.md
             echo
             echo "## Artwork snapshot"
-            sed -n '1,17p' discovery/artwork-backfill-review.md
+            sed -n '1,19p' discovery/artwork-backfill-review.md
             echo
             echo "## Full evidence"
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
