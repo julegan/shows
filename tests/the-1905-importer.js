@@ -36,6 +36,34 @@ assert.equal(m.parse(fixture([performance(48287,"18:30",{show:{id:13202,name:"Ja
  "Genre claims must not derive from venue reputation");
 assert.throws(()=>m.parse(fixture().replace("/shows/13202/2026-11-07","/calendar")),/show permalinks not found/);
 assert.throws(()=>m.parse(fixture().replace("Shows - The 1905","Unrelated ticket site")),/ticket page changed/);
+// First-party SSR can contain last night's performance even after the public
+// upcoming show link has disappeared. This is historical, not a future hold.
+const testNow=new Date("2026-11-06T16:30:00-08:00");
+assert.equal(m.pacificDay(testNow),"2026-11-06");
+assert.equal(m.pacificDay(new Date("2026-11-07T04:30:00Z")),"2026-11-06","Time zone, not UTC date, controls stale listing detection");
+const oldShow=performance(48101,"18:30",{
+ date:"2026-11-05",datetime:"2026-11-06T02:30:00Z",
+ show_id:13185,show:{id:13185,name:"Previous night's trio",description:"Jazz",image:null}
+});
+const recent=m.parse(fixture([oldShow,performance(48287)],true),{now:testNow});
+assert.equal(recent.records[0].skip,"Historical performance no longer linked in the upcoming calendar");
+assert.equal(recent.records[1].sourcePerformanceId,"48287");
+const wrongUTC=performance(48287,"18:30",{datetime:"2026-11-08T10:30:00Z"});
+const missingLink=performance(48999,"20:30",{
+ show_id:13333,show:{id:13333,name:"New listing without public link",description:"",image:null}
+});
+const sourceDrift=m.parse(fixture([oldShow,wrongUTC,missingLink]),{now:testNow});
+assert.equal(sourceDrift.records.length,3);
+assert.equal(sourceDrift.records.filter(r=>r.skip).length,1);
+assert.equal(sourceDrift.records.filter(r=>r.hold).length,2);
+assert(!sourceDrift.records.some(r=>r.startDate),
+ "Inconsistent source data must not magically generate validated events");
+assert.match(sourceDrift.records[1].hold,/clock and Pacific date conflict/);
+assert.match(sourceDrift.records[2].hold,/lacks a linked event/);
+assert.equal(m.parse(fixture([missingLink]),{now:testNow}).records[0].hold,
+ "Original ticket performance lacks a linked event-specific page",
+ "Future event missing its original link remains a hold, never a historical skip");
+
 (async()=>{
  const src=require("../discovery/sources.json").sources.find(s=>s.id==="the-1905");
  const mock=async()=>({ok:true,status:200,headers:{get:()=>"text/html"},text:async()=>fixture()});
