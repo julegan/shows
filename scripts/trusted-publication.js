@@ -106,10 +106,24 @@ function plan({baseline,proposed,now=new Date(),config=policy,sourceRegistry=reg
   delete v.artwork;delete v.sourceArtworkUrl;
   return v;
  });
- const ids=new Set(trusted.map(e=>e.id));
+ // With no trusted addition, retain every original file byte-for-byte.
+ // This also avoids a daily review PR created only by metadata changes.
+ if(!trusted.length)return {trusted,current:baseline,pending:proposed,rejected,proposalCount:additions.length};
+ const approvedById=new Map(trusted.map(e=>[e.id,e]));
  const current=serialize(base,[...base.events,...trusted],trusted.length,now,true);
- const pendingList=draft.events.filter(e=>!ids.has(e.id));
- const pending=serialize(draft,pendingList,pendingList.filter(e=>!originals.has(e.id)).length,now,false);
+ // The existing rolling review branch must INCLUDE already trusted additions.
+ // Never drop them or reintroduce an unapproved original flyer on PR merge.
+ const pendingList=draft.events.map(e=>approvedById.get(e.id)||e);
+ const accepted=parseFile(current);
+ const ordered=events=>[...events].sort((a,b)=>a.id.localeCompare(b.id));
+ const noReviewDiff=JSON.stringify(ordered(pendingList))===JSON.stringify(ordered(accepted.events));
+ const remaining=additions.length-trusted.length;
+ const pending=noReviewDiff?current:serialize({...draft,meta:{
+  ...accepted.meta,batchId:draft.meta.batchId,
+  addedOccurrences:remaining,editorialReview:draft.meta.editorialReview,
+  previousBatches:[...(accepted.meta.previousBatches||[]),
+   {batchId:accepted.meta.batchId,addedOccurrences:accepted.meta.addedOccurrences}]
+ }},pendingList,remaining,now,false);
  return {trusted,current,pending,rejected,proposalCount:additions.length};
 }
 function cli(){
