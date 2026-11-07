@@ -85,6 +85,47 @@ function analyze({events=[],sourceRegistry={},venueRegistry={},found=[],reconcil
  return {today,end,periods,rows,sourceCandidateCount:sourceUnique.length,
    totalUnrepresented:rows.reduce((n,r)=>n+r.unresolved+r.proposed,0)};
 }
+// Turn the same 56-day evidence into a continuously refreshed technical
+// worklist. These are observed needs and *unknown inventories*, not inferred
+// show counts, venue rankings or automatic publication instructions.
+function nextCoverageActions(a){
+ const result={recover:[],connect:[],verify:[],classify:[]};
+ for(const r of a.rows){
+  if(["failed","empty"].includes(r.source))result.recover.push({
+   venue:r.name,status:r.source,details:"Restore or verify original-source response; source inventory is unknown"});
+  else if(["adapter-needed","source-blocked","No importer","reopening-watch"].includes(r.source))
+   result.connect.push({venue:r.name,status:r.source,details:r.source==="reopening-watch"
+    ?"Check original reopening announcement and dated event links before enabling intake"
+    :"Find/validate an original dated calendar, authorized feed or original promoter evidence"});
+  const queued=r.proposed+r.unresolved,held=r.datedHolds+r.undatedHolds;
+  if(queued||held)result.verify.push({venue:r.name,status:"review needed",
+   details:queued+" source records not conservatively matched to approved events; "+held+
+    " held original records ("+r.datedHolds+" dated, "+r.undatedHolds+" undated). Verify source identity, time and duplicates."});
+  if(r.musicWithoutStyles)result.classify.push({venue:r.name,status:"genre unverified",
+   details:r.musicWithoutStyles+" approved Music records lack event-specific genre evidence; leave unclassified until confirmed"});
+ }
+ for(const rows of Object.values(result))rows.sort((a,b)=>a.venue.localeCompare(b.venue));
+ return result;
+}
+function coverageActionLines(a){
+ const task=nextCoverageActions(a);
+ const out=["## Automated next coverage actions","",
+  "Generated daily from the *approved inventory* and source checks. This is a research and adapter-development worklist, **not proof that a venue has no shows or that every unmatched source record is missing**. Preferred and scene groups have equal editorial priority. Unknown original inventories never count as zero events.",""];
+ const sections=[
+  ["recover","Recover failed or empty sources"],
+  ["connect","Build or verify missing original source integrations"],
+  ["verify","Resolve unmatched and held first-party records"],
+  ["classify","Research event-specific genre evidence (not automatic tagging)"]
+ ];
+ for(const [key,title] of sections){
+  out.push("### "+title,"");
+  if(!task[key].length){out.push("No cases identified in this run.","");continue;}
+  out.push("| Venue | Source state | Specific next step |","| --- | --- | --- |");
+  for(const item of task[key])out.push("| "+safe(item.venue)+" | "+safe(item.status)+" | "+safe(item.details)+" |");
+  out.push("");
+ }
+ return out;
+}
 function report(a){
  const lines=[
   "# SHOWS — priority venue source coverage audit ("+a.today+" to "+a.end+")","",
@@ -101,6 +142,7 @@ function report(a){
   const measured=r.source==="checked"||r.source==="empty";
   lines.push("| "+r.group+" | "+safe(r.name)+" | "+safe(r.source)+(r.sourceItemsChecked===null?"":" ("+r.sourceItemsChecked+" raw)")+" | "+r.approved+" | "+r.music+" | "+r.unclassified+" | "+r.musicWithoutStyles+" | "+(measured?r.parsedOfficial:"unknown")+" | "+(measured?r.represented:"—")+" | "+(measured?r.proposed:"—")+" | "+(measured?r.unresolved:"—")+" |");
  }
+ lines.push(...coverageActionLines(a));
  lines.push("","## Source records needing individual verification","",
   "These items were parsable from a connected first-party source and were **not** matched by an identical official URL or exact title/date/venue. They might be real gaps, reschedules, multiple times, or duplicates. Verify original identity and room before approval.","");
  const needing=a.rows.filter(r=>r.unresolvedExamples.length).sort((a,b)=>b.unresolved-a.unresolved);
@@ -134,4 +176,4 @@ if(require.main===module){
  const p=Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(now).map(x=>[x.type,x.value]));
  process.stdout.write(report(analyze({events:data,sourceRegistry,venueRegistry,today:p.year+"-"+p.month+"-"+p.day})));
 }
-module.exports={analyze,report,addDays};
+module.exports={analyze,report,nextCoverageActions,coverageActionLines,addDays};
