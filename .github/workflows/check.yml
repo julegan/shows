@@ -76,6 +76,12 @@ jobs:
           node tests/jack-london-importer.js
           node -e 'const m=require("./scripts/jack-london-importer"); const s=require("./discovery/sources.json").sources.find(s=>s.id==="jack-london-revue"); m.fetchEvents(s,fetch,{maxEvents:8}).then(r=>{const verified=r.filter(x=>x.startDate);if(!verified.length)process.exitCode=1;else console.log("LIVE JLR "+JSON.stringify({checked:r.length,verified:verified.length,held:r.length-verified.length}));}).catch(e=>{console.error(e);process.exitCode=1})'
 
+      - name: Validate Alberta Rose Theatre official event calendar
+        run: |
+          node --check scripts/alberta-rose-importer.js
+          node tests/alberta-rose-importer.js
+          node -e 'const m=require("./scripts/alberta-rose-importer");const src=require("./discovery/sources.json").sources.find(s=>s.id==="alberta-rose-theatre");m.fetchEvents(src).then(rows=>{if(!rows.some(x=>x.startDate))process.exitCode=1;else console.log("LIVE ROSE "+JSON.stringify({checked:rows.length,verified:rows.filter(x=>x.startDate).length,held:rows.filter(x=>x.hold).length}));}).catch(e=>{console.error(e);process.exitCode=1})'
+
       - name: Validate provider-approved TreeTix feed (offline fixtures)
         run: |
           node --check scripts/treetix-importer.js

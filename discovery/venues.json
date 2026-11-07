@@ -518,12 +518,12 @@
       "id": "alberta-rose-theatre",
       "name": "Alberta Rose Theatre",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://albertarosetheatre.com/",
       "aliases": [
         "Alberta Rose"
       ],
-      "notes": "Original calendar covers folk, Americana, blues, global and other performances; distinguish concert, comedy and screenings.",
+      "notes": "Original RHP calendar's month+year sections and individual Alberta Rose event URLs verified. Multi-performance series require independently dated venue Etix IDs. Unsupported cross-month date/year combinations held, not invented. Review-only.",
       "editorialPreference": "scene"
     },
     {
