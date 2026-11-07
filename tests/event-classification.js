@@ -24,7 +24,7 @@ test("Alt-country and Americana concert", "Music",["Country","Americana"]);
 test("Country & Americana show", "Music",["Country","Americana"]);
 test("Country trivia night", "Other");
 test("A country of origin documentary", "Unclassified");
-test("American art exhibit", "Arts & DIY");
+test("American art opening", "Arts & DIY");
 test("Techno live music", "Music",["Electronic & dance"]);
 test("Reggae and ska concert", "Music",["Reggae & ska"]);
 test("Afrobeat live band", "Music",["Global & traditional"]);
