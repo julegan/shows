@@ -6,9 +6,9 @@
 
 | Next days | Through | All approved | Music | Type unconfirmed | Music without style evidence |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 30 | 2026-12-05 | 462 | 151 | 251 | 90 |
-| 56 | 2026-12-31 | 625 | 189 | 350 | 121 |
-| 90 | 2027-02-03 | 680 | 204 | 385 | 135 |
+| 30 | 2026-12-05 | 521 | 169 | 288 | 97 |
+| 56 | 2026-12-31 | 698 | 211 | 397 | 130 |
+| 90 | 2027-02-03 | 758 | 226 | 437 | 144 |
 
 ## Preferred and scene venues — rolling 56 days
 
@@ -18,7 +18,7 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | preferred | Black Water | checked (11 raw) | 11 | 2 | 6 | 2 | 11 | 11 | 0 | 0 |
 | preferred | High Water Mark Lounge | checked (67 raw) | 23 | 8 | 6 | 7 | 23 | 23 | 0 | 0 |
-| preferred | Twilight Cafe and Bar | checked (22 raw) | 20 | 16 | 0 | 8 | 19 | 9 | 0 | 10 |
+| preferred | Twilight Cafe and Bar | checked (24 raw) | 20 | 16 | 0 | 8 | 21 | 9 | 2 | 10 |
 | preferred | The Coffin Club | adapter-needed | 4 | 3 | 0 | 0 | unknown | — | — | — |
 | preferred | Star Theater | checked (40 raw) | 20 | 20 | 0 | 14 | 22 | 19 | 0 | 3 |
 | preferred | Dante's | checked (44 raw) | 38 | 10 | 26 | 0 | 39 | 36 | 0 | 3 |
@@ -26,15 +26,15 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Wonder Ballroom | checked (33 raw) | 15 | 3 | 12 | 0 | 14 | 12 | 0 | 2 |
 | preferred | Hawthorne Theatre | checked (39 raw) | 25 | 9 | 16 | 2 | 26 | 25 | 0 | 1 |
 | preferred | High Limit Room | adapter-needed | 4 | 4 | 0 | 2 | unknown | — | — | — |
-| preferred | Crystal Ballroom | checked (55 raw) | 26 | 8 | 17 | 0 | 26 | 22 | 0 | 4 |
+| preferred | Crystal Ballroom | checked (54 raw) | 26 | 8 | 17 | 0 | 25 | 21 | 0 | 4 |
 | preferred | Revolution Hall | checked (30 raw) | 15 | 3 | 12 | 0 | 13 | 10 | 0 | 3 |
 | preferred | Mississippi Studios | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 14 | 0 | 0 |
-| preferred | Holocene | checked (48 raw) | 34 | 15 | 19 | 15 | 34 | 12 | 1 | 21 |
+| preferred | Holocene | checked (48 raw) | 35 | 16 | 19 | 16 | 34 | 13 | 0 | 21 |
 | preferred | Doug Fir Lounge | reopening-watch | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | Nova PDX | checked (11 raw) | 11 | 1 | 10 | 0 | 11 | 11 | 0 | 0 |
 | preferred | Star Bar | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| preferred | Lola's Room | checked (14 raw) | 6 | 0 | 5 | 0 | 6 | 6 | 0 | 0 |
-| preferred | The Showdown | checked (53 raw) | 38 | 0 | 33 | 0 | 40 | 38 | 0 | 2 |
+| preferred | Lola's Room | checked (16 raw) | 6 | 0 | 5 | 0 | 6 | 6 | 0 | 0 |
+| preferred | The Showdown | checked (53 raw) | 38 | 0 | 33 | 0 | 39 | 37 | 0 | 2 |
 | preferred | 45 East | checked (19 raw) | 15 | 15 | 0 | 15 | 15 | 15 | 0 | 0 |
 | preferred | Republic Cafe / Ming Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | preferred | B-Side Tavern | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
@@ -44,7 +44,7 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | preferred | Shanghai Tunnel | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
 | preferred | Turn! Turn! Turn! | checked (19 raw) | 18 | 14 | 3 | 12 | 19 | 17 | 0 | 2 |
 | preferred | Starday Tavern | checked (1588 raw) | 65 | 1 | 60 | 1 | 65 | 65 | 0 | 0 |
-| preferred | The Off Beat | checked (14 raw) | 5 | 5 | 0 | 5 | 8 | 4 | 3 | 1 |
+| preferred | The Off Beat | checked (14 raw) | 8 | 8 | 0 | 8 | 8 | 7 | 0 | 1 |
 | scene | The Alleyway | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Polaris Hall | checked (30 raw) | 14 | 0 | 14 | 0 | 14 | 13 | 0 | 1 |
 | scene | AZØTH | adapter-needed | 1 | 1 | 0 | 0 | unknown | — | — | — |
@@ -53,11 +53,11 @@ Both groups have equal editorial priority. **Approved** counts all categories, n
 | scene | The Six (Midnight PDX Bar) | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Show Bar at Revolution Hall | checked (30 raw) | 13 | 1 | 12 | 0 | 13 | 11 | 0 | 2 |
 | scene | Aladdin Theater | checked (91 raw) | 34 | 0 | 34 | 0 | 34 | 33 | 0 | 1 |
-| scene | Mission Theater | checked (47 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
-| scene | The 1905 | checked (8 raw) | 0 | 0 | 0 | 0 | 6 | 0 | 6 | 0 |
-| scene | Jack London Revue | checked (50 raw) | 0 | 0 | 0 | 0 | 33 | 0 | 33 | 0 |
+| scene | Mission Theater | checked (49 raw) | 39 | 3 | 34 | 2 | 39 | 39 | 0 | 0 |
+| scene | The 1905 | checked (8 raw) | 6 | 6 | 0 | 1 | 6 | 6 | 0 | 0 |
+| scene | Jack London Revue | checked (50 raw) | 33 | 7 | 26 | 1 | 33 | 33 | 0 | 0 |
 | scene | The Goodfoot | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
-| scene | Alberta Street Pub | checked (33 raw) | 0 | 0 | 0 | 0 | 32 | 0 | 30 | 2 |
+| scene | Alberta Street Pub | checked (33 raw) | 30 | 5 | 21 | 3 | 32 | 30 | 0 | 2 |
 | scene | Alberta Rose Theatre | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 | scene | Keys Lounge | adapter-needed | 0 | 0 | 0 | 0 | unknown | — | — | — |
 
@@ -132,7 +132,7 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **Doug Fir Lounge**: reopening-watch.
 - **Star Bar**: adapter-needed; original published events remain unmeasured.
 - **Lola's Room**: checked; 3 held records without a parseable date.
-- **The Showdown**: checked; 10 held records without a parseable date.
+- **The Showdown**: checked; 11 held records without a parseable date.
 - **Republic Cafe / Ming Lounge**: adapter-needed; original published events remain unmeasured.
 - **B-Side Tavern**: adapter-needed; original published events remain unmeasured.
 - **Wyrd Hut**: adapter-needed; original published events remain unmeasured.
@@ -149,7 +149,7 @@ Connected parsers can miss listings, dates, and some rooms. Investigate these ga
 - **The Six (Midnight PDX Bar)**: adapter-needed; original published events remain unmeasured.
 - **Show Bar at Revolution Hall**: checked; 4 held records without a parseable date.
 - **Aladdin Theater**: checked; 2 held records without a parseable date.
-- **The 1905**: checked; 2 held records without a parseable date.
+- **Mission Theater**: checked; 1 held records without a parseable date.
 - **The Goodfoot**: adapter-needed; original published events remain unmeasured.
 - **Alberta Street Pub**: checked; 1 held records without a parseable date.
 - **Alberta Rose Theatre**: adapter-needed; original published events remain unmeasured.
