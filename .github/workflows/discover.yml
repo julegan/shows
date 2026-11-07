@@ -270,7 +270,7 @@ jobs:
           {
             echo "# Combined SHOWS discovery + artwork review"
             echo
-            echo "Outside the trusted-original lane, all discoveries and published-event changes remain staged for editorial review. Confirm event identity, year/date, venue, show vs doors and artwork rights. **Existing published events are never automatically modified or removed.**"
+            echo "Outside the trusted-original lane, all discoveries and published-event changes remain staged for editorial review. Confirm event identity, year/date, venue, show vs doors and artwork rights. **No published events are automatically modified or removed.**"
             echo
             echo "## Trusted-original publication outcome"
             cat /tmp/shows-trust-summary.json
