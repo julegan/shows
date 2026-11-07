@@ -40,6 +40,8 @@ jobs:
           node --check scripts/report-venue-gap.js
           node tests/venue-gap-audit.js
           node tests/source-change-review.js
+          node --check scripts/verified-corrections.js
+          node tests/verified-corrections.js
           node tests/published-change-queue.js
           node tests/discovery.js
           node tests/kenton-importer.js

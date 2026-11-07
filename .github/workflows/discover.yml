@@ -11,6 +11,8 @@ on:
       - '.github/workflows/discover.yml'
       - 'scripts/discover-events.js'
       - 'scripts/source-change-review.js'
+      - 'scripts/verified-corrections.js'
+      - 'tests/verified-corrections.js'
       - 'scripts/report-venue-gap.js'
       - 'tests/venue-gap-audit.js'
       - 'scripts/event-classification.js'
@@ -65,7 +67,7 @@ jobs:
               exit 1
             fi
             changes="$(gh pr view "$number" --json files --jq '.files[].path')"
-            if [ "$(printf '%s\n' "$changes" | grep -v -E '^(events\.js|discovery/(latest-review|published-change-review|priority-venue-gap-audit|artwork-backfill-review|doomtown-leads-review|pdx-subvert-leads-review|wyrd-secondary-leads-review|republic-organizer-leads-review|oregon-electronic-leads-review)\.md)$' || true)" ]; then
+            if [ "$(printf '%s\n' "$changes" | grep -v -E '^(events\.js|discovery/(latest-review|published-change-review|verified-corrections-review|priority-venue-gap-audit|artwork-backfill-review|doomtown-leads-review|pdx-subvert-leads-review|wyrd-secondary-leads-review|republic-organizer-leads-review|oregon-electronic-leads-review)\.md)$' || true)" ]; then
               echo "::error::Pending review modifies unexpected files."
               exit 1
             fi
@@ -98,6 +100,8 @@ jobs:
           sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "## Previously published events: source changes (review required)" >> "$GITHUB_STEP_SUMMARY"
           sed -n '1,22p' discovery/published-change-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "## Evidence-backed changes prepared as actual event edits" >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,24p' discovery/verified-corrections-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "Full discovery report is saved as the review artifact and committed to any proposal PR." >> "$GITHUB_STEP_SUMMARY"
           cat discovery/artwork-backfill-review.md >> "$GITHUB_STEP_SUMMARY"
           sed -n '1,6p' discovery/doomtown-leads-review.md >> "$GITHUB_STEP_SUMMARY"
@@ -117,6 +121,7 @@ jobs:
           path: |
             discovery/latest-review.md
             discovery/published-change-review.md
+            discovery/verified-corrections-review.md
             discovery/priority-venue-gap-audit.md
             discovery/artwork-backfill-review.md
             discovery/doomtown-leads-review.md
@@ -142,6 +147,8 @@ jobs:
           node --check events.js
           node tests/source-health.js
           node tests/source-change-review.js
+          node --check scripts/verified-corrections.js
+          node tests/verified-corrections.js
           node tests/published-change-queue.js
           node --check scripts/karaoke-format-review.js
           node tests/karaoke-format-review.js
@@ -235,8 +242,8 @@ jobs:
           # A uniquely identified official show may have been rescheduled or
           # canceled while new-event intake remains unchanged. That still merits
           # a review PR. Never edit/remove the published event automatically.
-          if git diff --quiet -- events.js && ! grep -Eq '^\*\*Potential changes: [1-9][0-9]*\*\*' discovery/published-change-review.md; then
-            echo "No new data or uniquely confirmed published-event changes. Reports remain in this run." >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- events.js; then
+            echo "No actual event data corrections or new bills. All investigation reports remain in this run; no pointless PR created." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           set -euo pipefail
@@ -260,7 +267,7 @@ jobs:
             branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
             git switch -c "$branch"
           fi
-          git add -- events.js discovery/published-change-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
+          git add -- events.js discovery/published-change-review.md discovery/verified-corrections-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
           git commit -m "Propose latest source-confirmed Portland shows and flyers"
           if [ -n "$number" ]; then
             git push --force-with-lease="refs/heads/$branch:$old_sha" origin "$branch"
@@ -278,7 +285,10 @@ jobs:
             echo "## Discovery snapshot"
             sed -n '1,/## New candidates:/p' discovery/latest-review.md
             echo
-            echo "## Changes to already-approved events"
+            echo "## Actionable verified corrections (included as event edits)"
+            sed -n '1,13p' discovery/verified-corrections-review.md
+            echo
+            echo "## Changes that still need source investigation"
             sed -n '1,12p' discovery/published-change-review.md
             echo
             echo "## Coverage gap snapshot"
@@ -289,7 +299,8 @@ jobs:
             echo
             echo "## Full evidence"
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
-            echo "- [Changes to already-approved events — original evidence, no auto edits](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/published-change-review.md)"
+            echo "- [Machine-confirmed schedule correction proposals — exact original-link evidence](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/verified-corrections-review.md)"
+            echo "- [Other changed-event evidence — held for investigation](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/published-change-review.md)"
             echo "- [56-day first-party venue coverage and unresolved gaps](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/priority-venue-gap-audit.md)"
             echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
             echo "- [Doomtown primary-promoter leads (not confirmed event dates)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/doomtown-leads-review.md)"

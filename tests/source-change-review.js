@@ -30,6 +30,13 @@ delta=detectPublishedChanges([...existing,{...existing[0],id:"second"}],
  observed(make(original,"2027-02-16T20:00:00-08:00")),{today:at});
 assert.equal(delta.changes.length,0);
 assert.equal(delta.ambiguous.length,1,"Reused event links must be held");
+delta=detectPublishedChanges([{...existing[0],startTimeKind:"show"}],
+ observed({...make(original,"2027-02-15T21:00:00-08:00"),discovery:{sourceId:"star-theater",verifiedOriginalShowTime:true}}),{today:at});
+assert.equal(delta.changes[0].kind,"Source-confirmed SHOW time changed",
+ "Approved labeled showtimes remain monitored when original detail updates");
+delta=detectPublishedChanges([{...existing[0],startTimeKind:"show"}],
+ observed(make(original,"2027-02-15T21:00:00-08:00")),{today:at});
+assert.equal(delta.changes.length,0,"Unattested listed/doors times cannot be compared to an explicitly verified SHOW time");
 delta=detectPublishedChanges(existing,observed(make(original,"2027-02-15T20:00:00-08:00")),{today:at});
 assert.equal(delta.changes.length,0,"Unchanged approved event is not reported");
 console.log("PASS — review-only, uniquely matching official event schedule changes; no missing-is-canceled inference");

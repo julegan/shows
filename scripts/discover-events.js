@@ -34,6 +34,7 @@ const {reclassifyKaraoke}=require("./karaoke-format-review");
 const reviewed=require("./reviewed-classifications");
 const {sourceHealthSummary}=require("./source-health");
 const {detectPublishedChanges,renderChangeReview}=require("./source-change-review");
+const {proposeCorrections,renderReview:renderVerifiedCorrections}=require("./verified-corrections");
 const {analyze:analyzeVenueGap,report:reportVenueGap}=require("./report-venue-gap");
 const root=path.resolve(__dirname,"..");
 const zone="America/Los_Angeles";
@@ -187,7 +188,7 @@ function extract(item,src,now){
    ...(src.adapter==="turntable-1905-ssr"?{sourcePerformanceId:item.sourcePerformanceId,sourceShowId:item.sourceShowId}:{}),
    ...(src.adapter==="alberta-rose-original-html"&&item.sourceTicketId?{sourceTicketId:item.sourceTicketId}:{}) ,
   addedIn:"auto-discovery-"+asof,discovery:{sourceId:src.id,method:"primary-source-collection",
-    ...(["jack-london-original-html","alberta-rose-original-html"].includes(src.adapter)&&item.verifiedOriginalShowTime===true?
+    ...(["jack-london-original-html","alberta-rose-original-html","mississippi-polaris-html"].includes(src.adapter)&&item.verifiedOriginalShowTime===true?
        {verifiedOriginalShowTime:true}:{})}
  }};
 }
@@ -562,6 +563,12 @@ async function run(opts={}){
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/published-change-review.md"),renderChangeReview(changes));
  console.log("PUBLISHED EVENT CHANGE WATCH: "+changes.changes.length+" unique source-backed changes; "+changes.ambiguous.length+" ambiguous event URL identities; no published data updated automatically.");
  const result=reconcile(parsed.events,found);
+ // Source-evidence verification proposes only small, same-day edits to
+ // existing bills. The corrections enter the normal owner-review dataset.
+ const corrections=proposeCorrections(parsed.events,found,{today:localDay(now),sources:registry.sources});
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/verified-corrections-review.md"),renderVerifiedCorrections(corrections));
+ console.log("VERIFIED CORRECTIONS: "+corrections.proposals.length+" source-confirmed edits prepared; "+
+  corrections.heldBatch+" held as source drift. No historical data auto-published.");
  // Compare the source's valid future candidates to the *approved* dataset;
  // never count newly proposed bills as published coverage.
  const venues=JSON.parse(fs.readFileSync(path.join(root,"discovery/venues.json"),"utf8"));
@@ -575,8 +582,8 @@ async function run(opts={}){
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources,changes));
- if(!result.accepted.length&&!karaoke.changed.length)return {...result,errors,sourceRuns,changes};
- const newEvents=[...parsed.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
+ if(!result.accepted.length&&!karaoke.changed.length&&!corrections.proposals.length)return {...result,errors,sourceRuns,changes,corrections};
+ const newEvents=[...corrections.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
  const meta={...parsed.meta,sourceCheckedAt:localDay(now),coverageThrough:newEvents.reduce((m,e)=>e.startsAt.slice(0,10)>m?e.startsAt.slice(0,10):m,""),
@@ -587,7 +594,7 @@ async function run(opts={}){
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
  }
- return {...result,errors,sourceRuns,changes,karaokeReclassified:karaoke.changed,output};
+ return {...result,errors,sourceRuns,changes,corrections,karaokeReclassified:karaoke.changed,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
 module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};

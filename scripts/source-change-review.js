@@ -48,8 +48,11 @@ function detectPublishedChanges(approved,observations,{today=nowDate()}={}){
    change={kind:"Venue changed",detail:previous.venue+" → "+entry.venue};
   }else if(found.event&&oldDate&&newDate&&oldDate!==newDate){
    change={kind:"Date changed",detail:oldDate+" → "+newDate};
-  }else if(found.event&&oldDate===newDate&&previous.startTimeKind==="listed"&&entry.startTimeKind==="listed"&&previous.startsAt!==entry.startsAt){
-   change={kind:"Listed time changed",detail:previous.startsAt.slice(11,16)+" → "+entry.startsAt.slice(11,16)};
+  }else if(found.event&&oldDate===newDate&&previous.startsAt!==entry.startsAt&&
+   ((previous.startTimeKind==="listed"&&entry.startTimeKind==="listed")||
+    (previous.startTimeKind==="show"&&entry.discovery?.verifiedOriginalShowTime===true))){
+   change={kind:previous.startTimeKind==="show"?"Source-confirmed SHOW time changed":"Listed time changed",
+    detail:previous.startsAt.slice(11,16)+" → "+entry.startsAt.slice(11,16)};
   }
   if(change)changes.push({sourceId,venue:previous.venue,title:previous.title,url,kind:change.kind,detail:change.detail,approvedStartsAt:previous.startsAt,observedStartsAt:entry.startsAt||null});
  }
