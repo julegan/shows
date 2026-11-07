@@ -207,8 +207,23 @@ async function main(){
   "- Missing artwork: **"+baseline.missing+"**",
   "- Missing listings with supported individual source pages: **"+baseline.eligible+"**",
   "- Missing listings needing another source or individual permalink: **"+baseline.unsupported+"**",
-  "- Batch: **"+batch+"** of **"+(batchCount-1)+"** (zero-indexed; "+max+" lookups maximum)",
-  "- Attempted: **"+batchEvents.length+"**; proposed: **"+successes.length+"**; no proposal: **"+failures.length+"**","",
+  "- Highest priority: **"+today+" and "+addDays(today,1)+"** (all event types, including unknown)",
+  "- Near-term events: **"+plan.nearTermTotal.length+"**; eligible source pages: **"+plan.urgent.length+"**",
+  "- Near-term source rechecks this run: **"+nearTermChecks.length+"**; over lookup cap: **"+plan.nearTermOverflow+"**",
+  "- Missing music artwork beyond tomorrow: **"+plan.weekQueue+"** in coming week, **"+plan.laterQueue+"** beyond",
+  "- Rotating older-art batch: **"+batch+"** of **"+(batchCount-1)+"** (requested "+requestedBatch+"; "+max+" requests max)",
+  "- Total original event-page requests attempted: **"+batchEvents.length+"**; artwork proposed: **"+successes.length+"**; other responses: **"+failures.length+"**","",
+  "## Today and tomorrow — original-source freshness checks","",
+  "A source title match confirms the linked page still mentions this bill; it does NOT independently reverify every date, clock, room, admission or cancellation. Keep prior sourceCheckedAt dates unless those details have been individually corroborated.","",
+  "| Event and venue | Previously checked | Current source-page result | Original URL |",
+  "| --- | --- | --- | --- |",
+  ...nearTermChecks.sort((a,b)=>byStart(a.event,b.event)).map(x=>"| "+
+   markdownRow(x.event.title)+" ("+markdownRow(x.event.venue)+") | "+
+   (x.event.sourceCheckedAt||"Unknown")+" | "+x.reason+" | "+x.event.url+" |"),
+  ...plan.nearTermTotal.filter(e=>!originalUrl(e)).slice(0,35).map(e=>"| "+
+   markdownRow(e.title)+" ("+markdownRow(e.venue)+") | "+
+   (e.sourceCheckedAt||"Unknown")+" | Source URL not eligible for original-page recheck | "+e.url+" |"),
+  "",
   "## Why pages did not produce artwork","",
   ...(count.size?[...count].sort((a,b)=>b[1]-a[1]).map(([key,n])=>"- "+key+": "+n):["- No eligible pages in this batch. Try a different batch, or extend approved event-specific sources."]),
   "",
@@ -225,16 +240,19 @@ async function main(){
   ...failures.map(x=>"- "+markdownRow(x.event.title)+" ("+x.event.venue+") — "+x.reason+" — "+x.event.url),
   "",
   "## Next steps","",
-  "1. If no PR is produced, open this run's attached \`shows-artwork-report\` artifact or summary to inspect the reasons.",
-  "2. Manually dispatch another zero-indexed batch (0 through "+(batchCount-1)+") to inspect other pages.",
-  "3. Add verified event-specific URLs for venues marked ineligible; do not substitute generic venue photography.",
-  "4. Merge a review PR only after confirming the event images and source attribution.",
-  "5. Following canonical approval, merge the corresponding reviewed portfolio snapshot PR."
+  "1. Every run checks today and tomorrow first, including events that already have artwork. These checks never assume that a missing event was canceled.",
+  "2. Source-backed poster proposals are sent to review, not automatically published. Do not replace an event flyer with a generic venue photo.",
+  "3. Older missing-art events are scanned by date tier with bounded rotating batches, even on push-triggered runs.",
+  "4. Missing original event URLs and unmatched page titles remain explicit gaps, not invented show details.",
+  "5. Once the event day passes, its expired poster is not prioritized for new artwork."
+
  ];
  fs.mkdirSync(path.dirname(reportFile),{recursive:true});
  fs.writeFileSync(reportFile,report.join("\n")+"\n");
  console.log(JSON.stringify({today,batch,batchCount,attempted:batchEvents.length,proposed:successes.length,
   missing:baseline.missing,eligible:baseline.eligible,unsupported:baseline.unsupported,
+  nearTerm:plan.nearTermTotal.length,nearTermEligible:plan.urgent.length,
+  nearTermChecked:nearTermChecks.length,nearTermOverflow:plan.nearTermOverflow,
   reasons:Object.fromEntries(count)},null,2));
 }
 if(require.main===module)main().catch(error=>{console.error(error);process.exitCode=1;});
