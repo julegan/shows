@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-07",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1269,
-  "addedOccurrences": 7,
-  "batchId": "auto-discovery-2026-11-07-59",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1270,
+  "addedOccurrences": 1,
+  "batchId": "trusted-original-2026-11-07",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -55785,6 +55785,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-02-24-b8cb2f325655",
+    "title": "Science On Tap: A Rockhound’s Guide to Oregon & Washington",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-02-24T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "alberta-rose-theatre"
     }
   },
   {
