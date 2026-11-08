@@ -23,6 +23,9 @@ jobs:
           node --check scripts/turnturnturn-opendate.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
+      - name: Verify event deep links and sharing
+        run: node tests/share-links.js
+
       - name: Verify optional in-app feedback controls
         run: node tests/feedback-ui.js
 

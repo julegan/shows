@@ -227,6 +227,19 @@
     if (e.address) u.searchParams.set("location",e.venue+", "+e.address);
     return u.toString();
   }
+  // Query URLs are visible to social preview bots; legacy #event URLs still open.
+  function eventUrl(e) {
+    const u = new URL(location.origin + location.pathname);
+    u.searchParams.set("event", e.id);
+    return u.toString();
+  }
+  function clearEventLocation() {
+    const u = new URL(location.href);
+    if (!u.searchParams.has("event") && !u.hash.startsWith("#event=")) return;
+    u.searchParams.delete("event");
+    if (u.hash.startsWith("#event=")) u.hash = "";
+    history.replaceState(null, "", u.pathname + u.search + u.hash);
+  }
   function detail(e) {
     const dlg = $("eventDialog");
     const sources = e.sources && e.sources.length ? e.sources : [{name:e.source||"Event source",url:e.url}];
@@ -258,12 +271,15 @@
       (window.SHOWS_FEEDBACK_READY ? '<button type="button" data-report="'+esc(e.id)+'">Report listing issue</button>' : "")+'</div>'+
       (e.startTimeKind==="date-only" ? '<p class="detail-footnote">Date confirmed; start time not published. Calendar exports use a clearly labeled all-day placeholder.</p>' : !e.endsAt ? '<p class="detail-footnote">End time unconfirmed; exports use an editable one-hour placeholder.</p>' : "")+'</div>';
     if (!dlg.open) dlg.showModal();
-    history.replaceState(null,"","#event="+encodeURIComponent(e.id));
+    const eventLocation = new URL(location.href);
+    eventLocation.searchParams.set("event", e.id);
+    eventLocation.hash = "";
+    history.replaceState(null, "", eventLocation.pathname + eventLocation.search);
     dlg.querySelector("[data-close]").focus();
   }
   function closeDialog() {
     if ($("eventDialog").open) $("eventDialog").close();
-    if (location.hash.startsWith("#event=")) history.replaceState(null,"",location.pathname+location.search);
+    clearEventLocation();
   }
   for (const name of neighborhoods) {
     const o = document.createElement("option");o.value=name;o.textContent=name;$("neighborhood").appendChild(o);
@@ -305,17 +321,23 @@
     if(hit.dataset.series){const list=events.filter(x=>x.seriesId===hit.dataset.series);download(list,"shows-series-"+hit.dataset.series);}
     if(hit.dataset.save){const id=hit.dataset.save;if(saved.has(id))saved.delete(id);else saved.add(id);try{localStorage.setItem(savedKey,JSON.stringify([...saved]));}catch(_){}hit.textContent=saved.has(id)?"★ Saved — remove":"☆ Save for later";if(state.onlySaved)render();}
     if(hit.dataset.report && window.SHOWS_OPEN_FEEDBACK){const e=events.find(x=>x.id===hit.dataset.report);if(!e)return;
-      const link=location.origin+location.pathname+"#event="+encodeURIComponent(e.id);
+      const link = eventUrl(e);
       closeDialog();window.SHOWS_OPEN_FEEDBACK({category:"correction",link});return;
     }
     if(hit.dataset.share){const e=events.find(x=>x.id===hit.dataset.share);if(!e)return;
-      const url=location.href.split("#")[0]+"#event="+encodeURIComponent(e.id);
-      try{if(navigator.share)await navigator.share({title:e.title,url});else {await navigator.clipboard.writeText(url);hit.textContent="✓ Link copied";}}
-      catch(_){hit.textContent="Copy this URL: "+url;}
+      const url = eventUrl(e);
+      const summary = [dateShort.format(new Date(e.startsAt)), clock(e), e.venue].filter(Boolean).join(" · ");
+      try {
+        if (navigator.share) await navigator.share({title: e.title, text: summary, url});
+        else { await navigator.clipboard.writeText([e.title, summary, url].join("\n")); hit.textContent = "✓ Event details copied"; }
+      } catch (error) {
+        if (error && error.name === "AbortError") return;
+        hit.textContent = "Copy this URL: " + url;
+      }
     }
   });
   $("eventDialog").addEventListener("close",() => {
-    if(location.hash.startsWith("#event="))history.replaceState(null,"",location.pathname+location.search);
+    clearEventLocation();
   });
   document.addEventListener("error",event => {
     const img=event.target;
@@ -325,8 +347,15 @@
     wrap.textContent="No flyer available";
   },true);
   render();
-  if(location.hash.startsWith("#event=")) {
-    const e=events.find(x=>x.id===decodeURIComponent(location.hash.slice(7)));
-    if(e)detail(e);
+  // New share links use ?event=; keep existing bookmarked #event= links working.
+  const queryEvent = new URL(location.href).searchParams.get("event");
+  let hashEvent = null;
+  if (location.hash.startsWith("#event=")) {
+    try { hashEvent = decodeURIComponent(location.hash.slice(7)); } catch (_) {}
+  }
+  const sharedId = queryEvent || hashEvent;
+  if (sharedId) {
+    const e = events.find(x => x.id === sharedId);
+    if (e) detail(e);
   }
 })();
