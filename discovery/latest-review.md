@@ -9,7 +9,7 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Black Water | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
-| High Water Mark | Checked | 68 | 2 | 0 | 2 | 0 | 0 | 66 |
+| High Water Mark | Checked | 68 | 0 | 0 | 0 | 0 | 0 | 68 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
 | Twilight Cafe and Bar | Checked | 24 | 0 | 0 | 0 | 0 | 3 | 21 |
 | Star Theater | Checked | 39 | 0 | 0 | 0 | 0 | 4 | 35 |
@@ -17,35 +17,33 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 5 | 28 |
 | Wonder Ballroom | Checked | 32 | 0 | 0 | 0 | 0 | 8 | 24 |
 | Hawthorne Theatre | Checked | 38 | 0 | 0 | 0 | 0 | 3 | 35 |
-| Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 6 | 48 |
-| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 9 | 20 |
+| Crystal Ballroom | Checked | 53 | 0 | 0 | 0 | 0 | 6 | 47 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 8 | 22 |
 | Turn! Turn! Turn! | Checked | 18 | 0 | 0 | 0 | 0 | 2 | 16 |
 | Kenton Club | Checked | 13 | 0 | 0 | 0 | 0 | 1 | 12 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 3 | 0 | 1 | 3 | 2 | 25 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 1 | 0 | 1 | 1 | 2 | 27 |
 | Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 30 | 17 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 42 | 1546 |
 | The Off Beat / Friends of Noise | Checked | 13 | 0 | 0 | 0 | 0 | 6 | 7 |
 | Aladdin Theater | Checked | 90 | 0 | 0 | 0 | 0 | 4 | 86 |
-| Mission Theater | Checked | 46 | 0 | 0 | 0 | 0 | 0 | 46 |
+| Mission Theater | Checked | 48 | 0 | 0 | 0 | 0 | 1 | 47 |
 | Nova PDX | Checked | 10 | 0 | 0 | 0 | 0 | 0 | 10 |
-| Lola's Room | Checked | 14 | 0 | 0 | 0 | 0 | 3 | 11 |
+| Lola's Room | Checked | 16 | 0 | 0 | 0 | 0 | 3 | 13 |
 | The Showdown | Checked | 52 | 0 | 0 | 0 | 0 | 12 | 40 |
 | 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 0 | 19 |
 | Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
 | The 1905 | Checked | 8 | 1 | 1 | 0 | 1 | 0 | 7 |
 | Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
 | Alberta Street Pub | Checked | 31 | 0 | 0 | 0 | 0 | 3 | 28 |
-| Alberta Rose Theatre | Checked | 66 | 0 | 0 | 0 | 0 | 6 | 60 |
+| Alberta Rose Theatre | Checked | 67 | 1 | 0 | 1 | 1 | 6 | 60 |
 
 ### Classification review
 
-New candidate categories: **Music** 1 · **Performance** 2 · **Unclassified** 4.
-**4 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 1 · **Unclassified** 2.
+**2 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- High Water Mark Lounge: A Deeper Meaning Of Pain: A night of gore and noise — https://www.treetix.com/event/204955/highwatermark
-- High Water Mark Lounge: Paint Fight! - Wrastle in the Castle — https://www.treetix.com/event/204956/highwatermark
-- Revolution Hall: Scott Bradlee’s Postmodern Jukebox – The Future Is Vintage World Tour — https://www.etix.com/ticket/p/33093850/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour-portland-revolution-hall
-- Mississippi Studios: Sallie Ford & the Sound Outside — https://www.etix.com/ticket/p/54677666/sallie-ford-the-sound-outside-portland-mississippi-studios
+- Mississippi Studios: Bobby Short Shorts: An Evening of Grateful Dead Music — https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios
+- Alberta Rose Theatre: Science On Tap: A Rockhound’s Guide to Oregon & Washington — https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/
 
 ### Connections requiring work
 
@@ -71,31 +69,23 @@ New candidate categories: **Music** 1 · **Performance** 2 · **Unclassified** 4
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 2** · Ambiguous matching source URLs: 2.
+**Potential changes: 0** · Ambiguous matching source URLs: 3.
 
-| Change | Venue and event | Approved → observed | Official event evidence |
-| --- | --- | --- | --- |
-| Listed time changed | Mississippi Studios — SOLD OUT: Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 1) | 20:00 → 19:30 | https://www.etix.com/ticket/p/67262153/sold-outroger-clyne-the-peacemakers-hell-to-breakfast-tour-night-1-portland-mississippi-studios |
-| Listed time changed | Mississippi Studios — Roger Clyne & The Peacemakers - Hell To Breakfast Tour (Night 2) | 20:00 → 19:30 | https://www.etix.com/ticket/p/38873954/roger-clyne-the-peacemakers-hell-to-breakfast-tour-night-2-portland-mississippi-studios |
+No changed published events were confirmed by uniquely matching source records in this run.
 
-The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 7
+## New candidates: 3
 
-- high-water: 2 proposals
-- revolution-hall: 1 proposals
-- mississippi-polaris: 3 proposals
+- mississippi-polaris: 1 proposals
 - the-1905: 1 proposals
+- alberta-rose-theatre: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-05 | A Deeper Meaning Of Pain: A night of gore and noise | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204955/highwatermark |
-| 2026-12-27 | Paint Fight! - Wrastle in the Castle | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204956/highwatermark |
-| 2026-11-25 | Scott Bradlee’s Postmodern Jukebox – The Future Is Vintage World Tour | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/33093850/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour-portland-revolution-hall |
-| 2026-11-20 | The Teacher Show: Comedy from the Classroom (Night 1) | Polaris Hall | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/73273847/the-teacher-showcomedy-from-the-classroom-night-1-portland-polaris-hall |
-| 2026-11-20 | Sallie Ford & the Sound Outside | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/54677666/sallie-ford-the-sound-outside-portland-mississippi-studios |
-| 2026-11-21 | The Teacher Show: Comedy from the Classroom (Night 2) | Polaris Hall | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/65038002/the-teacher-showcomedy-from-the-classroom-night-2-portland-polaris-hall |
-| 2026-11-11 | Wil Blades fea. Andy Coe and Cory Limuaco — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13206/2026-11-11 |
+| 2026-11-21 | Bobby Short Shorts: An Evening of Grateful Dead Music | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios |
+| 2026-11-11 | Wil Blades fea. Andy Coe and Cory Limuaco — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13206/2026-11-11 |
+| 2027-02-24 | Science On Tap: A Rockhound’s Guide to Oregon & Washington | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/ |
 
 ## Held for review: 154
 
@@ -133,8 +123,7 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/52795953/anna-tivelwilly-vlautin-wonderly-accompanied-by-45th-parallel-string-quartetsight-reading-musical-dialects-portland-revolution-hall
-- [revolution-hall] Quadeca — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
+- [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
 - [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
@@ -229,6 +218,7 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [aladdin-theater] SOLD OUT: Todd Rundgren: DAMNED IF I DO TOUR — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/33295250/sold-outtodd-rundgrendamned-if-i-do-tour-portland-aladdin-theater
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
 - [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
+- [mission-theater] Coffee Roasters Anniversary Specials — Source search record lacks usable full-year date or event identity: 11/7/2026 
 - [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
@@ -264,3 +254,6 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - Check duplicates, source permalink, venue/date, ticket status, age, and cancellation information.
 - Leave genre, cost, accessibility and end times unknown without evidence.
 - After approving and merging this PR, review the corresponding portfolio sync PR.
+## Automatically published trusted originals
+
+1 verified first-party new bill(s) published without pending-rights artwork. All other source proposals, conflicts and historical changes remain under review.

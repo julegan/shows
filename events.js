@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-07",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1270,
-  "addedOccurrences": 1,
-  "batchId": "trusted-original-2026-11-07",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1272,
+  "addedOccurrences": 2,
+  "batchId": "auto-discovery-2026-11-07-60",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -152,11 +152,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-06-55",
       "addedOccurrences": 62
+    },
+    {
+      "batchId": "trusted-original-2026-11-07",
+      "addedOccurrences": 1
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 378
+  "musicOccurrences": 379
 };
 window.SHOWS_EVENTS = [
   {
@@ -19950,6 +19954,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-11-6a5bb9fe9cc1",
+    "title": "Wil Blades fea. Andy Coe and Cory Limuaco — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48296 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. $35 TICKETS | ALL AGES Wil Blades - organ Andy Coe - guitar Cory Limuaco - drums No less a jazz organ authority than the legendary Dr. Lonnie Smith has called Wil Blades “the future,” anointing him the heir apparent to “carry on the legend and the l",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13206/Wil_Blades.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13206/2026-11-11",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48296",
+    "sourceShowId": "13206",
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-11-e1ff8bc0a4b0",
     "title": "Gnosis Drum & Bass",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31807,6 +31872,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-21-11ed8e405e33",
+    "title": "Bobby Short Shorts: An Evening of Grateful Dead Music",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-07",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-07",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5f5f3c259ac6516f8b3be9e966d5ebdc.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-07",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
