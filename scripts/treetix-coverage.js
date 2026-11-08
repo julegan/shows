@@ -17,6 +17,21 @@ const norm=x=>String(x??"").toLowerCase().normalize("NFKD")
 const clean=x=>String(x??"").replace(/<[^>]+>/g," ").replace(/[\r\n\t]+/g," ")
   .replace(/\s+/g," ").trim().slice(0,180);
 const markdown=x=>clean(x).replace(/[|[\]*_]/g," ").replace(/\s+/g," ");
+// Conservative artist/bill overlap is a review lead, never a verified
+// provider-ID match. Two distinct headliner words are required to avoid
+// collapsing unrelated shows that share "live", "music", or "festival".
+const stopWords=new Set(["with","from","show","tour","live","music","night","festival","presents",
+ "room","party","guest","guests","special","performance","tickets","2026","2027","2028"]);
+function distinctive(title){
+ return new Set(norm(title).split(" ").filter(word=>word.length>=4&&!stopWords.has(word)));
+}
+function likelySameBill(a,b){
+ if(norm(a)===norm(b)&&norm(a))return true;
+ const aa=distinctive(a),bb=distinctive(b);
+ if(aa.size<2||bb.size<2)return false;
+ const common=[...aa].filter(t=>bb.has(t)).length;
+ return common>=2&&common/Math.min(aa.size,bb.size)>=0.7;
+}
 function dayValid(day){
  if(typeof day!=="string"||!/^20\d\d-\d\d-\d\d$/.test(day))return false;
  const d=new Date(day+"T12:00:00Z");
@@ -37,7 +52,7 @@ function providerIdentity(link){
  }catch(_){return null;}
 }
 function indexed(events){
- const byKey=new Map(),byTitle=new Map();
+ const byKey=new Map(),byTitle=new Map(),byVenueDay=new Map();
  for(const event of events){
   const keys=new Set();
   if(event.sourceCalendar&&Number.isSafeInteger(Number(event.sourceEventId))&&Number(event.sourceEventId)>0)
@@ -53,8 +68,11 @@ function indexed(events){
   const key=[norm(event.venue),String(event.startsAt||"").slice(0,10),norm(event.title)].join("|");
   if(!byTitle.has(key))byTitle.set(key,[]);
   byTitle.get(key).push(event);
+  const venueDay=[norm(event.venue),String(event.startsAt||"").slice(0,10)].join("|");
+  if(!byVenueDay.has(venueDay))byVenueDay.set(venueDay,[]);
+  byVenueDay.get(venueDay).push(event);
  }
- return {byKey,byTitle};
+ return {byKey,byTitle,byVenueDay};
 }
 function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalendars=["highwatermark","soundcontrol"],today,horizonDays=400}){
  if(!dayValid(today))throw Error("Reporting date must be a Portland-local YYYY-MM-DD");
@@ -92,7 +110,9 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
    const key=calendar+":"+eventId;
    const approvedMatches=base.byKey.get(key)||[],proposedMatches=draft.byKey.get(key)||[];
    const sourceTitle=[norm(row.venue),date,norm(row.title)].join("|");
-   const possible=(base.byTitle.get(sourceTitle)||[]).length+(draft.byTitle.get(sourceTitle)||[]).length;
+   const venueDay=[norm(row.venue),date].join("|");
+   const inRoom=[...(base.byVenueDay.get(venueDay)||[]),...(draft.byVenueDay.get(venueDay)||[])];
+   const possible=inRoom.filter(other=>likelySameBill(row.title,other.title)).length;
    if(approvedMatches.length){
     row.disposition=approvedMatches.some(e=>String(e.startsAt||"").slice(0,10)===date)?"approved":"date-conflict";
     row.reason=row.disposition==="approved"?"Exact original TreeTix event identity in approved SHOWS data":
@@ -112,7 +132,7 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
     row.reason="Connected original event missing an unambiguous Pacific source time";
    }else if(possible){
     row.disposition="possible-cross-source-match";
-    row.reason="Same title, venue and date in SHOWS, but no shared original provider ID; compare before asserting coverage";
+    row.reason="Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage";
    }else{
     row.disposition="unaccounted-connected";
     row.reason="Connected original provider event absent from approved/proposed dataset; investigate importer holds and matching";
@@ -221,4 +241,4 @@ if(require.main===module){
  run({baselineFile:option("--baseline"),proposedFile:option("--proposed"),
   outputFile:option("--output")}).catch(e=>{console.error(e);process.exitCode=1;});
 }
-module.exports={providerIdentity,dayValid,addDays,indexed,analyze,report,errorReport,readEvents,pacificToday,run};
+module.exports={providerIdentity,dayValid,addDays,distinctive,likelySameBill,indexed,analyze,report,errorReport,readEvents,pacificToday,run};
