@@ -31,7 +31,7 @@ class FixedDate extends NativeDate {constructor(...args){super(...(args.length?a
 class TestURL extends URL {static createObjectURL(blob){downloads.push(blob);return "blob:calendar";}static revokeObjectURL(){}}
 const context={window:{},document,Date:FixedDate,Intl,URL:TestURL,Blob:class{constructor(parts){this.text=parts.join("");}},
  localStorage:{getItem:()=>null,setItem(){}},
- location:{hash:"",pathname:"/",search:""},history:{replaceState(){}},
+ location:new URL("https://example.test/"),history:{replaceState(){}},
  setTimeout(){},HTMLImageElement:class{}
 };
 vm.createContext(context);
