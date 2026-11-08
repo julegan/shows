@@ -1,6 +1,14 @@
 # TreeTix access for High Water Mark and Soundcontrol
 
-Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56). Status: **TreeTix has supplied an unauthenticated public event-listing endpoint; live schema is still unverified, and the adapter is not yet implemented or enabled**.
+Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56) and [SHOWS #158](https://github.com/julegan/shows/issues/158). Current status: TreeTix's provider-supplied non-proxied API was live-validated November 2, 2026; **High Water Mark and Soundcontrol ingestion is enabled**, while coverage of other Portland producer calendars requires research. Historical notes below preserve previous blocked states.
+
+## Source-wide reconciliation — November 8, 2026
+
+The daily refresh now runs `scripts/treetix-coverage.js` separately from the restricted importer. It inspects **every observed provider record** from the public TreeTix JSON response, reconciles strong original event IDs/permalinks against approved SHOWS data and proposed records, and writes `discovery/treetix-coverage-review.md`.
+
+Events from previously unconnected producers, unverified Portland venues, unknown clocks, possible cross-source duplicates, and date conflicts remain visible as per-event exceptions. Genre or format is never used to skip these source records. The original supported importer remains scoped to High Water Mark and Soundcontrol until other producers/locations are independently verified; the audit does not directly import or publish their events.
+
+Provider city/state labels are preliminary evidence, not a guarantee that each venue is inside city limits. A failed feed is reported as **unknown**, not empty, and feed absence never proves cancellation. The reconciler is a provider snapshot, not a claim that TreeTix itself lists every booking. Review the report's per-event exceptions and expand validated source scope through subsequent PRs.
 
 ## Successful live provider feed / adapter proposal — November 2, 2026
 
