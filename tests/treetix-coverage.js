@@ -73,7 +73,7 @@ assert.equal(status(100109),"outside-geography");
 assert.equal(status(100110),"date-conflict","A rescheduled original event is not silently accepted");
 assert.equal(status(100111),"outside-horizon");
 assert.equal(status(100112),"invalid-date");
-assert.equal(status(100113),"invalid-identity");
+assert.equal(a.rows.find(x=>x.title==="Malformed ID").disposition,"invalid-identity");
 assert.equal(a.rows.filter(x=>x.disposition==="duplicate-provider-id").length,1);
 assert.equal(a.sourceRecords,15);
 assert.equal(a.counts["unconnected-producer"],1);
