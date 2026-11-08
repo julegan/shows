@@ -86,7 +86,31 @@ assert.match(summary,/Comedy night/);
 assert.match(summary,/No source-specific exceptions|Event-by-event exceptions/);
 assert(!summary.includes("Out of town"),"Do not present out-of-geography records as pending Portland shows");
 assert(!summary.includes("Beyond horizon"),"Distant events are counted but not part of current exception worklist");
-assert.match(errorReport("2026-11-08",Error("HTTP 503")),/unavailable\/unknown/);
+// Actual November 8, 2026 live audit: Soundcontrol originals were already
+// represented under separate original venue URLs with title variations.
+// This is a possible cross-source match, NOT a verified provider-ID match.
+const separateSources=[
+ listed("dantes-bill","https://www.danteslive.com/tm-event/mustard-plug-with-the-planet-smashers-the-venomous-pinks/",
+  "2027-01-15","MUSTARD PLUG with The Planet Smashers & The Venomous Pinks","Dante's"),
+ listed("wonder-bill","https://wonderballroom.com/event/wolves-in-the-throne-room/wonder-ballroom/portland-oregon/",
+  "2027-02-09","Wolves In The Throne Room","Wonder Ballroom")
+];
+const alternate=analyze({feed:{events:[
+ item(204952,"soundcontrol","Dante's",{start_date:"2027-01-15",event_title:"Mustard Plug, The Planet Smashers, The Venomous Pinks"}),
+ item(204942,"soundcontrol","Wonder Ballroom",{start_date:"2027-02-09",event_title:"Wolves in the Throne Room, Stygian Bough, Spirit Possession"}),
+ item(204999,"soundcontrol","Dante's",{start_date:"2027-01-15",event_title:"Completely Different Show"}),
+ item(205000,"soundcontrol","Wonder Ballroom",{start_date:"2027-02-09",event_title:"Wolves at the Ballroom"})
+]},approved:separateSources,venueRegistry,today:"2026-11-08"});
+assert.equal(alternate.rows[0].disposition,"possible-cross-source-match");
+assert.equal(alternate.rows[1].disposition,"possible-cross-source-match");
+assert.equal(alternate.rows[2].disposition,"unaccounted-connected",
+ "Completely unrelated same-night bills are not matched just because of venue/date");
+assert.equal(alternate.rows[3].disposition,"unaccounted-connected",
+ "A single common artist-like token alone cannot infer the same bill");
+assert.equal(alternate.counts.approved||0,0,
+ "Cross-source fuzzy matches must NOT be labeled verified provider-ID matches");
+assert.match(report(alternate),/Likely same bill at the same venue/);
+assert.match(errorReport("2026-11-08",Error("HTTP 503")),/unavailable\\/unknown/);
 assert.throws(()=>analyze({feed:{events:null},today:"2026-11-08"}),/inventory is unknown/);
 assert.throws(()=>analyze({feed,approved,proposed,venueRegistry,today:"2026-11-32"}),/Reporting date/);
 console.log("PASS — TreeTix full-provider event-by-ID reconciliation, scope, unconnected producers, all event types, uncertain matches, and source failures");
