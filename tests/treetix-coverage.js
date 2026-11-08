@@ -110,7 +110,7 @@ assert.equal(alternate.rows[3].disposition,"unaccounted-connected",
 assert.equal(alternate.counts.approved||0,0,
  "Cross-source fuzzy matches must NOT be labeled verified provider-ID matches");
 assert.match(report(alternate),/Likely same bill at the same venue/);
-assert.match(errorReport("2026-11-08",Error("HTTP 503")),/unavailable\\/unknown/);
+assert.match(errorReport("2026-11-08",Error("HTTP 503")),/unavailable\/unknown/);
 assert.throws(()=>analyze({feed:{events:null},today:"2026-11-08"}),/inventory is unknown/);
 assert.throws(()=>analyze({feed,approved,proposed,venueRegistry,today:"2026-11-32"}),/Reporting date/);
 console.log("PASS — TreeTix full-provider event-by-ID reconciliation, scope, unconnected producers, all event types, uncertain matches, and source failures");
