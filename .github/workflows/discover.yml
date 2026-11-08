@@ -12,6 +12,7 @@ on:
       - 'scripts/discover-events.js'
       - 'scripts/source-change-review.js'
       - 'scripts/verified-corrections.js'
+      - 'scripts/treetix-coverage.js'
       - 'tests/verified-corrections.js'
       - 'scripts/report-venue-gap.js'
       - 'tests/venue-gap-audit.js'
@@ -67,7 +68,7 @@ jobs:
               exit 1
             fi
             changes="$(gh pr view "$number" --json files --jq '.files[].path')"
-            if [ "$(printf '%s\n' "$changes" | grep -v -E '^(events\.js|discovery/(latest-review|published-change-review|verified-corrections-review|priority-venue-gap-audit|artwork-backfill-review|doomtown-leads-review|pdx-subvert-leads-review|wyrd-secondary-leads-review|republic-organizer-leads-review|oregon-electronic-leads-review)\.md)$' || true)" ]; then
+            if [ "$(printf '%s\n' "$changes" | grep -v -E '^(events\.js|discovery/(latest-review|published-change-review|verified-corrections-review|priority-venue-gap-audit|artwork-backfill-review|doomtown-leads-review|pdx-subvert-leads-review|wyrd-secondary-leads-review|republic-organizer-leads-review|oregon-electronic-leads-review|treetix-coverage-review)\.md)$' || true)" ]; then
               echo "::error::Pending review modifies unexpected files."
               exit 1
             fi
@@ -80,6 +81,11 @@ jobs:
         env:
           COFFIN_VENUEPILOT_APP_ID: ${{ secrets.COFFIN_VENUEPILOT_APP_ID }}
         run: node scripts/discover-events.js
+      - name: Reconcile every observed TreeTix producer event against approved SHOWS
+        run: |
+          # This is source-wide read-only research; it NEVER imports unknown producers.
+          git show HEAD:events.js > /tmp/shows-approved-for-treetix.js
+          node scripts/treetix-coverage.js --baseline /tmp/shows-approved-for-treetix.js --proposed events.js
       - name: Collect original underground-show leads (review-only)
         run: node scripts/doomtown-leads.js
       - name: Collect PDX//SUBVERT original punk and metal show leads (research-only)
@@ -98,6 +104,9 @@ jobs:
       - name: Record source outcomes and monthly horizon
         run: |
           sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "## TreeTix provider-wide event reconciliation" >> "$GITHUB_STEP_SUMMARY"
+          sed -n '1,34p' discovery/treetix-coverage-review.md >> "$GITHUB_STEP_SUMMARY"
+          echo "Every unconnected Portland producer and unaccounted event is listed in the full artifact." >> "$GITHUB_STEP_SUMMARY"
           echo "## Previously published events: source changes (review required)" >> "$GITHUB_STEP_SUMMARY"
           sed -n '1,22p' discovery/published-change-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "## Evidence-backed changes prepared as actual event edits" >> "$GITHUB_STEP_SUMMARY"
@@ -123,6 +132,7 @@ jobs:
             discovery/published-change-review.md
             discovery/verified-corrections-review.md
             discovery/priority-venue-gap-audit.md
+            discovery/treetix-coverage-review.md
             discovery/artwork-backfill-review.md
             discovery/doomtown-leads-review.md
             discovery/pdx-subvert-leads-review.md
@@ -160,6 +170,8 @@ jobs:
           node tests/source-priority.js
           node --check scripts/treetix-importer.js
           node tests/treetix-importer.js
+          node --check scripts/treetix-coverage.js
+          node tests/treetix-coverage.js
           node --check scripts/mammoth-importer.js
           node tests/mammoth-importer.js
           node tests/nova-importer.js
@@ -267,7 +279,7 @@ jobs:
             branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
             git switch -c "$branch"
           fi
-          git add -- events.js discovery/published-change-review.md discovery/verified-corrections-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
+          git add -- events.js discovery/published-change-review.md discovery/verified-corrections-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/treetix-coverage-review.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
           git commit -m "Propose latest source-confirmed Portland shows and flyers"
           if [ -n "$number" ]; then
             git push --force-with-lease="refs/heads/$branch:$old_sha" origin "$branch"
@@ -301,6 +313,7 @@ jobs:
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
             echo "- [Machine-confirmed schedule correction proposals — exact original-link evidence](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/verified-corrections-review.md)"
             echo "- [Other changed-event evidence — held for investigation](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/published-change-review.md)"
+            echo "- [TreeTix full-provider per-event source exceptions](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/treetix-coverage-review.md)"
             echo "- [56-day first-party venue coverage and unresolved gaps](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/priority-venue-gap-audit.md)"
             echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
             echo "- [Doomtown primary-promoter leads (not confirmed event dates)](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/doomtown-leads-review.md)"

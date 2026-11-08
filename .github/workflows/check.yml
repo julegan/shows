@@ -95,6 +95,8 @@ jobs:
         run: |
           node --check scripts/treetix-importer.js
           node tests/treetix-importer.js
+          node --check scripts/treetix-coverage.js
+          node tests/treetix-coverage.js
           node --check scripts/mammoth-importer.js
           node tests/mammoth-importer.js
           node --check scripts/probe-mammoth.js
