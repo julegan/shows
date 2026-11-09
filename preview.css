@@ -29,10 +29,11 @@
 .preview-day-heading{position:sticky;top:0;z-index:2;background:var(--cream);border-bottom:1px solid #b4c0b3;padding:11px 0 12px;display:flex;align-items:baseline;gap:10px}
 .preview-day-heading h3{font-size:23px;letter-spacing:-.045em;margin:0}
 .preview-day-heading span{font-size:11px;color:#455849;font-weight:700}
-.preview-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding:13px 0 0}
-.preview-event{display:flex;align-items:stretch;gap:13px;background:#fff;border:1px solid #d2d9d1;color:var(--ink);border-radius:5px;padding:12px;text-align:left;width:100%;min-height:129px}
+.preview-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%, 330px),1fr));gap:12px;padding:13px 0 0}
+.preview-event{display:flex;align-items:flex-start;gap:13px;background:#fff;border:1px solid #d2d9d1;color:var(--ink);border-radius:5px;padding:12px;text-align:left;width:100%;min-height:129px}
 .preview-event:hover{border-color:#597056}
-.preview-event .preview-art{display:grid;place-items:center;flex:0 0 79px;width:79px;aspect-ratio:4/5;border:1px solid #cbd4cb;background:#eff1ed;border-radius:2px;overflow:hidden;color:#455448;font-size:10px;text-align:center}
+.preview-event .preview-art{display:grid;grid-template:minmax(0,1fr)/minmax(0,1fr);place-items:center;flex:none;width:clamp(102px,39%,152px);aspect-ratio:4/5;border:1px solid #cbd4cb;background:#eff1ed;border-radius:2px;overflow:hidden;color:#455448;font-size:10px;text-align:center}
+.preview-event .preview-art:not(:has(img)){width:80px}
 .preview-art img{display:block;width:100%;height:100%;object-fit:contain}
 .preview-event-text{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1}
 .preview-eyebrow{font-size:10px;color:#455347;text-transform:uppercase;font-weight:820;letter-spacing:.05em}
@@ -51,11 +52,14 @@
 .preview-more{display:block;margin:8px auto 25px;border:1px solid #859386;background:#fff;border-radius:28px;padding:12px 25px;min-height:44px;font-weight:780;color:#28402c}
 .preview-note{margin:50px 0 40px;padding:18px 0;border-top:1px solid var(--hair);color:#48564b;font-size:12px;line-height:1.65}
 .preview-dialog .detail-wrap{padding:24px}
-.preview-dialog .preview-detail-art{display:block;max-width:240px;margin:15px auto;aspect-ratio:4/5;background:#eff1ed;border:1px solid #cfd8ce}
-.preview-dialog .preview-detail-art img{display:block;width:100%;height:100%;object-fit:contain}
+.preview-dialog .preview-detail-art{display:block;max-width:480px;margin:20px auto;background:#eff1ed;border:1px solid #cfd8ce;border-radius:2px;overflow:hidden;text-align:center;font-size:12px;line-height:32px}
+.preview-dialog .preview-detail-art img{display:block;width:100%;height:auto;max-height:min(560px,70dvh);object-fit:contain}
 .preview-dialog a,.preview-dialog button{overflow-wrap:anywhere}
 .preview-dialog .detail-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.preview-dialog .detail-actions .primary{grid-column:1/-1;min-height:44px}
 .preview-dialog .detail-description{white-space:pre-line}
+.preview-dialog .detail-sources{margin-top:20px;padding-top:8px;border-top:1px solid var(--hair)}
+.preview-dialog .detail-sources:empty{display:none}
 .preview-info{font-size:12px;line-height:1.5;color:#465348}
 .preview-info a{color:#1e4833}
 @media(max-width:680px){
@@ -65,12 +69,12 @@
  .preview-intro{padding:24px 0 12px}
  .preview-event{min-height:115px}
  .preview-cards{display:grid;grid-template-columns:1fr;gap:9px}
- .preview-event .preview-art{flex-basis:68px;width:68px}
  .preview-day-heading{padding:10px 0}
  .preview-day-heading h3{font-size:21px}
  .preview-filters .preview-date{flex:1 1 140px}
  .preview-filters .preview-date input{width:100%}
  .preview-navigation .preview-tab{flex:1}
+ .preview-dialog .detail-wrap{padding:clamp(16px,4.6vw,24px)}
  .preview-dialog .detail-actions{grid-template-columns:1fr}
 }
 
@@ -94,7 +98,6 @@
 .shows-date-number{font-weight:800;font-size:14px}
 .shows-month-today .shows-date-number{background:var(--dark);color:#fff;padding:7px 10px;border-radius:40px;margin:-7px -10px}
 .shows-date-count{font-size:12px;font-weight:770;padding:4px 7px;background:#e1ebdb;border-radius:12px}
-.preview-event .preview-art{flex-shrink:0}
 .preview-dialog .detail-actions [data-series]{grid-column:auto}
 @media(max-width:680px){
   .shows-month-controls h3{flex:1;min-width:130px}

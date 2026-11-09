@@ -7,7 +7,9 @@ const app = fs.readFileSync("app.js", "utf8");
 const fixture = {
   id:"gig-100", title:"Test Group + Guests", category:"Music",
   startsAt:"2026-11-14T19:00:00-08:00", startTimeKind:"doors",
-  venue:"Test Venue", neighborhood:"Portland", url:"https://example.com/show"
+  venue:"Test Venue", neighborhood:"Portland", url:"https://example.com/show",
+  accessibility:"Step-free entry", sourceCheckedAt:"2026-11-09",
+  artwork:{url:"https://example.com/flyer.png",sourceUrl:"https://example.com/show",credit:"Test Venue",usageApproved:true}
 };
 function start(address, useNativeShare = true) {
   const location = new URL(address);
@@ -51,7 +53,16 @@ function shareClick(session) {
 (async () => {
   const query = start("https://julieowens.me/projects/shows/?event=gig-100");
   assert.equal(query.dialog.open,true,"query deep link opens event details");
-  assert.match(query.nodes.get("dialogContent").innerHTML,/Test Group \+ Guests/);
+  const detail = query.nodes.get("dialogContent").innerHTML;
+  assert.match(detail,/Test Group \+ Guests/);
+  const readingOrder = ["dialogTitle","detail-info","Step-free entry","Official listing","preview-detail-art",
+    "detail-description","Share event","detail-footnote","detail-sources","Sources:","Source checked","Artwork attribution"];
+  let last = -1;
+  for (const marker of readingOrder) {
+    const position = detail.indexOf(marker);
+    assert(position > last, marker + " follows the preceding detail section in reading order");
+    last = position;
+  }
   await shareClick(query);
   assert.equal(query.shares.length,1);
   assert.equal(query.shares[0].url,"https://julieowens.me/projects/shows/?event=gig-100");
