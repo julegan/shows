@@ -13,6 +13,10 @@ const VENUES={
   "Dante's":true,
   "Wonder Ballroom":true
 };
+function calendarFor(source){
+  if(source.adapter!=="treetix-public-json")return null;
+  return source.id==="high-water"?"highwatermark":source.id==="soundcontrol-pdx"?"soundcontrol":null;
+}
 const tidy=x=>String(x??"").replace(/<[^>]*>/g," ").replace(/[\r\n\t]+/g," ").replace(/\s+/g," ").trim().slice(0,200);
 const eventCalendar=url=>{
   try{
@@ -32,8 +36,8 @@ function artworkEvidence(url,calendar){
 }
 function parse(payload,source){
   if(!payload||typeof payload!=="object"||!Array.isArray(payload.events))throw Error("TreeTix events array missing");
-  const calendar=source.id==="high-water"?"highwatermark":source.id==="soundcontrol-pdx"?"soundcontrol":null;
-  if(!calendar||source.adapter!=="treetix-public-json")throw Error("Unrecognized TreeTix source");
+  const calendar=calendarFor(source);
+  if(!calendar)throw Error("Unrecognized TreeTix source");
   const rows=[],seen=new Set();
   for(const entry of payload.events){
     if(!entry||typeof entry!=="object")continue;
@@ -97,4 +101,4 @@ async function fetchEvents(source,{request=fetch}={}){
   if(!cached)cached=fetchSnapshot().catch(e=>{cached=null;throw e;});
   return parse(await cached,source);
 }
-module.exports={ENDPOINT,MAX_BYTES,eventCalendar,artworkEvidence,parse,fetchSnapshot,fetchEvents};
+module.exports={ENDPOINT,MAX_BYTES,calendarFor,eventCalendar,artworkEvidence,parse,fetchSnapshot,fetchEvents};

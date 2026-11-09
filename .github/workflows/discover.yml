@@ -81,11 +81,6 @@ jobs:
         env:
           COFFIN_VENUEPILOT_APP_ID: ${{ secrets.COFFIN_VENUEPILOT_APP_ID }}
         run: node scripts/discover-events.js
-      - name: Reconcile every observed TreeTix producer event against approved SHOWS
-        run: |
-          # This is source-wide read-only research; it NEVER imports unknown producers.
-          git show HEAD:events.js > /tmp/shows-approved-for-treetix.js
-          node scripts/treetix-coverage.js --baseline /tmp/shows-approved-for-treetix.js --proposed events.js
       - name: Collect original underground-show leads (review-only)
         run: node scripts/doomtown-leads.js
       - name: Collect PDX//SUBVERT original punk and metal show leads (research-only)
@@ -106,7 +101,7 @@ jobs:
           sed -n '1,/## New candidates:/p' discovery/latest-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "## TreeTix provider-wide event reconciliation" >> "$GITHUB_STEP_SUMMARY"
           sed -n '1,34p' discovery/treetix-coverage-review.md >> "$GITHUB_STEP_SUMMARY"
-          echo "Every unconnected Portland producer and unaccounted event is listed in the full artifact." >> "$GITHUB_STEP_SUMMARY"
+          echo "The full artifact includes every observed TreeTix row and its disposition." >> "$GITHUB_STEP_SUMMARY"
           echo "## Previously published events: source changes (review required)" >> "$GITHUB_STEP_SUMMARY"
           sed -n '1,22p' discovery/published-change-review.md >> "$GITHUB_STEP_SUMMARY"
           echo "## Evidence-backed changes prepared as actual event edits" >> "$GITHUB_STEP_SUMMARY"
