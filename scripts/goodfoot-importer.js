@@ -86,7 +86,7 @@ function detail(html,url){
  const suppliedVenue=typeof schema.location==="string"?schema.location:schema.location?.name||"";
  if(suppliedVenue&&!/\bgoodfoot\b/i.test(clean(suppliedVenue)))return hold("Original event location does not match Goodfoot");
  const status=String(schema.eventStatus||"");
- if(status&&/\b(?:Cancelled|Canceled|Postponed|Rescheduled)\b/i.test(status))return hold("Original Goodfoot event has changed status");
+ if(status&&/(?:Event)?(?:Cancelled|Canceled|Postponed|Rescheduled)(?:\b|$)/i.test(status))return hold("Original Goodfoot event has changed status");
  if(/\b(?:cancelled|canceled|postponed|rescheduled)\b/i.test(title))return hold("Original Goodfoot event title has changed status");
  // Confirm the text shown on the event detail agrees with the schema's month
  // and date (do not infer a missing year from the current calendar month).
