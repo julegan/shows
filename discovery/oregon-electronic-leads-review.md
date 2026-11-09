@@ -2,14 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**144 public table rows checked; 61 distinct relevant research leads (56 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**135 public table rows checked; 57 distinct relevant research leads (54 preferred-venue, 3 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-07 | [Rhythm Is A Dancer: Early Evening 90s Party](https://www.etix.com/ticket/p/51248619/rhythm-is-a-danceran-early-evening-90s-dance-party-hosted-by-snap21-portland-holocene) | Holocene | Not categorized / Snap! 90'S Dance Party | Preferred SHOWS venue |
-| 2026-11-07 | [Gabriel & Dresden (Oxc) at 45 East](https://45east.tixr.com/gabrieldresden1107) | 45 East | trance, progressive house / Not listed | Preferred SHOWS venue |
-| 2026-11-07 | [Christian Loffler, Paris](https://wl.eventim.us/event/christian-loffler/694257) | The Den | deep house, techno / Not listed | Relevant electronic / dark music tag |
-| 2026-11-07 | [Process Residency Night - Neutron Dance: Derek Plaslaiko All Night Long](https://ra.co/events/2566218) | Process Pdx | house, techno / Not listed | Relevant electronic / dark music tag |
 | 2026-11-08 | [Syd: Beard Tour](https://www.etix.com/ticket/p/81998178/sydbeard-tour-portland-roseland-theater) | Roseland Theater | Not categorized / Live Nation Pnw | Preferred SHOWS venue |
 | 2026-11-08 | [Church Of Hive / Skully : Lord Noctis](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14971933) | Star Theater | goth, industrial, darkwave / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
 | 2026-11-11 | [Bieber & A Be](https://www.etix.com/ticket/p/54508584/bieber-and-a-beata-justin-bieber-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
