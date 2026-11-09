@@ -68,6 +68,18 @@ assert.deepEqual(musicStylesFromSource({title:"New event at The Coffin Club",des
  "Venue description never becomes an event-specific music style");
 
 const reviewed=require("../scripts/reviewed-classifications");
+const {STYLE_LABELS}=require("../scripts/event-classification");
+const nonPunkStyles=["Hip-hop & rap","R&B & soul","Funk & disco","Jazz","Blues","Electronic & dance","Reggae & ska","Global & traditional"];
+assert(nonPunkStyles.every(x=>STYLE_LABELS.includes(x)),"Diverse SHOWS music styles are part of the canonical taxonomy");
+const sampleReviewed={category:"Music",musicStyles:["Hip-hop & rap","R&B & soul"],evidenceUrl:"https://artist.example.org/original-press-kit"};
+const validated=reviewed.validateReviewedClassification(sampleReviewed);
+assert.deepEqual(validated.musicStyles,["Hip-hop & rap","R&B & soul"],"Owner-reviewed hip-hop and R&B labels are not artificially prohibited");
+assert.notEqual(validated.musicStyles,sampleReviewed.musicStyles,"Reviewed styles are returned as a safe copy");
+for(const styles of [["Unknown marketing label"],["Hip-hop & rap","Hip-hop & rap"]])
+ assert.throws(()=>reviewed.validateReviewedClassification({...sampleReviewed,musicStyles:styles}),/Nonstandard or duplicate/);
+assert.throws(()=>reviewed.validateReviewedClassification({...sampleReviewed,category:"Markets"}),/invalid/);
+assert.throws(()=>reviewed.validateReviewedClassification({...sampleReviewed,evidenceUrl:"http://no-original.example.org"}),/invalid/);
+
 const {backfill}=require("../scripts/backfill-event-classifications");
 const fs=require("node:fs");
 const path=require("node:path");
