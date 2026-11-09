@@ -41,7 +41,7 @@ function links(html){
 function detail(html,url){
  const sourceUrl=eventUrl(url);
  if(!sourceUrl)return {hold:"Invalid original Atlantis event URL",url};
- if(typeof html!=="string"||html.length<400||html.length>MAX_HTML)
+ if(typeof html!=="string"||html.length<200||html.length>MAX_HTML)
   return {hold:"Atlantis detail missing or exceeds bounds",url:sourceUrl};
  const h1=/<h1\b[^>]*>([\s\S]*?)<\/h1>/i.exec(html);
  if(!h1)return {hold:"No event-specific title heading",url:sourceUrl};
