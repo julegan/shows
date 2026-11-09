@@ -682,10 +682,14 @@
       "name": "Mississippi Pizza / Atlantis Lounge",
       "venue": "Mississippi Pizza / Atlantis Lounge",
       "venueRegistryId": "atlantis-lounge",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
       "url": "https://mississippipizza.com/events/",
-      "reason": "Original venue calendar and individually dated event details are public, including November 22 2026 Hungry Hungry Hip Hop. This is not the existing Mississippi Studios / Polaris Hall adapter. A distinct original-event importer is needed; meanwhile daily source scouting can discover new links without publishing assumptions."
+      "reason": "Original public calendar at /events/ links individual /event/ detail pages. Each detail independently verifies title, complete year/date/weekday, listed local clock and Atlantis room. Event times are not assumed to be show starts. Complete dated intake including unknown genre and nonmusic, subject to per-item holds; original-source event proposals only in review PR. First-party GitHub Actions smoke check required before owner merge.",
+      "adapter": "atlantis-original-html",
+      "baseUrl": "https://mississippipizza.com",
+      "address": "3552 N Mississippi Ave, Portland, OR 97227",
+      "neighborhood": "Mississippi"
     }
   ],
   "editorialPriority": [
