@@ -45,7 +45,7 @@ assert.equal(detail(page(originalTitle,10,"21:00:00","music"),greater).hold,"Ori
 assert.equal(detail(page(originalTitle,10,"20:00:00","music",{schemaUrl:soul}),greater).hold,"Original detail URL and event identity disagree");
 const nonmusic=detail(page("STAND-UP COMEDY (7pm Doors)",12,"19:00:00","Stand-up comedy night.",{url:comedy}),comedy);
 assert.equal(extract(nonmusic,source,now).event?.category,"Performance","Comedy is not automatically tagged Music");
-const unknown=detail(page("Evening with a Local Artist (9pm Doors)",10,"21:00:00","An original venue evening.",{url:soul}),soul);
+const unknown=detail(page("Evening with a Local Artist (10pm Doors)",10,"22:00:00","An original venue evening.",{url:soul}),soul);
 assert.equal(extract(unknown,source,now).event?.category,"Unclassified","Unknown genre is not suppressed");
 assert.equal(reconcile([],[extract(music,source,now),extract(unknown,source,now)]).accepted.length,2,
  "Different dated original bill identities and sufficiently separated starts are retained");
