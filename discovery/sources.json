@@ -634,10 +634,14 @@
       "name": "The Goodfoot",
       "venue": "The Goodfoot",
       "venueRegistryId": "the-goodfoot",
-      "status": "adapter-needed",
+      "status": "pilot-enabled",
       "priority": "editorial-active",
       "url": "https://thegoodfoot.com/music/",
-      "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original music calendar includes funk, soul, jazz, DJs, global and other live music; also lists trivia and comedy. Keep format distinctions and individual original show links."
+      "reason": "Original Goodfoot /music/ calendar and event-specific /events/ detail links yield bounded, read-only primary-source event records. Individual full-year and offset-aware schema date, venue and date text checked, title doors versus listed event clock distinguished, music and unrelated programming all retained. Requires live CI verification before review/merge; first roster is not guaranteed complete across calendar pagination. Editorial review only.",
+      "adapter": "goodfoot-original-html",
+      "baseUrl": "https://thegoodfoot.com",
+      "address": "2845 SE Stark St, Portland, OR 97214",
+      "neighborhood": "Sunnyside"
     },
     {
       "id": "alberta-street-pub",
