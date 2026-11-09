@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-07
+# SHOWS automated discovery review — 2026-11-08
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,42 +8,52 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 11 | 0 | 0 | 0 | 0 | 0 | 11 |
-| High Water Mark | Checked | 68 | 0 | 0 | 0 | 0 | 0 | 68 |
+| Black Water | Checked | 10 | 0 | 0 | 0 | 0 | 0 | 10 |
+| High Water Mark | Checked | 68 | 1 | 1 | 0 | 0 | 0 | 67 |
 | Soundcontrol PDX | Checked | 3 | 0 | 0 | 0 | 0 | 2 | 1 |
 | Twilight Cafe and Bar | Checked | 24 | 0 | 0 | 0 | 0 | 3 | 21 |
-| Star Theater | Checked | 39 | 0 | 0 | 0 | 0 | 4 | 35 |
-| Dante's | Checked | 42 | 0 | 0 | 0 | 0 | 3 | 39 |
+| Star Theater | Checked | 38 | 0 | 0 | 0 | 0 | 4 | 34 |
+| Dante's | Checked | 41 | 1 | 1 | 0 | 1 | 3 | 37 |
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 5 | 28 |
-| Wonder Ballroom | Checked | 32 | 0 | 0 | 0 | 0 | 8 | 24 |
-| Hawthorne Theatre | Checked | 38 | 0 | 0 | 0 | 0 | 3 | 35 |
+| Wonder Ballroom | Checked | 31 | 0 | 0 | 0 | 0 | 8 | 23 |
+| Hawthorne Theatre | Checked | 37 | 0 | 0 | 0 | 0 | 3 | 34 |
 | Crystal Ballroom | Checked | 53 | 0 | 0 | 0 | 0 | 6 | 47 |
-| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 8 | 22 |
-| Turn! Turn! Turn! | Checked | 18 | 0 | 0 | 0 | 0 | 2 | 16 |
-| Kenton Club | Checked | 13 | 0 | 0 | 0 | 0 | 1 | 12 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 1 | 0 | 1 | 1 | 2 | 27 |
-| Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 30 | 17 |
+| Revolution Hall | Checked | 30 | 2 | 0 | 2 | 2 | 8 | 20 |
+| Turn! Turn! Turn! | Checked | 16 | 0 | 0 | 0 | 0 | 1 | 15 |
+| Kenton Club | Checked | 12 | 0 | 0 | 0 | 0 | 1 | 11 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 3 | 0 | 2 | 3 | 0 | 27 |
+| Holocene | Checked | 45 | 0 | 0 | 0 | 0 | 29 | 16 |
 | Starday Tavern | Checked | 1588 | 0 | 0 | 0 | 0 | 42 | 1546 |
 | The Off Beat / Friends of Noise | Checked | 13 | 0 | 0 | 0 | 0 | 6 | 7 |
-| Aladdin Theater | Checked | 90 | 0 | 0 | 0 | 0 | 4 | 86 |
-| Mission Theater | Checked | 48 | 0 | 0 | 0 | 0 | 1 | 47 |
-| Nova PDX | Checked | 10 | 0 | 0 | 0 | 0 | 0 | 10 |
+| Aladdin Theater | Checked | 89 | 0 | 0 | 0 | 0 | 4 | 85 |
+| Mission Theater | Checked | 47 | 0 | 0 | 0 | 0 | 1 | 46 |
+| Nova PDX | Checked | 9 | 0 | 0 | 0 | 0 | 0 | 9 |
 | Lola's Room | Checked | 16 | 0 | 0 | 0 | 0 | 3 | 13 |
-| The Showdown | Checked | 52 | 0 | 0 | 0 | 0 | 12 | 40 |
-| 45 East | Checked | 19 | 0 | 0 | 0 | 0 | 0 | 19 |
+| The Showdown | Checked | 51 | 0 | 0 | 0 | 0 | 12 | 39 |
+| 45 East | Checked | 17 | 0 | 0 | 0 | 0 | 0 | 17 |
 | Mammoth Northwest | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
-| The 1905 | Checked | 8 | 1 | 1 | 0 | 1 | 0 | 7 |
-| Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
-| Alberta Street Pub | Checked | 31 | 0 | 0 | 0 | 0 | 3 | 28 |
-| Alberta Rose Theatre | Checked | 67 | 1 | 0 | 1 | 1 | 6 | 60 |
+| The 1905 | Checked | 8 | 2 | 2 | 0 | 2 | 0 | 6 |
+| Jack London Revue | Checked | 50 | 2 | 1 | 1 | 2 | 0 | 48 |
+| Alberta Street Pub | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
+| Alberta Rose Theatre | Checked | 66 | 0 | 0 | 0 | 0 | 6 | 60 |
+| Mississippi Pizza / Atlantis Lounge | Checked | 44 | 42 | 23 | 14 | 0 | 2 | 0 |
 
 ### Classification review
 
-New candidate categories: **Music** 1 · **Unclassified** 2.
-**2 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 28 · **Other** 4 · **Performance** 2 · **Unclassified** 19.
+**19 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Mississippi Studios: Bobby Short Shorts: An Evening of Grateful Dead Music — https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios
-- Alberta Rose Theatre: Science On Tap: A Rockhound’s Guide to Oregon & Washington — https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/
+- Revolution Hall: Pink Martini — https://www.etix.com/ticket/p/95614321/pink-martini-portland-revolution-hall
+- Revolution Hall: Pink Martini — https://www.etix.com/ticket/p/66160391/pink-martini-portland-revolution-hall
+- Mississippi Studios: Jack Bensinger — https://www.etix.com/ticket/p/90187834/jack-bensinger-portland-mississippi-studios
+- Mississippi Studios: Local Love Letter #30: Victory Over The Sun — https://www.etix.com/ticket/p/50476902/local-love-letter-30victory-over-the-sun-portland-mississippi-studios
+- Jack London Revue: Jeff Lorber - Early Show — https://www.jacklondonrevue.com/tm-event/jeff-lorber-early-show/
+- Mississippi Pizza / Atlantis Lounge: FREE SHOW – Grateful Puppy — https://mississippipizza.com/event/free-show-grateful-puppy/
+- Mississippi Pizza / Atlantis Lounge: HAZL — https://mississippipizza.com/event/hazl/
+- Mississippi Pizza / Atlantis Lounge: Hebocon — https://mississippipizza.com/event/hebocon/
+- Mississippi Pizza / Atlantis Lounge: The Occidental Tourists — https://mississippipizza.com/event/the-occidental-tourists-15/
+- Mississippi Pizza / Atlantis Lounge: Mr. Hoo — https://mississippipizza.com/event/mr-hoo-28/
+- Plus 9 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
@@ -69,25 +79,79 @@ New candidate categories: **Music** 1 · **Unclassified** 2.
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 0** · Ambiguous matching source URLs: 3.
+**Potential changes: 0** · Ambiguous matching source URLs: 2.
 
 No changed published events were confirmed by uniquely matching source records in this run.
 
-The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 3
+## New candidates: 53
 
-- mississippi-polaris: 1 proposals
-- the-1905: 1 proposals
-- alberta-rose-theatre: 1 proposals
+- high-water: 1 proposals
+- dantes: 1 proposals
+- revolution-hall: 2 proposals
+- mississippi-polaris: 3 proposals
+- the-1905: 2 proposals
+- jack-london-revue: 2 proposals
+- atlantis-lounge: 42 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-11-21 | Bobby Short Shorts: An Evening of Grateful Dead Music | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/86386129/bobby-short-shortsan-evening-of-grateful-dead-music-portland-mississippi-studios |
-| 2026-11-11 | Wil Blades fea. Andy Coe and Cory Limuaco — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13206/2026-11-11 |
-| 2027-02-24 | Science On Tap: A Rockhound’s Guide to Oregon & Washington | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-a-rockhounds-guide-to-oregon-washington/alberta-rose-theatre/portland-oregon/ |
+| 2026-11-29 | Jesco Payne & the Painkillers, DJ Dentside, Boot Scoot Pdx | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204957/highwatermark |
+| 2026-12-05 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-9/ |
+| 2026-11-29 | Pink Martini | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/95614321/pink-martini-portland-revolution-hall |
+| 2026-11-30 | Pink Martini | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/66160391/pink-martini-portland-revolution-hall |
+| 2026-11-22 | Mx. Dahlia Belle: Affirmed (A Live Comedy Taping) | Polaris Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/36347493/mxdahlia-belleaffirmed-a-live-comedy-taping-portland-polaris-hall |
+| 2026-11-22 | Jack Bensinger | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/90187834/jack-bensinger-portland-mississippi-studios |
+| 2026-11-23 | Local Love Letter #30: Victory Over The Sun | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/50476902/local-love-letter-30victory-over-the-sun-portland-mississippi-studios |
+| 2026-11-12 | Galen Clark & Peter Knudsen Present: Trio of Boom — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13207/2026-11-12 |
+| 2026-11-12 | Galen Clark & Peter Knudsen Present: Trio of Boom — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13207/2026-11-12 |
+| 2027-03-11 | MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-9/ |
+| 2027-03-12 | Jeff Lorber - Early Show | Jack London Revue | 19:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/jeff-lorber-early-show/ |
+| 2026-11-08 | Cult Of- Bob’s Burgers Drag Show! | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/cult-of-bobs-burgers-drag-show/ |
+| 2026-11-09 | Portland Songwriters Open Mic | Mississippi Pizza / Atlantis Lounge | 18:30 (doors/show unverified) | https://mississippipizza.com/event/portland-songwriters-open-mic-14/ |
+| 2026-11-10 | Atlantis Open Mic | Mississippi Pizza / Atlantis Lounge | 19:30 (doors/show unverified) | https://mississippipizza.com/event/atlantis-open-mic-7/ |
+| 2026-11-11 | FREE! Trivia-sippi! Weekly Quiz Night! | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-61/ |
+| 2026-11-11 | Mango Twist- Live Music & Dancing! | Mississippi Pizza / Atlantis Lounge | 20:30 (doors/show unverified) | https://mississippipizza.com/event/mango-twist-live-music-dancing-24/ |
+| 2026-11-12 | Red Yarn | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/red-yarn-24/ |
+| 2026-11-12 | Mellow Rebels + Soul Rose | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/mellow-rebels-soul-rose/ |
+| 2026-11-13 | FREE SHOW – Grateful Puppy | Mississippi Pizza / Atlantis Lounge | 16:00 (doors/show unverified) | https://mississippipizza.com/event/free-show-grateful-puppy/ |
+| 2026-11-13 | HAZL | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/hazl/ |
+| 2026-11-14 | Hebocon | Mississippi Pizza / Atlantis Lounge | 13:00 (doors/show unverified) | https://mississippipizza.com/event/hebocon/ |
+| 2026-11-14 | Three For Silver | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/three-for-silver/ |
+| 2026-11-15 | The Occidental Tourists | Mississippi Pizza / Atlantis Lounge | 19:00 (doors/show unverified) | https://mississippipizza.com/event/the-occidental-tourists-15/ |
+| 2026-11-17 | Atlantis Open Mic | Mississippi Pizza / Atlantis Lounge | 19:30 (doors/show unverified) | https://mississippipizza.com/event/atlantis-open-mic-6/ |
+| 2026-11-18 | FREE! Trivia-sippi! Weekly Quiz Night! | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-62/ |
+| 2026-11-18 | Mango Twist- Live Music & Dancing! | Mississippi Pizza / Atlantis Lounge | 20:30 (doors/show unverified) | https://mississippipizza.com/event/mango-twist-live-music-dancing-25/ |
+| 2026-11-19 | Red Yarn | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/red-yarn-25/ |
+| 2026-11-19 | Triple Martini | Mississippi Pizza / Atlantis Lounge | 19:30 (doors/show unverified) | https://mississippipizza.com/event/triple-martini-5/ |
+| 2026-11-20 | Mr. Hoo | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/mr-hoo-28/ |
+| 2026-11-21 | Two Dimensional Man | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/two-dimensional-man/ |
+| 2026-11-22 | Hungry Hungry Hip Hop | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/hungry-hungry-hip-hop-10/ |
+| 2026-11-23 | FREE! The Front Porch Swingers | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/free-the-front-porch-swingers/ |
+| 2026-11-24 | Atlantis Open Mic | Mississippi Pizza / Atlantis Lounge | 19:30 (doors/show unverified) | https://mississippipizza.com/event/atlantis-open-mic-8/ |
+| 2026-11-25 | FREE! Trivia-sippi! Weekly Quiz Night! | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-63/ |
+| 2026-11-25 | Mango Twist- Live Music & Dancing! | Mississippi Pizza / Atlantis Lounge | 20:30 (doors/show unverified) | https://mississippipizza.com/event/mango-twist-live-music-dancing-26/ |
+| 2026-11-28 | Blue Factory Flame | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/blue-factory-flame/ |
+| 2026-11-28 | Sabrina Saed & Your Jack | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/sabrina-saed-your-jack/ |
+| 2026-11-29 | Carpathian Pacific Express | Mississippi Pizza / Atlantis Lounge | 16:00 (doors/show unverified) | https://mississippipizza.com/event/carpathian-pacific-express-2/ |
+| 2026-11-29 | Henry Ivie-Gardner | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/henry-ivie-gardner/ |
+| 2026-11-30 | FREE! Covers Only | Mississippi Pizza / Atlantis Lounge | 19:00 (doors/show unverified) | https://mississippipizza.com/event/free-covers-only-17/ |
+| 2026-12-02 | FREE! Trivia-sippi! Weekly Quiz Night! | Mississippi Pizza / Atlantis Lounge | 00:00 (doors/show unverified) | https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-64/ |
+| 2026-12-04 | Cult Of- The Muppets Holiday Show! | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/cult-of-the-muppets-holiday-show/ |
+| 2026-12-05 | Cult Of- The Muppets Holiday Show! | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-2/ |
+| 2026-12-06 | Cult Of- The Muppets Holiday Show! | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-3/ |
+| 2026-12-12 | FREE! Miss Charlotte and Friends | Mississippi Pizza / Atlantis Lounge | 13:00 (doors/show unverified) | https://mississippipizza.com/event/free-miss-charlotte-and-friends/ |
+| 2026-12-12 | Kevin Watson Band | Mississippi Pizza / Atlantis Lounge | 16:00 (doors/show unverified) | https://mississippipizza.com/event/kevin-watson-band/ |
+| 2026-12-12 | Wizard People | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/wizard-people/ |
+| 2026-12-13 | The Loeffelmen | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/the-loeffelmen/ |
+| 2026-12-18 | Baz Moto | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/baz-moto/ |
+| 2026-12-21 | Drunken Angel | Mississippi Pizza / Atlantis Lounge | 18:00 (doors/show unverified) | https://mississippipizza.com/event/drunken-angel/ |
+| 2027-01-14 | Cautious Driver, Bory, Big Top | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/cautious-driver-bory-big-top/ |
+| 2027-01-16 | An Evening With: Mitch Whitaker | Mississippi Pizza / Atlantis Lounge | 17:00 (doors/show unverified) | https://mississippipizza.com/event/an-evening-with-mitch-whitaker/ |
+| 2027-01-21 | Hey There + OSHA Violations | Mississippi Pizza / Atlantis Lounge | 20:00 (doors/show unverified) | https://mississippipizza.com/event/hey-there-osha-violations/ |
 
-## Held for review: 154
+## Held for review: 152
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Wolves in the Throne Room, Stygian Bough, Spirit Possession — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204942/soundcontrol
@@ -123,20 +187,16 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Quadeca — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/53211165/quadeca-portland-revolution-hall
-- [revolution-hall] Sparta — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
+- [revolution-hall] The Tallest Man on Earth — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/98071669/the-tallest-man-on-earth-portland-revolution-hall
+- [revolution-hall] Sparta — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/72915877/sparta-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 2) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91797471/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-2-portland-revolution-hall
 - [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
 - [revolution-hall] RESCHEDULED TO 4/27/17: WAAX — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/72288527/rescheduled-to-42717waax-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: Gary Numan North American Fall Tour 2026 — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91554135/neurosis-portland-revolution-hall
-- [turn-turn-turn] She Ate: A Food Drive for Esther's Pantry — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/she-ate-a-food-drive-for-esther-s-pantry-november-07-2026-788549
 - [turn-turn-turn] Miranda S.P. (IN) + Nowhere Flower + Leland's Lotto — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/miranda-s-p-in-nowhere-flower-leland-s-lotto-november-15-2026-796358
 - [kenton-club] Untitled — Missing or implausibly long bill title 
-- [mississippi-polaris] Anna Tivel, Willy Vlautin & Wonderly Accompanied by 45th Parallel String Quartet: Sight Reading - Musical Dialects — Source venue ID and original ticket room disagree 
-- [mississippi-polaris] Pedro the Lion (Night 1) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/47201881/pedro-the-lion-night-1-portland-polaris-hall
-- [holocene] RHYTHM IS A DANCER: An early evening 90s Dance Party hosted by SNAP! — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-07-rhythm-is-a-dancer-an-early-evening-90s-dance-party-hosted-by-snap
 - [holocene] AZ CHIKE — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-08-sold-out-az-chike-w-dj-scout
 - [holocene] Jake Minch — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-09-jake-minch-getting-big-tour-w-alix-page
 - [holocene] Sassy 009 — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-10-sassy-009-w-madi-gaines
@@ -218,7 +278,7 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [aladdin-theater] SOLD OUT: Todd Rundgren: DAMNED IF I DO TOUR — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/33295250/sold-outtodd-rundgrendamned-if-i-do-tour-portland-aladdin-theater
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
 - [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
-- [mission-theater] Coffee Roasters Anniversary Specials — Source search record lacks usable full-year date or event identity: 11/7/2026 
+- [mission-theater] Coffee Roasters Anniversary Specials — Source search record lacks usable full-year date or event identity: 11/8/2026 
 - [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
@@ -243,6 +303,8 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 11/22 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-11-22-1/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 2/21 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-2-21/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 2/21 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-2-21/alberta-rose-theatre/portland-oregon/
+- [atlantis-lounge] Brendan Cope — Same venue/date; different existing bill; manual comparison https://mississippipizza.com/event/brendan-cope/
+- [atlantis-lounge] A Christmas Carol — Event-specific title/Atlantis Lounge room cannot be verified https://mississippipizza.com/event/a-christmas-carol/
 
 ## Source errors: 0
 
@@ -254,6 +316,3 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - Check duplicates, source permalink, venue/date, ticket status, age, and cancellation information.
 - Leave genre, cost, accessibility and end times unknown without evidence.
 - After approving and merging this PR, review the corresponding portfolio sync PR.
-## Automatically published trusted originals
-
-1 verified first-party new bill(s) published without pending-rights artwork. All other source proposals, conflicts and historical changes remain under review.

@@ -6,6 +6,7 @@ WordPress post publication dates are **not** event dates. These leads require in
 
 | Promoter post | Printed date | Venue mentions | Source art |
 | --- | --- | --- | --- |
+| [Habak at Black Water](https://doomtownpdx.com/habak-at-black-water/) | Sat. November 7th | Black Water | Image found; rights unverified |
 | [Iron Lung at Black Water](https://doomtownpdx.com/iron-lung-at-black-water/) | Thursday Oct. 26th | Black Water | Image found; rights unverified |
 | [Benefit Show at High Water Mark](https://doomtownpdx.com/la-isla-electronica-record-release-2/) | Sat. Oct 17th | High Water Mark | Image found; rights unverified |
 | [Fan Club at Alley Way](https://doomtownpdx.com/habak-at-black-water-2/) | Sat. Oct 10th | Unconfirmed | Image found; rights unverified |
@@ -45,4 +46,3 @@ WordPress post publication dates are **not** event dates. These leads require in
 | [Friday Oct 31st at Kenton Club](https://doomtownpdx.com/friday-oct-31st-at-kenton-club/) | Not verified | Kenton Club | Image found; rights unverified |
 | [Friday Oct 31st at Black Water](https://doomtownpdx.com/friday-oct-31st-at-black-water/) | Not verified | Black Water | Image found; rights unverified |
 | [Thurs Oct 30th at Coffin Club](https://doomtownpdx.com/thurs-oct-30th-at-coffin-club/) | Not verified | Unconfirmed | Image found; rights unverified |
-| [Sat Oct 25th at Black Water](https://doomtownpdx.com/sat-oct-25th-at-black-water/) | Not verified | Black Water | Image found; rights unverified |

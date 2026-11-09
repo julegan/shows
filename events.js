@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-07",
+  "sourceCheckedAt": "2026-11-08",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1272,
-  "addedOccurrences": 2,
-  "batchId": "auto-discovery-2026-11-07-60",
+  "totalOccurrences": 1325,
+  "addedOccurrences": 53,
+  "batchId": "auto-discovery-2026-11-08-65",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -156,11 +156,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-07",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "auto-discovery-2026-11-07-60",
+      "addedOccurrences": 2
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 379
+  "musicOccurrences": 407
 };
 window.SHOWS_EVENTS = [
   {
@@ -17015,6 +17019,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-08-9fc966d5d37e",
+    "title": "Cult Of- Bob’s Burgers Drag Show!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Cult of! A Show of Things We Are Obsessed With returns with Bob&rsquo;s Burgers! A night celebrating our favorite Cartoon restaurant family. We got a great Cast to do acts based on their favorite characters in the Bob&rsquo;s Burgers universe. Tina, Marshm",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/cult-of-bobs-burgers-drag-show/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/cult-of-bobs-burgers-drag-show/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-11-08-53efceb212d7",
     "title": "Pedro the Lion (Night 2)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -17646,6 +17694,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-09-ad0c1c8afe18",
+    "title": "Portland Songwriters Open Mic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-09T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Doors open at 6:30. Sign-ups 6:30-7:00 or until full. Suggested donation of $5-$10. Portland Songwriters and Atlantis Lounge: Songwriters Open Mic. Join other songwriters in and around Portland for a monthly event to showcase your original music, meet othe",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/portland-songwriters-open-mic-14/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/portland-songwriters-open-mic-14/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -18404,6 +18496,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-10-77171cf8982a",
+    "title": "Atlantis Open Mic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-10T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Atlantis Open Mic The Atlantis open mic is a weekly gathering of songwriters, musicians, and music fans during the fall and winter months. We share original songs, and do our best to bring new songs each week. Join us Tuesday from 7:30-11PM. All ages until",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/atlantis-open-mic-7/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/atlantis-open-mic-7/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-11-10-6c5d2175a73b",
     "title": "The Low Bar Chorale - Laura Gibson 20th Anniversary Singalong (Night 2)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -19031,6 +19167,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-11-5a1e4555d960",
+    "title": "FREE! Trivia-sippi! Weekly Quiz Night!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Atlantis Lounge at Mississippi Pizza Pub is excited to announce a new weekly trivia event! Michael Rainey, one of the hosts and organizers of the monthly Nerd Nite at the Pub, brings his formidable talents to the new Pub Quiz/Trivia Night. Rainey write",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-61/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-61/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -19954,6 +20134,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-11-0f24f59db494",
+    "title": "Mango Twist- Live Music & Dancing!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-11T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Mango Twist is a musical collective playing tropical Latin music for that summer breeze feeling! ? Our intimate venue transforms into a vibrant dance floor filled with high-energy music, good drinks, and welcoming vibes. Whether you&rsquo;re a seasoned dan",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-24/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-24/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-the-1905-2026-11-11-6a5bb9fe9cc1",
     "title": "Wil Blades fea. Andy Coe and Cory Limuaco — 8:30 PM show",
     "subtitle": "Source-discovered venue event · details need review",
@@ -20212,6 +20437,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-12-d0edccad2d38",
+    "title": "Red Yarn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: This is a partially seated event. First come, first serve. It&rsquo;s dancin&rsquo; room only! Please save seats for children eating pizza. Red Yarn is a dynamic performer who weaves folksongs & puppetry into high-energy shows for families. TX-born, OR-bas",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/red-yarn-24/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/red-yarn-24/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-12-e098a31cd88d",
     "title": "Claes Almroth Trio",
     "subtitle": "Source-discovered venue event · details need review",
@@ -20303,6 +20572,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-12-f957e3342ead",
+    "title": "Galen Clark & Peter Knudsen Present: Trio of Boom — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48297 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. $25 TICKETS | ALL AGES Galen Clark - organ Peter Knudsen - guitar Cory Limuaco - drums Trio of Boom is an organ trio featuring Peter Knudsen (Ghost-Note, Mono Neon, Greaterkind) on guitar and vocals and Galen Clark (Outer Orbit, Trio Subtonic, Sleat",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13207/Galen_Clark_Orgn_Trio_Photo.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48297",
+    "sourceShowId": "13207",
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "the-1905",
       "method": "primary-source-collection"
     }
   },
@@ -20915,6 +21237,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-12-028ae131a39c",
+    "title": "Mellow Rebels + Soul Rose",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned R&B & soul",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "R&B & soul",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Hailing from the vibrant music scene of Portland, OR, Soul Rose is a dynamic 6-piece band that fuses the essence of soul and funk. With captivating rhythms and powerful melodies, they deliver an electrifying live experience. Follow Soul Rose on Instagram f",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/mellow-rebels-soul-rose/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/mellow-rebels-soul-rose/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-11-12-5933e2791d1e",
     "title": "San Kazakgascar (Sac) + Water Shrews + Half Bird",
     "subtitle": "Source-discovered venue event · details need review",
@@ -21027,6 +21399,60 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-12-3a9de2b85a51",
+    "title": "Galen Clark & Peter Knudsen Present: Trio of Boom — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-12T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48298 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. $25 TICKETS | ALL AGES Galen Clark - organ Peter Knudsen - guitar Cory Limuaco - drums Trio of Boom is an organ trio featuring Peter Knudsen (Ghost-Note, Mono Neon, Greaterkind) on guitar and vocals and Galen Clark (Outer Orbit, Trio Subtonic, Sleat",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13207/Galen_Clark_Orgn_Trio_Photo.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13207/2026-11-12",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48298",
+    "sourceShowId": "13207",
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -21215,6 +21641,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-25",
     "discovery": {
       "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-13-96a8ec2ce2c2",
+    "title": "FREE SHOW – Grateful Puppy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Whiskey Puppy, Portland’s beloved boot-stomping, mule-shoving bluegrass trio, has been making messes on the floor of local bars for over 20 years. We are: Justin Auld (Redwood Highway, OR-7, Jam Busters); Rachel Gold (Flat Mountain Girls); and Travis “Tate",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-show-grateful-puppy/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-show-grateful-puppy/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -21583,6 +22053,51 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-13-d6e2167f08ba",
+    "title": "HAZL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: HAZL&rsquo;s music lives in the in-between: folk and pop, intimate and cinematic. Her performances are communal. She might crack a joke mid-ballad or hand you a piece of her heart after a final chord. You might walk into a HAZL show carrying something heav",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/hazl/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/hazl/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -22650,6 +23165,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "outlet-riso-basics-2026"
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-14-e54388b74152",
+    "title": "Hebocon",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Join us for Hebocon, the ultimate crappy robot battle! No experience with robotics? Perfect…only the crappiest robots are welcome in this battle. $5 to watch, free to participate.",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/hebocon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/hebocon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-alberta-rose-theatre-2026-11-14-91e1a216785e",
@@ -23834,6 +24393,54 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-14T20:00:00-08:00",
     "startTimeKind": "doors",
     "sourceNote": "Calendar time is doors. The show start is unconfirmed. The promoter lists Portland but no street address. Ask the organizer for location and arrival details."
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-14-ff9bbb43e940",
+    "title": "Three For Silver",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Three for Silver and Hot Damn Scandal present a wild night of musical hijinks drawing from a multitude of traditions that includes vaudeville and swing, klezmer and Romani, blues, and string band genres mixed up with modern steampunk, indie/alternative roc",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/three-for-silver/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/three-for-silver/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "no-fun-under-utopia-silver-shores-american-crows-2026-11-14",
@@ -25075,6 +25682,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-18",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-15-7b967ea6a3c1",
+    "title": "The Occidental Tourists",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-15T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: An all-star Portland group of musicians including Eric Stern and Michael Beach, the group performs music from the Middle East and features bellydancers. **Atlantis Lounge is All Ages until 9:00 PM, at that time any minors will be asked to leave the space. ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/the-occidental-tourists-15/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/the-occidental-tourists-15/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -26821,6 +27472,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-17-1c2e3dcfd746",
+    "title": "Atlantis Open Mic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Atlantis Open Mic The Atlantis open mic is a weekly gathering of songwriters, musicians, and music fans during the fall and winter months. We share original songs, and do our best to bring new songs each week. Join us Tuesday from 7:30-11PM. All ages until",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/atlantis-open-mic-6/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/atlantis-open-mic-6/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-11-17-b8df77bf9a0a",
     "title": "OZ NOY TRIO w/ Brian Charette & Dave Weckl",
     "subtitle": "Source-discovered venue event · details need review",
@@ -27368,6 +28063,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-18-a339edf08bbd",
+    "title": "FREE! Trivia-sippi! Weekly Quiz Night!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Atlantis Lounge at Mississippi Pizza Pub is excited to announce a new weekly trivia event! Michael Rainey, one of the hosts and organizers of the monthly Nerd Nite at the Pub, brings his formidable talents to the new Pub Quiz/Trivia Night. Rainey write",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-62/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-62/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -28238,6 +28977,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-18-7c5825be3c79",
+    "title": "Mango Twist- Live Music & Dancing!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-18T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Mango Twist is a musical collective playing tropical Latin music for that summer breeze feeling! ? Our intimate venue transforms into a vibrant dance floor filled with high-energy music, good drinks, and welcoming vibes. Whether you&rsquo;re a seasoned dan",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-25/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-25/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-18-873e43da4da7",
     "title": "Gnosis",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28428,6 +29212,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-19-dcea787d392d",
+    "title": "Red Yarn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: This is a partially seated event. First come, first serve. It&rsquo;s dancin&rsquo; room only! Please save seats for children eating pizza. Red Yarn is a dynamic performer who weaves folksongs & puppetry into high-energy shows for families. TX-born, OR-bas",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/red-yarn-25/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/red-yarn-25/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-11-19-a16f7f75a33e",
     "title": "CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays",
     "subtitle": "Source-discovered venue event · details need review",
@@ -28580,6 +29408,54 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-19-d3333fc799ae",
+    "title": "Triple Martini",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-19T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Triple Martini is an improvised comedic jazz trio. Featuring vocalist Nick Martini with Dick Martini on keys and Vic &ldquo;The Chick&rdquo; Martini on drums, this fully improvised jazz fusion band combines storytelling and smooth sexy song stylings into a",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/triple-martini-5/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/triple-martini-5/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -29481,6 +30357,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-20-9e80b345cc86",
+    "title": "Mr. Hoo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Mr. Hoo is at Mississippi Pizza every 1st and 3rd Fridays. Mr. Hoo performs all over the Portland metro area by himself (and his invisible band) and with his visible band, The Alphabeticians .",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/mr-hoo-28/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/mr-hoo-28/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -31158,6 +32078,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-21-ddbdd4450390",
+    "title": "Two Dimensional Man",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Two Dimensional Man is the original music project of Portland Guitarist/Singer Nicholas Humenay-Klaver and Grammy Award winning lyricist Aaron Allen (Billy Strings, Willie Nelson, Greensky Bluegrass). Allen&rsquo;s lyrics of loss, rebuilding, and hope are ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/two-dimensional-man/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/two-dimensional-man/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-21-4dbf8193e2f2",
     "title": "Scott Strickland",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32566,6 +33533,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-22-ed81428cbf3b",
+    "title": "Mx. Dahlia Belle: Affirmed (A Live Comedy Taping)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/36347493/mxdahlia-belleaffirmed-a-live-comedy-taping-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/36347493/mxdahlia-belleaffirmed-a-live-comedy-taping-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2c715cb5fa8c3bae216ff076a333d9ca.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-11-22-4d9df647e90c",
     "title": "1 Umbrella",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32711,6 +33730,105 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "showdown",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-22-83c652a8061d",
+    "title": "Hungry Hungry Hip Hop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Hip-hop & rap",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Hip-hop & rap"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Hungry Hungry Hip Hop started in 2011 and is held every month.The event is a showcase for local hip hop performers and includes a wide range of artists.",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/hungry-hungry-hip-hop-10/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/hungry-hungry-hip-hop-10/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-22-78cfc71e05f2",
+    "title": "Jack Bensinger",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/90187834/jack-bensinger-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/90187834/jack-bensinger-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f44e15b5df69791efca96bab51f9937d.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -32899,6 +34017,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-23-43df0f1b43bd",
+    "title": "FREE! The Front Porch Swingers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Front Porch Swingers are steeped in that good ole Kentucky bluegrass music and Appalachian fiddle tunes. We like to play that foot tapping, feel good music.",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-the-front-porch-swingers/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-the-front-porch-swingers/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -33092,6 +34254,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-23-2fb5bb7a664e",
+    "title": "Local Love Letter #30: Victory Over The Sun",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: U SCO, Geremiah",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/50476902/local-love-letter-30victory-over-the-sun-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/50476902/local-love-letter-30victory-over-the-sun-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/aa120c08004a555cba1115f2db7832d9.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -33291,6 +34505,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-24-ff902f653235",
+    "title": "Atlantis Open Mic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Atlantis Open Mic The Atlantis open mic is a weekly gathering of songwriters, musicians, and music fans during the fall and winter months. We share original songs, and do our best to bring new songs each week. Join us Tuesday from 7:30-11PM. All ages until",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/atlantis-open-mic-8/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/atlantis-open-mic-8/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -33633,6 +34891,50 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-expansion",
     "seriesId": "shemanski-farmers-2026"
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-25-731ede1c4804",
+    "title": "FREE! Trivia-sippi! Weekly Quiz Night!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Atlantis Lounge at Mississippi Pizza Pub is excited to announce a new weekly trivia event! Michael Rainey, one of the hosts and organizers of the monthly Nerd Nite at the Pub, brings his formidable talents to the new Pub Quiz/Trivia Night. Rainey write",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-63/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-63/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-starday-tavern-2026-11-25-8e5358482847",
@@ -34086,6 +35388,51 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-25-5583720758be",
+    "title": "Mango Twist- Live Music & Dancing!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Mango Twist is a musical collective playing tropical Latin music for that summer breeze feeling! ? Our intimate venue transforms into a vibrant dance floor filled with high-energy music, good drinks, and welcoming vibes. Whether you&rsquo;re a seasoned dan",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-26/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/mango-twist-live-music-dancing-26/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -35555,6 +36902,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-28-64229021f328",
+    "title": "Blue Factory Flame",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Coming from backgrounds in experimental music, punk rock and skateboarding, Blue Factory Flame is a trio that creates instrumental music influenced by fIREHOSE, Minutemen, Dinosaur Jr. Tommy Guerrero and The Meters that explore themes of the Oregon landsca",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/blue-factory-flame/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/blue-factory-flame/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-28-38fe55ce9fba",
     "title": "That Fucking Ivan • TBA • TBA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -35920,6 +37314,54 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-11-28-6f514f902f54",
+    "title": "Sabrina Saed & Your Jack",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Hip-hop & rap",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Hip-hop & rap"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Sabrina Saed is a spell-weaver. Behind the microphone, the Seattle-based singer-songwriter spins tender acoustic guitar and wounded vocals together and sends them into the air, where they stick to your ears like gossamer. Your Jack performances have been d",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/sabrina-saed-your-jack/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/sabrina-saed-your-jack/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -36476,6 +37918,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-29-2d912c30f432",
+    "title": "Carpathian Pacific Express",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Yankl Falk and the Carpathian-Pacific Express are neo-klezmer and beyond – which is to say, the music has a passport full of old-world Eastern European melodies and a tendency to miss the train on purpose. Klezmer and Yiddish song, mystical Hasidic chant, ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/carpathian-pacific-express-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/carpathian-pacific-express-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2026-11-29-ffdff56acd02",
     "title": "SOLD OUT: Marc Maron: Yammering into the Void Tour (Early Show)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -36724,6 +38210,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-high-water-2026-11-29-acd68672ac36",
+    "title": "Jesco Payne & the Painkillers, DJ Dentside, Boot Scoot Pdx",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "High Water Mark",
+    "url": "https://www.treetix.com/event/204957/highwatermark",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark",
+        "url": "https://www.treetix.com/event/204957/highwatermark",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/highwatermark/images/events/2026-11-29-204957-payne.jpg",
+    "sourceEventId": 204957,
+    "sourceCalendar": "highwatermark",
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2026-11-29-d44df2872e4c",
     "title": "SOLD OUT: Marc Maron: Yammering into the Void Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -36863,6 +38396,54 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-11-29T19:00:00-08:00"
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-29-68f5fc2ec260",
+    "title": "Henry Ivie-Gardner",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Henry Ivie-Gardner is a 23 year old guitarist, and composer from Bend, OR. His music blends elements of folk, jazz, ambient, and impressionism to create a nourishing tapestry of sound and imagination, or &lsquo;classical music for hippies&rsquo;. Joining h",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/henry-ivie-gardner/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/henry-ivie-gardner/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-11-29-ce462e72242b",
     "title": "Jalen Ngonda",
     "subtitle": "Source-discovered venue event · details need review",
@@ -36908,6 +38489,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-29-d8a0134b3f56",
+    "title": "Pink Martini",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/95614321/pink-martini-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/95614321/pink-martini-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/84851d6107bfc82e224110a3ebe4d1d7.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -37159,6 +38791,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-11-30-fc2ba5cac8c3",
+    "title": "FREE! Covers Only",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Come perform your favorite song or poem that was written by somebody else at this open mic night placing a special emphasis on Covers Only. **Atlantis Lounge is All Ages until 9:00 PM, at that time any minors will be asked to leave the space. Thanks for yo",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-covers-only-17/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-covers-only-17/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-30-7073c6f52ca9",
     "title": "Square Dancing / KARAOKE @ 9:30",
     "subtitle": "Source-discovered venue event · details need review",
@@ -37206,6 +38882,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-11-30-961ae274405d",
+    "title": "Pink Martini",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/66160391/pink-martini-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/66160391/pink-martini-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/395c82a0424dfda597133fcceb988dce.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -37715,6 +39442,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-02-7901535aa0cb",
+    "title": "FREE! Trivia-sippi! Weekly Quiz Night!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Other",
+    "tags": [
+      "Source-listed Other",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Atlantis Lounge at Mississippi Pizza Pub is excited to announce a new weekly trivia event! Michael Rainey, one of the hosts and organizers of the monthly Nerd Nite at the Pub, brings his formidable talents to the new Pub Quiz/Trivia Night. Rainey write",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-64/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-64/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -39088,6 +40859,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-12-04-8e1b1e56a8f8",
+    "title": "Cult Of- The Muppets Holiday Show!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Cult Of! A Show of Pop Culture Obsessions returns with its annual Holiday Show…The Muppets! Our 4th year of the show. 2 Nights (21+) celebrating Jim Henson&rsquo;s iconic Muppets! Drag and Burlesque numbers based on your favorite characters. From Miss Pigg",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-12-04-b4501a55350c",
     "title": "L'Rain",
     "subtitle": "Source-discovered venue event · details need review",
@@ -39918,6 +41733,50 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-12-05T19:30:00-08:00"
   },
   {
+    "id": "auto-atlantis-lounge-2026-12-05-cd9773a2d61a",
+    "title": "Cult Of- The Muppets Holiday Show!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Cult Of! A Show of Pop Culture Obsessions returns with its annual Holiday Show…The Muppets! Our 4th year of the show. 2 Nights (21+) celebrating Jim Henson&rsquo;s iconic Muppets! Drag and Burlesque numbers based on your favorite characters. From Miss Pigg",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "wonder-feeble-little-horse-bitknot-tour-2026-12-05",
     "title": "feeble little horse — bitknot tour",
     "subtitle": "Live show · Rock, Noise & experimental",
@@ -40507,6 +42366,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-12-05-48358d6d564e",
+    "title": "SMASH disco~glam~metal~punk-hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T23:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-9/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-9/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/78/14/34_Original.jpg?v=12",
+      "sourceUrl": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-9/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-06-94f55d558593",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40606,6 +42526,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-06-7582dc0ab0ee",
+    "title": "Cult Of- The Muppets Holiday Show!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Cult Of! A Show of Pop Culture Obsessions returns with its annual Holiday Show…The Muppets! Our 4th year of the show. Celebrating Jim Henson&rsquo;s iconic Muppets! Drag and Burlesque numbers based on your favorite characters. From Miss Piggy to Gonzo! Sun",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-3/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/cult-of-the-muppets-holiday-show-3/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -43965,6 +45929,95 @@ window.SHOWS_EVENTS = [
     "sourceNote": "Directions point to Outlet; the market spans several nearby businesses."
   },
   {
+    "id": "auto-atlantis-lounge-2026-12-12-6a4d27b3546c",
+    "title": "FREE! Miss Charlotte and Friends",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Join us Miss Charlotte and Friends for a Kinder-Ukulele book release party featuring David Rovics!",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/free-miss-charlotte-and-friends/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/free-miss-charlotte-and-friends/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-12-8dec3c92530a",
+    "title": "Kevin Watson Band",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Kevin Watson is an Oregon singer-songwriter whose work blends the rugged Americana spirit of the Pacific Northwest with the timeless story telling of classic folk. Drawing inspiration from artists like Sturgill Simpson, Townes Van Zant, and Gillian Welch, ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/kevin-watson-band/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/kevin-watson-band/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-12-12-441ae829116e",
     "title": "She Ate: A Food Drive for Esther's Pantry",
     "subtitle": "Source-discovered venue event · details need review",
@@ -44406,6 +46459,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-12-12-f85cd045f679",
+    "title": "Wizard People",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Wizard People is BACK. Barely? The NW’s favorite christmas event / 2D-media detruct-o-thon / metatheatrical freak show considered taking the year off. We went big last year. Real big. We read your minds. Prof B literally got digitized into the film and kil",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/wizard-people/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/wizard-people/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-high-water-2026-12-12-bb096780ab95",
     "title": "Left Of The Dial, Hot Honey",
     "subtitle": "Source-discovered venue event · details need review",
@@ -44742,6 +46840,55 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-13-7d3e7cfa1b74",
+    "title": "The Loeffelmen",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Blues",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Blues",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: The Loeffelmen are a few Portland musicians who&rsquo;ve spent years crossing paths in bands like The Moaning Lorries and Babe Ruthless before finally ending up in the same garage. They play mostly original, guitar-driven roots rock inspired by the occasio",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/the-loeffelmen/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/the-loeffelmen/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -46535,6 +48682,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2026-12-18-c2b0fb010dd0",
+    "title": "Baz Moto",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Baz Moto is a supergroup formed from well-known Portland bands the Dan Reed Network (Mercury/Polygram Records), Hit Machine, marching band MarchFourth, Erotic City (Prince tribute band), My Siamese Twin and (retired) Nu Wavers (New Wave cover bands), and M",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/baz-moto/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/baz-moto/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-18-5b5eaa21d85f",
     "title": "Boy Dinner + TBD + TBD",
     "subtitle": "Source-discovered venue event · details need review",
@@ -47839,6 +50030,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-21-abf9847cd797",
+    "title": "Drunken Angel",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Drunken Angel is a Portland-based band blending rock, folk, and Americana with a captivating mix of originals and eclectic covers. From the soulful storytelling of Lucinda Williams and Emmylou Harris to the haunting vibes of Portishead and the edgy energy ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/drunken-angel/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/drunken-angel/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -51060,6 +53295,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2027-01-14-a5420261fd63",
+    "title": "Cautious Driver, Bory, Big Top",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Cautious Driver makes big, emotionally aware pop music for weirdos.The new project from Portland, Oregon consists of DIY singer-songwriter Dylan Pacheco, bassist Adam Bates & drummer Jack Knopp. Combining classic indie rock sensibilities with idiosyncratic",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/cautious-driver-bory-big-top/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/cautious-driver-bory-big-top/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-01-14-b3fd0e8ee1cc",
     "title": "Five For Fighting with String Quartet",
     "subtitle": "Source-discovered venue event · details need review",
@@ -51456,6 +53735,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2027-01-16-1e11684947f5",
+    "title": "An Evening With: Mitch Whitaker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-16T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Bio: Alt-folk artist Mitch Whitaker is a songwriter&rsquo;s songwriter. With a poet&rsquo;s instinct, Whitaker&rsquo;s distinctive voice delivers songs that confront complicated truths in complicated times. Performing as a five-piece ensemble, The Mitch Wh",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/an-evening-with-mitch-whitaker/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/an-evening-with-mitch-whitaker/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -52003,6 +54326,53 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2027-01-21-052f85838047",
+    "title": "Hey There + OSHA Violations",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: OSHA Violations is a PDX Based Pop Punk / Emo band for hotties with daddy issues. @OSHAViolationsBand on Insta. Stream their EP Mid 20’s Teenage Angst! Bitten makes dreamy dirty dancey alt rock in Portland, for job quitters and friend kissers. Follow @bitt",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/hey-there-osha-violations/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/hey-there-osha-violations/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -57921,6 +60291,61 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-03-11-ab4b160ff515",
+    "title": "MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: JLR Seating Map Notes : For this show, you may reserve individual tables on the map pictured. Note that some tables have limited sightlines as noted. All table reservations include admission. Instructions: For Table Reservations : Note the relative location ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-9/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-9/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/79/34_Original.jpg?v=6",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-9/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-roseland-2027-03-11-ab52dde311a9",
     "title": "2hollis: The Pirouette Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -58123,6 +60548,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-03-12-a0ca66f78e80",
+    "title": "Jeff Lorber - Early Show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: *Early Show* Doors: 6:30 pm Show: 7:30 pm 21+ Jeff Lorber - Early Show",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/jeff-lorber-early-show/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-08",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/jeff-lorber-early-show/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-08",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/08/69/54_Original.jpg?v=6",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/jeff-lorber-early-show/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-08",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
