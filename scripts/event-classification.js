@@ -14,8 +14,8 @@ const STYLES=[
  {label:"Rock",rx:/\b(?:rock\s+(?:music|show|concert|band|night)|rock[ -]?(?:n[ -]?)?roll)\b/i},
  {label:"Jazz",rx:/\b(?:jazz|bebop|hard bop|free jazz|jazz fusion|swing music)\b/i},
  {label:"Blues",rx:/\b(?:blues(?:\s+(?:music|band|show))?|delta blues)\b/i},
- {label:"Hip-hop & rap",rx:/\b(?:hip[\s-]?hop|rap(?:\s+(?:music|show|concert|artist|night))?|emcee)\b/i},
- {label:"R&B & soul",rx:/\b(?:r\s*&\s*b|rhythm\s+(?:and|&)\s+blues|neo[\s-]?soul|soul(?:\s+(?:music|night|band|show|revu[e]e))?)\b/i},
+ {label:"Hip-hop & rap",rx:/\b(?:hip[\s-]?hop|rap(?:pers?|ping)?(?:\s+(?:music|show|concert|artist|night))?|emcees?|boom[\s-]?bap)\b/i},
+ {label:"R&B & soul",rx:/\b(?:r\s*(?:&|and|n)\s*b|rnb|rhythm\s+(?:and|&)\s+blues|neo[\s-]?soul|soul(?:\s+(?:music|night|band|show|revu[e]e))?)\b/i},
  {label:"Funk & disco",rx:/\b(?:funk|funky|disco|boogie)\b/i},
  {label:"Folk & bluegrass",rx:/\b(?:folk(?:\s+music)?|bluegrass|old[\s-]?time\s+music|acoustic\s+(?:music|show|duo))\b/i},
  {label:"Country",rx:/\b(?:country\s+(?:music|show|band|concert|artist|night|singer|songwriter)|country\s*(?:&|and)\s*americana|alt[\s-]?country|outlaw\s+country|honky[\s-]?tonk|country[\s-]?western)\b/i},
@@ -45,7 +45,12 @@ function eventWords(item){
 }
 function musicStylesFromSource(item){
  const words=eventWords(item);
- const forbidden=Object.values(EVENT_TYPES).some(rx=>rx.test(words))||NON_MUSIC.test(words);
+ // A documented rap/hip-hop/R&B/soul performance open mic is music, but a
+ // generic, poetry or comedy open mic must not acquire a guessed genre.
+ const musicOpenMic=/\bopen[\s-]?mic\b/i.test(words)&&
+  /\b(?:hip[\s-]?hop|rap(?:pers?|ping)?|r\s*(?:&|and|n)\s*b|rnb|neo[\s-]?soul|soul)\b/i.test(words);
+ const nonMusicWords=musicOpenMic?words.replace(/\bopen[\s-]?mic\b/gi,""):words;
+ const forbidden=Object.values(EVENT_TYPES).some(rx=>rx.test(words))||NON_MUSIC.test(nonMusicWords);
  if(forbidden)return [];
  const explicit=[];
  for(const style of STYLES){
