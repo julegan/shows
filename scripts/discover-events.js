@@ -280,6 +280,9 @@ function reconcile(existing,records){
    held.push({sourceId:source,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
   const others=[...existing,...accepted].filter(v=>sameDay(v,e));
+  if(source==="kenton-club"&&e.url===kenton.SOURCE_URL&&others.length){
+   held.push({sourceId:source,hold:"Kenton roster already has a bill on this date; check for a lineup update or a separate event",title:e.title,url:e.url,date:day,venue:e.venue});continue;
+  }
   // Preserve prior date-only handling: distinct official untimed venue entries
   // are separately reviewed, never manufactured into a fake shared clock.
   if(others.some(v=>!(v.startTimeKind==="date-only"&&e.startTimeKind==="date-only")&&!distinctTimedVenueShows(v,e))){
