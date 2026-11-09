@@ -7,7 +7,7 @@ const now=new Date("2026-11-08T17:00:00-08:00");
 const greater="https://thegoodfoot.com/events/greaterkind-8pm-doors-4/";
 const soul="https://thegoodfoot.com/events/soul-stew-with-dj-aquaman-friends-9pm-doors-2/";
 const comedy="https://thegoodfoot.com/events/standup-comedy-7pm-doors/";
-assert(source?.status==="pilot-enabled"&&source.adapter==="goodfoot-original-html");
+assert(source?.status==="adapter-needed"&&source.adapter==="goodfoot-original-html", "Blocked original source must remain inactive");
 assert.equal(eventUrl(greater),greater);
 for(const u of ["http://thegoodfoot.com/events/fake/","https://evil.test/events/greaterkind-8pm-doors-4/",
  "https://thegoodfoot.com/music/","https://thegoodfoot.com/events/greaterkind-8pm-doors-4/?utm_source=x",
