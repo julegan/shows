@@ -111,7 +111,9 @@ jobs:
         run: |
           node --check scripts/goodfoot-importer.js
           node tests/goodfoot-importer.js
-          node -e 'const m=require("./scripts/goodfoot-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="the-goodfoot");m.fetchEvents(s,fetch,{maxEvents:12}).then(rows=>{const valid=rows.filter(r=>r.startDate);console.log("LIVE GOODFOOT "+JSON.stringify({checked:rows.length,verified:valid.length,held:rows.length-valid.length,sample:rows.slice(0,4).map(x=>({title:x.title,verified:!!x.startDate,hold:x.hold}))}));if(valid.length<3)process.exitCode=1}).catch(e=>{console.error(e);process.exitCode=1})'
+          node scripts/probe-goodfoot-readiness.js
+          # Keep original Goodfoot feed disabled if GitHub runner receives a 403.
+          # A viable first-party endpoint must be independently verified before activation.
 
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
