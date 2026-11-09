@@ -32,6 +32,19 @@ assert.equal(r.records[0].artwork.sourceUrl,liveSourceUrl);
 assert.deepEqual(r.records[0].categories,[]);
 assert.equal(m.record(sample({title:"Bridgetown Trivia"})).sourceVerifiedMusic,false);
 assert.equal(m.record(sample({title:"The Thesis with music by DJ Verbz"})).sourceVerifiedMusic,true);
+
+const thesisOriginal=m.record(sample({
+ title:"The Thesis - Starring 4our & Rachel Wong",
+ fullUrl:"/music/2026/11/5/the-thesis-starring-4our-rachel-wong",
+ startDate:Date.parse("2026-11-06T04:30:00Z"),endDate:Date.parse("2026-11-06T07:30:00Z")
+}));
+const thesisExtract=extract(thesisOriginal,src,new Date("2026-11-04T12:00:00-08:00"));
+assert(thesisExtract.event,"Verified source event remains eligible for review");
+assert.equal(thesisExtract.event.category,"Music");
+assert.deepEqual(thesisExtract.event.musicStyles,["Hip-hop & rap"]);
+assert.equal(thesisExtract.event.classificationSourceUrl,"https://thethesispdx.com/about/",
+ "Proof from independent organizer should remain attached to original event review");
+
 assert.equal(m.record(sample({title:"Live jazz trio"})).sourceVerifiedMusic,true);
 assert.equal(m.record(sample({location:{addressTitle:"Wrong Bar",addressLine1:"Different"}})).hold.startsWith("Source location"),true);
 assert.equal(m.record(sample({startDate:"2026-11-07"})).hold.startsWith("Original venue event"),true);
