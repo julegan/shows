@@ -23,6 +23,7 @@ const alberta=require("./alberta-street-pub-importer");
 const rose=require("./alberta-rose-importer");
 const jlr=require("./jack-london-importer");
 const atlantis=require("./atlantis-importer");
+const goodfoot=require("./goodfoot-importer");
 const mission=require("./mission-importer");
 const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
@@ -90,6 +91,7 @@ function urlOf(item,src){
   if(src.adapter==="alberta-rose-original-html")return rose.eventUrl(u.href)||rose.ticketUrl(u.href)?.url||null;
   if(src.adapter==="jack-london-original-html")return jlr.eventUrl(u.href);
   if(src.adapter==="atlantis-original-html")return atlantis.eventUrl(u.href);
+  if(src.adapter==="goodfoot-original-html")return goodfoot.eventUrl(u.href);
   if(src.adapter==="mission-official-html")return mission.eventUrl(u.href);
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
@@ -179,7 +181,7 @@ function extract(item,src,now){
   musicStyles:classification.musicStyles,eventFormat:"unverified",
   classificationEvidence:classification.evidence,
   ...(classification.evidenceUrl?{classificationSourceUrl:classification.evidenceUrl}:{}),
-  startTimeKind:dateOnly?"date-only":"listed",startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
+  startTimeKind:dateOnly?"date-only":(src.adapter==="goodfoot-original-html"&&item.sourceTimeKind==="doors"?"doors":"listed"),startsAt:start,endsAt:null,venue:item.venue||src.venue,address:item.address===undefined?src.address:item.address,neighborhood:item.neighborhood||src.neighborhood||"Not confirmed",
   price:"See organizer for current admission",free:null,age:"Not published",
   description:"Automatically discovered from a primary venue or promoter listing. "+tidy(item.timeEvidence||"The listed time may mean doors instead of performance; confirm with organizer.")+" "+tidy(item.description||item.excerpt||item.body||""),
   source:src.name,url,icon:category==="Music"?"♫":"◇",sourceCheckedAt:asof,verificationMethod:"Automated venue data; editorial date, time, event type and cancellation verification required",
@@ -212,7 +214,8 @@ function reconcile(existing,records){
    if(sourceId==="roseland")valid=host==="roselandpdx.com"&&/^\/event\/[^/]+\/roseland-theater\/portland-oregon\/?$/i.test(p)&&event.venue==="Roseland Theater";
    if(sourceId==="hawthorne-theatre")valid=host==="hawthornetheatre.com"&&/^\/event\/[^/]+\/hawthorne-theatre\/portland-oregon\/?$/i.test(p)&&event.venue==="Hawthorne Theatre";
    if(sourceId==="the-1905")valid=host==="the1905.turntabletickets.com"&&/^\/shows\/[1-9]\d{2,8}\/20\d\d-\d\d-\d\d$/.test(p)&&event.venue==="The 1905"&&/^\d+$/.test(String(event.sourcePerformanceId||""));
-   if(sourceId==="atlantis-lounge")valid=host==="mississippipizza.com"&&/^\/event\/[a-z0-9][a-z0-9-]{1,180}\/?$/i.test(p)&&event.venue==="Mississippi Pizza / Atlantis Lounge";
+   if(sourceId==="the-goodfoot")valid=host==="thegoodfoot.com"&&/^\/events\/[a-z0-9][a-z0-9-]{1,180}\/?$/i.test(p)&&event.venue==="The Goodfoot";
+    if(sourceId==="atlantis-lounge")valid=host==="mississippipizza.com"&&/^\/event\/[a-z0-9][a-z0-9-]{1,180}\/?$/i.test(p)&&event.venue==="Mississippi Pizza / Atlantis Lounge";
     if(sourceId==="jack-london-revue")valid=host==="jacklondonrevue.com"&&/^\/tm-event\/[a-z0-9][a-z0-9-]{1,180}\/?$/i.test(p)&&event.venue==="Jack London Revue";
    if(sourceId==="alberta-rose-theatre")valid=event.venue==="Alberta Rose Theatre"&&((host==="albertarosetheatre.com"&&/^\/event\/[a-z0-9][a-z0-9-]{1,220}\/alberta-rose-theatre\/portland-oregon\/?$/i.test(p))||(host==="etix.com"&&/^\/ticket\/p\/\d{5,12}\/[a-z0-9-]+-portland-alberta-rose-theatre\/?$/i.test(p)));
    if(sourceId==="alberta-street-pub")valid=host==="albertastreetpub.com"&&/^\/music\/20\d\d\/(?:[1-9]|1[0-2])\/(?:[1-9]|[12]\d|3[01])\/[a-z0-9][a-z0-9-]{1,220}\/?$/i.test(p)&&event.venue==="Alberta Street Pub";
@@ -250,6 +253,7 @@ function reconcile(existing,records){
      (distinctTitles(a.title,b.title)||separateShowSession(a.title,b.title)||
       (source==="revolution-hall"&&minutes>=120&&norm(a.title)===norm(b.title))||
       (source==="atlantis-lounge"&&minutes>=90&&distinctTitles(a.title,b.title))||
+       (source==="the-goodfoot"&&minutes>=90&&distinctTitles(a.title,b.title))||
        (source==="alberta-rose-theatre"&&minutes>=120&&a.venue==="Alberta Rose Theatre"&&b.venue==="Alberta Rose Theatre"&&/^\d{5,12}$/.test(String(a.sourceTicketId||""))&&/^\d{5,12}$/.test(String(b.sourceTicketId||""))&&a.sourceTicketId!==b.sourceTicketId)||
       (source==="the-1905"&&is1905Session)))return true;
   // Retain previous independent-show exceptions for already verified venue IDs.
@@ -275,7 +279,7 @@ function reconcile(existing,records){
     !(identity&&eventIdentity(v,source)&&identity!==eventIdentity(v,source))))){
    skipped.push({sourceId:source,skip:"Already present",title:e.title,url:e.url});continue;
   }
-  if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&(new URL(v.url).pathname.includes("/events/")||source==="atlantis-lounge"))){
+  if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&(new URL(v.url).pathname.includes("/events/")||source==="atlantis-lounge"||source==="the-goodfoot"))){
    held.push({sourceId:source,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
   const others=[...existing,...accepted].filter(v=>sameDay(v,e));
@@ -307,6 +311,7 @@ async function fetchItems(source){
  if(source.adapter==="alberta-rose-original-html")return rose.fetchEvents(source);
  if(source.adapter==="jack-london-original-html")return jlr.fetchEvents(source);
   if(source.adapter==="atlantis-original-html")return atlantis.fetchEvents(source);
+  if(source.adapter==="goodfoot-original-html")return goodfoot.fetchEvents(source);
  if(source.adapter==="offbeat-official-html")return offbeat.fetchEvents(source);
  if(source.adapter==="venuepilot-public-api")return coffin.fetchCoffinEvents();
  if(source.adapter==="starday-google-html")return starday.fetchOfficialStarday(source);
