@@ -494,12 +494,12 @@
       "id": "the-goodfoot",
       "name": "The Goodfoot",
       "tier": "core",
-      "ingestionStatus": "adapter-needed",
+      "ingestionStatus": "active-adapter",
       "calendarUrl": "https://thegoodfoot.com/music/",
       "aliases": [
         "Goodfoot Pub & Lounge"
       ],
-      "notes": "Original music calendar includes funk, soul, jazz, DJs, global and other live music; also lists trivia and comedy. Keep format distinctions and individual original show links.",
+      "notes": "Original Goodfoot /music/ first-page event roster and individual primary /events/ pages checked by a bounded read-only source adapter. Live schema year/timezone, venue and visible date are verified; listings with uncertain format or changed source are held for review. First roster may be paginated and does not yet establish full coverage; separate music, DJ, trivia and comedy accurately.",
       "editorialPreference": "scene"
     },
     {
