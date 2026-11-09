@@ -79,4 +79,4 @@ function classifyEvent(item){
  }
  return {category:"Unclassified",musicStyles:[],evidence:"No verified event type or genre"};
 }
-module.exports={classifyEvent,musicStylesFromSource,eventWords};
+module.exports={classifyEvent,musicStylesFromSource,eventWords,STYLE_LABELS:STYLES.map(x=>x.label)};
