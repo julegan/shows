@@ -2,12 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**135 public table rows checked; 57 distinct relevant research leads (54 preferred-venue, 3 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**132 public table rows checked; 55 distinct relevant research leads (52 preferred-venue, 3 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-08 | [Syd: Beard Tour](https://www.etix.com/ticket/p/81998178/sydbeard-tour-portland-roseland-theater) | Roseland Theater | Not categorized / Live Nation Pnw | Preferred SHOWS venue |
-| 2026-11-08 | [Church Of Hive / Skully : Lord Noctis](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14971933) | Star Theater | goth, industrial, darkwave / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
 | 2026-11-11 | [Bieber & A Be](https://www.etix.com/ticket/p/54508584/bieber-and-a-beata-justin-bieber-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2026-11-13 | [Soul'd Out Presents: Shelly Rudolph ~ Diva Deluxe](https://www.ticketweb.com/event/shelly-rudolph-jack-london-revue-tickets/14331914) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-13 | [Suzy Sheer w/ Patch +](https://www.ticketweb.com/event/id/15041103) | Star Theater | electropop, synthpop, electroclash, synthwave / Not listed | Preferred SHOWS venue + relevant music tag |
