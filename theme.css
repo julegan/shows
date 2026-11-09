@@ -133,12 +133,6 @@ dialog::backdrop { background: rgb(0 0 0 / .76); }
 .detail-actions .primary:hover, .detail-actions .accent:hover { background: #f3f1ed; }
 .preview-dialog a:focus-visible, .preview-dialog button:focus-visible { outline-color: var(--focus); }
 
-/* Give long bills room and keep missing-flyer frames at the source ratio. */
-.preview-cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
-.preview-event .preview-art { align-self: flex-start; }
-@media (max-width: 680px) { .preview-cards { grid-template-columns: 1fr; } }
-
-
 /* Optional in-app feedback, available only with a configured secure receiver. */
 .shows-feedback-invite[hidden], .shows-feedback-dialog [hidden] { display: none !important; }
 .shows-feedback-invite { margin: 35px 0 0; padding: 22px 0; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }

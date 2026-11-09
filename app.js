@@ -251,25 +251,27 @@
     $("dialogContent").innerHTML =
       '<div class="detail-wrap"><div class="dialog-top"><span class="detail-tag">'+esc(displayCategory(e))+' · '+esc(e.neighborhood||"Portland")+
       '</span><button type="button" class="dialog-close" data-close aria-label="Close event">×</button></div>'+
-      art(e,true)+'<h2 id="dialogTitle">'+esc(e.title)+'</h2><p class="detail-sub">'+esc(e.subtitle || "")+
+      '<h2 id="dialogTitle">'+esc(e.title)+'</h2><p class="detail-sub">'+esc(e.subtitle || "")+
       '</p><div class="detail-info"><div><strong>When</strong><span>'+esc(dateLong.format(new Date(e.startsAt)))+'<br>'+esc(clock(e))+
       (e.endsAt?' – '+esc(timeFormat.format(new Date(e.endsAt))):' · end time unconfirmed')+
       '</span></div><div><strong>Where</strong><span>'+esc(e.venue)+'<br>'+esc(e.address||"Address not confirmed")+
       (e.address ? ' · <a href="'+esc(mapLink(e.address))+'" target="_blank" rel="noopener noreferrer">Directions ↗</a>' : '')+
       '</span></div><div><strong>Cost</strong><span>'+esc(e.price||"Unconfirmed")+
       '</span></div><div><strong>Ages</strong><span>'+esc(e.age||"Unconfirmed")+
-      '</span></div></div><p class="detail-description">'+esc(e.description||"")+'</p>'+
+      '</span></div></div>'+
       (e.accessibility?'<p class="preview-info"><strong>Access:</strong> '+esc(e.accessibility)+'</p>':"")+
-      '<p class="preview-info"><strong>Sources:</strong> '+links+'</p>'+
-      (e.sourceCheckedAt?'<p class="preview-info">Source checked '+esc(e.sourceCheckedAt)+'. Verify details before attending.</p>':"")+
-      artwork+'<div class="detail-actions"><a class="primary" target="_blank" rel="noopener noreferrer" href="'+esc(e.url)+'">Official listing ↗</a>'+
-      '<a target="_blank" rel="noopener noreferrer" href="'+esc(googleLink(e))+'">+ Google Calendar ↗</a>'+
+      '<div class="detail-actions"><a class="primary" target="_blank" rel="noopener noreferrer" href="'+esc(e.url)+'">Official listing ↗</a></div>'+
+      art(e,true)+'<p class="detail-description">'+esc(e.description||"")+'</p>'+
+      '<div class="detail-actions"><a target="_blank" rel="noopener noreferrer" href="'+esc(googleLink(e))+'">+ Google Calendar ↗</a>'+
       '<button type="button" data-ics="'+esc(e.id)+'">↓ Apple / Outlook (.ics)</button>'+
       '<button type="button" data-save="'+esc(e.id)+'">'+(saved.has(e.id)?"★ Saved — remove":"☆ Save for later")+'</button>'+
       (e.seriesId?'<button type="button" data-series="'+esc(e.seriesId)+'">↓ Add series dates (.ics)</button>':"")+
       '<button type="button" data-share="'+esc(e.id)+'">↗ Share event</button>'+
       (window.SHOWS_FEEDBACK_READY ? '<button type="button" data-report="'+esc(e.id)+'">Report listing issue</button>' : "")+'</div>'+
-      (e.startTimeKind==="date-only" ? '<p class="detail-footnote">Date confirmed; start time not published. Calendar exports use a clearly labeled all-day placeholder.</p>' : !e.endsAt ? '<p class="detail-footnote">End time unconfirmed; exports use an editable one-hour placeholder.</p>' : "")+'</div>';
+      (e.startTimeKind==="date-only" ? '<p class="detail-footnote">Date confirmed; start time not published. Calendar exports use a clearly labeled all-day placeholder.</p>' : !e.endsAt ? '<p class="detail-footnote">End time unconfirmed; exports use an editable one-hour placeholder.</p>' : "")+
+      '<div class="detail-sources">'+(links?'<p class="preview-info"><strong>Sources:</strong> '+links+'</p>':"")+
+      (e.sourceCheckedAt?'<p class="preview-info">Source checked '+esc(e.sourceCheckedAt)+'. Verify details before attending.</p>':"")+
+      artwork+'</div></div>';
     if (!dlg.open) dlg.showModal();
     const eventLocation = new URL(location.href);
     eventLocation.searchParams.set("event", e.id);

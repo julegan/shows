@@ -67,6 +67,8 @@ async function showsViews(browser,viewport){
   assert(await page.locator(".preview-event").count()>0,"Music from venue calendar appears in feed");
   assert(await page.locator(".preview-event .preview-art img").count()>0,
     "Attributed official-venue-calendar image renders on event card");
+  const flyer=page.locator(".preview-event .preview-art").first();
+  assert((await flyer.boundingBox()).width>=100,"Flyers have room to read on desktop and mobile cards");
   await page.locator("#search").fill("");
   await page.locator("#jumpToday").click();
   // Browsing earlier dates is possible without loading them by default.
@@ -80,6 +82,8 @@ async function showsViews(browser,viewport){
   await list.first().click();
   assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Event dialog opens");
   assert(await page.locator("#eventDialog .preview-detail-art").isVisible(),"Artwork is visible in detail");
+  const dialogFits=await page.locator("#eventDialog").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
+  assert(dialogFits,"Flyer and event details fit the dialog width");
   const google=await page.locator("#eventDialog a").filter({hasText:"Google Calendar"}).getAttribute("href");
   assert(google&&google.includes("calendar.google.com"),"Google Calendar export exists");
   const dl=page.waitForEvent("download");
