@@ -494,12 +494,12 @@
       "id": "the-goodfoot",
       "name": "The Goodfoot",
       "tier": "core",
-      "ingestionStatus": "active-adapter",
+      "ingestionStatus": "adapter-needed",
       "calendarUrl": "https://thegoodfoot.com/music/",
       "aliases": [
         "Goodfoot Pub & Lounge"
       ],
-      "notes": "Original Goodfoot /music/ first-page event roster and individual primary /events/ pages checked by a bounded read-only source adapter. Live schema year/timezone, venue and visible date are verified; listings with uncertain format or changed source are held for review. First roster may be paginated and does not yet establish full coverage; separate music, DJ, trivia and comedy accurately.",
+      "notes": "Original Goodfoot event importer and tests exist but official site blocks the GitHub runner (HTTP 403 for page, WP REST, and ICS on 2026-11-08). No active intake until approved original feed is reachable. Existing curated scene-scout seed retained; include music, DJ and other event types once authorized source access is available.",
       "editorialPreference": "scene"
     },
     {
