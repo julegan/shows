@@ -63,6 +63,8 @@ assert(first.event&&second.event);
 assert.equal(reconcile([],[first,second]).accepted.length,2,
  "Separate original events with different identities and verified clocks can appear on the same day");
 assert.equal(reconcile([first.event],[first]).accepted.length,0,"Stable original permalink avoids repeated insertion");
+assert.equal(reconcile([{...first.event,startsAt:"2026-11-29T20:00:00-08:00"}],[first]).held[0]?.hold,
+ "Potential reschedule of an existing event URL","Changed event date cannot silently duplicate a published occurrence");
 const pages=new Map([[CALENDAR,calendar],[hiphop,hip],[soul,page("Local Original Artist","Sunday, November 22, 2026","5pm","Enjoy the evening.")]]);
 const attempted=[];
 (async()=>{
