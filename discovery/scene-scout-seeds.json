@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "purpose": "Curated original music venues, independent organizers, and unusual culture sources for discovering NEW candidate event/source links. Research only; not enabled importers.",
-  "updatedOn": "2026-11-06",
+  "updatedOn": "2026-11-08",
   "rules": [
     "Prioritize original venue/ticket calendars and independent organizers across music genres, plus artist/vendor touring pages and selective underground or local indexes.",
     "Never infer an event year from the date a webpage was posted, or assume a seasonal market recurrence. Vendor listings are leads, not independently verified event calendars.",
@@ -136,6 +136,46 @@
       "url": "https://thethesispdx.com/",
       "kind": "original-organizer",
       "focus": "Original independent hip-hop, R&B and soul concert announcements at Alberta Street Pub; never infer dates from monthly recurrence",
+      "relevance": "high"
+    },
+    {
+      "id": "music-mississippi-pizza-atlantis",
+      "label": "Mississippi Pizza & Atlantis Lounge original events",
+      "url": "https://mississippipizza.com/events/",
+      "kind": "original-venue",
+      "focus": "Official dated event cards and event detail pages for Hungry Hungry Hip Hop, independently programmed rap and R&B, soul bills and adjacent original music; distinguish from Mississippi Studios",
+      "relevance": "high"
+    },
+    {
+      "id": "music-a-beat-happening",
+      "label": "A Beat Happening local producer and DJ showcases",
+      "url": "https://abeathappening.org/events",
+      "kind": "original-organizer",
+      "focus": "Original DIY all-ages producer, DJ, hip-hop, beat and experimental performances; verify each new dated announcement, not the monthly pattern",
+      "relevance": "high"
+    },
+    {
+      "id": "music-late-lyrics",
+      "label": "Late Lyrics independent hip-hop and R&B open mic",
+      "url": "https://www.latelyrics.com/",
+      "kind": "original-organizer",
+      "focus": "Independent Portland hip-hop and R&B performer showcases and open mics. Last dated 2026 event listed as October 29: do not fabricate later 2026 dates",
+      "relevance": "high"
+    },
+    {
+      "id": "music-pdx-hip-hop-week",
+      "label": "PDX Hip Hop Week original organizer calendar",
+      "url": "https://pdxhiphopweek.com/calendar",
+      "kind": "original-organizer",
+      "focus": "Original local hip-hop cultural showcases and associated community programming; seasonal calendar currently has no upcoming entries, so scout for new listings only",
+      "relevance": "high"
+    },
+    {
+      "id": "music-latelier-yaffe",
+      "label": "L’Atelier Yaffe local music collaborators",
+      "url": "https://www.atelieryaffe.com/events",
+      "kind": "original-venue",
+      "focus": "Event collaborator directory for A Beat Happening, RnB PDX Chapter, Sight & Sound and BIPOC open-mic organizers; lacks reliably dated primary event cards, so treat as source leads only",
       "relevance": "high"
     }
   ]
