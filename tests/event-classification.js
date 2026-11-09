@@ -14,6 +14,31 @@ test("Live Rock Show", "Music",["Rock"]);
 test("Free jazz quartet live music", "Music",["Jazz"]);
 test("Blues live music", "Music",["Blues"]);
 test("Portland independent hip-hop concert", "Music",["Hip-hop & rap"]);
+
+const thesisUrl="https://www.albertastreetpub.com/music/2026/11/5/the-thesis-starring-4our-rachel-wong";
+const thesisItem={title:"The Thesis - Starring 4our & Rachel Wong",
+ venue:"Alberta Street Pub",sourceId:"alberta-street-pub",url:thesisUrl};
+const thesis=classifyEvent(thesisItem);
+assert.equal(thesis.category,"Music","Original promoter-specific series can be confirmed without venue-wide inference");
+assert.deepEqual(thesis.musicStyles,["Hip-hop & rap"],"Only organizer-evidenced hip-hop, not an assumption that every lineup is R&B");
+assert.equal(thesis.evidenceUrl,"https://thethesispdx.com/about/");
+assert.deepEqual(classifyEvent({...thesisItem,title:"The Thesis - R&B and soul showcase"}).musicStyles,
+ ["Hip-hop & rap","R&B & soul"],"Event-specific style wording can add supported styles to organizer verified program");
+for(const variant of [
+ {...thesisItem,sourceId:"unknown-venue"},
+ {...thesisItem,venue:"Other Venue"},
+ {...thesisItem,url:"https://other.example.org/music/2026/11/5/the-thesis-starring"},
+ {...thesisItem,url:"https://www.albertastreetpub.com/music?format=json"},
+ {...thesisItem,url:thesisUrl+"?utm_source=test"},
+ {...thesisItem,title:"The Thesis of Everything"},
+ {...thesisItem,title:"Unrelated local music showcase"}
+]){
+ const got=classifyEvent(variant);
+ assert(!got.musicStyles.includes("Hip-hop & rap"),"Untrusted program identity must not inherit Thesis genre");
+}
+assert.equal(classifyEvent({...thesisItem,title:"The Thesis - Karaoke"}).category,"Karaoke",
+ "Nonmusic event-specific format overrides verified program identity");
+
 test("Rapping and freestyle rap showcase", "Music",["Hip-hop & rap"]);
 test("Boom-bap producer showcase", "Music",["Hip-hop & rap"]);
 test("RNB and neo-soul concert", "Music",["R&B & soul"]);
