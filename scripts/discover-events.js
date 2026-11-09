@@ -238,7 +238,9 @@ function reconcile(existing,records){
   const is1905Session=b.discovery?.sourceId==="the-1905"&&a.venue==="The 1905"&&b.venue==="The 1905"&&
    /^\d+$/.test(String(a.sourcePerformanceId||""))&&/^\d+$/.test(String(b.sourcePerformanceId||""))&&
    String(a.sourcePerformanceId)!==String(b.sourcePerformanceId);
-  if(a.venue!==b.venue||a.startTimeKind!=="listed"||b.startTimeKind!=="listed"||a.startsAt===b.startsAt||(a.url===b.url&&!is1905Session))return false;
+  const goodfootOriginalClocks=b.discovery?.sourceId==="the-goodfoot"&&a.venue==="The Goodfoot"&&b.venue==="The Goodfoot"&&
+    ["listed","doors"].includes(a.startTimeKind)&&["listed","doors"].includes(b.startTimeKind);
+   if(a.venue!==b.venue||(!goodfootOriginalClocks&&(a.startTimeKind!=="listed"||b.startTimeKind!=="listed"))||a.startsAt===b.startsAt||(a.url===b.url&&!is1905Session))return false;
   if(a.venue==="Holocene"&&b.discovery?.sourceId==="holocene"){
    const official=url=>/^https:\/\/www\.holocene\.org\/(?:events\/20\d\d-\d\d-\d\d-[^?#/]+|event\/[^?#]+\/holocene\/portland\/?)(?:[?#].*)?$/i.test(url||"");
    const minutes=Math.abs(Date.parse(a.startsAt)-Date.parse(b.startsAt))/60000;
