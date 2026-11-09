@@ -15,6 +15,8 @@ assert(seeds.seeds.some(s=>s.kind==="secondary-discovery"),"New unknown sources 
 assert(seeds.seeds.some(s=>s.id==="nopo-creatives"),"Small local DIY maker organizers deserve coverage");
 for(const id of ["music-the-1905","music-jack-london","music-goodfoot","music-alberta-street","music-alberta-rose","music-keys","music-the-thesis"])
  assert(seeds.seeds.some(s=>s.id===id),"Original music discovery seed: "+id);
+for(const id of ["music-mississippi-pizza-atlantis","music-a-beat-happening","music-late-lyrics","music-pdx-hip-hop-week","music-latelier-yaffe"])
+ assert(seeds.seeds.some(s=>s.id===id),"Original music discovery seed: "+id);
 assert(seeds.seeds.every(s=>s.url.startsWith("https://")&&s.url===scout.canon(s.url,s.url)),"Only explicitly canonical HTTPS seed pages");
 assert.equal(scout.canon("javascript:alert(1)","https://example.com/"),null);
 assert.equal(scout.canon("https://localhost/admin","https://example.com/"),null);
@@ -74,6 +76,26 @@ assert(results.some(x=>x.url==="https://jazz.example.org/events/2026-11-15-jazz-
  "Original music venue event-specific links are now scouted without requiring punk or market language");
 assert(!results.some(x=>x.url==="https://jazz.example.org/contact"),"Routine venue navigation is not a show lead");
 assert(results.some(x=>x.type==="original-venue-calendar"),"Original music calendar itself is retained for review");
+const hipHopVenue={id:"underground-hip-hop-original",label:"Hip-hop tickets",url:"https://scene.example.org/events/",
+ kind:"original-venue",focus:"Original rap and R&B show announcements"};
+results=scout.inspect(hipHopVenue,
+ '<a href="/events/rap-showcase">Local Rap Showcase Tickets</a>'+
+ '<a href="/events/rnb-soul-showcase">Independent RNB Soul Showcase</a>'+
+ '<a href="/contact">Contact</a>');
+assert(results.some(x=>x.url==="https://scene.example.org/events/rap-showcase"),
+ "Standalone rap must be a viable source-scout signal");
+assert(results.some(x=>x.url==="https://scene.example.org/events/rnb-soul-showcase"),
+ "RNB spelling must be discoverable in original venue links");
+assert(!results.some(x=>x.url==="https://scene.example.org/contact"));
+const hipHopDirectory={id:"hiphop-independent-index",label:"Local scene index",
+ url:"https://listings.example.org/",kind:"secondary-discovery",focus:"Independent music"};
+results=scout.inspect(hipHopDirectory,
+ '<a href="https://local.example.org/2026/11/rap-showcase">Rap Showcase</a>'+
+ '<a href="https://local.example.org/2026/11/rnb-open-mic">RNB Open Mic</a>'+
+ '<a href="https://local.example.org/2026/11/holiday-sale">Holiday Sale</a>');
+assert(results.some(x=>x.url.includes("/rap-showcase")),"Secondary rap showcase is a research lead");
+assert(results.some(x=>x.url.includes("/rnb-open-mic")),"Secondary R&B open mic is a research lead");
+assert(!results.some(x=>x.url.includes("/holiday-sale")),"Do not increase generic listings");
 const vendor={id:"vendor",label:"Oddities vendor",url:"https://vendor.example.org/2026-tour",
  kind:"original-vendor",focus:"Oddities and zine events"};
 results=scout.inspect(vendor,"<p>Independent zine press and oddities market organizers</p>"+

@@ -676,6 +676,16 @@
       "priority": "editorial-active",
       "url": "https://www.keyspdx.com/",
       "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original venue documents jazz nights and DJ programming, but weekly descriptions are not proof of particular future dates; individual dates require independent confirmation."
+    },
+    {
+      "id": "atlantis-lounge",
+      "name": "Mississippi Pizza / Atlantis Lounge",
+      "venue": "Mississippi Pizza / Atlantis Lounge",
+      "venueRegistryId": "atlantis-lounge",
+      "status": "adapter-needed",
+      "priority": "editorial-active",
+      "url": "https://mississippipizza.com/events/",
+      "reason": "Original venue calendar and individually dated event details are public, including November 22 2026 Hungry Hungry Hip Hop. This is not the existing Mississippi Studios / Polaris Hall adapter. A distinct original-event importer is needed; meanwhile daily source scouting can discover new links without publishing assumptions."
     }
   ],
   "editorialPriority": [
@@ -722,7 +732,8 @@
     "The Goodfoot",
     "Alberta Street Pub",
     "Alberta Rose Theatre",
-    "Keys Lounge"
+    "Keys Lounge",
+    "Mississippi Pizza / Atlantis Lounge"
   ],
   "discoveryPriority": "Full source-research priority includes BOTH canonical preferred venues and additional relevant scene venues, equally. These are editorially active even if their importer is blocked, not yet built, or a provider feed is missing. `sources` order and legacy twelve adapter baseline are only technical. New event publication requires human review.",
   "primaryVenuePriority": [
@@ -784,7 +795,8 @@
     "the-goodfoot",
     "alberta-street-pub",
     "alberta-rose-theatre",
-    "keys-lounge"
+    "keys-lounge",
+    "atlantis-lounge"
   ],
   "sharedSourceCoverage": {
     "mississippi": "mississippi-polaris",

@@ -537,6 +537,20 @@
       ],
       "notes": "Original venue documents jazz nights and DJ programming, but weekly descriptions are not proof of particular future dates; individual dates require independent confirmation.",
       "editorialPreference": "scene"
+    },
+    {
+      "id": "atlantis-lounge",
+      "name": "Mississippi Pizza / Atlantis Lounge",
+      "tier": "core",
+      "ingestionStatus": "adapter-needed",
+      "calendarUrl": "https://mississippipizza.com/events/",
+      "aliases": [
+        "Mississippi Pizza",
+        "Atlantis Lounge",
+        "Mississippi Pizza & Atlantis Lounge"
+      ],
+      "notes": "Original venue event cards identify upcoming Portland local hip-hop and R&B showcases including Hungry Hungry Hip Hop on November 22, 2026. Different business from Mississippi Studios/Polaris Hall. Venue HTML and individual /event/ links need a validated importer; original source times, room and mixed event formats require verification. Do not infer recurrences.",
+      "editorialPreference": "scene"
     }
   ],
   "supplementaryDiscovery": [
@@ -599,7 +613,8 @@
     "the-goodfoot",
     "alberta-street-pub",
     "alberta-rose-theatre",
-    "keys-lounge"
+    "keys-lounge",
+    "atlantis-lounge"
   ],
   "editorialPreferenceGroups": {
     "preferred": [
@@ -648,7 +663,8 @@
       "the-goodfoot",
       "alberta-street-pub",
       "alberta-rose-theatre",
-      "keys-lounge"
+      "keys-lounge",
+      "atlantis-lounge"
     ],
     "secondary": [
       "the-fixin-to",
@@ -705,6 +721,7 @@
     "the-goodfoot",
     "alberta-street-pub",
     "alberta-rose-theatre",
-    "keys-lounge"
+    "keys-lounge",
+    "atlantis-lounge"
   ]
 }
