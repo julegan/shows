@@ -168,7 +168,7 @@ function extract(item,src,now){
  const blocked=src.blockedDates?.find(x=>x.date===date);
  if(blocked)return {hold:"Historical source conflict: "+blocked.reason,title,url,date};
  const sourceMatch=reviewed.forEvent({url,title,venue:item.venue||src.venue,date});
- const classification=sourceMatch||classifyEvent(item),category=classification.category;
+ const classification=sourceMatch||classifyEvent({...item,sourceId:src.id}),category=classification.category;
  const asof=localDay(now);
  const identity=src.adapter==="turntable-1905-ssr"?url+"|performance:"+String(item.sourcePerformanceId||""):src.adapter==="black-water-ics"?String(item.uid||url)+"|"+date:src.adapter==="kenton-official-html"?url+"|"+norm(title):url;
  const id="auto-"+src.id+"-"+date+"-"+crypto.createHash("sha256").update(identity).digest("hex").slice(0,12);

@@ -3,6 +3,7 @@
  * The venue's reputation, poster artwork, and artist familiarity alone
  * are never enough to claim a genre or a concert format.
  */
+const verifiedPrograms=require("./verified-programs");
 const STYLES=[
  {label:"Post-punk", rx:/\bpost[\s-]?punk\b/i},
  {label:"Hardcore", rx:/\bhardcore(?:\s+punk)?\b/i},
@@ -72,6 +73,9 @@ function classifyEvent(item){
  for(const [category,regex] of Object.entries(EVENT_TYPES)){
   if(regex.test(words))return {category,musicStyles:[],evidence:"Event-specific source wording"};
  }
+ const program=verifiedPrograms.forEvent(item);
+ if(program)return {...program,musicStyles:[...new Set([...program.musicStyles,...fromSource])],
+  evidence:program.evidence+(fromSource.length?"; plus event-specific source genre wording":"")};
  if(fromSource.length)return {category:"Music",musicStyles:fromSource,evidence:"Event-specific source genre wording"};
  if(type==="MusicEvent")return {category:"Music",musicStyles:[],evidence:"Source event type: MusicEvent"};
  if(item.sourceVerifiedMusic===true||MUSIC_CLAIM.test(words)||[...(Array.isArray(item.categories)?item.categories:[]),...(Array.isArray(item.tags)?item.tags:[])].some(x=>/^(?:Music|Concert|Live Music)$/i.test(String(x).trim()))){

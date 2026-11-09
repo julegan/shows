@@ -35,3 +35,13 @@ The earlier `reviewed-classifications.js` allowlist inadvertently permitted only
 Follow-up editorial passes should prioritize **already listed but unclassified** future music events and missing music styles within priority venue sources. For example, Mississippi Studios has a source-confirmed November 10 Armand Hammer bill, and the artist's [official label biography](https://fatpossum.com/collections/armand-hammer) identifies the duo as hip-hop. These two sources are useful to verify a specific event and music style; an entry must match the **exact published SHOWS ticket URL, title, venue, and date** before proposing a reviewed classification. Source evidence is not permission to guess every other artist's genre, change old events silently, or reclassify a whole venue.
 
 Counts of unknown formats/styles are a diagnostic, **not** a genre quota or incentive to add speculative tags. Prioritize review of events coming up soon because those records are more useful when accurate before the show date. This policy change alone **does not alter any published event records**; it makes future reviewed classifications from all genres permissible.
+
+## November 8, 2026 — original organizer verifies a precisely scoped series
+
+**The Thesis** is described by its first-party organizer as a Portland independent hip-hop showcase and is hosted at Alberta Street Pub: https://thethesispdx.com/about/ . The existing Alberta Street Pub importer already verifies each actual dated occurrence from its own first-party venue feed.
+
+The source-aware classifier may now label an individual **The Thesis** occurrence `Hip-hop & rap` only if the listing has an original Alberta Street Pub event permalink, the matching venue identity, the enabled Alberta source identifier, and an unambiguous Thesis program title. It retains the organizer's evidence URL in `classificationSourceUrl`. This is not a monthly recurrence generator, an artist-name rule, or permission to label unrelated Alberta concerts hip-hop.
+
+The Thesis also promotes R&B/soul artists, but **do not label every single Thesis bill R&B/soul** without event-specific information. If the actual source event uses those descriptors, a second style may be included. Nonmusic events retain their nonmusic classification.
+
+Source-specific verified-series rules are intentionally narrow. Do not build an ever-growing opaque list of guessed artist or genre mappings. Expand to another program only with the original promoter's clear identity, a source-backed stable event permalink and regression tests against false positives. This change does **not** edit existing SHOWS event snapshots; separately reviewed publication is still required for existing listings.

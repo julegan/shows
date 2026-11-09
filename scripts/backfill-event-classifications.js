@@ -20,7 +20,8 @@ function backfill(text){
   if(!e.discovery?.sourceId)continue;
   const localDate=e.startsAt?.slice(0,10);
   const manual=reviewed.forEvent({url:e.url,title:e.title,venue:e.venue,date:localDate});
-  const derived=manual||classifyEvent({title:e.title,categories:e.sourceCategories||[]});
+  const derived=manual||classifyEvent({title:e.title,categories:e.sourceCategories||[],url:e.url,
+   venue:e.venue,sourceId:e.discovery.sourceId});
   const former=e.category,styles=e.musicStyles||[];
   if(former==="Unclassified"&&derived.category==="Music"){
    e.category="Music";e.icon="♫";
