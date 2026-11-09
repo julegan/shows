@@ -275,7 +275,7 @@ function reconcile(existing,records){
     !(identity&&eventIdentity(v,source)&&identity!==eventIdentity(v,source))))){
    skipped.push({sourceId:source,skip:"Already present",title:e.title,url:e.url});continue;
   }
-  if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&new URL(v.url).pathname.includes("/events/"))){
+  if(existing.some(v=>v.url===e.url&&v.startsAt.slice(0,10)!==day&&(new URL(v.url).pathname.includes("/events/")||source==="atlantis-lounge"))){
    held.push({sourceId:source,hold:"Potential reschedule of an existing event URL",title:e.title,url:e.url});continue;
   }
   const others=[...existing,...accepted].filter(v=>sameDay(v,e));
