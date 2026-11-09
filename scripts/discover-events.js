@@ -28,6 +28,7 @@ const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
 const treetix=require("./treetix-importer");
+const treetixCoverage=require("./treetix-coverage");
 const mammoth=require("./mammoth-importer");
 const the1905=require("./the-1905-importer");
 const {classifyEvent}=require("./event-classification");
@@ -545,9 +546,18 @@ async function run(opts={}){
  const sources=registry.sources.filter(s=>s.status==="pilot-enabled");
  if(!sources.length)throw Error("No active sources");
  const now=opts.now||new Date(),found=[],errors=[],sourceRuns=[];
+ const fetchTreeTixSnapshot=opts.fetchTreeTixSnapshot||(!opts.load&&treetix.fetchSnapshot);
+ const treetixSourceIds=new Set(sources.filter(s=>s.adapter==="treetix-public-json").map(s=>s.id));
+ let treetixSnapshot;
  for(const src of sources){
   try{
-   const items=opts.load?await opts.load(src):await fetchItems(src);
+   let items;
+   if(fetchTreeTixSnapshot&&treetixSourceIds.has(src.id)){
+    treetixSnapshot??=Promise.resolve().then(()=>fetchTreeTixSnapshot());
+    items=treetix.parse(await treetixSnapshot,src);
+   }else{
+    items=opts.load?await opts.load(src):await fetchItems(src);
+   }
    if(!Array.isArray(items))throw Error("Source did not return an array");
    sourceRuns.push({id:src.id,status:items.length?"checked":"empty",examined:items.length});
    if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SOURCE SAMPLE "+JSON.stringify(items.slice(0,7).map(i=>({title:tidy(i.title),urlId:i.urlId,fields:Object.keys(i).slice(0,20),tags:i.tags,categories:i.categories,excerpt:tidy(i.excerpt,120),body:tidy(i.body,160)}))));
@@ -577,6 +587,12 @@ async function run(opts={}){
  // Compare the source's valid future candidates to the *approved* dataset;
  // never count newly proposed bills as published coverage.
  const venues=JSON.parse(fs.readFileSync(path.join(root,"discovery/venues.json"),"utf8"));
+ const treetixReview=fetchTreeTixSnapshot?await treetixCoverage.review({
+  feed:treetixSnapshot??Promise.resolve().then(()=>fetchTreeTixSnapshot()),
+  approved:parsed.events,proposed:result.accepted,sources,venueRegistry:venues,
+  intakeOutcomes:[...result.held,...result.skipped].filter(record=>treetixSourceIds.has(record.sourceId)),
+  now,horizonDays:DISCOVERY_HORIZON_DAYS,write:opts.write!==false
+ }):undefined;
  const venueGap=analyzeVenueGap({events:parsed.events,sourceRegistry:registry,venueRegistry:venues,
   found,reconciled:result,sourceRuns,today:localDay(now)});
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/priority-venue-gap-audit.md"),reportVenueGap(venueGap));
@@ -587,7 +603,8 @@ async function run(opts={}){
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources,changes));
- if(!result.accepted.length&&!karaoke.changed.length&&!corrections.proposals.length)return {...result,errors,sourceRuns,changes,corrections};
+ const reviewResult={...result,errors,sourceRuns,changes,corrections,treetixReview};
+ if(!result.accepted.length&&!karaoke.changed.length&&!corrections.proposals.length)return reviewResult;
  const newEvents=[...corrections.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];
  if(parsed.meta.batchId!==batch)prev.push({batchId:parsed.meta.batchId,addedOccurrences:parsed.meta.addedOccurrences});
@@ -599,7 +616,7 @@ async function run(opts={}){
  if(opts.write!==false){
   fs.writeFileSync(path.join(root,"events.js"),output);
  }
- return {...result,errors,sourceRuns,changes,corrections,karaokeReclassified:karaoke.changed,output};
+ return {...reviewResult,karaokeReclassified:karaoke.changed,output};
 }
 if(require.main===module)run().catch(e=>{console.error("Discovery failed: "+e.message);process.exitCode=1;});
 module.exports={localTime,localDay,discoveryEndDay,DISCOVERY_HORIZON_DAYS,parseFile,itemsOf,urlOf,music,categoryOf,extract,reconcile,fetchItems,run};

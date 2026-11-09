@@ -16,7 +16,8 @@ const norm=x=>String(x??"").toLowerCase().normalize("NFKD")
   .replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim();
 const clean=x=>String(x??"").replace(/<[^>]+>/g," ").replace(/[\r\n\t]+/g," ")
   .replace(/\s+/g," ").trim().slice(0,180);
-const markdown=x=>clean(x).replace(/[|[\]*_]/g," ").replace(/\s+/g," ");
+const markdown=x=>clean(x).replace(/[|[\]*_`]/g," ").replace(/\s+/g," ");
+const identityKey=({calendar,id})=>calendar+":"+id;
 // Conservative artist/bill overlap is a review lead, never a verified
 // provider-ID match. Two distinct headliner words are required to avoid
 // collapsing unrelated shows that share "live", "music", or "festival".
@@ -52,29 +53,27 @@ function providerIdentity(link){
  }catch(_){return null;}
 }
 function indexed(events){
- const byKey=new Map(),byTitle=new Map(),byVenueDay=new Map();
+ const byKey=new Map(),byVenueDay=new Map();
  for(const event of events){
   const keys=new Set();
   if(event.sourceCalendar&&Number.isSafeInteger(Number(event.sourceEventId))&&Number(event.sourceEventId)>0)
    keys.add(String(event.sourceCalendar).toLowerCase()+":"+Number(event.sourceEventId));
   for(const url of [event.url,...(event.sources||[]).map(s=>s.url)]){
    const ident=providerIdentity(url);
-   if(ident)keys.add(ident.calendar+":"+ident.id);
+   if(ident)keys.add(identityKey(ident));
   }
   for(const key of keys){
    if(!byKey.has(key))byKey.set(key,[]);
    byKey.get(key).push(event);
   }
-  const key=[norm(event.venue),String(event.startsAt||"").slice(0,10),norm(event.title)].join("|");
-  if(!byTitle.has(key))byTitle.set(key,[]);
-  byTitle.get(key).push(event);
   const venueDay=[norm(event.venue),String(event.startsAt||"").slice(0,10)].join("|");
   if(!byVenueDay.has(venueDay))byVenueDay.set(venueDay,[]);
   byVenueDay.get(venueDay).push(event);
  }
- return {byKey,byTitle,byVenueDay};
+ return {byKey,byVenueDay};
 }
-function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalendars=["highwatermark","soundcontrol"],today,horizonDays=400}){
+function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalendars=["highwatermark","soundcontrol"],
+ intakeOutcomes=[],today,horizonDays=400}){
  if(!dayValid(today))throw Error("Reporting date must be a Portland-local YYYY-MM-DD");
  if(!feed||!Array.isArray(feed.events)||feed.events.length>10000)
   throw Error("TreeTix snapshot missing a bounded events array; inventory is unknown");
@@ -83,18 +82,26 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
  const aliases=new Set();
  for(const v of venueRegistry.venues||[])for(const s of [v.name,...(v.aliases||[])])aliases.add(norm(s));
  const base=indexed(approved),draft=indexed(proposed),seen=new Set(),rows=[];
+ const outcomes=new Map();
+ for(const record of intakeOutcomes){
+  const ident=providerIdentity(record.url);
+  if(ident&&!outcomes.has(identityKey(ident)))outcomes.set(identityKey(ident),record.hold||record.skip);
+ }
  for(const [index,entry] of feed.events.entries()){
   const event=entry&&typeof entry==="object"?entry:{};
   const ident=providerIdentity(event.event_url);
-  const eventId=Number(event.event_id),date=event.start_date;
+  const eventId=event.event_id,date=event.start_date;
   const calendar=ident?.calendar||"unverified";
+  const key=ident?identityKey(ident):null;
+  const city=norm(event.city),state=norm(event.state_abbr);
   const row={index,eventId:Number.isSafeInteger(eventId)&&eventId>0?eventId:null,
-   calendar,venue:clean(event.venue_name),title:clean(event.event_title||event.talent)||"Untitled TreeTix listing",
-   date:dayValid(date)?date:null,url:ident?.url||null,disposition:null,reason:""};
+   calendar,venue:clean(event.venue_name),title:clean(event.event_title)||clean(event.talent)||"Untitled TreeTix listing",
+   date:dayValid(date)?date:null,url:ident?.url||null,location:[clean(event.city),clean(event.state_abbr)].filter(Boolean).join(", "),
+   disposition:null,reason:"",matchIds:[]};
   if(!ident||!row.eventId||ident.id!==row.eventId){
    row.disposition="invalid-identity";
    row.reason="Original provider URL and event ID do not establish a matching event identity";
-  }else if(seen.has(calendar+":"+eventId)){
+  }else if(seen.has(key)){
    row.disposition="duplicate-provider-id";
    row.reason="Repeated event ID/calendar in one provider snapshot needs review";
   }else if(!dayValid(date)){
@@ -103,42 +110,52 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
   }else if(date<today||date>cutoff){
    row.disposition="outside-horizon";
    row.reason=date<today?"Past listing":"Beyond SHOWS' current "+horizonDays+"-day collection horizon";
-  }else if(norm(event.city)!=="portland"||String(event.state_abbr||"").toUpperCase()!=="OR"){
+  }else if(!city||!state){
+   row.disposition="geography-needs-verification";
+   row.reason="Provider city or state is missing; verify the original venue location";
+  }else if(city!=="portland"||state!=="or"){
    row.disposition="outside-geography";
    row.reason="Provider city/state is outside Portland, OR";
   }else{
-   const key=calendar+":"+eventId;
    const approvedMatches=base.byKey.get(key)||[],proposedMatches=draft.byKey.get(key)||[];
-   const sourceTitle=[norm(row.venue),date,norm(row.title)].join("|");
    const venueDay=[norm(row.venue),date].join("|");
    const inRoom=[...(base.byVenueDay.get(venueDay)||[]),...(draft.byVenueDay.get(venueDay)||[])];
-   const possible=inRoom.filter(other=>likelySameBill(row.title,other.title)).length;
+   const possible=inRoom.filter(other=>likelySameBill(row.title,other.title));
+   const intakeReason=outcomes.get(key);
    if(approvedMatches.length){
+    row.matchIds=approvedMatches.map(e=>e.id);
     row.disposition=approvedMatches.some(e=>String(e.startsAt||"").slice(0,10)===date)?"approved":"date-conflict";
     row.reason=row.disposition==="approved"?"Exact original TreeTix event identity in approved SHOWS data":
      "Same original provider ID appears on a different approved SHOWS date; investigate reschedule";
    }else if(proposedMatches.length){
+    row.matchIds=proposedMatches.map(e=>e.id);
     row.disposition=proposedMatches.some(e=>String(e.startsAt||"").slice(0,10)===date)?"proposed":"date-conflict";
     row.reason=row.disposition==="proposed"?"Present in pending discovery dataset, not yet approved":
      "Original provider ID/date differs in pending data; investigate before publication";
    }else if(!connected.has(calendar)){
     row.disposition="unconnected-producer";
     row.reason="Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope";
+   }else if(possible.length){
+    row.disposition="possible-cross-source-match";
+    row.matchIds=possible.map(e=>e.id);
+    row.reason="Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage";
+   }else if(intakeReason){
+    row.disposition="held-in-intake";
+    row.reason="Discovery did not stage this event; resolve the recorded intake decision";
    }else if(!aliases.has(norm(row.venue))){
     row.disposition="venue-needs-verification";
     row.reason="Connected producer, but venue is not verified in SHOWS' Portland venue registry";
    }else if(event.tz!=="US/Pacific"||!clean(event.start_time)){
     row.disposition="time-needs-verification";
     row.reason="Connected original event missing an unambiguous Pacific source time";
-   }else if(possible){
-    row.disposition="possible-cross-source-match";
-    row.reason="Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage";
    }else{
     row.disposition="unaccounted-connected";
     row.reason="Connected original provider event absent from approved/proposed dataset; investigate importer holds and matching";
    }
+   if(intakeReason&&!["approved","proposed"].includes(row.disposition))row.intakeReason=intakeReason;
   }
-  if(ident)seen.add(calendar+":"+eventId);
+  if(ident?.id===row.eventId)seen.add(key);
+  row.matchIds=[...new Set(row.matchIds.filter(Boolean))].sort();
   rows.push(row);
  }
  const counts={};
@@ -153,13 +170,14 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
   else group.review++;
   producerCounts.set(r.calendar,group);
  }
- return {today,cutoff,endpoint:ENDPOINT,sourceRecords:rows.length,
+ return {today,cutoff,endpoint:ENDPOINT,updated:typeof feed.updated==="string"?clean(feed.updated):null,sourceRecords:rows.length,
   inScope:inScope.length,counts,rows,producers:[...producerCounts.values()].sort((a,b)=>a.calendar.localeCompare(b.calendar))};
 }
 function report(a){
  const lines=[
   "# TreeTix provider-wide source reconciliation — "+a.today,"",
-  "**Evidence:** one observed public TreeTix feed response at "+a.endpoint+" (not a guarantee of provider or venue completeness).",
+  "**Evidence:** one observed public TreeTix feed response at "+a.endpoint+". "+
+   (a.updated?"Provider updated: "+markdown(a.updated)+". ":"")+"No verified pagination or upstream total; coverage is limited to this response.",
   "**Scope:** publicly listed events with source dates from "+a.today+" through "+a.cutoff+
    " and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.",
   "**Safety:** this report does not import new producers, approve events, infer genres, or delete missing/rescheduled listings. Every source format is considered; unknown type is not an exclusion.",
@@ -175,13 +193,27 @@ function report(a){
   "| --- | ---: | ---: | ---: | ---: |");
  for(const p of a.producers)lines.push("| "+markdown(p.calendar)+" | "+p.total+" | "+p.approved+" | "+p.proposed+" | "+p.review+" |");
  lines.push("","## Event-by-event exceptions","",
-  "Every observed source row not confidently matched by original provider identity is shown below. Out-of-Portland and historical/distant events appear only in disposition totals. This is a **review queue**, not a list of confirmed missing shows.","");
- const pending=a.rows.filter(r=>!["approved","outside-geography","outside-horizon"].includes(r.disposition));
- if(!pending.length)lines.push("No source-specific exceptions in this response; this does not establish complete upstream coverage.");
+  "This review queue shows pending and unresolved rows, with the nearest dated events first. Geographic and date exclusions are in the full inventory.","");
+ const pending=a.rows.filter(r=>!["approved","outside-geography","outside-horizon"].includes(r.disposition))
+  .sort((a,b)=>(a.date||"9999").localeCompare(b.date||"9999")||a.index-b.index);
+ if(!a.sourceRecords)lines.push("The provider returned an empty events array; upstream coverage is unverified.");
+ else if(!pending.length)lines.push("No source-specific exceptions in this response; upstream coverage is unverified.");
  for(const r of pending){
   const link=r.url?"["+markdown(r.title)+"]("+r.url+")":markdown(r.title)+" (unverified permalink)";
   lines.push("- "+(r.date||"Date unverified")+" — "+link+" · "+markdown(r.venue||"Venue unverified")+
-   " · producer "+markdown(r.calendar)+" · **"+r.disposition+"**: "+markdown(r.reason));
+   " · producer "+markdown(r.calendar)+" · **"+r.disposition+"**: "+markdown(r.reason)+
+   (r.intakeReason?". Intake: "+markdown(r.intakeReason):"")+
+   (r.matchIds.length?". SHOWS ID(s): "+r.matchIds.map(markdown).join(", "):""));
+ }
+ lines.push("","## Full source inventory","",
+  "Each feed row appears once below. Matching SHOWS IDs are references for investigation; tentative matches still need verification.","",
+  "| Feed row | Producer | TreeTix ID | Source date | Event | Location | Disposition | SHOWS ID(s) | Reason |",
+  "| ---: | --- | --- | --- | --- | --- | --- | --- | --- |");
+ for(const r of a.rows){
+  const title=markdown(r.title),event=r.url?"["+title+"]("+r.url+")":title;
+  lines.push("| "+[r.index+1,markdown(r.calendar),r.eventId??"Unverified",r.date??"Unverified",event,
+   markdown([r.venue,r.location].filter(Boolean).join(" · "))||"Unverified",r.disposition,
+   r.matchIds.map(markdown).join(", "),markdown(r.reason)+(r.intakeReason?". Intake: "+markdown(r.intakeReason):"")].join(" | ")+" |");
  }
  lines.push("","## Next actions","",
   "1. Resolve connected-source unaccounted records and original-ID/date conflicts first, prioritizing near-term events.",
@@ -212,23 +244,26 @@ function pacificToday(now=new Date()){
  return parts.year+"-"+parts.month+"-"+parts.day;
 }
 async function run({baselineFile=path.join(root,"events.js"),proposedFile=path.join(root,"events.js"),
- outputFile=path.join(root,"discovery/treetix-coverage-review.md"),feed,now=new Date()}={}){
+ outputFile,feed,now=new Date()}={}){
  const approved=readEvents(baselineFile),proposed=readEvents(proposedFile);
- const venues=JSON.parse(fs.readFileSync(path.join(root,"discovery/venues.json"),"utf8"));
- const registry=JSON.parse(fs.readFileSync(path.join(root,"discovery/sources.json"),"utf8"));
- const connectedCalendars=registry.sources.filter(s=>s.status==="pilot-enabled"&&s.adapter==="treetix-public-json")
-  .map(s=>s.id==="high-water"?"highwatermark":s.id==="soundcontrol-pdx"?"soundcontrol":null).filter(Boolean);
+ const venueRegistry=JSON.parse(fs.readFileSync(path.join(root,"discovery/venues.json"),"utf8"));
+ const sources=JSON.parse(fs.readFileSync(path.join(root,"discovery/sources.json"),"utf8")).sources;
+ return review({approved,proposed,venueRegistry,sources,outputFile,feed,now});
+}
+async function review({approved,proposed,venueRegistry,sources,intakeOutcomes,feed,now,horizonDays,
+ outputFile=path.join(root,"discovery/treetix-coverage-review.md"),write=true}){
+ const connectedCalendars=sources.filter(s=>s.status==="pilot-enabled").map(treetix.calendarFor).filter(Boolean);
  const today=pacificToday(now);
  let output,result;
  try{
-  const snapshot=feed??await treetix.fetchSnapshot();
-  result=analyze({feed:snapshot,approved,proposed,venueRegistry:venues,connectedCalendars,today});
+  const snapshot=feed===undefined?await treetix.fetchSnapshot():await feed;
+  result=analyze({feed:snapshot,approved,proposed,venueRegistry,connectedCalendars,intakeOutcomes,today,horizonDays});
   output=report(result);
  }catch(error){
   result={error:String(error?.message||error),today,counts:null};
   output=errorReport(today,error);
  }
- fs.writeFileSync(outputFile,output);
+ if(write)fs.writeFileSync(outputFile,output);
  process.stdout.write("TreeTix reconciliation: "+(result.error?"source unavailable: "+result.error:
   result.sourceRecords+" records; "+result.inScope+" in reporting scope; "+
   (result.counts["unaccounted-connected"]||0)+" unaccounted connected; "+
@@ -241,4 +276,4 @@ if(require.main===module){
  run({baselineFile:option("--baseline"),proposedFile:option("--proposed"),
   outputFile:option("--output")}).catch(e=>{console.error(e);process.exitCode=1;});
 }
-module.exports={providerIdentity,dayValid,addDays,distinctive,likelySameBill,indexed,analyze,report,errorReport,readEvents,pacificToday,run};
+module.exports={providerIdentity,dayValid,addDays,distinctive,likelySameBill,indexed,analyze,report,errorReport,readEvents,pacificToday,run,review};

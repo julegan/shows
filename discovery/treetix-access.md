@@ -2,6 +2,12 @@
 
 Tracks [SHOWS #56](https://github.com/julegan/shows/issues/56) and [SHOWS #158](https://github.com/julegan/shows/issues/158). Current status: TreeTix's provider-supplied non-proxied API was live-validated November 2, 2026; **High Water Mark and Soundcontrol ingestion is enabled**, while coverage of other Portland producer calendars requires research. Historical notes below preserve previous blocked states.
 
+## Reading the refresh audit
+
+The daily collector reconciles the same provider response used by both TreeTix adapters. The review artifact puts dated exceptions first and includes a full row-by-row inventory with the producer calendar, TreeTix ID and permalink, disposition, relevant SHOWS IDs, and the discovery decision where available. A possible cross-source match requires verification. A proposed row means it reached staging for review in the current run.
+
+Provider-wide visibility includes unconnected calendars and explicit geographic and date exclusions. Event intake is scoped to the connected producer calendars and their verified Portland venues. A provider response gives an observed denominator, with no verified pagination or upstream total. A failed fetch leaves that denominator unknown.
+
 ## Source-wide reconciliation — November 8, 2026
 
 The daily refresh now runs `scripts/treetix-coverage.js` separately from the restricted importer. It inspects **every observed provider record** from the public TreeTix JSON response, reconciles strong original event IDs/permalinks against approved SHOWS data and proposed records, and writes `discovery/treetix-coverage-review.md`.

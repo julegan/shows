@@ -2,6 +2,7 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {providerIdentity,dayValid,analyze,report,errorReport,pacificToday}=require("../scripts/treetix-coverage");
+const {run:discover}=require("../scripts/discover-events");
 const item=(id,calendar,venue,extra={})=>({
  event_id:id,event_url:"https://www.treetix.com/event/"+id+"/"+calendar,
  venue_name:venue,city:"Portland",state_abbr:"OR",start_date:"2026-11-14",
@@ -84,8 +85,13 @@ assert.match(summary,/whatssofunny/);
 assert.match(summary,/Synth Yoga/);
 assert.match(summary,/Comedy night/);
 assert.match(summary,/No source-specific exceptions|Event-by-event exceptions/);
-assert(!summary.includes("Out of town"),"Do not present out-of-geography records as pending Portland shows");
-assert(!summary.includes("Beyond horizon"),"Distant events are counted but not part of current exception worklist");
+const [worklist,inventory]=summary.split("## Full source inventory");
+assert(!worklist.includes("Out of town"),"Do not present out-of-geography records as pending Portland shows");
+assert(!worklist.includes("Beyond horizon"),"Distant events are not part of the current exception worklist");
+assert.match(inventory,/100101.*approved.*approved/);
+assert.match(inventory,/100109.*Out of town.*Vancouver, WA.*outside-geography/);
+assert.match(inventory,/100111.*Beyond horizon.*outside-horizon/);
+assert.equal(inventory.split("\n").filter(line=>/^\| \d+ \|/.test(line)).length,a.sourceRecords);
 // Actual November 8, 2026 live audit: Soundcontrol originals were already
 // represented under separate original venue URLs with title variations.
 // This is a possible cross-source match, NOT a verified provider-ID match.
@@ -109,8 +115,55 @@ assert.equal(alternate.rows[3].disposition,"unaccounted-connected",
  "A single common artist-like token alone cannot infer the same bill");
 assert.equal(alternate.counts.approved||0,0,
  "Cross-source fuzzy matches must NOT be labeled verified provider-ID matches");
+assert.deepEqual(alternate.rows[0].matchIds,["dantes-bill"]);
 assert.match(report(alternate),/Likely same bill at the same venue/);
 assert.match(errorReport("2026-11-08",Error("HTTP 503")),/unavailable\/unknown/);
 assert.throws(()=>analyze({feed:{events:null},today:"2026-11-08"}),/inventory is unknown/);
 assert.throws(()=>analyze({feed,approved,proposed,venueRegistry,today:"2026-11-32"}),/Reporting date/);
-console.log("PASS — TreeTix full-provider event-by-ID reconciliation, scope, unconnected producers, all event types, uncertain matches, and source failures");
+const uncertain=analyze({feed:{events:[
+ item(900005,"soundcontrol","Dante's",{start_date:"2026-11-16",city:null}),
+ item(900006,"soundcontrol","Dante's",{event_id:999999}),
+ item(900006,"soundcontrol","Dante's",{start_date:"2026-11-10"})
+]},venueRegistry,today:"2026-11-08"});
+assert.deepEqual(uncertain.rows.map(r=>r.disposition),[
+ "geography-needs-verification","invalid-identity","unaccounted-connected"
+]);
+assert(report(uncertain).indexOf("2026-11-10 —")<report(uncertain).indexOf("2026-11-16 —"));
+
+(async()=>{
+ const options={now:new Date("2026-11-09T20:00:00Z"),write:false,load:async()=>[]};
+ const stageDate="2027-10-31";
+ let reads=0;
+ const result=await discover({...options,fetchTreeTixSnapshot:async()=>{
+  reads++;
+  return {updated:"2026-11-09T12:00:07Z",events:[
+   item(900001,"highwatermark","High Water Mark Lounge",{start_date:stageDate,event_title:"Unmapped Fixture"}),
+   item(900002,"highwatermark","High Water Mark Lounge",{start_date:stageDate,event_title:"Different Fixture"}),
+   item(900003,"soundcontrol","Mississippi Studios",{start_date:stageDate}),
+   item(900004,"new-producer","Dante's",{start_date:stageDate})
+  ]};
+ }});
+ assert.equal(reads,1,"Discovery and audit share the same provider snapshot across both calendars");
+ const audit=result.treetixReview;
+ assert.equal(audit.sourceRecords,4);
+ assert.equal(audit.updated,"2026-11-09T12:00:07Z");
+ const [candidate,collision,venue,producer]=audit.rows;
+ const staged=result.accepted.find(e=>e.sourceEventId===900001);
+ assert.equal(candidate.disposition,"proposed");
+ assert.equal(staged.category,"Unclassified","Unknown formats reach review without a genre gate");
+ assert.deepEqual(candidate.matchIds,[staged.id]);
+ assert.equal(collision.disposition,"held-in-intake");
+ assert.match(collision.intakeReason,/Same venue\/date; different existing bill/);
+ assert.equal(venue.disposition,"held-in-intake");
+ assert.match(venue.intakeReason,/Unsupported or mismatched original Portland venue/);
+ assert.equal(producer.disposition,"unconnected-producer");
+ assert.match(report(audit),/Intake: Same venue\/date/);
+
+ reads=0;
+ const failed=await discover({...options,fetchTreeTixSnapshot:async()=>{reads++;throw Error("HTTP 503");}});
+ assert.equal(reads,1,"Both adapters and reconciliation report the same failed snapshot");
+ assert.equal(failed.treetixReview.counts,null);
+ assert.match(failed.treetixReview.error,/HTTP 503/);
+ assert.equal(failed.sourceRuns.filter(s=>s.status==="failed").length,2);
+ console.log("PASS — TreeTix per-row reconciliation, shared snapshots, actual intake reasons, and source failures");
+})().catch(error=>{console.error(error);process.exitCode=1;});
