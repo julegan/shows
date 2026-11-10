@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-09",
+  "sourceCheckedAt": "2026-11-10",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1355,
-  "addedOccurrences": 6,
-  "batchId": "auto-discovery-2026-11-09-71",
+  "totalOccurrences": 1387,
+  "addedOccurrences": 32,
+  "batchId": "auto-discovery-2026-11-10-72",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -168,11 +168,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-09-68",
       "addedOccurrences": 24
+    },
+    {
+      "batchId": "auto-discovery-2026-11-09-71",
+      "addedOccurrences": 6
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 420
+  "musicOccurrences": 431
 };
 window.SHOWS_EVENTS = [
   {
@@ -23700,6 +23704,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-14-a55e29f3508b",
+    "title": "Christopher Brown and Friends Featuring Gina Saputo — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48373 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES Christopher Brown - drums Gina Saputo - vocals Randy Porter - piano Christian Ramirez - bass Drummer and bandleader Christopher Brown has been both a force and permanent fixture on the Portland Jazz scene ever since his return",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13228/IMG_1692.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48373",
+    "sourceShowId": "13228",
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-11-14-a9a8b279fe40",
     "title": "Leanna Firestone",
     "subtitle": "Source-discovered venue event · details need review",
@@ -24625,6 +24689,67 @@ window.SHOWS_EVENTS = [
     ],
     "addedIn": "2026-10-17-underground-music",
     "doorsAt": "2026-11-14T19:00:00-08:00"
+  },
+  {
+    "id": "auto-the-1905-2026-11-14-a537617e5d9d",
+    "title": "Christopher Brown and Friends Featuring Gina Saputo — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-14T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48374 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES Christopher Brown - drums Gina Saputo - vocals Randy Porter - piano Christian Ramirez - bass Drummer and bandleader Christopher Brown has been both a force and permanent fixture on the Portland Jazz scene ever since his return",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13228/IMG_1692.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13228/2026-11-14",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48374",
+    "sourceShowId": "13228",
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "shanghai-tunnel-tamarack-2026-11-14",
@@ -34981,6 +35106,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-24-45ddb879e495",
+    "title": "Chorale For A Cause",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/88154444/chorale-for-a-cause-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/88154444/chorale-for-a-cause-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b1af1ce69ee1839c453c9a270e454f74.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-24-b27f5568b644",
     "title": "Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -35775,6 +35952,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-25-8ee839fb19fe",
+    "title": "The Pynnacles + Jewelry Exchange",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/36469338/the-pynnacles-jewelry-exchange-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/36469338/the-pynnacles-jewelry-exchange-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7f0ce82afc0d224914fa2e6a77d429a9.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -37067,6 +37296,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-11-27-58bcfa2df539",
+    "title": "MISS EXOTIC OREGON 2027 FINALS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/miss-exotic-oregon-2027-finals/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/miss-exotic-oregon-2027-finals/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/13/91/64_Original.jpg?v=10",
+      "sourceUrl": "https://www.danteslive.com/tm-event/miss-exotic-oregon-2027-finals/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -40380,6 +40660,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2026-12-02-db02fdcb448d",
+    "title": "House Wednesday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214349",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214349",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/697bc34ac672fbbd8fb47173_8652a041-a0ae-4a24-8d47-455e86a78fde.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-12-02-cebeec8bef78",
     "title": "Wicked Wednesday w/ DJ Barbie Saint & DJ Speedo",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -41504,6 +41835,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-12-04-004c9f7e18e7",
+    "title": "SOLD OUT: Amber Autry: Happy Holler Tour (Early Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/82008250/sold-outamber-autryhappy-holler-tour-early-show-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/82008250/sold-outamber-autryhappy-holler-tour-early-show-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/294a48561cf00ad2833ae856e4ba93c9.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-04-ae1b031a6260",
     "title": "Nerves: The Live Audiovisual Experience",
     "subtitle": "Source-discovered venue event · details need review",
@@ -42021,6 +42403,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-04-d26b7b352b21",
+    "title": "Emo Nite at Holocene presented by Emo Nite LA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-04-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-04-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ced2d40bf75a2a8a5076efe022ef6a42.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-04-emo-nite-at-holocene-presented-by-emo-nite-la-21-event",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -43110,6 +43544,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-nova-pdx-2026-12-05-49d79daa176d",
+    "title": "DYKE NITE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214344",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214344",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/69c2b770e82de3ced63fb82b_5ae554f3-56c1-480a-aadd-37ff9bc063f0.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
       "method": "primary-source-collection"
     }
   },
@@ -45295,6 +45780,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2026-12-09-f4bc31faecfb",
+    "title": "House Wednesday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214350",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214350",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/697bc34ac672fbbd8fb47173_8652a041-a0ae-4a24-8d47-455e86a78fde.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-10-5e05f18476fd",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -46677,6 +47213,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2026-12-11-514802050a77",
+    "title": "CHUNK",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214348",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214348",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/6af36b26062d3bae9fe47e81_5a87121d-2c30-4744-aa09-616698c634a2.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-12-12-9974fc64b0a4",
     "title": "BRYCE ALAKAI",
     "subtitle": "Source-discovered venue event · details need review",
@@ -47944,6 +48531,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-12-13-29015bf556f4",
+    "title": "Drowsy (Record Release Show) w/ Rapid Eye, Deaf Dreamer",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468883/drowsy-record-release-show-w-rapid-eye-deaf-dreamer",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468883/drowsy-record-release-show-w-rapid-eye-deaf-dreamer",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/ot6fbi3lwsq1zuhoxzyj.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468883/drowsy-record-release-show-w-rapid-eye-deaf-dreamer",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-turn-turn-turn-2026-12-13-2ffd11b1d3c0",
     "title": "An Orange Vanilla Christmas: An Original Musical w/ Tradie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -49180,6 +49818,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2026-12-16-d476c47b1050",
+    "title": "House Wednesday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214351",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214351",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/697bc34ac672fbbd8fb47173_8652a041-a0ae-4a24-8d47-455e86a78fde.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-17-3dfd56d32a0c",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -50175,6 +50864,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-atlantis-lounge-2026-12-19-ea53593a4cb2",
+    "title": "Asylum Tribe",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Formed in Portland in 2020, Asylum Tribe plays raw, heavy rock with influences ranging from Black Sabbath to Iron Maiden, Pantera to Led Zeppelin. With infectious riffs and melodic basslines grooving to explosive beats and soaring vocals, the band plays mo",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/asylum-tribe/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/asylum-tribe/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
     }
   },
@@ -51664,6 +52397,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2026-12-23-27c7b5a7a0f6",
+    "title": "House Wednesday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-23T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214352",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214352",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/697bc34ac672fbbd8fb47173_8652a041-a0ae-4a24-8d47-455e86a78fde.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-24-2d391355e748",
     "title": "CLOSED",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52853,6 +53637,57 @@ window.SHOWS_EVENTS = [
     "classificationEvidence": "Event-specific source wording"
   },
   {
+    "id": "auto-nova-pdx-2026-12-30-fd018d3947ec",
+    "title": "House Wednesday",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214353",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214353",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/697bc34ac672fbbd8fb47173_8652a041-a0ae-4a24-8d47-455e86a78fde.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-30-b632631cc475",
     "title": "Emo Night w Reggie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52995,6 +53830,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2026-12-31-18ac2809ab91",
+    "title": "Blade Rave",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/blade-rave-4/hawthorne-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/blade-rave-4/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/blade-rave.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/blade-rave-4/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -53509,6 +54394,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-nova-pdx-2027-01-01-12d3c7a106fd",
+    "title": "PDX Rated",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-01T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214354",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214354",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/69d076916f8e790a90304095_0a9b15e4-53f2-44f1-a189-cc644d6b5056.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-02-c556e909959f",
     "title": "2nd Annual Dry January Fest",
     "subtitle": "Source-discovered venue event · details need review",
@@ -53699,6 +54635,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-nova-pdx-2027-01-02-1196061b365e",
+    "title": "DYKE NITE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Nova PDX",
+    "address": "722 E Burnside St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Nova homepage card displays a time; whether doors or performance needs editorial confirmation Nova original event calendar has this dated listing and original ticket link; format and genres need classification.",
+    "source": "Nova PDX",
+    "url": "https://tixr.com/e/214345",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Nova PDX",
+        "url": "https://tixr.com/e/214345",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.prod.website-files.com/61e6fdab63acd785c481dbcf/69c2b770e82de3ced63fb82b_5ae554f3-56c1-480a-aadd-37ff9bc063f0.webp",
+      "sourceUrl": "https://www.novapdxevents.com/event-calendar",
+      "origin": "official-event-page",
+      "credit": "Nova PDX official calendar artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "nova-pdx",
       "method": "primary-source-collection"
     }
   },
@@ -54147,6 +55134,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-01-09-f9a680ed5337",
+    "title": "FOLK NIGHT OUT: The Indie Folk DJ Night",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Folk & bluegrass",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Folk & bluegrass"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/folk-night-out-the-indie-folk-dj-night/hawthorne-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/folk-night-out-the-indie-folk-dj-night/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/folk-night-out-the-indie-folk-dj-night.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/folk-night-out-the-indie-folk-dj-night/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -56443,6 +57483,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-01-27-53553feb3207",
+    "title": "Virtua x B.U.G. full venue activation Featuring Morgan Garrett",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-27T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-01-27-virtua-x-b-u-g-full-venue-activation-featuring-morgan-garrett",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-01-27-virtua-x-b-u-g-full-venue-activation-featuring-morgan-garrett",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/9ec26f8cc375346b353ea304da08ddc4.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-01-27-virtua-x-b-u-g-full-venue-activation-featuring-morgan-garrett",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-28-c2dd83391821",
     "title": "Fruition",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57250,6 +58341,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2027-02-05-fc790c00d9ce",
+    "title": "Fungal Abyss (Seattle) + World Three + Cue the Sun",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/fungal-abyss-seattle-world-three-cue-the-sun-february-05-2027-799403",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/fungal-abyss-seattle-world-three-cue-the-sun-february-05-2027-799403",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/799/403/compressed/0000009907_10.jpg?1794303766",
+      "sourceUrl": "https://app.opendate.io/e/fungal-abyss-seattle-world-three-cue-the-sun-february-05-2027-799403",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -58968,6 +60110,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-19-23a10f383b87",
+    "title": "Trampled by Turtles",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/279149-trampled-by-turtles/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/279149-trampled-by-turtles/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/10/TrampledByTurtles26-K3SGK0.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/279149-trampled-by-turtles/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
@@ -61298,6 +62491,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-03-09-16c009e325cf",
+    "title": "Boundaries",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/boundaries-2/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/boundaries-2/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/boundaries.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/boundaries-2/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-03-09-c18980162e7d",
     "title": "Frank Turner & The Sleeping Souls: Last Evenings World Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -61904,6 +63147,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-03-12-11e798f19360",
+    "title": "CLUTCH: Give the People What They Want!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/clutch-give-the-people-what-they-want/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/clutch-give-the-people-what-they-want/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/11/clutch-give-the-people-what-they-want.jpeg",
+      "sourceUrl": "https://roselandpdx.com/event/clutch-give-the-people-what-they-want/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "roseland",
       "method": "primary-source-collection"
     }
   },
@@ -63220,6 +64513,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-crystal-ballroom-2027-03-26-a0c08bc5db5a",
+    "title": "Grace Potter & The Trespassers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-26T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280197-grace-potter-the-trespassers/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280197-grace-potter-the-trespassers/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/11/GracePotter26-MhMd1m.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280197-grace-potter-the-trespassers/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-03-26-6ffc9ca72d64",
     "title": "Will Burkart",
     "subtitle": "Source-discovered venue event · details need review",
@@ -63265,6 +64609,57 @@ window.SHOWS_EVENTS = [
       "usageApproved": null
     },
     "addedIn": "auto-discovery-2026-10-29",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-03-27-5ef19553e229",
+    "title": "Liza Treyger",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-27T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/43939462/liza-treyger-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/43939462/liza-treyger-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/08ae345c7c8647593f51a94155de1559.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/43939462/liza-treyger-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
@@ -63929,6 +65324,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-04-04-cb212d854ea3",
+    "title": "Rocco",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-04T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-04-04-rocco-the-comedy-romantic-tour-pt-1",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-04-04-rocco-the-comedy-romantic-tour-pt-1",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/c49fbd0a2a4403829a070edc7b3c1a8b.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-04-04-rocco-the-comedy-romantic-tour-pt-1",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2027-04-05-0d8681d98f35",
     "title": "Boy Throb",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64174,6 +65620,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-04-07-d48db80cf0a6",
+    "title": "Horse Lords, Mariam Rezaei",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-07T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/horse-lords-mariam-rezaei/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/horse-lords-mariam-rezaei/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/13/10/74_Original.jpg?v=4",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/horse-lords-mariam-rezaei/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   },
@@ -64876,6 +66373,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-04-21-4ed7e82bdddf",
+    "title": "SiM – HOOMAN AFTER ALL WORLD TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-21T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/sim-hooman-after-all-world-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/sim-hooman-after-all-world-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/sim.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/sim-hooman-after-all-world-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-04-22-5607e4d9a61a",
     "title": "The Warning – Everything’s Falling World Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -65172,6 +66719,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-04-30-eb0f55fd0ca4",
+    "title": "HELL'S BELLES",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Finn",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/79555630/hells-belles-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/79555630/hells-belles-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/cf223b5d20d8ce7e13e41aef7aa6fdf2.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/79555630/hells-belles-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
     }
   },
@@ -66709,6 +68307,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-06-23-936bd398bac8",
+    "title": "Boogie Belgique: Arcade Tour 2027",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-23T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-06-23-boogie-belgique-arcade-tour-2027",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-10",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-06-23-boogie-belgique-arcade-tour-2027",
+        "kind": "organizer",
+        "checkedAt": "2026-11-10",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6c4eb4dfe90752c990798e394a174033.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-06-23-boogie-belgique-arcade-tour-2027",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-10",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },

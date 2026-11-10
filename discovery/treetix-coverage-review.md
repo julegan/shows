@@ -1,7 +1,7 @@
-# TreeTix provider-wide source reconciliation — 2026-11-09
+# TreeTix provider-wide source reconciliation — 2026-11-10
 
-**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-09T12:00:07Z. No verified pagination or upstream total; coverage is limited to this response.
-**Scope:** publicly listed events with source dates from 2026-11-09 through 2027-12-14 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
+**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-10T14:47:55Z. No verified pagination or upstream total; coverage is limited to this response.
+**Scope:** publicly listed events with source dates from 2026-11-10 through 2027-12-15 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
 **Safety:** this report does not import new producers, approve events, infer genres, or delete missing/rescheduled listings. Every source format is considered; unknown type is not an exclusion.
 
 ## Snapshot dispositions
