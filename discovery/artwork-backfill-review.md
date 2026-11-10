@@ -1,20 +1,20 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-09T19:39:44.700Z; Portland date: 2026-11-09. This workflow does not publish images.
+Generated 2026-11-10T00:19:49.398Z; Portland date: 2026-11-09. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **266**
-- Already have image references: **180**
-- Missing artwork: **86**
+- Upcoming music listings: **270**
+- Already have image references: **182**
+- Missing artwork: **88**
 - Missing listings with supported individual source pages: **19**
-- Missing listings needing another source or individual permalink: **67**
+- Missing listings needing another source or individual permalink: **69**
 - Highest priority: **2026-11-09 and 2026-11-10** (all event types, including unknown)
 - Near-term events: **31**; eligible source pages: **8**
 - Near-term source rechecks this run: **8**; over lookup cap: **0**
 - Missing music artwork beyond tomorrow: **2** in coming week, **16** beyond
-- Rotating older-art batch: **0** of **0** (requested 0; 35 requests max)
+- Rotating older-art batch: **0** of **0** (requested 71; 35 requests max)
 - Total original event-page requests attempted: **26**; artwork proposed: **0**; other responses: **19**
 
 ## Today and tomorrow — original-source freshness checks
@@ -66,9 +66,9 @@ A source title match confirms the linked page still mentions this bill; it does 
 
 | Venue | Missing | Eligible individual pages |
 | --- | ---: | ---: |
-| Mississippi Pizza / Atlantis Lounge | 23 | 0 |
+| Mississippi Pizza / Atlantis Lounge | 24 | 0 |
 | No Fun | 19 | 16 |
-| Kenton Club | 13 | 0 |
+| Kenton Club | 14 | 0 |
 | High Water Mark Lounge | 7 | 0 |
 | Crystal Ballroom | 5 | 2 |
 | High Limit Room | 3 | 0 |
@@ -90,21 +90,21 @@ No new verified images proposed in this batch. The action completed successfully
 ## Unsupported or unavailable source pages
 
 - The Black Angels with GHOSTWOMAN (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/276344-the-black-angels
+- Sure • Sean Martin West • Terrible Pop (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop
 - Seb El Zin • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/seb-el-zin-tba-tba
 - Under Utopia, Silver Shores, American Crows (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows
-- Sure • Sean Martin West • Terrible Pop (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop
 - Silverstein with Story of the Year — Camp Screamo Tour (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/278093-silverstein
 - Amy Bleu • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/amy-bleu-tba-tba
-- PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — FETCH_ERROR — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
 - Jen Howard • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/jen-howard-tba-tba
+- PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — FETCH_ERROR — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
 - molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
 - Void Lord • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/void-lord-tba-tba
 - Sang Bleu with support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sang-bleu-tba-tba
 - Senior Week • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/senior-week-tba-tba
 - Softgaze • Greyhound Go • support TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/softgaze-tba-tba
 - Henry Ivie-Gardner • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba
-- Tito Padrino • 61TO16 • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tito-padrino-61to16-tba
 - Etta Dean • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/etta-dean-tba-tba
+- Tito Padrino • 61TO16 • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tito-padrino-61to16-tba
 - You, The Audience • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/you-the-audience-tba-tba
 - Jake Soffer • Jarrett Tetsuo Domen • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba
 - BLISTER • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/blister-tba-tba
