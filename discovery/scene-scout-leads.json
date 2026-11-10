@@ -788,6 +788,28 @@
       "firstSeenOn": "2026-11-09"
     },
     {
+      "url": "https://www.etix.com/ticket/p/56163757/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-10"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/59166490/freecovers-only-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-10"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
@@ -1188,6 +1210,28 @@
       "confidence": "research-only",
       "why": "Holiday makers and indie vendors; lower individual-event priority than unusual niche markets",
       "firstSeenOn": "2026-11-03"
+    },
+    {
+      "url": "https://www.portlandbazaar.com/tickets",
+      "titleHint": "TICKETS",
+      "source": "portland-bazaar",
+      "from": "https://www.portlandbazaar.com/portlandbazaars",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "ection header-nav-item--homepage\"> HOME TICKETS <button class=\"header-nav-folder-title\"",
+      "rank": 6,
+      "firstSeenOn": "2026-11-10"
+    },
+    {
+      "url": "https://www.portlandbazaar.com/vendors",
+      "titleHint": "Folder: VENDORS",
+      "source": "portland-bazaar",
+      "from": "https://www.portlandbazaar.com/portlandbazaars",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "class=\"header-menu-nav-item-content\"> TICKETS Folder: VENDORS <div class=\"header-menu-nav-folder-conte",
+      "rank": 3,
+      "firstSeenOn": "2026-11-10"
     },
     {
       "url": "https://www.portlandindie.com/2026",
