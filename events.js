@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-09",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1349,
-  "addedOccurrences": 24,
-  "batchId": "auto-discovery-2026-11-09-68",
+  "totalOccurrences": 1355,
+  "addedOccurrences": 6,
+  "batchId": "auto-discovery-2026-11-09-71",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -164,11 +164,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-08-65",
       "addedOccurrences": 53
+    },
+    {
+      "batchId": "auto-discovery-2026-11-09-68",
+      "addedOccurrences": 24
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 416
+  "musicOccurrences": 420
 };
 window.SHOWS_EVENTS = [
   {
@@ -46724,6 +46728,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-12-12-227c1476349f",
+    "title": "Trabants playing The Ventures Christmas Album",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-12T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "psu-farmers-2026-12-12",
     "title": "PSU Farmers Market",
     "subtitle": "Seasonal food and local growers",
@@ -53904,6 +53952,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-atlantis-lounge-2027-01-09-16191e07d5bf",
+    "title": "Gleneden + Gillian Lockwood",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Pizza / Atlantis Lounge",
+    "address": "3552 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Mississippi",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Atlantis Lounge original event-specific page lists this full date and clock; the page does not explicitly distinguish performance time from doors. Original venue details: Gleneden is a 3 piece band formed in 2025 by local musicians Dave Hurley, Aric Naue and Greg Rubin. Their evocative sound blurs the lines between rock, jazz and ambient music to create unique and dynamic soundscapes. Gleneden has had songs played on local ",
+    "source": "Mississippi Pizza / Atlantis Lounge",
+    "url": "https://mississippipizza.com/event/gleneden-gillian-lockwood/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Pizza / Atlantis Lounge",
+        "url": "https://mississippipizza.com/event/gleneden-gillian-lockwood/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2027-01-09-7dd9d3e98652",
     "title": "Walter Moses Band • TBA • TBA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -56047,6 +56142,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-off-beat-2027-01-25-9525ae173c54",
+    "title": "1/25 SECOND SHOW ADDED! Fifteen, All Girl Summer Fun Band (Benefit Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-25T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When January 25, 2027 · 7:30 pm - 11:30 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Get Tickets 1/25 - SECOND SHOW ADDED! Fifteen All Girl Summer Fun Band The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $20 ADV /$25 DOS All Ages • All Access • No Booze",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/1-25-second-show-added-fifteen-all-girl-summer-fun-band-benefit-show-january-25-2027-799242",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/1-25-second-show-added-fifteen-all-girl-summer-fun-band-benefit-show-january-25-2027-799242",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/799/242/compressed/Off_Beat_Added_%28vertical%29.jpg?1794262530",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/1-25-second-show-added-fifteen-all-girl-summer-fun-band-benefit-show-january-25-2027-799242",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-01-25-ed5b5f5be5e2",
     "title": "Miko Marks: Hell or High Water Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -56094,6 +56240,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2027-01-26-31fabe60e0f2",
+    "title": "1/26 Fifteen, All Girl Summer Fun Band, Corner Office (Benefit Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-26T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When January 26, 2027 · 7:30 pm - 11:00 pm Doors 7:00 pm Where The Off Beat Portland, OR Ages All Ages Sold Out 1/26 Fifteen All Girl Summer Fun Band Corner Office The Off Beat 8440 N Interstate Ave, 7:00 Doors 7:30 Show $20 ADV /$25 DOS All Ages • All Access • No Booze • No Jerk",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/1-26-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/1-26-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/796/876/compressed/image0.jpg?1793997041",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/1-26-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "the-off-beat",
       "method": "primary-source-collection"
     }
   },
@@ -61813,6 +62010,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-wonder-ballroom-2027-03-12-4c87a9152fdf",
+    "title": "Noah Rinker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-12T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/noah-rinker/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/noah-rinker/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/11/noah-rinker.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/noah-rinker/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-03-12-bb2ffdabb1a9",
     "title": "David Nihill: Taking Tangents Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64675,6 +64922,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-04-25-8cb1442d761c",
+    "title": "Getdown Services",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-25T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/getdown-services/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-09",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/getdown-services/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-09",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/11/getdown-services.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/getdown-services/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-09",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
       "method": "primary-source-collection"
     }
   },
