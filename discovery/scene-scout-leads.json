@@ -645,6 +645,28 @@
       "firstSeenOn": "2026-11-06"
     },
     {
+      "url": "https://www.etix.com/ticket/p/45847103/portland-songwriters-open-mic-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/47616808/cult-ofthe-muppets-holiday-show-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/47724670/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
@@ -654,6 +676,28 @@
       "why": "-sm-3--> Buy Tickets",
       "rank": 7,
       "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/47986992/drunken-angel-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/48008802/sabrina-saed-your-jack-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
     },
     {
       "url": "https://www.etix.com/ticket/p/48896518/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
@@ -700,6 +744,17 @@
       "firstSeenOn": "2026-11-06"
     },
     {
+      "url": "https://www.etix.com/ticket/p/52884824/mrhoo-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/53711277/white-album-xmas-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
@@ -720,6 +775,17 @@
       "why": "--> Buy Tickets <!-- end",
       "rank": 10,
       "firstSeenOn": "2026-11-08"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/55304434/hazl-portland-atlantis-lounge?partner_id=36438",
+      "titleHint": "Buy Tickets",
+      "source": "music-mississippi-pizza-atlantis",
+      "from": "https://mississippipizza.com/events/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "--> Buy Tickets <!-- end",
+      "rank": 7,
+      "firstSeenOn": "2026-11-09"
     },
     {
       "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
