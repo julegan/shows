@@ -96,6 +96,24 @@ results=scout.inspect(hipHopDirectory,
 assert(results.some(x=>x.url.includes("/rap-showcase")),"Secondary rap showcase is a research lead");
 assert(results.some(x=>x.url.includes("/rnb-open-mic")),"Secondary R&B open mic is a research lead");
 assert(!results.some(x=>x.url.includes("/holiday-sale")),"Do not increase generic listings");
+const musicIndex={id:"independent-music-index",label:"Local independent music index",
+ url:"https://community.example.org/calendar",kind:"secondary-discovery",focus:"Local independent music"};
+const musicLinks=[
+ ["jazz-trio-showcase","Jazz Trio Showcase"],["soul-night-show","Soul Night Show"],
+ ["cumbia-live-concert","Cumbia Live Concert"],["afrobeat-show","Afrobeat Show"],
+ ["bluegrass-concert","Bluegrass Concert"],["experimental-music-show","Experimental Music Show"],
+ ["ambient-music-show","Ambient Music Show"],["drum-and-bass-show","Drum and Bass Show"],
+ ["local-house-rental","Local House Rental"],["world-food-market","World Food Market"],
+ ["roots-hair-show","Roots Hair Show"]
+];
+results=scout.inspect(musicIndex,musicLinks.map(([slug,label])=>
+ '<a href="https://artists.example.org/'+slug+'">'+label+'</a>').join(""));
+for(const [slug] of musicLinks.slice(0,8))
+ assert(results.some(x=>x.url.endsWith("/"+slug)),"Genre-diverse event link must be scouted: "+slug);
+for(const [slug] of musicLinks.slice(8))
+ assert(!results.some(x=>x.url.endsWith("/"+slug)),"Ambiguous nonmusic word must not be a scene signal: "+slug);
+assert(results.every(x=>x.confidence==="research-only"),
+ "New genre signals produce research leads only, never approved event records");
 const vendor={id:"vendor",label:"Oddities vendor",url:"https://vendor.example.org/2026-tour",
  kind:"original-vendor",focus:"Oddities and zine events"};
 results=scout.inspect(vendor,"<p>Independent zine press and oddities market organizers</p>"+
