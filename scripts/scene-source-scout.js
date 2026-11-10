@@ -14,6 +14,9 @@ const EVENT_RX=/\b(?:event|market|bazaar|fair|festival|fest|show|showcase|concer
 const SCENE_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|makers?|arts?|comics?|nerdy?|geeks?|book(?:s)?|media|hip[\s-]?hop|rap(?:pers?|ping)?|r\s*&\s*b|rnb|neo[\s-]?soul|soul)\b/i;
 const STRONG_RX=/\b(?:goth(?:ic)?|darkwave|punk|hardcore|metal|indie|independent|zines?|small.press|oddities|oddity|curiosities|peculiar|occult|witch(?:y)?|spooky|horror|weird|diy|queer|lgbtq|vintage|flea|record|vinyl|comics?|nerdy?|geeks?|book(?:s)?|media|hip[\s-]?hop|rap(?:pers?|ping)?|r\s*&\s*b|rnb|neo[\s-]?soul|soul)\b/i;
 const MUSIC_RX=/\b(?:jazz|blues|hip[\s-]?hop|rap(?:pers?|ping)?|emcees?|boom[\s-]?bap|r\s*&\s*b|rnb|soul|neo[\s-]?soul|funk|disco|afrobeat|folk|acoustic|bluegrass|americana|country|reggae|ska|world[\s-]?music|electronic|techno|ambient|house[\s-]?music|pop|rock|concert|gig|live[\s-]?music|band|artist|tickets?)\b/i;
+// Explicit music-style labels are sufficient scene evidence for secondary discovery.
+// Avoid generic words such as "house", "world", "roots", or "experimental" alone.
+const STYLE_RX=/\b(?:jazz|blues|funk|soul|neo[\s-]?soul|gospel|afrobeat|afro[\s-]?fusion|highlife|soukous|cumbia|salsa|bachata|reggae|dub|ska|bluegrass|americana|folk[\s-]?music|folk[\s-]?concert|traditional[\s-]?music|global[\s-]?music|world[\s-]?music|electronic[\s-]?music|experimental[\s-]?music|noise[\s-]?music|ambient[\s-]?music|techno|drum[\s-]?(?:and|&)\s*bass|dnb|jungle[\s-]?music|breakcore|footwork[\s-]?music)\b/i;
 const FALSE_URL=/\.(?:jpg|jpeg|png|webp|gif|svg|pdf|woff|css|js|mp3|mp4|ics)(?:$|[?#])/i;
 const TRACKING=/^(?:utm_.+|fbclid|gclid|mc_cid|mc_eid)$/i;
 const LIMIT=2_600_000,MAX_ANCHORS=1800,MAX_PER_SEED=20,MAX_NEW=100;
@@ -61,9 +64,9 @@ function inspect(seed,html,knownUrls=new Set()){
   const parsed=new URL(url),origin=new URL(seed.url),external=parsed.hostname!==origin.hostname;
   const title=a.label||new URL(url).pathname.split("/").filter(Boolean).pop()?.replace(/[-_]/g," ")||"";
   const hint=(title+" "+parsed.pathname.replace(/[-_/]/g," ")).slice(0,500);
-  const e=EVENT_RX.test(hint),scene=STRONG_RX.test(hint);
-  const near=SCENE_RX.test(a.context);
-  const music=MUSIC_RX.test(hint),nearMusic=MUSIC_RX.test(a.context);
+  const e=EVENT_RX.test(hint),scene=STRONG_RX.test(hint)||STYLE_RX.test(hint);
+  const near=SCENE_RX.test(a.context)||STYLE_RX.test(a.context);
+  const music=MUSIC_RX.test(hint)||STYLE_RX.test(hint),nearMusic=MUSIC_RX.test(a.context)||STYLE_RX.test(a.context);
   const vendor=seed.kind==="original-vendor-directory"||seed.kind==="original-vendor";
   const curated=seed.kind==="original-organizer"||seed.kind==="original-event";
   const venue=seed.kind==="original-venue";
