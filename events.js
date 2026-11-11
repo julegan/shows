@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-10",
+  "sourceCheckedAt": "2026-11-11",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1387,
-  "addedOccurrences": 32,
-  "batchId": "auto-discovery-2026-11-10-72",
+  "totalOccurrences": 1395,
+  "addedOccurrences": 8,
+  "batchId": "auto-discovery-2026-11-11-74",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -172,11 +172,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-09-71",
       "addedOccurrences": 6
+    },
+    {
+      "batchId": "auto-discovery-2026-11-10-72",
+      "addedOccurrences": 32
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 431
+  "musicOccurrences": 434
 };
 window.SHOWS_EVENTS = [
   {
@@ -37205,6 +37209,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-11-27-4b493f67e965",
+    "title": "Grand Royale – Beastie Boys Tribute",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/35054633/grand-royale-beastie-boys-tribute-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/35054633/grand-royale-beastie-boys-tribute-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7695c5c49603343d2b2c845ad2de4797.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-27-1b71fea5a953",
     "title": "Joseph Konty",
     "subtitle": "Source-discovered venue event · details need review",
@@ -42556,6 +42612,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-04-c14161559f31",
+    "title": "SOLD OUT: Amber Autry: Happy Holler Tour (Late Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T21:30:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/50577979/sold-outamber-autryhappy-holler-tour-late-show-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/50577979/sold-outamber-autryhappy-holler-tour-late-show-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/294a48561cf00ad2833ae856e4ba93c9.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -49571,6 +49679,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-12-16-0698ec1c7ae8",
+    "title": "999 Kra! (20 Year Reunion Show) w/ Tonight We Launch, Mechlo, Denim Dad, Thee Three DJs",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/468931/999-kra-20-year-reunion-show-w-tonight-we-launch-mechlo-denim-dad-thee-three-djs",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/468931/999-kra-20-year-reunion-show-w-tonight-we-launch-mechlo-denim-dad-thee-three-djs",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/v4t5xympmju7j8fg4ee5.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/468931/999-kra-20-year-reunion-show-w-tonight-we-launch-mechlo-denim-dad-thee-three-djs",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2026-12-16-348bbce9ed90",
     "title": "Peter Rowan Sam Grisman Duo: A Special Evening of Songs & Stories",
     "subtitle": "Source-discovered venue event · details need review",
@@ -50710,6 +50869,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-18-eba200c51a48",
+    "title": "SATISFACTION (EDM Throwbacks Party)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-18-satisfaction-edm-throwbacks-party",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-18-satisfaction-edm-throwbacks-party",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/40605bb5803fcb331fc77daf543f8df1.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-18-satisfaction-edm-throwbacks-party",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -54588,6 +54798,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-high-water-2027-01-02-18beeb1320e0",
+    "title": "Fixin to Die, Beast Parade, Heaper",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "High Water Mark",
+    "url": "https://www.treetix.com/event/204958/highwatermark",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark",
+        "url": "https://www.treetix.com/event/204958/highwatermark",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/highwatermark/images/events/2027-01-02-204958-1000019128.jpg",
+    "sourceEventId": 204958,
+    "sourceCalendar": "highwatermark",
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-lolas-room-2027-01-02-78f6e25254f3",
     "title": "90's Dance Flashback",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57331,6 +57588,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-09",
     "discovery": {
       "sourceId": "the-off-beat",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-26-ae856c932ff7",
+    "title": "ESCAPE FROM THE ZOO with special guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-26T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/escape-from-the-zoo-with-special-guests/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/escape-from-the-zoo-with-special-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/13/34/54_Original.jpg?v=3",
+      "sourceUrl": "https://www.danteslive.com/tm-event/escape-from-the-zoo-with-special-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -63907,6 +64215,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-wonder-ballroom-2027-03-18-cd53b31d48fb",
+    "title": "sophia stel",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-18T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/sophia-stel-the-greatest-tour-of-all-time/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/sophia-stel-the-greatest-tour-of-all-time/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/11/sophia-stel-the-greatest-tour-of-all-time.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/sophia-stel-the-greatest-tour-of-all-time/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-03-18-0b9291d44b67",
     "title": "sophia stel: the greatest tour of all time",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64458,6 +64816,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-off-beat-2027-03-26-ff363ee4d486",
+    "title": "3/26 Larry and His Flask, 1876",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-26T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Off Beat",
+    "address": "8440 N Interstate Ave, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event schema and source description agree on the dated Pacific performance time; doors are separate. When March 26, 2027 · 7:00 pm - 10:30 pm Doors 6:30 pm Where The Off Beat Portland, OR Ages All Ages Price $31.00 Get Tickets 3/26 Larry and His Flask 1876 The Off Beat 8440 N Interstate Ave, 6:30 Doors 7:00 Show $25 ADV /$35 DOS All Ages • All Access • No Booze • No Jerks Friend",
+    "source": "The Off Beat / Friends of Noise",
+    "url": "https://calendar.friendsofnoise.org/shows/3-26-larry-and-his-flask-1876-march-26-2027-778664",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-11",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Off Beat / Friends of Noise",
+        "url": "https://calendar.friendsofnoise.org/shows/3-26-larry-and-his-flask-1876-march-26-2027-778664",
+        "kind": "organizer",
+        "checkedAt": "2026-11-11",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/website_event_images/000/778/664/compressed/LAHF_2027_Admat.jpg?1792616966",
+      "sourceUrl": "https://calendar.friendsofnoise.org/shows/3-26-larry-and-his-flask-1876-march-26-2027-778664",
+      "origin": "official-event-page",
+      "credit": "Friends of Noise / The Off Beat — source-provided event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-11",
+    "discovery": {
+      "sourceId": "the-off-beat",
       "method": "primary-source-collection"
     }
   },
