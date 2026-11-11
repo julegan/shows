@@ -2,8 +2,8 @@
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 0** · Ambiguous matching source URLs: 3.
+**Potential changes: 0** · Ambiguous matching source URLs: 4.
 
 No changed published events were confirmed by uniquely matching source records in this run.
 
-The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 4 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
