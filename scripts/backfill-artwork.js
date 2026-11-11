@@ -65,40 +65,31 @@ function pendingForArtwork(input,options={}){
  return input.filter(e=>e.startsAt?.slice(0,10)>=today&&!e.artwork&&originalUrl(e)&&
   (e.category==="Music"||e.startsAt.slice(0,10)<=tomorrow)).sort(byStart);
 }
+// Always examine the entire eligible today/tomorrow queue; the operating
+// budget only limits the nonurgent backlog. Separate groups rotate on each run.
 function planLookups(events,options={}){
  const today=options.today||pacificDay(),tomorrow=addDays(today,1),week=addDays(today,7);
- const max=Math.max(1,Math.min(35,Number(options.max)||35));
+ const requested=Number(options.max??200);
+ const backlogBudget=Number.isFinite(requested)?Math.max(0,Math.min(250,Math.floor(requested))):200;
  const cycleNumber=Number.isFinite(Number(options.batch))?Math.max(0,Math.floor(Number(options.batch))):0;
  const nearTermTotal=events.filter(e=>e.startsAt?.slice(0,10)>=today&&e.startsAt.slice(0,10)<=tomorrow).sort(byStart);
- // Recheck every eligible event in the next 48 calendar hours, even those
- // already illustrated; artwork and category do not prove status freshness.
  const urgent=nearTermTotal.filter(e=>originalUrl(e));
- const todayEvents=urgent.filter(e=>e.startsAt.slice(0,10)===today);
- const tomorrowEvents=urgent.filter(e=>e.startsAt.slice(0,10)===tomorrow);
- const dayPage=(rows,limit)=>!limit||!rows.length?[]:rows.slice(cycleNumber%Math.ceil(rows.length/limit)*limit,
-  (cycleNumber%Math.ceil(rows.length/limit)+1)*limit);
- const todaySlots=Math.min(max,todayEvents.length);
- const selected=dayPage(todayEvents,todaySlots);
- const tomorrowSlots=Math.max(0,max-selected.length);
- selected.push(...dayPage(tomorrowEvents,tomorrowSlots));
- const remaining=max-selected.length;
  const pending=pendingForArtwork(events,{today});
  const weekQueue=pending.filter(e=>e.startsAt.slice(0,10)>tomorrow&&e.startsAt.slice(0,10)<=week);
  const laterQueue=pending.filter(e=>e.startsAt.slice(0,10)>week);
- const weekSlots=weekQueue.length?Math.min(remaining,laterQueue.length?Math.max(1,Math.ceil(remaining*0.8)):remaining):0;
- const laterSlots=weekQueue.length?Math.min(laterQueue.length,remaining-Math.min(weekSlots,weekQueue.length)):remaining;
- const count=(xs,slots)=>slots&&xs.length?Math.ceil(xs.length/slots):1;
- const rotated=(xs,slots)=>slots?xs.slice(cycleNumber%count(xs,slots)*slots,
-  (cycleNumber%count(xs,slots)+1)*slots):[];
- const seen=new Set(selected.map(e=>e.id));
- for(const e of [...rotated(weekQueue,weekSlots),...rotated(laterQueue,laterSlots),...weekQueue,...laterQueue]){
-  if(selected.length>=max)break;
-  if(!seen.has(e.id)){selected.push(e);seen.add(e.id);}
- }
- const batchCount=Math.max(count(todayEvents,todaySlots),count(tomorrowEvents,tomorrowSlots),
-  count(weekQueue,weekSlots),count(laterQueue,laterSlots));
- return {selected,urgent,nearTermTotal,nearTermOverflow:Math.max(0,urgent.length-
-  selected.filter(e=>e.startsAt.slice(0,10)<=tomorrow).length),
+ // Reserve some capacity for the future queue when this week's missing art
+ // exceeds the budget, so later shows do not starve for weeks.
+ let weekSlots=Math.min(weekQueue.length,laterQueue.length&&backlogBudget>=2?
+  Math.max(1,Math.floor(backlogBudget*0.8)):backlogBudget);
+ let laterSlots=Math.min(laterQueue.length,backlogBudget-weekSlots);
+ weekSlots=Math.min(weekQueue.length,backlogBudget-laterSlots);
+ const count=(xs,slots)=>slots>0&&xs.length?Math.ceil(xs.length/slots):1;
+ const rotated=(xs,slots)=>slots>0&&xs.length?Array.from({length:Math.min(slots,xs.length)},(_,i)=>
+  xs[(cycleNumber%count(xs,slots)*slots+i)%xs.length]):[];
+ const selected=[...urgent,...rotated(weekQueue,weekSlots),...rotated(laterQueue,laterSlots)];
+ const batchCount=Math.max(count(weekQueue,weekSlots),count(laterQueue,laterSlots));
+ return {selected,urgent,nearTermTotal,nearTermOverflow:0,
+  backlogBudget,backlogOverflow:weekQueue.length+laterQueue.length-weekSlots-laterSlots,
   weekQueue:weekQueue.length,laterQueue:laterQueue.length,requestedBatch:cycleNumber,
   batch:cycleNumber%batchCount,batchCount};
 }
@@ -165,43 +156,62 @@ async function main(){
  const today=pacificDay();
  const pending=pendingForArtwork(events,{today});
  const baseline=summarize(events,today,pending);
- const max=Math.max(1,Math.min(35,Number(process.env.MAX_ARTWORK_LOOKUPS)||35));
- const requestedBatch=Math.max(0,Math.floor(Number(process.env.ARTWORK_BATCH)||0));
+ const max=Math.max(0,Math.min(250,Number(process.env.MAX_ARTWORK_LOOKUPS??200)||0));
+ const manualBatch=process.env.ARTWORK_BATCH_MODE==="manual";
+ const runAttempt=manualBatch?0:Math.max(0,Math.floor(Number(process.env.ARTWORK_RUN_ATTEMPT||1))-1);
+ const requestedBatch=Math.max(0,Math.floor(Number(process.env.ARTWORK_BATCH)||0))+runAttempt;
  const plan=planLookups(events,{today,max,batch:requestedBatch});
  const {batch,batchCount}=plan,batchEvents=plan.selected;
  const failures=[],successes=[],nearTermChecks=[];
  const count=new Map();
  const cache=new Map();
  const tally=(key)=>count.set(key,(count.get(key)||0)+1);
- // Limit parallel requests; do not follow redirects to unapproved hosts.
- for(let i=0;i<batchEvents.length;i+=4){
-  await Promise.all(batchEvents.slice(i,i+4).map(async e=>{
-   const url=originalUrl(e);
-   let outcome="UNKNOWN",artwork=null;
-   try {
-    if(!cache.has(url)){
-     const response=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-artwork-review/0.2"},
-      signal:AbortSignal.timeout(14000),redirect:"error"});
-     if(!response.ok)throw Error("HTTP "+response.status);
-     const body=await response.text();
-     if(body.length>1000000)throw Error("Page too large");
-     cache.set(url,body);
-    }
-    const html=cache.get(url);
-    if(!titleMatches(html,e))outcome="TITLE_NOT_VERIFIED";
-    else if(titleEvidence(html).some(t=>/\b(?:cancelled|canceled|postponed|rescheduled|moved)\b/i.test(t)))
-      outcome="SOURCE_STATUS_REVIEW";
-    else if(e.artwork)outcome="SOURCE_TITLE_TOKEN_MATCH";
-    else {
-     artwork=eventArtworkFromHtml(html,url,e.title);
-     outcome=artwork?"PROPOSED":"NO_EVENT_IMAGE";
-    }
-   }catch(error){outcome=reason(error);}
-   tally(outcome);
-   if(e.startsAt.slice(0,10)<=addDays(today,1))nearTermChecks.push({event:e,reason:outcome});
-   if(artwork&&!e.artwork){e.artwork=artwork;successes.push({event:e,artwork});}
-   else if(outcome!=="SOURCE_TITLE_TOKEN_MATCH")failures.push({event:e,reason:outcome});
-  }));
+ // Limit to four simultaneous requests, and no concurrent calls to the same
+ // source host. Deduplicate repeat source URLs and keep event-level evidence.
+ // A small pause between rounds avoids hammering one site's event pages.
+ const byHost=new Map();
+ for(const e of batchEvents){
+  const host=new URL(originalUrl(e)).hostname;
+  if(!byHost.has(host))byHost.set(host,[]);
+  byHost.get(host).push(e);
+ }
+ const processEvent=async e=>{
+  const url=originalUrl(e);
+  let outcome="UNKNOWN",artwork=null;
+  try {
+   if(!cache.has(url)){
+    const response=await fetch(url,{headers:{Accept:"text/html","User-Agent":"SHOWS-artwork-review/0.2"},
+     signal:AbortSignal.timeout(14000),redirect:"error"});
+    if(!response.ok)throw Error("HTTP "+response.status);
+    const body=await response.text();
+    if(body.length>1000000)throw Error("Page too large");
+    cache.set(url,body);
+   }
+   const html=cache.get(url);
+   if(!titleMatches(html,e))outcome="TITLE_NOT_VERIFIED";
+   else if(titleEvidence(html).some(t=>/\b(?:cancelled|canceled|postponed|rescheduled|moved)\b/i.test(t)))
+     outcome="SOURCE_STATUS_REVIEW";
+   else if(e.artwork)outcome="SOURCE_TITLE_TOKEN_MATCH";
+   else {
+    artwork=eventArtworkFromHtml(html,url,e.title);
+    outcome=artwork?"PROPOSED":"NO_EVENT_IMAGE";
+   }
+  }catch(error){outcome=reason(error);}
+  tally(outcome);
+  if(e.startsAt.slice(0,10)<=addDays(today,1))nearTermChecks.push({event:e,reason:outcome});
+  if(artwork&&!e.artwork){e.artwork=artwork;successes.push({event:e,artwork});}
+  else if(outcome!=="SOURCE_TITLE_TOKEN_MATCH")failures.push({event:e,reason:outcome});
+ };
+ while(byHost.size){
+  const round=[...byHost].slice(0,4);
+  for(const [host] of round){
+   const q=byHost.get(host),e=q.shift();
+   byHost.delete(host);
+   if(q.length)byHost.set(host,q);
+   round.find(x=>x[0]===host)[1]=e;
+  }
+  await Promise.all(round.map(([,e])=>processEvent(e)));
+  if(byHost.size)await new Promise(resolve=>setTimeout(resolve,250));
  }
  if(successes.length){
   const prefix=original.slice(0,match.index);
@@ -219,9 +229,10 @@ async function main(){
   "- Missing listings needing another source or individual permalink: **"+baseline.unsupported+"**",
   "- Highest priority: **"+today+" and "+addDays(today,1)+"** (all event types, including unknown)",
   "- Near-term events: **"+plan.nearTermTotal.length+"**; eligible source pages: **"+plan.urgent.length+"**",
-  "- Near-term source rechecks this run: **"+nearTermChecks.length+"**; over lookup cap: **"+plan.nearTermOverflow+"**",
+  "- Near-term eligible source rechecks this run: **"+nearTermChecks.length+"** of **"+plan.urgent.length+"** (never truncated by the backlog budget)",
   "- Missing music artwork beyond tomorrow: **"+plan.weekQueue+"** in coming week, **"+plan.laterQueue+"** beyond",
-  "- Rotating older-art batch: **"+batch+"** of **"+(batchCount-1)+"** (requested "+requestedBatch+"; "+max+" requests max)",
+  "- Rotating older-art batch: **"+batch+"** of **"+(batchCount-1)+"** (requested "+requestedBatch+"; backlog budget "+max+"; total requests include all eligible today/tomorrow)",
+  "- Missing older-art entries not examined in this run: **"+plan.backlogOverflow+"** (distributed across subsequent runs)",
   "- Total original event-page requests attempted: **"+batchEvents.length+"**; artwork proposed: **"+successes.length+"**; other responses: **"+failures.length+"**","",
   "## Today and tomorrow — original-source freshness checks","",
   "A source title match confirms the linked page still mentions this bill; it does NOT independently reverify every date, clock, room, admission or cancellation. Keep prior sourceCheckedAt dates unless those details have been individually corroborated.","",
@@ -250,9 +261,9 @@ async function main(){
   ...failures.map(x=>"- "+markdownRow(x.event.title)+" ("+x.event.venue+") — "+x.reason+" — "+x.event.url),
   "",
   "## Next steps","",
-  "1. Every run checks today and tomorrow first, including events that already have artwork. These checks never assume that a missing event was canceled.",
+  "1. Every run checks **all eligible** today/tomorrow source pages before older candidates, even those already illustrated. A match does not prove date or time accuracy.",
   "2. Source-backed poster proposals are sent to review, not automatically published. Do not replace an event flyer with a generic venue photo.",
-  "3. Older missing-art events are scanned by date tier with bounded rotating batches, even on push-triggered runs.",
+  "3. Older missing-art events are scanned by date tier with a larger operational budget (default 200, maximum 250) that does **not** constrain near-term rechecks. Runs rotate through any remaining backlog.",
   "4. Missing original event URLs and unmatched page titles remain explicit gaps, not invented show details.",
   "5. Once the event day passes, its expired poster is not prioritized for new artwork."
 
@@ -263,6 +274,7 @@ async function main(){
   missing:baseline.missing,eligible:baseline.eligible,unsupported:baseline.unsupported,
   nearTerm:plan.nearTermTotal.length,nearTermEligible:plan.urgent.length,
   nearTermChecked:nearTermChecks.length,nearTermOverflow:plan.nearTermOverflow,
+  backlogBudget:plan.backlogBudget,backlogOverflow:plan.backlogOverflow,
   reasons:Object.fromEntries(count)},null,2));
 }
 if(require.main===module)main().catch(error=>{console.error(error);process.exitCode=1;});

@@ -30,9 +30,9 @@ on:
   workflow_dispatch:
     inputs:
       artwork_batch:
-        description: 'Zero-based group of up to 35 missing music images (manual runs)'
+        description: 'Optional zero-based older-artwork batch (blank auto-rotates; today/tomorrow always included)'
         required: false
-        default: '0'
+        default: ''
 permissions:
   contents: write
   pull-requests: write
@@ -94,7 +94,8 @@ jobs:
       - name: Propose official art for existing and newly discovered music listings
         env:
           ARTWORK_BATCH: ${{ github.event.inputs.artwork_batch || github.run_number }}
-          ARTWORK_BATCH_MODE: ${{ github.event_name == 'workflow_dispatch' && 'manual' || 'rotate' }}
+          ARTWORK_BATCH_MODE: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.artwork_batch != '' && 'manual' || 'rotate' }}
+          ARTWORK_RUN_ATTEMPT: ${{ github.run_attempt }}
         run: node scripts/backfill-artwork.js
       - name: Record source outcomes and monthly horizon
         run: |

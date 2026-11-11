@@ -23,6 +23,11 @@ jobs:
           node --check scripts/turnturnturn-opendate.js
           node --check scripts/backfill-artwork.js
           node --check scripts/report-calendar-horizon.js
+      - name: Validate all eligible near-term flyer checks and rotating backlog
+        run: |
+          node --check scripts/backfill-artwork.js
+          node tests/artwork.js
+
       - name: Verify event deep links and sharing
         run: node tests/share-links.js
 
@@ -101,11 +106,18 @@ jobs:
           node tests/mammoth-importer.js
           node --check scripts/probe-mammoth.js
 
-      - name: Validate Atlantis Lounge original hip-hop and mixed event source
+      - name: Validate Atlantis Lounge original importer (mandatory offline fixtures)
         run: |
           node --check scripts/atlantis-importer.js
           node tests/atlantis-importer.js
-          node -e 'const m=require("./scripts/atlantis-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="atlantis-lounge");m.fetchEvents(s,fetch,{maxEvents:9}).then(rows=>{const valid=rows.filter(r=>r.startDate);console.log("LIVE ATLANTIS "+JSON.stringify({checked:rows.length,verified:valid.length,held:rows.length-valid.length,sample:rows.slice(0,3).map(x=>({title:x.title,verified:!!x.startDate,hold:x.hold}))}));if(valid.length<3)process.exitCode=1}).catch(e=>{console.error(e);process.exitCode=1})'
+
+      # Third-party website availability is monitored separately from code
+      # correctness. Report blocked feeds, never bypass remote redirects;
+      # this must not conceal a test fixture regression.
+      - name: Observe live Atlantis original-source health (external warning only)
+        continue-on-error: true
+        run: |
+          node -e 'const m=require("./scripts/atlantis-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="atlantis-lounge");m.fetchEvents(s,fetch,{maxEvents:9}).then(rows=>{const valid=rows.filter(r=>r.startDate);console.log("LIVE ATLANTIS "+JSON.stringify({checked:rows.length,verified:valid.length,held:rows.length-valid.length}));if(valid.length<3)throw Error("Under three verified original event details");}).catch(e=>{console.error("::warning::Atlantis original-source unavailable or changed: "+String(e.message||e)+"; track https://github.com/julegan/shows/issues/179");process.exitCode=1})'
 
       - name: Validate original venue research priorities
         run: node tests/source-priority.js

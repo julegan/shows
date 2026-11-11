@@ -104,11 +104,39 @@ assert(near.selected.some(x=>x.id==="later-priority-venue"),"Longer-term art is 
 assert(!near.selected.some(x=>x.id==="expired"),"Past events never waste artwork lookups");
 assert.equal(near.nearTermTotal.length,3);
 assert.equal(near.urgent.length,3);
-assert.equal(near.selected.length,5,"Out-of-range workflow run number must not yield an empty artwork batch");
+assert.equal(near.selected.length,5,"When fewer than five older candidates exist, the whole queue is examined");
+
+const zeroOlder=planLookups(all,{today:"2026-11-07",max:0,batch:0});
+assert.deepEqual(zeroOlder.selected.map(e=>e.id),
+ ["roman-candle-today","already-illustrated","tomorrow-unknown"],
+ "Near-term checks are complete even with zero backlog lookups");
+const hundredUrgent=Array.from({length:105},(_,i)=>({
+ ...highLimitTonight,id:"urgent-full-"+i,
+ url:"https://aftontickets.com/event/buyticket/57jml3"+String(i).padStart(4,"0"),
+ startsAt:"2026-11-07T19:00:00-08:00"
+}));
+const many=planLookups([...hundredUrgent,thisWeek,laterPriorityRoom],{today:"2026-11-07",max:1,batch:0});
+assert.equal(many.urgent.length,105,"No fixed 35/50/100 item cut-off on the next 48 hours");
+assert.equal(many.selected.length,106,"Only the future backlog consumes the operator's lookup budget");
+assert.equal(many.nearTermOverflow,0);
+const veryLargeWeek=Array.from({length:12},(_,i)=>({...thisWeek,
+ id:"week-art-"+i,url:"https://www.nofunportland.com/events/week-art-"+i}));
+const union=new Set();
+for(let batch=0;batch<3;batch++){
+ const page=planLookups(veryLargeWeek,{today:"2026-11-07",max:4,batch});
+ assert.equal(page.selected.length,4);
+ page.selected.forEach(e=>union.add(e.id));
+}
+assert.equal(union.size,12,"Reruns cover all rotating backlog pages when more source pages become eligible");
+assert.equal(planLookups(veryLargeWeek,{today:"2026-11-07",max:999,batch:0}).backlogBudget,250,
+ "High operational ceiling protects a half-hour GitHub Actions job; not a 35-page cap");
+
 const tiny=planLookups(all,{today:"2026-11-07",max:2,batch:57});
-assert.deepEqual(tiny.selected.map(x=>x.id),["roman-candle-today","already-illustrated"],
- "A full near-term queue takes precedence over all older event searches");
-assert.equal(tiny.nearTermOverflow,1,"Excess tomorrow sources are visible for follow-up");
+assert.deepEqual(tiny.selected.slice(0,3).map(x=>x.id),["roman-candle-today","already-illustrated","tomorrow-unknown"],
+ "All eligible today and tomorrow pages are checked even when older-artwork budget is smaller");
+assert.equal(tiny.nearTermOverflow,0,"No near-term source page is deferred by the older-artwork budget");
+assert.equal(tiny.backlogBudget,2);
+assert.equal(tiny.selected.length,5,"Two older pages are checked in addition to every eligible near-term page");
 assert(pendingForArtwork(all,{today:"2026-11-07"}).some(x=>x.id==="tomorrow-unknown"),
  "All near-term default-feed event categories receive art coverage");
 assert(!pendingForArtwork(all,{today:"2026-11-07"}).some(x=>x.id==="already-illustrated"),
@@ -121,7 +149,7 @@ const future=Array.from({length:25},(_,i)=>({
 }));
 for(const batch of [0,1,17,57,1000]){
  const result=planLookups([highLimitTonight,...future],{today:"2026-11-07",max:5,batch});
- assert.equal(result.selected.length,5);
+ assert.equal(result.selected.length,6,"Entire near-term queue is not counted against the five older-artwork slots");
  assert.equal(result.selected[0].id,highLimitTonight.id);
 }
 const crowded=Array.from({length:7},(_,i)=>({...highLimitTonight,
@@ -134,9 +162,9 @@ for(let batch=0;batch<4;batch++){
  for(const e of pass.selected)covered.add(e.id);
  assert(pass.selected.length>0,"Overflow rotation must never skip the day's queue");
 }
-assert.equal(covered.size,7,"Busy near-term day is covered across bounded runs instead of starving its later bills");
+assert.equal(covered.size,7,"Busy near-term day is fully covered every run regardless of the older-artwork budget");
 const workflow=require("node:fs").readFileSync(require("node:path").join(__dirname,"../.github/workflows/discover.yml"),"utf8");
-assert(workflow.includes("github.event_name == 'workflow_dispatch' && 'manual' || 'rotate'"),
+assert(workflow.includes("github.event_name == 'workflow_dispatch' && github.event.inputs.artwork_batch != '' && 'manual' || 'rotate'"),
  "Push and scheduled scans must both use rotating mode, not out-of-range manual batch numbers");
 console.log("PASS — today/tomorrow source rechecks precede future flyer collection and no run-number batch can be empty");
 
