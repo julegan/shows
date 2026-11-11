@@ -84,8 +84,8 @@ function planLookups(events,options={}){
  let laterSlots=Math.min(laterQueue.length,backlogBudget-weekSlots);
  weekSlots=Math.min(weekQueue.length,backlogBudget-laterSlots);
  const count=(xs,slots)=>slots>0&&xs.length?Math.ceil(xs.length/slots):1;
- const rotated=(xs,slots)=>slots>0?xs.slice(cycleNumber%count(xs,slots)*slots,
-  (cycleNumber%count(xs,slots)+1)*slots):[];
+ const rotated=(xs,slots)=>slots>0&&xs.length?Array.from({length:Math.min(slots,xs.length)},(_,i)=>
+  xs[(cycleNumber%count(xs,slots)*slots+i)%xs.length]):[];
  const selected=[...urgent,...rotated(weekQueue,weekSlots),...rotated(laterQueue,laterSlots)];
  const batchCount=Math.max(count(weekQueue,weekSlots),count(laterQueue,laterSlots));
  return {selected,urgent,nearTermTotal,nearTermOverflow:0,
