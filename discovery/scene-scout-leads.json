@@ -887,6 +887,17 @@
       "firstSeenOn": "2026-11-08"
     },
     {
+      "url": "https://www.etix.com/ticket/p/82352507/science-on-tap-save-the-planetrecycleor-not-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-11"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/90805606/late-lyrics-portland-atlantis-lounge",
       "titleHint": "$5 Online",
       "source": "music-late-lyrics",

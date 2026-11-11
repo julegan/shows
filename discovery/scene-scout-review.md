@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-10
+# Portland music & independent culture source scout — 2026-11-11
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 2 inaccessible/changed; 4 newly discovered links; 118 total recorded research leads.**
+**26 source pages attempted; 4 inaccessible/changed; 1 newly discovered links; 119 total recorded research leads.**
 
 ## Source health
 
@@ -17,16 +17,16 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | Portland Indie Book & Art Fair vendor directory | Read-only check succeeded | 1 |
 | Woodland Shrine maker event appearances | Read-only check succeeded | 3 |
 | Portland holiday markets index | Read-only check succeeded | 1 |
-| Portland Monthly's holiday market guide | Read-only check succeeded | 2 |
+| Portland Monthly's holiday market guide | Error — Seed source returned non-HTML or HTTP 403 | 0 |
 | Portland Bazaar local maker event calendar | Read-only check succeeded | 3 |
 | The 1905 official jazz tickets | Read-only check succeeded | 0 |
 | Jack London Revue calendar | Read-only check succeeded | 1 |
 | The Goodfoot live music | Error — Seed source returned non-HTML or HTTP 403 | 0 |
-| Alberta Street Pub concerts | Read-only check succeeded | 1 |
+| Alberta Street Pub concerts | Read-only check succeeded | 0 |
 | Alberta Rose Theatre calendar | Read-only check succeeded | 20 |
 | Keys Lounge original schedule | Read-only check succeeded | 0 |
 | The Thesis PDX independent hip-hop showcase | Read-only check succeeded | 7 |
-| Mississippi Pizza & Atlantis Lounge original events | Read-only check succeeded | 20 |
+| Mississippi Pizza & Atlantis Lounge original events | Error — fetch failed | 0 |
 | A Beat Happening local producer and DJ showcases | Read-only check succeeded | 10 |
 | Late Lyrics independent hip-hop and R&B open mic | Read-only check succeeded | 6 |
 | PDX Hip Hop Week original organizer calendar | Read-only check succeeded | 1 |
@@ -41,10 +41,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| portland-bazaar | [TICKETS](https://www.portlandbazaar.com/tickets) | possible-event-or-market-link | ection header-nav-item--homepage"> HOME TICKETS <button class="header-nav-folder-title" |
-| portland-bazaar | [Folder: VENDORS](https://www.portlandbazaar.com/vendors) | possible-event-or-market-link | class="header-menu-nav-item-content"> TICKETS Folder: VENDORS <div class="header-menu-nav-folder-conte |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/56163757/white-album-xmas-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-mississippi-pizza-atlantis | [Buy Tickets](https://www.etix.com/ticket/p/59166490/freecovers-only-portland-atlantis-lounge?partner_id=36438) | possible-event-or-market-link | --> Buy Tickets <!-- end |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/82352507/science-on-tap-save-the-planetrecycleor-not-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
