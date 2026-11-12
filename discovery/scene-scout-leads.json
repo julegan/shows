@@ -810,6 +810,17 @@
       "firstSeenOn": "2026-11-10"
     },
     {
+      "url": "https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-12"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
