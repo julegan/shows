@@ -224,7 +224,7 @@
       const address = list.find(event=>event.address)?.address;
       const {programs,repeating} = recurringPrograms(list);
       const specials = list.filter(event=>!repeating.has(event.id));
-      const expanded = expandedPlaces.has(place.key);
+      const expanded = expandedPlaces.has(place.key) && (specials.length>6 || programs.length>0);
       const contentId="place-events-"+place.key;
       const meta = esc(first.neighborhood || "Portland")+' · '+list.length+
         ' listed event'+(list.length===1?"":"s");
