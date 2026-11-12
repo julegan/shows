@@ -143,31 +143,133 @@
     return html || '<div class="preview-empty"><h3>No listings found.</h3><p>Try a different start date or clear search and filters. Music coverage is still growing.</p></div>';
   }
   function mapLink(address) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address); }
+
+// Places use the canonical venue identities from the public registry snapshot.
+// Unknown event locations remain discoverable by their source-listed name.
+  const placeDirectory = Array.isArray(window.SHOWS_PLACES) ? window.SHOWS_PLACES : [];
+  function normalizePlace(value) {
+    return String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+  }
+  const placeIndex = new Map();
+  for (const venue of placeDirectory) {
+    for (const name of [venue.name, ...(venue.aliases || [])]) {
+      const key = normalizePlace(name);
+      if (key && !placeIndex.has(key)) placeIndex.set(key,venue);
+    }
+  }
+  const expandedPlaces = new Set();
+  function placeInfo(venue) {
+    const match = placeIndex.get(normalizePlace(venue));
+    return {key: match ? "venue-"+match.id : "unlisted-"+normalizePlace(venue),
+      name:match ? match.name : venue, calendarUrl:match?.calendarUrl || ""};
+  }
+  function placeGroups(items) {
+    const groups = new Map();
+    for (const event of items) {
+      const info = placeInfo(event.venue);
+      if (!groups.has(info.key)) groups.set(info.key,{...info,events:[]});
+      groups.get(info.key).events.push(event);
+    }
+    return [...groups.values()].sort((a,b)=>a.name.localeCompare(b.name));
+  }
+  function recurringPrograms(items) {
+    // Do not call a series weekly/monthly based on a title or a single listing.
+    // Require at least three verified occurrences at a consistent cadence.
+    const possible = new Map();
+    for (const event of items) {
+      const title = String(event.title || "").trim().toLowerCase().replace(/\s+/g," ");
+      const key = title + "|" + event.category;
+      if (!possible.has(key)) possible.set(key,[]);
+      possible.get(key).push(event);
+    }
+    const programs = [], repeating = new Set();
+    for (const list of possible.values()) {
+      if (list.length < 3) continue;
+      const gaps = list.slice(1).map((event,i)=>
+        Math.round((Date.parse(event.startsAt)-Date.parse(list[i].startsAt))/86400000));
+      const weekly = gaps.every(n=>n>=6&&n<=8);
+      const monthly = gaps.every(n=>n>=27&&n<=35);
+      if (!weekly && !monthly) continue;
+      list.forEach(event=>repeating.add(event.id));
+      programs.push({title:list[0].title,events:list,frequency:weekly?"Weekly":"Monthly"});
+    }
+    programs.sort((a,b)=>Date.parse(a.events[0].startsAt)-Date.parse(b.events[0].startsAt));
+    return {programs,repeating};
+  }
+  function approvedPlaceArt(event) {
+    const a = event.artwork;
+    return !!(a && /^https:\/\/[^<>"'\s]+$/i.test(a.url || "") &&
+      /^https:\/\//i.test(a.sourceUrl || "") &&
+      (a.origin==="official-event-page" || a.origin==="official-venue-calendar" || a.usageApproved===true) &&
+      a.usageApproved!==false);
+  }
+  function placeEvent(event, featured=false) {
+    const date = dateShort.format(new Date(event.startsAt))+" · "+clock(event);
+    if (!featured) return '<button class="place-compact" type="button" data-event="'+esc(event.id)+'">'+
+      '<span class="place-compact-date">'+esc(date)+'</span>'+
+      '<span class="place-compact-title">'+esc(event.title)+'</span></button>';
+    return '<button class="place-feature" type="button" data-event="'+esc(event.id)+'">'+
+      (approvedPlaceArt(event)?'<span class="place-feature-art">'+art(event,false)+'</span>':'')+
+      '<span class="place-feature-body"><span class="place-feature-date">'+esc(date)+'</span>'+
+      '<span class="place-feature-title">'+esc(event.title)+'</span>'+
+      '<span class="place-feature-type">'+esc((event.musicStyles||[]).slice(0,2).join(" / ") || displayCategory(event))+
+      '</span></span></button>';
+  }
   function renderPlaces(items) {
     if (!items.length) return '<div class="preview-empty"><h3>No places found.</h3><p>Try another start date or clear filters.</p></div>';
-    const places = new Map();
-    for (const e of items) {
-      if (!places.has(e.venue)) places.set(e.venue, []);
-      places.get(e.venue).push(e);
-    }
-    return '<div class="preview-place-list">' + [...places].sort((a,b) => a[0].localeCompare(b[0])).map(([name, list]) =>
-      '<article class="preview-place"><h3>' + esc(name) + '</h3><p>' + esc(list[0].neighborhood || "Portland") +
-      ' · ' + list.length + ' listing' + (list.length === 1 ? "" : "s") +
-      '</p>' + (list[0].address ? '<p>'+esc(list[0].address)+'</p><p><a href="'+esc(mapLink(list[0].address))+'" target="_blank" rel="noopener noreferrer">Directions ↗</a></p>' : '') +
-      list.slice(0, 8).map(e =>
-        '<button type="button" data-event="' + esc(e.id) + '"><span>' + esc(dateShort.format(new Date(e.startsAt))) +
-        ' · ' + esc(clock(e)) + '</span>' + esc(e.title) + ' ↗</button>').join("") +
-      (list.length > 8 ? '<p>And ' + (list.length - 8) + ' more dates. Refine filters or use By date for the full list.</p>' : "") +
-      '</article>').join("") + '</div>';
+    const places = placeGroups(items);
+    return '<p class="places-intro">Browse venues through their upcoming programming. Regular series are condensed here; By date and calendar exports retain every listing. SHOWS is not a complete venue calendar.</p>'+
+      '<div class="preview-place-list">'+places.map(place=>{
+      const list = place.events, first = list[0];
+      const address = list.find(event=>event.address)?.address;
+      const {programs,repeating} = recurringPrograms(list);
+      const specials = list.filter(event=>!repeating.has(event.id));
+      const expanded = expandedPlaces.has(place.key) && (specials.length>6 || programs.length>0);
+      const contentId="place-events-"+place.key;
+      const meta = esc(first.neighborhood || "Portland")+' · '+list.length+
+        ' listed event'+(list.length===1?"":"s");
+      let contents = "";
+      if (expanded) {
+        contents = '<div class="place-full-list" id="'+esc(contentId)+'"><h4>All upcoming listings</h4>'+
+          list.map(event=>placeEvent(event)).join("")+'</div>';
+      } else {
+        const highlights = specials.slice(0,2), more = specials.slice(2,6);
+        contents = '<div id="'+esc(contentId)+'">'+
+          (highlights.length?'<section class="place-highlights"><h4>Upcoming highlights</h4>'+
+            highlights.map(event=>placeEvent(event,true)).join("")+'</section>':"")+
+          (more.length?'<section class="place-additional"><h4>More coming up</h4>'+
+            more.map(event=>placeEvent(event)).join("")+'</section>':"")+
+          (programs.length?'<section class="place-regular"><h4>Regular programming</h4>'+
+            programs.map(program=>'<button type="button" class="place-series" data-event="'+esc(program.events[0].id)+'">'+
+              '<span class="place-series-title">'+esc(program.title)+'</span>'+
+              '<span class="place-series-meta">'+esc(program.frequency)+' in listed dates · '+
+              program.events.length+' upcoming · Next '+esc(dateShort.format(new Date(program.events[0].startsAt)))+
+              '</span></button>').join("")+'</section>':"")+
+          '</div>';
+      }
+      const hasMore = specials.length>6 || programs.length>0;
+      return '<article class="preview-place" aria-labelledby="place-heading-'+esc(place.key)+'">'+
+        '<header class="place-heading"><h3 id="place-heading-'+esc(place.key)+'">'+esc(place.name)+'</h3>'+
+        '<p>'+meta+'</p>'+
+        '<div class="place-links">'+
+        (address?'<a target="_blank" rel="noopener noreferrer" href="'+esc(mapLink(address))+'">Directions</a>':"")+
+        (place.calendarUrl?'<a target="_blank" rel="noopener noreferrer" href="'+esc(place.calendarUrl)+'">Venue calendar</a>':"")+
+        '</div></header>'+contents+
+        (hasMore?'<button type="button" class="place-toggle" data-place-toggle="'+esc(place.key)+
+          '" aria-expanded="'+String(expanded)+'" aria-controls="'+esc(contentId)+'">'+
+          (expanded?'Back to highlights':'Show all '+list.length+' listings')+'</button>':"")+
+        '</article>';
+      }).join("")+'</div>';
   }
   function render() {
     // Synchronize the visible date with the native picker every time the view changes.
     $("fromDate").value = state.start;
     const items = filtered();
     const monthLabel = new Intl.DateTimeFormat("en-US",{timeZone:"UTC",month:"long",year:"numeric"}).format(new Date(state.month+"-01T12:00:00Z"));
-    $("summary").textContent = items.length + " matching event listing" + (items.length === 1 ? "" : "s") +
-      (state.view === "month" ? " in "+monthLabel :
-       " from "+state.start+" onward · "+(state.view === "dates" ? "ordered by date" : "grouped by venue"));
+    $("summary").textContent = state.view === "places" ?
+      placeGroups(items).length + " places · " + items.length + " matching listings from " + state.start + " onward" :
+      items.length + " matching event listing" + (items.length === 1 ? "" : "s") +
+      (state.view === "month" ? " in "+monthLabel : " from "+state.start+" onward · ordered by date");
     $("results").innerHTML = state.view === "dates" ? renderDates(items) :
       state.view === "places" ? renderPlaces(items) : renderMonth(items);
     $("showMore").hidden = state.view !== "dates" || items.length <= state.limit;
@@ -311,6 +413,13 @@
   $("showMore").addEventListener("click",() => {state.limit+=60;render();});
   $("exportVisible").addEventListener("click",() => download(filtered(),"shows-"+(state.view==="month"?state.month:state.start)+"-events"));
   $("results").addEventListener("click",event => {
+    const toggle=event.target.closest("[data-place-toggle]");
+    if(toggle){const key=toggle.dataset.placeToggle;
+      if(expandedPlaces.has(key))expandedPlaces.delete(key);else expandedPlaces.add(key);
+      render();
+      $("results").querySelector?.('[data-place-toggle="'+key+'"]')?.focus?.();
+      return;
+    }
     const hit=event.target.closest("[data-event]");
     if(hit){const e=events.find(item=>item.id===hit.dataset.event);if(e)detail(e);return;}
     const day=event.target.closest("[data-day]");

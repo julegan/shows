@@ -105,6 +105,18 @@ async function showsViews(browser,viewport){
   await page.locator('[data-view="places"]').click();
   assert.equal(await page.locator('[data-view="places"]').getAttribute("aria-pressed"),"true");
   assert(await page.locator(".preview-place").count()>0,"Places still groups events by venue");
+  assert(await page.locator(".place-highlights,.place-regular").count()>0,"Places prioritizes upcoming bills and recurring programming");
+  const toggle=page.locator(".place-toggle").first();
+  if(await toggle.count()){
+    const place=toggle.locator("xpath=ancestor::article");
+    const count=await place.locator("[data-event]").count();
+    await toggle.click();
+    assert.equal(await place.locator(".place-full-list").count(),1,"Expanded place shows its full chronological lineup");
+    assert((await place.locator("[data-event]").count())>=count,"Expanded place does not lose dates");
+    assert.equal(await place.locator(".place-toggle").getAttribute("aria-expanded"),"true");
+    await place.locator(".place-toggle").click();
+    assert.equal(await place.locator(".place-toggle").getAttribute("aria-expanded"),"false");
+  }
   errors.push(...await audit(page,"SHOWS places "+viewport.width));
   await page.locator('[data-view="month"]').click();
   assert.equal(await page.locator('[data-view="month"]').getAttribute("aria-pressed"),"true");
