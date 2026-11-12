@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-11
+# Portland music & independent culture source scout — 2026-11-12
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 4 inaccessible/changed; 1 newly discovered links; 119 total recorded research leads.**
+**26 source pages attempted; 3 inaccessible/changed; 1 newly discovered links; 120 total recorded research leads.**
 
 ## Source health
 
@@ -17,7 +17,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | Portland Indie Book & Art Fair vendor directory | Read-only check succeeded | 1 |
 | Woodland Shrine maker event appearances | Read-only check succeeded | 3 |
 | Portland holiday markets index | Read-only check succeeded | 1 |
-| Portland Monthly's holiday market guide | Error — Seed source returned non-HTML or HTTP 403 | 0 |
+| Portland Monthly's holiday market guide | Read-only check succeeded | 1 |
 | Portland Bazaar local maker event calendar | Read-only check succeeded | 3 |
 | The 1905 official jazz tickets | Read-only check succeeded | 0 |
 | Jack London Revue calendar | Read-only check succeeded | 1 |
@@ -41,7 +41,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/82352507/science-on-tap-save-the-planetrecycleor-not-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
