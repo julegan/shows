@@ -176,6 +176,7 @@ el("results").listeners.click({target});
 for(let n=0;n<4;n++)assert(renderedIds().includes("fixture-weekly-karaoke-"+n),
   "All recurring instances become available when expanded");
 views.find(v=>v.dataset.view==="dates").click();
+el("search").input("Karaoke from Hell");
 for(let n=0;n<4;n++)assert(renderedIds().includes("fixture-weekly-karaoke-"+n),
   "By date never hides instances of recurring shows");
 el("clearFilters").click();
