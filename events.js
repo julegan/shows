@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-11",
+  "sourceCheckedAt": "2026-11-13",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1395,
-  "addedOccurrences": 8,
-  "batchId": "auto-discovery-2026-11-11-74",
+  "totalOccurrences": 1419,
+  "addedOccurrences": 24,
+  "batchId": "auto-discovery-2026-11-13-77",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -176,11 +176,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-10-72",
       "addedOccurrences": 32
+    },
+    {
+      "batchId": "auto-discovery-2026-11-11-74",
+      "addedOccurrences": 8
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 434
+  "musicOccurrences": 436
 };
 window.SHOWS_EVENTS = [
   {
@@ -32336,6 +32340,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-11-21-1a6f6b2c9239",
+    "title": "Chasing Cowboys",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing.",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/11/21/chasing-cowboys",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/11/21/chasing-cowboys",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1794527715382-17FBBJ473TN34RJ1EIL9/IMG_7706.JPG",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/11/21/chasing-cowboys",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2026-11-21-ddbdd4450390",
     "title": "Two Dimensional Man",
     "subtitle": "Source-discovered venue event · details need review",
@@ -38194,6 +38250,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-11-28-0d2f03a5c2cc",
+    "title": "PepperKorns + Neek In The We's + ?",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=N2puYm1wZGoyM3NrOWRkZ3ZibnQ1dGtma28gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=N2puYm1wZGoyM3NrOWRkZ3ZibnQ1dGtma28gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2026-11-28-6f514f902f54",
     "title": "Sabrina Saed & Your Jack",
     "subtitle": "Source-discovered venue event · details need review",
@@ -38239,6 +38339,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "atlantis-lounge",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-28-8c690394a63a",
+    "title": "Sap",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Sludge Mother , The Jewelry",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/90939965/sap-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/90939965/sap-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1cbd18695a621f702afe39d6f58ca372.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -38389,6 +38541,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-28-a634ee5c6348",
+    "title": "Tony Furtado Band 15th Annual Post-Thanksgiving Bash",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: David Jacobs-Strain",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/47269957/tony-furtado-band-15th-annual-postthanksgiving-bash-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/47269957/tony-furtado-band-15th-annual-postthanksgiving-bash-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b5667eee1685346d0df5980342b0ab19.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -39573,6 +39777,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-11-30-74572ecbaa2d",
+    "title": "Comedy & Monday Night Football Hosted by Hazel Dell Hottie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. FREE EVENT ON OUR HEATED PATIO",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-8jk49",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-8jk49",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1790483055381-H68GPQ6ACG49YNJQUKE7/Marsha.jpg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-8jk49",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-11-30-fa1db602fd34",
     "title": "Open Mic with Lucas Benoit",
     "subtitle": "Source-discovered venue event · details need review",
@@ -39810,6 +40065,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "revolution-hall",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-11-30-0648fe2a29f8",
+    "title": "THE KILANS - COULD YOU KEEP IT DARK? TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Margot Sinclair",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/90086202/the-kilans-could-you-keep-it-darktour-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/90086202/the-kilans-could-you-keep-it-darktour-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f7e9521a0fc370dad6d3b9abf86bd4d4.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -42895,6 +43202,51 @@ window.SHOWS_EVENTS = [
     "seriesId": "saturday-market-2026"
   },
   {
+    "id": "auto-alberta-street-pub-2026-12-05-3b2d3ea5d7f9",
+    "title": "Dr. King Elementary Holiday Fundraiser",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing.",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/12/5/dr-king-elementary-holiday-fundraiser",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/12/5/dr-king-elementary-holiday-fundraiser",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-05-ca0203ee8b58",
     "title": "Aiden Fritchman",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43414,6 +43766,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-05-7c54ebefc743",
+    "title": "Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Mary Gauthier",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/58008973/sanctuary-park-tourcelebrating-40-years-of-the-jayhawks-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/58008973/sanctuary-park-tourcelebrating-40-years-of-the-jayhawks-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/075c8fdbfc841efdd48f6154b847ecc7.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -44380,6 +44783,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-06-286f111f6570",
+    "title": "Choir! Choir! Choir!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/62407948/choirchoirchoir-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/62407948/choirchoirchoir-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/bbf2ea6b3d14f9bec23e4e3d768bfb2c.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -45389,6 +45843,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-12-08-eea60b8102e2",
+    "title": "Strawberry Guy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: Jean-Luc Eldenwood",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/72341210/strawberry-guy-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/72341210/strawberry-guy-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/031be39925beedb37a696814821e503e.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-high-water-2026-12-08-8d5959d961d6",
     "title": "Karaoke Night - Free!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -45520,6 +46025,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-09-de882ef70cef",
+    "title": "Lady Killers hosted by Ally J Ward & Devan Daily",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/78895235/lady-killers-hosted-by-ally-j-ward-devan-daily-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/78895235/lady-killers-hosted-by-ally-j-ward-devan-daily-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/52c9c7787afd6c020f0d0102eaf4a17c.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -45884,6 +46440,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2026-12-09-8574f49d4644",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/14_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "showdown",
       "method": "primary-source-collection"
     }
   },
@@ -50282,6 +50889,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-17-066053487d6d",
+    "title": "FINGER HEART: THE K-POP NIGHT",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-17-finger-heart-the-k-pop-night",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-17-finger-heart-the-k-pop-night",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/66fa0da912c97cf1bbff0becbe627169.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-17-finger-heart-the-k-pop-night",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-12-18-97541c796451",
     "title": "GRAVEDGR",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52607,6 +53265,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2026-12-23-c9c52384b153",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The James Sasser Quintet",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-23T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/34_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-nova-pdx-2026-12-23-27c7b5a7a0f6",
     "title": "House Wednesday",
     "subtitle": "Source-discovered venue event · details need review",
@@ -53845,6 +54554,57 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationEvidence": "Event-specific source wording"
+  },
+  {
+    "id": "auto-showdown-2026-12-30-fa5ea73db433",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/44_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-nova-pdx-2026-12-30-fd018d3947ec",
@@ -55697,6 +56457,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2027-01-13-ee4c3c0fd3a1",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-13T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/54_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2027-01-13-ffe446ca5c90",
     "title": "POPSMEAR",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57283,6 +58094,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2027-01-23-7c3d4bf2cd00",
+    "title": "John Roseboro",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/john-roseboro-january-23-2027-800990",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/john-roseboro-january-23-2027-800990",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/800/990/compressed/John_Roseboro_-_Press_Photo_2.jpg?1794523794",
+      "sourceUrl": "https://app.opendate.io/e/john-roseboro-january-23-2027-800990",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2027-01-23-75655edf36e8",
     "title": "LUIS J GOMEZ",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57842,6 +58704,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2027-01-27-e66a6aa85d4b",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-27T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/74_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-28-c2dd83391821",
     "title": "Fruition",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57940,6 +58853,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-28-5a75079c6046",
+    "title": "THE DROWNS with Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-28T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/the-drowns-with-guests/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/the-drowns-with-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/15/02/84_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/the-drowns-with-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -61478,6 +62442,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-soundcontrol-pdx-2027-02-26-e47984094271",
+    "title": "Acephalix, Sulfuric Cautery, Blood Monolith",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-26T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "Soundcontrol PDX",
+    "url": "https://www.treetix.com/event/204959/soundcontrol",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Soundcontrol PDX",
+        "url": "https://www.treetix.com/event/204959/soundcontrol",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/soundcontrol/images/events/2027-02-26-204959-SC-BM-Feb-Tour-Poster-8x11.jpg",
+    "sourceEventId": 204959,
+    "sourceCalendar": "soundcontrol",
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "soundcontrol-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mammoth-nw-2027-02-27-cbe37fe9b45b",
     "title": "Caskets",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64316,6 +65327,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-crystal-ballroom-2027-03-19-a2f290f63320",
+    "title": "Noga Erez",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-19T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280097-noga-erez/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280097-noga-erez/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/11/NogaErez26-rJRBLf.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280097-noga-erez/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-03-19-03814c060141",
     "title": "Akira Yamaoka",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64816,6 +65878,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "roseland",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-03-25-15b8540b8e03",
+    "title": "Video Game Rave",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-25T21:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-03-25-video-game-rave",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-03-25-video-game-rave",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/802325453dd2c0202755485f9f4d368c.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-03-25-video-game-rave",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -67132,6 +68245,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-29-381cae0e7839",
+    "title": "Snotty Nose Rez Kids - Daddy’s Home Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-29T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: Chloe Star, BLXCKPUNKS",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/86220763/snotty-nose-rez-kids-daddys-home-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/86220763/snotty-nose-rez-kids-daddys-home-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ad038f98476be5a43b73cdbc11211047.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/86220763/snotty-nose-rez-kids-daddys-home-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-04-30-eb0f55fd0ca4",
     "title": "HELL'S BELLES",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68078,6 +69242,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-05-21-8fe73dc46c28",
+    "title": "Haute & Freddy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-21T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280043-haute-freddy/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-13",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280043-haute-freddy/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-13",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/11/HauteandFreddy26-fGhVla.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280043-haute-freddy/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-13",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
