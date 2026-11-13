@@ -4,7 +4,7 @@
 
 The source serializes dates as UTC (`$D...Z`) while its UI displays the same clock components. This is **not proof of a Pacific-local show timestamp**: do not use the serialized offset or displayed clock as an approved show/doors time without original flyer/organizer corroboration. All-ages flags and possible locations remain source claims.
 
-**Black Water priority:** 4 dated source leads; 4 original flyer references available for rights and event-identity review. PDX//SUBVERT is a cross-venue scene guide, not the official calendar for every listed venue.
+**Black Water priority:** 5 dated source leads; 5 original flyer references available for rights and event-identity review. PDX//SUBVERT is a cross-venue scene guide, not the official calendar for every listed venue.
 
 ## Proposed Black Water matches to already listed SHOWS events
 
@@ -13,7 +13,7 @@ These links are **review-only**, not approved for embedding. Match checks compar
 No unique two-artist Black Water matches without existing artwork in the approved calendar. Review the source leads below; do not infer a missing or duplicate event.
 
 
-**7 direct scene listings; 0 ordinary review leads, 7 explicit holds; 0 automatically approved.**
+**8 direct scene listings; 0 ordinary review leads, 8 explicit holds; 0 automatically approved.**
 
 | Source date and displayed clock (unverified) | Bands / format | Source venue | Age | Source holds and research |
 | --- | --- | --- | --- | --- |
@@ -21,6 +21,7 @@ No unique two-artist Black Water matches without existing artwork in the approve
 | 2026-11-14 19:00 | Record Fair! + DJ sets | Black Water | All ages (source claim) | **HOLD: Mixed record fair/DJ program: music-first editorial classification required**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1792294764/subvert/f0bkml3mcmwl1ugcahz6.png |
 | 2026-11-21 03:00 | Fogweaver / Frost Clad / Malfet / DJ Tony Remple | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793845440/subvert/dood9yzc9xa9yljqhjly.jpg |
 | 2026-11-24 03:00 | Jallanzo the Dub Wizard and Dubkhlaat / Blind Prophet / Mikey Dub | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793755637/subvert/r89gxmmulcsxpomdchcl.png |
+| 2026-12-13 03:00 | Labrat / Poise / It’s A Setup / 22RE / Dry Heave | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793847002/subvert/wp8brjycntv9ffljfv2h.jpg |
 | 2026-11-14 02:00 | Huge Prick / Jab / Festering Estate / Zero Sanity | Ask A Idiot | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Notes: Assuming its all ages; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793388184/subvert/fvkfo4tp917buetk3958.jpg |
 | 2026-11-21 03:00 | Radiant Damage / SSold / Vahlakar w/ DJ Flyin' Zombo | Alleyway | Age policy not confirmed | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794086834/subvert/dsf6lhbcxgvdxre5pjnj.jpg |
 | 2026-11-22 03:00 | Divers / Old City / Fatal State w/ DJ Lonely Boy | Alleyway | Age policy not confirmed | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794087037/subvert/hj1eyasrx6xufzt12kag.jpg |
