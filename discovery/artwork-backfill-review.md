@@ -1,12 +1,12 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-14T20:52:45.810Z; Portland date: 2026-11-14. This workflow does not publish images.
+Generated 2026-11-15T02:59:18.323Z; Portland date: 2026-11-14. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **257**
-- Already have image references: **179**
+- Upcoming music listings: **259**
+- Already have image references: **181**
 - Missing artwork: **78**
 - Missing listings with supported individual source pages: **18**
 - Missing listings needing another source or individual permalink: **60**
@@ -14,7 +14,7 @@ Image URLs must be reviewed for event identity, attribution, suitability and usa
 - Near-term events: **76**; eligible source pages: **19**
 - Near-term eligible source rechecks this run: **19** of **19** (never truncated by the backlog budget)
 - Missing music artwork beyond tomorrow: **4** in coming week, **12** beyond
-- Rotating older-art batch: **0** of **0** (requested 78; backlog budget 200; total requests include all eligible today/tomorrow)
+- Rotating older-art batch: **0** of **0** (requested 79; backlog budget 200; total requests include all eligible today/tomorrow)
 - Missing older-art entries not examined in this run: **0** (distributed across subsequent runs)
 - Total original event-page requests attempted: **35**; artwork proposed: **0**; other responses: **19**
 
@@ -33,7 +33,7 @@ A source title match confirms the linked page still mentions this bill; it does 
 | Under Utopia, Silver Shores, American Crows (No Fun) | 2026-10-17 | NO_EVENT_IMAGE | https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows |
 | DESERT DWELLERS with Entangled Mind, Mah Ze Tar (Star Theater) | 2026-10-18 | SOURCE_TITLE_TOKEN_MATCH | https://www.startheaterportland.com/tm-event/desert-dwellers-with-entangled-mind-mah-ze-tar/ |
 | SMASH disco~glam~metal~punk-hiphop (Dante's) | 2026-11-03 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-6/ |
-| LOUIE THESINGER (Dante's) | 2026-10-21 | TIMEOUT | https://www.danteslive.com/tm-event/louie-the-singer/ |
+| LOUIE THESINGER (Dante's) | 2026-10-21 | FETCH_ERROR | https://www.danteslive.com/tm-event/louie-the-singer/ |
 | Kingdom of Giants (Hawthorne Theatre) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/kingdom-of-giants/hawthorne-theatre/portland-oregon/ |
 | Sure • Sean Martin West • Terrible Pop (No Fun) | 2026-10-18 | NO_EVENT_IMAGE | https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop |
 | Iron Chic with special guests (Star Theater) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.startheaterportland.com/tm-event/iron-chic-with-special-guests/ |
@@ -82,10 +82,9 @@ A source title match confirms the linked page still mentions this bill; it does 
 ## Event-specific original-page check outcomes
 
 - SOURCE_TITLE_TOKEN_MATCH: 16
-- HTTP_404: 9
+- HTTP_404: 10
 - NO_EVENT_IMAGE: 7
-- TIMEOUT: 2
-- FETCH_ERROR: 1
+- FETCH_ERROR: 2
 
 ## Missing music artwork by venue
 
@@ -116,9 +115,9 @@ No new verified images proposed in this batch. The action completed successfully
 - Under Utopia, Silver Shores, American Crows (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/under-utopia-silver-shores-american-crows
 - Silverstein with Story of the Year — Camp Screamo Tour (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/278093-silverstein
 - Sure • Sean Martin West • Terrible Pop (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/sure-sean-martin-west-terrible-pop
-- LOUIE THESINGER (Dante's) — TIMEOUT — https://www.danteslive.com/tm-event/louie-the-singer/
+- LOUIE THESINGER (Dante's) — FETCH_ERROR — https://www.danteslive.com/tm-event/louie-the-singer/
 - Seb El Zin • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/seb-el-zin-tba-tba
-- PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — TIMEOUT — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
+- PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — HTTP_404 — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
 - molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
 - Amy Bleu • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/amy-bleu-tba-tba
 - Jen Howard • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/jen-howard-tba-tba
@@ -128,10 +127,10 @@ No new verified images proposed in this batch. The action completed successfully
 - Softgaze • Greyhound Go • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/softgaze-tba-tba
 - You, The Audience • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/you-the-audience-tba-tba
 - Henry Ivie-Gardner • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/henry-ivie-gardner-tba-tba
-- Etta Dean • TBA • TBA (No Fun) — FETCH_ERROR — https://www.nofunportland.com/events/etta-dean-tba-tba
+- Etta Dean • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/etta-dean-tba-tba
 - Tito Padrino • 61TO16 • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/tito-padrino-61to16-tba
 - Jake Soffer • Jarrett Tetsuo Domen • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/jake-soffer-jarrett-tetsuo-domen-tba
-- BLISTER • TBA • TBA (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/blister-tba-tba
+- BLISTER • TBA • TBA (No Fun) — FETCH_ERROR — https://www.nofunportland.com/events/blister-tba-tba
 
 ## Next steps
 

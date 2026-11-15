@@ -9,51 +9,46 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Black Water | Checked | 7 | 0 | 0 | 0 | 0 | 0 | 7 |
-| High Water Mark | Checked | 67 | 1 | 0 | 1 | 0 | 0 | 66 |
-| Soundcontrol PDX | Checked | 5 | 1 | 0 | 1 | 0 | 3 | 1 |
-| Twilight Cafe and Bar | Checked | 26 | 2 | 2 | 0 | 2 | 3 | 21 |
+| High Water Mark | Checked | 67 | 0 | 0 | 0 | 0 | 0 | 67 |
+| Soundcontrol PDX | Checked | 5 | 0 | 0 | 0 | 0 | 3 | 2 |
+| Twilight Cafe and Bar | Checked | 26 | 0 | 0 | 0 | 0 | 3 | 23 |
 | Star Theater | Checked | 36 | 0 | 0 | 0 | 0 | 4 | 32 |
-| Dante's | Checked | 41 | 3 | 0 | 3 | 3 | 4 | 34 |
+| Dante's | Checked | 42 | 1 | 1 | 0 | 1 | 4 | 37 |
 | Roseland Theater | Checked | 34 | 0 | 0 | 0 | 0 | 6 | 28 |
 | Wonder Ballroom | Checked | 32 | 0 | 0 | 0 | 0 | 8 | 24 |
 | Hawthorne Theatre | Checked | 39 | 0 | 0 | 0 | 0 | 3 | 36 |
-| Crystal Ballroom | Checked | 53 | 2 | 0 | 2 | 2 | 5 | 46 |
-| Revolution Hall | Checked | 30 | 6 | 0 | 6 | 6 | 7 | 17 |
-| Turn! Turn! Turn! | Checked | 13 | 1 | 0 | 1 | 1 | 1 | 11 |
+| Crystal Ballroom | Checked | 53 | 0 | 0 | 0 | 0 | 5 | 48 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 6 | 24 |
+| Turn! Turn! Turn! | Checked | 15 | 2 | 1 | 1 | 2 | 1 | 12 |
 | Kenton Club | Checked | 11 | 0 | 0 | 0 | 0 | 4 | 7 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 4 | 0 | 4 | 4 | 4 | 22 |
-| Holocene | Checked | 45 | 2 | 2 | 0 | 2 | 24 | 19 |
-| Starday Tavern | Checked | 1587 | 1 | 0 | 1 | 0 | 43 | 1543 |
-| The Off Beat / Friends of Noise | Checked | 13 | 0 | 0 | 0 | 0 | 6 | 7 |
-| Aladdin Theater | Checked | 83 | 1 | 0 | 1 | 1 | 4 | 78 |
-| Mission Theater | Checked | 41 | 0 | 0 | 0 | 0 | 0 | 41 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 4 | 26 |
+| Holocene | Checked | 45 | 0 | 0 | 0 | 0 | 24 | 21 |
+| Starday Tavern | Checked | 1587 | 0 | 0 | 0 | 0 | 43 | 1544 |
+| The Off Beat / Friends of Noise | Checked | 12 | 0 | 0 | 0 | 0 | 5 | 7 |
+| Aladdin Theater | Checked | 83 | 0 | 0 | 0 | 0 | 4 | 79 |
+| Mission Theater | Checked | 43 | 0 | 0 | 0 | 0 | 1 | 42 |
 | Nova PDX | Checked | 17 | 0 | 0 | 0 | 0 | 0 | 17 |
-| Lola's Room | Checked | 13 | 0 | 0 | 0 | 0 | 3 | 10 |
-| The Showdown | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Lola's Room | Checked | 15 | 0 | 0 | 0 | 0 | 3 | 12 |
+| The Showdown | Checked | 54 | 5 | 0 | 5 | 5 | 15 | 34 |
 | 45 East | Checked | 17 | 0 | 0 | 0 | 0 | 0 | 17 |
 | Mammoth Northwest | Checked | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
-| The 1905 | Checked | 8 | 4 | 4 | 0 | 4 | 0 | 4 |
-| Jack London Revue | Checked | 50 | 1 | 0 | 1 | 1 | 25 | 24 |
-| Alberta Street Pub | Checked | 38 | 3 | 0 | 2 | 2 | 5 | 30 |
-| Alberta Rose Theatre | Checked | 61 | 0 | 0 | 0 | 0 | 6 | 55 |
+| The 1905 | Checked | 8 | 0 | 0 | 0 | 0 | 7 | 1 |
+| Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 0 | 50 |
+| Alberta Street Pub | Checked | 37 | 0 | 0 | 0 | 0 | 5 | 32 |
+| Alberta Rose Theatre | Checked | 61 | 0 | 0 | 0 | 0 | 7 | 54 |
 | Mississippi Pizza / Atlantis Lounge | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Classification review
 
-New candidate categories: **Music** 8 · **Performance** 1 · **Unclassified** 23.
-**23 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 2 · **Unclassified** 6.
+**6 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- High Water Mark Lounge: Fawkes Glove, Serpents of Heresy, Solution Honey — https://www.treetix.com/event/204961/highwatermark
-- High Water Mark Lounge: Acephalix, Sulfuric Cautery, Blood Monolith — https://www.treetix.com/event/204959/soundcontrol
-- Dante's: UGLY SWEATER SHOW! with Old Cross, Carden, Stab In The Dark, & STOP! — https://www.danteslive.com/tm-event/ugly-sweater-show-with-old-cross-carden-stab-in-the-dark-stop/
-- Dante's: FLY OUT FOR YOUR FUNERAL with Sadboisam, Fa$t50, & Public Skills — https://www.danteslive.com/tm-event/fly-out-for-your-funeral-with-sadboisam-fat50-public-skills/
-- Dante's: THE DROWNS with Guests — https://www.danteslive.com/tm-event/the-drowns-with-guests/
-- Crystal Ballroom: Noga Erez — https://www.crystalballroompdx.com/events/280097-noga-erez/
-- Crystal Ballroom: Haute & Freddy — https://www.crystalballroompdx.com/events/280043-haute-freddy/
-- Revolution Hall: Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks — https://www.etix.com/ticket/p/58008973/sanctuary-park-tourcelebrating-40-years-of-the-jayhawks-portland-revolution-hall
-- Revolution Hall: Choir! Choir! Choir! — https://www.etix.com/ticket/p/62407948/choirchoirchoir-portland-revolution-hall
-- Revolution Hall: Strawberry Guy — https://www.etix.com/ticket/p/72341210/strawberry-guy-portland-revolution-hall
-- Plus 13 other unclassified candidates in the full event table below.
+- Turn! Turn! Turn!: Gabe Quinn — https://app.opendate.io/e/gabe-quinn-may-22-2027-801720
+- The Showdown: Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts — https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/
+- The Showdown: Whiskey Wednesday with Intermediate Two-Step Lessons and The James Sasser Quintet — https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/
+- The Showdown: Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests — https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/
+- The Showdown: Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts — https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/
+- The Showdown: Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests — https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/
 
 ### Connections requiring work
 
@@ -76,7 +71,6 @@ New candidate categories: **Music** 8 · **Performance** 1 · **Unclassified** 2
 
 ### Failed source checks
 
-- showdown: The operation was aborted due to timeout
 - atlantis-lounge: fetch failed
 
 
@@ -84,65 +78,33 @@ New candidate categories: **Music** 8 · **Performance** 1 · **Unclassified** 2
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 0** · Ambiguous matching source URLs: 1.
+**Potential changes: 2** · Ambiguous matching source URLs: 3.
 
-No changed published events were confirmed by uniquely matching source records in this run.
+| Change | Venue and event | Approved → observed | Official event evidence |
+| --- | --- | --- | --- |
+| Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
+| Listed time changed | The Showdown — Tropical Latin Goth Club NYE Pari | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/tropical-latin-goth-club-nye-pari/ |
 
-The 1 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 32
+## New candidates: 8
 
-- high-water: 1 proposals
-- soundcontrol-pdx: 1 proposals
-- twilight: 2 proposals
-- dantes: 3 proposals
-- crystal-ballroom: 2 proposals
-- revolution-hall: 6 proposals
-- turn-turn-turn: 1 proposals
-- mississippi-polaris: 4 proposals
-- holocene: 2 proposals
-- starday-tavern: 1 proposals
-- aladdin-theater: 1 proposals
-- the-1905: 4 proposals
-- jack-london-revue: 1 proposals
-- alberta-street-pub: 3 proposals
+- dantes: 1 proposals
+- turn-turn-turn: 2 proposals
+- showdown: 5 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-03 | Fawkes Glove, Serpents of Heresy, Solution Honey | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204961/highwatermark |
-| 2027-02-26 | Acephalix, Sulfuric Cautery, Blood Monolith | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204959/soundcontrol |
-| 2026-11-28 | Cumbia Night! | Twilight Cafe and Bar | 21:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/468998/cumbia-night- |
-| 2026-12-12 | PUNKMAS 4! A Benefit for New Avenues for Youth w/ Systemic Collapse, The Seditionist, The Kops, Trans Panic | Twilight Cafe and Bar | 20:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/468999/punkmas-4-a-benefit-for-new-avenues-for-youth-w-systemic-collapse-the-seditionist-the-kops-trans-panic |
-| 2026-12-12 | UGLY SWEATER SHOW! with Old Cross, Carden, Stab In The Dark, & STOP! | Dante's | 20:30 (doors/show unverified) | https://www.danteslive.com/tm-event/ugly-sweater-show-with-old-cross-carden-stab-in-the-dark-stop/ |
-| 2026-12-17 | FLY OUT FOR YOUR FUNERAL with Sadboisam, Fa$t50, & Public Skills | Dante's | 20:00 (doors/show unverified) | https://www.danteslive.com/tm-event/fly-out-for-your-funeral-with-sadboisam-fat50-public-skills/ |
-| 2027-01-28 | THE DROWNS with Guests | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/the-drowns-with-guests/ |
-| 2027-03-19 | Noga Erez | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/280097-noga-erez/ |
-| 2027-05-21 | Haute & Freddy | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/280043-haute-freddy/ |
-| 2026-12-05 | Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/58008973/sanctuary-park-tourcelebrating-40-years-of-the-jayhawks-portland-revolution-hall |
-| 2026-12-06 | Choir! Choir! Choir! | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/62407948/choirchoirchoir-portland-revolution-hall |
-| 2026-12-08 | Strawberry Guy | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/72341210/strawberry-guy-portland-revolution-hall |
-| 2026-12-09 | Lady Killers hosted by Ally J Ward & Devan Daily | Show Bar at Revolution Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/78895235/lady-killers-hosted-by-ally-j-ward-devan-daily-portland-show-bar-at-revolution-hall |
-| 2026-12-10 | Live Wire with Luke Burbank | Revolution Hall | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/32891845/live-wire-with-luke-burbank-portland-revolution-hall |
-| 2026-12-11 | DESI BANKS: YOUR FAVORITE COUSIN | Revolution Hall | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/69921224/desi-banksyour-favorite-cousin-portland-revolution-hall |
-| 2027-01-23 | John Roseboro | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/john-roseboro-january-23-2027-800990 |
-| 2026-11-28 | Tony Furtado Band 15th Annual Post-Thanksgiving Bash | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47269957/tony-furtado-band-15th-annual-postthanksgiving-bash-portland-mississippi-studios |
-| 2026-11-28 | Sap | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/90939965/sap-portland-polaris-hall |
-| 2026-11-30 | THE KILANS - COULD YOU KEEP IT DARK? TOUR | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/90086202/the-kilans-could-you-keep-it-darktour-portland-polaris-hall |
-| 2026-12-02 | Thoughts on Bowling | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/64205006/thoughts-on-bowling-portland-polaris-hall |
-| 2026-12-17 | FINGER HEART: THE K-POP NIGHT | Holocene | 20:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-17-finger-heart-the-k-pop-night |
-| 2027-03-25 | Video Game Rave | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2027-03-25-video-game-rave |
-| 2026-11-28 | PepperKorns + Neek In The We's + ? | Starday Tavern | 20:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=N2puYm1wZGoyM3NrOWRkZ3ZibnQ1dGtma28gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
-| 2027-04-29 | Snotty Nose Rez Kids - Daddy’s Home Tour | Aladdin Theater | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/86220763/snotty-nose-rez-kids-daddys-home-tour-portland-aladdin-theater |
-| 2026-11-15 | Bridgetown Sextet — 5:30 PM show | The 1905 | 17:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13229/2026-11-15 |
-| 2026-11-15 | Bridgetown Sextet — 7:30 PM show | The 1905 | 19:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13229/2026-11-15 |
-| 2026-11-18 | Cyrus Nabipoor Quartet — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13230/2026-11-18 |
-| 2026-11-18 | Cyrus Nabipoor Quartet — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13230/2026-11-18 |
-| 2027-03-12 | Jeff Lorber - Late Show | Jack London Revue | 22:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/jeff-lorber-late-show/ |
-| 2026-11-21 | Chasing Cowboys | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/11/21/chasing-cowboys |
-| 2026-11-30 | Comedy & Monday Night Football Hosted by Hazel Dell Hottie | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-8jk49 |
-| 2026-12-05 | Dr. King Elementary Holiday Fundraiser | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/5/dr-king-elementary-holiday-fundraiser |
+| 2027-02-26 | EMO VS. POP-PUNK: Myspace Music Video Party | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/emo-vs-pop-punk-myspace-music-video-party-2/ |
+| 2026-11-17 | The Dirty Pretty (MPLS) + Tripple Nipple + PBOT | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/the-dirty-pretty-mpls-tripple-nipple-pbot-november-17-2026-801729 |
+| 2027-05-22 | Gabe Quinn | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/gabe-quinn-may-22-2027-801720 |
+| 2026-12-09 | Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/ |
+| 2026-12-23 | Whiskey Wednesday with Intermediate Two-Step Lessons and The James Sasser Quintet | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/ |
+| 2026-12-30 | Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/ |
+| 2027-01-13 | Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/ |
+| 2027-01-27 | Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests | The Showdown | 20:30 (doors/show unverified) | https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/ |
 
-## Held for review: 168
+## Held for review: 165
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Western Standard Time, The Cascadians, Weekend Kids, Impact Sound! — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204960/soundcontrol
@@ -180,8 +142,7 @@ The 1 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Heathens Homecoming West 2026 - Patterson Hood in conversation with Willy Vlautin — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/76838757/heathens-homecoming-west-2026-patterson-hood-in-conversation-with-willy-vlautin-portland-show-bar-at-revolution-hall
-- [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
+- [revolution-hall] Heathens Homecoming West 2026 Night 3 Happy Hour (Free) — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57176347/heathens-homecoming-west-2026-night-3-happy-hour-free-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: DRIVE-BY TRUCKERS - HeAthens Homecoming West 2026 (Night 3) — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/54137237/sold-outdriveby-truckers-heathens-homecoming-west-2026-night-3-portland-revolution-hall
 - [revolution-hall] RESCHEDULED TO 4/27/17: WAAX — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/72288527/rescheduled-to-42717waax-portland-show-bar-at-revolution-hall
 - [revolution-hall] SOLD OUT: Gary Numan North American Fall Tour 2026 — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall
@@ -263,7 +224,6 @@ The 1 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [starday-tavern] Fuck by fuck off 2026 — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Happy HoliGays! 2 Day Fest — Event lacks independently verified Portland source timezone 
 - [starday-tavern] NYE w/ Velvet Underground + — Event lacks independently verified Portland source timezone 
-- [the-off-beat] 11/14 Weathering The Storm (2nd annual) — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-14-weathering-the-storm-2nd-annual-november-14-2026-795974
 - [the-off-beat] 11/15 Open Mic Night — Official event venue/address does not match The Off Beat https://calendar.friendsofnoise.org/shows/11-15-open-mic-night-november-15-2026-796992
 - [the-off-beat] 12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic, You Loom Angelic — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-you-loom-angelic-december-03-2026-756887
 - [the-off-beat] 12/18 The Slightest Bits, Amy Beth and Thee Creeps, Ashby Bison, Coco — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/12-18-the-slightest-bits-amy-beth-and-thee-creeps-ashby-bison-coco-december-18-2026-801550
@@ -273,39 +233,38 @@ The 1 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [aladdin-theater] SOLD OUT: Cat Clyde & Dean Johnson — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/48494309/sold-outcat-clyde-dean-johnson-portland-aladdin-theater
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
 - [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
+- [mission-theater] Coffee Roasters Anniversary Specials — Source search record lacks usable full-year date or event identity: 11/14/2026 
 - [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
-- [jack-london-revue] BURLY-Q REVUE — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/burly-q-revue-6/
-- [jack-london-revue] INFINITY — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/infinity/
-- [jack-london-revue] ONE WAY OUT – ALLMAN BROTHERS BAND TRIBUTE — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/one-way-out-allman-brothers-band-tribute/
-- [jack-london-revue] BURLY-Q REVUE — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/burly-q-revue-8/
-- [jack-london-revue] STEVE OLIVER — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/steve-oliver/
-- [jack-london-revue] MEL BROWN B3 ORGAN GROUP – Jazz Titan Thursdays — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays/
-- [jack-london-revue] L'RAIN — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/lrain/
-- [jack-london-revue] LAU NOAH x ADAM NEELY — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/lau-noah-x-adam-neely/
-- [jack-london-revue] JUNE MCDOOM — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/june-mcdoom/
-- [jack-london-revue] THE ROYAL WE — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/the-royal-we/
-- [jack-london-revue] MEL BROWN B3 ORGAN GROUP – Jazz Titan Thursdays — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-10/
-- [jack-london-revue] Cyrus Nabipoor's Crescent City Christmas Card — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/cyrus-nabipoors-crescent-city-christmas-card/
-- [jack-london-revue] The Sean Holmes Band — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/the-sean-holmes-band/
-- [jack-london-revue] JERRY JOSEPH & THE JACKMORMONS — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/jerry-joseph/
-- [jack-london-revue] The Mike Dillon Band Feat Brad Haas & Otto Schrang — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/the-mike-dillon-band-feat-brad-haas/
-- [jack-london-revue] KIMAYA DIGGS — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/kimaya-diggs/
-- [jack-london-revue] LUIS J GOMEZ — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/luis-j-gomez/
-- [jack-london-revue] Early Show-Black Tie/White Noise: Low with The Christopher Brown Quartet — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/early-show-black-tie-white-noise-low-with-the-christopher-brown-quartet/
-- [jack-london-revue] Late Show-Black Tie/White Noise: Low with The Christopher Brown Quartet — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/late-show-black-tie-white-noise-low-with-the-christopher-brown-quartet/
-- [jack-london-revue] ROSE TINTED: A TRIBUTE TO J DILLA — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/rose-tinted-a-tribute-to-j-dilla/
-- [jack-london-revue] IRON PROPHECY – BOB MARLEY B-DAY BASH — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/iron-prophecy-bob-marley-b-day-bash/
-- [jack-london-revue] Kahil El'Zabar – Ethnic Heritage Ensemble – Black History Month Tour – EARLY SHOW — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/kahil-elzabar-ethnic-heritage-ensemble-black-history-month-tour-early-show/
-- [jack-london-revue] Kahil El'Zabar – Ethnic Heritage Ensemble – Black History Month Tour – LATE SHOW — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/kahil-elzabar-ethnic-heritage-ensemble-black-history-month-tour-late-show/
-- [jack-london-revue] Mouse Powell — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/mouse-powell/
-- [jack-london-revue] GATA GALACTICA w/ DJ PAPI — JLR official event page unavailable: The operation was aborted due to timeout https://www.jacklondonrevue.com/tm-event/gata-galactica-w-dj-papi/
+- [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-6/
+- [showdown] Square Dancing with Caller Tighe Hauze and Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-caller-tighe-hauze-and-miss-pralines-whip-lodge-tenderstrokes/
+- [showdown] Whiskey Wednesday and Intermediate Two-Step Lessons with Brooklyn Del and the Revelators — Same venue/date; different existing bill; manual comparison https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-brooklyn-del-and-the-revelators/
+- [showdown] Black Friday Boot Scoot with Silk & Steel and Dance Lessons with Peggy and Jared — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/black-friday-boot-scoot-with-silk-steel-and-dance-lessons-with-peggy-and-jared/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-69/
+- [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 1 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary/
+- [showdown] Katy Sue & the Holiness and Nina Yates & the Heartaches — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/katy-sue-the-holiness-and-nina-yates-the-heartaches/
+- [showdown] Holiday Variety Show Featuring FC Community Choir & Chamber Orchestra, Max Marcos, Big Spender, Katy & the Null Sets, and more — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/holiday-variety-show-featuring-fc-community-choir-chamber-orchestra-max-marcos-big-spender-katy-the-null-sets-and-more/
+- [showdown] FLUFF & GRAVY RECORDS 15TH ANNIVERSARY ~ NIGHT 2 — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/fluff-gravy-records-15th-anniversary-2/
+- [showdown] Whiskey Wednesday with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-7/
+- [showdown] JERRY JOSEPH & THE JACKMORMONS with Ezra Meredith — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/jerry-joseph-and-the-jackmormons-with-ezra-meredith-the-deer-lodge-all-stars/
+- [showdown] Two-Step Tuesday with Patsy's Decline and Two Step Lessons with Robbie — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/two-step-tuesday-with-patsys-decline-and-two-step-lessons-with-robbie/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-70/
+- [showdown] Whiskey Wednesday with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-8/
+- [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-71/
+- [the-1905] Christopher Brown and Friends Featuring Gina Saputo — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13228/2026-11-14
+- [the-1905] Christopher Brown and Friends Featuring Gina Saputo — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13228/2026-11-14
+- [the-1905] Bridgetown Sextet — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13229/2026-11-15
+- [the-1905] Bridgetown Sextet — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13229/2026-11-15
+- [the-1905] Cyrus Nabipoor Quartet — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13230/2026-11-18
+- [the-1905] Cyrus Nabipoor Quartet — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13230/2026-11-18
+- [the-1905] Kerry Politzer and Bossa PDX — Original show clock and Pacific date conflict with source UTC instant https://the1905.turntabletickets.com/shows/13231/2026-11-19
 - [alberta-street-pub] Soulful Sundays featuring Charlie Brown III - Tribute to Herbie Hancock — No event-specific title or public venue URL 
 - [alberta-street-pub] THMPR — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/11/17/thmpr
 - [alberta-street-pub] Rosebolt — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/11/24/rosebolt
 - [alberta-street-pub] Bridgetown Trivia on the Heated Patio! — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2023/3/13/bridgetown-trivia-on-the-heated-patio-6cwzx-dg47h-78jwb-2lt32-azz6n-gd4lz-rd6wg-6ghnc-653hl-dnb5c-42dcy-r6ztl-37cda-7ljxc-fwzrf-73ywh-cx3r9
 - [alberta-street-pub] The Sirens — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/12/5/the-sirens
+- [alberta-rose-theatre] Mortified — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/mortified/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 11/22 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-11-22-1/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 11/22 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-11-22-1/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 11/22 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-11-22-1/alberta-rose-theatre/portland-oregon/
@@ -313,9 +272,8 @@ The 1 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 2/21 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-2-21/alberta-rose-theatre/portland-oregon/
 - [alberta-rose-theatre] Ballet of Lights: Sleeping Beauty in a Sparkling Show 2/21 — Original series performance date or independent ticket ID missing https://albertarosetheatre.com/calendar/category/series/ballet-of-lights-sleeping-beauty-in-a-sparkling-show-2-21/alberta-rose-theatre/portland-oregon/
 
-## Source errors: 2
+## Source errors: 1
 
-- showdown: The operation was aborted due to timeout
 - atlantis-lounge: fetch failed
 
 ## Required editorial checks
