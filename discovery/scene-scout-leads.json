@@ -656,6 +656,17 @@
       "firstSeenOn": "2026-11-09"
     },
     {
+      "url": "https://www.etix.com/ticket/p/47352438/rizo-making-movies-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-14"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/47616808/cult-ofthe-muppets-holiday-show-portland-atlantis-lounge?partner_id=36438",
       "titleHint": "Buy Tickets",
       "source": "music-mississippi-pizza-atlantis",
@@ -808,6 +819,17 @@
       "why": "--> Buy Tickets <!-- end",
       "rank": 7,
       "firstSeenOn": "2026-11-10"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/62225030/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-12"
     },
     {
       "url": "https://www.etix.com/ticket/p/63815578/white-album-xmas-matinee-portland-alberta-rose-theatre?partner_id=100",
