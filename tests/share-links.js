@@ -29,7 +29,7 @@ function start(address, useNativeShare = true) {
   }
   const document = {
     getElementById:node, querySelectorAll(){return [];},
-    createElement(){return {dataset:{},children:[],setAttribute(){},append(...children){this.children.push(...children);},remove(){}};},
+    createElement(){return {dataset:{},children:[],setAttribute(){},addEventListener(){},append(...children){this.children.push(...children);},remove(){}};},
     addEventListener(){},body:{appendChild(){}}
   };
   const navigator = useNativeShare
