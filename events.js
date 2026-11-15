@@ -4,9 +4,9 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-14",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1427,
-  "addedOccurrences": 32,
-  "batchId": "auto-discovery-2026-11-14-78",
+  "totalOccurrences": 1435,
+  "addedOccurrences": 8,
+  "batchId": "auto-discovery-2026-11-14-79",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -180,11 +180,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-11-74",
       "addedOccurrences": 8
+    },
+    {
+      "batchId": "auto-discovery-2026-11-14-78",
+      "addedOccurrences": 32
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 442
+  "musicOccurrences": 444
 };
 window.SHOWS_EVENTS = [
   {
@@ -28263,6 +28267,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-17-283c4ccb4415",
+    "title": "The Dirty Pretty (MPLS) + Tripple Nipple + PBOT",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/the-dirty-pretty-mpls-tripple-nipple-pbot-november-17-2026-801729",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/the-dirty-pretty-mpls-tripple-nipple-pbot-november-17-2026-801729",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/801/729/compressed/Screenshot_2026-11-14_at_5.46.57%E2%80%AFPM.jpg?1794707283",
+      "sourceUrl": "https://app.opendate.io/e/the-dirty-pretty-mpls-tripple-nipple-pbot-november-17-2026-801729",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2026-11-17-411eabc2a295",
     "title": "The Portland GrandSLAM",
     "subtitle": "Source-discovered venue event · details need review",
@@ -46825,6 +46880,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2026-12-09-8574f49d4644",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-09T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/14_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-nova-pdx-2026-12-09-f4bc31faecfb",
     "title": "House Wednesday",
     "subtitle": "Source-discovered venue event · details need review",
@@ -53850,6 +53956,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2026-12-23-c9c52384b153",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The James Sasser Quintet",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-23T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/34_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-james-sasser-quintet/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-nova-pdx-2026-12-23-27c7b5a7a0f6",
     "title": "House Wednesday",
     "subtitle": "Source-discovered venue event · details need review",
@@ -55088,6 +55245,57 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationEvidence": "Event-specific source wording"
+  },
+  {
+    "id": "auto-showdown-2026-12-30-fa5ea73db433",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/44_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-nova-pdx-2026-12-30-fd018d3947ec",
@@ -56936,6 +57144,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2027-01-13-ee4c3c0fd3a1",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and The Spare Parts",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-13T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/54_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-the-spare-parts-2/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "showdown",
       "method": "primary-source-collection"
     }
   },
@@ -59132,6 +59391,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-10",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2027-01-27-e66a6aa85d4b",
+    "title": "Whiskey Wednesday with Intermediate Two-Step Lessons and Brooklyn Del and the Revelators and Special Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-27T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:30 (Doors 20:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/87/74_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-intermediate-two-step-lessons-and-brooklyn-del-and-the-revelators-and-special-guests-2/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "showdown",
       "method": "primary-source-collection"
     }
   },
@@ -62866,6 +63176,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-14",
     "discovery": {
       "sourceId": "soundcontrol-pdx",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-02-26-fe197ecf0e4d",
+    "title": "EMO VS. POP-PUNK: Myspace Music Video Party",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-26T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/emo-vs-pop-punk-myspace-music-video-party-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/emo-vs-pop-punk-myspace-music-video-party-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/15/50/94_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/emo-vs-pop-punk-myspace-music-video-party-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -69778,6 +70142,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2027-05-22-e65715111150",
+    "title": "Gabe Quinn",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/gabe-quinn-may-22-2027-801720",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-14",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/gabe-quinn-may-22-2027-801720",
+        "kind": "organizer",
+        "checkedAt": "2026-11-14",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/801/720/compressed/Screenshot_2026-11-14_at_5.12.13%E2%80%AFPM.jpg?1794705186",
+      "sourceUrl": "https://app.opendate.io/e/gabe-quinn-may-22-2027-801720",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-14",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },

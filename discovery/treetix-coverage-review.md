@@ -11,10 +11,9 @@
 
 | Disposition | Records |
 | --- | ---: |
-| approved | 67 |
+| approved | 69 |
 | outside-geography | 27 |
 | possible-cross-source-match | 3 |
-| proposed | 2 |
 | unconnected-producer | 2 |
 
 ## Original producer calendars
@@ -23,20 +22,18 @@
 | --- | ---: | ---: | ---: | ---: |
 | burlynomicon | 1 | 0 | 0 | 1 |
 | glittertrashcan | 1 | 0 | 0 | 1 |
-| highwatermark | 67 | 66 | 1 | 0 |
-| soundcontrol | 5 | 1 | 1 | 3 |
+| highwatermark | 67 | 67 | 0 | 0 |
+| soundcontrol | 5 | 2 | 0 | 3 |
 
 ## Event-by-event exceptions
 
 This review queue shows pending and unresolved rows, with the nearest dated events first. Geographic and date exclusions are in the full inventory.
 
 - 2026-11-15 — [2026 Hump and Grind Workshop: Masc Movement and Choreography with Throb Zombie](https://www.treetix.com/event/203743/burlynomicon) · Portland Dance Studio · producer burlynomicon · **unconnected-producer**: Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope
-- 2026-12-03 — [Fawkes Glove, Serpents of Heresy, Solution Honey](https://www.treetix.com/event/204961/highwatermark) · High Water Mark Lounge · producer highwatermark · **proposed**: Present in pending discovery dataset, not yet approved. SHOWS ID(s): auto-high-water-2026-12-03-f1b9c4db3320
 - 2026-12-04 — [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) · Hoku Events on Madison · producer glittertrashcan · **unconnected-producer**: Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope
 - 2027-01-15 — [Mustard Plug, The Planet Smashers, The Venomous Pinks](https://www.treetix.com/event/204952/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-15-994729e5f0a0
 - 2027-01-23 — [Western Standard Time, The Cascadians, Weekend Kids, Impact Sound!](https://www.treetix.com/event/204960/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-23-8e200ad20dfc
 - 2027-02-09 — [Wolves in the Throne Room, Stygian Bough, Spirit Possession](https://www.treetix.com/event/204942/soundcontrol) · Wonder Ballroom · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-wonder-ballroom-2027-02-09-cba3ae68a926
-- 2027-02-26 — [Acephalix, Sulfuric Cautery, Blood Monolith](https://www.treetix.com/event/204959/soundcontrol) · High Water Mark Lounge · producer soundcontrol · **proposed**: Present in pending discovery dataset, not yet approved. SHOWS ID(s): auto-soundcontrol-pdx-2027-02-26-e47984094271
 
 ## Full source inventory
 
@@ -62,7 +59,7 @@ Each feed row appears once below. Matching SHOWS IDs are references for investig
 | 16 | whatssofunnynetwork | 204845 | 2026-11-29 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204845/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
 | 17 | highwatermark | 204957 | 2026-11-29 | [Jesco Payne & the Painkillers, DJ Dentside, Boot Scoot Pdx](https://www.treetix.com/event/204957/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-29-acd68672ac36 | Exact original TreeTix event identity in approved SHOWS data |
 | 18 | highwatermark | 204724 | 2026-12-01 | [Karaoke Night - Free!](https://www.treetix.com/event/204724/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-01-59fcbb900b98 | Exact original TreeTix event identity in approved SHOWS data |
-| 19 | highwatermark | 204961 | 2026-12-03 | [Fawkes Glove, Serpents of Heresy, Solution Honey](https://www.treetix.com/event/204961/highwatermark) | High Water Mark Lounge · Portland, OR | proposed | auto-high-water-2026-12-03-f1b9c4db3320 | Present in pending discovery dataset, not yet approved |
+| 19 | highwatermark | 204961 | 2026-12-03 | [Fawkes Glove, Serpents of Heresy, Solution Honey](https://www.treetix.com/event/204961/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-03-f1b9c4db3320 | Exact original TreeTix event identity in approved SHOWS data |
 | 20 | glittertrashcan | 204917 | 2026-12-04 | [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) | Hoku Events on Madison · Portland, OR | unconnected-producer |  | Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope |
 | 21 | highwatermark | 204955 | 2026-12-05 | [A Deeper Meaning Of Pain: A night of gore and noise](https://www.treetix.com/event/204955/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-05-8cdd48057484 | Exact original TreeTix event identity in approved SHOWS data |
 | 22 | whatssofunnynetwork | 204846 | 2026-12-06 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204846/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
@@ -103,7 +100,7 @@ Each feed row appears once below. Matching SHOWS IDs are references for investig
 | 57 | highwatermark | 204735 | 2027-02-16 | [Karaoke Night - Free!](https://www.treetix.com/event/204735/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2027-02-16-58cae085b59d | Exact original TreeTix event identity in approved SHOWS data |
 | 58 | highwatermark | 204736 | 2027-02-23 | [Karaoke Night - Free!](https://www.treetix.com/event/204736/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2027-02-23-8d41a5680764 | Exact original TreeTix event identity in approved SHOWS data |
 | 59 | peacock | 204826 | 2027-02-26 | [Night Journey Rewind Presents](https://www.treetix.com/event/204826/peacock) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 60 | soundcontrol | 204959 | 2027-02-26 | [Acephalix, Sulfuric Cautery, Blood Monolith](https://www.treetix.com/event/204959/soundcontrol) | High Water Mark Lounge · Portland, OR | proposed | auto-soundcontrol-pdx-2027-02-26-e47984094271 | Present in pending discovery dataset, not yet approved |
+| 60 | soundcontrol | 204959 | 2027-02-26 | [Acephalix, Sulfuric Cautery, Blood Monolith](https://www.treetix.com/event/204959/soundcontrol) | High Water Mark Lounge · Portland, OR | approved | auto-soundcontrol-pdx-2027-02-26-e47984094271 | Exact original TreeTix event identity in approved SHOWS data |
 | 61 | highwatermark | 204737 | 2027-03-02 | [Karaoke Night - Free!](https://www.treetix.com/event/204737/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2027-03-02-db61ec202c98 | Exact original TreeTix event identity in approved SHOWS data |
 | 62 | highwatermark | 204738 | 2027-03-09 | [Karaoke Night - Free!](https://www.treetix.com/event/204738/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2027-03-09-ceb1b71e01e0 | Exact original TreeTix event identity in approved SHOWS data |
 | 63 | highwatermark | 204910 | 2027-03-11 | [Hear You Loud & Queer!](https://www.treetix.com/event/204910/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2027-03-11-34afdc0b7a41 | Exact original TreeTix event identity in approved SHOWS data |
