@@ -95,14 +95,34 @@ assert(styles.includes("Jazz")&&styles.includes("Hip-hop & rap")&&styles.include
 assert(styles.includes("Country")&&styles.includes("Americana"),"Country and Americana are independently selectable genres");
 assert(styles.includes("Country & Americana"),"Previously approved combined taxonomy remains visible while present in the dataset");
 const markup=fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8");
-assert.match(markup,/<label id="styleLabel" for="style">Genre\s*<select id="style"><option value="">All genres<\/option>/,
- "Accessible genre filter label and option are user-facing and linked to the same control");
+assert.match(markup,/<section class="preview-style-filter" aria-labelledby="styleHeading">/,
+ "Music discovery has a visible labelled container");
+assert.match(markup,/id="styleChips" role="group" aria-labelledby="styleHeading" aria-describedby="styleHelp"/,
+ "Chip group has an accessible group label and instructions");
+assert.match(markup,/id="showStyles" aria-expanded="false"/,
+ "Full taxonomy is available from the disclosure control");
 assert.match(markup,/placeholder="Band, venue, genre, artist…"/,"Search hint uses genre terminology");
-assert.deepEqual(el("style").children.map(e=>e.value),styles,"Style options reflect dataset");
+const chips=el("styleChips").children;
+const findChip=name=>chips.find(button=>button.dataset.style===name);
+const clickStyle=name=>{const chip=findChip(name);assert(chip,"Missing style "+name);chip.click();};
+assert.deepEqual(chips.map(chip=>chip.dataset.style).sort(),styles,"All styles are available as pills");
 assert.equal(el("fromDate").value,"2026-10-18","Starts today in Portland");
 assert(!fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8").includes("fromDateDisplay"),"The real date input must not be obscured by a fake display");
 assert.equal(views.find(v=>v.dataset.view==="dates").attrs["aria-pressed"],"true","Chronological view is default");
 assert.equal(el("monthControls").hidden,true,"Month is secondary");
+assert.equal(el("styleCount").textContent,"All styles","No styles selected by default");
+assert.equal(el("showStyles").hidden,false,"Full taxonomy is available");
+const hiddenChip=chips.find(chip=>chip.hidden);
+assert(hiddenChip,"Long taxonomy is collapsed initially");
+hiddenChip.click();
+assert.equal(hiddenChip.hidden,false,"Selected pill stays visible when collapsed");
+assert.equal(hiddenChip.attrs["aria-pressed"],"true","Selected pill communicates state");
+el("showStyles").click();
+assert.equal(el("showStyles").attrs["aria-expanded"],"true","Full list expands");
+el("showStyles").click();
+assert.equal(hiddenChip.hidden,false,"Selected pill survives collapsing the full list");
+el("clearFilters").click();
+assert.equal(hiddenChip.hidden,true,"Clear resets disclosure and selections");
 function renderedIds(){return [...el("results").innerHTML.matchAll(/data-event="([^"]+)"/g)].map(m=>m[1]).sort();}
 const past=new Set(events.filter(e=>e.startsAt.slice(0,10)<"2026-10-18").map(e=>e.id));
 assert(!renderedIds().some(id=>past.has(id)),"Past events excluded from default feed");
@@ -113,10 +133,11 @@ assert(!renderedIds().includes("fixture-farmers-market"),"Routine farmers market
 assert(!renderedIds().includes("fixture-venue-closed"),"Operational closure notice is not shown as a show");
 assert(!renderedIds().includes("fixture-closed-mistagged"),"Closure notice stays hidden even when incorrectly tagged Music");
 assert(el("results").innerHTML.includes("Type unconfirmed"),"Venue listing is not misrepresented as verified music");
+assert(el("results").innerHTML.includes("View details"),"Event cards explicitly invite opening details");
 assert(!renderedIds().some(id=>/farmers? market/i.test(eById.get(id)?.title||"")),"Routine farmers market listings excluded");
 el("fromDate").change("2026-11-01");
 for(const style of ["Metal","Punk","Hardcore","Country","Americana","Country & Americana"]){
-  el("style").change(style);
+  clickStyle(style);
   const expected=Array.from(events.filter(e=>e.startsAt.slice(0,10)>="2026-11-01"&&(e.musicStyles||[]).includes(style)),e=>e.id).sort();
   assert.deepEqual(renderedIds(),expected,"Chronological feed respects "+style+" filter");
   views.find(v=>v.dataset.view==="places").click();
@@ -157,6 +178,7 @@ for(const style of ["Metal","Punk","Hardcore","Country","Americana","Country & A
     const output=downloads.at(-1).text;
     assert.equal((output.match(/BEGIN:VEVENT/g)||[]).length,expected.length,"ICS export respects "+style+" filter");
   }
+  clickStyle(style);
 }
 el("clearFilters").click();
 views.find(v=>v.dataset.view==="places").click();
@@ -180,16 +202,23 @@ el("search").input("Karaoke from Hell");
 for(let n=0;n<4;n++)assert(renderedIds().includes("fixture-weekly-karaoke-"+n),
   "By date never hides instances of recurring shows");
 el("clearFilters").click();
-assert.equal(el("style").value,"","Clear restores genre");
-el("style").change("Country");
+assert(chips.every(chip=>chip.attrs["aria-pressed"]==="false"),"Clear resets all style buttons");
+clickStyle("Country");
 assert(renderedIds().includes("fixture-country-concert"),"Country finds country listings");
 assert(!renderedIds().includes("fixture-americana-concert"),"Country filter does not imply Americana");
 assert(!renderedIds().includes("fixture-legacy-country-americana"),
  "Do not silently assume the legacy combined label definitively means Country");
-el("style").change("Americana");
+clickStyle("Country");
+clickStyle("Americana");
 assert(renderedIds().includes("fixture-americana-concert"),"Americana finds its own listings");
 assert(!renderedIds().includes("fixture-country-concert"),"Americana filter does not imply Country");
+clickStyle("Country");
+assert(renderedIds().includes("fixture-country-concert") && renderedIds().includes("fixture-americana-concert"),
+ "Two styles match either one (OR, not AND)");
+assert.equal(findChip("Country").attrs["aria-pressed"],"true","Country is pressed");
+assert.equal(findChip("Americana").children[0].textContent,"✓","Selected pill displays a check");
 el("clearFilters").click();
+assert.equal(el("styleCount").textContent,"All styles","Clear restores all styles");
 el("freeOnly").click();
 assert.equal(el("freeOnly").attrs["aria-pressed"],"true");
 assert(renderedIds().every(id=>eById.get(id).free===true),"Free filter excludes priced events");
