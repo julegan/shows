@@ -162,3 +162,51 @@ dialog::backdrop { background: rgb(0 0 0 / .76); }
 .shows-feedback-dialog #feedbackStatus { min-height: 1.5em; font-size: 13px; line-height: 1.5; color: var(--ink); }
 .shows-feedback-dialog :is(button, textarea, input, select):focus-visible,
 .shows-feedback-invite button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* Music discovery: prominent but compact, with an explicit multiple-selection state. */
+.preview-style-filter{
+  margin:0 0 18px;
+  padding:17px clamp(14px,2.4vw,23px);
+  border:1px solid var(--control-border);
+  border-radius:12px;
+  background:var(--paper);
+}
+.preview-style-header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}
+.preview-style-header h2{font-size:16px;font-weight:730;letter-spacing:-.02em;margin:0 0 4px}
+.preview-style-header p{font-size:12px;line-height:1.5;margin:0;color:var(--sub)}
+.preview-style-count{font-size:11px;font-weight:700;white-space:nowrap;color:var(--ink);padding-top:3px}
+.preview-style-chips{display:flex;flex-wrap:wrap;gap:8px}
+.preview-style-chip{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  min-height:44px;padding:9px 13px;border:1px solid var(--control-border);
+  border-radius:999px;background:var(--cream);color:var(--ink);
+  font-size:12px;font-weight:690;line-height:1.2;
+}
+.preview-style-chip:hover{border-color:var(--ink);background:var(--surface-raised)}
+.preview-style-chip[aria-pressed=true],
+.preview-style-chip[aria-pressed=true]:hover{
+  background:var(--selected);color:var(--selected-ink);border-color:var(--selected);
+}
+.preview-style-symbol{display:inline-block;min-width:14px;text-align:center;font-size:16px;font-weight:750;line-height:1}
+.preview-style-chip:focus-visible,.preview-style-more:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.preview-style-more{
+  margin-top:12px;min-height:44px;padding:8px 2px;background:transparent;
+  color:var(--ink);border:0;text-decoration:underline;text-underline-offset:4px;
+  font-size:12px;font-weight:720;
+}
+/* One button per event, with a clear invitation to open its details. */
+.preview-event-text{align-self:stretch}
+.preview-event-cta{
+  display:inline-flex;align-items:center;gap:6px;align-self:flex-start;
+  margin-top:auto;padding-top:9px;color:var(--ink);
+  font-size:12px;font-weight:750;line-height:1.4;
+  text-decoration:underline;text-decoration-color:var(--control-border);
+  text-underline-offset:4px;
+}
+.preview-event-cta span{display:inline-block;transition:transform .15s ease}
+.preview-event:hover .preview-event-cta span,.preview-event:focus-visible .preview-event-cta span{transform:translateX(3px)}
+.preview-event:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-color:var(--selected)}
+@media(max-width:680px){
+  .preview-style-filter{padding:15px 13px}
+  .preview-style-header{gap:10px}
+}

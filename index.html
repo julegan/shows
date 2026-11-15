@@ -40,8 +40,17 @@
         <input type="date" id="fromDate" aria-label="From date"></label>
       <label for="neighborhood">Neighborhood
         <select id="neighborhood"><option value="">All neighborhoods</option></select></label>
-      <label id="styleLabel" for="style">Genre
-        <select id="style"><option value="">All genres</option></select></label>
+    </section>
+    <section class="preview-style-filter" aria-labelledby="styleHeading">
+      <div class="preview-style-header">
+        <div>
+          <h2 id="styleHeading">Music styles</h2>
+          <p id="styleHelp">Choose any number. Events match any selected style.</p>
+        </div>
+        <span class="preview-style-count" id="styleCount">All styles</span>
+      </div>
+      <div class="preview-style-chips" id="styleChips" role="group" aria-labelledby="styleHeading" aria-describedby="styleHelp"></div>
+      <button type="button" class="preview-style-more" id="showStyles" aria-expanded="false" hidden>Browse all music styles</button>
     </section>
     <div class="preview-actions">
       <button type="button" id="jumpToday">Start today</button>
