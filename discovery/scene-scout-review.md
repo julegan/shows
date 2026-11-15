@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-14
+# Portland music & independent culture source scout — 2026-11-15
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 4 inaccessible/changed; 1 newly discovered links; 121 total recorded research leads.**
+**26 source pages attempted; 4 inaccessible/changed; 3 newly discovered links; 124 total recorded research leads.**
 
 ## Source health
 
@@ -35,13 +35,15 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | High Limit Room — official source watch | Read-only check succeeded | 0 |
 | Doug Fir Lounge — official source watch | Read-only check succeeded | 0 |
 | Moda Center — official source watch | Error — Seed source returned non-HTML or HTTP 404 | 0 |
-| Shanghai Tunnel — official source watch | Read-only check succeeded | 13 |
+| Shanghai Tunnel — official source watch | Read-only check succeeded | 12 |
 
 ## Newly surfaced unverified music and culture leads
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/47352438/rizo-making-movies-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/50643334/peter-rowan-sam-grisman-duoa-special-evening-of-songs-stories-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/70384314/booklovers-burlesque-holiday-edition-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
