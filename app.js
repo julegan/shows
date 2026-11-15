@@ -6,7 +6,7 @@
   const dateLong = new Intl.DateTimeFormat("en-US", {timeZone: zone, weekday: "long", month: "long", day: "numeric"});
   const dateShort = new Intl.DateTimeFormat("en-US", {timeZone: zone, month: "short", day: "numeric"});
   const timeFormat = new Intl.DateTimeFormat("en-US", {timeZone: zone, hour: "numeric", minute: "2-digit"});
-  const state = {view: "dates", start: ymdDate(new Date()), month: ymdDate(new Date()).slice(0,7), search: "", neighborhood: "", style: "", onlyFree: false, onlySaved: false, limit: 60};
+  const state = {view: "dates", start: ymdDate(new Date()), month: ymdDate(new Date()).slice(0,7), search: "", neighborhood: "", styles: new Set(), onlyFree: false, onlySaved: false, limit: 60};
   const today = state.start;
   const savedKey = "shows-saved-v1";
   let saved = new Set();
@@ -26,6 +26,26 @@
     "Folk & bluegrass","Country","Americana","Electronic & dance","Reggae & ska",
     "Global & traditional","Classical & chamber","Indie & alternative","Pop"];
   const styles = [...new Set([...supportedStyles,...events.filter(e => e.category === "Music").flatMap(e => e.musicStyles || [])])].sort();
+  // Keep common choices visible while leaving the complete taxonomy available.
+  // Unclassified music is still visible whenever no style filters are active.
+  const styleCounts = new Map(styles.map(name =>
+    [name, eligible.filter(e => (e.musicStyles || []).includes(name)).length]));
+  styles.sort((a,b) => styleCounts.get(b)-styleCounts.get(a) || a.localeCompare(b));
+  const styleButtons = [];
+  let stylesExpanded = false;
+  function updateStyleChips() {
+    for (let i=0;i<styleButtons.length;i++) {
+      const {name,chip,glyph} = styleButtons[i];
+      const chosen = state.styles.has(name);
+      chip.hidden = !stylesExpanded && i>=12 && !chosen;
+      chip.setAttribute("aria-pressed",String(chosen));
+      glyph.textContent = chosen ? "✓" : "+";
+    }
+    $("styleCount").textContent = state.styles.size ? state.styles.size+" selected" : "All styles";
+    $("showStyles").hidden = styles.length<=12;
+    $("showStyles").setAttribute("aria-expanded",String(stylesExpanded));
+    $("showStyles").textContent = stylesExpanded ? "Show fewer styles ↑" : "Browse all "+styles.length+" styles ↓";
+  }
   function ymdDate(date) {
     const parts = new Intl.DateTimeFormat("en-US", {timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit"}).formatToParts(date);
     const part = t => parts.find(p => p.type === t).value;
@@ -48,7 +68,7 @@
       (state.view === "month" ? ymd(e).slice(0,7) === state.month : ymd(e) >= state.start) &&
       inSearch(e) &&
       (!state.neighborhood || state.neighborhood === e.neighborhood) &&
-      (!state.style || (e.musicStyles || []).includes(state.style)) &&
+      (!state.styles.size || (e.musicStyles || []).some(name => state.styles.has(name))) &&
       (!state.onlyFree || e.free === true) &&
       (!state.onlySaved || saved.has(e.id)));
   }
@@ -121,7 +141,8 @@
       (e.musicStyles && e.musicStyles.length ? ' · ' + esc(e.musicStyles.slice(0, 2).join(" / ")) : "") +
       '</span><span class="preview-event-title">' + esc(e.title) + '</span><span class="preview-meta">' +
       esc(clock(e)) + ' · <span class="preview-venue">' + esc(e.venue) + '</span></span>' +
-      '<span class="preview-meta">' + esc(e.price || "Price not confirmed") + '</span></span></button>';
+      '<span class="preview-meta">' + esc(e.price || "Price not confirmed") + '</span>' +
+      '<span class="preview-event-cta">View details <span aria-hidden="true">→</span></span></span></button>';
   }
   function renderDates(items) {
     const visible = items.slice(0, state.limit);
@@ -262,6 +283,7 @@
       }).join("")+'</div>';
   }
   function render() {
+    updateStyleChips();
     // Synchronize the visible date with the native picker every time the view changes.
     $("fromDate").value = state.start;
     const items = filtered();
@@ -389,8 +411,27 @@
     const o = document.createElement("option");o.value=name;o.textContent=name;$("neighborhood").appendChild(o);
   }
   for (const name of styles) {
-    const o = document.createElement("option");o.value=name;o.textContent=name;$("style").appendChild(o);
+    const chip = document.createElement("button");
+    chip.type="button";
+    chip.className="preview-style-chip";
+    chip.dataset.style=name;
+    const glyph=document.createElement("span");
+    glyph.className="preview-style-symbol";
+    glyph.setAttribute("aria-hidden","true");
+    const label=document.createElement("span");
+    label.textContent=name;
+    chip.append(glyph,label);
+    chip.addEventListener("click",()=>{
+      if(state.styles.has(name))state.styles.delete(name);else state.styles.add(name);
+      state.limit=60;render();
+    });
+    $("styleChips").appendChild(chip);
+    styleButtons.push({name,chip,glyph});
   }
+  $("showStyles").addEventListener("click",()=>{
+    stylesExpanded=!stylesExpanded;
+    updateStyleChips();
+  });
   $("fromDate").value = state.start;
   for (const el of document.querySelectorAll("[data-view]")) el.addEventListener("click", () => {
     state.view=el.dataset.view;state.limit=60;render();
@@ -398,7 +439,6 @@
   $("search").addEventListener("input",e => {state.search=e.target.value.trim().toLowerCase();state.limit=60;render();});
   $("fromDate").addEventListener("change",e => {if(/^\d{4}-\d\d-\d\d$/.test(e.target.value)){state.start=e.target.value;state.limit=60;render();}});
   $("neighborhood").addEventListener("change",e => {state.neighborhood=e.target.value;state.limit=60;render();});
-  $("style").addEventListener("change",e => {state.style=e.target.value;state.limit=60;render();});
   $("jumpToday").addEventListener("click",() => {
     state.start=today;state.month=today.slice(0,7);state.view="dates";$("fromDate").value=today;state.limit=60;render();
   });
@@ -407,8 +447,9 @@
   $("freeOnly").addEventListener("click",() => {state.onlyFree=!state.onlyFree;state.limit=60;render();});
   $("savedOnly").addEventListener("click",() => {state.onlySaved=!state.onlySaved;state.limit=60;render();});
   $("clearFilters").addEventListener("click",() => {
-    state.search="";state.neighborhood="";state.style="";state.onlyFree=false;state.onlySaved=false;state.limit=60;
-    $("search").value="";$("neighborhood").value="";$("style").value="";render();
+    state.search="";state.neighborhood="";state.styles.clear();state.onlyFree=false;state.onlySaved=false;state.limit=60;
+    stylesExpanded=false;
+    $("search").value="";$("neighborhood").value="";render();
   });
   $("showMore").addEventListener("click",() => {state.limit+=60;render();});
   $("exportVisible").addEventListener("click",() => download(filtered(),"shows-"+(state.view==="month"?state.month:state.start)+"-events"));
