@@ -9,7 +9,7 @@ class Element {
   addEventListener(type,fn){this.listeners[type]=fn;}
   setAttribute(k,v){this.attrs[k]=v;}
   appendChild(child){this.children.push(child);}
-  append(child){this.children.push(child);}
+  append(...children){this.children.push(...children);}
   click(){this.listeners.click?.({target:this});}
   change(value){this.value=value;this.listeners.change?.({target:this});}
   input(value){this.value=value;this.listeners.input?.({target:this});}
