@@ -210,3 +210,19 @@ dialog::backdrop { background: rgb(0 0 0 / .76); }
   .preview-style-filter{padding:15px 13px}
   .preview-style-header{gap:10px}
 }
+
+/* The event detail dialog owns vertical scrolling; the list beneath it does not. */
+html.shows-event-modal-open { scroll-behavior: auto; overscroll-behavior: none; }
+body.shows-event-modal-open {
+  position: fixed;
+  top: var(--shows-event-page-top, 0px);
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+#eventDialog {
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}

@@ -364,6 +364,27 @@
     if (u.hash.startsWith("#event=")) u.hash = "";
     history.replaceState(null, "", u.pathname + u.search + u.hash);
   }
+  // Keep the event sheet as the only scroll surface while it is open.
+  // Freezing the underlying document prevents touch scroll from escaping to
+  // the list and preserves the reader's original position on close.
+  let eventPageScrollY = null;
+  function lockEventPage() {
+    if (eventPageScrollY !== null) return;
+    eventPageScrollY = window.scrollY || 0;
+    document.body.style.setProperty("--shows-event-page-top", -eventPageScrollY + "px");
+    document.documentElement.classList.add("shows-event-modal-open");
+    document.body.classList.add("shows-event-modal-open");
+  }
+  function unlockEventPage() {
+    if (eventPageScrollY === null) return;
+    const scrollY = eventPageScrollY;
+    eventPageScrollY = null;
+    document.body.classList.remove("shows-event-modal-open");
+    document.body.style.removeProperty("--shows-event-page-top");
+    // Keep scroll-behavior:auto until the original position is restored.
+    window.scrollTo(0, scrollY);
+    document.documentElement.classList.remove("shows-event-modal-open");
+  }
   function detail(e) {
     const dlg = $("eventDialog");
     const sources = e.sources && e.sources.length ? e.sources : [{name:e.source||"Event source",url:e.url}];
@@ -397,6 +418,8 @@
       (e.sourceCheckedAt?'<p class="preview-info">Source checked '+esc(e.sourceCheckedAt)+'. Verify details before attending.</p>':"")+
       artwork+'</div></div>';
     if (!dlg.open) dlg.showModal();
+    lockEventPage();
+    dlg.scrollTop = 0;
     const eventLocation = new URL(location.href);
     eventLocation.searchParams.set("event", e.id);
     eventLocation.hash = "";
@@ -405,6 +428,7 @@
   }
   function closeDialog() {
     if ($("eventDialog").open) $("eventDialog").close();
+    unlockEventPage();
     clearEventLocation();
   }
   for (const name of neighborhoods) {
@@ -489,6 +513,7 @@
     }
   });
   $("eventDialog").addEventListener("close",() => {
+    unlockEventPage(); // Also handles native Escape and platform close gestures.
     clearEventLocation();
   });
   document.addEventListener("error",event => {
