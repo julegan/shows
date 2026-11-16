@@ -14,7 +14,16 @@ const fixture = {
 function start(address, useNativeShare = true) {
   const location = new URL(address);
   const nodes = new Map();
-  const shares = [], copies = [];
+  const shares = [], copies = [], restores = [];
+  const classList=()=>{const names=new Set();return {
+    add(name){names.add(name);},remove(name){names.delete(name);},contains(name){return names.has(name);}
+  };};
+  const styles=new Map();
+  const body={appendChild(){},classList:classList(),style:{
+    setProperty(name,value){styles.set(name,value);},
+    removeProperty(name){styles.delete(name);}
+  }};
+  const documentElement={classList:classList()};
   function node(id) {
     if (!nodes.has(id)) {
       nodes.set(id, {
@@ -30,19 +39,20 @@ function start(address, useNativeShare = true) {
   const document = {
     getElementById:node, querySelectorAll(){return [];},
     createElement(){return {dataset:{},children:[],setAttribute(){},addEventListener(){},append(...children){this.children.push(...children);},remove(){}};},
-    addEventListener(){},body:{appendChild(){}}
+    addEventListener(){},body,documentElement
   };
   const navigator = useNativeShare
     ? {share:async value => shares.push(value)}
     : {clipboard:{writeText:async value => copies.push(value)}};
   const context = {
-    window:{SHOWS_EVENTS:[fixture]},document,location,history:{
+    window:{SHOWS_EVENTS:[fixture],scrollY:425,
+      scrollTo(x,y){restores.push([x,y]);}},document,location,history:{
       replaceState(_a,_b,path){location.href=new URL(path,location.origin).href;}
     }, navigator,localStorage:{getItem(){return null;},setItem(){}},
     URL,Intl,Date,setTimeout(){},HTMLImageElement:class{}
   };
   vm.runInNewContext(app,context);
-  return {location,nodes,shares,copies,dialog:node("eventDialog")};
+  return {location,nodes,shares,copies,dialog:node("eventDialog"),body,styles,restores};
 }
 function shareClick(session) {
   const target={dataset:{share:fixture.id},textContent:""};
@@ -53,6 +63,8 @@ function shareClick(session) {
 (async () => {
   const query = start("https://julieowens.me/projects/shows/?event=gig-100");
   assert.equal(query.dialog.open,true,"query deep link opens event details");
+  assert(query.body.classList.contains("shows-event-modal-open"),"Deep link freezes list scrolling");
+  assert.equal(query.styles.get("--shows-event-page-top"),"-425px","Background keeps its prior position");
   const detail = query.nodes.get("dialogContent").innerHTML;
   assert.match(detail,/Test Group \+ Guests/);
   const readingOrder = ["dialogTitle","detail-info","Step-free entry","Official listing","preview-detail-art",
@@ -71,6 +83,8 @@ function shareClick(session) {
   query.dialog.close();
   assert.equal(query.location.search,"","closing removes only the event query");
   assert.equal(query.dialog.open,false);
+  assert(!query.body.classList.contains("shows-event-modal-open"),"Modal close unlocks the list");
+  assert.deepEqual(query.restores,[[0,425]],"Closing modal restores the previous scroll position");
 
   const hash = start("https://julieowens.me/projects/shows/#event=gig-100");
   assert.equal(hash.dialog.open,true,"old hash deep link still opens");
