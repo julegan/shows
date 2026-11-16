@@ -79,9 +79,29 @@ async function showsViews(browser,viewport){
   assert(!(await page.locator("#results").innerText()).includes("Lents Farmers Market"),"Routine farmers markets stay out of the feed");
   const art=page.locator(".preview-event .preview-art").first();
   assert(await art.isVisible(),"Original flyer or neutral missing-source treatment remains visible");
+  const originalListY=await page.evaluate(()=>window.scrollY);
   await list.first().click();
   assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Event dialog opens");
   assert(await page.locator("#eventDialog .preview-detail-art").isVisible(),"Artwork is visible in detail");
+  // Regression: the event sheet must take the wheel/touch scroll, not the list.
+  const eventSheet=page.locator("#eventDialog");
+  const modalSize=await eventSheet.evaluate(el=>({
+    inner:el.clientHeight,content:el.scrollHeight,overflow:getComputedStyle(el).overflowY
+  }));
+  assert.equal(modalSize.overflow,"auto","Event details have their own scrollable surface");
+  assert(modalSize.content>modalSize.inner+20,"A long event fits inside a scrollable detail sheet");
+  assert(await page.locator("body").evaluate(el=>
+    el.classList.contains("shows-event-modal-open") && getComputedStyle(el).position==="fixed"),
+    "The event sheet locks the underlying page");
+  const frozenWindowY=await page.evaluate(()=>window.scrollY);
+  const sheetBox=await eventSheet.boundingBox();
+  await eventSheet.evaluate(el=>{el.scrollTop=0;});
+  await page.mouse.move(sheetBox.x+sheetBox.width/2,sheetBox.y+Math.min(sheetBox.height/2,160));
+  await page.mouse.wheel(0,360);
+  await page.waitForFunction(()=>document.getElementById("eventDialog").scrollTop>20,null,{timeout:2500});
+  assert.equal(await page.evaluate(()=>window.scrollY),frozenWindowY,
+    "Scrolling the event card leaves the background listings stationary");
+
   const dialogFits=await page.locator("#eventDialog").evaluate(el=>el.scrollWidth<=el.clientWidth+1);
   assert(dialogFits,"Flyer and event details fit the dialog width");
   const google=await page.locator("#eventDialog a").filter({hasText:"Google Calendar"}).getAttribute("href");
@@ -94,6 +114,19 @@ async function showsViews(browser,viewport){
   const eventTitle=await page.locator("#dialogTitle").innerText();
   await page.locator("[data-save]").first().click();
   await page.locator("[data-close]").click();
+  assert(!await page.locator("body").evaluate(el=>el.classList.contains("shows-event-modal-open")),
+    "Closing event restores normal page scrolling");
+  assert(Math.abs(await page.evaluate(()=>window.scrollY)-originalListY)<=2,
+    "Closing event returns to the same list position");
+  await list.first().click();
+  assert(await page.locator("body").evaluate(el=>el.classList.contains("shows-event-modal-open")),
+    "Reopened event locks the list again");
+  await page.keyboard.press("Escape");
+  await page.waitForFunction(()=>
+    !document.getElementById("eventDialog").open &&
+    !document.body.classList.contains("shows-event-modal-open"));
+  assert(Math.abs(await page.evaluate(()=>window.scrollY)-originalListY)<=2,
+    "Escape also restores scrolling and list position");
   await page.locator("#savedOnly").click();
   assert.equal(await page.locator("#savedOnly").getAttribute("aria-pressed"),"true");
   assert((await page.locator("#results").innerText()).includes(eventTitle),"Saved filter returns the saved event");
