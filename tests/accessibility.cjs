@@ -79,9 +79,12 @@ async function showsViews(browser,viewport){
   assert(!(await page.locator("#results").innerText()).includes("Lents Farmers Market"),"Routine farmers markets stay out of the feed");
   const art=page.locator(".preview-event .preview-art").first();
   assert(await art.isVisible(),"Original flyer or neutral missing-source treatment remains visible");
-  const originalListY=await page.evaluate(()=>window.scrollY);
   await list.first().click();
   assert(await page.locator("#eventDialog").evaluate(el=>el.open),"Event dialog opens");
+  // Capture the position frozen by the modal, after the click has brought
+  // the targeted card into view (Playwright may scroll the list to click).
+  const originalListY=await page.locator("body").evaluate(el=>
+    -parseFloat(el.style.getPropertyValue("--shows-event-page-top")));
   assert(await page.locator("#eventDialog .preview-detail-art").isVisible(),"Artwork is visible in detail");
   // Regression: the event sheet must take the wheel/touch scroll, not the list.
   const eventSheet=page.locator("#eventDialog");
