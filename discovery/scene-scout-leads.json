@@ -491,6 +491,17 @@
       "firstSeenOn": "2026-11-08"
     },
     {
+      "url": "https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-15"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/33454074/mango-twistlive-music-dancing-portland-atlantis-lounge?partner_id=36438",
       "titleHint": "Buy Tickets",
       "source": "music-mississippi-pizza-atlantis",
@@ -755,6 +766,17 @@
       "firstSeenOn": "2026-11-06"
     },
     {
+      "url": "https://www.etix.com/ticket/p/50643334/peter-rowan-sam-grisman-duoa-special-evening-of-songs-stories-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-15"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/52884824/mrhoo-portland-atlantis-lounge?partner_id=36438",
       "titleHint": "Buy Tickets",
       "source": "music-mississippi-pizza-atlantis",
@@ -885,6 +907,17 @@
       "why": "-sm-3--> Buy Tickets",
       "rank": 7,
       "firstSeenOn": "2026-11-06"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/70384314/booklovers-burlesque-holiday-edition-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-15"
     },
     {
       "url": "https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
