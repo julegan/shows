@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict");
-const {providerIdentity,dayValid,analyze,report,errorReport,pacificToday}=require("../scripts/treetix-coverage");
+const {providerIdentity,dayValid,analyze,coverageWindows,report,errorReport,pacificToday}=require("../scripts/treetix-coverage");
 const {run:discover}=require("../scripts/discover-events");
 const item=(id,calendar,venue,extra={})=>({
  event_id:id,event_url:"https://www.treetix.com/event/"+id+"/"+calendar,
@@ -79,6 +79,10 @@ assert.equal(a.rows.filter(x=>x.disposition==="duplicate-provider-id").length,1)
 assert.equal(a.sourceRecords,15);
 assert.equal(a.counts["unconnected-producer"],1);
 const summary=report(a);
+const windows=coverageWindows(a);
+assert.deepEqual(windows.map(w=>w.days),[30,60,90]);
+assert(windows.every(w=>w.approved<=w.total&&w.proposed<=w.total&&w.review<=w.total));
+assert.match(summary,/Near-term source denominator \(30 \/ 60 \/ 90 days\)/);
 assert.match(summary,/provider-wide/i);
 assert.match(summary,/unconnected-producer/);
 assert.match(summary,/whatssofunny/);
