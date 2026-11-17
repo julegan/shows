@@ -127,6 +127,8 @@
       "name": "Wonder Ballroom",
       "venue": "Wonder Ballroom",
       "venueRegistryId": "wonder-ballroom",
+      "address": "128 NE Russell St, Portland, OR 97212",
+      "neighborhood": "Eliot",
       "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://wonderballroom.com/events/",
