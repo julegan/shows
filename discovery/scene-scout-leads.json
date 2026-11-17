@@ -100,6 +100,17 @@
       "firstSeenOn": "2026-11-06"
     },
     {
+      "url": "https://albertarosetheatre.com/event/stumptown-soul-holiday-spectacular-3/alberta-rose-theatre/portland-oregon/",
+      "titleHint": "Stumptown Soul Holiday Spectacular",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "Stumptown Soul Holiday Spectacular <h4 id=\"evSub",
+      "rank": 11,
+      "firstSeenOn": "2026-11-17"
+    },
+    {
       "url": "https://albertarosetheatre.com/tickets/",
       "titleHint": "TICKETS",
       "source": "music-alberta-rose",
@@ -502,6 +513,17 @@
       "firstSeenOn": "2026-11-15"
     },
     {
+      "url": "https://www.etix.com/ticket/p/32660764/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-8-pm-show-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-16"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/33454074/mango-twistlive-music-dancing-portland-atlantis-lounge?partner_id=36438",
       "titleHint": "Buy Tickets",
       "source": "music-mississippi-pizza-atlantis",
@@ -588,6 +610,17 @@
       "why": "--> Buy Tickets <!-- end",
       "rank": 7,
       "firstSeenOn": "2026-11-08"
+    },
+    {
+      "url": "https://www.etix.com/ticket/p/41664852/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 10,
+      "firstSeenOn": "2026-11-17"
     },
     {
       "url": "https://www.etix.com/ticket/p/42378391/mango-twistlive-music-dancing-portland-atlantis-lounge?partner_id=36438",
