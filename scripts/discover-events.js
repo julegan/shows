@@ -151,7 +151,10 @@ function extract(item,src,now){
    }
  }
  if(src.type==="promoter"){
-  const mapped={
+  // TreeTix promoter location is checked against curated first-party venues
+  // in the importer; retain the existing map for other promoter adapters.
+  const verified=src.adapter==="treetix-public-json"?treetix.verifiedVenue(item.venue):null;
+  const mapped=verified||{
    "high water mark lounge":{venue:"High Water Mark Lounge",address:"6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",neighborhood:"Woodlawn"},
    "twilight cafe and bar":{venue:"Twilight Cafe and Bar",address:"832 SE Grand Ave, Portland, OR 97214",neighborhood:"Central Eastside"},
    "star theater":{venue:"Star Theater",address:"13 NW Sixth Avenue, Portland, OR 97209",neighborhood:"Old Town"},

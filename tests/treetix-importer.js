@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const assert=require("node:assert/strict");
-const {ENDPOINT,eventCalendar,artworkEvidence,parse,fetchSnapshot,fetchEvents}=require("../scripts/treetix-importer");
+const {ENDPOINT,calendarFor,eventCalendar,verifiedVenue,artworkEvidence,parse,fetchSnapshot,fetchEvents}=require("../scripts/treetix-importer");
 const {extract,reconcile}=require("../scripts/discover-events");
 const sources=require("../discovery/sources.json").sources;
 const water=sources.find(s=>s.id==="high-water"),sound=sources.find(s=>s.id==="soundcontrol-pdx");
@@ -9,10 +9,15 @@ assert.equal(ENDPOINT,"https://api.treetix.com/events.json");
 assert.equal(water.adapter,"treetix-public-json");
 assert.equal(sound.adapter,"treetix-public-json");
 assert.deepEqual(eventCalendar("https://www.treetix.com/event/204946/highwatermark").id,204946);
+assert.equal(eventCalendar("https://www.treetix.com/event/204946/peacock").calendar,"peacock",
+ "Provider-wide identities are recognized for reconciliation without automatic producer activation");
+assert.equal(calendarFor({...sound,producerCalendar:""}),null,"Missing reviewed producer scope must fail closed");
+assert(verifiedVenue("Alberta Street Pub")?.address.includes("Portland"),"Use curated original venue location");
+assert.equal(verifiedVenue("Unverified Room"),null);
 for(const url of [
   "http://www.treetix.com/event/204946/highwatermark",
   "https://attacker.invalid/event/204946/highwatermark",
-  "https://www.treetix.com/event/204946/peacock",
+  "https://www.treetix.com/event/0/peacock",
   "https://www.treetix.com/event?cal=soundcontrol&id=204946",
   "https://www.treetix.com/event/204946/soundcontrol?preview=1"
 ])assert.equal(eventCalendar(url),null,"Reject unauthorized or ambiguous event link: "+url);
@@ -35,12 +40,16 @@ const fixture={updated:"2026-11-02T20:00:00Z",events:[
  event(400001,"highwatermark","Peacock Lounge"),
  event(400002,"highwatermark","High Water Mark Lounge",{start_time:"8:30"}),
  event(400003,"highwatermark","High Water Mark Lounge",{tz:"UTC"}),
- event(400004,"highwatermark","High Water Mark Lounge",{event_id:5})
+ event(400004,"highwatermark","High Water Mark Lounge",{event_id:5}),
+ event(400005,"soundcontrol","Alberta Street Pub",{start_date:"2027-04-18",event_title:"Community poetry night"}),
+ event(400006,"soundcontrol","Hallowed Halls",{start_date:"2027-04-18",event_title:"DIY benefit"})
 ]};
 const h=parse(fixture,water),s=parse(fixture,sound);
 assert.equal(h.filter(x=>x.startDate).length,1);
 assert.equal(h.filter(x=>x.hold).length,4);
-assert.equal(s.filter(x=>x.startDate).length,3);
+assert.equal(s.filter(x=>x.startDate).length,4,"Additional verified Portland venue is eligible regardless of genre");
+assert.equal(s.find(x=>x.venue==="Alberta Street Pub")?.address,"1036 NE Alberta Street, Portland, OR 97211");
+assert(s.some(x=>x.hold&&x.venue==="Hallowed Halls"),"Unknown promoter venue held rather than dropped");
 assert.equal(h[0].fullUrl,"https://www.treetix.com/event/204941/highwatermark");
 assert.equal(h[0].sourceArtworkUrl,"https://www.treetix.com/templates/highwatermark/images/events/2026-11-06-204941-flyer.jpg");
 assert.equal(s.find(x=>x.venue==="Dante's").startDate,"2027-01-16T05:00:00.000Z");
@@ -62,7 +71,7 @@ const mockFetch=async (url,options)=>{assert.equal(url,ENDPOINT);assert.equal(op
 (async()=>{
  const body=await fetchSnapshot(mockFetch);
  assert.equal(body.events.length,fixture.events.length);
- assert.equal((await fetchEvents(sound,{request:mockFetch})).filter(x=>x.startDate).length,3);
+ assert.equal((await fetchEvents(sound,{request:mockFetch})).filter(x=>x.startDate).length,4);
  await assert.rejects(fetchSnapshot(async()=>new Response("denied",{status:403})),/HTTP 403/);
  console.log("PASS — TreeTix calendar scoping, IDs, venue mapping, DST, source holds, original art evidence, and read-only fetch");
 })().catch(e=>{console.error(e);process.exitCode=1});

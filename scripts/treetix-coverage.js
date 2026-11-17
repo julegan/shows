@@ -173,6 +173,16 @@ function analyze({feed,approved=[],proposed=[],venueRegistry={},connectedCalenda
  return {today,cutoff,endpoint:ENDPOINT,updated:typeof feed.updated==="string"?clean(feed.updated):null,sourceRecords:rows.length,
   inScope:inScope.length,counts,rows,producers:[...producerCounts.values()].sort((a,b)=>a.calendar.localeCompare(b.calendar))};
 }
+function coverageWindows(a){
+ return [30,60,90].map(days=>{
+  const end=addDays(a.today,days);
+  const rows=a.rows.filter(r=>r.date&&r.date>=a.today&&r.date<=end&&
+   !["outside-geography","outside-horizon","invalid-identity","invalid-date"].includes(r.disposition));
+  return {days,end,total:rows.length,approved:rows.filter(r=>r.disposition==="approved").length,
+   proposed:rows.filter(r=>r.disposition==="proposed").length,
+   review:rows.filter(r=>!["approved","proposed"].includes(r.disposition)).length};
+ });
+}
 function report(a){
  const lines=[
   "# TreeTix provider-wide source reconciliation — "+a.today,"",
@@ -192,6 +202,11 @@ function report(a){
   "| Producer calendar | Source records in reporting scope | Approved by ID | Proposed by ID | Needs review |",
   "| --- | ---: | ---: | ---: | ---: |");
  for(const p of a.producers)lines.push("| "+markdown(p.calendar)+" | "+p.total+" | "+p.approved+" | "+p.proposed+" | "+p.review+" |");
+ lines.push("","## Near-term source denominator (30 / 60 / 90 days)","",
+  "Counts describe the observed feed, not an expected quota. Missing upstream pages or entries are not detectable from this response.","",
+  "| Horizon | Through | Provider records in scope | Approved by ID | Proposed by ID | Exception / investigation |",
+  "| --- | --- | ---: | ---: | ---: | ---: |");
+ for(const w of coverageWindows(a))lines.push("| "+w.days+" days | "+w.end+" | "+w.total+" | "+w.approved+" | "+w.proposed+" | "+w.review+" |");
  lines.push("","## Event-by-event exceptions","",
   "This review queue shows pending and unresolved rows, with the nearest dated events first. Geographic and date exclusions are in the full inventory.","");
  const pending=a.rows.filter(r=>!["approved","outside-geography","outside-horizon"].includes(r.disposition))
@@ -276,4 +291,4 @@ if(require.main===module){
  run({baselineFile:option("--baseline"),proposedFile:option("--proposed"),
   outputFile:option("--output")}).catch(e=>{console.error(e);process.exitCode=1;});
 }
-module.exports={providerIdentity,dayValid,addDays,distinctive,likelySameBill,indexed,analyze,report,errorReport,readEvents,pacificToday,run,review};
+module.exports={providerIdentity,dayValid,addDays,distinctive,likelySameBill,indexed,analyze,coverageWindows,report,errorReport,readEvents,pacificToday,run,review};

@@ -28,6 +28,7 @@
       "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
       "neighborhood": "Woodlawn",
       "adapter": "treetix-public-json",
+      "producerCalendar": "highwatermark",
       "venueRegistryId": "high-water-mark",
       "enabledReason": "Authorized provider alternate host; 2026-11-02 GitHub runner validated actual event IDs, full date, local clock, timezone, venue, ticket permalink and images."
     },
@@ -43,6 +44,7 @@
       "address": null,
       "neighborhood": null,
       "adapter": "treetix-public-json",
+      "producerCalendar": "soundcontrol",
       "type": "promoter",
       "enabledReason": "Original Soundcontrol calendar 3 dated events in provider API during November 2 2026 live GitHub Actions probe; validated per-event location and link; review-only."
     },
@@ -125,6 +127,8 @@
       "name": "Wonder Ballroom",
       "venue": "Wonder Ballroom",
       "venueRegistryId": "wonder-ballroom",
+      "address": "128 NE Russell St, Portland, OR 97212",
+      "neighborhood": "Eliot",
       "status": "pilot-enabled",
       "priority": "highest",
       "url": "https://wonderballroom.com/events/",
