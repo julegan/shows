@@ -8,26 +8,40 @@
 const {time24,wallToPacific}=require("./priority-importers");
 const ENDPOINT="https://api.treetix.com/events.json";
 const MAX_BYTES=8*1024*1024;
-const VENUES={
-  "High Water Mark Lounge":true,
-  "Dante's":true,
-  "Wonder Ballroom":true
-};
+const providerCalendar=/^[a-z][a-z0-9_-]{0,80}$/;
+const originalSources=require("../discovery/sources.json").sources;
+const venueRegistry=require("../discovery/venues.json").venues;
+const registryIds=new Set(venueRegistry.map(v=>v.id));
+const knownVenues=new Map();
+// Only sources whose Portland venue location and registry identity have been
+// independently curated can stage promoter bills. New provider venues hold.
+for(const src of originalSources){
+  if(!src.venue||!src.venueRegistryId||!registryIds.has(src.venueRegistryId)||
+     !src.address||!src.neighborhood||src.type==="promoter")continue;
+  const venue=venueRegistry.find(v=>v.id===src.venueRegistryId);
+  for(const name of [src.venue,venue?.name,...(venue?.aliases||[])]){
+    const key=String(name||"").toLowerCase().trim();
+    if(key&&!knownVenues.has(key))knownVenues.set(key,{venue:src.venue,address:src.address,neighborhood:src.neighborhood});
+  }
+}
+function verifiedVenue(name){return knownVenues.get(String(name||"").toLowerCase().trim())||null;}
 function calendarFor(source){
-  if(source.adapter!=="treetix-public-json")return null;
-  return source.id==="high-water"?"highwatermark":source.id==="soundcontrol-pdx"?"soundcontrol":null;
+  if(source?.adapter!=="treetix-public-json"||source.url!==ENDPOINT||
+     source.baseUrl!=="https://www.treetix.com"||!providerCalendar.test(source.producerCalendar||""))return null;
+  return source.producerCalendar;
 }
 const tidy=x=>String(x??"").replace(/<[^>]*>/g," ").replace(/[\r\n\t]+/g," ").replace(/\s+/g," ").trim().slice(0,200);
 const eventCalendar=url=>{
   try{
     const u=new URL(url);
     if(u.protocol!=="https:"||u.hostname!=="www.treetix.com"||u.username||u.password||u.port||u.search||u.hash)return null;
-    const m=/^\/event\/(\d{1,12})\/(highwatermark|soundcontrol)$/.exec(u.pathname);
+    const m=/^\/event\/([1-9]\d{0,11})\/([a-z][a-z0-9_-]{0,80})$/.exec(u.pathname);
     return m?{id:Number(m[1]),calendar:m[2],url:u.href}:null;
   }catch(_){return null;}
 };
 function artworkEvidence(url,calendar){
   try{
+    if(!providerCalendar.test(calendar||""))return null;
     const u=new URL(url);
     if(u.protocol!=="https:"||u.hostname!=="www.treetix.com"||u.username||u.password||u.port||u.search||u.hash)return null;
     if(!new RegExp("^/templates/"+calendar+"/images/events/[a-zA-Z0-9_./%-]+\\.(?:png|jpg|jpeg|webp)$","i").test(u.pathname)||u.pathname.includes(".."))return null;
@@ -52,7 +66,17 @@ function parse(payload,source){
     }
     if(seen.has(identity.id)){rows.push({...base,hold:"Duplicate TreeTix event ID in feed"});continue;}
     seen.add(identity.id);
-    if(entry.city!=="Portland"||entry.state_abbr!=="OR"||!VENUES[venue]||(calendar==="highwatermark"&&venue!=="High Water Mark Lounge")){
+    if(entry.city!=="Portland"||entry.state_abbr!=="OR"){
+      rows.push({...base,hold:"Source does not verify a Portland, OR event location"});continue;
+    }
+    if(entry.canceled===true||entry.cancelled===true||
+       /^(?:cancelled|canceled|postponed|rescheduled)$/i.test(String(entry.status||""))){
+      rows.push({...base,hold:"Source marks event cancelled, postponed or rescheduled; verify original details"});continue;
+    }
+    const verified=calendar==="highwatermark"&&venue===source.venue?
+      {venue:source.venue,address:source.address,neighborhood:source.neighborhood}:
+      source.type==="promoter"?verifiedVenue(venue):null;
+    if(!verified){
       rows.push({...base,hold:"Unsupported or mismatched original Portland venue; verify manually"});continue;
     }
     if(!title){rows.push({...base,hold:"No verified event title or talent"});continue;}
@@ -66,7 +90,7 @@ function parse(payload,source){
     // No image is displayed or hotlinked at this stage; retain original evidence for later rights review.
     const sourceArtworkUrl=artworkEvidence(entry.image_url,calendar);
     rows.push({
-      title,fullUrl:identity.url,venue,startDate,
+      title,fullUrl:identity.url,venue:verified.venue,address:verified.address,neighborhood:verified.neighborhood,startDate,
       timeEvidence:"TreeTix published an event start clock; doors versus performance time still requires confirmation.",
       ...(sourceArtworkUrl?{sourceArtworkUrl}:{}),
       originalEventId:identity.id,originalCalendar:calendar,
@@ -101,4 +125,4 @@ async function fetchEvents(source,{request=fetch}={}){
   if(!cached)cached=fetchSnapshot().catch(e=>{cached=null;throw e;});
   return parse(await cached,source);
 }
-module.exports={ENDPOINT,MAX_BYTES,calendarFor,eventCalendar,artworkEvidence,parse,fetchSnapshot,fetchEvents};
+module.exports={ENDPOINT,MAX_BYTES,calendarFor,eventCalendar,verifiedVenue,artworkEvidence,parse,fetchSnapshot,fetchEvents};
