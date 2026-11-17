@@ -678,6 +678,19 @@
       "reason": "Original source verified, but event-specific importer is not yet validated. Daily source scout records candidate links for editorial review. Original venue documents jazz nights and DJ programming, but weekly descriptions are not proof of particular future dates; individual dates require independent confirmation."
     },
     {
+      "id": "a-beat-happening",
+      "name": "A Beat Happening",
+      "status": "pilot-enabled",
+      "priority": "editorial-active",
+      "url": "https://abeathappening.org/events?format=json",
+      "baseUrl": "https://abeathappening.org",
+      "venue": null,
+      "type": "original-organizer",
+      "adapter": "a-beat-happening-squarespace",
+      "reason": "First-party dated Squarespace events, checked individually with original start/end timestamps and reviewed Portland location. New or remote venues remain explicit holds. Historic monthly programming does not generate future dates; empty upcoming dates are not failures. Pilot review-only pending runner confirmation of public JSON schema.",
+      "enabledReason": "Organizer publishes individually dated original public events with event-specific venue and local music programming; intake requires original JSON response validation and review."
+    },
+    {
       "id": "atlantis-lounge",
       "name": "Mississippi Pizza / Atlantis Lounge",
       "venue": "Mississippi Pizza / Atlantis Lounge",
