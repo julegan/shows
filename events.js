@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-17",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1494,
-  "addedOccurrences": 1,
-  "batchId": "trusted-original-2026-11-17",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1517,
+  "addedOccurrences": 23,
+  "batchId": "auto-discovery-2026-11-17-84",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -192,11 +192,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-16",
       "addedOccurrences": 2
+    },
+    {
+      "batchId": "trusted-original-2026-11-17",
+      "addedOccurrences": 1
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 463
+  "musicOccurrences": 472
 };
 window.SHOWS_EVENTS = [
   {
@@ -33081,6 +33085,70 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-21-9e4f3c394e57",
+    "title": "Kareem Kandi with Ali Jackson — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48383 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES A native of the Pacific Northwest, saxophonist Kareem Kandi is a performer, composer, and educator, in high demand for his talents both on and off the stage. Kareem is a versatile musician with strong roots in the traditions o",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz",
+      "Blues"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": [
+          "Jazz",
+          "Blues"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13233/kareem_pict.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48383",
+    "sourceShowId": "13233",
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2026-11-21-b4490d97f2ee",
     "title": "The Next Waltz - 50th Anniversary Celebration — 7:30 PM show",
     "subtitle": "Source-discovered venue event · details need review",
@@ -33696,6 +33764,71 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationSourceUrl": "https://www.songkick.com/concerts/43461474-ils-at-high-water-mark-lounge"
+  },
+  {
+    "id": "auto-the-1905-2026-11-21-7a5562c653a9",
+    "title": "Kareem Kandi with Ali Jackson — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48384 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES A native of the Pacific Northwest, saxophonist Kareem Kandi is a performer, composer, and educator, in high demand for his talents both on and off the stage. Kareem is a versatile musician with strong roots in the traditions o",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz",
+      "Blues"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": [
+          "Jazz",
+          "Blues"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13233/kareem_pict.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13233/2026-11-21",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48384",
+    "sourceShowId": "13233",
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-twilight-2026-11-21-f0610feba1d7",
@@ -45396,6 +45529,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-05-da5310abc6e8",
+    "title": "El Vez",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: The Mistons",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/41549327/el-vez-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/41549327/el-vez-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/84f064c7ae5dc25179940add3be13a37.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-alberta-street-pub-2026-12-05-88dbde5f86e4",
     "title": "Lucky As Us | The Sirens | Nervous State",
     "subtitle": "Source-discovered venue event · details need review",
@@ -46425,6 +46610,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-06-36fceb5fe673",
+    "title": "Wishy - Nature's Pill Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: The Umbrellas",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/52582032/wishy-natures-pill-tour-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/52582032/wishy-natures-pill-tour-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b0b6798901070ef003467fb7c61d42d7.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -52490,6 +52727,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-12-14-fd33eaa2d7ce",
+    "title": "KARAOKE FROM HELL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Karaoke",
+    "tags": [
+      "Source-listed Karaoke",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-14T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-119/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-119/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/72/64/54_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/karaoke-from-hell-119/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-15-b9f2283a7bdb",
     "title": "James T & Friends",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52978,6 +53266,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-15",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-16-9da3fd567d3b",
+    "title": "Hazel Ra + Sister Species (MPLS) + Marty Badov & Bailey Diemer",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-16T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/hazel-ra-sister-species-mpls-marty-badov-bailey-diemer-december-16-2026-802071",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/hazel-ra-sister-species-mpls-marty-badov-bailey-diemer-december-16-2026-802071",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/802/071/compressed/0047253624_10.jpg?1794883283",
+      "sourceUrl": "https://app.opendate.io/e/hazel-ra-sister-species-mpls-marty-badov-bailey-diemer-december-16-2026-802071",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -55694,6 +56033,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-20-f3bfc5e91945",
+    "title": "An Evening with Patterson Hood (of Drive-By Truckers)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/30431441/an-evening-with-patterson-hood-of-driveby-truckers-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/30431441/an-evening-with-patterson-hood-of-driveby-truckers-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/93b2e1241dbc408bdb8dbae047751581.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -60063,6 +60453,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-45-east-2027-01-15-011a1415fd0f",
+    "title": "DRINKURWATER",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2027-01-15T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "45 East",
+    "address": "315 SE 3rd Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Red Cube Presents confirms the full date and 45 East venue. Event show/doors start clock is NOT published on this card; no clock was inferred. Original Red Cube Presents 45 East show; music style, doors, show start, admission, cancellation and flyer permission need editorial review.",
+    "source": "45 East",
+    "url": "https://tixr.com/groups/45east/drinkurwater0115",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "45 East",
+        "url": "https://tixr.com/groups/45east/drinkurwater0115",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.redcubepresents.com/wp-content/uploads/2026/11/45-DRINK_640X359.png",
+      "sourceUrl": "https://www.redcubepresents.com/events/",
+      "origin": "organizer-published-promo-art",
+      "credit": "Red Cube Presents original event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2027-01-15-bbbbf0c1aa98",
     "title": "Jake Soffer • Jarrett Tetsuo Domen • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -62372,6 +62813,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-01-30-6f34b94a5df3",
+    "title": "Tessa Violet: There Will Be Joy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-30T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-01-30-tessa-violet-there-will-be-joy-album-release-show-early-show",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-01-30-tessa-violet-there-will-be-joy-album-release-show-early-show",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5dfb9cd4c1311a2f99745874882ccbff.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-01-30-tessa-violet-there-will-be-joy-album-release-show-early-show",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2027-01-30-62a1e411ff4e",
     "title": "Early Show-Black Tie/White Noise: Low with The Christopher Brown Quartet",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64342,6 +64834,49 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-02-17-12a7d335de02",
+    "title": "gabriel jacoby – gutta child tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/gabriel-jacoby-gutta-child-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/gabriel-jacoby-gutta-child-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-02-17-3b5c93511b14",
     "title": "Joan Osborne - Relish Live",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64952,6 +65487,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-02-20-1bd2f8c0cb28",
+    "title": "Early Show - Delfeayo Marsalis",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors Early: 6:00pm Show Early: 7:00pm NEA Jazz Master and GRAMMY&reg; award-winning producer Delfeayo Marsalis leads the Uptown Jazz Orchestra, a New Orleans big band that brings the passion, joy and culture of the Crescent City to every stage. Riffs, colle",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/early-show-delfeayo-marsalis/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/early-show-delfeayo-marsalis/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/15/59/04_Original.jpg?v=3",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/early-show-delfeayo-marsalis/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-mission-theater-2027-02-20-f80ce1e422b9",
     "title": "Alt Bloom",
     "subtitle": "Source-discovered venue event · details need review",
@@ -65054,6 +65641,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-02-20-7b5cbf001d58",
+    "title": "Heated Rivalry Night",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/heated-rivalry-night-3/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/heated-rivalry-night-3/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/heated-rivalry-night.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/heated-rivalry-night-3/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2027-02-20-cfd498cd4dc3",
     "title": "REVEREND HORTON HEAT with Special Guest",
     "subtitle": "Source-discovered venue event · details need review",
@@ -65102,6 +65739,59 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "dantes",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-02-20-948c09840567",
+    "title": "Late Show - Delfeayo Marsalis",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-20T21:30:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Late Show - Doors: 9:00pm Late Show - Showtime: 9:30pm NEA Jazz Master and GRAMMY&reg; award-winning producer Delfeayo Marsalis leads the Uptown Jazz Orchestra, a New Orleans big band that brings the passion, joy and culture of the Crescent City to every sta",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/late-show-delfeayo-marsalis/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/late-show-delfeayo-marsalis/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/15/59/24_Original.jpg?v=5",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/late-show-delfeayo-marsalis/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -65698,6 +66388,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-02-25-07fa0cb3d7fd",
+    "title": "Dirtwire",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-25T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280198-dirtwire/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280198-dirtwire/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280198-dirtwire/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
@@ -68446,6 +69187,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-03-13-c0da1710aec2",
+    "title": "Mod Sun: Don’t Be A Poet Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/mod-sun-dont-be-a-poet-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/mod-sun-dont-be-a-poet-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/mod-sun-dont-be-a-poet-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/mod-sun-dont-be-a-poet-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-13-4811276b8b29",
     "title": "SML &#8211; Night 2",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68595,6 +69386,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-03-14-87b721e468aa",
+    "title": "Chiodos",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-14T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280191-chiodos/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280191-chiodos/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280191-chiodos/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
@@ -69554,6 +70396,49 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-03-25-061990fa9aa6",
+    "title": "Tyr & Dynazty",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-25T18:30:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/tyr-dynazty/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/tyr-dynazty/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -70673,6 +71558,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-04-04-bb273bad9045",
+    "title": "NARROW HEAD",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-04T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/narrow-head/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/narrow-head/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/narrow-head.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/narrow-head/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-04-04-cb212d854ea3",
     "title": "Rocco",
     "subtitle": "Source-discovered venue event · details need review",
@@ -71518,6 +72453,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-wonder-ballroom-2027-04-16-e888886101d4",
+    "title": "Slow Crush",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-16T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "address": "128 NE Russell St, Portland, OR 97212",
+    "neighborhood": "Eliot",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/slow-crush/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/slow-crush/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/11/slow-crush.jfif",
+      "sourceUrl": "https://wonderballroom.com/event/slow-crush/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
       "method": "primary-source-collection"
     }
   },
@@ -72629,6 +73615,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-wonder-ballroom-2027-05-10-5447824c3f4b",
+    "title": "Racing Mount Pleasant",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-10T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Wonder Ballroom",
+    "address": "128 NE Russell St, Portland, OR 97212",
+    "neighborhood": "Eliot",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official event-specific page title publishes year; visible dated event card publishes performance time Official Wonder Ballroom event page; review lineup, date, cancellation status and genre before publishing",
+    "source": "Wonder Ballroom",
+    "url": "https://wonderballroom.com/event/racing-mount-pleasant/wonder-ballroom/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Wonder Ballroom",
+        "url": "https://wonderballroom.com/event/racing-mount-pleasant/wonder-ballroom/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://wonderballroom.com/wp-content/uploads/2026/11/etix-size.png",
+      "sourceUrl": "https://wonderballroom.com/event/racing-mount-pleasant/wonder-ballroom/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-05-11-c22cb0260a34",
     "title": "Alaska Thunderf*ck: The Revolution Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -72874,6 +73911,61 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-05-13-19b1adc3a40d",
+    "title": "Augustana with String Quartet",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Classical & chamber",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Classical & chamber"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-13T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/augustana-with-string-quartet/alberta-rose-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/augustana-with-string-quartet/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/augustana-with-string-quartet.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/augustana-with-string-quartet/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-05-13-b7c31d302368",
     "title": "cleopatrick",
     "subtitle": "Source-discovered venue event · details need review",
@@ -72972,6 +74064,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-05-14-e744906d3fe2",
+    "title": "Ryley Walker",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-14T18:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-05-14-ryley-walker-early-show",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-05-14-ryley-walker-early-show",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/634790712f2fa07c4dee0da395e0fc55.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-05-14-ryley-walker-early-show",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-05-14-a0576924d2bc",
+    "title": "Tori Kelly",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-14T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280220-tori-kelly/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280220-tori-kelly/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280220-tori-kelly/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },

@@ -1,7 +1,7 @@
-# TreeTix provider-wide source reconciliation — 2026-11-16
+# TreeTix provider-wide source reconciliation — 2026-11-17
 
-**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-16T12:00:04Z. No verified pagination or upstream total; coverage is limited to this response.
-**Scope:** publicly listed events with source dates from 2026-11-16 through 2027-12-21 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
+**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-17T12:00:04Z. No verified pagination or upstream total; coverage is limited to this response.
+**Scope:** publicly listed events with source dates from 2026-11-17 through 2027-12-22 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
 **Safety:** this report does not import new producers, approve events, infer genres, or delete missing/rescheduled listings. Every source format is considered; unknown type is not an exclusion.
 
 ## Snapshot dispositions
@@ -23,6 +23,16 @@
 | glittertrashcan | 1 | 0 | 0 | 1 |
 | highwatermark | 65 | 65 | 0 | 0 |
 | soundcontrol | 5 | 2 | 0 | 3 |
+
+## Near-term source denominator (30 / 60 / 90 days)
+
+Counts describe the observed feed, not an expected quota. Missing upstream pages or entries are not detectable from this response.
+
+| Horizon | Through | Provider records in scope | Approved by ID | Proposed by ID | Exception / investigation |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 30 days | 2026-12-17 | 16 | 15 | 0 | 1 |
+| 60 days | 2027-01-16 | 26 | 24 | 0 | 2 |
+| 90 days | 2027-02-15 | 33 | 29 | 0 | 4 |
 
 ## Event-by-event exceptions
 
