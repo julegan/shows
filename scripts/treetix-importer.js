@@ -11,14 +11,17 @@ const MAX_BYTES=8*1024*1024;
 const providerCalendar=/^[a-z][a-z0-9_-]{0,80}$/;
 const originalSources=require("../discovery/sources.json").sources;
 const venueRegistry=require("../discovery/venues.json").venues;
-const registryIds=new Set(venueRegistry.map(v=>v.id));
 const knownVenues=new Map();
 // Only sources whose Portland venue location and registry identity have been
 // independently curated can stage promoter bills. New provider venues hold.
 for(const src of originalSources){
-  if(!src.venue||!src.venueRegistryId||!registryIds.has(src.venueRegistryId)||
-     !src.address||!src.neighborhood||src.type==="promoter")continue;
-  const venue=venueRegistry.find(v=>v.id===src.venueRegistryId);
+  if(!src.venue||!src.address||!src.neighborhood||src.type==="promoter")continue;
+  // Older source records sometimes omit venueRegistryId. Require an exact
+  // canonical venue name in that case; never fuzzy-match a new promoter room.
+  const venue=src.venueRegistryId?
+    venueRegistry.find(v=>v.id===src.venueRegistryId):
+    venueRegistry.find(v=>v.name===src.venue);
+  if(!venue)continue;
   for(const name of [src.venue,venue?.name,...(venue?.aliases||[])]){
     const key=String(name||"").toLowerCase().trim();
     if(key&&!knownVenues.has(key))knownVenues.set(key,{venue:src.venue,address:src.address,neighborhood:src.neighborhood});
