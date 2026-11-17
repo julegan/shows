@@ -275,7 +275,7 @@ jobs:
             branch="automation/refresh-$(date -u +%Y%m%d)-$GITHUB_RUN_NUMBER"
             git switch -c "$branch"
           fi
-          git add -- events.js discovery/published-change-review.md discovery/verified-corrections-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/treetix-coverage-review.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
+          git add -- events.js discovery/published-change-review.md discovery/verified-corrections-review.md discovery/latest-review.md discovery/priority-venue-gap-audit.md discovery/treetix-coverage-review.md discovery/independent-music-coverage.md discovery/artwork-backfill-review.md discovery/doomtown-leads-review.md discovery/pdx-subvert-leads-review.md discovery/wyrd-secondary-leads-review.md discovery/republic-organizer-leads-review.md discovery/oregon-electronic-leads-review.md
           git commit -m "Propose latest source-confirmed Portland shows and flyers"
           if [ -n "$number" ]; then
             git push --force-with-lease="refs/heads/$branch:$old_sha" origin "$branch"
@@ -309,6 +309,7 @@ jobs:
             echo "- [Complete discovery candidates, holds, and source errors](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/latest-review.md)"
             echo "- [Machine-confirmed schedule correction proposals — exact original-link evidence](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/verified-corrections-review.md)"
             echo "- [Other changed-event evidence — held for investigation](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/published-change-review.md)"
+            echo "- [Independent original music 30/60/90-day coverage and source exceptions](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/independent-music-coverage.md)"
             echo "- [TreeTix full-provider per-event source exceptions](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/treetix-coverage-review.md)"
             echo "- [56-day first-party venue coverage and unresolved gaps](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/priority-venue-gap-audit.md)"
             echo "- [Original flyer proposals, attribution, and missing-image reasons](https://github.com/$GITHUB_REPOSITORY/blob/$branch/discovery/artwork-backfill-review.md)"
