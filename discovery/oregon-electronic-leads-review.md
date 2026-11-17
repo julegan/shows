@@ -2,15 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**133 public table rows checked; 54 distinct relevant research leads (48 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**126 public table rows checked; 49 distinct relevant research leads (43 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-15 | [Fleetmac Wood Presents Chiffon Frenzy](https://ra.co/events/2540025) | Holocene | disco, funk, remixes / Not listed | Preferred SHOWS venue |
-| 2026-11-15 | [Bonobo](https://www.axs.com/events/1480571) | Roseland Theater | house, downtempo, uk garage / Not listed | Preferred SHOWS venue |
-| 2026-11-15 | [Bonobo w/ 1-800 Girls](https://www.axs.com/events/1480571) | Roseland Theater | house, downtempo, uk garage / Showbox | Preferred SHOWS venue |
-| 2026-11-15 | [Mobiius, Szara, Gnosiiis](https://tickets.venuepilot.com/e/mobiius-2026-11-15-the-coffin-portland-5168da) | The Coffin | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-11-15 | [Church Of Hive / Goth-Industrial-Darkwave / DJs Skully : Aurora / Star Theater, 11-15 10:30Pm](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14972003) | Star Theater | Not categorized / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
 | 2026-11-19 | [Schrotthagen: New World Tour 2026](https://www.etix.com/ticket/p/90331569) | Holocene | trance, techno / Not listed | Preferred SHOWS venue + relevant music tag |
 | 2026-11-20 | [Soul'd Out Presents: Eric John Kaiser - Album Release](https://www.ticketweb.com/event/eric-john-kaiser-jack-london-revue-tickets/14334304) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-20 | [Space 92](https://www.tixr.com/groups/45east/events/space-92-201571) | 45 East | techno / Not listed | Preferred SHOWS venue + relevant music tag |
