@@ -5,6 +5,9 @@ const {extract,reconcile,urlOf}=require("../scripts/discover-events");
 const source=require("../discovery/sources.json").sources.find(s=>s.id==="atlantis-lounge");
 assert(source&&source.status==="pilot-enabled"&&source.adapter==="atlantis-original-html");
 assert.equal(source.url,CALENDAR);
+assert.equal(CALENDAR,"https://mississippipizza.com/calendar/",
+ "Use the original venue's direct canonical URL; do not silently permit redirects");
+assert.equal(eventUrl(CALENDAR),null,"Calendar URL must never be confused with an event detail URL");
 const hiphop="https://mississippipizza.com/event/hungry-hungry-hip-hop-10/";
 const soul="https://mississippipizza.com/event/mellow-rebels-soul-rose/";
 const trivia="https://mississippipizza.com/event/free-trivia-sippi/";
