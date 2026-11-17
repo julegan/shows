@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-15",
+  "sourceCheckedAt": "2026-11-16",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1465,
-  "addedOccurrences": 30,
-  "batchId": "auto-discovery-2026-11-15-80",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1467,
+  "addedOccurrences": 2,
+  "batchId": "trusted-original-2026-11-16",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -56975,6 +56975,55 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2026-12-31-67dbcddee006",
+    "title": "STORYVILLE CONFIDENTIAL \"EAST COAST\" NYE",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2026-12-31T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: This is Storyville Confidential's East Coast NYE show (aka the Early Show). For the West Coast NYE show (aka the Late Show), you can find tickets here: West Coast NYE Don't miss the Rose City's hottest NYE ticket as we take you back to the golden age of hot ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/storyville-confidential-east-coast-nye/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/storyville-confidential-east-coast-nye/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2026-12-31-18ac2809ab91",
     "title": "Blade Rave",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57726,6 +57775,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "star-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-01-02-7409fb3ba94a",
+    "title": "Kota Dosa with Special Guests TBA",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 7:00pm Show: 8:00pm Ages: 21+ Kota Dosa is a creative collective with roots in New York, New Orleans, and Oregon. Known for their eclectic sound that seamlessly blends blues, funk, psychedelic rock, and jazz, the band has established a vibrant presenc",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/kota-dosa-with-special-guests-tba/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/kota-dosa-with-special-guests-tba/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
