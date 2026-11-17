@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-15
+# Portland music & independent culture source scout — 2026-11-17
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 4 inaccessible/changed; 3 newly discovered links; 124 total recorded research leads.**
+**26 source pages attempted; 3 inaccessible/changed; 2 newly discovered links; 127 total recorded research leads.**
 
 ## Source health
 
@@ -14,9 +14,9 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | NoPo Creatives Arts Market | Read-only check succeeded | 1 |
 | PDX Moon Market | Read-only check succeeded | 0 |
 | Portland Flea | Read-only check succeeded | 1 |
-| Portland Indie Book & Art Fair vendor directory | Error — Seed source exceeded size cap | 0 |
+| Portland Indie Book & Art Fair vendor directory | Read-only check succeeded | 1 |
 | Woodland Shrine maker event appearances | Read-only check succeeded | 3 |
-| Portland holiday markets index | Read-only check succeeded | 1 |
+| Portland holiday markets index | Read-only check succeeded | 0 |
 | Portland Monthly's holiday market guide | Read-only check succeeded | 1 |
 | Portland Bazaar local maker event calendar | Read-only check succeeded | 3 |
 | The 1905 official jazz tickets | Read-only check succeeded | 0 |
@@ -41,9 +41,8 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/32253900/a-very-george-michael-christmas-with-holcombe-waller-and-special-guests-5-pm-show-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/50643334/peter-rowan-sam-grisman-duoa-special-evening-of-songs-stories-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/70384314/booklovers-burlesque-holiday-edition-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Stumptown Soul Holiday Spectacular](https://albertarosetheatre.com/event/stumptown-soul-holiday-spectacular-3/alberta-rose-theatre/portland-oregon/) | possible-event-or-market-link | Stumptown Soul Holiday Spectacular <h4 id="evSub |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/41664852/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
