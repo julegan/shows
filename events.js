@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-17",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1518,
-  "addedOccurrences": 1,
-  "batchId": "trusted-original-2026-11-17",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1521,
+  "addedOccurrences": 3,
+  "batchId": "auto-discovery-2026-11-17-85",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -196,11 +196,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-17",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "trusted-original-2026-11-17",
+      "addedOccurrences": 1
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 472
+  "musicOccurrences": 473
 };
 window.SHOWS_EVENTS = [
   {
@@ -45632,6 +45636,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-05-ec77d20e6a42",
+    "title": "Global Based: 12 Year Anniversary",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-05-global-based-12-year-anniversary-w-mijo-friends",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-05-global-based-12-year-anniversary-w-mijo-friends",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f3d7c35a60662866342db430dd96a468.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-05-global-based-12-year-anniversary-w-mijo-friends",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-12-05-1d6bc7d8d327",
     "title": "BURLY-Q REVUE",
     "subtitle": "Source-discovered venue event · details need review",
@@ -62811,6 +62866,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2027-01-29-a2aba6636b68",
+    "title": "TRH&Auml; with Saidan & Barbelith",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-29T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/trha-with-saidan-barbelith/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/trha-with-saidan-barbelith/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/59/64_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/trha-with-saidan-barbelith/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-30-76e848e72fa9",
     "title": "Portland’s Folk Festival",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64221,6 +64327,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2027-02-11-8a5cf680a190",
+    "title": "Mariee Siou",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:00 (Doors 19:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/mariee-siou-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-17",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/mariee-siou-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-17",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/16/00/04_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/mariee-siou-2/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-17",
+    "discovery": {
+      "sourceId": "showdown",
       "method": "primary-source-collection"
     }
   },

@@ -12,49 +12,41 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 | High Water Mark | Checked | 65 | 0 | 0 | 0 | 0 | 0 | 65 |
 | Soundcontrol PDX | Checked | 5 | 0 | 0 | 0 | 0 | 3 | 2 |
 | Twilight Cafe and Bar | Checked | 27 | 0 | 0 | 0 | 0 | 3 | 24 |
-| Star Theater | Checked | 33 | 0 | 0 | 0 | 0 | 3 | 30 |
-| Dante's | Checked | 47 | 1 | 0 | 0 | 1 | 3 | 43 |
+| Star Theater | Checked | 32 | 0 | 0 | 0 | 0 | 2 | 30 |
+| Dante's | Checked | 48 | 1 | 0 | 1 | 1 | 3 | 44 |
 | Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
-| Wonder Ballroom | Checked | 34 | 2 | 0 | 2 | 2 | 10 | 22 |
-| Hawthorne Theatre | Checked | 44 | 5 | 0 | 5 | 3 | 3 | 36 |
-| Crystal Ballroom | Checked | 54 | 3 | 0 | 3 | 3 | 5 | 46 |
-| Revolution Hall | Checked | 30 | 1 | 0 | 1 | 1 | 5 | 24 |
-| Turn! Turn! Turn! | Checked | 14 | 1 | 1 | 0 | 1 | 1 | 12 |
+| Wonder Ballroom | Checked | 34 | 0 | 0 | 0 | 0 | 10 | 24 |
+| Hawthorne Theatre | Checked | 44 | 0 | 0 | 0 | 0 | 3 | 41 |
+| Crystal Ballroom | Checked | 54 | 0 | 0 | 0 | 0 | 5 | 49 |
+| Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 5 | 25 |
+| Turn! Turn! Turn! | Checked | 14 | 0 | 0 | 0 | 0 | 1 | 13 |
 | Kenton Club | Checked | 10 | 0 | 0 | 0 | 0 | 3 | 7 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 5 | 23 |
-| Holocene | Checked | 48 | 2 | 2 | 0 | 2 | 22 | 24 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 5 | 25 |
+| Holocene | Checked | 49 | 1 | 1 | 0 | 1 | 22 | 26 |
 | Starday Tavern | Checked | 1587 | 0 | 0 | 0 | 0 | 43 | 1544 |
 | The Off Beat / Friends of Noise | Checked | 11 | 0 | 0 | 0 | 0 | 4 | 7 |
-| Aladdin Theater | Checked | 81 | 0 | 0 | 0 | 0 | 4 | 77 |
+| Aladdin Theater | Checked | 81 | 0 | 0 | 0 | 0 | 5 | 76 |
 | Mission Theater | Checked | 39 | 0 | 0 | 0 | 0 | 0 | 39 |
 | Nova PDX | Checked | 16 | 0 | 0 | 0 | 0 | 0 | 16 |
 | Lola's Room | Checked | 12 | 0 | 0 | 0 | 0 | 3 | 9 |
-| The Showdown | Checked | 51 | 0 | 0 | 0 | 0 | 15 | 36 |
-| 45 East | Checked | 16 | 1 | 1 | 0 | 1 | 0 | 15 |
+| The Showdown | Checked | 52 | 1 | 0 | 1 | 1 | 15 | 36 |
+| 45 East | Checked | 16 | 0 | 0 | 0 | 0 | 0 | 16 |
 | Mammoth Northwest | Checked | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| The 1905 | Checked | 8 | 2 | 2 | 0 | 2 | 0 | 6 |
-| Jack London Revue | Checked | 50 | 2 | 2 | 0 | 2 | 1 | 47 |
+| The 1905 | Checked | 8 | 0 | 0 | 0 | 0 | 0 | 8 |
+| Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 1 | 49 |
 | Alberta Street Pub | Checked | 52 | 0 | 0 | 0 | 0 | 5 | 47 |
-| Alberta Rose Theatre | Checked | 58 | 2 | 1 | 1 | 2 | 6 | 50 |
+| Alberta Rose Theatre | Checked | 59 | 1 | 0 | 1 | 1 | 6 | 52 |
 | A Beat Happening | EMPTY | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Classification review
 
-New candidate categories: **Karaoke** 1 · **Music** 9 · **Unclassified** 14.
-**14 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 1 · **Unclassified** 3.
+**3 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Wonder Ballroom: Slow Crush — https://wonderballroom.com/event/slow-crush/wonder-ballroom/portland-oregon/
-- Wonder Ballroom: Racing Mount Pleasant — https://wonderballroom.com/event/racing-mount-pleasant/wonder-ballroom/portland-oregon/
-- Hawthorne Theatre: gabriel jacoby – gutta child tour — https://hawthornetheatre.com/event/gabriel-jacoby-gutta-child-tour/hawthorne-theatre/portland-oregon/
-- Hawthorne Theatre: Heated Rivalry Night — https://hawthornetheatre.com/event/heated-rivalry-night-3/hawthorne-theatre/portland-oregon/
-- Hawthorne Theatre: Mod Sun: Don’t Be A Poet Tour — https://hawthornetheatre.com/event/mod-sun-dont-be-a-poet-tour/hawthorne-theatre/portland-oregon/
-- Hawthorne Theatre: Tyr & Dynazty — https://hawthornetheatre.com/event/tyr-dynazty/hawthorne-theatre/portland-oregon/
-- Hawthorne Theatre: NARROW HEAD — https://hawthornetheatre.com/event/narrow-head/hawthorne-theatre/portland-oregon/
-- Crystal Ballroom: Dirtwire — https://www.crystalballroompdx.com/events/280198-dirtwire/
-- Crystal Ballroom: Chiodos — https://www.crystalballroompdx.com/events/280191-chiodos/
-- Crystal Ballroom: Tori Kelly — https://www.crystalballroompdx.com/events/280220-tori-kelly/
-- Plus 4 other unclassified candidates in the full event table below.
+- Dante's: TRH&Auml; with Saidan & Barbelith — https://www.danteslive.com/tm-event/trha-with-saidan-barbelith/
+- The Showdown: Mariee Siou — https://www.showdownpdx.com/tm-event/mariee-siou-2/
+- Alberta Rose Theatre: Asher Fulero & Friends featuring Curtis Salgado — https://albertarosetheatre.com/event/asher-fulero-friends-featuring-curtis-salgado/alberta-rose-theatre/portland-oregon/
 
 ### Connections requiring work
 
@@ -84,56 +76,28 @@ New candidate categories: **Karaoke** 1 · **Music** 9 · **Unclassified** 14.
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 2** · Ambiguous matching source URLs: 3.
+**Potential changes: 2** · Ambiguous matching source URLs: 4.
 
 | Change | Venue and event | Approved → observed | Official event evidence |
 | --- | --- | --- | --- |
 | Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
 | Listed time changed | The Showdown — Tropical Latin Goth Club NYE Pari | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/tropical-latin-goth-club-nye-pari/ |
 
-The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 4 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 24
+## New candidates: 4
 
 - dantes: 1 proposals
-- wonder-ballroom: 2 proposals
-- hawthorne-theatre: 5 proposals
-- crystal-ballroom: 3 proposals
-- revolution-hall: 1 proposals
-- turn-turn-turn: 1 proposals
-- mississippi-polaris: 2 proposals
-- holocene: 2 proposals
-- 45-east: 1 proposals
-- the-1905: 2 proposals
-- jack-london-revue: 2 proposals
-- alberta-rose-theatre: 2 proposals
+- holocene: 1 proposals
+- showdown: 1 proposals
+- alberta-rose-theatre: 1 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-14 | KARAOKE FROM HELL | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/karaoke-from-hell-119/ |
-| 2027-04-16 | Slow Crush | Wonder Ballroom | 19:30 (doors/show unverified) | https://wonderballroom.com/event/slow-crush/wonder-ballroom/portland-oregon/ |
-| 2027-05-10 | Racing Mount Pleasant | Wonder Ballroom | 20:00 (doors/show unverified) | https://wonderballroom.com/event/racing-mount-pleasant/wonder-ballroom/portland-oregon/ |
-| 2027-02-17 | gabriel jacoby – gutta child tour | Hawthorne Theatre | 20:00 (doors/show unverified) | https://hawthornetheatre.com/event/gabriel-jacoby-gutta-child-tour/hawthorne-theatre/portland-oregon/ |
-| 2027-02-20 | Heated Rivalry Night | Hawthorne Theatre | 20:30 (doors/show unverified) | https://hawthornetheatre.com/event/heated-rivalry-night-3/hawthorne-theatre/portland-oregon/ |
-| 2027-03-13 | Mod Sun: Don’t Be A Poet Tour | Hawthorne Theatre | 20:00 (doors/show unverified) | https://hawthornetheatre.com/event/mod-sun-dont-be-a-poet-tour/hawthorne-theatre/portland-oregon/ |
-| 2027-03-25 | Tyr & Dynazty | Hawthorne Theatre | 18:30 (doors/show unverified) | https://hawthornetheatre.com/event/tyr-dynazty/hawthorne-theatre/portland-oregon/ |
-| 2027-04-04 | NARROW HEAD | Hawthorne Theatre | 20:00 (doors/show unverified) | https://hawthornetheatre.com/event/narrow-head/hawthorne-theatre/portland-oregon/ |
-| 2027-02-25 | Dirtwire | Crystal Ballroom | 20:30 (doors/show unverified) | https://www.crystalballroompdx.com/events/280198-dirtwire/ |
-| 2027-03-14 | Chiodos | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/280191-chiodos/ |
-| 2027-05-14 | Tori Kelly | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/280220-tori-kelly/ |
-| 2026-12-20 | An Evening with Patterson Hood (of Drive-By Truckers) | Show Bar at Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/30431441/an-evening-with-patterson-hood-of-driveby-truckers-portland-show-bar-at-revolution-hall |
-| 2026-12-16 | Hazel Ra + Sister Species (MPLS) + Marty Badov & Bailey Diemer | Turn! Turn! Turn! | 19:00 (doors/show unverified) | https://app.opendate.io/e/hazel-ra-sister-species-mpls-marty-badov-bailey-diemer-december-16-2026-802071 |
-| 2026-12-05 | El Vez | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/41549327/el-vez-portland-mississippi-studios |
-| 2026-12-06 | Wishy - Nature's Pill Tour | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/52582032/wishy-natures-pill-tour-portland-mississippi-studios |
-| 2027-01-30 | Tessa Violet: There Will Be Joy | Holocene | 18:00 (doors/show unverified) | https://www.holocene.org/events/2027-01-30-tessa-violet-there-will-be-joy-album-release-show-early-show |
-| 2027-05-14 | Ryley Walker | Holocene | 18:00 (doors/show unverified) | https://www.holocene.org/events/2027-05-14-ryley-walker-early-show |
-| 2027-01-15 | DRINKURWATER | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/drinkurwater0115 |
-| 2026-11-21 | Kareem Kandi with Ali Jackson — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13233/2026-11-21 |
-| 2026-11-21 | Kareem Kandi with Ali Jackson — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13233/2026-11-21 |
-| 2027-02-20 | Early Show - Delfeayo Marsalis | Jack London Revue | 19:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/early-show-delfeayo-marsalis/ |
-| 2027-02-20 | Late Show - Delfeayo Marsalis | Jack London Revue | 21:30 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/late-show-delfeayo-marsalis/ |
-| 2026-12-23 | Ben Rice’s Christmas Guitar Summit | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/ben-rices-christmas-guitar-summit/alberta-rose-theatre/portland-oregon/ |
-| 2027-05-13 | Augustana with String Quartet | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/augustana-with-string-quartet/alberta-rose-theatre/portland-oregon/ |
+| 2027-01-29 | TRH&Auml; with Saidan & Barbelith | Dante's | 20:30 (doors/show unverified) | https://www.danteslive.com/tm-event/trha-with-saidan-barbelith/ |
+| 2026-12-05 | Global Based: 12 Year Anniversary | Holocene | 22:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-05-global-based-12-year-anniversary-w-mijo-friends |
+| 2027-02-11 | Mariee Siou | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/mariee-siou-2/ |
+| 2027-01-08 | Asher Fulero & Friends featuring Curtis Salgado | Alberta Rose Theatre | 20:00 (doors/show unverified) | https://albertarosetheatre.com/event/asher-fulero-friends-featuring-curtis-salgado/alberta-rose-theatre/portland-oregon/ |
 
 ## Held for review: 153
 
@@ -143,7 +107,6 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [twilight] Drag The River w/ Dewey Nielsen Band — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-dewey-nielsen-band
 - [twilight] "The Comedy Wonderland"-A Comedy Stand-up Showcase — Venue event status requires cancellation/reschedule review https://www.twilightcafeandbar.com/event/468547/-canceled-the-comedy-wonderland-a-comedy-stand-up-showcase
 - [twilight] Abraham Racquetball (Album Release) w/ Lucia Luna, Latinum — Same venue/date; different existing bill; manual comparison https://www.twilightcafeandbar.com/event/466900/abraham-racquetball-album-release-w-lucia-luna-latinum
-- [star-theater] CHURCH OF HIVE — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/church-of-hive-13/
 - [star-theater] MISSIO: Love & Heartbreak Tour with Ryan Oakes & Wrung — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/missio-love-heartbreak-tour-with-fifteenoeight-and-kent-osborne/
 - [star-theater] JOS&Eacute; JAMES SINGS SINATRA — Same venue/date; different existing bill; manual comparison https://www.startheaterportland.com/tm-event/jose-james-sings-sinatra-2/
 - [dantes] SINFERNO CABARET — Same venue/date; different existing bill; manual comparison https://www.danteslive.com/tm-event/sinferno-cabaret-12/
@@ -256,6 +219,7 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [the-off-beat] 12/18 The Slightest Bits, Amy Beth and Thee Creeps, Ashby Bison, Coco — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/12-18-the-slightest-bits-amy-beth-and-thee-creeps-ashby-bison-coco-december-18-2026-801550
 - [the-off-beat] 1/25 SECOND SHOW ADDED! Fifteen, All Girl Summer Fun Band, Divers (Benefit Show) — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/1-25-second-show-added-fifteen-all-girl-summer-fun-band-divers-benefit-show-january-25-2027-799242
 - [the-off-beat] 1/26 SOLD OUT Fifteen, All Girl Summer Fun Band, Corner Office (Benefit Show) — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/1-26-sold-out-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876
+- [aladdin-theater] SOLD OUT: The Portland GrandSLAM — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/78379012/sold-outthe-portland-grandslam-portland-aladdin-theater
 - [aladdin-theater] SOLD OUT: Todd Rundgren: DAMNED IF I DO TOUR — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/33295250/sold-outtodd-rundgrendamned-if-i-do-tour-portland-aladdin-theater
 - [aladdin-theater] SOLD OUT: Cat Clyde & Dean Johnson — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/48494309/sold-outcat-clyde-dean-johnson-portland-aladdin-theater
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
