@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-16",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1467,
-  "addedOccurrences": 2,
-  "batchId": "trusted-original-2026-11-16",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1493,
+  "addedOccurrences": 26,
+  "batchId": "auto-discovery-2026-11-16-81",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -188,11 +188,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-14-79",
       "addedOccurrences": 8
+    },
+    {
+      "batchId": "trusted-original-2026-11-16",
+      "addedOccurrences": 2
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 451
+  "musicOccurrences": 463
 };
 window.SHOWS_EVENTS = [
   {
@@ -31126,6 +31130,68 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-20-0ac83f85d041",
+    "title": "Farnell Newton's The Soul of Jazz — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned R&B & soul",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "R&B & soul"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48381 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES Trumpeter Farnell Newton returns to the stage at The 1905, bringing his signature blend of jazz, soul, and R&B to one of Portland’s most intimate listening rooms. This special performance pays tribute to the legendary trumpete",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13232/farnell_newttt.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48381",
+    "sourceShowId": "13232",
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-the-off-beat-2026-11-20-3929789d8876",
     "title": "11/20 Heaven Skate, Rheumatoid Trapezoid, Steevee Von Schneedle, Dopamean",
     "subtitle": "Source-discovered venue event · details need review",
@@ -31951,6 +32017,69 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-20-d53b16b86269",
+    "title": "Farnell Newton's The Soul of Jazz — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned R&B & soul",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "R&B & soul"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48382 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES Trumpeter Farnell Newton returns to the stage at The 1905, bringing his signature blend of jazz, soul, and R&B to one of Portland’s most intimate listening rooms. This special performance pays tribute to the legendary trumpete",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13232/farnell_newttt.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13232/2026-11-20",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48382",
+    "sourceShowId": "13232",
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-high-water-2026-11-20-c4e14931e830",
     "title": "Grand Head, Bad Move, Sluzz, DJ Meow",
     "subtitle": "Source-discovered venue event · details need review",
@@ -32249,6 +32378,67 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-11-20-3050962e032f",
+    "title": "HOTWAX disco~glam~metal~punk~hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-20T23:55:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-26/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-26/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/50/81/33_Original.jpg?v=10",
+      "sourceUrl": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-26/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -35185,6 +35375,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-11-23-be0e02f3bb37",
+    "title": "KARAOKE FROM HELL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Karaoke",
+    "tags": [
+      "Source-listed Karaoke",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-23T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-116/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-116/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/72/64/54_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/karaoke-from-hell-116/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "roseland-alter-bridge-with-big-wreck-tim-montana-2026-11-24",
     "title": "Alter Bridge with Big Wreck & Tim Montana",
     "subtitle": "Live show · Rock, Metal",
@@ -37922,6 +38163,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-11-27-9cf232d29a39",
+    "title": "HOTWAX disco~glam~metal~punk~hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T23:55:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-27/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-27/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/50/81/33_Original.jpg?v=10",
+      "sourceUrl": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-27/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-11-28-72662f632cef",
     "title": "GRABBITZ",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40634,6 +40936,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-11-30-dfb79abb65eb",
+    "title": "KARAOKE FROM HELL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Karaoke",
+    "tags": [
+      "Source-listed Karaoke",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-30T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-117/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-117/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/72/64/54_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/karaoke-from-hell-117/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-12-01-9d8d49197f0c",
     "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43164,6 +43517,109 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-12-04-4bf242f80029",
+    "title": "Elsewhere: The In-Between Drag • Burlesque • Beyond-Hosted by Xavialune",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/469035/-elsewhere-the-in-between-drag-burlesque-beyond-hosted-by-xavialune",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/469035/-elsewhere-the-in-between-drag-burlesque-beyond-hosted-by-xavialune",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/2zy9dwxamyv724upzng9.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/469035/-elsewhere-the-in-between-drag-burlesque-beyond-hosted-by-xavialune",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-04-856ff91a7605",
+    "title": "HARBOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: The Silkies",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/47408418/harbour-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/47408418/harbour-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/63d6c14fe5e8ff0fbe635714ae8dc929.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-12-04-b4501a55350c",
     "title": "L'Rain",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43487,6 +43943,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-04-3b775d399476",
+    "title": "Buck Meek",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Kisser",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/56106710/buck-meek-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/56106710/buck-meek-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5de2fad9329b2eb8e54294a8b0c9b1ef.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-holocene-2026-12-04-d26b7b352b21",
     "title": "Emo Nite at Holocene presented by Emo Nite LA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43740,6 +44248,67 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-09",
     "discovery": {
       "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-12-04-9cf20b9d549e",
+    "title": "HOTWAX disco~glam~metal~punk~hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T23:55:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-28/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-28/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/50/81/33_Original.jpg?v=10",
+      "sourceUrl": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-28/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -46409,6 +46978,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2026-12-07-4fe013081869",
+    "title": "KARAOKE FROM HELL",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Karaoke",
+    "tags": [
+      "Source-listed Karaoke",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-07T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-118/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/karaoke-from-hell-118/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/72/64/54_Original.jpg?v=8",
+      "sourceUrl": "https://www.danteslive.com/tm-event/karaoke-from-hell-118/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -49212,6 +49832,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-12-11-33223a1014cb",
+    "title": "HOTWAX disco~glam~metal~punk~hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T23:55:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-29/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-29/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/50/81/33_Original.jpg?v=10",
+      "sourceUrl": "https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-29/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-12-12-9974fc64b0a4",
     "title": "BRYCE ALAKAI",
     "subtitle": "Source-discovered venue event · details need review",
@@ -50144,6 +50825,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-12-192c64465765",
+    "title": "Video Dance Attack Holiday Party!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/49325770/video-dance-attack-holiday-party-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/49325770/video-dance-attack-holiday-party-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/2fd604df59b5618261a06599fd18f32c.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -51251,6 +51983,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2026-12-13-c0541fb43472",
+    "title": "CHURCH OF HIVE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-12/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-12/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/57/71/13_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-12/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   },
@@ -53443,6 +54227,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-12-18-7f9e9175dc86",
+    "title": "Mohanad Elshieky: Green Books",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/57958333/mohanad-elshiekygreen-books-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/57958333/mohanad-elshiekygreen-books-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/74d3595be2e325126fb7517b9ccecf23.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-12-18-4da1b51eacdb",
     "title": "Pistil, Sam Gelband, and Withholden",
     "subtitle": "Source-discovered venue event · details need review",
@@ -53935,6 +54770,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-19-b6f40920a103",
+    "title": "Snow Bar Chorale",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/57263739/snow-bar-chorale-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/57263739/snow-bar-chorale-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b9b479aaff931bd259e1ac51bb3a78e3.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -54441,6 +55327,59 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "dantes",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2026-12-19-cde3d5deffb3",
+    "title": "BURLY-Q REVUE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T22:30:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Join us at the Jack London for the latest edition of our late-night cabaret spectacular, hosted by the Mad Marquis and featuring some of the finest dancers from the Rose City and beyond. Treat yourself to a sensational evening of sultry and exotic delights, ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-11/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-11/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/77/00/04_Original.jpg?v=5",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-11/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -57921,6 +58860,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2027-01-02-9d0ae27bacf3",
+    "title": "CUMBIATRON: THE CUMBIA RAVE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Global & traditional",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Global & traditional"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-01-02-cumbiatron-the-cumbia-rave",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-01-02-cumbiatron-the-cumbia-rave",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/0819b923a2588b72c2ea44c1f664659b.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-01-02-cumbiatron-the-cumbia-rave",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -62642,6 +63635,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-02-11-53ce9a84ac5b",
+    "title": "paris jackson",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-02-11-paris-jackson",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-02-11-paris-jackson",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/d33ef478550668334b064af47f3ac04a.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-02-11-paris-jackson",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2027-02-12-142a6e0ca3b7",
     "title": "COSTA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64414,6 +65458,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-02-25-19e7fd3532ff",
+    "title": "Amira Elfeky: It Was Only A Dream Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-02-25-amira-elfeky-it-was-only-a-dream-tour-w-my-upside-down-meghan-curtin",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-02-25-amira-elfeky-it-was-only-a-dream-tour-w-my-upside-down-meghan-curtin",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5dea9a2b7b4226507261e3e3081bf751.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-02-25-amira-elfeky-it-was-only-a-dream-tour-w-my-upside-down-meghan-curtin",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-02-25-612c04461719",
     "title": "Beast In Black: North American Tour 2027",
     "subtitle": "Source-discovered venue event · details need review",
@@ -65773,6 +66868,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-03-05-7582cd1d691c",
+    "title": "Reality Gays Podcast",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/280219-reality-gays-podcast",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/280219-reality-gays-podcast",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/MissionGeneric.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/280219-reality-gays-podcast",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -67454,6 +68600,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-15-b4e5a32dd497",
+    "title": "Rio Romeo - Personal Slot Machine Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-15T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/98854992/rio-romeo-personal-slot-machine-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/98854992/rio-romeo-personal-slot-machine-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/605d18c1efd72c4d3719c76764200cc6.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/98854992/rio-romeo-personal-slot-machine-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2027-03-16-b247f823629b",
     "title": "Bo Staloch",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68210,6 +69407,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-03-24-30fd89a16390",
+    "title": "JOHNNIE GUILBERT",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-24T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-03-24-johnnie-guilbert",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-03-24-johnnie-guilbert",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e62dd8fd2bf266e1a0606eca5e630209.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-03-24-johnnie-guilbert",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-03-24-117877ab6b92",
     "title": "Science On Tap: Meet the Bees in Your Garden",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68715,6 +69963,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-24",
     "discovery": {
       "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-03-30-a92382680c5e",
+    "title": "Delta Sleep",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/delta-sleep/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/delta-sleep/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/delta-sleep.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/delta-sleep/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -70827,6 +72125,59 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-04-30-602fe251a2d8",
+    "title": "KAITLIN BUTTS – THE HELLO, HONKY TONK TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Country",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Country"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/kaitlin-butts-the-hello-honky-tonk-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/kaitlin-butts-the-hello-honky-tonk-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/katilin-butts-the-hello-honky-tonk-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/kaitlin-butts-the-hello-honky-tonk-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-04-30-32920e4d85cc",
     "title": "LEATHER AND LACE: A Tribute to all things Fleetwood and Stevie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -71124,6 +72475,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-roseland-2027-05-07-089043be7f00",
+    "title": "BigXthaPlug – Better Over Time Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-07T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Roseland Theater",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Roseland Theater dated event page; verify the time, format and status before approval",
+    "source": "Roseland Theater",
+    "url": "https://roselandpdx.com/event/bigxthaplug-better-over-time-tour/roseland-theater/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-16",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Roseland Theater",
+        "url": "https://roselandpdx.com/event/bigxthaplug-better-over-time-tour/roseland-theater/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-16",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://roselandpdx.com/wp-content/uploads/2026/11/IMG_1516.png",
+      "sourceUrl": "https://roselandpdx.com/event/bigxthaplug-better-over-time-tour/roseland-theater/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-16",
+    "discovery": {
+      "sourceId": "roseland",
       "method": "primary-source-collection"
     }
   },
