@@ -23,12 +23,14 @@ const alberta=require("./alberta-street-pub-importer");
 const rose=require("./alberta-rose-importer");
 const jlr=require("./jack-london-importer");
 const atlantis=require("./atlantis-importer");
+const abh=require("./a-beat-happening-importer");
 const mission=require("./mission-importer");
 const lola=require("./lolas-importer");
 const showdown=require("./showdown-importer");
 const redcube=require("./45east-redcube-importer");
 const treetix=require("./treetix-importer");
 const treetixCoverage=require("./treetix-coverage");
+const independentMusicCoverage=require("./independent-music-coverage");
 const mammoth=require("./mammoth-importer");
 const the1905=require("./the-1905-importer");
 const {classifyEvent}=require("./event-classification");
@@ -91,6 +93,7 @@ function urlOf(item,src){
   if(src.adapter==="alberta-rose-original-html")return rose.eventUrl(u.href)||rose.ticketUrl(u.href)?.url||null;
   if(src.adapter==="jack-london-original-html")return jlr.eventUrl(u.href);
   if(src.adapter==="atlantis-original-html")return atlantis.eventUrl(u.href);
+  if(src.adapter==="a-beat-happening-squarespace")return abh.eventUrl(u.href);
   if(src.adapter==="mission-official-html")return mission.eventUrl(u.href);
   if(src.adapter==="lolas-mcmenamins-html")return mission.eventUrl(u.href);
   if(src.adapter==="showdown-original-html")return showdown.eventUrl(u.href);
@@ -311,6 +314,7 @@ async function fetchItems(source){
  if(source.adapter==="45east-redcube-original")return redcube.fetchEvents(source);
  if(source.adapter==="aladdin-official-html")return aladdin.fetchEvents(source);
  if(source.adapter==="alberta-squarespace-json")return alberta.fetchEvents(source);
+ if(source.adapter==="a-beat-happening-squarespace")return abh.fetchEvents(source);
  if(source.adapter==="alberta-rose-original-html")return rose.fetchEvents(source);
  if(source.adapter==="jack-london-original-html")return jlr.fetchEvents(source);
   if(source.adapter==="atlantis-original-html")return atlantis.fetchEvents(source);
@@ -599,6 +603,10 @@ async function run(opts={}){
   intakeOutcomes:[...result.held,...result.skipped].filter(record=>treetixSourceIds.has(record.sourceId)),
   now,horizonDays:DISCOVERY_HORIZON_DAYS,write:opts.write!==false
  }):undefined;
+ const independentMusicReview=independentMusicCoverage.analyze({
+  sources:registry.sources,approved:parsed.events,found,reconciled:result,sourceRuns,today:localDay(now)
+ });
+ if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/independent-music-coverage.md"),independentMusicCoverage.report(independentMusicReview));
  const venueGap=analyzeVenueGap({events:parsed.events,sourceRegistry:registry,venueRegistry:venues,
   found,reconciled:result,sourceRuns,today:localDay(now)});
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/priority-venue-gap-audit.md"),reportVenueGap(venueGap));
@@ -609,7 +617,7 @@ async function run(opts={}){
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("SAMPLE HELDS "+JSON.stringify(result.held.slice(0,14)));
  if(process.env.SHOWS_DISCOVERY_DEBUG==="1")console.log("PROPOSED TITLES "+JSON.stringify(result.accepted.map(e=>({date:e.startsAt.slice(0,10),title:e.title,url:e.url}))));
  if(opts.write!==false)fs.writeFileSync(path.join(root,"discovery/latest-review.md"),report(result,errors,now,sourceRuns,registry.sources,changes));
- const reviewResult={...result,errors,sourceRuns,changes,corrections,treetixReview};
+ const reviewResult={...result,errors,sourceRuns,changes,corrections,treetixReview,independentMusicReview};
  if(!result.accepted.length&&!karaoke.changed.length&&!corrections.proposals.length)return reviewResult;
  const newEvents=[...corrections.events,...result.accepted].sort((a,b)=>a.startsAt.localeCompare(b.startsAt)||a.title.localeCompare(b.title));
  const batch="auto-discovery-"+localDay(now)+"-"+(process.env.GITHUB_RUN_NUMBER||"local"),prev=[...(parsed.meta.previousBatches||[])];

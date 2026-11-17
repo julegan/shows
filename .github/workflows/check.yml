@@ -106,6 +106,23 @@ jobs:
           node tests/mammoth-importer.js
           node --check scripts/probe-mammoth.js
 
+      - name: Validate independent source-level coverage report
+        run: |
+          node --check scripts/independent-music-coverage.js
+          node tests/independent-music-coverage.js
+
+      - name: Validate A Beat Happening original organizer intake (offline fixtures)
+        run: |
+          node --check scripts/a-beat-happening-importer.js
+          node tests/a-beat-happening-importer.js
+
+      # Organizer's calendar may have no future announcements; an empty result
+      # is not a regression. Website health is separate from fixture integrity.
+      - name: Observe A Beat Happening public collection health (external warning only)
+        continue-on-error: true
+        run: |
+          node -e 'const m=require("./scripts/a-beat-happening-importer");const s=require("./discovery/sources.json").sources.find(x=>x.id==="a-beat-happening");m.fetchEvents(s).then(rows=>console.log("LIVE ABH "+JSON.stringify({futureCandidates:rows.length,holds:rows.filter(x=>x.hold).length}))).catch(e=>{console.error("::warning::A Beat Happening original feed unavailable or changed: "+String(e.message||e));process.exitCode=1})'
+
       - name: Validate Atlantis Lounge original importer (mandatory offline fixtures)
         run: |
           node --check scripts/atlantis-importer.js
