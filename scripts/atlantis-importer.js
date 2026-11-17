@@ -4,7 +4,9 @@
  * not a condition of intake. No recurring occurrence is inferred.
  */
 const {wallToPacific,time24}=require("./priority-importers");
-const CALENDAR="https://mississippipizza.com/events/";
+// The original /events/ route now redirects to /calendar/. Fetch the canonical
+// first-party path directly; keep redirect: "error" for unapproved changes.
+const CALENDAR="https://mississippipizza.com/calendar/";
 const BASE="https://mississippipizza.com";
 const MONTHS={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
 const DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
