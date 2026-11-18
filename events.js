@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-17",
+  "sourceCheckedAt": "2026-11-18",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1521,
-  "addedOccurrences": 3,
-  "batchId": "auto-discovery-2026-11-17-85",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1522,
+  "addedOccurrences": 1,
+  "batchId": "trusted-original-2026-11-18",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -57251,6 +57251,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "starday-tavern",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2026-12-25-4a68019cb761",
+    "title": "Silent Night, Naughty Night - Holiday Burlesque",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "show",
+    "startsAt": "2026-12-25T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 7pm Show: 8pm 21+ Santa's resting so now we indulge! After you've finished your holiday festivities join us for a night of burlesque and cabaret entertainment NOT intended for the whole family Featuring an array of entertaining ecdysiasts and enchanti",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/silent-night-naughty-night-holiday-burlesque/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/silent-night-naughty-night-holiday-burlesque/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
