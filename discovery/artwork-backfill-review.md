@@ -1,12 +1,12 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-17T19:17:33.890Z; Portland date: 2026-11-17. This workflow does not publish images.
+Generated 2026-11-17T23:36:07.083Z; Portland date: 2026-11-17. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **259**
-- Already have image references: **192**
+- Upcoming music listings: **260**
+- Already have image references: **193**
 - Missing artwork: **67**
 - Missing listings with supported individual source pages: **16**
 - Missing listings needing another source or individual permalink: **51**
@@ -14,9 +14,9 @@ Image URLs must be reviewed for event identity, attribution, suitability and usa
 - Near-term events: **43**; eligible source pages: **10**
 - Near-term eligible source rechecks this run: **10** of **10** (never truncated by the backlog budget)
 - Missing music artwork beyond tomorrow: **5** in coming week, **10** beyond
-- Rotating older-art batch: **0** of **0** (requested 84; backlog budget 200; total requests include all eligible today/tomorrow)
+- Rotating older-art batch: **0** of **0** (requested 85; backlog budget 200; total requests include all eligible today/tomorrow)
 - Missing older-art entries not examined in this run: **0** (distributed across subsequent runs)
-- Total original event-page requests attempted: **25**; artwork proposed: **0**; other responses: **18**
+- Total original event-page requests attempted: **25**; artwork proposed: **0**; other responses: **17**
 
 ## Today and tomorrow — original-source freshness checks
 
@@ -31,7 +31,7 @@ A source title match confirms the linked page still mentions this bill; it does 
 | The Dirty Pretty (MPLS) + Tripple Nipple + PBOT (Turn! Turn! Turn!) | 2026-11-14 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/the-dirty-pretty-mpls-tripple-nipple-pbot-november-17-2026-801729 |
 | Comeback Kid (Dante's) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/comeback-kid-with-the-warriors-dead-heat-barrio-slam/ |
 | Silverstein with Story of the Year — Camp Screamo Tour (Crystal Ballroom) | 2026-10-17 | NO_EVENT_IMAGE | https://www.mcmenamins.com/events/278093-silverstein |
-| MADDIE ZAHM – Everything All The Time Tour (Hawthorne Theatre) | 2026-10-21 | TIMEOUT | https://hawthornetheatre.com/event/maddie-zahm-everything-all-the-time-tour/hawthorne-theatre/portland-oregon/ |
+| MADDIE ZAHM – Everything All The Time Tour (Hawthorne Theatre) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/maddie-zahm-everything-all-the-time-tour/hawthorne-theatre/portland-oregon/ |
 | Hewn + Sean Atkins (Boise) + Grover (Bellingham) (Turn! Turn! Turn!) | 2026-10-25 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/hewn-sean-atkins-boise-grover-bellingham-november-18-2026-778056 |
 | NO FUN KARAOKE (No Fun) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://www.nofunportland.com/events/a6273l8hmgpmt3kywdj28zr3dafx26 |
 | James T & Friends (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=Mm4xMmViaG92NW92cjRhNDMzdmtxamNrZmpfMjAyNjExMThUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
@@ -71,10 +71,9 @@ A source title match confirms the linked page still mentions this bill; it does 
 ## Event-specific original-page check outcomes
 
 - HTTP_404: 11
-- SOURCE_TITLE_TOKEN_MATCH: 7
+- SOURCE_TITLE_TOKEN_MATCH: 8
 - NO_EVENT_IMAGE: 5
 - TITLE_NOT_VERIFIED: 1
-- TIMEOUT: 1
 
 ## Missing music artwork by venue
 
@@ -103,7 +102,6 @@ No new verified images proposed in this batch. The action completed successfully
 - Silverstein with Story of the Year — Camp Screamo Tour (Crystal Ballroom) — NO_EVENT_IMAGE — https://www.mcmenamins.com/events/278093-silverstein
 - Seb El Zin • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/seb-el-zin-tba-tba
 - PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — HTTP_404 — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
-- MADDIE ZAHM – Everything All The Time Tour (Hawthorne Theatre) — TIMEOUT — https://hawthornetheatre.com/event/maddie-zahm-everything-all-the-time-tour/hawthorne-theatre/portland-oregon/
 - molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
 - Amy Bleu • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/amy-bleu-tba-tba
 - Jen Howard • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/jen-howard-tba-tba
