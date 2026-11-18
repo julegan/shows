@@ -2,7 +2,7 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**126 public table rows checked; 49 distinct relevant research leads (43 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**125 public table rows checked; 49 distinct relevant research leads (43 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |

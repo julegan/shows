@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-18",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1522,
-  "addedOccurrences": 1,
-  "batchId": "trusted-original-2026-11-18",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1537,
+  "addedOccurrences": 15,
+  "batchId": "auto-discovery-2026-11-18-86",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -200,11 +200,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-17",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "trusted-original-2026-11-18",
+      "addedOccurrences": 1
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 473
+  "musicOccurrences": 476
 };
 window.SHOWS_EVENTS = [
   {
@@ -35077,6 +35081,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-11-22-867b0c2f08ac",
+    "title": "Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. COVER: FREE! This Sunday featuring - Ms. Vee & A Badass Band Featuring Yella P Free weekly Sunday night event featuring the regions best Soul, Funk, R&B bands and DJs in one of the best sounding venues in Portland, Or.",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/11/22/sunday-session-presents-ms-vee-amp-a-badass-band-featuring-yella-p",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/11/22/sunday-session-presents-ms-vee-amp-a-badass-band-featuring-yella-p",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-black-water-2026-11-23-0dfb9f6928df",
     "title": "JALLANZO / DUB KHLAAT / BLIND PROPHET / MIKEY DUB",
     "subtitle": "Source-discovered venue event · details need review",
@@ -46668,6 +46717,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-06-3d57dc6ea261",
+    "title": "SOLD OUT: WHY?",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Kitty Ray",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/38655516/sold-outwhy-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/38655516/sold-outwhy-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/4d4104c08984ae134465eecfe7275b95.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-mississippi-polaris-2026-12-06-36fceb5fe673",
     "title": "Wishy - Nature's Pill Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -47729,6 +47830,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-08-f0c14d75d50c",
+    "title": "Oliver Hazard",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Downey Chase",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/90221796/oliver-hazard-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/90221796/oliver-hazard-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/83c4c992aa39310767edc54a1addc289.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -53776,6 +53929,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-12-17-8cbe661c7e65",
+    "title": "FESTIVALE COOL NUTZ - NIGHT ONE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-17T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing.",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/11/17/festivale-cool-nutz-night-one",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/11/17/festivale-cool-nutz-night-one",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1794992960544-S16HZK618RH6HMCPR1I6/IMG_5241+2.jpeg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/11/17/festivale-cool-nutz-night-one",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2026-12-17-5f4f54b8c2c5",
     "title": "Honey Revenge x Dead Poet Society",
     "subtitle": "Source-discovered venue event · details need review",
@@ -55074,6 +55278,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-12-19-6598fe17df5e",
+    "title": "TELLTALE PRESENTS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. COVER — $10 AT THE DOOR ALL AGES UNTIL 9PM",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/12/19/telltale-presents",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/12/19/telltale-presents",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1793640477206-2VF48GQXDCCIN7LJONY4/ASP+Logo.jpg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/12/19/telltale-presents",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-12-19-3b12f0ac9099",
     "title": "You, The Audience • TBA • TBA",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -56292,6 +56548,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2026-12-21-dd51c2d6886f",
+    "title": "Monday Night Football Hosted by Hazel Dell Hottie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. FREE EVENT ON OUR HEATED PATIO",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-fbyfh",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-fbyfh",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1790483055381-H68GPQ6ACG49YNJQUKE7/Marsha.jpg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-fbyfh",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2026-12-21-abf9847cd797",
     "title": "Drunken Angel",
     "subtitle": "Source-discovered venue event · details need review",
@@ -56477,6 +56784,108 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2026-12-21-7aa9eab702b5",
+    "title": "Winter Solstice Celebration: Butterchurch/Smörkyrka with Scandi Dance Lessons and A Winter Song Circle",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 19:00 (Doors 18:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/winter-solstice-celebration-butterchurch-smorkyrka-with-scandi-dance-lessons-and-a-winter-song-circle/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/winter-solstice-celebration-butterchurch-smorkyrka-with-scandi-dance-lessons-and-a-winter-song-circle/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/16/17/24_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/winter-solstice-celebration-butterchurch-smorkyrka-with-scandi-dance-lessons-and-a-winter-song-circle/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-21-5527a62d0366",
+    "title": "An Evening with Peter Sagal - Host of Wait Wait Don't Tell me",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-21T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/58804940/an-evening-with-peter-sagal-host-of-wait-wait-dont-tell-me-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/58804940/an-evening-with-peter-sagal-host-of-wait-wait-dont-tell-me-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/7e92b28295ed83e8ccfdf370c9fed22f.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -57387,6 +57796,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-street-pub-2026-12-26-79aa3446280a",
+    "title": "JT WISE BAND PLAYS DEAD",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-26T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. COVER — $10 AT THE DOOR ALL AGES UNTIL 9PM Deadheads rejoice! Enjoy classic Dead songs and high energy jams. JT Wise is a formidable force on guitar. He is joined by Maggie Wise on bass, Byron Ady on keyboards and Ken Woodside on drums. Celebrate the",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/12/26/jt-wise-band-plays-dead",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/12/26/jt-wise-band-plays-dead",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1794994706834-8Z8YD2743314GO3FM4M5/unsplash-image-Yuz6Z8MZ3bU.jpg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/12/26/jt-wise-band-plays-dead",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
       "method": "primary-source-collection"
     }
   },
@@ -59761,6 +60221,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-crystal-ballroom-2027-01-08-5bf206eae5e4",
+    "title": "Battle of the McMenamins Bands",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-08T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280282-battle-of-the-mcmenamins-bands/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280282-battle-of-the-mcmenamins-bands/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2024/05/og-image.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280282-battle-of-the-mcmenamins-bands/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-01-08-462fb9b8807f",
     "title": "Asher Fulero & Friends featuring Curtis Salgado",
     "subtitle": "Original venue listing · showtime verified",
@@ -61589,6 +62100,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-08",
     "discovery": {
       "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-45-east-2027-01-22-9a1844e9e43d",
+    "title": "DURANTE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2027-01-22T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "45 East",
+    "address": "315 SE 3rd Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Red Cube Presents confirms the full date and 45 East venue. Event show/doors start clock is NOT published on this card; no clock was inferred. Original Red Cube Presents 45 East show; music style, doors, show start, admission, cancellation and flyer permission need editorial review.",
+    "source": "45 East",
+    "url": "https://tixr.com/groups/45east/durante0122",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "45 East",
+        "url": "https://tixr.com/groups/45east/durante0122",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.redcubepresents.com/wp-content/uploads/2026/11/45-DUR_640X359.png",
+      "sourceUrl": "https://www.redcubepresents.com/events/",
+      "origin": "organizer-published-promo-art",
+      "credit": "Red Cube Presents original event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "45-east",
       "method": "primary-source-collection"
     }
   },
@@ -65640,6 +66202,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-45-east-2027-02-20-837c3bc7f23e",
+    "title": "HILLS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2027-02-20T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "45 East",
+    "address": "315 SE 3rd Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Red Cube Presents confirms the full date and 45 East venue. Event show/doors start clock is NOT published on this card; no clock was inferred. Original Red Cube Presents 45 East show; music style, doors, show start, admission, cancellation and flyer permission need editorial review.",
+    "source": "45 East",
+    "url": "https://tixr.com/groups/45east/hills0220",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "45 East",
+        "url": "https://tixr.com/groups/45east/hills0220",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.redcubepresents.com/wp-content/uploads/2026/11/45-HILLS_640X359.png",
+      "sourceUrl": "https://www.redcubepresents.com/events/",
+      "origin": "organizer-published-promo-art",
+      "credit": "Red Cube Presents original event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-02-20-efcddc6c88ad",
     "title": "JOS&Eacute; JAMES SINGS SINATRA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -67453,6 +68066,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mammoth-nw-2027-03-02-db664833d250",
+    "title": "Dying Fetus",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-02T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Limit Room",
+    "address": "720 SE Hawthorne Blvd, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for High Limit Room. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/dying-fetus-3/high-limit-room/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/dying-fetus-3/high-limit-room/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/11/Dying-Fetus-PDX-2027.png",
+      "sourceUrl": "https://mammothnw.com/event/dying-fetus-3/high-limit-room/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "mammoth-nw",
       "method": "primary-source-collection"
     }
   },
@@ -70455,6 +71119,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-03-22-95fa273ae7c1",
+    "title": "Rickshaw Billie’s Burger Patrol - Ca$h Grab Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-22T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review. Supporting artists: MKULTRA",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/64597375/rickshaw-billies-burger-patrol-cah-grab-tour-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/64597375/rickshaw-billies-burger-patrol-cah-grab-tour-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b49f4314536882932311c1712577132f.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/64597375/rickshaw-billies-burger-patrol-cah-grab-tour-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-03-23-42b15c4d5119",
     "title": "Kaki King",
     "subtitle": "Source-discovered venue event · details need review",
@@ -71402,6 +72117,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-04-01-dee4f04e0fbc",
+    "title": "BUTCHER BROWN",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-01T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/butcher-brown/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-18",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/butcher-brown/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-18",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/14/58/54_Original.jpg?v=9",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/butcher-brown/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-18",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   },
