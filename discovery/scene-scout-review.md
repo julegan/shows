@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-18
+# Portland music & independent culture source scout — 2026-11-19
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 3 inaccessible/changed; 3 newly discovered links; 130 total recorded research leads.**
+**26 source pages attempted; 3 inaccessible/changed; 1 newly discovered links; 131 total recorded research leads.**
 
 ## Source health
 
@@ -22,7 +22,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | The 1905 official jazz tickets | Read-only check succeeded | 0 |
 | Jack London Revue calendar | Read-only check succeeded | 1 |
 | The Goodfoot live music | Error — Seed source returned non-HTML or HTTP 403 | 0 |
-| Alberta Street Pub concerts | Read-only check succeeded | 1 |
+| Alberta Street Pub concerts | Read-only check succeeded | 0 |
 | Alberta Rose Theatre calendar | Read-only check succeeded | 20 |
 | Keys Lounge original schedule | Read-only check succeeded | 0 |
 | The Thesis PDX independent hip-hop showcase | Read-only check succeeded | 7 |
@@ -41,9 +41,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| music-alberta-street | [Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P](https://www.albertastreetpub.com/music/2026/11/22/sunday-session-presents-ms-vee-amp-a-badass-band-featuring-yella-p) | possible-music-ticket-or-organizer-source | mber 22, 2026 Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P |
-| music-alberta-rose | [Stumptown Soul Holiday Spectacular](https://albertarosetheatre.com/event/stumptown-soul-holiday-spectacular-4/alberta-rose-theatre/portland-oregon/) | possible-event-or-market-link | Stumptown Soul Holiday Spectacular <h4 id="evSub |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/44031612/stumptown-soul-holiday-spectacular-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | -sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/31927477/ben-rices-christmas-guitar-summit-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
