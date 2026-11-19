@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-18",
+  "sourceCheckedAt": "2026-11-19",
   "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1537,
-  "addedOccurrences": 15,
-  "batchId": "auto-discovery-2026-11-18-86",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1539,
+  "addedOccurrences": 2,
+  "batchId": "trusted-original-2026-11-19",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -208,7 +208,7 @@ window.SHOWS_DATASET = {
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 476
+  "musicOccurrences": 477
 };
 window.SHOWS_EVENTS = [
   {
@@ -56450,6 +56450,55 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2026-12-20-f11c0ef93ca5",
+    "title": "The Sam Harris Band Performing Charlie Brown's Christmas, and more",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "show",
+    "startsAt": "2026-12-20T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: The Sam Harris Band Performing Charlie Brown's Christmas, and more with The Ben Woodman Trio Doors: 7:00pm Show: 8:00pm Ages: 21+ Where rhythm meets groove, meets passion - we are the Sam Harris Band. Jazz & fusion originals and covers. Notes on Seating: Ope",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/the-sam-harris-band-performing-charlie-browns-christmas-and-more/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/the-sam-harris-band-performing-charlie-browns-christmas-and-more/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-soundcontrol-pdx-2026-12-20-7e9fe44c6451",
     "title": "Early Moods, H.O.G., Stainless",
     "subtitle": "Source-discovered venue event · details need review",
@@ -58272,6 +58321,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "no-fun",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2026-12-28-8243908a1e2d",
+    "title": "Queer Eye for the Magi – A Holigay Cabaret",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2026-12-28T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/queer-eye-for-the-magi-a-holigay-cabaret-3/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/queer-eye-for-the-magi-a-holigay-cabaret-3/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "alberta-rose-theatre"
     }
   },
   {
