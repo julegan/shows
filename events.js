@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-19",
+  "sourceCheckedAt": "2026-11-20",
   "coverageThrough": "2027-09-29",
-  "totalOccurrences": 1559,
-  "addedOccurrences": 20,
-  "batchId": "auto-discovery-2026-11-19-87",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1561,
+  "addedOccurrences": 2,
+  "batchId": "trusted-original-2026-11-20",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -61167,6 +61167,55 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-01-09-51edc441037e",
+    "title": "Grandifolia",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Jack London Revue Presents Grandifolia Doors: 7:00pm Show: 8:00pm 21+ Notes on Seating: Open seating, may be limited or standing room only. First come, first seated. Open dance floor may obscure sightlines.",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/grandifolia/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-20",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/grandifolia/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-20",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-20",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-showdown-2027-01-09-36afc2a3d92f",
     "title": "Shannon McNally",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64172,6 +64221,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-01-29-97f26a8477e1",
+    "title": "Bang Bang Experience",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 7:00pm Show: 8:00pm 21+ Bang Bang Experience is a 7-piece brass band playing the music of trumpet player, Sam Dechenne. Inspired by the sounds of international brass bands and Jazz ensembles, Funk, Pop and Reggae horn sections, West African and Latin ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/bang-bang-experience/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-20",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/bang-bang-experience/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-20",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-20",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
