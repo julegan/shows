@@ -136,6 +136,16 @@ jobs:
         run: |
           node -e 'const m=require("./scripts/atlantis-importer");const s=require("./discovery/sources.json").sources.find(s=>s.id==="atlantis-lounge");m.fetchEvents(s,fetch,{maxEvents:9}).then(rows=>{const valid=rows.filter(r=>r.startDate);console.log("LIVE ATLANTIS "+JSON.stringify({checked:rows.length,verified:valid.length,held:rows.length-valid.length}));if(valid.length<3)throw Error("Under three verified original event details");}).catch(e=>{console.error("::warning::Atlantis original-source unavailable or changed: "+String(e.message||e)+"; track https://github.com/julegan/shows/issues/179");process.exitCode=1})'
 
+      - name: Validate The Get Down first-party calendar diagnostic (offline fixtures)
+        run: |
+          node --check scripts/get-down-source-diagnostic.js
+          node tests/get-down-source-diagnostic.js
+
+      - name: Observe The Get Down official calendar (read-only source health)
+        continue-on-error: true
+        run: |
+          node scripts/get-down-source-diagnostic.js
+
       - name: Validate original venue research priorities
         run: node tests/source-priority.js
 
