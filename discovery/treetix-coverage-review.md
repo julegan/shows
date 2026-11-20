@@ -1,7 +1,7 @@
-# TreeTix provider-wide source reconciliation — 2026-11-18
+# TreeTix provider-wide source reconciliation — 2026-11-19
 
-**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-18T12:00:04Z. No verified pagination or upstream total; coverage is limited to this response.
-**Scope:** publicly listed events with source dates from 2026-11-18 through 2027-12-23 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
+**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-19T19:51:13Z. No verified pagination or upstream total; coverage is limited to this response.
+**Scope:** publicly listed events with source dates from 2026-11-19 through 2027-12-24 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
 **Safety:** this report does not import new producers, approve events, infer genres, or delete missing/rescheduled listings. Every source format is considered; unknown type is not an exclusion.
 
 ## Snapshot dispositions
@@ -11,9 +11,10 @@
 
 | Disposition | Records |
 | --- | ---: |
-| approved | 66 |
+| approved | 65 |
 | outside-geography | 25 |
 | possible-cross-source-match | 3 |
+| proposed | 1 |
 | unconnected-producer | 1 |
 
 ## Original producer calendars
@@ -21,7 +22,7 @@
 | Producer calendar | Source records in reporting scope | Approved by ID | Proposed by ID | Needs review |
 | --- | ---: | ---: | ---: | ---: |
 | glittertrashcan | 1 | 0 | 0 | 1 |
-| highwatermark | 64 | 64 | 0 | 0 |
+| highwatermark | 64 | 63 | 1 | 0 |
 | soundcontrol | 5 | 2 | 0 | 3 |
 
 ## Near-term source denominator (30 / 60 / 90 days)
@@ -30,15 +31,16 @@ Counts describe the observed feed, not an expected quota. Missing upstream pages
 
 | Horizon | Through | Provider records in scope | Approved by ID | Proposed by ID | Exception / investigation |
 | --- | --- | ---: | ---: | ---: | ---: |
-| 30 days | 2026-12-18 | 15 | 14 | 0 | 1 |
-| 60 days | 2027-01-17 | 25 | 23 | 0 | 2 |
-| 90 days | 2027-02-16 | 33 | 29 | 0 | 4 |
+| 30 days | 2026-12-19 | 16 | 14 | 1 | 1 |
+| 60 days | 2027-01-18 | 25 | 22 | 1 | 2 |
+| 90 days | 2027-02-17 | 33 | 28 | 1 | 4 |
 
 ## Event-by-event exceptions
 
 This review queue shows pending and unresolved rows, with the nearest dated events first. Geographic and date exclusions are in the full inventory.
 
 - 2026-12-04 — [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) · Hoku Events on Madison · producer glittertrashcan · **unconnected-producer**: Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope
+- 2026-12-06 — [HWM Holiday Market!](https://www.treetix.com/event/204962/highwatermark) · High Water Mark Lounge · producer highwatermark · **proposed**: Present in pending discovery dataset, not yet approved. SHOWS ID(s): auto-high-water-2026-12-06-7f26094d8c9d
 - 2027-01-15 — [Mustard Plug, The Planet Smashers, The Venomous Pinks](https://www.treetix.com/event/204952/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-15-994729e5f0a0
 - 2027-01-23 — [Western Standard Time, The Cascadians, Weekend Kids, Impact Sound!](https://www.treetix.com/event/204960/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-23-8e200ad20dfc
 - 2027-02-09 — [Wolves in the Throne Room, Stygian Bough, Spirit Possession](https://www.treetix.com/event/204942/soundcontrol) · Wonder Ballroom · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-wonder-ballroom-2027-02-09-cba3ae68a926
@@ -49,22 +51,22 @@ Each feed row appears once below. Matching SHOWS IDs are references for investig
 
 | Feed row | Producer | TreeTix ID | Source date | Event | Location | Disposition | SHOWS ID(s) | Reason |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | highwatermark | 204949 | 2026-11-18 | [Shady Pines Open Mic!](https://www.treetix.com/event/204949/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-18-f0c035593c8e | Exact original TreeTix event identity in approved SHOWS data |
-| 2 | highwatermark | 204919 | 2026-11-20 | [Grand Head, Bad Move, Sluzz, DJ Meow](https://www.treetix.com/event/204919/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-20-c4e14931e830 | Exact original TreeTix event identity in approved SHOWS data |
-| 3 | peacock | 204819 | 2026-11-21 | [Poetry Night at The Peacock](https://www.treetix.com/event/204819/peacock) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 4 | highwatermark | 204943 | 2026-11-21 | [Ils, Spares, Goldwing](https://www.treetix.com/event/204943/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-21-5b9e3cc77dd6 | Exact original TreeTix event identity in approved SHOWS data |
-| 5 | whatssofunnynetwork | 204844 | 2026-11-22 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204844/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 6 | highwatermark | 204723 | 2026-11-24 | [Karaoke Night - Free!](https://www.treetix.com/event/204723/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-24-ac7a87ea56e2 | Exact original TreeTix event identity in approved SHOWS data |
-| 7 | peacock | 204823 | 2026-11-27 | [Night Journey Rewind Presents](https://www.treetix.com/event/204823/peacock) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 8 | highwatermark | 204951 | 2026-11-27 | [Kink Nite! Market and party!](https://www.treetix.com/event/204951/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-27-7d70ea000fae | Exact original TreeTix event identity in approved SHOWS data |
-| 9 | highwatermark | 204950 | 2026-11-28 | [Disconap, Keeley Jo, Mother Dearest](https://www.treetix.com/event/204950/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-28-f557dabd8245 | Exact original TreeTix event identity in approved SHOWS data |
-| 10 | whatssofunnynetwork | 204845 | 2026-11-29 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204845/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 11 | highwatermark | 204957 | 2026-11-29 | [Jesco Payne & the Painkillers, DJ Dentside, Boot Scoot Pdx](https://www.treetix.com/event/204957/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-29-acd68672ac36 | Exact original TreeTix event identity in approved SHOWS data |
-| 12 | highwatermark | 204724 | 2026-12-01 | [Karaoke Night - Free!](https://www.treetix.com/event/204724/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-01-59fcbb900b98 | Exact original TreeTix event identity in approved SHOWS data |
-| 13 | highwatermark | 204961 | 2026-12-03 | [Fawkes Glove, Serpents of Heresy, Solution Honey](https://www.treetix.com/event/204961/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-03-f1b9c4db3320 | Exact original TreeTix event identity in approved SHOWS data |
-| 14 | glittertrashcan | 204917 | 2026-12-04 | [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) | Hoku Events on Madison · Portland, OR | unconnected-producer |  | Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope |
-| 15 | highwatermark | 204955 | 2026-12-05 | [A Deeper Meaning Of Pain: A night of gore and noise](https://www.treetix.com/event/204955/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-05-8cdd48057484 | Exact original TreeTix event identity in approved SHOWS data |
-| 16 | whatssofunnynetwork | 204846 | 2026-12-06 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204846/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 1 | highwatermark | 204919 | 2026-11-20 | [Grand Head, Bad Move, Sluzz, DJ Meow](https://www.treetix.com/event/204919/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-20-c4e14931e830 | Exact original TreeTix event identity in approved SHOWS data |
+| 2 | peacock | 204819 | 2026-11-21 | [Poetry Night at The Peacock](https://www.treetix.com/event/204819/peacock) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 3 | highwatermark | 204943 | 2026-11-21 | [Ils, Spares, Goldwing](https://www.treetix.com/event/204943/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-21-5b9e3cc77dd6 | Exact original TreeTix event identity in approved SHOWS data |
+| 4 | whatssofunnynetwork | 204844 | 2026-11-22 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204844/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 5 | highwatermark | 204723 | 2026-11-24 | [Karaoke Night - Free!](https://www.treetix.com/event/204723/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-24-ac7a87ea56e2 | Exact original TreeTix event identity in approved SHOWS data |
+| 6 | peacock | 204823 | 2026-11-27 | [Night Journey Rewind Presents](https://www.treetix.com/event/204823/peacock) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 7 | highwatermark | 204951 | 2026-11-27 | [Kink Nite! Market and party!](https://www.treetix.com/event/204951/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-27-7d70ea000fae | Exact original TreeTix event identity in approved SHOWS data |
+| 8 | highwatermark | 204950 | 2026-11-28 | [Disconap, Keeley Jo, Mother Dearest](https://www.treetix.com/event/204950/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-28-f557dabd8245 | Exact original TreeTix event identity in approved SHOWS data |
+| 9 | whatssofunnynetwork | 204845 | 2026-11-29 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204845/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 10 | highwatermark | 204957 | 2026-11-29 | [Jesco Payne & the Painkillers, DJ Dentside, Boot Scoot Pdx](https://www.treetix.com/event/204957/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-11-29-acd68672ac36 | Exact original TreeTix event identity in approved SHOWS data |
+| 11 | highwatermark | 204724 | 2026-12-01 | [Karaoke Night - Free!](https://www.treetix.com/event/204724/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-01-59fcbb900b98 | Exact original TreeTix event identity in approved SHOWS data |
+| 12 | highwatermark | 204961 | 2026-12-03 | [Fawkes Glove, Serpents of Heresy, Solution Honey](https://www.treetix.com/event/204961/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-03-f1b9c4db3320 | Exact original TreeTix event identity in approved SHOWS data |
+| 13 | glittertrashcan | 204917 | 2026-12-04 | [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) | Hoku Events on Madison · Portland, OR | unconnected-producer |  | Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope |
+| 14 | highwatermark | 204955 | 2026-12-05 | [A Deeper Meaning Of Pain: A night of gore and noise](https://www.treetix.com/event/204955/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-05-8cdd48057484 | Exact original TreeTix event identity in approved SHOWS data |
+| 15 | whatssofunnynetwork | 204846 | 2026-12-06 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204846/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
+| 16 | highwatermark | 204962 | 2026-12-06 | [HWM Holiday Market!](https://www.treetix.com/event/204962/highwatermark) | High Water Mark Lounge · Portland, OR | proposed | auto-high-water-2026-12-06-7f26094d8c9d | Present in pending discovery dataset, not yet approved |
 | 17 | highwatermark | 204725 | 2026-12-08 | [Karaoke Night - Free!](https://www.treetix.com/event/204725/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-08-8d5959d961d6 | Exact original TreeTix event identity in approved SHOWS data |
 | 18 | highwatermark | 204907 | 2026-12-10 | [Hear You Loud & Queer!](https://www.treetix.com/event/204907/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-10-363c772c683d | Exact original TreeTix event identity in approved SHOWS data |
 | 19 | highwatermark | 204953 | 2026-12-12 | [Left Of The Dial, Hot Honey](https://www.treetix.com/event/204953/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-12-bb096780ab95 | Exact original TreeTix event identity in approved SHOWS data |

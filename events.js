@@ -3,11 +3,11 @@
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-19",
-  "coverageThrough": "2027-09-09",
-  "totalOccurrences": 1539,
-  "addedOccurrences": 2,
-  "batchId": "trusted-original-2026-11-19",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "coverageThrough": "2027-09-29",
+  "totalOccurrences": 1559,
+  "addedOccurrences": 20,
+  "batchId": "auto-discovery-2026-11-19-87",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -204,11 +204,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-18",
       "addedOccurrences": 1
+    },
+    {
+      "batchId": "trusted-original-2026-11-19",
+      "addedOccurrences": 2
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 477
+  "musicOccurrences": 485
 };
 window.SHOWS_EVENTS = [
   {
@@ -34102,6 +34106,60 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-star-theater-2026-11-21-32b68ae1afca",
+    "title": "TWIRL &#8211; AUTUMN DISCO",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-21T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/twirl-autumn-disco/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/twirl-autumn-disco/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/65/61/93_Original.jpg?v=3",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/twirl-autumn-disco/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-11-21-9128dcc602c2",
     "title": "BURLY-Q REVUE",
     "subtitle": "Source-discovered venue event · details need review",
@@ -45849,6 +45907,59 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-06-43f15c1a85de",
+    "title": "School of Rock Vancouver - Fall 2026 Mid-Season Showcase",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T11:30:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/39161074/school-of-rock-vancouver-fall-2026-midseason-showcase-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/39161074/school-of-rock-vancouver-fall-2026-midseason-showcase-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/85b8c0f97c24d871f8fce2769e39e30e.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-06-94f55d558593",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -45896,6 +46007,53 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-high-water-2026-12-06-7f26094d8c9d",
+    "title": "HWM Holiday Market!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Markets",
+    "tags": [
+      "Source-listed Markets",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-06T14:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "High Water Mark",
+    "url": "https://www.treetix.com/event/204962/highwatermark",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark",
+        "url": "https://www.treetix.com/event/204962/highwatermark",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/highwatermark/images/events/2026-12-06-204962-mary-market-2026.png",
+    "sourceEventId": 204962,
+    "sourceCalendar": "highwatermark",
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "high-water",
       "method": "primary-source-collection"
     }
   },
@@ -47669,6 +47827,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "showdown",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-08-3d71d8ffa634",
+    "title": "Alison's Halo",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Cathedral Bells",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/50221107/alisons-halo-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/50221107/alisons-halo-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6bc4666c8ca577312184ada6c356631d.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -51620,6 +51830,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2026-12-12-fe599fcbee11",
+    "title": "Santo Perreo: Reggaeton, Dembow, and Latin hits dance party",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-12-santo-perreo-reggaeton-dembow-and-latin-hits-dance-party",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-12-santo-perreo-reggaeton-dembow-and-latin-hits-dance-party",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1fbe04abd854edad5d5e62924cef4c16.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-12-santo-perreo-reggaeton-dembow-and-latin-hits-dance-party",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-street-pub-2026-12-12-e22478911031",
     "title": "The Holiday Jam - An Ugly Sweater Party",
     "subtitle": "Source-discovered venue event · details need review",
@@ -54336,6 +54597,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-kenton-club-2026-12-18-f5be9166fd60",
+    "title": "Achemondo-Vista House-Generifus",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-18T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-45-east-2026-12-18-97541c796451",
     "title": "GRAVEDGR",
     "subtitle": "Source-discovered venue event · details need review",
@@ -54927,6 +55232,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-12-18-6a765a48fe4d",
+    "title": "Simple Shapes w/ Blister, Slender Gems, Mr. Boy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-18T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/469098/simple-shapes-w-blister-slender-gems-mr-boy",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/469098/simple-shapes-w-blister-slender-gems-mr-boy",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/d2wmgaqf0g4oe0e8csub.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/469098/simple-shapes-w-blister-slender-gems-mr-boy",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-lolas-room-2026-12-18-5628fced16ad",
     "title": "VDA Prince Tribute",
     "subtitle": "Source-discovered venue event · details need review",
@@ -55076,6 +55432,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-kenton-club-2026-12-19-c749993e6c2e",
+    "title": "Jamoke Family Christmas Jamoke-Cranefist-Appendage-Burner Phone",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-19T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Kenton Club",
+    "address": "2025 N Kilpatrick St, Portland, OR 97217",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Kenton Club roster lists the date, but no verified showtime. Midnight is a sorting anchor only. Official Kenton Club published upcoming show roster; schedule year verified by weekday and a 120-day rolling boundary. Check lineup and showtime with the venue. Individual event permalink is not available.",
+    "source": "Kenton Club",
+    "url": "https://www.kentonclub.com/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Kenton Club",
+        "url": "https://www.kentonclub.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "kenton-club",
       "method": "primary-source-collection"
     }
   },
@@ -57900,6 +58300,101 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-26-d7e0e8d48bae",
+    "title": "Ringer & The Bells",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-26T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MWR1YjNmOWJsOXJuMXNuMWJvbnVqdXE5OW8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MWR1YjNmOWJsOXJuMXNuMWJvbnVqdXE5OW8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2026-12-26-fd7d1eadad23",
+    "title": "The Night After Christmas with Gabriel John and Two-Step Lessons with Peggy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-26T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:00 (Doors 19:00); original event-specific Google Calendar confirms 2026 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/the-night-after-christmas-with-gabriel-john-and-two-step-lessons-with-peggy/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/the-night-after-christmas-with-gabriel-john-and-two-step-lessons-with-peggy/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/65/62/33_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/the-night-after-christmas-with-gabriel-john-and-two-step-lessons-with-peggy/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-27-f36e2079d8b7",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -58616,6 +59111,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-12-30-92b33c5d5763",
+    "title": "Hear You Loud & Queer Holiday Comedy Show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-30T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review. Supporting artists: hosted by Mack Lee and Ally J Ward",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/54491098/hear-you-loud-queer-holiday-comedy-show-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/54491098/hear-you-loud-queer-holiday-comedy-show-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/92b9e2170c32d902ffecbc76316050d8.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2026-12-30-e9b883896dc5",
     "title": "High On Fire",
     "subtitle": "Source-discovered venue event · details need review",
@@ -59212,6 +59758,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-revolution-hall-2026-12-31-6ec0d6aad149",
+    "title": "The Disco Biscuits NYE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/95972752/the-disco-biscuits-nye-portland-revolution-hall",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/95972752/the-disco-biscuits-nye-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1c00733a6744c881917b53f463da5430.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "revolution-hall",
       "method": "primary-source-collection"
     }
   },
@@ -63984,6 +64584,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-02-02-1e31f0ffcec5",
+    "title": "Tony Jupiter",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-02-02-tony-jupiter",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-02-02-tony-jupiter",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/a6308184a258d52f7a542021ad7508e5.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-02-02-tony-jupiter",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-high-water-2027-02-02-adb0d066f6a9",
     "title": "Karaoke Night - Free!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64534,6 +65185,56 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-03",
     "discovery": {
       "sourceId": "crystal-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-hawthorne-theatre-2027-02-06-ef7061a6e67d",
+    "title": "Babytron – THE IV TOUR",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/babytron-the-iv-tour/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/babytron-the-iv-tour/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/babytron-the-iv-tour.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/babytron-the-iv-tour/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
       "method": "primary-source-collection"
     }
   },
@@ -73226,6 +73927,56 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-hawthorne-theatre-2027-04-09-0acbd41bb086",
+    "title": "Stomach Book",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-09T19:30:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Theatre",
+    "neighborhood": "Not confirmed",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Venue event-detail page explicitly publishes the full date, year and performance time Official Hawthorne Theatre dated event page; verify the time, format and status before approval",
+    "source": "Hawthorne Theatre",
+    "url": "https://hawthornetheatre.com/event/stomach-book/hawthorne-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Hawthorne Theatre",
+        "url": "https://hawthornetheatre.com/event/stomach-book/hawthorne-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://hawthornetheatre.com/wp-content/uploads/2026/11/stomach-book.jpeg",
+      "sourceUrl": "https://hawthornetheatre.com/event/stomach-book/hawthorne-theatre/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-roseland-2027-04-09-6d61b7a3be5d",
     "title": "The Chats US TOUR",
     "subtitle": "Source-discovered venue event · details need review",
@@ -74480,6 +75231,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-05-01-97f34192d231",
+    "title": "Amanti",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-01T20:30:00-07:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/amanti/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/amanti/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/65/66/43_Original.jpg?v=18",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/amanti/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   },
@@ -76038,6 +76840,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-06-09-8c498506f838",
+    "title": "Science On Tap – A Sea of Wealth: The Blue Economy & the Future of the Ocean",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-09T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-high-water-2027-06-10-830fe87f850e",
     "title": "Hear You Loud & Queer!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -76131,6 +76985,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "wonder-ballroom",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-showdown-2027-06-12-ec3435b23aa9",
+    "title": "Uncle Strut",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-06-12T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:00 (Doors 19:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/uncle-strut/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/uncle-strut/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/16/10/14_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/uncle-strut/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "showdown",
       "method": "primary-source-collection"
     }
   },
@@ -76565,6 +77470,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-rose-theatre-2027-07-28-c8380a2eb667",
+    "title": "Science On Tap – A is for Amoeba: The Story of Life in a Single Cell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-07-28T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-aladdin-theater-2027-07-29-fb6d92dfbdfc",
     "title": "Steam Powered Giraffe",
     "subtitle": "Source-discovered venue event · details need review",
@@ -76989,6 +77946,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "high-water",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-rose-theatre-2027-09-29-af2a6dca752d",
+    "title": "Science On Tap – Cloudy with a Chance of Starships: Odds of Life in the Cosmos",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-09-29T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Rose Theatre",
+    "address": "3000 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Concordia",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Alberta Rose dated calendar month/year, weekday, exact room and separately labeled SHOW time; doors not substituted. Original theatre calendar; music style and format require event-specific editorial assessment.",
+    "source": "Alberta Rose Theatre",
+    "url": "https://albertarosetheatre.com/event/science-on-tap-cloudy-with-a-chance-of-starships-odds-of-life-in-the-cosmos/alberta-rose-theatre/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-19",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Rose Theatre",
+        "url": "https://albertarosetheatre.com/event/science-on-tap-cloudy-with-a-chance-of-starships-odds-of-life-in-the-cosmos/alberta-rose-theatre/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-19",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://albertarosetheatre.com/wp-content/uploads/2026/11/science-on-tap-cloudy-with-a-chance-of-starships-odds-of-life-in-the-cosmos.jfif",
+      "sourceUrl": "https://albertarosetheatre.com/event/science-on-tap-cloudy-with-a-chance-of-starships-odds-of-life-in-the-cosmos/alberta-rose-theatre/portland-oregon/",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Rose Theatre original event artwork",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-19",
+    "discovery": {
+      "sourceId": "alberta-rose-theatre",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   }
 ];
