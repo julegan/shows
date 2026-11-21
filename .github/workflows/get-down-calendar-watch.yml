@@ -1,0 +1,56 @@
+name: 02 · Check The Get Down original calendar (research only)
+on:
+  schedule:
+    - cron: '31 18 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/get-down-calendar-watch.yml'
+      - 'scripts/get-down-source-diagnostic.js'
+      - 'tests/get-down-source-diagnostic.js'
+permissions:
+  contents: read
+concurrency:
+  group: shows-get-down-calendar-watch
+  cancel-in-progress: false
+jobs:
+  original-calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Verify diagnostic boundaries and regression tests
+        run: |
+          node --check scripts/get-down-source-diagnostic.js
+          node tests/get-down-source-diagnostic.js
+      - name: Inspect original calendar (report only)
+        id: probe
+        continue-on-error: true
+        run: node scripts/get-down-source-diagnostic.js
+      - name: Record result and hold any inaccessible source
+        if: always()
+        env:
+          PROBE_OUTCOME: ${{ steps.probe.outcome }}
+        run: |
+          if [ "$PROBE_OUTCOME" != "success" ]; then
+            echo "::warning::The Get Down original calendar could not be verified; source remains review-only. Do not infer cancellations or import events."
+          fi
+          echo "## The Get Down original calendar research" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f discovery/get-down-source-diagnostic.md ]; then
+            sed -n '1,65p' discovery/get-down-source-diagnostic.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Original calendar unavailable or identity not verified. No events, times, genres, or flyers proposed." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "Probe outcome: $PROBE_OUTCOME. This job cannot write to canonical events or open publishing PRs." >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep dated diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: get-down-original-calendar-${{ github.run_number }}
+          path: discovery/get-down-source-diagnostic.md
+          if-no-files-found: warn
+          retention-days: 30
