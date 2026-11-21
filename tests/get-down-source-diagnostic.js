@@ -25,6 +25,15 @@ assert(!JSON.stringify(result).includes("evil.example"));
 assert.throws(()=>d.inspect(html.replace("680 SE 6th Ave","615 SE Alder St"),existing),/identity/);
 assert.throws(()=>d.inspect("x".repeat(1500001)),/oversized/);
 assert.equal(d.normalized("DTF: Deitch, Teitel, Fribush"),"dtf deitch teitel fribush");
+const watch=fs.readFileSync(path.join(__dirname,"../.github/workflows/get-down-calendar-watch.yml"),"utf8");
+assert.match(watch,/schedule:/,"Original calendar watch runs without manual nomination");
+assert.match(watch,/workflow_dispatch:/,"Source watch can be manually repeated");
+assert.match(watch,/contents: read/,"Research workflow has no write permission");
+assert.doesNotMatch(watch,/contents: write|pull-requests: write|gh pr create|git push/,"Research never publishes");
+assert.match(watch,/node tests\/get-down-source-diagnostic\.js/,"Live watch tests its parser first");
+assert.match(watch,/continue-on-error: true/,"A source block is recorded without claiming missing events");
+assert.match(watch,/if-no-files-found: warn/,"Blocked source retains explicit status");
+assert.match(watch,/discovery\/get-down-source-diagnostic\.md/,"Original evidence is retained for review");
 const script=fs.readFileSync(path.join(__dirname,"../scripts/get-down-source-diagnostic.js"),"utf8");
 assert(!script.includes("events.push("),"No event creation in research-only diagnostic");
 (async()=>{
