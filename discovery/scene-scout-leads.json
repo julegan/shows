@@ -1008,6 +1008,17 @@
       "firstSeenOn": "2026-11-07"
     },
     {
+      "url": "https://www.etix.com/ticket/p/75222391/queer-eye-for-the-magi-a-holigay-cabaret-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "sm-3--> Buy Tickets",
+      "rank": 10,
+      "firstSeenOn": "2026-11-21"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/77699906/sundown-3-a-salute-to-gordon-lightfoot-a-benefit-for-the-jeremy-wilson-foundation-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
