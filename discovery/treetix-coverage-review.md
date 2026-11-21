@@ -1,7 +1,7 @@
-# TreeTix provider-wide source reconciliation — 2026-11-19
+# TreeTix provider-wide source reconciliation — 2026-11-20
 
-**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-19T19:51:13Z. No verified pagination or upstream total; coverage is limited to this response.
-**Scope:** publicly listed events with source dates from 2026-11-19 through 2027-12-24 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
+**Evidence:** one observed public TreeTix feed response at https://api.treetix.com/events.json. Provider updated: 2026-11-20T12:00:04Z. No verified pagination or upstream total; coverage is limited to this response.
+**Scope:** publicly listed events with source dates from 2026-11-20 through 2027-12-25 and provider-labeled Portland, OR locations; unverified/new producer venues require investigation before publication.
 **Safety:** this report does not import new producers, approve events, infer genres, or delete missing/rescheduled listings. Every source format is considered; unknown type is not an exclusion.
 
 ## Snapshot dispositions
@@ -11,10 +11,9 @@
 
 | Disposition | Records |
 | --- | ---: |
-| approved | 65 |
+| approved | 66 |
 | outside-geography | 25 |
 | possible-cross-source-match | 3 |
-| proposed | 1 |
 | unconnected-producer | 1 |
 
 ## Original producer calendars
@@ -22,7 +21,7 @@
 | Producer calendar | Source records in reporting scope | Approved by ID | Proposed by ID | Needs review |
 | --- | ---: | ---: | ---: | ---: |
 | glittertrashcan | 1 | 0 | 0 | 1 |
-| highwatermark | 64 | 63 | 1 | 0 |
+| highwatermark | 64 | 64 | 0 | 0 |
 | soundcontrol | 5 | 2 | 0 | 3 |
 
 ## Near-term source denominator (30 / 60 / 90 days)
@@ -31,16 +30,15 @@ Counts describe the observed feed, not an expected quota. Missing upstream pages
 
 | Horizon | Through | Provider records in scope | Approved by ID | Proposed by ID | Exception / investigation |
 | --- | --- | ---: | ---: | ---: | ---: |
-| 30 days | 2026-12-19 | 16 | 14 | 1 | 1 |
-| 60 days | 2027-01-18 | 25 | 22 | 1 | 2 |
-| 90 days | 2027-02-17 | 33 | 28 | 1 | 4 |
+| 30 days | 2026-12-20 | 17 | 16 | 0 | 1 |
+| 60 days | 2027-01-19 | 26 | 24 | 0 | 2 |
+| 90 days | 2027-02-18 | 33 | 29 | 0 | 4 |
 
 ## Event-by-event exceptions
 
 This review queue shows pending and unresolved rows, with the nearest dated events first. Geographic and date exclusions are in the full inventory.
 
 - 2026-12-04 — [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) · Hoku Events on Madison · producer glittertrashcan · **unconnected-producer**: Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope
-- 2026-12-06 — [HWM Holiday Market!](https://www.treetix.com/event/204962/highwatermark) · High Water Mark Lounge · producer highwatermark · **proposed**: Present in pending discovery dataset, not yet approved. SHOWS ID(s): auto-high-water-2026-12-06-7f26094d8c9d
 - 2027-01-15 — [Mustard Plug, The Planet Smashers, The Venomous Pinks](https://www.treetix.com/event/204952/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-15-994729e5f0a0
 - 2027-01-23 — [Western Standard Time, The Cascadians, Weekend Kids, Impact Sound!](https://www.treetix.com/event/204960/soundcontrol) · Dante's · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-dantes-2027-01-23-8e200ad20dfc
 - 2027-02-09 — [Wolves in the Throne Room, Stygian Bough, Spirit Possession](https://www.treetix.com/event/204942/soundcontrol) · Wonder Ballroom · producer soundcontrol · **possible-cross-source-match**: Likely same bill at the same venue/date based on distinctive title words, but no shared original provider ID; verify before asserting coverage. Intake: Same venue/date; different existing bill; manual comparison. SHOWS ID(s): auto-wonder-ballroom-2027-02-09-cba3ae68a926
@@ -66,7 +64,7 @@ Each feed row appears once below. Matching SHOWS IDs are references for investig
 | 13 | glittertrashcan | 204917 | 2026-12-04 | [LEWDicrous: Choose Your Own Adventure](https://www.treetix.com/event/204917/glittertrashcan) | Hoku Events on Madison · Portland, OR | unconnected-producer |  | Portland-labeled original event from a provider calendar not connected to SHOWS; check actual venue and source scope |
 | 14 | highwatermark | 204955 | 2026-12-05 | [A Deeper Meaning Of Pain: A night of gore and noise](https://www.treetix.com/event/204955/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-05-8cdd48057484 | Exact original TreeTix event identity in approved SHOWS data |
 | 15 | whatssofunnynetwork | 204846 | 2026-12-06 | [Sucka Free Sundays @Peacock Lounge!](https://www.treetix.com/event/204846/whatssofunnynetwork) | Peacock Lounge · San Francisco, CA | outside-geography |  | Provider city/state is outside Portland, OR |
-| 16 | highwatermark | 204962 | 2026-12-06 | [HWM Holiday Market!](https://www.treetix.com/event/204962/highwatermark) | High Water Mark Lounge · Portland, OR | proposed | auto-high-water-2026-12-06-7f26094d8c9d | Present in pending discovery dataset, not yet approved |
+| 16 | highwatermark | 204962 | 2026-12-06 | [HWM Holiday Market!](https://www.treetix.com/event/204962/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-06-7f26094d8c9d | Exact original TreeTix event identity in approved SHOWS data |
 | 17 | highwatermark | 204725 | 2026-12-08 | [Karaoke Night - Free!](https://www.treetix.com/event/204725/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-08-8d5959d961d6 | Exact original TreeTix event identity in approved SHOWS data |
 | 18 | highwatermark | 204907 | 2026-12-10 | [Hear You Loud & Queer!](https://www.treetix.com/event/204907/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-10-363c772c683d | Exact original TreeTix event identity in approved SHOWS data |
 | 19 | highwatermark | 204953 | 2026-12-12 | [Left Of The Dial, Hot Honey](https://www.treetix.com/event/204953/highwatermark) | High Water Mark Lounge · Portland, OR | approved | auto-high-water-2026-12-12-bb096780ab95 | Exact original TreeTix event identity in approved SHOWS data |

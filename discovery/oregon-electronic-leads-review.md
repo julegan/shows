@@ -2,19 +2,22 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**125 public table rows checked; 49 distinct relevant research leads (43 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**151 public table rows checked; 55 distinct relevant research leads (48 preferred-venue, 7 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-19 | [Schrotthagen: New World Tour 2026](https://www.etix.com/ticket/p/90331569) | Holocene | trance, techno / Not listed | Preferred SHOWS venue + relevant music tag |
 | 2026-11-20 | [Soul'd Out Presents: Eric John Kaiser - Album Release](https://www.ticketweb.com/event/eric-john-kaiser-jack-london-revue-tickets/14334304) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-20 | [Space 92](https://www.tixr.com/groups/45east/events/space-92-201571) | 45 East | techno / Not listed | Preferred SHOWS venue + relevant music tag |
 | 2026-11-20 | [Succubass's Farewell Steppas Ball w/ Stones Taro & Danny Goliger](https://ra.co/events/2578712) | Process Pdx | house, breaks, club / Not listed | Relevant electronic / dark music tag |
+| 2026-11-21 | [Soul'd Out Presents: Fox Walker, Earl Gracious Band & Liquid Sun](https://www.ticketweb.com/event/fox-walker-earl-gracious-band-jack-london-revue-tickets/14317424) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-21 | [Panteros666 at 45 East](https://45east.tixr.com/1121panteros666) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-21 | [Process Club Night - Juliana Huxtable, Special Guest DJ](https://ra.co/events/2576746) | Process Pdx | experimental, techno, club music / Not listed | Relevant electronic / dark music tag |
+| 2026-11-22 | [Church Of Hive / Goth-Industrial-Darkwave / DJs Sinead : Lissex / Star Theater, 11-22 10:30Pm](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14971783) | Star Theater | Not categorized / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
+| 2026-11-25 | [Soul'd Out Presents: Infinity](https://www.ticketweb.com/event/infinity-jack-london-revue-tickets/14348204) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-25 | [Flash Trash](https://www.etix.com/ticket/p/86481210/flash-trashan-electro-dance-party-featguest-dj-set-by-uffie-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2026-11-27 | [Snap! 90's Dance Party - 90's Thanksgiving Edition!](https://www.facebook.com/events/2138790904178313/) | Holocene | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-27 | [Roger Sanchez](https://www.tixr.com/groups/45east/events/roger-sanchez-209104) | 45 East | deep house, tech house / Not listed | Preferred SHOWS venue |
+| 2026-11-28 | [Soul'd Out Presents: One Way Out](https://www.ticketweb.com/event/one-way-out-jack-london-revue-tickets/14360194) | Jack London Revue | Not categorized / One Way Out Pdx, Soul'd Out | Preferred SHOWS venue |
 | 2026-11-28 | [Grabbitz](https://tixr.com/groups/45east/grabbitz1128) | 45 East | dubstep, trap, EDM / Not listed | Preferred SHOWS venue |
 | 2026-11-29 | [Chai & Roses Disco Tea Party](https://ra.co/events/2564215) | Holocene | Not categorized / Dj Anjali And The Incredible Kid | Preferred SHOWS venue |
 | 2026-12-02 | [Tommy Fleece](https://dice.fm/event/8e7ppw-minty-boi-presents-tommy-fleece-live-in-portland-with-reserv-2nd-dec-holocene-portland-tickets) | Holocene | electro house, synthpop, hyperpop / Not listed | Preferred SHOWS venue + relevant music tag |
@@ -23,8 +26,8 @@
 | 2026-12-05 | [Subsensory + Be Yourself: Mary Yuzovskaya (Berlin) & Screendoor](https://ra.co/events/2580121) | 525 Se Pine St. | techno / Subsensory, Be Yourself Pdx | Relevant electronic / dark music tag |
 | 2026-12-06 | [Frost Children: After Life After Party](https://aftontickets.com/event/buyticket/nvjq33wzxo) | High Limit Room | hyperpop / Not listed | Preferred SHOWS venue |
 | 2026-12-11 | [Deekline at The Den](https://eventim.us/denpdxdeekline1211) | The Den | drum and bass, jungle, dubstep / Red Cube | Relevant electronic / dark music tag |
-| 2026-12-11 | [Seth David + Schmux](https://www.tixr.com/groups/45east/events/seth-david-schmux-203722) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-12-12 | [Bryce Alakai](https://www.tixr.com/groups/45east/events/bryce-alakai-201324) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
+| 2026-12-11 | [Seth David + Schmux at 45 East](https://45east.tixr.com/sethdavid1211) | 45 East | dubstep / Not listed | Preferred SHOWS venue |
+| 2026-12-12 | [Bryce Alakai at 45 East](https://45east.tixr.com/brycealakai1212) | 45 East | house, EDM / Not listed | Preferred SHOWS venue |
 | 2026-12-17 | [Eelke Kleijn](https://www.etix.com/ticket/p/81727442) | Hawthorne Theatre | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-12-18 | [Gravedgr](https://www.tixr.com/groups/45east/events/gravedgr-211727) | 45 East | dubstep, trap / Not listed | Preferred SHOWS venue |
 | 2026-12-19 | [Getter](https://www.tixr.com/groups/45east/events/getter-207904) | 45 East | dubstep, trap, breakbeats / Not listed | Preferred SHOWS venue |
@@ -36,6 +39,7 @@
 | 2027-01-02 | [Brett's House Party (Disco Biscuits Afterparty) w/ DJ Wicked](https://www.eventbrite.com/e/bretts-house-party-disco-biscuits-afterparty-with-dj-wicked-9pm-doors-tickets-2003942332461) | Goodfoot Pub & Lounge | house, livetronica, jam band / The Goodfoot | Preferred SHOWS venue |
 | 2027-01-05 | [Ninajirachi w/ Ikeda](https://www.axs.com/events/1616996) | McMenamins Crystal Ballroom | EDM, house, dubstep, drum and bass / Showbox | Relevant electronic / dark music tag |
 | 2027-01-14 | [Club Slayyy](https://www.etix.com/ticket/p/53208442/club-slayyyslayyyter-hyperpop-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
+| 2027-01-16 | [Elvin Bishop & The Hell Raisin' Revue - Roseland Theater, Or](https://www.etix.com/ticket/p/56351388/elvin-bishops-raisin-hell-review-portland-roseland-theater) | Roseland Theater | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-01-16 | [Aname](https://www.tixr.com/groups/45east/events/anam--212865) | 45 East | progressive house / Not listed | Preferred SHOWS venue |
 | 2027-01-23 | [Artifakts X Parkbreezy](https://www.tixr.com/groups/45east/events/artifakts-x-parkbreezy-209456) | 45 East | downtempo, hip-hop, bass music / Not listed | Preferred SHOWS venue |
 | 2027-01-29 | [Romain Garcia](https://www.tixr.com/groups/45east/events/romain-garcia-211842) | 45 East | progressive house, melodic techno / Not listed | Preferred SHOWS venue + relevant music tag |
@@ -47,12 +51,14 @@
 | 2027-02-12 | [2000's Rave](https://www.etix.com/ticket/p/84228574) | Hawthorne Theatre | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-02-12 | [Costa](https://www.tixr.com/groups/45east/events/costa-209953) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-02-13 | [Jacques Greene - jg album tour](https://www.etix.com/ticket/p/45782678) | Holocene | house / Not listed | Preferred SHOWS venue |
+| 2027-02-26 | [Boogie T, Maddy O'neal, Shosh](https://wl.eventim.us/event/boogie-t-t-man-tour/710548) | Realm | riddim, dubstep, bass music, pop EDM, synthpop, indie dance / Not listed | Relevant electronic / dark music tag |
 | 2027-03-06 | [Biamp Portland Jazz Festival: Sam Gendel + Sam Wilkes](https://www.etix.com/ticket/p/55502710/sam-gendel-sam-wilkes-21-portland-holocene) | Holocene | hip-hop, future beats / Pdx Jazz | Preferred SHOWS venue |
 | 2027-03-07 | [Chvrches](https://www.etix.com/ticket/p/74972995) | Revolution Hall | synthpop, indie dance / Not listed | Preferred SHOWS venue + relevant music tag |
 | 2027-03-08 | [Chvrches](https://www.etix.com/ticket/p/71714795) | Revolution Hall | synthpop, indie dance / Not listed | Preferred SHOWS venue + relevant music tag |
 | 2027-03-10 | [2hollis: The Pirouette Tour / Lucy Bedroque, Conceal](https://www.etix.com/ticket/p/59280936/2hollisthe-pirouette-tour-portland-roseland-theater) | Roseland Theater | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-03-11 | [2hollis: The Pirouette Tour / Lucy Bedroque, Conceal](https://www.etix.com/ticket/p/67476037/2hollisthe-pirouette-tour-portland-roseland-theater) | Roseland Theater | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-03-23 | [VNV Nation - An Evening w/](https://www.etix.com/ticket/p/87472996) | Revolution Hall | synthpop, trance, EBM / Not listed | Preferred SHOWS venue + relevant music tag |
+| 2027-03-25 | [Video Game Rave - 21+](https://www.etix.com/ticket/p/86054663) | Holocene | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-03-26 | [Hunter : Presents Actors : Hallows : The Discussion : DJ Skully / Star Theater / 03-26-27](https://www.facebook.com/events/1431381059061105/) | Star Theater | techno / Church Of Hive Pdx, Hunter : | Preferred SHOWS venue + relevant music tag |
 | 2027-04-08 | [Jersey](https://www.etix.com/ticket/p/67935496/jersey-portland-wonder-ballroom) | Wonder Ballroom | house / Monqui Presents | Preferred SHOWS venue |
 

@@ -1,22 +1,22 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-19T23:10:26.312Z; Portland date: 2026-11-19. This workflow does not publish images.
+Generated 2026-11-20T22:45:13.734Z; Portland date: 2026-11-20. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **258**
-- Already have image references: **193**
-- Missing artwork: **65**
-- Missing listings with supported individual source pages: **15**
+- Upcoming music listings: **254**
+- Already have image references: **190**
+- Missing artwork: **64**
+- Missing listings with supported individual source pages: **14**
 - Missing listings needing another source or individual permalink: **50**
-- Highest priority: **2026-11-19 and 2026-11-20** (all event types, including unknown)
-- Near-term events: **54**; eligible source pages: **15**
-- Near-term eligible source rechecks this run: **15** of **15** (never truncated by the backlog budget)
+- Highest priority: **2026-11-20 and 2026-11-21** (all event types, including unknown)
+- Near-term events: **67**; eligible source pages: **14**
+- Near-term eligible source rechecks this run: **14** of **14** (never truncated by the backlog budget)
 - Missing music artwork beyond tomorrow: **2** in coming week, **10** beyond
-- Rotating older-art batch: **0** of **0** (requested 87; backlog budget 200; total requests include all eligible today/tomorrow)
+- Rotating older-art batch: **0** of **0** (requested 88; backlog budget 200; total requests include all eligible today/tomorrow)
 - Missing older-art entries not examined in this run: **0** (distributed across subsequent runs)
-- Total original event-page requests attempted: **27**; artwork proposed: **0**; other responses: **15**
+- Total original event-page requests attempted: **26**; artwork proposed: **0**; other responses: **14**
 
 ## Today and tomorrow — original-source freshness checks
 
@@ -24,13 +24,6 @@ A source title match confirms the linked page still mentions this bill; it does 
 
 | Event and venue | Previously checked | Current source-page result | Original URL |
 | --- | --- | --- | --- |
-| Downstem album release with Impermanence, Wastelander, Witch Finger (Twilight Cafe and Bar) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://twilightcafeandbar.com/event/466781/Downstem-Album-Release-Show-w-Impermanence-Wastelander-Witch-Finger |
-| HELL with Death Parade, Hope & Failure, Gethen and DJ Dirty Wizard (Star Theater) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.startheaterportland.com/tm-event/hell-with-death-parade-hope-failure-gethen-and-dj-dirty-wizard/ |
-| BROKENCYDE with Dot Dot Curve & Auntie Boy (Dante's) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/brokencyde-with-dot-dot-curve-auntie-boy/ |
-| 2Dead Boyz x The Underachievers (Hawthorne Theatre) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/2dead-boyz-x-the-underachievers/hawthorne-theatre/portland-oregon/ |
-| Jamila Woods (Wonder Ballroom) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://wonderballroom.com/event/jamila-woods-10-years-of-heavn/wonder-ballroom/portland-oregon/ |
-| Glass Egg (Seattle) + Femme Cell + Found Space (Turn! Turn! Turn!) | 2026-10-25 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/glass-egg-seattle-femme-cell-found-space-november-19-2026-754398 |
-| Seb El Zin • support TBA (No Fun) | 2026-10-17 | HTTP_404 | https://www.nofunportland.com/events/seb-el-zin-tba-tba |
 | Drag The River • Dewey Nielsen Band (Twilight Cafe and Bar) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.twilightcafeandbar.com/event/462991/drag-the-river-w-guest |
 | PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) | 2026-10-17 | HTTP_404 | https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/ |
 | Growing Pains (Wonder Ballroom) | 2026-10-22 | SOURCE_TITLE_TOKEN_MATCH | https://wonderballroom.com/event/growing-pains-2/wonder-ballroom/portland-oregon/ |
@@ -39,22 +32,12 @@ A source title match confirms the linked page still mentions this bill; it does 
 | House of Heavy (Hawthorne Theatre) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/house-of-heavy-2/hawthorne-theatre/portland-oregon/ |
 | SCHISM (TOOL TRIBUTE) with Guests (Dante's) | 2026-10-31 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/schism-tool-tribute-with-guests/ |
 | HOTWAX disco~glam~metal~punk~hiphop (Dante's) | 2026-11-16 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/hotwax-discoglammetalpunkhiphop-26/ |
-| BW NITE MARKET (Black Water) | 2026-11-03 | Source URL not eligible for original-page recheck | https://bar.blackwaterpdx.com/ |
-| Mission Theater History & Art Tour (Mission Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.mcmenamins.com/events/279336-mission-theater-history-art-tour |
-| Red Yarn (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/red-yarn-25/ |
-| Kerry Politzer and Bossa PDX — 6:30 PM show (The 1905) | 2026-11-15 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13231/2026-11-19 |
-| MPEG-2 - Mike Prigodich Elektric Group (Alberta Street Pub) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/11/19/mpeg-2-mike-prigodich-elektric-group |
-| CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays (Jack London Revue) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-2/ |
-| Triple Martini (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/triple-martini-5/ |
-| Gateway Show (Nova PDX) | 2026-11-02 | Source URL not eligible for original-page recheck | https://tixr.com/e/212203 |
-| Thundercat (Crystal Ballroom) | 2026-10-21 | Source URL not eligible for original-page recheck | https://www.crystalballroompdx.com/events/277813-thundercat/ |
-| Todd Rundgren: DAMNED IF I DO TOUR (Aladdin Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/33295250/todd-rundgrendamned-if-i-do-tour-portland-aladdin-theater |
-| The Cactus Blossoms (Mississippi Studios) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/40638516/the-cactus-blossoms-portland-mississippi-studios |
-| Mattress 20 - 20 Years Of Mattress (Polaris Hall) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/91263217/mattress-20-20-years-of-mattress-portland-polaris-hall |
-| Jim Lauderdale and Never Come Down (The Showdown) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.showdownpdx.com/tm-event/jim-lauderdale-and-never-come-down/ |
-| Dub Orquestra (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=NzNuaDkwaTFlOW1laXJxbGQ2cDJjbnFob3MgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
-| Kerry Politzer and Bossa PDX — 8:30 PM show (The 1905) | 2026-11-15 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13231/2026-11-19 |
-| Amtrac @ PROCESS – 21+ (Holocene) | 2026-10-22 | Source URL not eligible for original-page recheck | https://www.holocene.org/event/amtrac-process-21/holocene/portland/ |
+| Joel P West + Jennie Wayne (Turn! Turn! Turn!) | 2026-10-30 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/joel-p-west-jennie-wayne-november-21-2026-795903 |
+| Fear Factory — Cybernetic Domination Tour (Hawthorne Theatre) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/fear-factory-cybernetic-domination-tour-2026/hawthorne-theatre/portland-oregon/ |
+| Alterlatino Night! Ska-Rock-Rock en Espanol-Punk-Y2K Vibras-Y Mas! (Twilight Cafe and Bar) | 2026-11-06 | SOURCE_TITLE_TOKEN_MATCH | https://www.twilightcafeandbar.com/event/468839/-alterlatino-night-ska-rock-rock-en-espanol-punk-y2k-vibras-y-mas |
+| TWIRL &#8211; AUTUMN DISCO (Star Theater) | 2026-11-19 | SOURCE_TITLE_TOKEN_MATCH | https://www.startheaterportland.com/tm-event/twirl-autumn-disco/ |
+| SICK: A Year In Our Bodies - Fundraiser Showcase (Dante's) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/sick-a-year-in-our-bodies-fundraiser-showcase/ |
+| SMASH disco~glam~metal~punk-hiphop (Dante's) | 2026-11-03 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-7/ |
 | FOGWEAVER (Black Water) | 2026-11-02 | Source URL not eligible for original-page recheck | https://bar.blackwaterpdx.com/ |
 | SPACE 92 (45 East) | 2026-11-02 | Source URL not eligible for original-page recheck | https://tixr.com/groups/45east/1120space92 |
 | Mr. Hoo (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/mr-hoo-28/ |
@@ -74,29 +57,47 @@ A source title match confirms the linked page still mentions this bill; it does 
 | Glam Country • Fawkes Glove • Superplume (Kenton Club) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.kentonclub.com/ |
 | Gary Numan with TREMOURS (Revolution Hall) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.revolutionhall.com/ |
 | Grand Head, Bad Move, Sluzz, DJ Meow (High Water Mark Lounge) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.treetix.com/event/204919/highwatermark |
+| Farnell Newton's The Soul of Jazz — 8:30 PM show (The 1905) | 2026-11-16 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13232/2026-11-20 |
+| SORRY FOR PARTY ROCKING: (2010-2015 Pop & EDM All Night Long!) (Holocene) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.holocene.org/events/2026-11-20-sorry-for-party-rocking-2010-2015-pop-edm-all-night-long |
+| Sallie Ford & the Sound Outside (Mississippi Studios) | 2026-11-07 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/54677666/sallie-ford-the-sound-outside-portland-mississippi-studios |
+| Mandela & Friends (Alberta Street Pub) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/11/20/mandela-amp-friends |
+| FTC / JAB / YOUTH INDOCTRINATION (Black Water) | 2026-11-02 | Source URL not eligible for original-page recheck | https://bar.blackwaterpdx.com/ |
+| PANTEROS666 (45 East) | 2026-11-02 | Source URL not eligible for original-page recheck | https://tixr.com/groups/45east/1121panteros666 |
+| So Pitted-Sea Moss-Snorkler(Tennessee) (Kenton Club) | 2026-10-25 | Source URL not eligible for original-page recheck | https://www.kentonclub.com/ |
+| So Pitted-Sea Moss-Snorkler(Tennessee) King Compost (Kenton Club) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.kentonclub.com/ |
+| PSU Farmers Market (PSU Farmers Market · South Park Blocks) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.portlandfarmersmarket.org/our-markets/psu/ |
+| NoPo Creatives Arts Market (Peninsula Odd Fellows Lodge) | 2026-11-03 | Source URL not eligible for original-page recheck | https://nopocreatives.com/vendor-information/ |
+| Risograph Basics (Outlet PDX) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.outletpdx.com/events?category=Risograph |
+| Portland Saturday Market (Portland Saturday Market) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.portlandsaturdaymarket.com/hours-and-directions |
+| Drag Brunch Hosted by Nicoleonoscopi! (Alberta Street Pub) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/5/2/drag-brunch-hosted-by-nicoleonoscopi |
+| Plus Plus Bizarre Bazaar (Portland Art Museum · Fred & Suzanne Fields Ballroom) | 2026-11-03 | Source URL not eligible for original-page recheck | https://portlandartmuseum.org/event/plus-plus-media-market/ |
+| Chasing Cowboys (Alberta Street Pub) | 2026-11-14 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/11/21/chasing-cowboys |
+| Two Dimensional Man (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/two-dimensional-man/ |
 
 ## Event-specific original-page check outcomes
 
 - SOURCE_TITLE_TOKEN_MATCH: 12
-- HTTP_404: 11
+- HTTP_404: 10
 - NO_EVENT_IMAGE: 4
 
 ## Missing music artwork by venue
 
 | Venue | Missing | Eligible individual pages |
 | --- | ---: | ---: |
-| No Fun | 17 | 14 |
-| Mississippi Pizza / Atlantis Lounge | 16 | 0 |
+| No Fun | 16 | 13 |
 | Kenton Club | 14 | 0 |
+| Mississippi Pizza / Atlantis Lounge | 14 | 0 |
 | High Water Mark Lounge | 6 | 0 |
 | Revolution Hall | 3 | 0 |
 | Twilight Cafe and Bar | 2 | 0 |
 | Wonder Ballroom | 2 | 0 |
 | Crystal Ballroom | 1 | 0 |
 | High Limit Room | 1 | 0 |
+| Jack London Revue | 1 | 0 |
 | Moda Center | 1 | 0 |
 | Roseland Theater | 1 | 0 |
 | Star Theater | 1 | 1 |
+| Starday Tavern | 1 | 0 |
 
 ## Proposed source-linked artwork
 
@@ -104,7 +105,6 @@ No new verified images proposed in this batch. The action completed successfully
 
 ## Unsupported or unavailable source pages
 
-- Seb El Zin • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/seb-el-zin-tba-tba
 - PRAYERS No Tengo Calma Tour 2026 featuring DEVORA and HALLOWS (Star Theater) — HTTP_404 — https://www.startheaterportland.com/tm-event/prayers-no-tengo-calma-tour-2026-featuring-devora-hallows-and-chriz-amaya/
 - molly BANG • Caballo • Monovisions (No Fun) — NO_EVENT_IMAGE — https://www.nofunportland.com/events/molly-bang-caballo-monovisions
 - Amy Bleu • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/amy-bleu-tba-tba

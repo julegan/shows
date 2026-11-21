@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-19
+# SHOWS automated discovery review — 2026-11-20
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,53 +8,53 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
-| High Water Mark | Checked | 64 | 1 | 0 | 0 | 0 | 0 | 63 |
+| Black Water | Checked | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
+| High Water Mark | Checked | 64 | 0 | 0 | 0 | 0 | 0 | 64 |
 | Soundcontrol PDX | Checked | 5 | 0 | 0 | 0 | 0 | 3 | 2 |
-| Twilight Cafe and Bar | Checked | 28 | 1 | 1 | 0 | 1 | 4 | 23 |
-| Star Theater | Checked | 36 | 2 | 2 | 0 | 2 | 4 | 30 |
-| Dante's | Checked | 47 | 0 | 0 | 0 | 0 | 3 | 44 |
-| Roseland Theater | Checked | 33 | 0 | 0 | 0 | 0 | 6 | 27 |
-| Wonder Ballroom | Checked | 33 | 0 | 0 | 0 | 0 | 9 | 24 |
-| Hawthorne Theatre | Checked | 45 | 2 | 0 | 2 | 2 | 3 | 40 |
-| Crystal Ballroom | Checked | 53 | 0 | 0 | 0 | 0 | 4 | 49 |
-| Revolution Hall | Checked | 30 | 2 | 1 | 0 | 2 | 4 | 24 |
-| Turn! Turn! Turn! | Checked | 12 | 0 | 0 | 0 | 0 | 1 | 11 |
-| Kenton Club | Checked | 12 | 2 | 2 | 0 | 0 | 6 | 4 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 3 | 25 |
-| Holocene | Checked | 50 | 2 | 2 | 0 | 2 | 21 | 27 |
-| Starday Tavern | Checked | 1587 | 1 | 0 | 1 | 0 | 42 | 1544 |
+| Twilight Cafe and Bar | Checked | 29 | 1 | 1 | 0 | 1 | 4 | 24 |
+| Star Theater | Checked | 35 | 0 | 0 | 0 | 0 | 4 | 31 |
+| Dante's | Checked | 45 | 0 | 0 | 0 | 0 | 3 | 42 |
+| Roseland Theater | Checked | 32 | 0 | 0 | 0 | 0 | 5 | 27 |
+| Wonder Ballroom | Checked | 32 | 0 | 0 | 0 | 0 | 9 | 23 |
+| Hawthorne Theatre | Checked | 44 | 0 | 0 | 0 | 0 | 3 | 41 |
+| Crystal Ballroom | Checked | 52 | 0 | 0 | 0 | 0 | 4 | 48 |
+| Revolution Hall | Checked | 30 | 2 | 1 | 1 | 2 | 4 | 24 |
+| Turn! Turn! Turn! | Checked | 11 | 0 | 0 | 0 | 0 | 1 | 10 |
+| Kenton Club | Checked | 12 | 0 | 0 | 0 | 0 | 6 | 6 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 2 | 26 |
+| Holocene | Checked | 48 | 0 | 0 | 0 | 0 | 19 | 29 |
+| Starday Tavern | Checked | 1589 | 2 | 1 | 1 | 0 | 43 | 1544 |
 | The Off Beat / Friends of Noise | Checked | 11 | 0 | 0 | 0 | 0 | 4 | 7 |
-| Aladdin Theater | Checked | 80 | 0 | 0 | 0 | 0 | 6 | 74 |
-| Mission Theater | Checked | 38 | 0 | 0 | 0 | 0 | 1 | 37 |
-| Nova PDX | Checked | 15 | 0 | 0 | 0 | 0 | 0 | 15 |
+| Aladdin Theater | Checked | 80 | 1 | 0 | 1 | 1 | 5 | 74 |
+| Mission Theater | Checked | 50 | 13 | 0 | 12 | 13 | 1 | 36 |
+| Nova PDX | Checked | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
 | Lola's Room | Checked | 12 | 0 | 0 | 0 | 0 | 3 | 9 |
-| The Showdown | Checked | 53 | 2 | 0 | 2 | 2 | 16 | 35 |
+| The Showdown | Checked | 52 | 0 | 0 | 0 | 0 | 16 | 36 |
 | 45 East | Checked | 18 | 0 | 0 | 0 | 0 | 0 | 18 |
 | Mammoth Northwest | Checked | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| The 1905 | Checked | 8 | 0 | 0 | 0 | 0 | 0 | 8 |
-| Jack London Revue | Checked | 50 | 1 | 1 | 0 | 1 | 1 | 48 |
-| Alberta Street Pub | Checked | 55 | 0 | 0 | 0 | 0 | 5 | 50 |
-| Alberta Rose Theatre | Checked | 61 | 4 | 0 | 4 | 4 | 6 | 51 |
+| The 1905 | Checked | 8 | 2 | 2 | 0 | 2 | 0 | 6 |
+| Jack London Revue | Checked | 50 | 2 | 0 | 2 | 2 | 1 | 47 |
+| Alberta Street Pub | Checked | 54 | 0 | 0 | 0 | 0 | 5 | 49 |
+| Alberta Rose Theatre | Checked | 61 | 0 | 0 | 0 | 0 | 6 | 55 |
 | A Beat Happening | EMPTY | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Classification review
 
-New candidate categories: **Markets** 1 · **Music** 9 · **Performance** 1 · **Unclassified** 11.
-**11 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 5 · **Performance** 1 · **Unclassified** 19.
+**19 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Hawthorne Theatre: Babytron – THE IV TOUR — https://hawthornetheatre.com/event/babytron-the-iv-tour/hawthorne-theatre/portland-oregon/
-- Hawthorne Theatre: Stomach Book — https://hawthornetheatre.com/event/stomach-book/hawthorne-theatre/portland-oregon/
-- Mississippi Studios: School of Rock Vancouver - Fall 2026 Mid-Season Showcase — https://www.etix.com/ticket/p/39161074/school-of-rock-vancouver-fall-2026-midseason-showcase-portland-mississippi-studios
-- Polaris Hall: Alison's Halo — https://www.etix.com/ticket/p/50221107/alisons-halo-portland-polaris-hall
-- Starday Tavern: Ringer & The Bells — https://www.google.com/calendar/event?eid=MWR1YjNmOWJsOXJuMXNuMWJvbnVqdXE5OW8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw
-- The Showdown: The Night After Christmas with Gabriel John and Two-Step Lessons with Peggy — https://www.showdownpdx.com/tm-event/the-night-after-christmas-with-gabriel-john-and-two-step-lessons-with-peggy/
-- The Showdown: Uncle Strut — https://www.showdownpdx.com/tm-event/uncle-strut/
-- Alberta Rose Theatre: Queer Eye for the Magi – A Holigay Cabaret — https://albertarosetheatre.com/event/queer-eye-for-the-magi-a-holigay-cabaret-3/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Science On Tap – A Sea of Wealth: The Blue Economy & the Future of the Ocean — https://albertarosetheatre.com/event/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean/alberta-rose-theatre/portland-oregon/
-- Alberta Rose Theatre: Science On Tap – A is for Amoeba: The Story of Life in a Single Cell — https://albertarosetheatre.com/event/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell/alberta-rose-theatre/portland-oregon/
-- Plus 1 other unclassified candidates in the full event table below.
+- Show Bar at Revolution Hall: NONBINARY GIRLFRIEND — https://www.etix.com/ticket/p/38743141/nonbinary-girlfriend-portland-show-bar-at-revolution-hall
+- Mississippi Studios: Local Love Letter #31: Mary Eliza & Pillow Spiders — https://www.etix.com/ticket/p/47377019/local-love-letter-31mary-eliza-pillow-spiders-portland-mississippi-studios
+- Polaris Hall: SOLD OUT: Bryan Andrews — https://www.etix.com/ticket/p/70407603/sold-outbryan-andrews-portland-polaris-hall
+- Starday Tavern: The Skrimps — https://www.google.com/calendar/event?eid=NXBzcXBjdWg5anZyMGtucHI0MWNkbzNjZjMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw
+- Aladdin Theater: Sindhu Vee: Swanky — https://www.etix.com/ticket/p/70915964/sindhu-veeswanky-portland-aladdin-theater
+- Mission Theater: OMSI Science Pub — https://www.mcmenamins.com/events/280310-omsi-science-pub
+- Mission Theater: OMSI Science Pub — https://www.mcmenamins.com/events/280311-omsi-science-pub
+- Mission Theater: OMSI Science Pub — https://www.mcmenamins.com/events/280312-omsi-science-pub
+- Mission Theater: OMSI Science Pub — https://www.mcmenamins.com/events/280313-omsi-science-pub
+- Mission Theater: OMSI Science Pub — https://www.mcmenamins.com/events/280314-omsi-science-pub
+- Plus 9 other unclassified candidates in the full event table below.
 
 ### Connections requiring work
 
@@ -84,56 +84,58 @@ New candidate categories: **Markets** 1 · **Music** 9 · **Performance** 1 · *
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 2** · Ambiguous matching source URLs: 3.
+**Potential changes: 5** · Ambiguous matching source URLs: 2.
 
 | Change | Venue and event | Approved → observed | Official event evidence |
 | --- | --- | --- | --- |
+| Listed time changed | Dante's — SICK: A Year In Our Bodies - Fundraiser Showcase | 21:00 → 20:30 | https://www.danteslive.com/tm-event/sick-a-year-in-our-bodies-fundraiser-showcase/ |
+| Listed time changed | Starday Tavern — El Sobrente & The Remainders | 17:30 → 19:00 | https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjExMzBUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
+| Listed time changed | Starday Tavern — Sam Henson Holiday Happy Hour | 16:30 → 17:30 | https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
 | Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
 | Listed time changed | The Showdown — Tropical Latin Goth Club NYE Pari | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/tropical-latin-goth-club-nye-pari/ |
 
-The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 22
+## New candidates: 25
 
-- high-water: 1 proposals
 - twilight: 1 proposals
-- star-theater: 2 proposals
-- hawthorne-theatre: 2 proposals
 - revolution-hall: 2 proposals
-- kenton-club: 2 proposals
 - mississippi-polaris: 2 proposals
-- holocene: 2 proposals
-- starday-tavern: 1 proposals
-- showdown: 2 proposals
-- jack-london-revue: 1 proposals
-- alberta-rose-theatre: 4 proposals
+- starday-tavern: 2 proposals
+- aladdin-theater: 1 proposals
+- mission-theater: 13 proposals
+- the-1905: 2 proposals
+- jack-london-revue: 2 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-06 | HWM Holiday Market! | High Water Mark Lounge | 14:00 (doors/show unverified) | https://www.treetix.com/event/204962/highwatermark |
-| 2026-12-18 | Simple Shapes w/ Blister, Slender Gems, Mr. Boy | Twilight Cafe and Bar | 20:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/469098/simple-shapes-w-blister-slender-gems-mr-boy |
-| 2026-11-21 | TWIRL &#8211; AUTUMN DISCO | Star Theater | 21:00 (doors/show unverified) | https://www.startheaterportland.com/tm-event/twirl-autumn-disco/ |
-| 2027-05-01 | Amanti | Star Theater | 20:30 (doors/show unverified) | https://www.startheaterportland.com/tm-event/amanti/ |
-| 2027-02-06 | Babytron – THE IV TOUR | Hawthorne Theatre | 20:00 (doors/show unverified) | https://hawthornetheatre.com/event/babytron-the-iv-tour/hawthorne-theatre/portland-oregon/ |
-| 2027-04-09 | Stomach Book | Hawthorne Theatre | 19:30 (doors/show unverified) | https://hawthornetheatre.com/event/stomach-book/hawthorne-theatre/portland-oregon/ |
-| 2026-12-30 | Hear You Loud & Queer Holiday Comedy Show | Show Bar at Revolution Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/54491098/hear-you-loud-queer-holiday-comedy-show-portland-show-bar-at-revolution-hall |
-| 2026-12-31 | The Disco Biscuits NYE | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/95972752/the-disco-biscuits-nye-portland-revolution-hall |
-| 2026-12-18 | Achemondo-Vista House-Generifus | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-12-19 | Jamoke Family Christmas Jamoke-Cranefist-Appendage-Burner Phone | Kenton Club | 00:00 (doors/show unverified) | https://www.kentonclub.com/ |
-| 2026-12-06 | School of Rock Vancouver - Fall 2026 Mid-Season Showcase | Mississippi Studios | 11:30 (doors/show unverified) | https://www.etix.com/ticket/p/39161074/school-of-rock-vancouver-fall-2026-midseason-showcase-portland-mississippi-studios |
-| 2026-12-08 | Alison's Halo | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/50221107/alisons-halo-portland-polaris-hall |
-| 2026-12-12 | Santo Perreo: Reggaeton, Dembow, and Latin hits dance party | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-12-santo-perreo-reggaeton-dembow-and-latin-hits-dance-party |
-| 2027-02-02 | Tony Jupiter | Holocene | 20:00 (doors/show unverified) | https://www.holocene.org/events/2027-02-02-tony-jupiter |
-| 2026-12-26 | Ringer & The Bells | Starday Tavern | 20:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=MWR1YjNmOWJsOXJuMXNuMWJvbnVqdXE5OW8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
-| 2026-12-26 | The Night After Christmas with Gabriel John and Two-Step Lessons with Peggy | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/the-night-after-christmas-with-gabriel-john-and-two-step-lessons-with-peggy/ |
-| 2027-06-12 | Uncle Strut | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/uncle-strut/ |
-| 2026-12-20 | The Sam Harris Band Performing Charlie Brown's Christmas, and more | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/the-sam-harris-band-performing-charlie-browns-christmas-and-more/ |
-| 2026-12-28 | Queer Eye for the Magi – A Holigay Cabaret | Alberta Rose Theatre | 19:30 (doors/show unverified) | https://albertarosetheatre.com/event/queer-eye-for-the-magi-a-holigay-cabaret-3/alberta-rose-theatre/portland-oregon/ |
-| 2027-06-09 | Science On Tap – A Sea of Wealth: The Blue Economy & the Future of the Ocean | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-a-sea-of-wealth-the-blue-economy-the-future-of-the-ocean/alberta-rose-theatre/portland-oregon/ |
-| 2027-07-28 | Science On Tap – A is for Amoeba: The Story of Life in a Single Cell | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-a-is-for-amoeba-the-story-of-life-in-a-single-cell/alberta-rose-theatre/portland-oregon/ |
-| 2027-09-29 | Science On Tap – Cloudy with a Chance of Starships: Odds of Life in the Cosmos | Alberta Rose Theatre | 19:00 (doors/show unverified) | https://albertarosetheatre.com/event/science-on-tap-cloudy-with-a-chance-of-starships-odds-of-life-in-the-cosmos/alberta-rose-theatre/portland-oregon/ |
+| 2027-01-02 | Witch, Please! "Sparkle Motion"-Your Monthly Magical Queer Dance Party w/ Dj Blanche Deverheaux | Twilight Cafe and Bar | 20:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/469263/witch-please-sparkle-motion-your-monthly-magical-queer-dance-party-w-dj-blanche-deverheaux |
+| 2026-12-31 | NONBINARY GIRLFRIEND | Show Bar at Revolution Hall | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/38743141/nonbinary-girlfriend-portland-show-bar-at-revolution-hall |
+| 2027-01-01 | The Disco Biscuits | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/55578509/the-disco-biscuits-portland-revolution-hall |
+| 2026-12-09 | Local Love Letter #31: Mary Eliza & Pillow Spiders | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/47377019/local-love-letter-31mary-eliza-pillow-spiders-portland-mississippi-studios |
+| 2026-12-09 | SOLD OUT: Bryan Andrews | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/70407603/sold-outbryan-andrews-portland-polaris-hall |
+| 2026-12-23 | The Skrimps | Starday Tavern | 20:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=NXBzcXBjdWg5anZyMGtucHI0MWNkbzNjZjMgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
+| 2026-12-06 | DJ Mike Moses | Starday Tavern | 19:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=MTAyam81dGliMG5hamdrcHRyYXBsaWs0YTggbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
+| 2027-04-23 | Sindhu Vee: Swanky | Aladdin Theater | 19:30 (doors/show unverified) | https://www.etix.com/ticket/p/70915964/sindhu-veeswanky-portland-aladdin-theater |
+| 2027-01-12 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280310-omsi-science-pub |
+| 2027-02-02 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280311-omsi-science-pub |
+| 2027-02-13 | Whole Lotta Love, Burlesque Tribute to Led Zeppelin | Mission Theater | 21:00 (doors/show unverified) | https://www.mcmenamins.com/events/280292-whole-lotta-love-burlesque-tribute-to-led-zeppelin |
+| 2027-03-02 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280312-omsi-science-pub |
+| 2027-04-06 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280313-omsi-science-pub |
+| 2027-05-04 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280314-omsi-science-pub |
+| 2027-06-01 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280315-omsi-science-pub |
+| 2027-07-07 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280326-omsi-science-pub |
+| 2027-08-03 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280329-omsi-science-pub |
+| 2027-09-07 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280330-omsi-science-pub |
+| 2027-10-05 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280333-omsi-science-pub |
+| 2027-11-03 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280331-omsi-science-pub |
+| 2027-12-07 | OMSI Science Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280332-omsi-science-pub |
+| 2026-11-22 | Chuck Israels Trio — 5:30 PM show | The 1905 | 17:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13234/2026-11-22 |
+| 2026-11-22 | Chuck Israels Trio — 7:30 PM show | The 1905 | 19:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13234/2026-11-22 |
+| 2027-01-09 | Grandifolia | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/grandifolia/ |
+| 2027-01-29 | Bang Bang Experience | Jack London Revue | 20:00 (doors/show unverified) | https://www.jacklondonrevue.com/tm-event/bang-bang-experience/ |
 
-## Held for review: 155
+## Held for review: 151
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Western Standard Time, The Cascadians, Weekend Kids, Impact Sound! — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204960/soundcontrol
@@ -154,7 +156,6 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [roseland] The Amity Affliction: HOUSE OF CARDS 2026 — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/the-amity-affliction-house-of-cards-2026/roseland-theater/portland-oregon/
 - [roseland] Frankie and the Witch Fingers + Gibby Haynes: Butthole Surfer Mania — Same venue/date; different existing bill; manual comparison https://roselandpdx.com/event/frankie-and-the-witch-fingers-gibby-haynes-butthole-surfer-mania/roseland-theater/portland-oregon/
 - [roseland] Smith & Myers – Early Entry Package ADD-ON (ENTRY TICKET NOT INCLUDED) — Ticket add-on, not an independent event https://roselandpdx.com/event/smith-myers-early-entry-package-add-on-entry-ticket-not-included/roseland-theater/portland-oregon/
-- [roseland] Power Trip — No explicit year + dated performance time in venue detail https://roselandpdx.com/event/power-trip/roseland-theater/portland-oregon/
 - [wonder-ballroom] J-Fell Nite Wave — Same venue/date; different existing bill; manual comparison https://wonderballroom.com/event/j-fell-nite-wave-present-the-cure-depeche-mode-new-order-tribute-night/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] feeble little horse — Same venue/date; different existing bill; manual comparison https://wonderballroom.com/event/feeble-little-horse-bitknot-tour/wonder-ballroom/portland-oregon/
 - [wonder-ballroom] Earlybirds Club - Hip-Hop & R&B Night | Wonder Ballroom — Primary event title does not publish a full dated year https://wonderballroom.com/event/earlybirds-club-hip-hop-rb-night/wonder-ballroom/portland-oregon/
@@ -171,8 +172,8 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] RESCHEDULED TO 4/27/17: WAAX — Rescheduled, canceled or non-show listing https://www.etix.com/ticket/p/72288527/rescheduled-to-42717waax-portland-show-bar-at-revolution-hall
-- [revolution-hall] SOLD OUT: Gary Numan North American Fall Tour 2026 — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall
+- [revolution-hall] SOLD OUT: Gary Numan North American Fall Tour 2026 — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/73115991/sold-outgary-numan-north-american-fall-tour-2026-portland-revolution-hall
+- [revolution-hall] Video Dance Attack Presents: Studio 54 — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91554135/neurosis-portland-revolution-hall
 - [turn-turn-turn] Tracey Nelson + Joe Glass — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/tracey-nelson-joe-glass-december-15-2026-779468
@@ -182,11 +183,8 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [kenton-club] (2026-12-05) DJ Action Slacks Flame Peppermint Twist Holiday Dance Party — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
 - [kenton-club] (2026-12-12) The Trabants Holiday Review performing (The Ventures Christmas Album) Monovisions-The No Goes- Los Spooks-Cheex- — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
 - [kenton-club] (2026-12-26) NO Show New Years Eve Celebration featuring Lab Rat-War Hero-Conspire American Spectrum — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
-- [mississippi-polaris] MATTRESS - 20 YEARS OF MATTRESS — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91263217/mattress-20-years-of-mattress-portland-polaris-hall
 - [mississippi-polaris] RESCHEDULED TO 3/17/27 AT POLARIS HALL: Luke Kidgell — Original listing indicates change or cancellation 
 - [mississippi-polaris] MOVED TO ALADDIN THEATER: Emma Ruth Rundle - THESE KILLING TIMES — Original listing indicates change or cancellation 
-- [holocene] SCHROTTHAGEN: NEW WORLD TOUR 2026 — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-19-schrotthagen-new-world-tour-2026
-- [holocene] Amtrac @ PROCESS — Source schema does not confirm the Holocene venue https://www.holocene.org/events/2026-11-19-amtrac-process
 - [holocene] VROOM VROOM: A Charli XCX Dance Night ft: DJ sets by Mr. Harry & PLUS — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-28-vroom-vroom-a-charli-xcx-dance-night-ft-dj-sets-by-mr-harry-plus
 - [holocene] Chai & Roses: Disco Tea Dance Party for QTBIPOC & Allies — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-11-29-chai-roses-disco-tea-dance-party-for-qtbipoc-allies
 - [holocene] Tommy Fleece: Live. Loud. Ultrasonic. Tour — Same venue/date; different existing bill; manual comparison https://www.holocene.org/events/2026-12-02-tommy-fleece-live-loud-ultrasonic-tour-w-reserv
@@ -248,11 +246,11 @@ The 3 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [starday-tavern] DYE DYE FUN RAISER — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Fuck by fuck off 2026 — Event lacks independently verified Portland source timezone 
 - [starday-tavern] Happy HoliGays! 2 Day Fest — Event lacks independently verified Portland source timezone 
+- [starday-tavern] CLOSED FOR REPAIR — Source lists closure or schedule change 
 - [the-off-beat] 12/3 Mel Bryant & the Mercy Makers, Everybody's Worried About Owen, Trans Panic, You Loom Angelic — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/12-3-mel-bryant-the-mercy-makers-everybody-s-worried-about-owen-trans-panic-you-loom-angelic-december-03-2026-756887
 - [the-off-beat] 12/18 The Slightest Bits, Amy Beth and Thee Creeps, Ashby Bison, Coco — Missing or contradictory performance clock in official description https://calendar.friendsofnoise.org/shows/12-18-the-slightest-bits-amy-beth-and-thee-creeps-ashby-bison-coco-december-18-2026-801550
 - [the-off-beat] 1/25 SECOND SHOW ADDED! Fifteen, All Girl Summer Fun Band, Divers (Benefit Show) — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/1-25-second-show-added-fifteen-all-girl-summer-fun-band-divers-benefit-show-january-25-2027-799242
 - [the-off-beat] 1/26 SOLD OUT Fifteen, All Girl Summer Fun Band, Corner Office (Benefit Show) — Same venue/date; different existing bill; manual comparison https://calendar.friendsofnoise.org/shows/1-26-sold-out-fifteen-all-girl-summer-fun-band-corner-office-benefit-show-january-26-2027-796876
-- [aladdin-theater] SOLD OUT: Todd Rundgren: DAMNED IF I DO TOUR — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/33295250/sold-outtodd-rundgrendamned-if-i-do-tour-portland-aladdin-theater
 - [aladdin-theater] SOLD OUT: Haley Heynderickx w/ Chamberlain / Gonzalez — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-wchamberlain-gonzalez-portland-aladdin-theater
 - [aladdin-theater] Haley Heynderickx w/ Ryan Oxford and the La La's — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/40830725/haley-heynderickx-wryan-oxford-and-the-la-las-portland-aladdin-theater
 - [aladdin-theater] SOLD OUT: Cat Clyde & Dean Johnson — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/48494309/sold-outcat-clyde-dean-johnson-portland-aladdin-theater
