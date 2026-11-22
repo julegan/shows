@@ -8,6 +8,9 @@ const html='<html><body><h1>The Get Down</h1><p>680 SE 6th Ave Portland</p>'+
  '<div>The Get Down Presents Polyrhythmics DOORS: 8:00 pm buy tickets</div>'+
  '<div>The Get Down & KMHD Present DTF: Deitch, Teitel, Fribush DOORS: 7:00 pm buy tickets</div>'+
  '<a href="https://www.tixr.com/groups/thegetdownpdx/events/polyrhythmics-123">Polyrhythmics</a>'+
+ '<a href="https://www.tixr.com/groups/thegetdownpdx/events/unpaired-456">Buy Tickets</a>'+
+ '<a href="https://www.tixr.com/groups/thegetdownpdx/events/unpaired-456">More Info</a>'+
+ '<a href="https://other.example/events/unknown">Buy Tickets</a>'+
  '<a href="https://evil.example/events/anything">Untrusted link</a>'+
  '<a href="javascript:alert(1)">Bad</a>'+
  '<p>'+padding+'</p></body></html>';
@@ -19,8 +22,15 @@ assert.equal(result.artwork.length,0);
 assert.equal(result.canonicalVenueCount,1,"Never conflate other similarly named venues");
 assert(result.observations.some(o=>o.titleHint==="Polyrhythmics"&&o.status==="possible-existing-title-review"));
 assert(result.observations.some(o=>o.titleHint.startsWith("DTF:")&&o.status==="missing-or-title-different-review"));
-assert.equal(result.sourceLinks.length,1);
+assert.equal(result.sourceLinks.length,2,"Generic official ticket CTA is preserved once for investigation");
 assert.equal(result.sourceLinks[0].url,"https://www.tixr.com/groups/thegetdownpdx/events/polyrhythmics-123");
+assert.equal(result.sourceLinks[0].association,"labelled-link");
+assert.deepEqual(result.sourceLinks[1],{
+ label:"Buy Tickets",url:"https://www.tixr.com/groups/thegetdownpdx/events/unpaired-456",
+ association:"unpaired-ticket-link"
+},"Never assign a generic CTA to the adjacent bill or infer an event from it");
+assert.equal(result.observations.length,2,"Unpaired ticket links never fabricate event titles");
+assert.equal(result.proposedEvents.length,0,"Unpaired ticket URLs never become canonical events");
 assert(!JSON.stringify(result).includes("evil.example"));
 assert.throws(()=>d.inspect(html.replace("680 SE 6th Ave","615 SE Alder St"),existing),/identity/);
 assert.throws(()=>d.inspect("x".repeat(1500001)),/oversized/);
