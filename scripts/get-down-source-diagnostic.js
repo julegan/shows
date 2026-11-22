@@ -20,9 +20,13 @@ function sourceLinks(html){
   if(!/^(?:www\.)?(?:tixr\.com|thegetdownpdx\.com|ticketmaster\.com|axs\.com)$/i.test(url.hostname))continue;
   if(!/(?:\/events?\/|\/groups\/thegetdownpdx|\/calendar)/i.test(url.pathname))continue;
   url.hash="";
-  if(!label||/^(?:buy tickets|tickets|more info|view event)$/i.test(label))continue;
+  if(!label)continue;
+  // Generic CTA labels are common on original calendars. Retain their
+  // independently allowed ticket URLs as unpaired research leads rather
+  // than discarding them or attaching them to a nearby artist name.
+  const generic=/^(?:buy tickets|tickets|more info|view event|buy now|details|learn more)$/i.test(label);
   if(seen.has(url.href))continue;
-  seen.add(url.href);out.push({label,url:url.href});
+  seen.add(url.href);out.push({label,url:url.href,association:generic?"unpaired-ticket-link":"labelled-link"});
  }
  return out.slice(0,150);
 }
@@ -46,7 +50,7 @@ function inspect(html,events=[]){
  }
  return {source:SOURCE,identity:"The Get Down, 680 SE 6th Ave, Portland",observations,sourceLinks:links,
   canonicalVenueCount:venueEvents.length,proposedEvents:[],artwork:[],
-  limitations:"Page hints and ticket links are research evidence only. Calendar may omit the year, doors are not performance start, and ticket buttons may be generic. Verify original event permalink, full date/year, local clock, actual bill, status and room individually before intake."};
+  limitations:"Page hints and ticket links are research evidence only. Generic ticket links are deliberately unpaired: their position does not establish which artist or event they represent. Calendar may omit the year; doors are not performance start. Verify original event permalink, full date/year, local clock, actual bill, status and room individually before intake."};
 }
 function loadEvents(file=path.join(__dirname,"../events.js")){
  const data=fs.readFileSync(file,"utf8");
@@ -69,7 +73,7 @@ async function run(opts={}){
    "| Source title hint | Existing exact-title match |","| --- | --- |",
    ...result.observations.map(o=>"| "+o.titleHint.replace(/[|\r\n]/g,"/").slice(0,140)+" | "+o.status+" |"),
    "","## Source links (research only)","",
-   ...result.sourceLinks.map(l=>"- "+l.label.replace(/[\r\n]/g," ").slice(0,100)+": "+l.url),
+   ...result.sourceLinks.map(l=>"- ["+l.association+"] "+l.label.replace(/[\r\n]/g," ").slice(0,100)+": "+l.url),
    "","## Holds","",result.limitations,
    "Do not treat a missing title as a canceled show. Reconcile date-specific official tickets and source cards with canonical IDs before creating any review-only proposals."];
   fs.writeFileSync(path.join(__dirname,"../discovery/get-down-source-diagnostic.md"),report.join("\n")+"\n");
