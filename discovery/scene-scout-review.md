@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-19
+# Portland music & independent culture source scout — 2026-11-21
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 3 inaccessible/changed; 1 newly discovered links; 131 total recorded research leads.**
+**26 source pages attempted; 4 inaccessible/changed; 1 newly discovered links; 132 total recorded research leads.**
 
 ## Source health
 
@@ -14,7 +14,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | NoPo Creatives Arts Market | Read-only check succeeded | 1 |
 | PDX Moon Market | Read-only check succeeded | 0 |
 | Portland Flea | Read-only check succeeded | 1 |
-| Portland Indie Book & Art Fair vendor directory | Read-only check succeeded | 1 |
+| Portland Indie Book & Art Fair vendor directory | Error — Seed source exceeded size cap | 0 |
 | Woodland Shrine maker event appearances | Read-only check succeeded | 3 |
 | Portland holiday markets index | Read-only check succeeded | 0 |
 | Portland Monthly's holiday market guide | Read-only check succeeded | 1 |
@@ -41,7 +41,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/31927477/ben-rices-christmas-guitar-summit-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | sm-3--> Buy Tickets |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/75222391/queer-eye-for-the-magi-a-holigay-cabaret-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
