@@ -1,4 +1,4 @@
-# Independent original music source reconciliation — 2026-11-21
+# Independent original music source reconciliation — 2026-11-22
 
 This audit covers observed first-party dated events at selected independent music and community sources. It is not a genre quota. Source responses may be incomplete; an empty or failed feed is not evidence of no upcoming events.
 
@@ -12,33 +12,33 @@ This audit covers observed first-party dated events at selected independent musi
 | A Beat Happening | empty | 0 |
 | Mississippi Pizza / Atlantis Lounge | failed | 0 |
 
-## 30-day window through 2026-12-21
+## 30-day window through 2026-12-22
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | The Off Beat / Friends of Noise | 3 | 2 | 0 | 1 | 3 |
-| Jack London Revue | 20 | 20 | 0 | 0 | 17 |
-| Alberta Street Pub | 51 | 46 | 0 | 5 | 39 |
+| Jack London Revue | 18 | 18 | 0 | 0 | 15 |
+| Alberta Street Pub | 48 | 43 | 0 | 5 | 37 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
-## 60-day window through 2027-01-20
+## 60-day window through 2027-01-21
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | The Off Beat / Friends of Noise | 6 | 5 | 0 | 1 | 6 |
-| Jack London Revue | 30 | 29 | 0 | 1 | 26 |
-| Alberta Street Pub | 52 | 47 | 0 | 5 | 40 |
+| Jack London Revue | 28 | 27 | 0 | 1 | 24 |
+| Alberta Street Pub | 49 | 44 | 0 | 5 | 38 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
-## 90-day window through 2027-02-19
+## 90-day window through 2027-02-20
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | The Off Beat / Friends of Noise | 8 | 5 | 0 | 3 | 8 |
 | Jack London Revue | 41 | 40 | 0 | 1 | 37 |
-| Alberta Street Pub | 52 | 47 | 0 | 5 | 40 |
+| Alberta Street Pub | 49 | 44 | 0 | 5 | 38 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
@@ -57,14 +57,14 @@ This audit covers observed first-party dated events at selected independent musi
 
 ## Verified original match samples
 
-- 2026-11-21 · Jack London Revue · FOX WALKER, EARL GRACIOUS BAND, LIQUID SUN · published · Style not verified
-- 2026-11-21 · Jack London Revue · BURLY-Q REVUE · published · Style not verified
-- 2026-11-21 · Alberta Street Pub · Drag Brunch Hosted by Nicoleonoscopi! · published · Style not verified
-- 2026-11-21 · Alberta Street Pub · Chasing Cowboys · published · Style not verified
-- 2026-11-21 · Alberta Street Pub · Goth Video Dance Night · published · Goth & darkwave
 - 2026-11-22 · Alberta Street Pub · Blue Schmoll · published · Style not verified
 - 2026-11-22 · Alberta Street Pub · Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P · published · Style not verified
 - 2026-11-23 · Alberta Street Pub · Monday Night Football Hosted by Hazel Dell Hottie · published · Style not verified
+- 2026-11-24 · Alberta Street Pub · Bridgetown Trivia on the Heated Patio! · published · Style not verified
+- 2026-11-25 · Jack London Revue · INFINITY · published · Style not verified
+- 2026-11-25 · Alberta Street Pub · PDX SMOKE Presents - Wednesday Night Social - Cigars, Dominos & Music · published · Style not verified
+- 2026-11-27 · The Off Beat / Friends of Noise · 11/27 Let's Meet at The Off Beat · published · Style not verified
+- 2026-11-27 · Alberta Street Pub · TITS UP · published · Style not verified
 
 Unknown music style is a metadata gap, never a reason to suppress verified events. Tentative same-night cross-source matches still need original identity review.
 

@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-21
+# SHOWS automated discovery review — 2026-11-22
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,47 +8,47 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| High Water Mark | Checked | 63 | 0 | 0 | 0 | 0 | 0 | 63 |
+| Black Water | Checked | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| High Water Mark | Checked | 63 | 1 | 0 | 1 | 0 | 0 | 62 |
 | Soundcontrol PDX | Checked | 5 | 0 | 0 | 0 | 0 | 3 | 2 |
-| Twilight Cafe and Bar | Checked | 29 | 0 | 0 | 0 | 0 | 3 | 26 |
-| Star Theater | Checked | 36 | 1 | 1 | 0 | 1 | 4 | 31 |
-| Dante's | Checked | 43 | 0 | 0 | 0 | 0 | 3 | 40 |
+| Twilight Cafe and Bar | Checked | 30 | 1 | 1 | 0 | 1 | 3 | 26 |
+| Star Theater | Checked | 35 | 0 | 0 | 0 | 0 | 4 | 31 |
+| Dante's | Checked | 42 | 1 | 1 | 0 | 1 | 3 | 38 |
 | Roseland Theater | Checked | 32 | 0 | 0 | 0 | 0 | 5 | 27 |
 | Wonder Ballroom | Checked | 31 | 0 | 0 | 0 | 0 | 9 | 22 |
-| Hawthorne Theatre | Checked | 43 | 0 | 0 | 0 | 0 | 3 | 40 |
-| Crystal Ballroom | Checked | 52 | 1 | 0 | 1 | 1 | 4 | 47 |
-| Revolution Hall | Checked | 30 | 1 | 1 | 0 | 1 | 4 | 25 |
-| Turn! Turn! Turn! | Checked | 10 | 0 | 0 | 0 | 0 | 1 | 9 |
-| Kenton Club | Checked | 11 | 0 | 0 | 0 | 0 | 5 | 6 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 3 | 0 | 3 | 3 | 2 | 25 |
-| Holocene | Checked | 47 | 0 | 0 | 0 | 0 | 19 | 28 |
-| Starday Tavern | Checked | 1590 | 1 | 0 | 1 | 0 | 43 | 1546 |
+| Hawthorne Theatre | Checked | 42 | 0 | 0 | 0 | 0 | 3 | 39 |
+| Crystal Ballroom | Checked | 51 | 0 | 0 | 0 | 0 | 3 | 48 |
+| Revolution Hall | Checked | 30 | 2 | 0 | 2 | 2 | 3 | 25 |
+| Turn! Turn! Turn! | Checked | 10 | 1 | 1 | 0 | 1 | 1 | 8 |
+| Kenton Club | Checked | 10 | 0 | 0 | 0 | 0 | 4 | 6 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 2 | 0 | 2 | 2 | 2 | 26 |
+| Holocene | Checked | 46 | 0 | 0 | 0 | 0 | 19 | 27 |
+| Starday Tavern | Checked | 1590 | 0 | 0 | 0 | 0 | 43 | 1547 |
 | The Off Beat / Friends of Noise | Checked | 10 | 0 | 0 | 0 | 0 | 4 | 6 |
-| Aladdin Theater | Checked | 79 | 0 | 0 | 0 | 0 | 5 | 74 |
-| Mission Theater | Checked | 49 | 0 | 0 | 0 | 0 | 1 | 48 |
-| Nova PDX | Checked | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
-| Lola's Room | Checked | 12 | 0 | 0 | 0 | 0 | 3 | 9 |
-| The Showdown | Checked | 51 | 0 | 0 | 0 | 0 | 16 | 35 |
-| 45 East | Checked | 18 | 0 | 0 | 0 | 0 | 0 | 18 |
+| Aladdin Theater | Checked | 78 | 0 | 0 | 0 | 0 | 5 | 73 |
+| Mission Theater | Checked | 48 | 0 | 0 | 0 | 0 | 1 | 47 |
+| Nova PDX | Checked | 13 | 0 | 0 | 0 | 0 | 0 | 13 |
+| Lola's Room | Checked | 11 | 0 | 0 | 0 | 0 | 2 | 9 |
+| The Showdown | Checked | 50 | 0 | 0 | 0 | 0 | 16 | 34 |
+| 45 East | Checked | 14 | 0 | 0 | 0 | 0 | 0 | 14 |
 | Mammoth Northwest | Checked | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | The 1905 | Checked | 8 | 2 | 2 | 0 | 2 | 0 | 6 |
 | Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 1 | 49 |
-| Alberta Street Pub | Checked | 52 | 0 | 0 | 0 | 0 | 5 | 47 |
-| Alberta Rose Theatre | Checked | 60 | 0 | 0 | 0 | 0 | 7 | 53 |
+| Alberta Street Pub | Checked | 49 | 0 | 0 | 0 | 0 | 5 | 44 |
+| Alberta Rose Theatre | Checked | 59 | 0 | 0 | 0 | 0 | 7 | 52 |
 | A Beat Happening | EMPTY | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Classification review
 
-New candidate categories: **Music** 4 · **Unclassified** 5.
+New candidate categories: **Music** 5 · **Unclassified** 5.
 **5 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- Crystal Ballroom: Haute & Freddy — https://www.crystalballroompdx.com/events/280316-haute-freddy/
-- Polaris Hall: The Duke Of Cello — https://www.etix.com/ticket/p/82870240/the-duke-of-cello-portland-polaris-hall
-- Mississippi Studios: Nori Reed: Nori Is Present LIVE at Mississippi Studios — https://www.etix.com/ticket/p/95870738/nori-reednori-is-present-live-at-mississippi-studios-portland-mississippi-studios
-- Polaris Hall: Mason Jennings — https://www.etix.com/ticket/p/97950899/mason-jennings-portland-polaris-hall
-- Starday Tavern: Ringer & The Bells SHAQ TIME — https://www.google.com/calendar/event?eid=NG0yNTEwanF2N3I5YzI1Y3VvbGduOGluN20gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw
+- High Water Mark Lounge: Less Light, Years of Sun, Smokeeater, World Three — https://www.treetix.com/event/204963/highwatermark
+- Revolution Hall: Join or Die: A Screening and Conversation About Democratic Participation — https://www.etix.com/ticket/p/47460859/join-or-diea-screening-and-conversation-about-democratic-participation-portland-revolution-hall
+- Revolution Hall: Dogs in a Pile — https://www.etix.com/ticket/p/99668038/dogs-in-a-pile-portland-revolution-hall
+- Mississippi Studios: SOLD OUT: Willi Carlisle - The Universal Bubba Tour — https://www.etix.com/ticket/p/93180478/sold-outwilli-carlisle-the-universal-bubba-tour-portland-mississippi-studios
+- Polaris Hall: Robber Robber — https://www.etix.com/ticket/p/71876197/robber-robber-portland-polaris-hall
 
 ### Connections requiring work
 
@@ -78,11 +78,10 @@ New candidate categories: **Music** 4 · **Unclassified** 5.
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 5** · Ambiguous matching source URLs: 2.
+**Potential changes: 4** · Ambiguous matching source URLs: 2.
 
 | Change | Venue and event | Approved → observed | Official event evidence |
 | --- | --- | --- | --- |
-| Listed time changed | Dante's — SICK: A Year In Our Bodies - Fundraiser Showcase | 21:00 → 20:30 | https://www.danteslive.com/tm-event/sick-a-year-in-our-bodies-fundraiser-showcase/ |
 | Listed time changed | Starday Tavern — El Sobrente & The Remainders | 17:30 → 19:00 | https://www.google.com/calendar/event?eid=NWsybnNzaTQya2gzcDEzcjF2MXZzNjIzMWVfMjAyNjExMzBUMDEzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
 | Listed time changed | Starday Tavern — Sam Henson Holiday Happy Hour | 16:30 → 17:30 | https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
 | Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
@@ -90,28 +89,30 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 
 The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 9
+## New candidates: 10
 
-- star-theater: 1 proposals
-- crystal-ballroom: 1 proposals
-- revolution-hall: 1 proposals
-- mississippi-polaris: 3 proposals
-- starday-tavern: 1 proposals
+- high-water: 1 proposals
+- twilight: 1 proposals
+- dantes: 1 proposals
+- revolution-hall: 2 proposals
+- turn-turn-turn: 1 proposals
+- mississippi-polaris: 2 proposals
 - the-1905: 2 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2027-01-29 | NB Ridaz | Star Theater | 21:15 (doors/show unverified) | https://www.startheaterportland.com/tm-event/nb-ridaz/ |
-| 2027-05-20 | Haute & Freddy | Crystal Ballroom | 20:00 (doors/show unverified) | https://www.crystalballroompdx.com/events/280316-haute-freddy/ |
-| 2027-01-02 | The Disco Biscuits | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/30191515/the-disco-biscuits-portland-revolution-hall |
-| 2026-12-10 | The Duke Of Cello | Polaris Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/82870240/the-duke-of-cello-portland-polaris-hall |
-| 2026-12-10 | Nori Reed: Nori Is Present LIVE at Mississippi Studios | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/95870738/nori-reednori-is-present-live-at-mississippi-studios-portland-mississippi-studios |
-| 2026-12-11 | Mason Jennings | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/97950899/mason-jennings-portland-polaris-hall |
-| 2026-12-01 | Ringer & The Bells SHAQ TIME | Starday Tavern | 22:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=NG0yNTEwanF2N3I5YzI1Y3VvbGduOGluN20gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
-| 2026-11-25 | Greaterkind — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13332/2026-11-25 |
-| 2026-11-25 | Greaterkind — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13332/2026-11-25 |
+| 2027-01-09 | Less Light, Years of Sun, Smokeeater, World Three | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204963/highwatermark |
+| 2027-02-13 | Scott Pilgrim vs. The Dance Floor-A night of Dance-Punk, Electroclash, Indietronic | Twilight Cafe and Bar | 21:00 (doors/show unverified) | https://www.twilightcafeandbar.com/event/469290/scott-pilgrim-vs-the-dance-floor-a-night-of-dance-punk-electroclash-indietronic |
+| 2026-12-19 | SMASH disco~glam~metal~punk-hiphop | Dante's | 23:30 (doors/show unverified) | https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-2/ |
+| 2027-01-06 | Join or Die: A Screening and Conversation About Democratic Participation | Revolution Hall | 17:45 (doors/show unverified) | https://www.etix.com/ticket/p/47460859/join-or-diea-screening-and-conversation-about-democratic-participation-portland-revolution-hall |
+| 2027-01-09 | Dogs in a Pile | Revolution Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/99668038/dogs-in-a-pile-portland-revolution-hall |
+| 2026-11-22 | Woe Nelly + Jean Shorts Jesus + Swallow the Moon | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/woe-nelly-jean-shorts-jesus-swallow-the-moon-november-22-2026-804618 |
+| 2026-12-11 | SOLD OUT: Willi Carlisle - The Universal Bubba Tour | Mississippi Studios | 21:00 (doors/show unverified) | https://www.etix.com/ticket/p/93180478/sold-outwilli-carlisle-the-universal-bubba-tour-portland-mississippi-studios |
+| 2026-12-12 | Robber Robber | Polaris Hall | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/71876197/robber-robber-portland-polaris-hall |
+| 2026-11-26 | CLOSED FOR THE HOLIDAY — 1:00 PM show | The 1905 | 13:00 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13236/2026-11-26 |
+| 2026-11-27 | CLOSED FOR THE HOLIDAY — 1:00 PM show | The 1905 | 13:00 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13237/2026-11-27 |
 
-## Held for review: 150
+## Held for review: 146
 
 - [soundcontrol-pdx] Mustard Plug, The Planet Smashers, The Venomous Pinks — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204952/soundcontrol
 - [soundcontrol-pdx] Western Standard Time, The Cascadians, Weekend Kids, Impact Sound! — Same venue/date; different existing bill; manual comparison https://www.treetix.com/event/204960/soundcontrol
@@ -143,16 +144,13 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [hawthorne-theatre] 1 Umbrella – VIP Upgrade (ENTRY TICKET NOT INCLUDED) — Ticket add-on, not an independent event https://hawthornetheatre.com/event/1-umbrella-vip-upgrade-entry-ticket-not-included/hawthorne-theatre/portland-oregon/
 - [hawthorne-theatre] DJ RAPHI — Same venue/date; different existing bill; manual comparison https://hawthornetheatre.com/event/dj-raphi/hawthorne-theatre/portland-oregon/
 - [hawthorne-theatre] Taylor Fest *RESCHEDULED DATE* — Venue reports show moved, canceled or postponed https://hawthornetheatre.com/event/taylor-fest-rescheduled-date/hawthorne-theatre/portland-oregon/
-- [crystal-ballroom] Untitled — Original event metadata reports another room or venue move https://www.crystalballroompdx.com/events/278430-90s-dance-flashback/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Phoebe Robinson: Feral & Fired Up! — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/91940693/phoebe-robinsonferal-fired-up-portland-revolution-hall
-- [revolution-hall] Video Dance Attack Presents: Studio 54 — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/97866523/video-dance-attack-presentsstudio-54-portland-show-bar-at-revolution-hall
+- [revolution-hall] ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91554135/neurosis-portland-revolution-hall
 - [turn-turn-turn] Tracey Nelson + Joe Glass — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/tracey-nelson-joe-glass-december-15-2026-779468
-- [kenton-club] (2026-11-21) So Pitted-Sea Moss-Snorkler(Tennessee) King Compost Closed Thanksgiving — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
 - [kenton-club] (2026-11-27) Madison True Band-Midnight Jade — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
 - [kenton-club] (2026-12-05) DJ Action Slacks Flame Peppermint Twist Holiday Dance Party — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
 - [kenton-club] (2026-12-12) The Trabants Holiday Review performing (The Ventures Christmas Album) Monovisions-The No Goes- Los Spooks-Cheex- — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
@@ -231,7 +229,6 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [aladdin-theater] RESCHEDULED TO 2/19/27: Ladysmith Black Mambazo — Official changed-status or ticket-addon listing requires review https://www.etix.com/ticket/p/75251922/rescheduled-to-21927ladysmith-black-mambazo-portland-aladdin-theater
 - [aladdin-theater] Bruce Cockburn with Jeff Pevar and Inger Nova — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/57495192/bruce-cockburn-with-jeff-pevar-and-inger-nova-portland-aladdin-theater
 - [mission-theater] Dr. Brady Smith — Mission card lacks event identity, date or unambiguous published start https://www.mcmenamins.com/events/278043-dr-brady-smith
-- [lolas-room] 2010's Dance Flashback — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278428-2010s-dance-flashback
 - [lolas-room] Inaugural Holiday Bazaar Brewfest — Time range or TBA is not a published event start https://www.mcmenamins.com/events/278696-inaugural-holiday-bazaar-brewfest
 - [lolas-room] 2000s New Year's Eve Y2K Ball 2010s in Lola's Room — Shared Crystal Ballroom and Lola's Room event needs room-specific review https://www.mcmenamins.com/events/278503-2000s-new-years-eve-y2k-ball
 - [showdown] Square Dancing with Caller Tighe Hauze and Miss Praline's Whip Lodge Tenderstrokes / KARAOKE @ 9:30 — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/square-dancing-with-caller-tighe-hauze-and-miss-pralines-whip-lodge-tenderstrokes/
