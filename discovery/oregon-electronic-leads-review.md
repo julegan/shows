@@ -2,13 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**151 public table rows checked; 55 distinct relevant research leads (48 preferred-venue, 7 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**141 public table rows checked; 52 distinct relevant research leads (46 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-20 | [Soul'd Out Presents: Eric John Kaiser - Album Release](https://www.ticketweb.com/event/eric-john-kaiser-jack-london-revue-tickets/14334304) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-11-20 | [Space 92](https://www.tixr.com/groups/45east/events/space-92-201571) | 45 East | techno / Not listed | Preferred SHOWS venue + relevant music tag |
-| 2026-11-20 | [Succubass's Farewell Steppas Ball w/ Stones Taro & Danny Goliger](https://ra.co/events/2578712) | Process Pdx | house, breaks, club / Not listed | Relevant electronic / dark music tag |
 | 2026-11-21 | [Soul'd Out Presents: Fox Walker, Earl Gracious Band & Liquid Sun](https://www.ticketweb.com/event/fox-walker-earl-gracious-band-jack-london-revue-tickets/14317424) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-21 | [Panteros666 at 45 East](https://45east.tixr.com/1121panteros666) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-21 | [Process Club Night - Juliana Huxtable, Special Guest DJ](https://ra.co/events/2576746) | Process Pdx | experimental, techno, club music / Not listed | Relevant electronic / dark music tag |

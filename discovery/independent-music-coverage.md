@@ -1,4 +1,4 @@
-# Independent original music source reconciliation — 2026-11-20
+# Independent original music source reconciliation — 2026-11-21
 
 This audit covers observed first-party dated events at selected independent music and community sources. It is not a genre quota. Source responses may be incomplete; an empty or failed feed is not evidence of no upcoming events.
 
@@ -12,33 +12,33 @@ This audit covers observed first-party dated events at selected independent musi
 | A Beat Happening | empty | 0 |
 | Mississippi Pizza / Atlantis Lounge | failed | 0 |
 
-## 30-day window through 2026-12-20
+## 30-day window through 2026-12-21
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | The Off Beat / Friends of Noise | 3 | 2 | 0 | 1 | 3 |
-| Jack London Revue | 21 | 21 | 0 | 0 | 18 |
+| Jack London Revue | 20 | 20 | 0 | 0 | 17 |
+| Alberta Street Pub | 51 | 46 | 0 | 5 | 39 |
+| A Beat Happening | 0 | 0 | 0 | 0 | 0 |
+| Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
+
+## 60-day window through 2027-01-20
+
+| Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| The Off Beat / Friends of Noise | 6 | 5 | 0 | 1 | 6 |
+| Jack London Revue | 30 | 29 | 0 | 1 | 26 |
 | Alberta Street Pub | 52 | 47 | 0 | 5 | 40 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
-## 60-day window through 2027-01-19
+## 90-day window through 2027-02-19
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| The Off Beat / Friends of Noise | 7 | 6 | 0 | 1 | 7 |
-| Jack London Revue | 31 | 29 | 1 | 1 | 27 |
-| Alberta Street Pub | 54 | 49 | 0 | 5 | 42 |
-| A Beat Happening | 0 | 0 | 0 | 0 | 0 |
-| Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
-
-## 90-day window through 2027-02-18
-
-| Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| The Off Beat / Friends of Noise | 9 | 6 | 0 | 3 | 9 |
-| Jack London Revue | 41 | 38 | 2 | 1 | 37 |
-| Alberta Street Pub | 54 | 49 | 0 | 5 | 42 |
+| The Off Beat / Friends of Noise | 8 | 5 | 0 | 3 | 8 |
+| Jack London Revue | 41 | 40 | 0 | 1 | 37 |
+| Alberta Street Pub | 52 | 47 | 0 | 5 | 40 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
@@ -57,14 +57,14 @@ This audit covers observed first-party dated events at selected independent musi
 
 ## Verified original match samples
 
-- 2026-11-20 · The Off Beat / Friends of Noise · 11/20 Heaven Skate, Rheumatoid Trapezoid, Steevee Von Schneedle, Dopamean · published · Style not verified
-- 2026-11-20 · Jack London Revue · ERIC JOHN KAISER - ALBUM RELEASE · published · Style not verified
-- 2026-11-20 · Alberta Street Pub · Lordymama · published · Style not verified
-- 2026-11-20 · Alberta Street Pub · Mandela & Friends · published · Style not verified
 - 2026-11-21 · Jack London Revue · FOX WALKER, EARL GRACIOUS BAND, LIQUID SUN · published · Style not verified
 - 2026-11-21 · Jack London Revue · BURLY-Q REVUE · published · Style not verified
 - 2026-11-21 · Alberta Street Pub · Drag Brunch Hosted by Nicoleonoscopi! · published · Style not verified
 - 2026-11-21 · Alberta Street Pub · Chasing Cowboys · published · Style not verified
+- 2026-11-21 · Alberta Street Pub · Goth Video Dance Night · published · Goth & darkwave
+- 2026-11-22 · Alberta Street Pub · Blue Schmoll · published · Style not verified
+- 2026-11-22 · Alberta Street Pub · Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P · published · Style not verified
+- 2026-11-23 · Alberta Street Pub · Monday Night Football Hosted by Hazel Dell Hottie · published · Style not verified
 
 Unknown music style is a metadata gap, never a reason to suppress verified events. Tentative same-night cross-source matches still need original identity review.
 

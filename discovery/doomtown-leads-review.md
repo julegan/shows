@@ -6,6 +6,7 @@ WordPress post publication dates are **not** event dates. These leads require in
 
 | Promoter post | Printed date | Venue mentions | Source art |
 | --- | --- | --- | --- |
+| [Alley Way 20th Birthday Bash](https://doomtownpdx.com/habak-at-black-water-3/) | Friday November 20th | Unconfirmed | Image found; rights unverified |
 | [Showcase Theater Documentary](https://doomtownpdx.com/la-isla-electronica-record-release-3/) | November 13th | Unconfirmed | Image found; rights unverified |
 | [La Isla Electronica Record Release at Black Water](https://doomtownpdx.com/la-isla-electronica-record-release/) | Sat. November 13th | Black Water | Image found; rights unverified |
 | [Habak at Black Water](https://doomtownpdx.com/habak-at-black-water/) | Sat. November 7th | Black Water | Image found; rights unverified |
@@ -45,4 +46,3 @@ WordPress post publication dates are **not** event dates. These leads require in
 | [Friday Nov 21st at Holmans](https://doomtownpdx.com/friday-nov-21st-at-holmans/) | Not verified | Unconfirmed | Image found; rights unverified |
 | [Thurs Nov 14th at Kenton Club](https://doomtownpdx.com/thurs-nov-14th-at-kenton-club/) | Not verified | Kenton Club | Image found; rights unverified |
 | [Tues Nov 4th at Black Water](https://doomtownpdx.com/tues-nov-4th-at-black-water/) | Not verified | Black Water | Image found; rights unverified |
-| [Friday Oct 31st at Kenton Club](https://doomtownpdx.com/friday-oct-31st-at-kenton-club/) | Not verified | Kenton Club | Image found; rights unverified |

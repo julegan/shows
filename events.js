@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-20",
+  "sourceCheckedAt": "2026-11-21",
   "coverageThrough": "2027-12-07",
-  "totalOccurrences": 1584,
-  "addedOccurrences": 23,
-  "batchId": "auto-discovery-2026-11-20-88",
+  "totalOccurrences": 1593,
+  "addedOccurrences": 9,
+  "batchId": "auto-discovery-2026-11-21-89",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -212,11 +212,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "trusted-original-2026-11-20",
       "addedOccurrences": 2
+    },
+    {
+      "batchId": "auto-discovery-2026-11-20-88",
+      "addedOccurrences": 23
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 490
+  "musicOccurrences": 494
 };
 window.SHOWS_EVENTS = [
   {
@@ -36673,6 +36677,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-25-089843dae9a4",
+    "title": "Greaterkind — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48672 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES greaterkind formed in Portland, OR in 2018 by three friends on a communal mission to spread love and inclusivity through the medium of music and agriculture. Channeling elements of jazz fusion and funk with undertones of R&B, ",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13332/IMG_1754.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48672",
+    "sourceShowId": "13332",
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2026-11-25-8e28221372c7",
     "title": "Fire Cider Craft Night-Make Your Own Fire Cider!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -37132,6 +37196,67 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-25-d0687ef1e1d1",
+    "title": "Greaterkind — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-25T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48673 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES greaterkind formed in Portland, OR in 2018 by three friends on a communal mission to spread love and inclusivity through the medium of music and agriculture. Channeling elements of jazz fusion and funk with undertones of R&B, ",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13332/IMG_1754.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13332/2026-11-25",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48673",
+    "sourceShowId": "13332",
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "the-1905",
       "method": "primary-source-collection"
     }
   },
@@ -41861,6 +41986,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-starday-tavern-2026-12-01-85747b20b8d5",
+    "title": "Ringer & The Bells SHAQ TIME",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-01T22:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=NG0yNTEwanF2N3I5YzI1Y3VvbGduOGluN20gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=NG0yNTEwanF2N3I5YzI1Y3VvbGduOGluN20gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "starday-tavern",
       "method": "primary-source-collection"
     }
   },
@@ -49369,6 +49538,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-10-5f6cbb8fd2fd",
+    "title": "The Duke Of Cello",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/82870240/the-duke-of-cello-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/82870240/the-duke-of-cello-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/768edae9f68f4815ab0172ffdd17849e.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-12-10-9fef8420f6d9",
     "title": "Live Wire with Luke Burbank",
     "subtitle": "Source-discovered venue event · details need review",
@@ -49635,6 +49856,58 @@ window.SHOWS_EVENTS = [
       "origin": "official-event-page",
       "credit": "Official event page",
       "usageApproved": null
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-10-1c52a596b20a",
+    "title": "Nori Reed: Nori Is Present LIVE at Mississippi Studios",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/95870738/nori-reednori-is-present-live-at-mississippi-studios-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/95870738/nori-reednori-is-present-live-at-mississippi-studios-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/ad46e40881e5c10e402b9366d0fab1f6.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -50421,6 +50694,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "jack-london-revue",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-11-0d4700a4704e",
+    "title": "Mason Jennings",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Anna Diem",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/97950899/mason-jennings-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/97950899/mason-jennings-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fb68649b1b89cb2ed319993320569960.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -60890,6 +61215,60 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2027-01-02-9ff60ca0fca0",
+    "title": "The Disco Biscuits",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/30191515/the-disco-biscuits-portland-revolution-hall",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/30191515/the-disco-biscuits-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/1c00733a6744c881917b53f463da5430.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2027-01-02-fac9ffa62428",
     "title": "Witch, Please! \"Sparkle Motion\"-Your Monthly Magical Queer Dance Party w/ Dj Blanche Deverheaux",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64849,6 +65228,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-17",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-star-theater-2027-01-29-f04656f99fb6",
+    "title": "NB Ridaz",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-29T21:15:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/nb-ridaz/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/nb-ridaz/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/01/93_Original.jpg?v=9",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/nb-ridaz/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "star-theater",
       "method": "primary-source-collection"
     }
   },
@@ -77236,6 +77666,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-05-20-5dea7c951963",
+    "title": "Haute & Freddy",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-05-20T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280316-haute-freddy/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-21",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280316-haute-freddy/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-21",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/11/HauteandFreddy26-fGhVla.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280316-haute-freddy/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-21",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },
