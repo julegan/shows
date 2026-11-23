@@ -9,6 +9,8 @@ on:
       - '.github/workflows/get-down-calendar-watch.yml'
       - 'scripts/get-down-source-diagnostic.js'
       - 'tests/get-down-source-diagnostic.js'
+      - 'scripts/get-down-ticket-evidence.js'
+      - 'tests/get-down-ticket-evidence.js'
 permissions:
   contents: read
 concurrency:
@@ -27,14 +29,21 @@ jobs:
         run: |
           node --check scripts/get-down-source-diagnostic.js
           node tests/get-down-source-diagnostic.js
+          node --check scripts/get-down-ticket-evidence.js
+          node tests/get-down-ticket-evidence.js
       - name: Inspect original calendar (report only)
         id: probe
         continue-on-error: true
         run: node scripts/get-down-source-diagnostic.js
+      - name: Inspect original ticket event schema (research only)
+        id: tickets
+        continue-on-error: true
+        run: node scripts/get-down-ticket-evidence.js
       - name: Record result and hold any inaccessible source
         if: always()
         env:
           PROBE_OUTCOME: ${{ steps.probe.outcome }}
+          TICKET_OUTCOME: ${{ steps.tickets.outcome }}
         run: |
           if [ "$PROBE_OUTCOME" != "success" ]; then
             echo "::warning::The Get Down original calendar could not be verified; source remains review-only. Do not infer cancellations or import events."
@@ -45,12 +54,20 @@ jobs:
           else
             echo "Original calendar unavailable or identity not verified. No events, times, genres, or flyers proposed." >> "$GITHUB_STEP_SUMMARY"
           fi
-          echo "Probe outcome: $PROBE_OUTCOME. This job cannot write to canonical events or open publishing PRs." >> "$GITHUB_STEP_SUMMARY"
+          echo "Original ticket probe: $TICKET_OUTCOME. Review-only, no event publication." >> "$GITHUB_STEP_SUMMARY"
+          if [ -f discovery/get-down-ticket-evidence.md ]; then
+            sed -n '1,35p' discovery/get-down-ticket-evidence.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Original ticket evidence unavailable or held; no events proposed." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "Calendar probe outcome: $PROBE_OUTCOME. This job cannot write to canonical events or open publishing PRs." >> "$GITHUB_STEP_SUMMARY"
       - name: Keep dated diagnostic evidence
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: get-down-original-calendar-${{ github.run_number }}
-          path: discovery/get-down-source-diagnostic.md
+          path: |
+            discovery/get-down-source-diagnostic.md
+            discovery/get-down-ticket-evidence.md
           if-no-files-found: warn
           retention-days: 30
