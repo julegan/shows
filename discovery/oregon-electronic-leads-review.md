@@ -2,13 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**141 public table rows checked; 52 distinct relevant research leads (46 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**127 public table rows checked; 49 distinct relevant research leads (44 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-21 | [Soul'd Out Presents: Fox Walker, Earl Gracious Band & Liquid Sun](https://www.ticketweb.com/event/fox-walker-earl-gracious-band-jack-london-revue-tickets/14317424) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-11-21 | [Panteros666 at 45 East](https://45east.tixr.com/1121panteros666) | 45 East | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-11-21 | [Process Club Night - Juliana Huxtable, Special Guest DJ](https://ra.co/events/2576746) | Process Pdx | experimental, techno, club music / Not listed | Relevant electronic / dark music tag |
 | 2026-11-22 | [Church Of Hive / Goth-Industrial-Darkwave / DJs Sinead : Lissex / Star Theater, 11-22 10:30Pm](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14971783) | Star Theater | Not categorized / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
 | 2026-11-25 | [Soul'd Out Presents: Infinity](https://www.ticketweb.com/event/infinity-jack-london-revue-tickets/14348204) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-25 | [Flash Trash](https://www.etix.com/ticket/p/86481210/flash-trashan-electro-dance-party-featguest-dj-set-by-uffie-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |

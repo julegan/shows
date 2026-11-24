@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-21",
+  "sourceCheckedAt": "2026-11-22",
   "coverageThrough": "2027-12-07",
-  "totalOccurrences": 1593,
-  "addedOccurrences": 9,
-  "batchId": "auto-discovery-2026-11-21-89",
+  "totalOccurrences": 1603,
+  "addedOccurrences": 10,
+  "batchId": "auto-discovery-2026-11-22-90",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -216,11 +216,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-20-88",
       "addedOccurrences": 23
+    },
+    {
+      "batchId": "auto-discovery-2026-11-21-89",
+      "addedOccurrences": 9
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 494
+  "musicOccurrences": 499
 };
 window.SHOWS_EVENTS = [
   {
@@ -35174,6 +35178,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-22-b96a581116d3",
+    "title": "Woe Nelly + Jean Shorts Jesus + Swallow the Moon",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-22T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/woe-nelly-jean-shorts-jesus-swallow-the-moon-november-22-2026-804618",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/woe-nelly-jean-shorts-jesus-swallow-the-moon-november-22-2026-804618",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/804/618/compressed/Screenshot_2026-11-21_at_2.43.53%E2%80%AFPM.jpg?1795301205",
+      "sourceUrl": "https://app.opendate.io/e/woe-nelly-jean-shorts-jesus-swallow-the-moon-november-22-2026-804618",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-11-22-34da21c31fdf",
     "title": "TV VIKING followed by Sinferno Cabaret",
     "subtitle": "Source-discovered venue event · details need review",
@@ -37546,6 +37601,59 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-26-5774b1c21994",
+    "title": "CLOSED FOR THE HOLIDAY — 1:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-26T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48389 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. Original tickets currently display sold out.",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13236/2026-11-26",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13236/2026-11-26",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13236/thanksg.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13236/2026-11-26",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48389",
+    "sourceShowId": "13236",
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-11-26-9b320f72d816",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -37732,6 +37840,59 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-27-48462d0da54a",
+    "title": "CLOSED FOR THE HOLIDAY — 1:00 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T13:00:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48390 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. Original tickets currently display sold out.",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13237/2026-11-27",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13237/2026-11-27",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13237/thanksg.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13237/2026-11-27",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48390",
+    "sourceShowId": "13237",
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "the-1905",
       "method": "primary-source-collection"
     }
   },
@@ -51085,6 +51246,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-11-0eaab71d30e9",
+    "title": "SOLD OUT: Willi Carlisle - The Universal Bubba Tour",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Amelia Day",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/93180478/sold-outwilli-carlisle-the-universal-bubba-tour-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/93180478/sold-outwilli-carlisle-the-universal-bubba-tour-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8af82bbe436be20f2633435dbbb90370.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-dantes-2026-12-11-33223a1014cb",
     "title": "HOTWAX disco~glam~metal~punk~hiphop",
     "subtitle": "Source-discovered venue event · details need review",
@@ -51940,6 +52153,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "twilight",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-12-38b4324db69a",
+    "title": "Robber Robber",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: bloodsports",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/71876197/robber-robber-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/71876197/robber-robber-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f004e8bc891f63ff47b2f2bb5be91cc3.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -57031,6 +57296,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2026-12-19-0aae4baa9616",
+    "title": "SMASH disco~glam~metal~punk-hiphop",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Metal",
+      "Source-mentioned Punk",
+      "Source-mentioned Hip-hop & rap",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Metal",
+      "Punk",
+      "Hip-hop & rap",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-19T23:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/78/14/34_Original.jpg?v=12",
+      "sourceUrl": "https://www.danteslive.com/tm-event/smash-discoglammetalpunk-hiphop-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "moon-market-2026-12-20",
     "seriesId": "moon-market-holiday-2026",
     "title": "PDX Moon Market",
@@ -61721,6 +62047,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2027-01-06-a65fe59987b8",
+    "title": "Join or Die: A Screening and Conversation About Democratic Participation",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-06T17:45:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/47460859/join-or-diea-screening-and-conversation-about-democratic-participation-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/47460859/join-or-diea-screening-and-conversation-about-democratic-participation-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/58f22892e1f7cf54e1b39727c3bd312f.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2027-01-06-4381f2241c46",
     "title": "The Mike Dillon Band Feat Brad Haas & Otto Schrang",
     "subtitle": "Source-discovered venue event · details need review",
@@ -61969,6 +62346,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2027-01-09-d10eaec9bbd6",
+    "title": "Dogs in a Pile",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/99668038/dogs-in-a-pile-portland-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/99668038/dogs-in-a-pile-portland-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/fd186987671cb6bc1f8df1d2117d2e76.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-01-09-51e6ba0274f6",
     "title": "Fernando Viciconte – The Lucky House Album Release with special guest Sarabeth Tucek",
     "subtitle": "Source-discovered venue event · details need review",
@@ -62169,6 +62597,53 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-10",
     "discovery": {
       "sourceId": "hawthorne-theatre",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-high-water-2027-01-09-572effd458ea",
+    "title": "Less Light, Years of Sun, Smokeeater, World Three",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "High Water Mark",
+    "url": "https://www.treetix.com/event/204963/highwatermark",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark",
+        "url": "https://www.treetix.com/event/204963/highwatermark",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/highwatermark/images/events/2027-01-09-204963-less-light.png",
+    "sourceEventId": 204963,
+    "sourceCalendar": "highwatermark",
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "high-water",
       "method": "primary-source-collection"
     }
   },
@@ -67256,6 +67731,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2027-02-13-611cd102352a",
+    "title": "Scott Pilgrim vs. The Dance Floor-A night of Dance-Punk, Electroclash, Indietronic",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Punk",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Punk"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/469290/scott-pilgrim-vs-the-dance-floor-a-night-of-dance-punk-electroclash-indietronic",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-22",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/469290/scott-pilgrim-vs-the-dance-floor-a-night-of-dance-punk-electroclash-indietronic",
+        "kind": "organizer",
+        "checkedAt": "2026-11-22",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/giqdfduvc9wj8f6lvmrc.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/469290/scott-pilgrim-vs-the-dance-floor-a-night-of-dance-punk-electroclash-indietronic",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-22",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },

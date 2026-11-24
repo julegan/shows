@@ -13,7 +13,7 @@ These links are **review-only**, not approved for embedding. Match checks compar
 No unique two-artist Black Water matches without existing artwork in the approved calendar. Review the source leads below; do not infer a missing or duplicate event.
 
 
-**7 direct scene listings; 0 ordinary review leads, 7 explicit holds; 0 automatically approved.**
+**5 direct scene listings; 0 ordinary review leads, 5 explicit holds; 0 automatically approved.**
 
 | Source date and displayed clock (unverified) | Bands / format | Source venue | Age | Source holds and research |
 | --- | --- | --- | --- | --- |
@@ -21,8 +21,6 @@ No unique two-artist Black Water matches without existing artwork in the approve
 | 2026-12-13 03:00 | Labrat / Poise / It’s A Setup / 22RE / Dry Heave | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793847002/subvert/wp8brjycntv9ffljfv2h.jpg |
 | 2026-12-19 03:00 | Spirit Possession (record release) / Nightfell / Puerta Negra | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1795236334/subvert/fg9vm5yq9yrm3ywau4lj.jpg |
 | 2027-01-17 00:00 | Thee Cormans / Guantanamo Baywatch / observers / Sloppy Kisses / Dark/Light / Rickets / Queens of Punk / Noxeema / Dj Truhn Juice | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794851168/subvert/tabz1bjrrli2qqdbrukt.jpg |
-| 2026-11-22 03:00 | Divers / Old City / Fatal State w/ DJ Lonely Boy | Alleyway | Age policy not confirmed | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794087037/subvert/hj1eyasrx6xufzt12kag.jpg |
-| 2026-11-22 04:00 | Jab / FTC / Crucified Class / Arsenal Mall | Blackwater | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794707754/subvert/ymzfgmeg02b9spfbtkh8.png |
 | 2026-12-16 03:00 | Pig City / FTC / Arsenal Mall | High Limit Room | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794707858/subvert/c1bw7ggheqhpffwzhodo.jpg |
 
 No source flyers are copied, downloaded, hotlinked, or deemed usable. Before adding any event, verify the original event-specific artist, venue, poster or ticket announcement, any cancellation or change, the timezone/time type, address, age-policy and duplicate against SHOWS. Event counts cannot be treated as venue-feed completeness.
