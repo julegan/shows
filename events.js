@@ -2,12 +2,12 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-22",
+  "sourceCheckedAt": "2026-11-24",
   "coverageThrough": "2027-12-07",
-  "totalOccurrences": 1603,
-  "addedOccurrences": 10,
-  "batchId": "auto-discovery-2026-11-22-90",
-  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
+  "totalOccurrences": 1610,
+  "addedOccurrences": 7,
+  "batchId": "trusted-original-2026-11-24",
+  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -224,7 +224,7 @@ window.SHOWS_DATASET = {
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 499
+  "musicOccurrences": 504
 };
 window.SHOWS_EVENTS = [
   {
@@ -63101,6 +63101,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-01-14-13f6a9fcfb17",
+    "title": "MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-14T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 6:00pm Show: 7:00pm 21+ JLR Seating Map Notes : For this show, you may reserve individual tables on the map pictured. Note that some tables have limited sightlines as noted. All table reservations include admission. Instructions: For Table Reservation",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2027-01-14-a5420261fd63",
     "title": "Cautious Driver, Bory, Big Top",
     "subtitle": "Source-discovered venue event · details need review",
@@ -63782,6 +63834,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "alberta-rose-theatre",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-01-16-c8952d085c2d",
+    "title": "The Tracy Stone Band",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-16T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Soul'd Out Presents - The Tracy Stone Band Doors: 7:00pm Show: 8:00pm 21+ JLR Seating Map Notes : For this show, you may reserve individual tables on the map pictured. Note that some tables have limited sightlines as noted. General Admission ticket holders n",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/the-tracy-stone-band/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/the-tracy-stone-band/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
@@ -65352,6 +65453,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-01-28-c4bc4677f1b7",
+    "title": "MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "show",
+    "startsAt": "2027-01-28T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 6:00pm Show: 7:00pm 21+ MEL BROWN B3 ORGAN GROUP \"If this band appeared in New York City, they'd be a sensation!\"That was guitar great--and one-time Mel Brown bandmate George Benson's reaction after hearing the Mel Brown B-3 Organ Group back in 2003. ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-3/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-3/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-28-c2dd83391821",
     "title": "Fruition",
     "subtitle": "Source-discovered venue event · details need review",
@@ -66370,6 +66523,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-02-04-d9d2a728e560",
+    "title": "CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "show",
+    "startsAt": "2027-02-04T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: C huck Israels, revered as one of the preeminent bassists in the world, GRAMMY winner has performed and recorded with Billie Holiday, Benny Goodman, Herbie Hancock, John Coltrane, Bud Powell, Coleman Hawkins, Stan Getz, Bill Evans, J.J. Johnson, Rosemary Clo",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-4/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-4/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-roseland-2027-02-04-5c0c8ea86560",
     "title": "Smith & Myers",
     "subtitle": "Source-discovered venue event · details need review",
@@ -67328,6 +67533,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-02-11-0c4632033276",
+    "title": "MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "show",
+    "startsAt": "2027-02-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 6:00pm Show: 7:00pm 21+ MEL BROWN B3 ORGAN GROUP \"If this band appeared in New York City, they'd be a sensation!\"That was guitar great--and one-time Mel Brown bandmate George Benson's reaction after hearing the Mel Brown B-3 Organ Group back in 2003. ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-12/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-12/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
+    }
+  },
+  {
     "id": "auto-showdown-2027-02-11-8a5cf680a190",
     "title": "Mariee Siou",
     "subtitle": "Source-discovered venue event · details need review",
@@ -67529,6 +67786,55 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-02-12-cae1998c666d",
+    "title": "VINCEN GARCIA",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "show",
+    "startsAt": "2027-02-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Soul'd Out Presents: An Evening with Vincen Garcia Doors: 7:00pm Show: 8:00pm Ages 21+ Billboard Live : \"One of the most important bassists in the current modern jazz and funk scene.\" Rolling Stone : \"Global bass superstar.\" Vincen Garc&iacute;a is one of th",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/vincen-garcia/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/vincen-garcia/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
@@ -69553,6 +69859,58 @@ window.SHOWS_EVENTS = [
       "policyVersion": 1,
       "mode": "trusted-original-addition",
       "sourceId": "alberta-rose-theatre"
+    }
+  },
+  {
+    "id": "auto-jack-london-revue-2027-02-25-f1a1679097c5",
+    "title": "MEL BROWN B3 ORGAN GROUP - Jazz Titan Thursdays",
+    "subtitle": "Original venue listing · showtime verified",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "show",
+    "startsAt": "2027-02-25T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Doors: 6:00pm Show: 7:00pm 21+ MEL BROWN B3 ORGAN GROUP \"If this band appeared in New York City, they'd be a sensation!\"That was guitar great--and one-time Mel Brown bandmate George Benson's reaction after hearing the Mel Brown B-3 Organ Group back in 2003. ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-13/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "SHOWS trusted original calendar plus independent schedule checks",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/mel-brown-b3-organ-group-jazz-titan-thursdays-13/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    },
+    "trustPublication": {
+      "policyVersion": 1,
+      "mode": "trusted-original-addition",
+      "sourceId": "jack-london-revue"
     }
   },
   {
