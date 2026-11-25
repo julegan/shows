@@ -4,10 +4,10 @@
 window.SHOWS_DATASET = {
   "sourceCheckedAt": "2026-11-24",
   "coverageThrough": "2027-12-07",
-  "totalOccurrences": 1610,
-  "addedOccurrences": 7,
-  "batchId": "trusted-original-2026-11-24",
-  "editorialReview": "Only append-only original source additions passed the approved trusted policy; all other changes require review",
+  "totalOccurrences": 1661,
+  "addedOccurrences": 51,
+  "batchId": "auto-discovery-2026-11-24-92",
+  "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
       "batchId": "2026-10-17-expansion",
@@ -220,11 +220,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-21-89",
       "addedOccurrences": 9
+    },
+    {
+      "batchId": "trusted-original-2026-11-24",
+      "addedOccurrences": 7
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 504
+  "musicOccurrences": 523
 };
 window.SHOWS_EVENTS = [
   {
@@ -35854,6 +35858,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-twilight-2026-11-24-ba5549a9e4d2",
+    "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/469347/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/469347/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/jsunmul9aofg29h5oace.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/469347/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "twilight",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "roseland-alter-bridge-with-big-wreck-tim-montana-2026-11-24",
     "title": "Alter Bridge with Big Wreck & Tim Montana",
     "subtitle": "Live show · Rock, Metal",
@@ -36342,6 +36398,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-11-24-7c8244ac12c3",
+    "title": "KJ Eggbert Cleavage",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-24T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/kj-eggbert-cleavage-november-24-2026-805007",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/kj-eggbert-cleavage-november-24-2026-805007",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/007/compressed/rs-143174-rectangle.jpg?1795395431",
+      "sourceUrl": "https://app.opendate.io/e/kj-eggbert-cleavage-november-24-2026-805007",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -38266,6 +38373,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-27-1812cac263e9",
+    "title": "Just Deserts w/ DJ's MIZ KITTY + NOSEWITHEYES + DEFIB + SPACE CADET",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-27T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Free",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/just-deserts-w-dj-s-miz-kitty-nosewitheyes-defib-space-cadet-november-27-2026-805021",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/just-deserts-w-dj-s-miz-kitty-nosewitheyes-defib-space-cadet-november-27-2026-805021",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/021/compressed/Screenshot_2026-11-22_at_8.48.19%E2%80%AFPM.jpg?1795409712",
+      "sourceUrl": "https://app.opendate.io/e/just-deserts-w-dj-s-miz-kitty-nosewitheyes-defib-space-cadet-november-27-2026-805021",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2026-11-27-d55c698d1ac4",
     "title": "Red Light Romeos’ Yachtsgiving – A Yacht Rock Extravaganza",
     "subtitle": "Source-discovered venue event · details need review",
@@ -39246,6 +39404,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-28-e7344e0f3629",
+    "title": "Charlie Brown III and Friends — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48391 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES A Portland native, Charlie Brown III is a musical director, producer, and keyboardist whose work has gained international renown in recent years. Brown has gained wider exposure when producing for mainstream rap artist, Aminé,",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13238/IMG_1694.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48391",
+    "sourceShowId": "13238",
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-no-fun-2026-11-28-38fe55ce9fba",
     "title": "That Fucking Ivan • TBA • TBA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -39659,6 +39877,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-11-28-060489ea3a22",
+    "title": "Plankton Wat + The Far Sound + Multiverse Ensemble",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/plankton-wat-the-far-sound-multiverse-ensemble-november-28-2026-805008",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/plankton-wat-the-far-sound-multiverse-ensemble-november-28-2026-805008",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/008/compressed/transform-eyJyZXNpemVfdG9fbGltaXQiOls0ODAsNDgwXX0-6ce4af77eda2eb5f77f91e4bfd9fba37.jpg?1795395831",
+      "sourceUrl": "https://app.opendate.io/e/plankton-wat-the-far-sound-multiverse-ensemble-november-28-2026-805008",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2026-11-28-6f514f902f54",
     "title": "Sabrina Saed & Your Jack",
     "subtitle": "Source-discovered venue event · details need review",
@@ -39958,6 +40227,67 @@ window.SHOWS_EVENTS = [
       "sourceId": "mississippi-polaris",
       "method": "primary-source-collection",
       "verifiedOriginalShowTime": true
+    }
+  },
+  {
+    "id": "auto-the-1905-2026-11-28-509f3a39c876",
+    "title": "Charlie Brown III and Friends — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-28T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48392 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES A Portland native, Charlie Brown III is a musical director, producer, and keyboardist whose work has gained international renown in recent years. Brown has gained wider exposure when producing for mainstream rap artist, Aminé,",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13238/IMG_1694.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13238/2026-11-28",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48392",
+    "sourceShowId": "13238",
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -40711,6 +41041,70 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-29-27da7174a1e0",
+    "title": "Mel Brown B3 Organ Group — 5:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T17:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48393 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES Mel Brown - drums Renato Caranto - sax Dan Balmer - guitar Louis Pain - organ \"If this band appeared in New York City, they'd be a sensation!\" That was guitar great--and one-time Mel Brown bandmate--George Benson's reaction af",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz",
+      "Blues"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": [
+          "Jazz",
+          "Blues"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13239/mel_br.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48393",
+    "sourceShowId": "13239",
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-holocene-2026-11-29-f256ffaa8eb2",
     "title": "Chai & Roses: Disco Tea Dance Party for QTBIPOC & Allies – 21+",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40859,6 +41253,71 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-11-29-7cffdaed9382",
+    "title": "Mel Brown B3 Organ Group — 7:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned Blues",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "Blues"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48394 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 - ALL AGES Mel Brown - drums Renato Caranto - sax Dan Balmer - guitar Louis Pain - organ \"If this band appeared in New York City, they'd be a sensation!\" That was guitar great--and one-time Mel Brown bandmate--George Benson's reaction af",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz",
+      "Blues"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": [
+          "Jazz",
+          "Blues"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13239/mel_br.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13239/2026-11-29",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48394",
+    "sourceShowId": "13239",
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-showdown-2026-11-29-dc4292610622",
     "title": "Casual Eddie",
     "subtitle": "Source-discovered venue event · details need review",
@@ -40906,6 +41365,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-11-29-dc447a7903c6",
+    "title": "David Dondero + John Shepski",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-11-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/david-dondero-john-shepski-november-29-2026-805022",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/david-dondero-john-shepski-november-29-2026-805022",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/022/compressed/5080d5_df7ae199b87844dd8153943255529922_mv2.jpg?1795410001",
+      "sourceUrl": "https://app.opendate.io/e/david-dondero-john-shepski-november-29-2026-805022",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -42195,6 +42705,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-12-02-336da5fc0fae",
+    "title": "FASHION CHANGE / BRAINWASH VICTIMS / WASTED STRIKE / AMERICAN SPECTRUM",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-02T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2026-12-02-7901535aa0cb",
     "title": "FREE! Trivia-sippi! Weekly Quiz Night!",
     "subtitle": "Source-discovered venue event · details need review",
@@ -42442,6 +42996,57 @@ window.SHOWS_EVENTS = [
       "method": "primary-source-collection"
     },
     "classificationEvidence": "Event-specific source wording"
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-02-a9c7d092e20c",
+    "title": "Pelican Ossman + Fronjentress + Almost Dark",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/pelican-ossman-fronjentress-almost-dark-december-02-2026-805023",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/pelican-ossman-fronjentress-almost-dark-december-02-2026-805023",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/023/compressed/a72725839_1x1_700.jpg?1795410321",
+      "sourceUrl": "https://app.opendate.io/e/pelican-ossman-fronjentress-almost-dark-december-02-2026-805023",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-jack-london-revue-2026-12-02-7e407106a040",
@@ -44456,6 +45061,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-12-04T19:00:00-08:00"
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-04-ce15d28ca7ec",
+    "title": "Sluzz + -IST + Orian's Cock + Casual Violence",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-04T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/sluzz-ist-orian-s-cock-casual-violence-december-04-2026-805024",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/sluzz-ist-orian-s-cock-casual-violence-december-04-2026-805024",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/024/compressed/Screenshot_2026-11-22_at_9.40.49%E2%80%AFPM.jpg?1795412479",
+      "sourceUrl": "https://app.opendate.io/e/sluzz-ist-orian-s-cock-casual-violence-december-04-2026-805024",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2026-12-04-79ee7422f975",
     "title": "THE BAD PLUS",
     "subtitle": "Source-discovered music listing · format and time need review",
@@ -45059,6 +45715,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-12-05-ee949dfa8469",
+    "title": "CLOSED 5-8PM",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-05T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -45942,6 +46642,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-05-eb3490820980",
+    "title": "Wonderhorse + Walkawy Wendies",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-05T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/wonderhorse-walkawy-wendies-december-05-2026-805025",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/wonderhorse-walkawy-wendies-december-05-2026-805025",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/025/compressed/0017505027_10.jpg?1795412798",
+      "sourceUrl": "https://app.opendate.io/e/wonderhorse-walkawy-wendies-december-05-2026-805025",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -47882,6 +48633,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-revolution-hall-2026-12-07-3590853340fe",
+    "title": "The Low Bar Chorale",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-07T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Show Bar at Revolution Hall",
+    "address": "1300 SE Stark St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Revolution Hall event card with complete year, exact room and explicitly labeled show time Official venue listing; lineup and show format need editorial review.",
+    "source": "Revolution Hall",
+    "url": "https://www.etix.com/ticket/p/42606869/the-low-bar-chorale-portland-show-bar-at-revolution-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Revolution Hall",
+        "url": "https://www.etix.com/ticket/p/42606869/the-low-bar-chorale-portland-show-bar-at-revolution-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/6c734edaabecb18cf190de496630a866.jpg",
+      "sourceUrl": "https://www.revolutionhall.com/",
+      "origin": "official-event-page",
+      "credit": "Official Revolution Hall event flyer via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "revolution-hall",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2026-12-07-1f0c1da4baa4",
     "title": "Tiny Habits",
     "subtitle": "Source-discovered venue event · details need review",
@@ -48079,6 +48881,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-16",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-twilight-2026-12-08-da72e5a7e198",
+    "title": "Twilight Open Mic Comedy Night-Hosted by Jess Bushnell",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Performance",
+    "tags": [
+      "Source-listed Performance",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-08T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Twilight Cafe and Bar",
+    "address": "832 SE Grand Ave, Portland, OR 97214",
+    "neighborhood": "Central Eastside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Twilight publishes this as performance start Official Twilight event schema",
+    "source": "Twilight Cafe and Bar",
+    "url": "https://www.twilightcafeandbar.com/event/469350/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Twilight Cafe and Bar",
+        "url": "https://www.twilightcafeandbar.com/event/469350/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://files.holdmyticket.com/image/upload/q_68,dn_72,f_auto/v6/uploads/flyers2/oitz0n1tqfxr2taattg8.jpg",
+      "sourceUrl": "https://www.twilightcafeandbar.com/event/469350/twilight-open-mic-comedy-night-hosted-by-jess-bushnell",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "twilight",
       "method": "primary-source-collection"
     }
   },
@@ -50127,6 +50980,57 @@ window.SHOWS_EVENTS = [
     "doorsAt": "2026-12-10T19:00:00-08:00"
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-10-2101bc495953",
+    "title": "Super Taken + Zwongr + Dan Lurie",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-10T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/super-taken-zwongr-dan-lurie-december-10-2026-805026",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/super-taken-zwongr-dan-lurie-december-10-2026-805026",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/026/compressed/Screenshot_2026-11-22_at_9.49.34%E2%80%AFPM.jpg?1795413149",
+      "sourceUrl": "https://app.opendate.io/e/super-taken-zwongr-dan-lurie-december-10-2026-805026",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-12-10-bc83eaf6d5f9",
     "title": "TEMPER CITY ~ 94/7fm December 2 Remember",
     "subtitle": "Source-discovered venue event · details need review",
@@ -50961,6 +51865,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-11-e49d423e372e",
+    "title": "Quickly Quickly + Swinging + Slipper Elm",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/quickly-quickly-swinging-slipper-elm-december-11-2026-805027",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/quickly-quickly-swinging-slipper-elm-december-11-2026-805027",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/027/compressed/Screenshot_2026-11-22_at_10.02.57%E2%80%AFPM.jpg?1795414027",
+      "sourceUrl": "https://app.opendate.io/e/quickly-quickly-swinging-slipper-elm-december-11-2026-805027",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-void-lord-support-tba-2026-12-11",
     "title": "Void Lord • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -51406,6 +52361,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-12-12-ecd81bba3fde",
+    "title": "LABRAT / POISE / DRY HEAVE / 22RE / ITS A SET UP",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-12T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -52208,6 +53207,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-turn-turn-turn-2026-12-12-59be7cc00b07",
+    "title": "Sea Holly + Gravure + Brotherhusbands + Quinn Gatsby",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: A benefit for Trans Inmates",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/sea-holly-gravure-brotherhusbands-quinn-gatsby-december-12-2026-805017",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/sea-holly-gravure-brotherhusbands-quinn-gatsby-december-12-2026-805017",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/017/compressed/Screenshot_2026-11-22_at_8.32.18%E2%80%AFPM.jpg?1795408407",
+      "sourceUrl": "https://app.opendate.io/e/sea-holly-gravure-brotherhusbands-quinn-gatsby-december-12-2026-805017",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "indie-no-softgaze-greyhound-go-support-tba-2026-12-12",
     "title": "Softgaze • Greyhound Go • support TBA",
     "subtitle": "Independent live show · style to be confirmed",
@@ -52693,6 +53744,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-12-cfb4b089adbd",
+    "title": "OK NOT OK (RADIOHEAD tribute) plays The Bends LIVE!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-12T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/32694648/ok-not-ok-radiohead-tributeplays-the-bends-live-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/32694648/ok-not-ok-radiohead-tributeplays-the-bends-live-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f2ee5d683bf10da65ae7a4d15fee1884.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-holocene-2026-12-12-fe599fcbee11",
     "title": "Santo Perreo: Reggaeton, Dembow, and Latin hits dance party",
     "subtitle": "Source-discovered venue event · details need review",
@@ -52995,6 +54098,58 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-13-a1e96d89384c",
+    "title": "Love Hiss (duo) + AC Sapphire + Elizabeth Veneble",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T16:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/love-hiss-duo-ac-sapphire-elizabeth-veneble-december-13-2026-805028",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/love-hiss-duo-ac-sapphire-elizabeth-veneble-december-13-2026-805028",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/805/028/compressed/Screenshot_2026-11-22_at_10.09.37%E2%80%AFPM.jpg?1795414334",
+      "sourceUrl": "https://app.opendate.io/e/love-hiss-duo-ac-sapphire-elizabeth-veneble-december-13-2026-805028",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -53506,6 +54661,110 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mississippi-polaris-2026-12-13-25aabd899a11",
+    "title": "ML Johnson (Release Show)",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mississippi Studios",
+    "address": "3939 N Mississippi Ave, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Tispur, Slow C",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/48776452/ml-johnson-release-show-portland-mississippi-studios",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/48776452/ml-johnson-release-show-portland-mississippi-studios",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f32b2c1c253ef51c796d373a984d42fb.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-13-4026f0e0c488",
+    "title": "Ruby Haunt",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-13T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: VHS Ghost",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/42616781/ruby-haunt-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/42616781/ruby-haunt-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/5425fcad6a1669a529b110e20fb2e2c6.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2026-12-13-beb29d71038c",
     "title": "Young the Giant",
     "subtitle": "Source-discovered venue event · details need review",
@@ -54006,6 +55265,58 @@ window.SHOWS_EVENTS = [
     "discovery": {
       "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mississippi-polaris-2026-12-14-e85a36bbc689",
+    "title": "Graham Hunt / 9Million",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Polaris Hall",
+    "address": "635 N Killingsworth Ct, Portland, OR 97217",
+    "neighborhood": "Humboldt",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original venue calendar explicitly labels doors and a separate showtime, plus exact date and venue Original Mississippi/Polaris room-verified official event listing. Supporting artists: Amulets",
+    "source": "Mississippi Studios / Polaris Hall",
+    "url": "https://www.etix.com/ticket/p/44720856/graham-hunt-9million-portland-polaris-hall",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mississippi Studios / Polaris Hall",
+        "url": "https://www.etix.com/ticket/p/44720856/graham-hunt-9million-portland-polaris-hall",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/785bd96cfbbf20faade2341f7012f9bb.jpg",
+      "sourceUrl": "https://mississippistudios.com/calendar",
+      "origin": "official-venue-calendar",
+      "credit": "Venue-provided event flyer",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mississippi-polaris",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
     }
   },
   {
@@ -55002,6 +56313,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-12-17-dac6bc5e7035",
+    "title": "SAD GIRL : SOLSTICE DRAG",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-17T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-17-3dfd56d32a0c",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -55551,6 +56906,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "45-east",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-12-18-b020152f227a",
+    "title": "NIGHTFELL / SPIRIT POSSESSION / PUERTA NEGRA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-18T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -56339,6 +57738,50 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-19",
     "discovery": {
       "sourceId": "kenton-club",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-black-water-2026-12-19-1372ccfab7d3",
+    "title": "MAX + MARS PRESENT : MOM & DAD'S NIGHT IN : AN EVENING OF QUEER PERFORMANCE FOR THE WHOLE FAMILY",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-19T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
       "method": "primary-source-collection"
     }
   },
@@ -57871,6 +59314,57 @@ window.SHOWS_EVENTS = [
     "classificationSourceUrl": "https://www.bandslate.com/band/early-moods"
   },
   {
+    "id": "auto-star-theater-2026-12-20-3dbbb7908a6e",
+    "title": "CHURCH OF HIVE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-20T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Star Theater",
+    "address": "13 NW Sixth Avenue, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Star Theater listing identifies show time Official Star Theater event calendar listing",
+    "source": "Star Theater",
+    "url": "https://www.startheaterportland.com/tm-event/church-of-hive-13/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Star Theater",
+        "url": "https://www.startheaterportland.com/tm-event/church-of-hive-13/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/57/71/13_Original.jpg?v=5",
+      "sourceUrl": "https://www.startheaterportland.com/tm-event/church-of-hive-13/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "star-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-dantes-2026-12-20-2bfdee92d892",
     "title": "SINFERNO CABARET",
     "subtitle": "Source-discovered venue event · details need review",
@@ -58899,6 +60393,51 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-starday-tavern-2026-12-24-7fde8b342c6d",
+    "title": "Limited Hours",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-24T17:00:00-08:00",
+    "endsAt": null,
+    "venue": "Starday Tavern",
+    "address": "6517 SE Foster Rd, Portland, OR 97206",
+    "neighborhood": "Foster-Powell",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Starday public Google calendar publishes the event start and timezone; verify whether this is doors or showtime Original venue calendar entry; lineup, genre, doors/show distinction and original event status require editorial verification",
+    "source": "Starday Tavern",
+    "url": "https://www.google.com/calendar/event?eid=MGFkZnIwYnNpczMxdjg0aW5tdnRlZWQyMm8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Starday Tavern",
+        "url": "https://www.google.com/calendar/event?eid=MGFkZnIwYnNpczMxdjg0aW5tdnRlZWQyMm8gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "starday-tavern",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-24-b6b74622aeef",
     "title": "Deer Lodge",
     "subtitle": "Source-discovered venue event · details need review",
@@ -59364,6 +60903,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2026-12-26-9128dcc602c2",
+    "title": "BURLY-Q REVUE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-26T22:30:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: Join us at the Jack London for the latest edition of our late-night cabaret spectacular, hosted by the Mad Marquis and featuring some of the finest dancers from the Rose City and beyond. Treat yourself to a sensational evening of sultry and exotic delights, ",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-7/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-7/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/12/77/00/04_Original.jpg?v=5",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/burly-q-revue-7/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-27-f36e2079d8b7",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -59784,6 +61375,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-21",
     "discovery": {
       "sourceId": "no-fun",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-street-pub-2026-12-28-554f35eaa422",
+    "title": "OLD FRIENDS TOUR - JUNKYARD AMY LEE // MARAY FUEGO // DANTÉ MANALO",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-28T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. COVER: $10 AT THE DOOR",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2026/12/28/old-friends-tour-junkyard-amy-lee-maray-fuego-dant-manalo",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2026/12/28/old-friends-tour-junkyard-amy-lee-maray-fuego-dant-manalo",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1795544100687-8UHLY6ZP80HB6TLCQC3Z/Image-1+6.jpeg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2026/12/28/old-friends-tour-junkyard-amy-lee-maray-fuego-dant-manalo",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
       "method": "primary-source-collection"
     }
   },
@@ -60479,6 +62121,50 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-black-water-2026-12-31-7577f057aaf7",
+    "title": "NYE PARTY!!!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "date-only",
+    "startsAt": "2026-12-31T00:00:00-08:00",
+    "endsAt": null,
+    "venue": "Black Water",
+    "address": "5115 NE Sandy Blvd, Portland, OR 97213",
+    "neighborhood": "Rose City Park",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Date confirmed by venue; no time published Official Black Water public calendar entry",
+    "source": "Black Water",
+    "url": "https://bar.blackwaterpdx.com/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Black Water",
+        "url": "https://bar.blackwaterpdx.com/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "black-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-mission-theater-2026-12-31-336d0da257f7",
     "title": "Mission Theater History & Art Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -60676,6 +62362,60 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-holocene-2026-12-31-e11c2a0e523b",
+    "title": "NEW YEAR, NEW DIVA: NYE DISCO SPA",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-31T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2026-12-31-new-year-new-diva-nye-disco-spa",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2026-12-31-new-year-new-diva-nye-disco-spa",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/f4e498c268f5e989a6108a3dff415220.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2026-12-31-new-year-new-diva-nye-disco-spa",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "holocene",
       "method": "primary-source-collection"
     }
   },
@@ -62149,6 +63889,112 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-jack-london-revue-2027-01-07-a16f7f75a33e",
+    "title": "CHUCK ISRAELS JAZZ ORCH - Jazz Titan Thursdays",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-07T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Jack London Revue",
+    "address": "529 SW 4th Ave, Portland, OR 97204",
+    "neighborhood": "Downtown",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original JLR event detail verifies full date, venue and showtime separately from doors; the date and clocks match the first-party roster. Original venue event: C huck Israels, revered as one of the preeminent bassists in the world, GRAMMY winner has performed and recorded with Billie Holiday, Benny Goodman, Herbie Hancock, John Coltrane, Bud Powell, Coleman Hawkins, Stan Getz, Bill Evans, J.J. Johnson, Rosemary Clo",
+    "source": "Jack London Revue",
+    "url": "https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-2/",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Jack London Revue",
+        "url": "https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/38/73_Original.jpg?v=3",
+      "sourceUrl": "https://www.jacklondonrevue.com/tm-event/chuck-israels-jazz-orch-jazz-titan-thursdays-2/",
+      "origin": "official-event-page",
+      "credit": "Original TicketWeb artwork linked by Jack London Revue",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "jack-london-revue",
+      "method": "primary-source-collection",
+      "verifiedOriginalShowTime": true
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-08-f7fca6845ce9",
+    "title": "WINTERFEST 2027 - DAY 1",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-08T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/winterfest-2027-day-1/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/winterfest-2027-day-1/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/50/63_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/winterfest-2027-day-1/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-crystal-ballroom-2027-01-08-5bf206eae5e4",
     "title": "Battle of the McMenamins Bands",
     "subtitle": "Source-discovered venue event · details need review",
@@ -62249,6 +64095,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2027-01-08-da243b1f84b5",
+    "title": "Rose Gerber and The Lowtimers",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-08T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 20:00 (Doors 19:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/rose-gerber-and-the-lowtimers/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/rose-gerber-and-the-lowtimers/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/65/56/83_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/rose-gerber-and-the-lowtimers/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-atlantis-lounge-2027-01-09-16191e07d5bf",
     "title": "Gleneden + Gillian Lockwood",
     "subtitle": "Source-discovered venue event · details need review",
@@ -62292,6 +64189,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-09",
     "discovery": {
       "sourceId": "atlantis-lounge",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-01-09-e379eec660b0",
+    "title": "WINTERFEST 2027 - DAY 2",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-09T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/winterfest-2027-day-2/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/winterfest-2027-day-2/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/50/83_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/winterfest-2027-day-2/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -62695,6 +64643,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "lolas-room",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-mission-theater-2027-01-11-5dbb8d08b984",
+    "title": "Borneo's Forests & Elephants Forest Pub",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-11T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "Mission Theater",
+    "address": "1624 NW Glisan St, Portland, OR 97209",
+    "neighborhood": "Northwest District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue card and year-bearing event search data agree on event identity, title and weekday/date. Published starting-time label: show. Original Mission Theater event card; review format and genres. Doors remain distinct; a show label alone does not establish a concert.",
+    "source": "Mission Theater",
+    "url": "https://www.mcmenamins.com/events/280044-borneos-forests-elephants",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mission Theater",
+        "url": "https://www.mcmenamins.com/events/280044-borneos-forests-elephants",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.mcmenamins.com/system/uploads/MadborgAssets/FPBorneo26.jpg",
+      "sourceUrl": "https://www.mcmenamins.com/events/280044-borneos-forests-elephants",
+      "origin": "official-venue-calendar",
+      "credit": "McMenamins Mission Theater event-card image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mission-theater",
       "method": "primary-source-collection"
     }
   },
@@ -63988,6 +65987,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-showdown-2027-01-18-0d2cc0e68b0e",
+    "title": "Square Dancing with Caller Steph Noll and Big Chimney Barn Dance",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-18T19:00:00-08:00",
+    "endsAt": null,
+    "venue": "The Showdown",
+    "address": "1195 SE Powell Blvd, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Showdown listing explicitly says Show 19:00 (Doors 18:00); original event-specific Google Calendar confirms 2027 date and time. Official The Showdown event listing; editorially verify category and genre.",
+    "source": "The Showdown",
+    "url": "https://www.showdownpdx.com/tm-event/square-dancing-with-caller-steph-noll-and-big-chimney-barn-dance/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "The Showdown",
+        "url": "https://www.showdownpdx.com/tm-event/square-dancing-with-caller-steph-noll-and-big-chimney-barn-dance/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/66/23_Original.jpg",
+      "sourceUrl": "https://www.showdownpdx.com/tm-event/square-dancing-with-caller-steph-noll-and-big-chimney-barn-dance/",
+      "origin": "official-venue-calendar",
+      "credit": "Original Showdown event artwork, distributed by TicketWeb",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "showdown",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-01-18-415d942d9d17",
     "title": "AJ McLean Presents Alexander James : The Better Man Tour",
     "subtitle": "Source-discovered venue event · details need review",
@@ -64999,6 +67049,58 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-01-23-decec3e52d97",
+    "title": "KLUB NOCTURNO: Haus Party Portland",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Source event type: MusicEvent",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-23T21:30:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-01-23-klub-nocturno-haus-party-portland-rock-en-espanol-cumbia-reggaeton-80s-new-wave",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-01-23-klub-nocturno-haus-party-portland-rock-en-espanol-cumbia-reggaeton-80s-new-wave",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/741629a15c1c6004a561bf5d7e6f7686.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-01-23-klub-nocturno-haus-party-portland-rock-en-espanol-cumbia-reggaeton-80s-new-wave",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-the-off-beat-2027-01-25-9525ae173c54",
     "title": "1/25 SECOND SHOW ADDED! Fifteen, All Girl Summer Fun Band (Benefit Show)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -65806,6 +67908,57 @@ window.SHOWS_EVENTS = [
       "policyVersion": 1,
       "mode": "trusted-original-addition",
       "sourceId": "jack-london-revue"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-01-29-d7160806db95",
+    "title": "Dina Martina",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-01-29T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/83189114/dina-martina-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/83189114/dina-martina-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/234d0c11a3f8060b04c42cd4d742c337.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/83189114/dina-martina-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
     }
   },
   {
@@ -67082,6 +69235,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-02-06-5521c5f41145",
+    "title": "Taken by the Sky – Fleetwood Mac Tribute: Rumours 50th Anniversary",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-06T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/54642823/taken-by-the-sky-fleetwood-mac-tributerumours-50th-anniversary-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/54642823/taken-by-the-sky-fleetwood-mac-tributerumours-50th-anniversary-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/e8e7328038cbba44189b3f310e2e528b.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/54642823/taken-by-the-sky-fleetwood-mac-tributerumours-50th-anniversary-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2027-02-07-16d49a50a6bd",
     "title": "Kahil El'Zabar - Ethnic Heritage Ensemble - Black History Month Tour - EARLY SHOW",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68248,6 +70452,62 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-holocene-2027-02-14-c1c85877e725",
+    "title": "CITY POP Valentine's!! Japanese Boogie, J-jazz, & New Wave Night",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Source-mentioned Funk & disco",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz",
+      "Funk & disco"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-14T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Holocene",
+    "address": "1001 SE Morrison St, Portland, OR 97214",
+    "neighborhood": "Buckman",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Holocene structured event data publishes a date/year and time; the site may label this as doors, not performance start Original venue event page; confirm actual performance start versus doors, event status and image rights during review",
+    "source": "Holocene",
+    "url": "https://www.holocene.org/events/2027-02-14-city-pop-valentine-s-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Holocene",
+        "url": "https://www.holocene.org/events/2027-02-14-city-pop-valentine-s-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/445ea6a6da84db1665d43a3ce9dfa415.jpg",
+      "sourceUrl": "https://www.holocene.org/events/2027-02-14-city-pop-valentine-s-japanese-boogie-j-jazz-new-wave-night-w-seaside-fm-joe-ball",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "holocene",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-alberta-rose-theatre-2027-02-16-4a352342e3f0",
     "title": "Consider This with Rukaiyah Adams",
     "subtitle": "Source-discovered venue event · details need review",
@@ -68444,6 +70704,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-02",
     "discovery": {
       "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-02-17-f1f798518f39",
+    "title": "BEYOND CREATION “The Aura” 15th Anniversary Tour with Decrepit Birth & Vulvodynia",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-17T18:45:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/beyond-creation-the-aura-15th-anniversary-tour-with-decrepit-birth-vulvodynia/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/beyond-creation-the-aura-15th-anniversary-tour-with-decrepit-birth-vulvodynia/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/34/53_Original.jpg?v=4",
+      "sourceUrl": "https://www.danteslive.com/tm-event/beyond-creation-the-aura-15th-anniversary-tour-with-decrepit-birth-vulvodynia/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
@@ -68691,6 +71002,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-06",
     "discovery": {
       "sourceId": "jack-london-revue",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-alberta-street-pub-2027-02-19-16084872692b",
+    "title": "STEVE MIC AND THE HOLD TIGHTS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-19T18:00:00-08:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. COVER - $10 AT THE DOOR",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2027/2/19/steve-mic-and-the-hold-tights",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2027/2/19/steve-mic-and-the-hold-tights",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1795545302190-9R9VLELIQKDGM40HERBH/Image-1+3.jpg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2027/2/19/steve-mic-and-the-hold-tights",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
       "method": "primary-source-collection"
     }
   },
@@ -74724,6 +77086,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-alberta-street-pub-2027-03-30-01d09bee94c1",
+    "title": "HEARTBREAK HEAVEN TOUR - NIGHT TALKS WITH CHIPPED NAIL POLISH & WISEACRE",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-03-30T19:00:00-07:00",
+    "endsAt": null,
+    "venue": "Alberta Street Pub",
+    "address": "1036 NE Alberta Street, Portland, OR 97211",
+    "neighborhood": "Alberta Arts District",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Alberta Street Pub's original Squarespace event record supplies the start and end timestamp; exact performance-versus-doors distinction is unconfirmed. Original venue event listing. BUY YOUR TICKETS NOW!",
+    "source": "Alberta Street Pub",
+    "url": "https://www.albertastreetpub.com/music/2027/3/30/heartbreak-heaven-tour-night-talks-with-chipped-nail-polish-amp-wiseacre",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Alberta Street Pub",
+        "url": "https://www.albertastreetpub.com/music/2027/3/30/heartbreak-heaven-tour-night-talks-with-chipped-nail-polish-amp-wiseacre",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54109e68e4b06b163549a8dc/1795544969087-IRZEII2313ADRL7FQD0U/Image-1+7.jpeg",
+      "sourceUrl": "https://www.albertastreetpub.com/music/2027/3/30/heartbreak-heaven-tour-night-talks-with-chipped-nail-polish-amp-wiseacre",
+      "origin": "official-venue-calendar",
+      "credit": "Alberta Street Pub official event calendar",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "alberta-street-pub",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-star-theater-2027-03-30-5d900e57fb08",
     "title": "CAIOLA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -76087,6 +78500,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-aladdin-theater-2027-04-08-2efd39619935",
+    "title": "PISS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-08T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/98333044/piss-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/98333044/piss-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/8de97fc333be1103ccdd31ce2313ac76.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/98333044/piss-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-hawthorne-theatre-2027-04-09-0acbd41bb086",
     "title": "Stomach Book",
     "subtitle": "Source-discovered venue event · details need review",
@@ -76487,6 +78951,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-mammoth-nw-2027-04-15-3587ecca3abe",
+    "title": "Drakulas",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-15T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Hawthorne Lounge",
+    "address": "1507 SE 39th Ave, Portland, OR 97214",
+    "neighborhood": "Sunnyside",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Mammoth original promoter detail independently confirms weekday, full date/year, room, and Show clock; Doors is not used as start time First-party Mammoth Northwest promoter listing for Hawthorne Lounge. Verify status and event format before publication.",
+    "source": "Mammoth Northwest",
+    "url": "https://mammothnw.com/event/drakulas/hawthorne-theatre-lounge/portland-oregon/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Mammoth Northwest",
+        "url": "https://mammothnw.com/event/drakulas/hawthorne-theatre-lounge/portland-oregon/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://mammothnw.com/wp-content/uploads/2026/11/drakulas.jpeg",
+      "sourceUrl": "https://mammothnw.com/event/drakulas/hawthorne-theatre-lounge/portland-oregon/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "mammoth-nw",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-wonder-ballroom-2027-04-16-e888886101d4",
     "title": "Slow Crush",
     "subtitle": "Source-discovered venue event · details need review",
@@ -76883,6 +79398,57 @@ window.SHOWS_EVENTS = [
       "usageApproved": null
     },
     "addedIn": "auto-discovery-2026-11-20",
+    "discovery": {
+      "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-aladdin-theater-2027-04-24-1e0a56f1e8d1",
+    "title": "Portland's 5th Annual RUSH Party with The RUSH Collective",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-04-24T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Aladdin Theater",
+    "address": "3017 SE Milwaukie Ave, Portland, OR 97202",
+    "neighborhood": "Brooklyn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official Aladdin card independently matches its UTC doors date, printed Pacific doors/show clocks, full weekday/date (or source-backed relative label), and exact ticket event ID. Original Aladdin venue listing. Event type and genres require review.",
+    "source": "Aladdin Theater",
+    "url": "https://www.etix.com/ticket/p/88684582/portlands-5th-annual-rush-party-with-the-rush-collective-portland-aladdin-theater",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Aladdin Theater",
+        "url": "https://www.etix.com/ticket/p/88684582/portlands-5th-annual-rush-party-with-the-rush-collective-portland-aladdin-theater",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://cdn.etix.com/etix/performance-image/performance_image_1200w/b1c80bc2b79c0bf2ad175726ad4a31be.jpg",
+      "sourceUrl": "https://www.etix.com/ticket/p/88684582/portlands-5th-annual-rush-party-with-the-rush-collective-portland-aladdin-theater",
+      "origin": "official-venue-calendar",
+      "credit": "Aladdin Theater event image via venue-linked Etix",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
     "discovery": {
       "sourceId": "aladdin-theater",
       "method": "primary-source-collection"
@@ -80589,6 +83155,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-20",
     "discovery": {
       "sourceId": "mission-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-crystal-ballroom-2027-10-30-f7b9c8636bbe",
+    "title": "The 27th Annual Portland Erotic Ball",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-10-30T20:00:00-07:00",
+    "endsAt": null,
+    "venue": "Crystal Ballroom",
+    "address": "1332 W Burnside St, Portland, OR 97209",
+    "neighborhood": "West End",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original Crystal Ballroom Event structured data publishes exact Pacific date/year and starting time Original Crystal Ballroom event page; verify doors versus event start, lineup, event status and artwork rights before approval",
+    "source": "Crystal Ballroom",
+    "url": "https://www.crystalballroompdx.com/events/280351-the-27th-annual-portland-erotic-ball/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-24",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Crystal Ballroom",
+        "url": "https://www.crystalballroompdx.com/events/280351-the-27th-annual-portland-erotic-ball/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-24",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://www.crystalballroompdx.com/wp-content/uploads/2026/11/EroticBall27-7RKPjP.jpg",
+      "sourceUrl": "https://www.crystalballroompdx.com/events/280351-the-27th-annual-portland-erotic-ball/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-24",
+    "discovery": {
+      "sourceId": "crystal-ballroom",
       "method": "primary-source-collection"
     }
   },

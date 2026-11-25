@@ -1,22 +1,22 @@
 # SHOWS artwork backfill — review report
 
-Generated 2026-11-22T21:57:30.603Z; Portland date: 2026-11-22. This workflow does not publish images.
+Generated 2026-11-25T00:54:02.700Z; Portland date: 2026-11-24. This workflow does not publish images.
 Image URLs must be reviewed for event identity, attribution, suitability and usage terms before approval. No files are mirrored.
 
 ## Outcome
 
-- Upcoming music listings: **234**
-- Already have image references: **179**
-- Missing artwork: **55**
-- Missing listings with supported individual source pages: **12**
-- Missing listings needing another source or individual permalink: **43**
-- Highest priority: **2026-11-22 and 2026-11-23** (all event types, including unknown)
-- Near-term events: **32**; eligible source pages: **7**
-- Near-term eligible source rechecks this run: **7** of **7** (never truncated by the backlog budget)
-- Missing music artwork beyond tomorrow: **1** in coming week, **10** beyond
-- Rotating older-art batch: **0** of **0** (requested 90; backlog budget 200; total requests include all eligible today/tomorrow)
+- Upcoming music listings: **249**
+- Already have image references: **199**
+- Missing artwork: **50**
+- Missing listings with supported individual source pages: **11**
+- Missing listings needing another source or individual permalink: **39**
+- Highest priority: **2026-11-24 and 2026-11-25** (all event types, including unknown)
+- Near-term events: **35**; eligible source pages: **9**
+- Near-term eligible source rechecks this run: **9** of **9** (never truncated by the backlog budget)
+- Missing music artwork beyond tomorrow: **0** in coming week, **10** beyond
+- Rotating older-art batch: **0** of **0** (requested 92; backlog budget 200; total requests include all eligible today/tomorrow)
 - Missing older-art entries not examined in this run: **0** (distributed across subsequent runs)
-- Total original event-page requests attempted: **18**; artwork proposed: **0**; other responses: **13**
+- Total original event-page requests attempted: **19**; artwork proposed: **0**; other responses: **12**
 
 ## Today and tomorrow — original-source freshness checks
 
@@ -24,63 +24,65 @@ A source title match confirms the linked page still mentions this bill; it does 
 
 | Event and venue | Previously checked | Current source-page result | Original URL |
 | --- | --- | --- | --- |
-| Psycroptic with Inferi, Cognitive & Summoning the Lich (Star Theater) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.startheaterportland.com/tm-event/psycroptic-with-inferi-cognitive-summoning-the-lich/ |
-| Amy Bleu • TBA • TBA (No Fun) | 2026-10-18 | HTTP_404 | https://www.nofunportland.com/events/amy-bleu-tba-tba |
-| 1 Umbrella (Hawthorne Theatre) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/1-umbrella/hawthorne-theatre/portland-oregon/ |
-| Woe Nelly + Jean Shorts Jesus + Swallow the Moon (Turn! Turn! Turn!) | 2026-11-22 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/woe-nelly-jean-shorts-jesus-swallow-the-moon-november-22-2026-804618 |
-| TV VIKING followed by Sinferno Cabaret (Dante's) | 2026-10-21 | FETCH_ERROR | https://www.danteslive.com/tm-event/tv-viking-followed-by-sinferno-cabaret/ |
-| Bridgetown Trivia (No Fun) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://www.nofunportland.com/events/whlp2bp99sd33fp9hzlsrlysx9wefg |
-| KARAOKE FROM HELL (Dante's) | 2026-11-16 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/karaoke-from-hell-116/ |
-| King Farmers Market (King Farmers Market) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.portlandfarmersmarket.org/our-markets/king/ |
-| Lents International Farmers Market (Lents International Farmers Market · The ZED) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.portlandfarmersmarket.org/our-markets/lents-international/ |
-| NoPo Creatives Arts Market (Peninsula Odd Fellows Lodge) | 2026-11-03 | Source URL not eligible for original-page recheck | https://nopocreatives.com/vendor-information/ |
-| PDX Moon Market (Everett West) | 2026-11-03 | Source URL not eligible for original-page recheck | https://www.pdxmoonmarket.com/ |
-| Lukas Gienapp (Alberta Street Pub) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/11/8/lukas-gienapp |
-| Chuck Israels Trio — 5:30 PM show (The 1905) | 2026-11-20 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13234/2026-11-22 |
-| Jen Howard (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=NnJwYXBib3YxN2c2cG92cHN1aHFjNDlnaDcgbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
-| Mx. Dahlia Belle: Affirmed (A Live Comedy Taping) (Polaris Hall) | 2026-11-08 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/36347493/mxdahlia-belleaffirmed-a-live-comedy-taping-portland-polaris-hall |
-| ERIC SKYE TRIO Plays Miles Davis featuring Tye North and Michah Kassell (Show Bar at Revolution Hall) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/49532598/eric-skye-trio-plays-miles-davis-featuring-tye-north-and-michah-kassell-portland-show-bar-at-revolution-hall |
-| Chuck Israels Trio — 7:30 PM show (The 1905) | 2026-11-20 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13234/2026-11-22 |
-| Atomic Rule (Andy Williams formerly of ETID) • guest (Twilight Cafe and Bar) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.twilightcafeandbar.com/calendar/ |
-| SOLD OUT: Haley Heynderickx (Aladdin Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/47564925/sold-outhaley-heynderickx-portland-aladdin-theater |
-| Hungry Hungry Hip Hop (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/hungry-hungry-hip-hop-10/ |
-| Jack Bensinger (Mississippi Studios) | 2026-11-08 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/90187834/jack-bensinger-portland-mississippi-studios |
-| Casual Eddie (The Showdown) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.showdownpdx.com/tm-event/casual-eddie-5/ |
-| Sunday Session Presents Ms. Vee & A Badass Band Featuring Yella P (Alberta Street Pub) | 2026-11-18 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/11/22/sunday-session-presents-ms-vee-amp-a-badass-band-featuring-yella-p |
-| Stankaroke (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=N2ZvN2kxZWloN3ZtaW5tZjdkMm80YTF0dWhfMjAyNjExMjNUMDUwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
-| JALLANZO / DUB KHLAAT / BLIND PROPHET / MIKEY DUB (Black Water) | 2026-11-02 | Source URL not eligible for original-page recheck | https://bar.blackwaterpdx.com/ |
-| Comedy & Monday Night Football Hosted by Hazel Dell Hottie (Alberta Street Pub) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj |
-| FREE! The Front Porch Swingers (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/free-the-front-porch-swingers/ |
-| Open Mic with Lucas Benoit (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=ZXR1aHNtZnVrZ2IxZWk4dDY3bzBoY2hkdHZfMjAyNjExMjRUMDIzMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
-| Senses Fail (Crystal Ballroom) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.mcmenamins.com/crystal-ballroom |
-| Haley Heynderickx (Aladdin Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/40830725/haley-heynderickx-portland-aladdin-theater |
-| Local Love Letter #30: Victory Over The Sun (Mississippi Studios) | 2026-11-08 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/50476902/local-love-letter-30victory-over-the-sun-portland-mississippi-studios |
-| Babe Haven (Polaris Hall) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/59224066/babe-haven-portland-polaris-hall |
+| Twilight Open Mic Comedy Night-Hosted by Jess Bushnell (Twilight Cafe and Bar) | 2026-11-24 | SOURCE_TITLE_TOKEN_MATCH | https://www.twilightcafeandbar.com/event/469347/twilight-open-mic-comedy-night-hosted-by-jess-bushnell |
+| Distant (Dante's) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://www.danteslive.com/tm-event/distant-with-heavy-hitter-torn-open-katywentmissing/ |
+| Jen Howard • TBA • TBA (No Fun) | 2026-10-18 | HTTP_404 | https://www.nofunportland.com/events/jen-howard-tba-tba |
+| "The Comedy Wonderland"-A Comedy Stand-up Showcase (Twilight Cafe and Bar) | 2026-10-29 | SOURCE_STATUS_REVIEW | https://www.twilightcafeandbar.com/event/468547/the-comedy-wonderland-a-comedy-stand-up-showcase |
+| Boston Manor (Hawthorne Theatre) | 2026-10-17 | SOURCE_TITLE_TOKEN_MATCH | https://hawthornetheatre.com/event/boston-manor/hawthorne-theatre/portland-oregon/ |
+| KJ Eggbert Cleavage (Turn! Turn! Turn!) | 2026-11-24 | SOURCE_TITLE_TOKEN_MATCH | https://app.opendate.io/e/kj-eggbert-cleavage-november-24-2026-805007 |
+| Ayria with Die Robot (The Coffin Club) | 2026-11-03 | SOURCE_TITLE_TOKEN_MATCH | https://tickets.venuepilot.com/e/ayria-2026-11-24-the-coffin-portland-a90f70 |
+| Fire Cider Craft Night-Make Your Own Fire Cider! (Twilight Cafe and Bar) | 2026-11-03 | SOURCE_TITLE_TOKEN_MATCH | https://www.twilightcafeandbar.com/event/468712/fire-cider-craft-night-make-your-own-fire-cider |
+| NO FUN KARAOKE (No Fun) | 2026-10-21 | SOURCE_TITLE_TOKEN_MATCH | https://www.nofunportland.com/events/7w4x5f6tttx5p4dg7d4bybhkkltfzw |
+| Alter Bridge with Big Wreck & Tim Montana (Roseland Theater) | 2026-10-17 | Source URL not eligible for original-page recheck | https://roselandpdx.com/events/ |
+| Bridgetown Trivia on the Heated Patio! (Alberta Street Pub) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2023/3/13/bridgetown-trivia-on-the-heated-patio-6cwzx-dg47h-78jwb-2lt32-azz6n-gd4lz-rd6wg-6ghnc-653hl-dnb5c-42dcy-r6ztl-37cda-7ljxc-fwzrf-73ywh |
+| Portland School III (Polaris Hall) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/36916561/portland-school-iii-portland-polaris-hall |
+| Atlantis Open Mic (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/atlantis-open-mic-8/ |
+| Chorale For A Cause (Mississippi Studios) | 2026-11-10 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/88154444/chorale-for-a-cause-portland-mississippi-studios |
+| Two-Step Tuesday with Best Intentions and Dance Lessons with Robbie (The Showdown) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.showdownpdx.com/tm-event/two-step-tuesday-5/ |
+| Spanish Love Songs (Holocene) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.holocene.org/events/2026-11-24-spanish-love-songs-the-cost-of-living-tour |
+| Karaoke Night - Free! (High Water Mark Lounge) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.treetix.com/event/204723/highwatermark |
+| Romo's Party Portal Shaqtime (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=MXRtdHYwc2FwZWczdWI3amVzMXBjaThqMzhfMjAyNjExMjVUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
+| Shemanski Park Farmers Market · Harvest Market (Shemanski Park Farmers Market) | 2026-10-17 | Source URL not eligible for original-page recheck | https://www.portlandfarmersmarket.org/our-markets/shemanski-park/ |
+| Wednesday Night Social - Cigars, Dominos & Music (Alberta Street Pub) | 2026-11-09 | Source URL not eligible for original-page recheck | https://www.albertastreetpub.com/music/2023/10/18/wednesday-night-social-fkf88-mke97-4227c-l64xx-gss68-cjzan-8lsw3-nbgjn-yr6pm-6kblr-ff6b5-lsmb9-hkw2h-f5mft-hfbdc-nddag-sg2pm-ylbtn-7mp5t-b64gk-lwx2r-6dg2k |
+| FREE! Trivia-sippi! Weekly Quiz Night! (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/free-trivia-sippi-weekly-quiz-night-63/ |
+| Noah Powell & The Fantastic Happy Hour Band (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=MDFlZ2FsaG5tazFyYmpyZnUxNGI2NmdoZjBfMjAyNjExMjZUMDIwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
+| Greaterkind — 6:30 PM show (The 1905) | 2026-11-21 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13332/2026-11-25 |
+| Saosin with Silent Planet, Like Moths to Flames & Save Us (Roseland Theater) | 2026-10-17 | Source URL not eligible for original-page recheck | https://roselandpdx.com/events/ |
+| Intermediate Two-Step Lessons with Peggy and Dillon (The Showdown) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.showdownpdx.com/tm-event/intermediate-two-step-lessons-with-peggy-and-dillon-19/ |
+| SOLD OUT: Emma Ruth Rundle - THESE KILLING TIMES (Aladdin Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/53477310/sold-outemma-ruth-rundle-these-killing-times-portland-aladdin-theater |
+| INFINITY (Jack London Revue) | 2026-11-06 | Source URL not eligible for original-page recheck | https://www.jacklondonrevue.com/tm-event/infinity/ |
+| The Shindig Show with Jimmy Shin (Mission Theater) | 2026-10-29 | Source URL not eligible for original-page recheck | https://www.mcmenamins.com/events/279116-the-shindig-show-with-jimmy-shin |
+| The Pynnacles + Jewelry Exchange (Mississippi Studios) | 2026-11-10 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/36469338/the-pynnacles-jewelry-exchange-portland-mississippi-studios |
+| Scott Bradlee’s Postmodern Jukebox – The Future Is Vintage World Tour (Revolution Hall) | 2026-11-07 | Source URL not eligible for original-page recheck | https://www.etix.com/ticket/p/33093850/scott-bradlees-postmodern-jukebox-the-future-is-vintage-world-tour-portland-revolution-hall |
+| Mango Twist- Live Music & Dancing! (Mississippi Pizza / Atlantis Lounge) | 2026-11-08 | Source URL not eligible for original-page recheck | https://mississippipizza.com/event/mango-twist-live-music-dancing-26/ |
+| Greaterkind — 8:30 PM show (The 1905) | 2026-11-21 | Source URL not eligible for original-page recheck | https://the1905.turntabletickets.com/shows/13332/2026-11-25 |
+| FLASH TRASH: An Electro Dance Party feat. guest DJ set by UFFIE (Holocene) | 2026-11-02 | Source URL not eligible for original-page recheck | https://www.holocene.org/events/2026-11-25-flash-trash-an-electro-dance-party-feat-guest-dj-set-by-uffie |
+| House Wednesday (Nova PDX) | 2026-11-02 | Source URL not eligible for original-page recheck | https://tixr.com/e/204565 |
+| Emo Night w Reggie (Starday Tavern) | 2026-10-24 | Source URL not eligible for original-page recheck | https://www.google.com/calendar/event?eid=ajg1NWhhbzU1M2lvbWJqcWI1azdjYjhkdTlfMjAyNjExMjZUMDYwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
 
 ## Event-specific original-page check outcomes
 
-- HTTP_404: 9
-- SOURCE_TITLE_TOKEN_MATCH: 5
+- HTTP_404: 8
+- SOURCE_TITLE_TOKEN_MATCH: 7
 - NO_EVENT_IMAGE: 3
-- FETCH_ERROR: 1
+- SOURCE_STATUS_REVIEW: 1
 
 ## Missing music artwork by venue
 
 | Venue | Missing | Eligible individual pages |
 | --- | ---: | ---: |
-| No Fun | 15 | 12 |
-| Mississippi Pizza / Atlantis Lounge | 13 | 0 |
+| No Fun | 14 | 11 |
 | Kenton Club | 11 | 0 |
+| Mississippi Pizza / Atlantis Lounge | 11 | 0 |
 | High Water Mark Lounge | 4 | 0 |
 | Revolution Hall | 2 | 0 |
-| Twilight Cafe and Bar | 2 | 0 |
 | Wonder Ballroom | 2 | 0 |
-| Crystal Ballroom | 1 | 0 |
 | High Limit Room | 1 | 0 |
 | Jack London Revue | 1 | 0 |
 | Moda Center | 1 | 0 |
 | Roseland Theater | 1 | 0 |
 | Starday Tavern | 1 | 0 |
+| Twilight Cafe and Bar | 1 | 0 |
 
 ## Proposed source-linked artwork
 
@@ -88,9 +90,8 @@ No new verified images proposed in this batch. The action completed successfully
 
 ## Unsupported or unavailable source pages
 
-- Amy Bleu • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/amy-bleu-tba-tba
-- TV VIKING followed by Sinferno Cabaret (Dante's) — FETCH_ERROR — https://www.danteslive.com/tm-event/tv-viking-followed-by-sinferno-cabaret/
 - Jen Howard • TBA • TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/jen-howard-tba-tba
+- "The Comedy Wonderland"-A Comedy Stand-up Showcase (Twilight Cafe and Bar) — SOURCE_STATUS_REVIEW — https://www.twilightcafeandbar.com/event/468547/the-comedy-wonderland-a-comedy-stand-up-showcase
 - Senior Week • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/senior-week-tba-tba
 - Sang Bleu with support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/sang-bleu-tba-tba
 - Void Lord • support TBA (No Fun) — HTTP_404 — https://www.nofunportland.com/events/void-lord-tba-tba

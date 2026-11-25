@@ -2,11 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**127 public table rows checked; 49 distinct relevant research leads (44 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**126 public table rows checked; 48 distinct relevant research leads (43 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-22 | [Church Of Hive / Goth-Industrial-Darkwave / DJs Sinead : Lissex / Star Theater, 11-22 10:30Pm](https://www.ticketweb.com/event/church-of-hive-star-theater-tickets/14971783) | Star Theater | Not categorized / Church Of Hive Pdx | Preferred SHOWS venue + relevant music tag |
 | 2026-11-25 | [Soul'd Out Presents: Infinity](https://www.ticketweb.com/event/infinity-jack-london-revue-tickets/14348204) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-25 | [Flash Trash](https://www.etix.com/ticket/p/86481210/flash-trashan-electro-dance-party-featguest-dj-set-by-uffie-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2026-11-27 | [Snap! 90's Dance Party - 90's Thanksgiving Edition!](https://www.facebook.com/events/2138790904178313/) | Holocene | Not categorized / Not listed | Preferred SHOWS venue |
