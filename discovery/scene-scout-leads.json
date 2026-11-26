@@ -1008,6 +1008,17 @@
       "firstSeenOn": "2026-11-15"
     },
     {
+      "url": "https://www.etix.com/ticket/p/70875736/glitterfox-with-special-guests-camp-crush-new-years-eve-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "-sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-25"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/71026782/the-next-waltz-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",
