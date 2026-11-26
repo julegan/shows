@@ -4,7 +4,7 @@
 
 The source serializes dates as UTC (`$D...Z`) while its UI displays the same clock components. This is **not proof of a Pacific-local show timestamp**: do not use the serialized offset or displayed clock as an approved show/doors time without original flyer/organizer corroboration. All-ages flags and possible locations remain source claims.
 
-**Black Water priority:** 4 dated source leads; 4 original flyer references available for rights and event-identity review. PDX//SUBVERT is a cross-venue scene guide, not the official calendar for every listed venue.
+**Black Water priority:** 3 dated source leads; 3 original flyer references available for rights and event-identity review. PDX//SUBVERT is a cross-venue scene guide, not the official calendar for every listed venue.
 
 ## Proposed Black Water matches to already listed SHOWS events
 
@@ -13,11 +13,10 @@ These links are **review-only**, not approved for embedding. Match checks compar
 No unique two-artist Black Water matches without existing artwork in the approved calendar. Review the source leads below; do not infer a missing or duplicate event.
 
 
-**5 direct scene listings; 0 ordinary review leads, 5 explicit holds; 0 automatically approved.**
+**4 direct scene listings; 0 ordinary review leads, 4 explicit holds; 0 automatically approved.**
 
 | Source date and displayed clock (unverified) | Bands / format | Source venue | Age | Source holds and research |
 | --- | --- | --- | --- | --- |
-| 2026-11-24 03:00 | Jallanzo the Dub Wizard and Dubkhlaat / Blind Prophet / Mikey Dub | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793755637/subvert/r89gxmmulcsxpomdchcl.png |
 | 2026-12-13 03:00 | Labrat / Poise / It’s A Setup / 22RE / Dry Heave | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1793847002/subvert/wp8brjycntv9ffljfv2h.jpg |
 | 2026-12-19 03:00 | Spirit Possession (record release) / Nightfell / Puerta Negra | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1795236334/subvert/fg9vm5yq9yrm3ywau4lj.jpg |
 | 2027-01-17 00:00 | Thee Cormans / Guantanamo Baywatch / observers / Sloppy Kisses / Dark/Light / Rickets / Queens of Punk / Noxeema / Dj Truhn Juice | Black Water | All ages (source claim) | **HOLD: Unusual pre-8AM displayed show clock; manual confirmation needed, no timezone conversion guesses**; Original source flyer for manual review (reuse rights unverified): https://res.cloudinary.com/gksbz5nt/image/upload/v1794851168/subvert/tabz1bjrrli2qqdbrukt.jpg |
