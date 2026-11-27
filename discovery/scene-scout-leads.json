@@ -1357,6 +1357,17 @@
       "firstSeenOn": "2026-11-03"
     },
     {
+      "url": "https://www.pdxguildofgeeks.com/geek-the-halls",
+      "titleHint": "Geek the Halls Holiday Craft Fair",
+      "source": "pdx-events-holiday-index",
+      "from": "https://www.pdx-events.com/holiday-markets/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "order-stone-100\">Sunday, November 29 10:00 AM Geek the Halls Holiday Craft Fair · DoubleTree Hotel, Portland, OR <a href=\"https://www.google.com/maps/search/?ap",
+      "rank": 6,
+      "firstSeenOn": "2026-11-26"
+    },
+    {
       "url": "https://www.pdxmonthly.com/arts-and-culture/portland-book-festival-2026/",
       "titleHint": "The Biggest Day of the Portland Book Festival",
       "source": "portland-monthly-holiday-guide",
