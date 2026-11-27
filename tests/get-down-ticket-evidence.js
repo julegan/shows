@@ -18,6 +18,10 @@ assert.equal(d.inspectTicket(page({...event,location:{name:"Another venue",addre
  "No original event schema independently verifies venue AND street address");
 assert.equal(d.inspectTicket(page({...event,location:{name:"The Get Down",address:{streetAddress:"600 SE 6th Ave"}}}),ticket).hold,
  "No original event schema independently verifies venue AND street address");
+for(const streetAddress of ["680 SE 7th Ave","680 NW 6th Ave","1680 SE 6th Ave","6th Ave","680 SE 6th Avenue North"]){
+ assert.match(d.inspectTicket(page({...event,location:{name:"The Get Down",address:{streetAddress}}}),ticket).hold,/venue AND street address/);
+}
+assert.match(d.inspectTicket(page({...event,location:{name:"The Get Down",address:{addressLocality:"680 SE 6th Ave"}}}),ticket).hold,/venue AND street address/);
 assert.match(d.inspectTicket(page({...event,startDate:"2026-12-05"}),ticket).hold,/offset-aware/);
 assert.match(d.inspectTicket(page({...event,eventStatus:"https://schema.org/EventCancelled"}),ticket).hold,/manual review/);
 assert.equal(d.inspectTicket(page(event),"https://evil.example/events/a").hold,
