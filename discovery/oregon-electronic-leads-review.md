@@ -2,12 +2,10 @@
 
 **19hz explicitly says its calendar is automatically generated and not reviewed for accuracy.** These rows are discovery leads only, **not verified SHOWS events**, not an endorsement of every music genre or booking, and not an event importer. Follow the original ticket, artist or venue link and check the actual bill, local year/date and time type before proposing anything.
 
-**126 public table rows checked; 48 distinct relevant research leads (43 preferred-venue, 5 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
+**122 public table rows checked; 47 distinct relevant research leads (41 preferred-venue, 6 other genre-relevant), 1 date/weekday holds; 0 automatically approved.**
 
 | Date (unverified) | Event / original link | Venue | 19hz category / promoter | Research relevance |
 | --- | --- | --- | --- | --- |
-| 2026-11-25 | [Soul'd Out Presents: Infinity](https://www.ticketweb.com/event/infinity-jack-london-revue-tickets/14348204) | Jack London Revue | Not categorized / Not listed | Preferred SHOWS venue |
-| 2026-11-25 | [Flash Trash](https://www.etix.com/ticket/p/86481210/flash-trashan-electro-dance-party-featguest-dj-set-by-uffie-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2026-11-27 | [Snap! 90's Dance Party - 90's Thanksgiving Edition!](https://www.facebook.com/events/2138790904178313/) | Holocene | Not categorized / Not listed | Preferred SHOWS venue |
 | 2026-11-27 | [Roger Sanchez](https://www.tixr.com/groups/45east/events/roger-sanchez-209104) | 45 East | deep house, tech house / Not listed | Preferred SHOWS venue |
 | 2026-11-28 | [Soul'd Out Presents: One Way Out](https://www.ticketweb.com/event/one-way-out-jack-london-revue-tickets/14360194) | Jack London Revue | Not categorized / One Way Out Pdx, Soul'd Out | Preferred SHOWS venue |
@@ -31,6 +29,7 @@
 | 2027-01-02 | [The Disco Biscuits](https://www.etix.com/ticket/p/30191515) | Revolution Hall | livetronica, jam band / Not listed | Preferred SHOWS venue |
 | 2027-01-02 | [Brett's House Party (Disco Biscuits Afterparty) w/ DJ Wicked](https://www.eventbrite.com/e/bretts-house-party-disco-biscuits-afterparty-with-dj-wicked-9pm-doors-tickets-2003942332461) | Goodfoot Pub & Lounge | house, livetronica, jam band / The Goodfoot | Preferred SHOWS venue |
 | 2027-01-05 | [Ninajirachi w/ Ikeda](https://www.axs.com/events/1616996) | McMenamins Crystal Ballroom | EDM, house, dubstep, drum and bass / Showbox | Relevant electronic / dark music tag |
+| 2027-01-08 | [The Glitch Mob, The Librarian, Open Courts](https://wl.eventim.us/event/the-glitch-mob/711617) | Realm | glitch, breaks, IDM, industrial, drum and bass, dubstep / Not listed | Relevant electronic / dark music tag |
 | 2027-01-14 | [Club Slayyy](https://www.etix.com/ticket/p/53208442/club-slayyyslayyyter-hyperpop-night-21-portland-holocene) | Holocene | Not categorized / What The Dance | Preferred SHOWS venue |
 | 2027-01-16 | [Elvin Bishop & The Hell Raisin' Revue - Roseland Theater, Or](https://www.etix.com/ticket/p/56351388/elvin-bishops-raisin-hell-review-portland-roseland-theater) | Roseland Theater | Not categorized / Not listed | Preferred SHOWS venue |
 | 2027-01-16 | [Aname](https://www.tixr.com/groups/45east/events/anam--212865) | 45 East | progressive house / Not listed | Preferred SHOWS venue |
