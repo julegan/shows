@@ -43,8 +43,8 @@ function inspectTicket(html,url){
  const matches=candidates.filter(e=>{
   const loc=e.location||{},place=typeof loc==="string"?loc:loc.name||"";
   const addr=typeof loc==="object"?loc.address||{}:{};
-  const locationText=text([place,typeof addr==="string"?addr:JSON.stringify(addr)].join(" "));
-  return /\bthe get down\b/i.test(locationText)&&/\b(?:680|sixth|6th)\b/i.test(locationText);
+  const street=text(typeof addr==="string"?addr:addr.streetAddress||"");
+  return /^the get down$/i.test(text(place))&&/^680\s+(?:SE|Southeast)\s+(?:6th|Sixth)\s+(?:Ave\.?|Avenue)(?:\s*,|$)/i.test(street);
  });
  if(!matches.length)return {url:official,hold:"No original event schema independently verifies venue AND street address",
   schemaEvents:candidates.length};
