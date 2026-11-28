@@ -1030,6 +1030,17 @@
       "firstSeenOn": "2026-11-07"
     },
     {
+      "url": "https://www.etix.com/ticket/p/74460059/asher-fulero-friends-featuring-curtis-salgado-portland-alberta-rose-theatre?partner_id=100",
+      "titleHint": "Buy Tickets",
+      "source": "music-alberta-rose",
+      "from": "https://albertarosetheatre.com/",
+      "type": "possible-event-or-market-link",
+      "confidence": "research-only",
+      "why": "sm-3--> Buy Tickets",
+      "rank": 7,
+      "firstSeenOn": "2026-11-27"
+    },
+    {
       "url": "https://www.etix.com/ticket/p/75222391/queer-eye-for-the-magi-a-holigay-cabaret-portland-alberta-rose-theatre?partner_id=100",
       "titleHint": "Buy Tickets",
       "source": "music-alberta-rose",

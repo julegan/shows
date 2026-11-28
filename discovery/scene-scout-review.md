@@ -1,10 +1,10 @@
-# Portland music & independent culture source scout — 2026-11-26
+# Portland music & independent culture source scout — 2026-11-27
 
 **Research leads only.** Links in this report are NOT approved SHOWS events, proof of a future date, a verified Portland location, permission to use images or a full inventory of any organizer. Venue and date-specific evidence must be checked separately before any canonical event proposal.
 
 This scout reads a bounded, editorially selected mix of original music venues, original organizers, original vendors and secondary Portland listing pages. It never automatically visits new outbound URLs, accesses Instagram private endpoints, or edits the public calendar.
 
-**26 source pages attempted; 3 inaccessible/changed; 1 newly discovered links; 135 total recorded research leads.**
+**26 source pages attempted; 4 inaccessible/changed; 1 newly discovered links; 136 total recorded research leads.**
 
 ## Source health
 
@@ -28,7 +28,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 | The Thesis PDX independent hip-hop showcase | Read-only check succeeded | 7 |
 | Mississippi Pizza & Atlantis Lounge original events | Error — fetch failed | 0 |
 | A Beat Happening local producer and DJ showcases | Read-only check succeeded | 10 |
-| Late Lyrics independent hip-hop and R&B open mic | Read-only check succeeded | 6 |
+| Late Lyrics independent hip-hop and R&B open mic | Error — Seed source exceeded size cap | 0 |
 | PDX Hip Hop Week original organizer calendar | Read-only check succeeded | 1 |
 | L’Atelier Yaffe local music collaborators | Read-only check succeeded | 4 |
 | The Coffin Club — official source watch | Read-only check succeeded | 0 |
@@ -41,7 +41,7 @@ This scout reads a bounded, editorially selected mix of original music venues, o
 
 | Found at | Page or possible organizer | Type | Context |
 | --- | --- | --- | --- |
-| pdx-events-holiday-index | [Geek the Halls Holiday Craft Fair](https://www.pdxguildofgeeks.com/geek-the-halls) | possible-event-or-market-link | order-stone-100">Sunday, November 29 10:00 AM Geek the Halls Holiday Craft Fair · DoubleTree Hotel, Portland, OR <a href="https://www.google.com/maps/search/?ap |
+| music-alberta-rose | [Buy Tickets](https://www.etix.com/ticket/p/74460059/asher-fulero-friends-featuring-curtis-salgado-portland-alberta-rose-theatre?partner_id=100) | possible-event-or-market-link | sm-3--> Buy Tickets |
 
 ## First-party venue connection watches
 
