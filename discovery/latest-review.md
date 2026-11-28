@@ -1,4 +1,4 @@
-# SHOWS automated discovery review — 2026-11-26
+# SHOWS automated discovery review — 2026-11-27
 
 Proposed entries **must be approved before publishing**. Source-listed times are NOT verified as show times.
 
@@ -8,53 +8,45 @@ A successful fetch only confirms the configured endpoint responded; it does **no
 
 | Source | Result | Items checked | New | Music | Unclassified | With art | Held | Skipped |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Black Water | Checked | 8 | 0 | 0 | 0 | 0 | 0 | 8 |
-| High Water Mark | Checked | 65 | 3 | 1 | 2 | 0 | 0 | 62 |
+| Black Water | Checked | 7 | 0 | 0 | 0 | 0 | 0 | 7 |
+| High Water Mark | Checked | 66 | 1 | 0 | 1 | 0 | 0 | 65 |
 | Soundcontrol PDX | Checked | 5 | 0 | 0 | 0 | 0 | 3 | 2 |
 | Twilight Cafe and Bar | Checked | 32 | 0 | 0 | 0 | 0 | 3 | 29 |
-| Star Theater | Checked | 36 | 2 | 2 | 0 | 2 | 3 | 31 |
-| Dante's | Checked | 42 | 0 | 0 | 0 | 0 | 3 | 39 |
+| Star Theater | Checked | 36 | 0 | 0 | 0 | 0 | 3 | 33 |
+| Dante's | Checked | 44 | 2 | 0 | 2 | 2 | 3 | 39 |
 | Roseland Theater | Checked | 30 | 0 | 0 | 0 | 0 | 3 | 27 |
 | Wonder Ballroom | Checked | 31 | 0 | 0 | 0 | 0 | 9 | 22 |
 | Hawthorne Theatre | Checked | 40 | 0 | 0 | 0 | 0 | 3 | 37 |
 | Crystal Ballroom | Checked | 51 | 0 | 0 | 0 | 0 | 3 | 48 |
 | Revolution Hall | Checked | 30 | 0 | 0 | 0 | 0 | 2 | 28 |
-| Turn! Turn! Turn! | Checked | 19 | 0 | 0 | 0 | 0 | 1 | 18 |
+| Turn! Turn! Turn! | Checked | 20 | 1 | 1 | 0 | 1 | 1 | 18 |
 | Kenton Club | Checked | 10 | 0 | 0 | 0 | 0 | 4 | 6 |
-| Mississippi Studios / Polaris Hall | Checked | 30 | 4 | 0 | 4 | 4 | 0 | 26 |
-| Holocene | Checked | 49 | 2 | 2 | 0 | 2 | 20 | 27 |
-| Starday Tavern | Checked | 1592 | 1 | 0 | 1 | 0 | 45 | 1546 |
-| The Off Beat / Friends of Noise | Checked | 13 | 3 | 3 | 0 | 3 | 4 | 6 |
+| Mississippi Studios / Polaris Hall | Checked | 30 | 0 | 0 | 0 | 0 | 0 | 30 |
+| Holocene | Checked | 49 | 0 | 0 | 0 | 0 | 20 | 29 |
+| Starday Tavern | Checked | 1592 | 0 | 0 | 0 | 0 | 45 | 1547 |
+| The Off Beat / Friends of Noise | Checked | 13 | 0 | 0 | 0 | 0 | 4 | 9 |
 | Aladdin Theater | Checked | 79 | 0 | 0 | 0 | 0 | 3 | 76 |
-| Mission Theater | Checked | 58 | 10 | 0 | 10 | 10 | 1 | 47 |
+| Mission Theater | Checked | 57 | 0 | 0 | 0 | 0 | 1 | 56 |
 | Nova PDX | Checked | 12 | 0 | 0 | 0 | 0 | 0 | 12 |
 | Lola's Room | Checked | 11 | 0 | 0 | 0 | 0 | 2 | 9 |
-| The Showdown | Checked | 51 | 4 | 2 | 2 | 4 | 14 | 33 |
-| 45 East | Checked | 16 | 1 | 1 | 0 | 1 | 0 | 15 |
+| The Showdown | Checked | 51 | 0 | 0 | 0 | 0 | 14 | 37 |
+| 45 East | Checked | 16 | 0 | 0 | 0 | 0 | 0 | 16 |
 | Mammoth Northwest | Checked | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
-| The 1905 | Checked | 8 | 0 | 0 | 0 | 0 | 1 | 7 |
+| The 1905 | Checked | 8 | 3 | 3 | 0 | 3 | 1 | 4 |
 | Jack London Revue | Checked | 50 | 0 | 0 | 0 | 0 | 1 | 49 |
-| Alberta Street Pub | Checked | 57 | 9 | 3 | 6 | 9 | 7 | 41 |
+| Alberta Street Pub | Checked | 57 | 0 | 0 | 0 | 0 | 7 | 50 |
 | Alberta Rose Theatre | Checked | 57 | 0 | 0 | 0 | 0 | 5 | 52 |
 | A Beat Happening | EMPTY | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | FAILED | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Classification review
 
-New candidate categories: **Music** 14 · **Unclassified** 25.
-**25 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
+New candidate categories: **Music** 4 · **Unclassified** 3.
+**3 unclassified** candidates need evidence-based review; artist names and venue reputation alone are not genre evidence. Do not auto-label all venue events as Music.
 
-- High Water Mark Lounge: Caving for Cobras, Mike Mannequin, Williamette Valley Nightmare Band — https://www.treetix.com/event/204964/highwatermark
-- High Water Mark Lounge: All Worked Up, Witness the End, Lost Glory, Sidewalk Slam — https://www.treetix.com/event/204965/highwatermark
-- Mississippi Studios: School of Rock Portland - Fall 2026 Mid-Season Preview (FREE EVENT) — https://www.etix.com/ticket/p/97374107/school-of-rock-portland-fall-2026-midseason-preview-free-event-portland-mississippi-studios
-- Mississippi Studios: SOLD OUT: Swervedriver raise at 35 — https://www.etix.com/ticket/p/74993592/sold-outswervedriver-raise-at-35-portland-mississippi-studios
-- Mississippi Studios: 45th Parallel Holiday Variety Show II — https://www.etix.com/ticket/p/66697949/45th-parallel-holiday-variety-show-ii-portland-mississippi-studios
-- Polaris Hall: Home For The Holidays — https://www.etix.com/ticket/p/87684712/home-for-the-holidays-portland-polaris-hall
-- Starday Tavern: Vanessa Velelka Residency — https://www.google.com/calendar/event?eid=NWV0cmE4NmZzdG8xZmlkOWhpOTdqMnZrbTNfMjAyNjEyMTBUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn
-- Mission Theater: Forest Pub — https://www.mcmenamins.com/events/280397-forest-pub
-- Mission Theater: Forest Pub — https://www.mcmenamins.com/events/280406-forest-pub
-- Mission Theater: Forest Pub — https://www.mcmenamins.com/events/280405-forest-pub
-- Plus 15 other unclassified candidates in the full event table below.
+- High Water Mark Lounge: Filthy Dyke! — https://www.treetix.com/event/204967/highwatermark
+- Dante's: BLACK HEARTS — https://www.danteslive.com/tm-event/black-hearts/
+- Dante's: JEFFREY NOTHING with Sister Kill Cycle & Guests — https://www.danteslive.com/tm-event/jeffrey-nothing-with-sister-kill-cycle-guests/
 
 ### Connections requiring work
 
@@ -84,7 +76,7 @@ New candidate categories: **Music** 14 · **Unclassified** 25.
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 5** · Ambiguous matching source URLs: 2.
+**Potential changes: 4** · Ambiguous matching source URLs: 3.
 
 | Change | Venue and event | Approved → observed | Official event evidence |
 | --- | --- | --- | --- |
@@ -92,64 +84,25 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Starday Tavern — Sam Henson Holiday Happy Hour | 16:30 → 17:30 | https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
 | Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
 | Listed time changed | The Showdown — Tropical Latin Goth Club NYE Pari | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/tropical-latin-goth-club-nye-pari/ |
-| Date changed | 45 East — ANAMĒ | 2027-01-16 → 2027-04-17 | https://tixr.com/groups/45east/aname0116 |
 
-The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
 
-## New candidates: 39
+## New candidates: 7
 
-- high-water: 3 proposals
-- star-theater: 2 proposals
-- mississippi-polaris: 4 proposals
-- holocene: 2 proposals
-- starday-tavern: 1 proposals
-- the-off-beat: 3 proposals
-- mission-theater: 10 proposals
-- showdown: 4 proposals
-- 45-east: 1 proposals
-- alberta-street-pub: 9 proposals
+- high-water: 1 proposals
+- dantes: 2 proposals
+- turn-turn-turn: 1 proposals
+- the-1905: 3 proposals
 
 | Date | Event | Venue | Listed time | Primary listing |
 | --- | --- | --- | --- | --- |
-| 2026-12-04 | Caving for Cobras, Mike Mannequin, Williamette Valley Nightmare Band | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204964/highwatermark |
-| 2026-12-18 | All Worked Up, Witness the End, Lost Glory, Sidewalk Slam | High Water Mark Lounge | 20:30 (doors/show unverified) | https://www.treetix.com/event/204965/highwatermark |
-| 2026-12-26 | DJ Autism Kitty | High Water Mark Lounge | 19:00 (doors/show unverified) | https://www.treetix.com/event/204966/highwatermark |
-| 2027-01-16 | Chervona’s 20th Anniversary Old New Year | Star Theater | 21:00 (doors/show unverified) | https://www.startheaterportland.com/tm-event/chervonas-20th-anniversary-old-new-year/ |
-| 2027-01-30 | EBK YOUNG JOC | Star Theater | 21:15 (doors/show unverified) | https://www.startheaterportland.com/tm-event/ebk-young-joc/ |
-| 2026-12-05 | School of Rock Portland - Fall 2026 Mid-Season Preview (FREE EVENT) | Mississippi Studios | 11:30 (doors/show unverified) | https://www.etix.com/ticket/p/97374107/school-of-rock-portland-fall-2026-midseason-preview-free-event-portland-mississippi-studios |
-| 2026-12-15 | SOLD OUT: Swervedriver raise at 35 | Mississippi Studios | 20:00 (doors/show unverified) | https://www.etix.com/ticket/p/74993592/sold-outswervedriver-raise-at-35-portland-mississippi-studios |
-| 2026-12-16 | 45th Parallel Holiday Variety Show II | Mississippi Studios | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/66697949/45th-parallel-holiday-variety-show-ii-portland-mississippi-studios |
-| 2026-12-17 | Home For The Holidays | Polaris Hall | 19:00 (doors/show unverified) | https://www.etix.com/ticket/p/87684712/home-for-the-holidays-portland-polaris-hall |
-| 2026-12-19 | Laffy Taffy: Nice and Naughty Edition | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2026-12-19-laffy-taffy-nice-and-naughty-edition |
-| 2027-01-30 | [BOO’D UP] THA RNB NITE | Holocene | 21:00 (doors/show unverified) | https://www.holocene.org/events/2027-01-30-boo-d-up-tha-rnb-nite |
-| 2026-12-09 | Vanessa Velelka Residency | Starday Tavern | 20:00 (doors/show unverified) | https://www.google.com/calendar/event?eid=NWV0cmE4NmZzdG8xZmlkOWhpOTdqMnZrbTNfMjAyNjEyMTBUMDQwMDAwWiBtNTl2amh2Y3YwaWZscHYyaWtub3FsbXVxb0Bn |
-| 2026-12-26 | 12/26 Chipps, Charli Cheek, gu4fy | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/12-26-chipps-charli-cheek-gu4fy-december-26-2026-805744 |
-| 2026-12-28 | The Saratoga St. Band, Dovetail, Ona | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/the-saratoga-st-band-dovetail-ona-december-28-2026-805751 |
-| 2026-12-30 | 12/30 NEW YEARS SHOW / HARDY’S ALBUM PRE-RELEASE | The Off Beat | 19:00 (doors/show unverified) | https://calendar.friendsofnoise.org/shows/12-30-new-years-show-hardy-s-album-pre-release-december-30-2026-804424 |
-| 2027-02-08 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280397-forest-pub |
-| 2027-03-15 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280406-forest-pub |
-| 2027-04-12 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280405-forest-pub |
-| 2027-05-10 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280404-forest-pub |
-| 2027-06-14 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280403-forest-pub |
-| 2027-07-12 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280402-forest-pub |
-| 2027-08-09 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280401-forest-pub |
-| 2027-09-13 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280400-forest-pub |
-| 2027-10-11 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280399-forest-pub |
-| 2027-11-08 | Forest Pub | Mission Theater | 19:00 (doors/show unverified) | https://www.mcmenamins.com/events/280398-forest-pub |
-| 2027-01-29 | Kalida Album Release with Camille Tredoux | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/kalida-album-release-with-camille-tredoux/ |
-| 2027-01-30 | Lincoln Durham Album Release with The Woodbrains | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/lincoln-durham-album-release-with-the-woodbrains/ |
-| 2027-02-12 | Shakedown at The Showdown: JT Wise Band Plays Dead with Rhapsody In Red | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/shakedown-at-the-showdown-jt-wise-band-plays-dead-with-rhapsody-in-red/ |
-| 2027-04-19 | The Wellermen | The Showdown | 20:00 (doors/show unverified) | https://www.showdownpdx.com/tm-event/the-wellermen/ |
-| 2027-04-17 | ANAMĒ | 45 East | 00:00 (doors/show unverified) | https://tixr.com/groups/45east/aname0116 |
-| 2026-12-20 | SUNDAY SESSIONS PRESENTS DIVA DELUXE | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/13/sundays-featuring-madison-rose-amp-party-after-9bgwp |
-| 2026-12-21 | GOOD IN THE HOOD | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/21/good-in-the-hood |
-| 2026-12-22 | FWIW | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/22/fwiw |
-| 2026-12-23 | PDX SMOKE Wednesday Night Cigar Social | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/10/18/wednesday-night-social-fkf88-mke97-4227c-l64xx-gss68-cjzan-8lsw3-nbgjn-yr6pm-6kblr-ff6b5-lsmb9-hkw2h-f5mft-hfbdc-nddag-sg2pm-ylbtn-7mp5t-b64gk-lwx2r-6dg2k-c9mfs-wkm42-t7sxx |
-| 2026-12-27 | CONCRETE LEAF // EACH BOTH | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/27/concrete-leaf-each-both |
-| 2026-12-27 | SUNDAY SESSIONS PRESENTS DJ RENZ | Alberta Street Pub | 21:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/13/sundays-featuring-madison-rose-amp-party-after-9bgwp-cpysf |
-| 2026-12-28 | Monday Night Football Hosted by Hazel Dell Hottie | Alberta Street Pub | 17:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/10/12/comedy-amp-monday-night-football-with-hazel-dell-hottie-xz6bj-fbyfh-393ph |
-| 2026-12-29 | JASON TATE & THE SURLY UNCLES | Alberta Street Pub | 19:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2026/12/29/jason-tate-amp-the-surly-uncles |
-| 2026-12-30 | PDX SMOKE Wednesday Night Cigar Social - Featuring Tahirah Memory | Alberta Street Pub | 18:00 (doors/show unverified) | https://www.albertastreetpub.com/music/2023/10/18/wednesday-night-social-fkf88-mke97-4227c-l64xx-gss68-cjzan-8lsw3-nbgjn-yr6pm-6kblr-ff6b5-lsmb9-hkw2h-f5mft-hfbdc-nddag-sg2pm-ylbtn-7mp5t-b64gk-lwx2r-6dg2k-c9mfs-wkm42-fl72d |
+| 2026-12-11 | Filthy Dyke! | High Water Mark Lounge | 20:00 (doors/show unverified) | https://www.treetix.com/event/204967/highwatermark |
+| 2027-02-13 | BLACK HEARTS | Dante's | 21:00 (doors/show unverified) | https://www.danteslive.com/tm-event/black-hearts/ |
+| 2027-02-18 | JEFFREY NOTHING with Sister Kill Cycle & Guests | Dante's | 19:30 (doors/show unverified) | https://www.danteslive.com/tm-event/jeffrey-nothing-with-sister-kill-cycle-guests/ |
+| 2026-12-17 | Water Shrews + V. Vecker (Fla) + Tom Scully (Sea) + PatrickMcCauley | Turn! Turn! Turn! | 20:00 (doors/show unverified) | https://app.opendate.io/e/water-shrews-v-vecker-fla-tom-scully-sea-patrickmccauley-december-17-2026-806010 |
+| 2026-12-02 | Christopher Brown Quartet — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13240/2026-12-02 |
+| 2026-12-02 | Christopher Brown Quartet — 8:30 PM show | The 1905 | 20:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13240/2026-12-02 |
+| 2026-12-03 | Aimee Nolte Quartet — 6:30 PM show | The 1905 | 18:30 (doors/show unverified) | https://the1905.turntabletickets.com/shows/13241/2026-12-03 |
 
 ## Held for review: 140
 
@@ -183,7 +136,7 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/277005-angine-de-poitrine/
 - [crystal-ballroom] Angine De Poitrine — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/276842-angine-de-poitrine/
 - [crystal-ballroom] 4th Annual Celebration of the 1968 Grateful Dead Concerts — Same venue/date; different existing bill; manual comparison https://www.crystalballroompdx.com/events/279578-4th-annual-celebration-of-the-1968-grateful-dead-concerts/
-- [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall
+- [revolution-hall] Neurosis — Missing full weekday/year or source-provided UTC date on official show card https://www.etix.com/ticket/p/36423231/neurosis-portland-revolution-hall
 - [revolution-hall] Neurosis — Same venue/date; different existing bill; manual comparison https://www.etix.com/ticket/p/91554135/neurosis-portland-revolution-hall
 - [turn-turn-turn] Tracey Nelson + Joe Glass — Same venue/date; different existing bill; manual comparison https://app.opendate.io/e/tracey-nelson-joe-glass-december-15-2026-779468
 - [kenton-club] (2026-11-27) Madison True Band-Midnight Jade — Kenton roster already has a bill on this date; check for a lineup update or a separate event https://www.kentonclub.com/
@@ -279,7 +232,7 @@ The 2 ambiguous URLs were not classified as changes. Investigate duplicated or r
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-70/
 - [showdown] Whiskey Wednesday with William Surly & the Barroom Gospel and Keston Brouillette & the Pickled Hearts — Original Showdown calendar title conflicts with event-specific detail https://www.showdownpdx.com/tm-event/whiskey-wednesday-with-william-surly-the-barroom-gospel-and-keston-brouillette-the-pickled-hearts-8/
 - [showdown] Madam Cooper's Country Cabaret — Original event detail lacks unambiguous full-year Google Calendar date https://www.showdownpdx.com/tm-event/madam-coopers-country-cabaret-71/
-- [the-1905] CLOSED FOR THE HOLIDAY — Original ticket performance lacks a linked event-specific page https://the1905.turntabletickets.com/shows/13236/2026-11-26
+- [the-1905] CLOSED FOR THE HOLIDAY — Original ticket performance lacks a linked event-specific page https://the1905.turntabletickets.com/shows/13237/2026-11-27
 - [jack-london-revue] STORYVILLE CONFIDENTIAL "WEST COAST" NYE — Same venue/date; different existing bill; manual comparison https://www.jacklondonrevue.com/tm-event/storyville-confidential-west-coast-nye/
 - [alberta-street-pub] Bridgetown Trivia on the Heated Patio! — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2023/3/13/bridgetown-trivia-on-the-heated-patio-6cwzx-dg47h-78jwb-2lt32-azz6n-gd4lz-rd6wg-6ghnc-653hl-dnb5c-42dcy-r6ztl-37cda-7ljxc-fwzrf-73ywh-cx3r9
 - [alberta-street-pub] YULE BE SORRY - BRADY TUCSON // HANNAH GLAVOR // LEXIE — Same venue/date; different existing bill; manual comparison https://www.albertastreetpub.com/music/2026/12/14/yule-be-sorry-brady-tucson-hannah-glavor-lexie
