@@ -1,4 +1,4 @@
-# Independent original music source reconciliation — 2026-11-26
+# Independent original music source reconciliation — 2026-11-27
 
 This audit covers observed first-party dated events at selected independent music and community sources. It is not a genre quota. Source responses may be incomplete; an empty or failed feed is not evidence of no upcoming events.
 
@@ -12,33 +12,33 @@ This audit covers observed first-party dated events at selected independent musi
 | A Beat Happening | empty | 0 |
 | Mississippi Pizza / Atlantis Lounge | failed | 0 |
 
-## 30-day window through 2026-12-26
+## 30-day window through 2026-12-27
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| The Off Beat / Friends of Noise | 5 | 3 | 1 | 1 | 5 |
+| The Off Beat / Friends of Noise | 5 | 4 | 0 | 1 | 5 |
 | Jack London Revue | 20 | 20 | 0 | 0 | 16 |
-| Alberta Street Pub | 48 | 38 | 4 | 6 | 39 |
+| Alberta Street Pub | 50 | 44 | 0 | 6 | 41 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
-## 60-day window through 2027-01-25
+## 60-day window through 2027-01-26
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| The Off Beat / Friends of Noise | 10 | 5 | 3 | 2 | 10 |
+| The Off Beat / Friends of Noise | 11 | 8 | 0 | 3 | 11 |
 | Jack London Revue | 32 | 31 | 0 | 1 | 26 |
-| Alberta Street Pub | 55 | 39 | 9 | 7 | 45 |
+| Alberta Street Pub | 55 | 48 | 0 | 7 | 45 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 
-## 90-day window through 2027-02-24
+## 90-day window through 2027-02-25
 
 | Source | Observed | Published by original identity | Proposed | Exceptions | Unknown music style / category |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| The Off Beat / Friends of Noise | 11 | 5 | 3 | 3 | 11 |
-| Jack London Revue | 48 | 47 | 0 | 1 | 39 |
-| Alberta Street Pub | 56 | 40 | 9 | 7 | 46 |
+| The Off Beat / Friends of Noise | 11 | 8 | 0 | 3 | 11 |
+| Jack London Revue | 49 | 48 | 0 | 1 | 39 |
+| Alberta Street Pub | 56 | 49 | 0 | 7 | 46 |
 | A Beat Happening | 0 | 0 | 0 | 0 | 0 |
 | Mississippi Pizza / Atlantis Lounge | 0 | 0 | 0 | 0 | 0 |
 

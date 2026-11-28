@@ -2,7 +2,7 @@
 
 Compared only **uniquely matched event-specific primary URLs** found again in this run. An event absent from a source feed is not proof of cancellation. Different labels for doors and showtime are not treated as changes. **Nothing is edited or deleted automatically.**
 
-**Potential changes: 5** · Ambiguous matching source URLs: 2.
+**Potential changes: 4** · Ambiguous matching source URLs: 3.
 
 | Change | Venue and event | Approved → observed | Official event evidence |
 | --- | --- | --- | --- |
@@ -10,6 +10,5 @@ Compared only **uniquely matched event-specific primary URLs** found again in th
 | Listed time changed | Starday Tavern — Sam Henson Holiday Happy Hour | 16:30 → 17:30 | https://www.google.com/calendar/event?eid=MnFwazBnYzdjaWFoMDlubWc5YWE3ZWE4NW4gbTU5dmpodmN2MGlmbHB2Mmlrbm9xbG11cW9AZw |
 | Listed time changed | The Showdown — Casual Eddie | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/casual-eddie-7/ |
 | Listed time changed | The Showdown — Tropical Latin Goth Club NYE Pari | 20:00 → 21:00 | https://www.showdownpdx.com/tm-event/tropical-latin-goth-club-nye-pari/ |
-| Date changed | 45 East — ANAMĒ | 2027-01-16 → 2027-04-17 | https://tixr.com/groups/45east/aname0116 |
 
-The 2 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.
+The 3 ambiguous URLs were not classified as changes. Investigate duplicated or reused event links before updating any approved listing.

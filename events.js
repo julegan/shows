@@ -2,11 +2,11 @@
  * See EVENT-SOURCES.md, MUSIC-SOURCES.md, VENUE-COVERAGE.md and EDITORIAL.md for source checks and priorities.
  * Unknown cost/end times remain null. startTimeKind="doors" explicitly labels doors-only times. */
 window.SHOWS_DATASET = {
-  "sourceCheckedAt": "2026-11-26",
+  "sourceCheckedAt": "2026-11-27",
   "coverageThrough": "2027-12-07",
-  "totalOccurrences": 1700,
-  "addedOccurrences": 39,
-  "batchId": "auto-discovery-2026-11-26-94",
+  "totalOccurrences": 1707,
+  "addedOccurrences": 7,
+  "batchId": "auto-discovery-2026-11-27-95",
   "editorialReview": "Automatically discovered candidates require explicit human PR approval",
   "previousBatches": [
     {
@@ -228,11 +228,15 @@ window.SHOWS_DATASET = {
     {
       "batchId": "auto-discovery-2026-11-24-92",
       "addedOccurrences": 51
+    },
+    {
+      "batchId": "auto-discovery-2026-11-26-94",
+      "addedOccurrences": 39
     }
   ],
   "newLiveBills": 0,
   "newDjNights": 0,
-  "musicOccurrences": 537
+  "musicOccurrences": 541
 };
 window.SHOWS_EVENTS = [
   {
@@ -42848,6 +42852,66 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-12-02-e2e33e9043bd",
+    "title": "Christopher Brown Quartet — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48395 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES Christopher Brown - drums John Nastos - sax Greg Goebel - piano Garrett Baxter - bass Christopher Brown is an acclaimed musician, composer, bandleader, and educator who seeks to be a voice within the advocacy of Jazz and Ameri",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13240/IMG_1696.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48395",
+    "sourceShowId": "13240",
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-revolution-hall-2026-12-02-44f73c8d9123",
     "title": "The People's Jam (FREE)",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43206,6 +43270,67 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-the-1905-2026-12-02-e1f2f8bb2cc7",
+    "title": "Christopher Brown Quartet — 8:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation",
+      "Separate same-day source listing; review bill and room"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-02T20:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48396 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $30 | ALL AGES Christopher Brown - drums John Nastos - sax Greg Goebel - piano Garrett Baxter - bass Christopher Brown is an acclaimed musician, composer, bandleader, and educator who seeks to be a voice within the advocacy of Jazz and Ameri",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13240/IMG_1696.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13240/2026-12-02",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48396",
+    "sourceShowId": "13240",
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-starday-tavern-2026-12-02-099b98f82774",
     "title": "Gnosis Drum & Bass",
     "subtitle": "Source-discovered venue event · details need review",
@@ -43436,6 +43561,66 @@ window.SHOWS_EVENTS = [
       }
     ],
     "addedIn": "2026-10-17-expansion"
+  },
+  {
+    "id": "auto-the-1905-2026-12-03-076b29454563",
+    "title": "Aimee Nolte Quartet — 6:30 PM show",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Source-mentioned Jazz",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [
+      "Jazz"
+    ],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Event-specific source genre wording",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-03T18:30:00-08:00",
+    "endsAt": null,
+    "venue": "The 1905",
+    "address": "830 N Shaver St, Portland, OR 97227",
+    "neighborhood": "Boise",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Original The 1905 performance 48397 supplies a ticketed show time (not doors) with independently matching Pacific and UTC timestamps. Original ticketed performance. TICKETS $35 | ALL AGES Aimee Nolte - vocals, piano Matt Mayhall - drums Joe Bagg - keys Mike Scott - guitar Pianist, vocalist, composer, and educator, Aimee Nolte has become one of today’s most recognizable voices in jazz education while maintaining",
+    "source": "The 1905",
+    "url": "https://the1905.turntabletickets.com/shows/13241/2026-12-03",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [
+      "Jazz"
+    ],
+    "sources": [
+      {
+        "name": "The 1905",
+        "url": "https://the1905.turntabletickets.com/shows/13241/2026-12-03",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": [
+          "Jazz"
+        ]
+      }
+    ],
+    "artwork": {
+      "url": "https://assets-prod.turntabletickets.com/media/the1905/show-13241/ab89e54f-7490-438e-9574-f54ed450bcec-IMG_6565.jpg",
+      "sourceUrl": "https://the1905.turntabletickets.com/shows/13241/2026-12-03",
+      "origin": "official-event-page",
+      "credit": "The 1905 original ticket listing",
+      "usageApproved": null
+    },
+    "sourcePerformanceId": "48397",
+    "sourceShowId": "13241",
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "the-1905",
+      "method": "primary-source-collection"
+    }
   },
   {
     "id": "auto-mission-theater-2026-12-03-62d440e0bc53",
@@ -51860,6 +52045,53 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-high-water-2026-12-11-160c73f0a2a8",
+    "title": "Filthy Dyke!",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-11T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "High Water Mark Lounge",
+    "address": "6800 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "neighborhood": "Woodlawn",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. TreeTix published an event start clock; doors versus performance time still requires confirmation. ",
+    "source": "High Water Mark",
+    "url": "https://www.treetix.com/event/204967/highwatermark",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "High Water Mark",
+        "url": "https://www.treetix.com/event/204967/highwatermark",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": []
+      }
+    ],
+    "sourceArtworkUrl": "https://www.treetix.com/templates/highwatermark/images/events/2026-12-11-204967-1000019517.jpg",
+    "sourceEventId": 204967,
+    "sourceCalendar": "highwatermark",
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "high-water",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-jack-london-revue-2026-12-11-9d69a6026766",
     "title": "MARK GUILIANA",
     "subtitle": "Source-discovered venue event · details need review",
@@ -57065,6 +57297,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-11-14",
     "discovery": {
       "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-turn-turn-turn-2026-12-17-9f3a77662648",
+    "title": "Water Shrews + V. Vecker (Fla) + Tom Scully (Sea) + PatrickMcCauley",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Music",
+    "tags": [
+      "Source-listed Music",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "Original source explicitly verifies music",
+    "startTimeKind": "listed",
+    "startsAt": "2026-12-17T20:00:00-08:00",
+    "endsAt": null,
+    "venue": "Turn! Turn! Turn!",
+    "address": "8 NE Killingsworth St, Portland, OR 97211",
+    "neighborhood": "Kenton",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Official venue-embedded OpenDate listing explicitly labels separate doors and show times; scheduled show time is the event start. Original OpenDate event detail: Event-specific description not published.",
+    "source": "Turn! Turn! Turn!",
+    "url": "https://app.opendate.io/e/water-shrews-v-vecker-fla-tom-scully-sea-patrickmccauley-december-17-2026-806010",
+    "icon": "♫",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Turn! Turn! Turn!",
+        "url": "https://app.opendate.io/e/water-shrews-v-vecker-fla-tom-scully-sea-patrickmccauley-december-17-2026-806010",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://s3.amazonaws.com/opendate-aws-assets/confirms/main_event_images/000/806/010/compressed/0037106071_10.jpg?1795744516",
+      "sourceUrl": "https://app.opendate.io/e/water-shrews-v-vecker-fla-tom-scully-sea-patrickmccauley-december-17-2026-806010",
+      "origin": "official-event-page",
+      "credit": "Organizer-provided OpenDate event image",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "turn-turn-turn",
       "method": "primary-source-collection"
     }
   },
@@ -71672,6 +71955,57 @@ window.SHOWS_EVENTS = [
     }
   },
   {
+    "id": "auto-dantes-2027-02-13-2e92c95dc49d",
+    "title": "BLACK HEARTS",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-13T21:00:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/black-hearts/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/black-hearts/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/67/17/73_Original.jpg?v=2",
+      "sourceUrl": "https://www.danteslive.com/tm-event/black-hearts/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "dantes",
+      "method": "primary-source-collection"
+    }
+  },
+  {
     "id": "auto-twilight-2027-02-13-611cd102352a",
     "title": "Scott Pilgrim vs. The Dance Floor-A night of Dance-Punk, Electroclash, Indietronic",
     "subtitle": "Source-discovered venue event · details need review",
@@ -72378,6 +72712,57 @@ window.SHOWS_EVENTS = [
     "addedIn": "auto-discovery-2026-10-29",
     "discovery": {
       "sourceId": "aladdin-theater",
+      "method": "primary-source-collection"
+    }
+  },
+  {
+    "id": "auto-dantes-2027-02-18-c5f0ee7d57ef",
+    "title": "JEFFREY NOTHING with Sister Kill Cycle & Guests",
+    "subtitle": "Source-discovered venue event · details need review",
+    "category": "Unclassified",
+    "tags": [
+      "Category needs review",
+      "Time needs confirmation",
+      "Format needs confirmation"
+    ],
+    "musicStyles": [],
+    "eventFormat": "unverified",
+    "classificationEvidence": "No verified event type or genre",
+    "startTimeKind": "listed",
+    "startsAt": "2027-02-18T19:30:00-08:00",
+    "endsAt": null,
+    "venue": "Dante's",
+    "address": "350 W Burnside St, Portland, OR 97209",
+    "neighborhood": "Old Town",
+    "price": "See organizer for current admission",
+    "free": null,
+    "age": "Not published",
+    "description": "Automatically discovered from a primary venue or promoter listing. Primary Dante's event detail explicitly specifies showtime and Pacific date Official Dante's event detail listing; show type, performance time and cancellation status remain subject to editorial review",
+    "source": "Dante's",
+    "url": "https://www.danteslive.com/tm-event/jeffrey-nothing-with-sister-kill-cycle-guests/",
+    "icon": "◇",
+    "sourceCheckedAt": "2026-11-27",
+    "verificationMethod": "Automated venue data; editorial date, time, event type and cancellation verification required",
+    "sourceCategories": [],
+    "sources": [
+      {
+        "name": "Dante's",
+        "url": "https://www.danteslive.com/tm-event/jeffrey-nothing-with-sister-kill-cycle-guests/",
+        "kind": "organizer",
+        "checkedAt": "2026-11-27",
+        "originalCategories": []
+      }
+    ],
+    "artwork": {
+      "url": "https://i.ticketweb.com/i/00/13/66/59/83_Original.jpg?v=3",
+      "sourceUrl": "https://www.danteslive.com/tm-event/jeffrey-nothing-with-sister-kill-cycle-guests/",
+      "origin": "official-event-page",
+      "credit": "Official event page",
+      "usageApproved": null
+    },
+    "addedIn": "auto-discovery-2026-11-27",
+    "discovery": {
+      "sourceId": "dantes",
       "method": "primary-source-collection"
     }
   },
